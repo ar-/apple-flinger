@@ -1,0 +1,237 @@
+
+wood.png
+size: 1024,256
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+wood_bl_11
+  rotate: false
+  xy: 602, 198
+  size: 20, 20
+  orig: 20, 20
+  offset: 0, 0
+  index: 0
+wood_bl_11
+  rotate: false
+  xy: 432, 90
+  size: 20, 20
+  orig: 20, 20
+  offset: 0, 0
+  index: 1
+wood_bl_11
+  rotate: false
+  xy: 683, 221
+  size: 20, 20
+  orig: 20, 20
+  offset: 0, 0
+  index: 2
+wood_bl_11
+  rotate: false
+  xy: 624, 198
+  size: 20, 20
+  orig: 20, 20
+  offset: 0, 0
+  index: 3
+wood_bl_21
+  rotate: false
+  xy: 597, 220
+  size: 41, 21
+  orig: 41, 21
+  offset: 0, 0
+  index: 0
+wood_bl_21
+  rotate: false
+  xy: 559, 197
+  size: 41, 21
+  orig: 41, 21
+  offset: 0, 0
+  index: 1
+wood_bl_21
+  rotate: false
+  xy: 432, 112
+  size: 41, 21
+  orig: 41, 21
+  offset: 0, 0
+  index: 2
+wood_bl_21
+  rotate: false
+  xy: 640, 220
+  size: 41, 21
+  orig: 41, 21
+  offset: 0, 0
+  index: 3
+wood_bl_22
+  rotate: false
+  xy: 430, 177
+  size: 41, 41
+  orig: 41, 41
+  offset: 0, 0
+  index: 3
+wood_bl_22
+  rotate: false
+  xy: 473, 178
+  size: 41, 40
+  orig: 41, 40
+  offset: 0, 0
+  index: 0
+wood_bl_22
+  rotate: false
+  xy: 516, 178
+  size: 41, 40
+  orig: 41, 40
+  offset: 0, 0
+  index: 1
+wood_bl_22
+  rotate: false
+  xy: 432, 135
+  size: 41, 40
+  orig: 41, 40
+  offset: 0, 0
+  index: 2
+wood_bl_41
+  rotate: false
+  xy: 342, 220
+  size: 83, 21
+  orig: 83, 21
+  offset: 0, 0
+  index: 0
+wood_bl_41
+  rotate: false
+  xy: 427, 220
+  size: 83, 21
+  orig: 83, 21
+  offset: 0, 0
+  index: 1
+wood_bl_41
+  rotate: false
+  xy: 346, 23
+  size: 83, 21
+  orig: 83, 21
+  offset: 0, 0
+  index: 2
+wood_bl_41
+  rotate: false
+  xy: 512, 220
+  size: 83, 21
+  orig: 83, 21
+  offset: 0, 0
+  index: 3
+wood_bl_42
+  rotate: false
+  xy: 172, 176
+  size: 84, 42
+  orig: 84, 42
+  offset: 0, 0
+  index: 0
+wood_bl_42
+  rotate: false
+  xy: 258, 176
+  size: 84, 42
+  orig: 84, 42
+  offset: 0, 0
+  index: 1
+wood_bl_42
+  rotate: false
+  xy: 344, 176
+  size: 84, 42
+  orig: 84, 42
+  offset: 0, 0
+  index: 2
+wood_bl_42
+  rotate: false
+  xy: 346, 46
+  size: 84, 42
+  orig: 84, 42
+  offset: 0, 0
+  index: 3
+wood_bl_81
+  rotate: false
+  xy: 2, 220
+  size: 168, 21
+  orig: 168, 21
+  offset: 0, 0
+  index: 0
+wood_bl_81
+  rotate: false
+  xy: 2, 197
+  size: 168, 21
+  orig: 168, 21
+  offset: 0, 0
+  index: 1
+wood_bl_81
+  rotate: false
+  xy: 172, 220
+  size: 168, 21
+  orig: 168, 21
+  offset: 0, 0
+  index: 2
+wood_bl_81
+  rotate: false
+  xy: 2, 174
+  size: 168, 21
+  orig: 168, 21
+  offset: 0, 0
+  index: 3
+wood_rect
+  rotate: false
+  xy: 2, 88
+  size: 84, 84
+  orig: 84, 84
+  offset: 0, 0
+  index: 0
+wood_rect
+  rotate: false
+  xy: 2, 2
+  size: 84, 84
+  orig: 84, 84
+  offset: 0, 0
+  index: 1
+wood_rect
+  rotate: false
+  xy: 88, 88
+  size: 84, 84
+  orig: 84, 84
+  offset: 0, 0
+  index: 2
+wood_rect
+  rotate: false
+  xy: 88, 2
+  size: 84, 84
+  orig: 84, 84
+  offset: 0, 0
+  index: 3
+wood_tnt
+  rotate: false
+  xy: 174, 90
+  size: 84, 84
+  orig: 84, 84
+  offset: 0, 0
+  index: 0
+wood_tria
+  rotate: false
+  xy: 174, 4
+  size: 84, 84
+  orig: 84, 84
+  offset: 0, 0
+  index: 0
+wood_tria
+  rotate: false
+  xy: 260, 90
+  size: 84, 84
+  orig: 84, 84
+  offset: 0, 0
+  index: 1
+wood_tria
+  rotate: false
+  xy: 260, 4
+  size: 84, 84
+  orig: 84, 84
+  offset: 0, 0
+  index: 2
+wood_tria
+  rotate: false
+  xy: 346, 90
+  size: 84, 84
+  orig: 84, 84
+  offset: 0, 0
+  index: 3

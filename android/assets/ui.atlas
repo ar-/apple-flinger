@@ -1,0 +1,188 @@
+
+ui.png
+size: 1024,1024
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+btn_1player
+  rotate: false
+  xy: 585, 708
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+btn_2players
+  rotate: false
+  xy: 204, 308
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+btn_abort
+  rotate: false
+  xy: 406, 510
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+btn_achi
+  rotate: false
+  xy: 2, 410
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+btn_back
+  rotate: false
+  xy: 687, 708
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+btn_blank
+  rotate: false
+  xy: 204, 206
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+btn_close
+  rotate: false
+  xy: 789, 708
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+btn_fb
+  rotate: false
+  xy: 204, 104
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+btn_fl_empty
+  rotate: false
+  xy: 585, 810
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+btn_gp
+  rotate: false
+  xy: 306, 308
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+btn_info
+  rotate: false
+  xy: 306, 206
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+btn_joypad
+  rotate: false
+  xy: 2, 208
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+btn_leader
+  rotate: false
+  xy: 204, 410
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+btn_logout
+  rotate: false
+  xy: 306, 104
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+btn_pause
+  rotate: false
+  xy: 891, 708
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+btn_pi
+  rotate: false
+  xy: 204, 2
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+btn_play
+  rotate: false
+  xy: 306, 2
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+btn_refresh
+  rotate: false
+  xy: 585, 606
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+btn_settings
+  rotate: false
+  xy: 687, 606
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+btn_signin
+  rotate: false
+  xy: 787, 810
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+btn_sound_off
+  rotate: false
+  xy: 789, 606
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+btn_sound_on
+  rotate: false
+  xy: 891, 606
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+btn_sq_empty
+  rotate: false
+  xy: 2, 6
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+btn_tw
+  rotate: false
+  xy: 508, 504
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+dialog
+  rotate: false
+  xy: 2, 612
+  size: 581, 398
+  orig: 581, 398
+  offset: 0, 0
+  index: -1
+sliderback
+  rotate: false
+  xy: 989, 1004
+  size: 6, 6
+  orig: 6, 6
+  offset: 0, 0
+  index: -1

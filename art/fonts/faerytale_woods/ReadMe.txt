@@ -1,0 +1,26 @@
+#-------------------------------------------------------------------------------
+# Copyright (C) 2015-2017 Andreas Redmer <andreasredmer@mailchuck.com>
+# 
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+# 
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+# 
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <http://www.gnu.org/licenses/>.
+#-------------------------------------------------------------------------------
+Faerytale Woods (c) Brittney Murphy 2013
+www.brittneymurphydesign.com
+info@brittneymurphydesign.com
+
+"Faerytale Woods" is a font created and copyrighted by Brittney Murphy.
+
+It is free for personal and non-profit use.  If you would like to use this font commercially, please pay $5 at www.brittneymurphydesign.com.
+
+You are free to redistribute (not sell) this font as long as you include this ReadMe file with the font file and don't try to claim the font as free or as your own.
+

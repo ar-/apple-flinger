@@ -1,0 +1,83 @@
+
+misc_r.png
+size: 512,512
+format: RGBA8888
+filter: Nearest,Nearest
+repeat: none
+dork
+  rotate: false
+  xy: 2, 268
+  size: 118, 131
+  orig: 118, 131
+  offset: 0, 0
+  index: 0
+dork
+  rotate: false
+  xy: 2, 135
+  size: 118, 131
+  orig: 118, 131
+  offset: 0, 0
+  index: 1
+dork
+  rotate: false
+  xy: 122, 268
+  size: 118, 131
+  orig: 118, 131
+  offset: 0, 0
+  index: 2
+dork
+  rotate: false
+  xy: 2, 2
+  size: 118, 131
+  orig: 118, 131
+  offset: 0, 0
+  index: 3
+eyes_closed
+  rotate: false
+  xy: 122, 135
+  size: 118, 131
+  orig: 118, 131
+  offset: 0, 0
+  index: -1
+eyes_down
+  rotate: false
+  xy: 242, 268
+  size: 118, 131
+  orig: 118, 131
+  offset: 0, 0
+  index: -1
+eyes_inner
+  rotate: false
+  xy: 122, 2
+  size: 118, 131
+  orig: 118, 131
+  offset: 0, 0
+  index: -1
+eyes_left
+  rotate: false
+  xy: 242, 135
+  size: 118, 131
+  orig: 118, 131
+  offset: 0, 0
+  index: -1
+eyes_outer
+  rotate: false
+  xy: 362, 268
+  size: 118, 131
+  orig: 118, 131
+  offset: 0, 0
+  index: -1
+eyes_right
+  rotate: false
+  xy: 242, 2
+  size: 118, 131
+  orig: 118, 131
+  offset: 0, 0
+  index: -1
+eyes_up
+  rotate: false
+  xy: 362, 135
+  size: 118, 131
+  orig: 118, 131
+  offset: 0, 0
+  index: -1
