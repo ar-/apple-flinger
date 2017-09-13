@@ -71,7 +71,6 @@ final public class GameManager {
 	private int targetsDestroyedThisRound;
 	private int targetsAvailableThisRound;
 	private int shotsFiredThisRound;
-	private boolean isBannerVisible;
 	private final InputMultiplexer inputMultiplexer;
 	
 	public boolean isPaused;
