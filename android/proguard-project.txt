@@ -65,5 +65,5 @@
    float   reportRayFixture(long, float, float, float, float, float);
 }
 
--keep public class com.ardash.appleflinger.missions.MissionM*
+-keep public class com.gitlab.ardash.appleflinger.missions.MissionM*
 -optimizations !class/unboxing/enum
