@@ -23,3 +23,10 @@ build:
   artifacts:
     paths:
     - android/build/outputs/
+
+build_release:
+  script:
+    - ./gradlew assembleRelease
+  artifacts:
+    paths:
+    - android/build/outputs/
