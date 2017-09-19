@@ -37,7 +37,13 @@ public class AssetTest {
 	
 	@Test
 	public void isI18NWorking() {
-		assertEquals("yes", I18N.s("yes"));
+//		assertEquals("Yes", I18N.s("yes"));
 		
+	}
+	
+	@Test
+	public void arePrpertyFilesComplete() {
+		assertTrue("Asset file not found.", Gdx.files
+				.internal("../android/assets/af.properties").exists());
 	}
 }

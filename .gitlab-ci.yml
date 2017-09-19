@@ -33,14 +33,14 @@ build_release:
 
 build_desktop:
   script:
-    - ./gradlew desktop:disk
+    - ./gradlew desktop:dist
   artifacts:
     paths:
     - desktop/build/libs/
 
 test:
   script:
-    - ./gradlew tests:test
+    - ./gradlew tests:test --info
   artifacts:
     paths:
     - tests/build/reports/

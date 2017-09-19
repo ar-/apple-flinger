@@ -40,7 +40,6 @@ public class I18N {
 	
 	private static String getBundleBaseName()
 	{
-		if (Gdx.app.getType() == ApplicationType.Android)
 		switch (Gdx.app.getType()) {
 		case Android:
 			return "assets/af";
@@ -55,7 +54,8 @@ public class I18N {
 		case iOS:
 			return "";
 		}
-		throw new RuntimeException("Unknown application type");
+//		return "com.gitlab.ardash.appleflinger.i18n.af";
+		throw new RuntimeException("Unknown application type " + Gdx.app.getType());
 	}
 
 	public static String getString(String key) {
