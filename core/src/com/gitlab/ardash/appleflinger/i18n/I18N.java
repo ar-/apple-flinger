@@ -19,6 +19,9 @@ package com.gitlab.ardash.appleflinger.i18n;
 import java.util.MissingResourceException;
 import java.util.ResourceBundle;
 
+import com.badlogic.gdx.Application.ApplicationType;
+import com.badlogic.gdx.Gdx;
+
 public class I18N {
 	
 	public enum k{
@@ -30,9 +33,29 @@ public class I18N {
 //	private static final ResourceBundle RESOURCE_BUNDLE = ResourceBundle.getBundle(BUNDLE_NAME);
 	
 	// the following line need to be in release, otherwise the class wont be found after optimization
-	private static final ResourceBundle RESOURCE_BUNDLE = ResourceBundle.getBundle ("assets/af");
+	private static final ResourceBundle RESOURCE_BUNDLE = ResourceBundle.getBundle (getBundleBaseName());
 
 	private I18N() {
+	}
+	
+	private static String getBundleBaseName()
+	{
+		if (Gdx.app.getType() == ApplicationType.Android)
+		switch (Gdx.app.getType()) {
+		case Android:
+			return "assets/af";
+		case Applet:
+			return "";
+		case Desktop:
+			return "com.gitlab.ardash.appleflinger.i18n.af";
+		case HeadlessDesktop:
+			return "com.gitlab.ardash.appleflinger.i18n.af";
+		case WebGL:
+			return "";
+		case iOS:
+			return "";
+		}
+		throw new RuntimeException("Unknown application type");
 	}
 
 	public static String getString(String key) {

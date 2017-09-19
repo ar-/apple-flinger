@@ -30,3 +30,18 @@ build_release:
   artifacts:
     paths:
     - android/build/outputs/
+
+build_desktop:
+  script:
+    - ./gradlew desktop:disk
+  artifacts:
+    paths:
+    - desktop/build/libs/
+
+test:
+  script:
+    - ./gradlew tests:test
+  artifacts:
+    paths:
+    - tests/build/reports/
+
