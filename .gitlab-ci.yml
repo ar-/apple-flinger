@@ -7,7 +7,6 @@ variables:
 
 cache:
   paths:
-  - tmp/android-sdk-linux
   - tmp/.gradle/wrapper
   - tmp/.gradle/caches
 
@@ -17,7 +16,6 @@ before_script:
   - wget --quiet --output-document=android-sdk.tgz https://dl.google.com/android/android-sdk_r${ANDROID_SDK_TOOLS}-linux.tgz
   - tar --extract --gzip --file=android-sdk.tgz
   - mkdir -p tmp
-  - rm -rf tmp/android-sdk-linux
   - mv android-sdk-linux tmp/
   - export ANDROID_HOME=$PWD/tmp/android-sdk-linux
   - echo y | tmp/android-sdk-linux/tools/android --silent update sdk --no-ui --all --filter android-${ANDROID_TARGET_SDK}
