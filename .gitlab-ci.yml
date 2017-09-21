@@ -8,6 +8,8 @@ variables:
 cache:
   paths:
   - android-sdk-linux
+  - .gradle/wrapper
+  - .gradle/caches
 
 before_script:
   - apt-get --quiet update --yes
@@ -19,6 +21,7 @@ before_script:
   - echo y | android-sdk-linux/tools/android --silent update sdk --no-ui --all --filter build-tools-${ANDROID_BUILD_TOOLS}
   - echo y | android-sdk-linux/tools/android --silent update sdk --no-ui --all --filter extra-android-m2repository
   - export ANDROID_HOME=$PWD/android-sdk-linux
+  - export GRADLE_USER_HOME=`pwd`/.gradle
   - chmod +x ./gradlew
 
 build:
