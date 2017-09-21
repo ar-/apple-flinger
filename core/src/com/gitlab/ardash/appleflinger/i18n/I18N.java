@@ -48,7 +48,7 @@ public class I18N {
 		case Desktop:
 			return "com.gitlab.ardash.appleflinger.i18n.af";
 		case HeadlessDesktop:
-			return "com.gitlab.ardash.appleflinger.i18n.af";
+			return "assets/af";
 		case WebGL:
 			return "";
 		case iOS:

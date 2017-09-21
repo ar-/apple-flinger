@@ -24,12 +24,8 @@ import org.junit.Test;
 
 import com.gitlab.ardash.appleflinger.global.GameManager;
 
+@SuppressWarnings("unused")
 public class DeploymentSanityUnitTest {
-
-	@Test
-	public void oneEqualsOne() {
-		assertEquals(1, 1);
-	}
 
 	@Test
 	public void isDebugDisabled() {

@@ -26,13 +26,14 @@ import com.badlogic.gdx.Gdx;
 import com.gitlab.ardash.appleflinger.i18n.I18N;
 import com.gitlab.ardash.appleflinger.testing.GdxTestRunner;
 
+@SuppressWarnings("unused")
 @RunWith(GdxTestRunner.class)
 public class AssetTest {
 
 	@Test
 	public void arePngFilesComplete() {
 		assertTrue("Asset file not found.", Gdx.files
-				.internal("../android/assets/wood.png").exists());
+				.internal("assets/wood.png").exists());
 	}
 	
 	@Test
@@ -44,6 +45,6 @@ public class AssetTest {
 	@Test
 	public void arePrpertyFilesComplete() {
 		assertTrue("Asset file not found.", Gdx.files
-				.internal("../android/assets/af.properties").exists());
+				.internal("assets/af.properties").exists());
 	}
 }

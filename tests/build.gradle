@@ -17,6 +17,10 @@ sourceSets {
     
 }
 
+test {
+  workingDir './'
+}
+
 eclipse.project {
     name = appName + "-tests"
 }

@@ -209,7 +209,7 @@ final public class GameManager {
 	
 	/**
 	 * every target actor calls this as soon as it gets destroyed
-	 * good for statitics/archievements/ads
+	 * good for statistics/achievements/ads
 	 * @param ta
 	 */
 	public void onTargetDestroyed(TargetActor ta)
