@@ -41,6 +41,7 @@ build_desktop:
 test:
   script:
     - ./gradlew tests:test --info
+    - apt-get --quiet install --yes licensecheck
     - ./licensecheck.sh
   artifacts:
     paths:
