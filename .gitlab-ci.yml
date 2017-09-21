@@ -7,8 +7,9 @@ variables:
 
 cache:
   paths:
-  - .gradle/wrapper
-  - .gradle/caches
+  - tmp/android-sdk-linux
+  - tmp/.gradle/wrapper
+  - tmp/.gradle/caches
 
 before_script:
   - apt-get --quiet update --yes
