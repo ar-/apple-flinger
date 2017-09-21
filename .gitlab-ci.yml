@@ -41,6 +41,7 @@ build_desktop:
 test:
   script:
     - ./gradlew tests:test --info
+    - ./licensecheck.sh
   artifacts:
     paths:
     - tests/build/reports/

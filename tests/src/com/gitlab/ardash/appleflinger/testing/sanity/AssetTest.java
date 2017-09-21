@@ -38,7 +38,7 @@ public class AssetTest {
 	
 	@Test
 	public void isI18NWorking() {
-//		assertEquals("Yes", I18N.s("yes"));
+		assertEquals("Yes", I18N.s("yes"));
 		
 	}
 	
