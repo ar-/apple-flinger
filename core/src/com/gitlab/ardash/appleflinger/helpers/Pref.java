@@ -35,28 +35,11 @@ public class Pref {
 	private static final String PEPPER = "tp6UgD9JKAoWSww1Ogduts2UFlFn9CTqQJX8Zdw7VBZv0o51jKD9QTnuoxzA2Lcj"; //$NON-NLS-1$
 	private static final Preferences prefs = Gdx.app.getPreferences(PREFS_NAME);
 	
-	private static Boolean googleSignInWanted = null;
 	private static Boolean soundOn = null;
 	private static Float musicVol = null;
 	private static Float soundVol = null;
 	private static HashMap<Mission,Boolean> activatedLevels = new HashMap<Mission, Boolean>();
 
-	
-	public static boolean getGoogleSignInWanted() {
-		if (googleSignInWanted == null)
-		{
-			//Preferences prefs = Gdx.app.getPreferences(PREFS_NAME);
-			googleSignInWanted = prefs.getBoolean("googleSignInWanted", false); //$NON-NLS-1$
-		}
-		return googleSignInWanted;
-	}
-	
-	public static void setGoogleSignInWanted(boolean agoogleSignInWanted) {
-		googleSignInWanted = agoogleSignInWanted;
-		//Preferences prefs = Gdx.app.getPreferences(PREFS_NAME);
-		prefs.putBoolean("googleSignInWanted", googleSignInWanted); //$NON-NLS-1$
-		prefs.flush();
-	}
 	
 	public static boolean getSoundOn() {
 		if (soundOn == null)

@@ -112,16 +112,6 @@ public class MainMenuScreen extends GenericScreen implements Screen {
 			}
 		});
 
-//		btnGoogleLogin.addListener(new ClickListener() {
-//			@Override
-//			public void clicked(InputEvent event, float x, float y) {
-//				super.clicked(event, x, y);
-//
-//
-//			}
-//		});
-
-
 		SpriteButton btnSettings = new SpriteButton(Assets.SpriteAsset.BTN_SETTINGS.get());
         btnSettings.setHeight(btnSettings.getHeight()*2);
         btnSettings.setWidth( btnSettings.getWidth()*2);
