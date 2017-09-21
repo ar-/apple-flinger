@@ -19,10 +19,7 @@ before_script:
   - rm -rf tmp/android-sdk-linux
   - mv android-sdk-linux tmp/
   - export ANDROID_HOME=$PWD/tmp/android-sdk-linux
-  - echo y | tmp/android-sdk-linux/tools/android --silent update sdk --no-ui --all --filter android-${ANDROID_TARGET_SDK}
-  - echo y | tmp/android-sdk-linux/tools/android --silent update sdk --no-ui --all --filter platform-tools
-  - echo y | tmp/android-sdk-linux/tools/android --silent update sdk --no-ui --all --filter build-tools-${ANDROID_BUILD_TOOLS}
-  - echo y | tmp/android-sdk-linux/tools/android --silent update sdk --no-ui --all --filter extra-android-m2repository
+  - yes | tmp/android-sdk-linux/tools/android --silent update sdk --no-ui --all --filter android-${ANDROID_TARGET_SDK},platform-tools,build-tools-${ANDROID_BUILD_TOOLS},extra-android-m2repository
   - export GRADLE_USER_HOME=`pwd`/tmp/.gradle
   - chmod +x ./gradlew
 
