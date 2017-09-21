@@ -7,7 +7,6 @@ variables:
 
 cache:
   paths:
-  - android-sdk-linux
   - .gradle/wrapper
   - .gradle/caches
 
@@ -16,12 +15,14 @@ before_script:
   - apt-get --quiet install --yes wget tar unzip lib32stdc++6 lib32z1
   - wget --quiet --output-document=android-sdk.tgz https://dl.google.com/android/android-sdk_r${ANDROID_SDK_TOOLS}-linux.tgz
   - tar --extract --gzip --file=android-sdk.tgz
-  - echo y | android-sdk-linux/tools/android --silent update sdk --no-ui --all --filter android-${ANDROID_TARGET_SDK}
-  - echo y | android-sdk-linux/tools/android --silent update sdk --no-ui --all --filter platform-tools
-  - echo y | android-sdk-linux/tools/android --silent update sdk --no-ui --all --filter build-tools-${ANDROID_BUILD_TOOLS}
-  - echo y | android-sdk-linux/tools/android --silent update sdk --no-ui --all --filter extra-android-m2repository
-  - export ANDROID_HOME=$PWD/android-sdk-linux
-  - export GRADLE_USER_HOME=`pwd`/.gradle
+  - mkdir -p tmp
+  - mv android-sdk-linux tmp/
+  - echo y | tmp/android-sdk-linux/tools/android --silent update sdk --no-ui --all --filter android-${ANDROID_TARGET_SDK}
+  - echo y | tmp/android-sdk-linux/tools/android --silent update sdk --no-ui --all --filter platform-tools
+  - echo y | tmp/android-sdk-linux/tools/android --silent update sdk --no-ui --all --filter build-tools-${ANDROID_BUILD_TOOLS}
+  - echo y | tmp/android-sdk-linux/tools/android --silent update sdk --no-ui --all --filter extra-android-m2repository
+  - export ANDROID_HOME=$PWD/tmp/android-sdk-linux
+  - export GRADLE_USER_HOME=`pwd`/tmp/.gradle
   - chmod +x ./gradlew
 
 build:
