@@ -73,5 +73,5 @@ fdroid_build:
     - rm -rf ./build/com.gitlab.ardash.appleflinger.android
     - ls -la ../
     - git clone ../ ./build/com.gitlab.ardash.appleflinger.android
-    - bash -c "cd ./build/com.gitlab.ardash.appleflinger.android ; git remote add origin https://gitlab.com/ar-/apple-flinger.git"
+    - bash -c "cd ./build/com.gitlab.ardash.appleflinger.android ; git remote remove origin ; git remote add origin https://gitlab.com/ar-/apple-flinger.git"
     - ../fdroidserver/fdroid build -v --no-refresh com.gitlab.ardash.appleflinger.android
