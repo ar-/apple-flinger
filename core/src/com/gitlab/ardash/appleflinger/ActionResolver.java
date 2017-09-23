@@ -22,7 +22,7 @@ import java.net.URLEncoder;
 import com.gitlab.ardash.appleflinger.i18n.I18N;
 
 public interface ActionResolver {
-	
+THIS IS NOT JAVA XXXXXXXXXXXXXXXXXXXXXXX
 	public static final String recommendationText = I18N.getString("twitterRecommendationtext"); //$NON-NLS-1$
 	public static final String marketUrl = "https://f-droid.org/packages/com.gitlab.ardash.appleflinger.android/"; //$NON-NLS-1$
 	
