@@ -55,9 +55,6 @@ test:
 
 fdroid_build:
   script:
-##    - git config --global user.email "creepy@ghost.com"
-##    - git config --global user.name "Creepy Ghost"
-##    - git tag -a latestfrdoid -m'latest'
     - wget https://services.gradle.org/distributions/gradle-2.2-bin.zip
     - mkdir /opt/gradle
     - unzip -d /opt/gradle gradle-2.2-bin.zip
@@ -66,30 +63,15 @@ fdroid_build:
     - apt-get --quiet install --yes fdroidserver
     - git clone https://gitlab.com/fdroid/fdroidserver.git
     - git clone https://gitlab.com/fdroid/fdroiddata.git -b master --single-branch
-#    - git config --global user.email "creepy@ghost.com"
-#    - git config --global user.name "Creepy Ghost"
-#    - git tag -a latestfrdoid -m'latest'
-    - git branch
-    - git show-ref | grep $(git show-ref -s -- HEAD) | sed 's|.*/\(.*\)|\1|' | grep -v HEAD | sort | uniq
-    - git log -n 1 --pretty=%d HEAD | egrep -o '/.*)'| egrep -o '[a-zA-Z0-9_-]*'
-    - git show -s --pretty=%d HEAD | egrep -o '/.*)'| egrep -o '[a-zA-Z0-9_-]*'
+    - git show -s --pretty=%d HEAD
     - CB=`git show -s --pretty=%d HEAD | egrep -o '/.*)'| egrep -o '[a-zA-Z0-9_-]*'`
-####    - bash -c "CB=`git show -s --pretty=%d HEAD | egrep -o '/.*)' | egrep -o '[a-zA-Z0-9_-]*'` ; sed -i \"s/commit=.*/commit=$CB/g\" fdroiddata/metadata/com.gitlab.ardash.appleflinger.android.txt"
     - cd fdroiddata
-##    - sed -i 's/commit=.*/commit=latestfrdoid/g' metadata/com.gitlab.ardash.appleflinger.android.txt
     - sed -i "s/commit=.*/commit=$CB/g" metadata/com.gitlab.ardash.appleflinger.android.txt
     - grep commit metadata/com.gitlab.ardash.appleflinger.android.txt
     - cp ../fdroidserver/examples/config.py ./
     - chmod 0600 config.py
     - echo 'sdk_path = "$PWD/../tmp/android-sdk-linux"' >> config.py
 #    - fdroid lint com.gitlab.ardash.appleflinger.android
-    - ../fdroidserver/fdroid build -v -l -t com.gitlab.ardash.appleflinger.android
-    # that built the normal current master of the upstream: now go to the branch, and build again
-#    - rm -rf ./build/com.gitlab.ardash.appleflinger.android
-    - ls -la ../
-#    - git clone ../ ./build/com.gitlab.ardash.appleflinger.android
-##    - bash -c "cd ./build/com.gitlab.ardash.appleflinger.android ; git remote remove origin ; git remote add origin ../../../"
-#    - sed -i 's/commit=.*/commit=latestfrdoid/g' metadata/com.gitlab.ardash.appleflinger.android.txt
     - ../fdroidserver/fdroid build -v -l -t com.gitlab.ardash.appleflinger.android &> build.log
     - cat build.log
     - bash -c "exit `grep 'BUILD FAILED' build.log | wc -l`"
