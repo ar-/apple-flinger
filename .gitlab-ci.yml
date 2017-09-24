@@ -71,7 +71,7 @@ fdroid_build:
     - cp ../fdroidserver/examples/config.py ./
     - chmod 0600 config.py
     - echo 'sdk_path = "$PWD/../tmp/android-sdk-linux"' >> config.py
-#    - fdroid lint com.gitlab.ardash.appleflinger.android
+#   - fdroid lint com.gitlab.ardash.appleflinger.android
     - ../fdroidserver/fdroid build -v -l -t com.gitlab.ardash.appleflinger.android &> build.log
     - cat build.log
     - bash -c "exit `grep 'BUILD FAILED' build.log | wc -l`"
