@@ -64,7 +64,7 @@ fdroid_build:
     - git clone https://gitlab.com/fdroid/fdroidserver.git
     - git clone https://gitlab.com/fdroid/fdroiddata.git -b master --single-branch
     - git show -s --pretty=%d HEAD
-    - CB=`git show -s --pretty=%d HEAD | egrep -o '/.*)'| egrep -o '[a-zA-Z0-9_-]*'`
+    - CB=`git show -s --pretty=%d HEAD | egrep -o '/.*)'| egrep -o '[a-zA-Z0-9_-]*' | head -n1`
     - cd fdroiddata
     - sed -i "s/commit=.*/commit=$CB/g" metadata/com.gitlab.ardash.appleflinger.android.txt
     - grep commit metadata/com.gitlab.ardash.appleflinger.android.txt
