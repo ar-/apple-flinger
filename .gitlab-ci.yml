@@ -5,6 +5,11 @@ variables:
   ANDROID_BUILD_TOOLS: "24.0.0"
   ANDROID_SDK_TOOLS: "24.4.1"
 
+stages:
+  - licensecheck
+  - build
+  - test
+
 cache:
   paths:
   - tmp/.gradle/wrapper
@@ -23,9 +28,19 @@ before_script:
   - export GRADLE_USER_HOME=`pwd`/tmp/.gradle
   - chmod +x ./gradlew
 
-build:
+licensecheck:
+  script:
+    - apt-get --quiet install --yes licensecheck
+    - ./licensecheck.sh
+  stage: licensecheck
+  artifacts:
+    paths:
+    - tests/build/reports/
+
+build_debug:
   script:
     - ./gradlew assembleDebug
+  stage: build
   artifacts:
     paths:
     - android/build/outputs/
@@ -33,6 +48,7 @@ build:
 build_release:
   script:
     - ./gradlew assembleRelease
+  stage: build
   artifacts:
     paths:
     - android/build/outputs/
@@ -40,15 +56,15 @@ build_release:
 build_desktop:
   script:
     - ./gradlew desktop:dist
+  stage: build
   artifacts:
     paths:
     - desktop/build/libs/
 
-test:
+unit_tests:
   script:
     - ./gradlew tests:test --info
-    - apt-get --quiet install --yes licensecheck
-    - ./licensecheck.sh
+  stage: test
   artifacts:
     paths:
     - tests/build/reports/
@@ -75,3 +91,5 @@ fdroid_build:
     - ../fdroidserver/fdroid build -v -l -t com.gitlab.ardash.appleflinger.android &> build.log
     - cat build.log
     - bash -c "exit `grep 'BUILD FAILED' build.log | wc -l`"
+  stage: test
+
