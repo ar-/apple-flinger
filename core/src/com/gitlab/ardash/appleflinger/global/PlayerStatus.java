@@ -28,7 +28,7 @@ public class PlayerStatus {
 		LEFT,RIGHT, NONE
 	}
 
-	public String name;
+	private String name;
 	private int points;
 	private int pointsThisShot;
 	private int allPoints;
@@ -66,6 +66,14 @@ public class PlayerStatus {
 	{
 		pointsThisShot=0;
 		enemiesKilledThisShot=0;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
 	}
 
 	public int getAllPoints() {

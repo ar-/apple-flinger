@@ -24,6 +24,7 @@ import com.gitlab.ardash.appleflinger.global.Assets;
 import com.gitlab.ardash.appleflinger.global.GameManager;
 import com.gitlab.ardash.appleflinger.global.GameState;
 import com.gitlab.ardash.appleflinger.global.Assets.MusicAsset;
+import com.gitlab.ardash.appleflinger.i18n.I18N;
 import com.gitlab.ardash.appleflinger.missions.Mission;
 
 /**
@@ -38,6 +39,8 @@ public class Pref {
 	private static Boolean soundOn = null;
 	private static Float musicVol = null;
 	private static Float soundVol = null;
+	private static String player1name = null;
+	private static String player2name = null;
 	private static HashMap<Mission,Boolean> activatedLevels = new HashMap<Mission, Boolean>();
 
 	
@@ -102,6 +105,34 @@ public class Pref {
 		prefs.flush();
 	}
 
+	public static String getPlayer1name() {
+		if (player1name == null)
+		{
+			player1name = prefs.getString("player1name", I18N.s("player1")); //$NON-NLS-1$
+		}
+		return player1name;
+	}
+	
+	public static void setPlayer1Name(String aplayer1name) {
+		player1name = aplayer1name;
+		prefs.putString("player1name", player1name); //$NON-NLS-1$
+		prefs.flush();
+	}
+
+	public static String getPlayer2name() {
+		if (player2name == null)
+		{
+			player2name = prefs.getString("player2name", I18N.s("player2")); //$NON-NLS-1$
+		}
+		return player2name;
+	}
+	
+	public static void setPlayer2Name(String aplayer2name) {
+		player2name = aplayer2name;
+		prefs.putString("player2name", player2name); //$NON-NLS-1$
+		prefs.flush();
+	}
+
 	public static boolean isMissionActivated(Mission mission) {
 		
 		if (mission.getMinor() ==1)
@@ -125,6 +156,5 @@ public class Pref {
 		prefs.putBoolean(key, activated);
 		prefs.flush();
 	}
-
 
 }

@@ -20,6 +20,7 @@ import com.badlogic.gdx.Screen;
 import com.badlogic.gdx.audio.Music;
 import com.badlogic.gdx.scenes.scene2d.Actor;
 import com.badlogic.gdx.scenes.scene2d.InputEvent;
+import com.badlogic.gdx.scenes.scene2d.InputListener;
 import com.badlogic.gdx.scenes.scene2d.Touchable;
 import com.badlogic.gdx.scenes.scene2d.ui.Image;
 import com.badlogic.gdx.scenes.scene2d.ui.Label;
@@ -38,6 +39,7 @@ import com.gitlab.ardash.appleflinger.global.Assets.TextureAsset;
 import com.gitlab.ardash.appleflinger.helpers.Pref;
 import com.gitlab.ardash.appleflinger.helpers.SoundPlayer;
 import com.gitlab.ardash.appleflinger.i18n.I18N;
+import com.gitlab.ardash.appleflinger.listeners.OnTextChangeListener;
 
 public class SettingsScreen extends GenericScreen implements Screen {  
 	   
@@ -74,11 +76,17 @@ public class SettingsScreen extends GenericScreen implements Screen {
         olTable.setFillParent(true);
         olTable.setTouchable(Touchable.disabled);
 
-        Label lbl1 = new Label(I18N.getString("SignOut"),menustyle); //$NON-NLS-1$
+        Label lbl1 = new Label(I18N.getString("player_names"),menustyle); //$NON-NLS-1$
         lbl1.setAlignment(Align.center);
         lbl1.setTouchable(Touchable.disabled);
     	olTable.add(lbl1).center().top().width(SCREEN_WIDTH/2).expandY().padTop(238);
 
+        final Label lblPN1 = new Label(Pref.getPlayer1name(),Assets.LabelStyleAsset.MINILABEL.style); //$NON-NLS-1$
+        lblPN1.setAlignment(Align.center);
+        
+        final Label lblPN2 = new Label(Pref.getPlayer2name(),Assets.LabelStyleAsset.MINILABEL.style); //$NON-NLS-1$
+        lblPN2.setAlignment(Align.center);
+        
         Label lbl2 = new Label(I18N.getString("Volume"),menustyle); //$NON-NLS-1$
         lbl2.setAlignment(Align.center);
         lbl2.setTouchable(Touchable.disabled);
@@ -88,10 +96,6 @@ public class SettingsScreen extends GenericScreen implements Screen {
         
         Label lblMusic = new Label(I18N.getString("Music"),Assets.LabelStyleAsset.MINILABEL.style); //$NON-NLS-1$
         lblMusic.setAlignment(Align.center);
-        
-//        WidgetGroup grpSound = new WidgetGroup();
-//        grpSound.addActor(lblSound);
-        //grpSound.rotateBy(5f);
         
         // RIGHT OVERLAY
     	Table olRight = new Table();
@@ -107,7 +111,10 @@ public class SettingsScreen extends GenericScreen implements Screen {
 
         Table signOutOverlayTable = new Table();
         signOutOverlayTable.setFillParent(true);
-//    	signOutOverlayTable.add(signOutBtn).expandX().expandY().padBottom(180).padRight(280);
+    	signOutOverlayTable.add(lblPN1).expandX().expandY().padBottom(-500).padRight(280);
+    	signOutOverlayTable.add().expandX().expandY();
+    	signOutOverlayTable.row();
+    	signOutOverlayTable.add(lblPN2).expandX().expandY().padBottom(300).padRight(280);
     	signOutOverlayTable.add().expandX().expandY();
         guiStage.addActor(signOutOverlayTable);
         
@@ -159,6 +166,43 @@ public class SettingsScreen extends GenericScreen implements Screen {
 				gm.setScreen(new MainMenuScreen());
 			}
 		});
+        
+        
+        // player lbl action listeners
+        lblPN1.addListener(new ClickListener(){
+        	@Override
+        	public void clicked(InputEvent event, float x, float y) {
+        		super.clicked(event, x, y);
+	        	new TextInputDialog().show(guiStage,
+	        			I18N.getString("name_of_player_1"),
+	        			Pref.getPlayer1name(),
+	        			new OnTextChangeListener() {
+							@Override
+							public void onTextChange(String newTextFromDialog) {
+			        			Pref.setPlayer1Name(newTextFromDialog);
+			        			lblPN1.setText(newTextFromDialog);
+							}
+						});
+        	}
+        });
+
+        // player lbl action listeners
+        lblPN2.addListener(new ClickListener(){
+        	@Override
+        	public void clicked(InputEvent event, float x, float y) {
+        		super.clicked(event, x, y);
+	        	new TextInputDialog().show(guiStage,
+	        			I18N.getString("name_of_player_2"),
+	        			Pref.getPlayer2name(),
+	        			new OnTextChangeListener() {
+							@Override
+							public void onTextChange(String newTextFromDialog) {
+			        			Pref.setPlayer2Name(newTextFromDialog);
+			        			lblPN2.setText(newTextFromDialog);
+							}
+						});
+        	}
+        });
 
     }
     

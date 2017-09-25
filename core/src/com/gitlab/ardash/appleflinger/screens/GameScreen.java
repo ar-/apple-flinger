@@ -55,10 +55,6 @@ public class GameScreen implements Screen {
     
     public static float SCREEN_WIDTH = 1920;  
     public static float SCREEN_HEIGHT = 1080;
-    public static float BANNER_WIDTH = 320;  
-    public static float BANNER_HEIGHT = 50;
-    public static float BANNER_LEFT = SCREEN_WIDTH-BANNER_WIDTH;  
-    public static float BANNER_BOTTOM = SCREEN_HEIGHT-BANNER_HEIGHT;
     
     private GameWorld world; // contains the game world's bodies and actors.  
     private GameRenderer renderer; // our custom game renderer.  
@@ -203,7 +199,7 @@ public class GameScreen implements Screen {
 			public void onGameOver() {
 				// GUI catches all events from now, game not playable anymore
 				gm.getInputMultiplexer().removeProcessor(world.stage);
-				setAnnouncementText(String.format(I18N.getString("gameOver")+"\n%s "+I18N.getString("won")+"\n"+I18N.getString("withDPoints")+"\n"+I18N.getString("touchScreenToContinue")+".", gm.winner.name, gm.winner.getPoints())); //$NON-NLS-1$ //$NON-NLS-2$ //$NON-NLS-3$ //$NON-NLS-4$ //$NON-NLS-5$ //$NON-NLS-6$ //$NON-NLS-7$ //$NON-NLS-8$ //$NON-NLS-9$ //$NON-NLS-10$
+				setAnnouncementText(String.format(I18N.getString("gameOver")+"\n%s "+I18N.getString("won")+"\n"+I18N.getString("withDPoints")+"\n"+I18N.getString("touchScreenToContinue")+".", gm.winner.getName(), gm.winner.getPoints())); //$NON-NLS-1$ //$NON-NLS-2$ //$NON-NLS-3$ //$NON-NLS-4$ //$NON-NLS-5$ //$NON-NLS-6$ //$NON-NLS-7$ //$NON-NLS-8$ //$NON-NLS-9$ //$NON-NLS-10$
 				freezeAnnouncementText();
 				gm.setGameState(GameState.GAME_OVER_SCREEN);
 				SoundPlayer.playMusic(Assets.getMusic(MusicAsset.BG));
@@ -253,24 +249,24 @@ public class GameScreen implements Screen {
         
         
     	// set now because names don't change during game
-        final String signedInName = "";
-		if (signedInName!="") //$NON-NLS-1$
-		{
-			gm.PLAYER1.name = signedInName;
-		}
-   		labelNameP1.setText(String.format(" %s ", gm.PLAYER1.name)); //$NON-NLS-1$
+		gm.PLAYER1.setName(Pref.getPlayer1name());
+   		labelNameP1.setText(String.format(" %s ", gm.PLAYER1.getName())); //$NON-NLS-1$
    		
    		if (gm.isPlayer2CPU())
    		{
-   		 gm.PLAYER2.name = I18N.getString("computer"); //$NON-NLS-1$
+   			gm.PLAYER2.setName(I18N.getString("computer")); //$NON-NLS-1$
    		}
-   		labelNameP2.setText(String.format(" %s  ", gm.PLAYER2.name)); //$NON-NLS-1$
+   		else
+   		{
+   			gm.PLAYER2.setName(Pref.getPlayer2name());
+   		}
+   		labelNameP2.setText(String.format(" %s  ", gm.PLAYER2.getName())); //$NON-NLS-1$
    		
    		// register listener for gamestateChanges
    		gm.setOnCurrentPlayerChangeListener(new OnCurrentPlayerChangeListener() {
 			@Override
 			public void onCurrentPlayerChange() {
-		        setAnnouncementText(String.format("%s\n"+I18N.getString("itIsYourTurn"), gm.currentPlayer.name));  //$NON-NLS-1$ //$NON-NLS-2$
+		        setAnnouncementText(String.format("%s\n"+I18N.getString("itIsYourTurn"), gm.currentPlayer.getName()));  //$NON-NLS-1$ //$NON-NLS-2$
 			}
 		});
    		
