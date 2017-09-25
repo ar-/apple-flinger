@@ -25,6 +25,7 @@ import com.gitlab.ardash.appleflinger.AppleflingerGame;
 import com.gitlab.ardash.appleflinger.actors.TargetActor;
 import com.gitlab.ardash.appleflinger.global.PlayerStatus.PlayerSide;
 import com.gitlab.ardash.appleflinger.helpers.GPGS;
+import com.gitlab.ardash.appleflinger.helpers.Pref;
 import com.gitlab.ardash.appleflinger.i18n.I18N;
 import com.gitlab.ardash.appleflinger.listeners.OnGameOverListener;
 import com.gitlab.ardash.appleflinger.missions.Mission;
@@ -262,8 +263,8 @@ final public class GameManager {
 		PLAYER2 = new PlayerStatus(PlayerSide.RIGHT);
 		previousRoundWinner = NONE;
 		wonRoundsInARow = 1;
-		PLAYER1.name = I18N.getString("player1"); //$NON-NLS-1$
-		PLAYER2.name = I18N.getString("player2"); //$NON-NLS-1$
+		PLAYER1.setName(Pref.getPlayer1name());
+		PLAYER2.setName(Pref.getPlayer2name());
 		
 		if (game!=null)
 			resetRound(mission);
