@@ -18,6 +18,8 @@ package com.gitlab.ardash.appleflinger.desktop;
 
 import com.badlogic.gdx.backends.lwjgl.LwjglApplication;
 import com.badlogic.gdx.backends.lwjgl.LwjglApplicationConfiguration;
+import com.badlogic.gdx.tools.texturepacker.TexturePacker;
+import com.badlogic.gdx.tools.texturepacker.TexturePacker.Settings;
 import com.gitlab.ardash.appleflinger.ActionResolver;
 import com.gitlab.ardash.appleflinger.AppleflingerGame;
 import com.gitlab.ardash.appleflinger.global.Assets;
@@ -73,6 +75,12 @@ public class DesktopLauncher implements ActionResolver{
 		{
 			System.err.println("ExceptionInInitializerError");
 		}
+	}
+	
+	@Override
+	public void restartMySelf() {
+		System.out.println("Cannot restart desktop app. Please start it again.");
+		System.exit(0);
 	}
 
 	@Override
