@@ -6,7 +6,7 @@ variables:
   ANDROID_SDK_TOOLS: "24.4.1"
 
 stages:
-  - licensecheck
+  - sanitychecks
   - build
   - test
 
@@ -36,7 +36,12 @@ licensecheck:
   script:
     - apt-get --quiet install --yes licensecheck
     - ./licensecheck.sh
-  stage: licensecheck
+  stage: sanitychecks
+
+validateI18N:
+  script:
+    - ./validateI18N.sh
+  stage: sanitychecks
 
 build_debug:
   script:
