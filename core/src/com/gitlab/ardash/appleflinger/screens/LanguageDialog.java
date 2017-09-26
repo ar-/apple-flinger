@@ -85,9 +85,7 @@ public class LanguageDialog extends Dialog{
                 	String languageCode = sa.name().replace("FLAG_", "").toLowerCase();
                 	I18N.loadLanguageBundle(languageCode);
                 }
-                hide();
                 GameManager.getInstance().getActionResolver().restartMySelf();
-                System.exit(0);
         	}
         });
 		return btn;
