@@ -88,7 +88,7 @@ public abstract class GenericScreen implements Screen{
 	        Label gameTitle;
 	        LabelStyle largelabelstyle = Assets.LabelStyleAsset.HEADLINE.style;
 	        gameTitle = new Label("Apple Flinger", largelabelstyle);   //$NON-NLS-1$
-	        gameTitle.setPosition(0, SCREEN_HEIGHT*0.75f);  
+	        gameTitle.setPosition(0, SCREEN_HEIGHT*0.73f);  
 	        gameTitle.setWidth(SCREEN_WIDTH);  
 	        gameTitle.setAlignment(Align.center);  
 	        guiStage.addActor(gameTitle);  
@@ -105,6 +105,15 @@ public abstract class GenericScreen implements Screen{
 	        }});
 	        btnSound.setChecked(!Pref.getSoundOn());
 	        
+	        SpriteButton btn_world = new SpriteButton(Assets.SpriteAsset.BTN_WORLD.get());
+	        btn_world.moveBy(SCREEN_WIDTH-400, SCREEN_HEIGHT-100);
+	        guiStage.addActor(btn_world);
+	        btn_world.addListener(new ClickListener(){@Override
+	        public void clicked(InputEvent event, float x, float y) {
+	        	super.clicked(event, x, y);
+	        	new LanguageDialog().show(guiStage);
+	        }});
+	
 	        SpriteButton btn_info = new SpriteButton(Assets.SpriteAsset.BTN_INFO.get());
 	        btn_info.moveBy(SCREEN_WIDTH-250, SCREEN_HEIGHT-100);
 	        guiStage.addActor(btn_info);

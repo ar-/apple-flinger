@@ -42,6 +42,7 @@ public interface ActionResolver {
 		}
 	}
 	
+	public void restartMySelf();
 	
 	public boolean twPostRecommendation();
 	public boolean fbPostRecommendation();

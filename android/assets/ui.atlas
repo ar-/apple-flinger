@@ -6,182 +6,203 @@ filter: Nearest,Nearest
 repeat: none
 btn_1player
   rotate: false
-  xy: 585, 708
+  xy: 585, 714
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 btn_2players
   rotate: false
-  xy: 204, 308
+  xy: 2, 112
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 btn_abort
   rotate: false
-  xy: 406, 510
+  xy: 204, 314
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 btn_achi
   rotate: false
-  xy: 2, 410
+  xy: 2, 416
   size: 200, 200
   orig: 200, 200
   offset: 0, 0
   index: -1
 btn_back
   rotate: false
-  xy: 687, 708
+  xy: 406, 516
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 btn_blank
   rotate: false
-  xy: 204, 206
+  xy: 687, 714
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 btn_close
   rotate: false
-  xy: 789, 708
+  xy: 2, 10
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 btn_fb
   rotate: false
-  xy: 204, 104
+  xy: 789, 714
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 btn_fl_empty
   rotate: false
-  xy: 585, 810
+  xy: 585, 816
   size: 200, 200
   orig: 200, 200
   offset: 0, 0
   index: -1
 btn_gp
   rotate: false
-  xy: 306, 308
+  xy: 104, 112
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 btn_info
   rotate: false
-  xy: 306, 206
+  xy: 104, 10
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 btn_joypad
   rotate: false
-  xy: 2, 208
+  xy: 2, 214
   size: 200, 200
   orig: 200, 200
   offset: 0, 0
   index: -1
 btn_leader
   rotate: false
-  xy: 204, 410
+  xy: 204, 416
   size: 200, 200
   orig: 200, 200
   offset: 0, 0
   index: -1
 btn_logout
   rotate: false
-  xy: 306, 104
+  xy: 306, 314
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 btn_pause
   rotate: false
-  xy: 891, 708
+  xy: 891, 714
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 btn_pi
   rotate: false
-  xy: 204, 2
+  xy: 585, 612
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 btn_play
   rotate: false
-  xy: 306, 2
+  xy: 687, 612
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 btn_refresh
   rotate: false
-  xy: 585, 606
+  xy: 789, 612
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 btn_settings
   rotate: false
-  xy: 687, 606
+  xy: 891, 612
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
-btn_signin
-  rotate: false
-  xy: 787, 810
-  size: 200, 200
-  orig: 200, 200
-  offset: 0, 0
-  index: -1
 btn_sound_off
   rotate: false
-  xy: 789, 606
+  xy: 206, 143
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 btn_sound_on
   rotate: false
-  xy: 891, 606
+  xy: 206, 41
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 btn_sq_empty
   rotate: false
-  xy: 2, 6
+  xy: 787, 816
   size: 200, 200
   orig: 200, 200
   offset: 0, 0
   index: -1
 btn_tw
   rotate: false
-  xy: 508, 504
+  xy: 408, 352
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+btn_world
+  rotate: false
+  xy: 408, 250
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 dialog
   rotate: false
-  xy: 2, 612
+  xy: 2, 618
   size: 581, 398
   orig: 581, 398
   offset: 0, 0
   index: -1
+flag_de
+  rotate: false
+  xy: 406, 454
+  size: 100, 60
+  orig: 100, 60
+  offset: 0, 0
+  index: -1
+flag_en
+  rotate: false
+  xy: 306, 262
+  size: 100, 50
+  orig: 100, 50
+  offset: 0, 0
+  index: -1
+flag_es
+  rotate: false
+  xy: 204, 245
+  size: 100, 67
+  orig: 100, 67
+  offset: 0, 0
+  index: -1
 sliderback
   rotate: false
-  xy: 989, 1004
+  xy: 2, 2
   size: 6, 6
   orig: 6, 6
   offset: 0, 0

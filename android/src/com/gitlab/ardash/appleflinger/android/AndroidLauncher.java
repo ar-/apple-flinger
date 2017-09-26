@@ -19,6 +19,9 @@ package com.gitlab.ardash.appleflinger.android;
 import java.util.List;
 
 import android.annotation.SuppressLint;
+import android.app.AlarmManager;
+import android.app.PendingIntent;
+import android.content.Context;
 import android.content.Intent;
 import android.content.pm.ResolveInfo;
 import android.net.Uri;
@@ -74,6 +77,15 @@ public class AndroidLauncher extends AndroidApplication implements ActionResolve
 		// System.out.println("nothing");
 	}
 
+	@Override
+	public void restartMySelf() {
+		Intent mStartActivity = new Intent(this.getContext(), AndroidLauncher.class);
+		int mPendingIntentId = 123456;
+		PendingIntent mPendingIntent = PendingIntent.getActivity(this.getContext(), mPendingIntentId,    mStartActivity, PendingIntent.FLAG_CANCEL_CURRENT);
+		AlarmManager mgr = (AlarmManager)this.getContext().getSystemService(Context.ALARM_SERVICE);
+		mgr.set(AlarmManager.RTC, System.currentTimeMillis() + 100, mPendingIntent);
+		System.exit(0);
+	}
 
 
 	@Override

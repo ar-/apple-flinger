@@ -19,8 +19,8 @@ package com.gitlab.ardash.appleflinger.i18n;
 import java.util.MissingResourceException;
 import java.util.ResourceBundle;
 
-import com.badlogic.gdx.Application.ApplicationType;
 import com.badlogic.gdx.Gdx;
+import com.gitlab.ardash.appleflinger.helpers.Pref;
 
 public class I18N {
 	
@@ -33,8 +33,13 @@ public class I18N {
 //	private static final ResourceBundle RESOURCE_BUNDLE = ResourceBundle.getBundle(BUNDLE_NAME);
 	
 	// the following line need to be in release, otherwise the class wont be found after optimization
-	private static final ResourceBundle RESOURCE_BUNDLE = ResourceBundle.getBundle (getBundleBaseName());
+	private static ResourceBundle RESOURCE_BUNDLE = ResourceBundle.getBundle (getBundleBaseName());
 
+	static
+	{
+		loadLanguageBundle(Pref.getLingo());
+	}
+	
 	private I18N() {
 	}
 	
@@ -57,6 +62,18 @@ public class I18N {
 		}
 //		return "com.gitlab.ardash.appleflinger.i18n.af";
 		throw new RuntimeException("Unknown application type " + Gdx.app.getType());
+	}
+	
+	public static void loadLanguageBundle(String languageCode)
+	{
+		Pref.setLingo(languageCode);
+		if (languageCode.equals(""))
+		{
+			// set to system default
+			RESOURCE_BUNDLE = ResourceBundle.getBundle (getBundleBaseName());
+			return;
+		}
+		RESOURCE_BUNDLE = ResourceBundle.getBundle (getBundleBaseName()+"_"+languageCode);
 	}
 
 	public static String getString(String key) {

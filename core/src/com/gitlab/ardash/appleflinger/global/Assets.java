@@ -45,7 +45,7 @@ import com.gitlab.ardash.appleflinger.screens.GameScreen;
 public class Assets {
 	
 	public enum LabelStyleAsset {
-		MINILABEL, MENUSTYLE, MISSIONNUMBER, HEADLINE, THNINKING;
+		MINILABEL, MENUSTYLE, BTN_LBL_I18N, MISSIONNUMBER, HEADLINE, THNINKING;
 		
 		public LabelStyle style;
 		static {
@@ -60,7 +60,12 @@ public class Assets {
 			MENUSTYLE.style.font = Assets.FontAsset.GRINCHED_73.font;
 			MENUSTYLE.style.fontColor=Color.WHITE;
 			MENUSTYLE.style.fontColor=new Color(1,1,1,0.8f);
-
+			
+			BTN_LBL_I18N.style = new LabelStyle();
+			BTN_LBL_I18N.style.font = Assets.FontAsset.GRINCHED_35.font;
+			BTN_LBL_I18N.style.fontColor=Color.WHITE;
+			BTN_LBL_I18N.style.fontColor=new Color(1,1,1,0.8f);
+			
 			MISSIONNUMBER.style = new LabelStyle();
 			MISSIONNUMBER.style.font = Assets.FontAsset.BURNSTOWNDAM_75.font;
 			MISSIONNUMBER.style.fontColor=Color.WHITE;
@@ -73,7 +78,7 @@ public class Assets {
 	}
 	
 	public enum FontAsset {
-		GRINCHED_73, BURNSTOWNDAM_216, BURNSTOWNDAM_75, NJNARUTO_72, CRASHLANDING_64;
+		GRINCHED_73, GRINCHED_35, BURNSTOWNDAM_216, BURNSTOWNDAM_75, NJNARUTO_72, CRASHLANDING_64;
 		
 		public BitmapFont font;
 		// init
@@ -81,6 +86,7 @@ public class Assets {
 			float FONT_SIZE_LARGE = 0.2f * GameScreen.SCREEN_HEIGHT;
 			float FONT_SIZE_MEDIUM = 0.09f * GameScreen.SCREEN_HEIGHT;
 			float FONT_SIZE_MEDIUM_73 = 0.07f * GameScreen.SCREEN_HEIGHT;
+			float FONT_SIZE_MEDIUM_35 = 0.035f * GameScreen.SCREEN_HEIGHT;
 			float FONT_SIZE_SMALL = 0.04f * GameScreen.SCREEN_HEIGHT;
 			FreeTypeFontGenerator generator;
 			FreeTypeFontParameter parameter;
@@ -116,6 +122,11 @@ public class Assets {
 			generator.scaleForPixelHeight((int)Math.ceil(FONT_SIZE_MEDIUM_73));
 			GRINCHED_73.font = generator.generateFont(parameter);
 			GRINCHED_73.font.getRegion().getTexture().setFilter(TextureFilter.Linear, TextureFilter.Linear);
+			
+			parameter.size = (int)Math.ceil(FONT_SIZE_MEDIUM_35);
+			generator.scaleForPixelHeight((int)Math.ceil(FONT_SIZE_MEDIUM_35));
+			GRINCHED_35.font = generator.generateFont(parameter);
+			GRINCHED_35.font.getRegion().getTexture().setFilter(TextureFilter.Linear, TextureFilter.Linear);
 			
 			generator = Assets.getFontGenerator(FontGeneratorAsset.NJNARUTO);
 			//parameter.color = Color.RED;
@@ -245,11 +256,13 @@ public class Assets {
 
 		DIALOG,
 		SLIDERBACK,
+		FLAG_DE,
+		FLAG_EN,
+		FLAG_ES,
 		BTN_INFO,
 		BTN_JOYPAD,
 		BTN_LEADER,
 		BTN_ACHI,
-		BTN_SIGNIN,
 		BTN_SQ_EMPTY,
 		BTN_FL_EMPTY,
 		BTN_TW,
@@ -267,7 +280,8 @@ public class Assets {
 		BTN_PAUSE,
 		BTN_REFRESH,
 		BTN_ABORT,
-		BTN_BLANK;
+		BTN_BLANK,
+		BTN_WORLD;
 		
 		static {
 			// init all sprites

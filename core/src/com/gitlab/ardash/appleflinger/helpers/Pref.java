@@ -41,6 +41,12 @@ public class Pref {
 	private static Float soundVol = null;
 	private static String player1name = null;
 	private static String player2name = null;
+	
+	/**
+	 * The selected language. Overrides the system language if selected.
+	 * System language is "".
+	 */
+	private static String lingo = null;
 	private static HashMap<Mission,Boolean> activatedLevels = new HashMap<Mission, Boolean>();
 
 	
@@ -130,6 +136,20 @@ public class Pref {
 	public static void setPlayer2Name(String aplayer2name) {
 		player2name = aplayer2name;
 		prefs.putString("player2name", player2name); //$NON-NLS-1$
+		prefs.flush();
+	}
+
+	public static String getLingo() {
+		if (lingo == null)
+		{
+			lingo = prefs.getString("lingo", "");
+		}
+		return lingo;
+	}
+	
+	public static void setLingo(String alingo) {
+		lingo = alingo;
+		prefs.putString("lingo", lingo);
 		prefs.flush();
 	}
 
