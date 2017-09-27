@@ -85,7 +85,7 @@ public class SlingShotActor extends Group {
 		this.addActor(rubber2);
 		
         Texture fronttex = Assets.getTexture(TextureAsset.SLINGSHOTF);  
-		//CRASHLANDING_64.font.getRegion().getTexture().setFilter(TextureFilter.Linear, TextureFilter.Linear);
+		//FLINGER_D64_B2_WB_DIAG_MINIL.font.getRegion().getTexture().setFilter(TextureFilter.Linear, TextureFilter.Linear);
 
         fronttex.setFilter(TextureFilter.Linear, TextureFilter.Linear);
 		Image front = new Image();

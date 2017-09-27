@@ -45,26 +45,21 @@ import com.gitlab.ardash.appleflinger.screens.GameScreen;
 public class Assets {
 	
 	public enum LabelStyleAsset {
-		MINILABEL, MENUSTYLE, BTN_LBL_I18N, MISSIONNUMBER, HEADLINE, THNINKING;
+		MINILABEL,
+		BIGMENUSTYLE,
+		MISSIONNUMBER, HEADLINE;
 		
 		public LabelStyle style;
 		static {
 			MINILABEL.style = new LabelStyle();
-			MINILABEL.style.font = Assets.FontAsset.CRASHLANDING_64.font;
+			MINILABEL.style.font = Assets.FontAsset.FLINGER_D64_B2_WB_DIAG_MINIL.font;
 			MINILABEL.style.fontColor=Color.WHITE;
 			
-			THNINKING.style = new LabelStyle(MINILABEL.style);
-			THNINKING.style.fontColor=Color.BLACK;
 
-			MENUSTYLE.style = new LabelStyle();
-			MENUSTYLE.style.font = Assets.FontAsset.GRINCHED_73.font;
-			MENUSTYLE.style.fontColor=Color.WHITE;
-			MENUSTYLE.style.fontColor=new Color(1,1,1,0.8f);
-			
-			BTN_LBL_I18N.style = new LabelStyle();
-			BTN_LBL_I18N.style.font = Assets.FontAsset.GRINCHED_35.font;
-			BTN_LBL_I18N.style.fontColor=Color.WHITE;
-			BTN_LBL_I18N.style.fontColor=new Color(1,1,1,0.8f);
+			BIGMENUSTYLE.style = new LabelStyle();
+			BIGMENUSTYLE.style.font = Assets.FontAsset.FLINGER_B73_B4_WB_BIGMENU.font;
+			BIGMENUSTYLE.style.fontColor=Color.WHITE;
+			BIGMENUSTYLE.style.fontColor=new Color(1,1,1,0.8f);
 			
 			MISSIONNUMBER.style = new LabelStyle();
 			MISSIONNUMBER.style.font = Assets.FontAsset.BURNSTOWNDAM_75.font;
@@ -78,29 +73,27 @@ public class Assets {
 	}
 	
 	public enum FontAsset {
-		GRINCHED_73, GRINCHED_35, BURNSTOWNDAM_216, BURNSTOWNDAM_75, NJNARUTO_72, CRASHLANDING_64;
+		FLINGER_B73_B4_WB_BIGMENU, 
+		BURNSTOWNDAM_216, BURNSTOWNDAM_75, 
+		FLINGER_A75_B5_WB_POINT_POP,
+		FLINGER_D64_B2_WB_DIAG_MINIL;
 		
 		public BitmapFont font;
 		// init
 		static {
 			float FONT_SIZE_LARGE = 0.2f * GameScreen.SCREEN_HEIGHT;
-			float FONT_SIZE_MEDIUM = 0.09f * GameScreen.SCREEN_HEIGHT;
-			float FONT_SIZE_MEDIUM_73 = 0.07f * GameScreen.SCREEN_HEIGHT;
-			float FONT_SIZE_MEDIUM_35 = 0.035f * GameScreen.SCREEN_HEIGHT;
-			float FONT_SIZE_SMALL = 0.04f * GameScreen.SCREEN_HEIGHT;
+			float FONT_SIZE_MEDIUM_A75 = 0.09f * GameScreen.SCREEN_HEIGHT;
+			float FONT_SIZE_MEDIUM_B73 = 0.05f * GameScreen.SCREEN_HEIGHT;
+			float FONT_SIZE_SMALL_D64 = 0.03f * GameScreen.SCREEN_HEIGHT;
 			FreeTypeFontGenerator generator;
 			FreeTypeFontParameter parameter;
 			generator = Assets.getFontGenerator(FontGeneratorAsset.BURNSTOWNDAM);
 			parameter = new FreeTypeFontParameter();
 			parameter.minFilter = Texture.TextureFilter.Nearest;
 			parameter.magFilter = Texture.TextureFilter.MipMapLinearNearest;
-			//parameter.size = FONT_SIZE_LARGE; // 72*3
 			parameter.size = (int)Math.ceil(FONT_SIZE_LARGE);
 			generator.scaleForPixelHeight((int)Math.ceil(FONT_SIZE_LARGE));
 			
-//			parameter.borderColor = Color.WHITE;
-//			parameter.borderStraight=false;
-//			parameter.borderWidth=0.1f;
 			parameter.borderColor = Color.WHITE;
 			parameter.borderStraight=false;
 			parameter.borderWidth=0.1f;
@@ -109,44 +102,31 @@ public class Assets {
 			BURNSTOWNDAM_216.font.getRegion().getTexture().setFilter(TextureFilter.Linear, TextureFilter.Linear);
 			
 			
-			parameter.size = (int)Math.ceil(FONT_SIZE_MEDIUM);
-			generator.scaleForPixelHeight((int)Math.ceil(FONT_SIZE_MEDIUM));
+			parameter.size = (int)Math.ceil(FONT_SIZE_MEDIUM_A75);
+			generator.scaleForPixelHeight((int)Math.ceil(FONT_SIZE_MEDIUM_A75));
 			BURNSTOWNDAM_75.font = generator.generateFont(parameter);
 			BURNSTOWNDAM_75.font.getRegion().getTexture().setFilter(TextureFilter.Linear, TextureFilter.Linear);
 
-			generator = Assets.getFontGenerator(FontGeneratorAsset.GRINCHED);
+			generator = Assets.getFontGenerator(FontGeneratorAsset.FLINGER);
 			parameter.borderColor = Color.BLACK;
 			parameter.borderStraight=false;
 			parameter.borderWidth=4f;
-			parameter.size = (int)Math.ceil(FONT_SIZE_MEDIUM_73);
-			generator.scaleForPixelHeight((int)Math.ceil(FONT_SIZE_MEDIUM_73));
-			GRINCHED_73.font = generator.generateFont(parameter);
-			GRINCHED_73.font.getRegion().getTexture().setFilter(TextureFilter.Linear, TextureFilter.Linear);
+			parameter.size = (int)Math.ceil(FONT_SIZE_MEDIUM_B73);
+			generator.scaleForPixelHeight((int)Math.ceil(FONT_SIZE_MEDIUM_B73));
+			FLINGER_B73_B4_WB_BIGMENU.font = generator.generateFont(parameter);
+			FLINGER_B73_B4_WB_BIGMENU.font.getRegion().getTexture().setFilter(TextureFilter.Linear, TextureFilter.Linear);
 			
-			parameter.size = (int)Math.ceil(FONT_SIZE_MEDIUM_35);
-			generator.scaleForPixelHeight((int)Math.ceil(FONT_SIZE_MEDIUM_35));
-			GRINCHED_35.font = generator.generateFont(parameter);
-			GRINCHED_35.font.getRegion().getTexture().setFilter(TextureFilter.Linear, TextureFilter.Linear);
-			
-			generator = Assets.getFontGenerator(FontGeneratorAsset.NJNARUTO);
-			//parameter.color = Color.RED;
-			parameter.borderColor = Color.BLACK;
-			parameter.borderStraight=false;
 			parameter.borderWidth=5f;
-			parameter.size = (int)Math.ceil(FONT_SIZE_MEDIUM);
-			generator.scaleForPixelHeight((int)Math.ceil(FONT_SIZE_MEDIUM));
-			NJNARUTO_72.font = generator.generateFont(parameter);
-			NJNARUTO_72.font.getRegion().getTexture().setFilter(TextureFilter.Linear, TextureFilter.Linear);
+			parameter.size = (int)Math.ceil(FONT_SIZE_MEDIUM_A75);
+			generator.scaleForPixelHeight((int)Math.ceil(FONT_SIZE_MEDIUM_A75));
+			FLINGER_A75_B5_WB_POINT_POP.font = generator.generateFont(parameter);
+			FLINGER_A75_B5_WB_POINT_POP.font.getRegion().getTexture().setFilter(TextureFilter.Linear, TextureFilter.Linear);
 
-			generator = Assets.getFontGenerator(FontGeneratorAsset.CRASHLANDING);
-			//parameter.color = Color.WHITE;
-			parameter.borderColor = Color.BLACK;
-			parameter.borderStraight=false;
 			parameter.borderWidth=2f;
-			parameter.size = (int)Math.ceil(FONT_SIZE_SMALL);
-			generator.scaleForPixelHeight((int)Math.ceil(FONT_SIZE_SMALL));
-			CRASHLANDING_64.font = generator.generateFont(parameter);
-			CRASHLANDING_64.font.getRegion().getTexture().setFilter(TextureFilter.Linear, TextureFilter.Linear);
+			parameter.size = (int)Math.ceil(FONT_SIZE_SMALL_D64);
+			generator.scaleForPixelHeight((int)Math.ceil(FONT_SIZE_SMALL_D64));
+			FLINGER_D64_B2_WB_DIAG_MINIL.font = generator.generateFont(parameter);
+			FLINGER_D64_B2_WB_DIAG_MINIL.font.getRegion().getTexture().setFilter(TextureFilter.Linear, TextureFilter.Linear);
 }
 		@Override
 		public String toString() {
@@ -155,7 +135,7 @@ public class Assets {
 	}
 
 	public enum FontGeneratorAsset {
-		BURNSTOWNDAM, NJNARUTO, CRASHLANDING, GRINCHED;
+		BURNSTOWNDAM, FLINGER;
 		@Override
 		public String toString() {
 			return "" + super.toString().toLowerCase() + ".ttf"; // "njnaruto.ttf" //$NON-NLS-1$ //$NON-NLS-2$
@@ -684,7 +664,7 @@ public class Assets {
 //				params.fontFileName = FontGeneratorAsset.BURNSTOWNDAM.toString();
 //				params.fontParameters.size = 216;
 //				break;
-//			case NJNARUTO_72:
+//			case FLINGER_A75_B5_WB_POINT_POP:
 //				params.fontFileName = FontGeneratorAsset.NJNARUTO.toString();
 //				params.fontParameters.size = 72;
 //				// TODO params not supported yet - enable this function when they work

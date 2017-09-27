@@ -83,7 +83,7 @@ public class PauseScreenActor extends Group{
         }});
 
         // continue btn
-        labelstyle.font = Assets.FontAsset.GRINCHED_73.font;
+        labelstyle.font = Assets.FontAsset.FLINGER_B73_B4_WB_BIGMENU.font;
         Sprite smallPlay = new Sprite(Assets.SpriteAsset.BTN_PLAY.get());
         smallPlay.setSize(100,100);
         SpriteButton btn1 = new SpriteButton(smallPlay);

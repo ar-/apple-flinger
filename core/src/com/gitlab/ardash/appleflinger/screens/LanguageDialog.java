@@ -38,7 +38,7 @@ public class LanguageDialog extends Dialog{
 
 	public LanguageDialog() {
 		super("", new WindowStyle( //$NON-NLS-1$
-				Assets.FontAsset.CRASHLANDING_64.font,Color.WHITE,
+				Assets.FontAsset.FLINGER_D64_B2_WB_DIAG_MINIL.font,Color.WHITE,
 				new TextureRegionDrawable(new TextureRegion(Assets.getTexture(Assets.TextureAsset.LARGE_DIALOG)))
 				));
 		setModal(true);
@@ -70,7 +70,7 @@ public class LanguageDialog extends Dialog{
 	private SpriteButton makeLingoButton(final Assets.SpriteAsset sa, String lbl) {
 		SpriteButton btn = new SpriteButton(sa.get());
         btn.setText("\n"+lbl);
-        btn.setLabelStyle(Assets.LabelStyleAsset.BTN_LBL_I18N.style);
+        btn.setLabelStyle(Assets.LabelStyleAsset.MINILABEL.style);
         
         btn.addListener(new ClickListener(){
         	@Override
