@@ -57,7 +57,7 @@ public class PhysicWorldObserver {
 		// TODO change this ot makes the onPhysicStarted listener obsolete until now
 		if (! (GameManager.getInstance().getGameState()==GameState.WAIT_FOR_PHYSICS) )
 			return;
-		final Array<Body> ba =new Array();
+		final Array<Body> ba =new Array<Body>();
 		physicWorld.getBodies(ba);
 		// first check change in size
 		if (ba.size != transforms.size())

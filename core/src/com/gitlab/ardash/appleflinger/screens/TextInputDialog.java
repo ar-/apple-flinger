@@ -45,7 +45,7 @@ public class TextInputDialog extends Dialog{
 	public TextInputDialog() 
 	{
 		super("", new WindowStyle( //$NON-NLS-1$
-				Assets.FontAsset.CRASHLANDING_64.font,Color.WHITE,
+				Assets.FontAsset.FLINGER_03_B2_DIAG_MINIL.font,Color.WHITE,
 				new TextureRegionDrawable(new TextureRegion(Assets.getTexture(Assets.TextureAsset.LARGE_DIALOG)))
 				));
 		setModal(true);

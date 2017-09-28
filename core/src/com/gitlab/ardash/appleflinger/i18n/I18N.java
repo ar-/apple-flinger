@@ -19,6 +19,7 @@ package com.gitlab.ardash.appleflinger.i18n;
 import java.util.MissingResourceException;
 import java.util.ResourceBundle;
 
+import com.badlogic.gdx.Files.FileType;
 import com.badlogic.gdx.Gdx;
 import com.gitlab.ardash.appleflinger.helpers.Pref;
 
@@ -47,12 +48,13 @@ public class I18N {
 	{
 		switch (Gdx.app.getType()) {
 		case Android:
+//			return "af";
 			return "assets/af";
 		case Applet:
 			return "";
 		case Desktop:
-//			return "com.gitlab.ardash.appleflinger.i18n.af";
 			return "af";
+//			return "assets/af";
 		case HeadlessDesktop:
 			return "assets/af";
 		case WebGL:
@@ -60,36 +62,37 @@ public class I18N {
 		case iOS:
 			return "";
 		}
-//		return "com.gitlab.ardash.appleflinger.i18n.af";
 		throw new RuntimeException("Unknown application type " + Gdx.app.getType());
 	}
 	
 	public static void loadLanguageBundle(String languageCode)
 	{
 		Pref.setLingo(languageCode);
+		String bundleName;
 		if (languageCode.equals(""))
 		{
 			// set to system default
-			RESOURCE_BUNDLE = ResourceBundle.getBundle (getBundleBaseName());
-			return;
+			bundleName = getBundleBaseName();
 		}
-		RESOURCE_BUNDLE = ResourceBundle.getBundle (getBundleBaseName()+"_"+languageCode);
+		else
+		{
+			bundleName = getBundleBaseName()+"_"+languageCode;
+		}
+		RESOURCE_BUNDLE = ResourceBundle.getBundle(bundleName,   
+				new GdxFileControl("UTF-8", FileType.Classpath));
 	}
 
 	public static String getString(String key) {
-		try {
-			return RESOURCE_BUNDLE.getString(key);
-		} catch (MissingResourceException e) {
-			return '!' + key + '!';
-		}
+		return s(key);
 	}
 	
 	public static String s(String key) {
 		try {
-			return RESOURCE_BUNDLE.getString(key);
+			String val = RESOURCE_BUNDLE.getString(key);
+			return val;
 		} catch (MissingResourceException e) {
 			return '!' + key + '!';
-		}
+		} 
 	}
 	
 	public static String g(k key) {

@@ -32,7 +32,7 @@ public class QuitDialog extends Dialog{
 	private Image backgrPixel;
 
 	public QuitDialog() {
-		super("", new WindowStyle(Assets.FontAsset.CRASHLANDING_64.font,Color.WHITE,new TextureRegionDrawable(Assets.SpriteAsset.DIALOG.get()))); //$NON-NLS-1$
+		super("", new WindowStyle(Assets.FontAsset.FLINGER_03_B2_DIAG_MINIL.font,Color.WHITE,new TextureRegionDrawable(Assets.SpriteAsset.DIALOG.get()))); //$NON-NLS-1$
 		setModal(true);
 		setMovable(false);
 		setResizable(false);

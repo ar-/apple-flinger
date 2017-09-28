@@ -107,7 +107,7 @@ public class GameScreen implements Screen {
 	private Label createMiniLabel(CharSequence text)
 	{
 		final LabelStyle ministyle = new LabelStyle();
-		ministyle.font = Assets.FontAsset.CRASHLANDING_64.font;
+		ministyle.font = Assets.FontAsset.FLINGER_03_B2_DIAG_MINIL.font;
 		ministyle.fontColor = new Color(1, 1, 1, 0.8f);
 		final Label labelPointsTop = new Label(text, ministyle);
 		labelPointsTop.setTouchable(Touchable.disabled);
@@ -118,7 +118,7 @@ public class GameScreen implements Screen {
 	 * 
 	 */
 	private void buildGameGUI() {
-        LabelStyle labelstyle = Assets.LabelStyleAsset.MENUSTYLE.style;
+        LabelStyle labelstyle = Assets.LabelStyleAsset.BIGMENUSTYLE.style;
 //        float lineheight = labelstyle.font.getAscent()+labelstyle.font.getDescent()+labelstyle.font.getCapHeight()+labelstyle.font.getLineHeight();
         float lineheight = labelstyle.font.getLineHeight()+26;
         
@@ -295,7 +295,7 @@ public class GameScreen implements Screen {
         btnSound.setChecked(!Pref.getSoundOn());
 
         LabelStyle ministyle = new LabelStyle();
-        ministyle.font = Assets.FontAsset.CRASHLANDING_64.font;
+        ministyle.font = Assets.FontAsset.FLINGER_03_B2_DIAG_MINIL.font;
         ministyle.fontColor = new Color(1, 1, 1, 0.8f);
 
         labelAllPointsP1 = createMiniLabel(gm.PLAYER1.getAllPoints()+""); //$NON-NLS-1$

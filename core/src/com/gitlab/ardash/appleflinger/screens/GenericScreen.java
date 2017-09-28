@@ -77,7 +77,7 @@ public abstract class GenericScreen implements Screen{
 	 * 
 	 */
 	protected void buildGameGUI() {
-	        menustyle = Assets.LabelStyleAsset.MENUSTYLE.style;
+	        menustyle = Assets.LabelStyleAsset.BIGMENUSTYLE.style;
         
 	        Image background = new Image(Assets.getTexture(TextureAsset.BACKGR));
 	        background.setAlign(Align.center);
