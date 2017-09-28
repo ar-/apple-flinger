@@ -33,7 +33,7 @@ public class CreditsDialog extends Dialog{
 
 	public CreditsDialog() {
 		super("", new WindowStyle( //$NON-NLS-1$
-				Assets.FontAsset.FLINGER_D64_B2_WB_DIAG_MINIL.font,Color.WHITE,
+				Assets.FontAsset.FLINGER_03_B2_DIAG_MINIL.font,Color.WHITE,
 				new TextureRegionDrawable(new TextureRegion(Assets.getTexture(Assets.TextureAsset.LARGE_DIALOG)))
 				));
 		setModal(true);

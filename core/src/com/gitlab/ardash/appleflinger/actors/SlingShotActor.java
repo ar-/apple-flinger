@@ -85,7 +85,6 @@ public class SlingShotActor extends Group {
 		this.addActor(rubber2);
 		
         Texture fronttex = Assets.getTexture(TextureAsset.SLINGSHOTF);  
-		//FLINGER_D64_B2_WB_DIAG_MINIL.font.getRegion().getTexture().setFilter(TextureFilter.Linear, TextureFilter.Linear);
 
         fronttex.setFilter(TextureFilter.Linear, TextureFilter.Linear);
 		Image front = new Image();
@@ -95,7 +94,6 @@ public class SlingShotActor extends Group {
 		front.setAlign(Align.center);
 		front.setTouchable(Touchable.disabled);
 		this.addActor(front);
-//		this.addActor(new Actor());
 
         this.setPosition(x, y); // set the actor position at the box2d body position 
 		rubber1.from.set(getSlingShotBackJoint());

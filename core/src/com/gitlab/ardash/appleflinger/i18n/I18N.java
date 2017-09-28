@@ -16,7 +16,6 @@
  ******************************************************************************/
 package com.gitlab.ardash.appleflinger.i18n;
 
-import java.io.UnsupportedEncodingException;
 import java.util.MissingResourceException;
 import java.util.ResourceBundle;
 
@@ -79,10 +78,8 @@ public class I18N {
 		{
 			bundleName = getBundleBaseName()+"_"+languageCode;
 		}
-//		RESOURCE_BUNDLE = ResourceBundle.getBundle (bundleName);
 		RESOURCE_BUNDLE = ResourceBundle.getBundle(bundleName,   
-//	            new GdxFileControl("ISO-8859-1", FileType.Internal));
-        new GdxFileControl("UTF-8", FileType.Classpath));
+				new GdxFileControl("UTF-8", FileType.Classpath));
 	}
 
 	public static String getString(String key) {
@@ -92,15 +89,10 @@ public class I18N {
 	public static String s(String key) {
 		try {
 			String val = RESOURCE_BUNDLE.getString(key);
-//			String s = new String(val.getBytes("ISO-8859-1"), "UTF-8");
-//			return s;
 			return val;
 		} catch (MissingResourceException e) {
 			return '!' + key + '!';
 		} 
-//			catch (UnsupportedEncodingException e) {
-//			throw new RuntimeException(e);
-//		}
 	}
 	
 	public static String g(k key) {
