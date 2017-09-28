@@ -55,6 +55,15 @@ do
 	[[ $NUM -eq $number_of_ins ]] || echo ERROR $pro contains $NUM lines, but in java code there are $number_of_ins references | tee -a $error_file
 done
 
+# check file encoding. must be UTF-8
+echo 
+echo checking file encodings to be UTF8
+file -L android/assets/af*.properties 
+wrong_file_enc_count=`file -L android/assets/af*.properties | egrep -v "UTF-8 Unicode text|ASCII text" | wc -l`
+[[ $wrong_file_enc_count -eq "0" ]] || echo "ERROR at least one file ($wrong_file_enc_count) is not UTF-8, please run: iconv -f ISO-8859-15 -t UTF-8 android/assets/af_de.properties > tmp.properties" | tee -a $error_file
+echo 
+file -L android/assets/af*.properties | egrep -v "UTF-8 Unicode text|ASCII text"
+
 echo 
 
 error_count=`cat $error_file | wc -l`
