@@ -102,4 +102,6 @@ fdroid_build:
     - cat build.log
     - bash -c "exit `grep 'BUILD FAILED' build.log | wc -l`"
   stage: test
+  except:
+    - google-play
 
