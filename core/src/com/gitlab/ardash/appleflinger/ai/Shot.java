@@ -24,10 +24,7 @@ import com.badlogic.gdx.math.Vector2;
 	 * 
 	 */
 	class Shot implements Comparable<Shot> {
-		/**
-		 * 
-		 */
-//		private final PlayerSimulator playerSimulatorShot;
+
 		public final long targetID;
 		public final long executorRoundID; // the round that this shot has been added in (to delete old ones)
 		public Vector2 pullVector = new Vector2();

@@ -43,10 +43,10 @@ final public class GameManager {
 //	public static final boolean DEBUGZOOM = true;
 	public static final boolean SANDBOX = false;
 //	public static final boolean SANDBOX = true;
-	public static final boolean ALLLEVELS = false;
-//	public static final boolean ALLLEVELS = true;
-	public static final boolean NOADS = false;
-//	public static final boolean NOADS = true;
+//	public static final boolean ALLLEVELS = false;
+	public static final boolean ALLLEVELS = true;
+//	public static final boolean RECORDSHOTS = false;
+	public static final boolean RECORDSHOTS = true;
 	private GameState gameState;
 	public PlayerStatus NONE;
 	public PlayerStatus PLAYER1;

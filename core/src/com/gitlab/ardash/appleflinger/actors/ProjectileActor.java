@@ -38,7 +38,7 @@ import com.gitlab.ardash.appleflinger.helpers.SoundPlayer;
 import com.gitlab.ardash.appleflinger.i18n.I18N;
 
 /**
- * contains the functionality to expire (disapprear after time, becasue this is currently the only one who can expire
+ * contains the functionality to expire (disapprear after time, because this is currently the only one who can expire
  *
  */
 public class ProjectileActor extends CircleActor {
@@ -48,23 +48,18 @@ public class ProjectileActor extends CircleActor {
 	 */
 	private SlingShotActor slingShotActor;
 	
-//	private final float shotForceMultiplyer = 5000f; // good value for normal gravity
 	private final float shotForceMultiplyer = 4000f; // good for adjusted gravity
-//	private final float shotForceMultiplyer = 4500; // good value for normal gravity with higher slingshots
-	
 	private final float maxPullDistance = 0.8f; // good for adjusted gravity
 	
 	private static final float maxLifetime = 10f;
 	private float lifetime = 0;
 	private boolean lifetimeStarted = false;
-	
-
 
 	public ProjectileActor(final GameWorld world, MaterialConfig mc, float x,
 			float y, float diameter, BodyType bodyType) {
 		super(world, mc, x, y, diameter, bodyType);
 		
-		// TODO projectiles can be set to damageble here
+		// projectiles can be set to damageble here
 		setDamagable(false);
 		
 		Texture tex = Assets.getTexture(TextureAsset.APPLE);  
@@ -72,9 +67,6 @@ public class ProjectileActor extends CircleActor {
         this.setScaling(Scaling.stretch); // stretch the texture  
         this.setAlign(Align.center);  
 
-		// TODO change to Bullet if it is cooler
-		//body.setBullet(true);
-		// initially no gravity
 		body.setGravityScale(0);
 
 		//reference for the listener
@@ -113,29 +105,11 @@ public class ProjectileActor extends CircleActor {
 				
 				final Vector2 rampCenterPoint = slingShotActor.getSlingShotCenter();
 				
-//				GameManager.getInstance().setGameState(GameState.DRAGGING);
-        		//world.isActorHandlingDrag = true;
         		event.setBubbles(false);
-				
-				
-				//System.out.println("drag"+x +","+y  +","+pointer);
-//        		if (event.getStageX()==1)
-//            		if (event.getStageY()==1)
-//				System.out.println("drag "+event.getStageX() +","+event.getStageY()  +","+pointer + " ev:"+event.getRelatedActor());
+
 				final Vector2 moveTarget= new Vector2(event.getStageX(), event.getStageY());
-				//body.applyForceToCenter(x, y, true);
-////				//body.applyAngularImpulse(10.1f, true);
-////				// don't use the angle otherwise a rotated object moves wrongly
-//				body.setTransform(body.getTransform().getPosition().add(new Vector2(x,y)),body.getAngle());
-////				
-				// moveTarget comes in gloabl coords
-				// because this position changes forcefully, we use lastTouchPos as reference
-				//final Vector2 moveVector = body.getTransform().getPosition().cpy().sub(moveTarget);
-//				final Vector2 rampPos = new Vector2(world.rampCenter.getX()+ world.rampCenter.getOriginX(),world.rampCenter.getY()+world.rampCenter.getOriginY());
 				final Vector2 moveVector = moveTarget.cpy().sub(rampCenterPoint);
-				//System.out.println("moveVector"+moveVector);
 				final float rampDist = rampCenterPoint.dst(moveTarget);
-				final float movedist = moveVector.len();
 				if (Math.abs(rampDist)>maxPullDistance)
 				{
 					// too far
@@ -170,30 +144,15 @@ public class ProjectileActor extends CircleActor {
 				reAddPhysics();
 				body.setGravityScale(1.0f);
 				
-				// impulse is a force for exactly one frame
-//				float velChange = 0.8f;
-//				float force = 60 * velChange / (1/60.0f); //f = mv/t;
-//			    float impulse = body.getMass() * 0.8f; //disregard time factor
-//			    body->ApplyLinearImpulse( b2Vec2(impulse,0), body->GetWorldCenter() );
-			    // impule does it only for one frame and then slows down
-				//body.applyLinearImpulse(shootDirection.nor().scl(impulse),body.getWorldCenter(), true);
-				//body.applyForceToCenter()
-				
-//				System.err.println("Applying "+shootDirection.cpy().nor().scl(force) + " len: "+shootDirection.cpy().nor().scl(force).len()+ " ang: "+(180f-shootDirection.angle()));
-	/*WORKING*/	body.applyForceToCenter(shootDirection.scl(shotForceMultiplyer), true);
-//				body.applyForceToCenter(shootDirection.nor().scl(force), true);
-			
-				
-				//System.out.println("MUL Applying "+shootDirection + " len: "+shootDirection.len()+ " mass: "+body.getMass());
-				//body.applyLinearImpulse(shootDirection.scl(100), new Vector2(0.4f,0.4f), true);
-//				body.setLinearVelocity(shootDirection);
-//				body.setAwake(true);
+				if (gm.RECORDSHOTS)
+					System.err.println("Applying "+shootDirection + " len: ");
+				body.applyForceToCenter(shootDirection.scl(shotForceMultiplyer), true);
+
 				gm.setGameState(GameState.WAIT_FOR_PHYSICS);
 				world.continuePhysics();
 				final OrthographicCamera camera = gm.currentGameScreen.getRenderer().getCamera();
 				camera.position.set(GameWorld.UNIT_WIDTH/2f, GameWorld.UNIT_HEIGHT/2f,0);
 				startLifetime();
-        		//world.isActorHandlingDrag = false;
         		if (slingShotActor != null)
         			slingShotActor.releaseProjectile();
 			}
@@ -201,50 +160,29 @@ public class ProjectileActor extends CircleActor {
 
 	}
 	
-//	protected void resetPhysics() {
-//			BodyDef bodyDef = new BodyDef();
-//			bodyDef.type = body.getType();  
-//			bodyDef.position.x = body.getTransform().getPosition().x;  
-//			bodyDef.position.y = body.getTransform().getPosition().y;  
-//			bodyDef.linearDamping = body.getLinearDamping();  
-//			bodyDef.angularDamping = body.getAngularDamping();  
-//			world.box2dWorld.destroyBody(body);
-//			world.box2dWorld.createBody(bodyDef);
-//		
-//	}
-
 	@Override  
     public void act(float delta) {  
         // here we override Actor's act() method to make the actor follow the box2d body  
         super.act(delta);
-        // TODO projectiles can be made not-rotating here
+        // projectiles can be made not-rotating here
         // setRotation(0);  
-        //System.out.println("Projectile is here: "+getX()+","+getY()+ " LT: "+lifetime);
-        //System.out.println("Projectile speed: "+body.getLinearVelocity()+","+body.getLinearVelocity().len());//+ " LT: "+lifetime);
-//        if (!body.getLinearVelocity().epsilonEquals(0, 0, 0.0001f))
-//        	Gdx.app.exit();
-        //body.setLinearVelocity(v);
         if (lifetimeStarted)
         {
         	lifetime+=delta;
         	killIfLifetimeExpired();
         }
-        
-        // print velocity in the first frame of lifetime
-//        if (lifetime>0.f && lifetime<=0.04f)
-//        	System.err.println("Velocity "+body.getLinearVelocity().len());
-        
+
+        if (GameManager.DEBUG)
+        {
+        	// print velocity in the first frame of lifetime
+	        if (lifetime>0.f && lifetime<=0.04f)
+	        	System.err.println("Velocity "+body.getLinearVelocity().len());
+        }
     }
 	
 	@Override
 	public void setPosition(float x, float y) {
-		// TODO Auto-generated method stub
 		super.setPosition(x, y);
-        //DONE DEBUG check who sets the projectile above the slingshot
-//		if (slingShotActor!=null)
-//        if (getY()>slingShotActor.getSlingShotCenter().y+0.5f)
-//        	System.out.println("ddd");
-
 	}
 	
 	@Override
