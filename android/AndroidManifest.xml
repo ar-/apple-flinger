@@ -16,10 +16,9 @@
   along with this program.  If not, see <http://www.gnu.org/licenses/>.
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.gitlab.ardash.appleflinger.android"
+    package="com.ardash.appleflinger.android"
     android:versionCode="17"
     android:versionName="1.4.0" >
-
     <uses-sdk android:minSdkVersion="9" android:targetSdkVersion="22" />
 
     <application
@@ -30,7 +29,7 @@
         <meta-data android:name="com.google.android.gms.games.APP_ID" android:value="@string/app_id" />
 
         <activity
-            android:name="com.gitlab.ardash.appleflinger.android.AndroidLauncher"
+            android:name="com.ardash.appleflinger.android.AndroidLauncher"
             android:label="@string/app_name" 
             android:screenOrientation="sensorLandscape"
             android:configChanges="keyboard|keyboardHidden|orientation|screenSize">
