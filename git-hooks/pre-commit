@@ -1,0 +1,8 @@
+#!/bin/bash
+#tf=`tempfile`
+#gpg --debug-all --clearsign $tf
+#gpg --clearsign $tf || exit 1
+#rm -f $tf*
+./licensecheck.sh || exit 1
+./validateI18N.sh || exit 1
+./gradlew tests:test --info || exit 1
