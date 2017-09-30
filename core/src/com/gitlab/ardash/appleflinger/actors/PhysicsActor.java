@@ -33,11 +33,11 @@ import com.badlogic.gdx.scenes.scene2d.ui.Label;
 import com.badlogic.gdx.scenes.scene2d.utils.TextureRegionDrawable;
 import com.gitlab.ardash.appleflinger.GameWorld;
 import com.gitlab.ardash.appleflinger.global.Assets;
-import com.gitlab.ardash.appleflinger.global.GameManager;
-import com.gitlab.ardash.appleflinger.global.MaterialConfig;
 import com.gitlab.ardash.appleflinger.global.Assets.ParticleAsset;
 import com.gitlab.ardash.appleflinger.global.Assets.SoundGroupAsset;
 import com.gitlab.ardash.appleflinger.global.Assets.SpriteGroupAsset;
+import com.gitlab.ardash.appleflinger.global.GameManager;
+import com.gitlab.ardash.appleflinger.global.MaterialConfig;
 import com.gitlab.ardash.appleflinger.helpers.LinearInterpolator;
 import com.gitlab.ardash.appleflinger.helpers.SoundPlayer;
 
@@ -281,7 +281,7 @@ public abstract class PhysicsActor extends Image {
 			return;
 		}
 		
-		if (initialHealth<=0) // this is also non-destrucable, but also prevents division by 0
+		if (initialHealth<=0) // this is also non-destructable, but also prevents division by 0
 			return;
         final float maxPossibleDmg = health;
         // apply only as much dmg as HP are left

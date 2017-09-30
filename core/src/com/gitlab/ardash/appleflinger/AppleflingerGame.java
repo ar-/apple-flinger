@@ -21,7 +21,6 @@ import com.badlogic.gdx.Game;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Screen;
 import com.badlogic.gdx.utils.TimeUtils;
-import com.gitlab.ardash.appleflinger.ai.PlayerSimulator;
 import com.gitlab.ardash.appleflinger.global.Assets;
 import com.gitlab.ardash.appleflinger.global.GameManager;
 import com.gitlab.ardash.appleflinger.missions.Mission;
@@ -47,7 +46,9 @@ public class AppleflingerGame extends Game {
 	@Override
 	public void create () {
 		GameManager gm = GameManager.getInstance(); // also loggs the start time (track loading time, game runtime)
-		Gdx.app.setLogLevel(Application.LOG_DEBUG);
+		Gdx.app.setLogLevel(Application.LOG_ERROR);
+		if (GameManager.DEBUG)
+			Gdx.app.setLogLevel(Application.LOG_DEBUG);
 		
 		//deactivate HW buttons
 		Gdx.input.setCatchBackKey(true);
@@ -80,7 +81,6 @@ public class AppleflingerGame extends Game {
 	 * @param s
 	 */
 	public void setScreen(Mission mission) {
-		PlayerSimulator.INSTANCE.stopThinking();
 		if (mission != Mission.NONE && mission != Mission.END_OF_CHAPTER)
 		{
 			
@@ -149,7 +149,6 @@ public class AppleflingerGame extends Game {
 			world.dispose();
 		if (screen !=null)
 			screen.dispose();
-		PlayerSimulator.INSTANCE.stopThinking();
 		Assets.dispose();
 	}
 

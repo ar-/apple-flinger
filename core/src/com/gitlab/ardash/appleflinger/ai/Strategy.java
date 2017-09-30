@@ -1,5 +1,5 @@
 /*******************************************************************************
- * Copyright (C) 2015-2017 Andreas Redmer <andreasredmer@mailchuck.com>
+ * Copyright (C) 2017 Andreas Redmer <andreasredmer@mailchuck.com>
  * 
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -16,15 +16,9 @@
  ******************************************************************************/
 package com.gitlab.ardash.appleflinger.ai;
 
-import java.util.LinkedHashSet;
+import com.badlogic.gdx.math.Vector2;
 
-import com.badlogic.gdx.math.Rectangle;
+public interface Strategy {
+	public Vector2 getPullVector();
 
-public class Patch extends Rectangle{
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 2654620001292930250L;
-	public LinkedHashSet<Curve> affectedCurves = new LinkedHashSet<Curve>();
 }
-

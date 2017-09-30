@@ -28,8 +28,8 @@ import com.badlogic.gdx.scenes.scene2d.utils.TextureRegionDrawable;
 import com.badlogic.gdx.utils.Align;
 import com.badlogic.gdx.utils.Scaling;
 import com.gitlab.ardash.appleflinger.GameWorld;
-import com.gitlab.ardash.appleflinger.global.MaterialConfig;
 import com.gitlab.ardash.appleflinger.global.Assets.SpriteGroupAsset;
+import com.gitlab.ardash.appleflinger.global.MaterialConfig;
 
 public class CircleActor extends PhysicsActor {  
 	   

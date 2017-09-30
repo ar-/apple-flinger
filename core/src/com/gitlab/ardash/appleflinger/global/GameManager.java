@@ -19,6 +19,7 @@ package com.gitlab.ardash.appleflinger.global;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.InputMultiplexer;
 import com.badlogic.gdx.Screen;
+import com.badlogic.gdx.math.Vector2;
 import com.badlogic.gdx.utils.TimeUtils;
 import com.gitlab.ardash.appleflinger.ActionResolver;
 import com.gitlab.ardash.appleflinger.AppleflingerGame;
@@ -26,7 +27,6 @@ import com.gitlab.ardash.appleflinger.actors.TargetActor;
 import com.gitlab.ardash.appleflinger.global.PlayerStatus.PlayerSide;
 import com.gitlab.ardash.appleflinger.helpers.GPGS;
 import com.gitlab.ardash.appleflinger.helpers.Pref;
-import com.gitlab.ardash.appleflinger.i18n.I18N;
 import com.gitlab.ardash.appleflinger.listeners.OnGameOverListener;
 import com.gitlab.ardash.appleflinger.missions.Mission;
 import com.gitlab.ardash.appleflinger.screens.GameScreen;
@@ -45,8 +45,9 @@ final public class GameManager {
 //	public static final boolean SANDBOX = true;
 	public static final boolean ALLLEVELS = false;
 //	public static final boolean ALLLEVELS = true;
-	public static final boolean NOADS = false;
-//	public static final boolean NOADS = true;
+	public static final boolean RECORDSHOTS = false;
+//	public static final boolean RECORDSHOTS = true;
+	private static Vector2 lastPullVector = new Vector2();
 	private GameState gameState;
 	public PlayerStatus NONE;
 	public PlayerStatus PLAYER1;
@@ -95,6 +96,31 @@ final public class GameManager {
 		inputMultiplexer = new InputMultiplexer();
 		Gdx.input.setInputProcessor(inputMultiplexer);
 		resetAll(null);
+	}
+	
+	public static void recordPullVector(Vector2 v)
+	{
+		if (RECORDSHOTS && instance.currentPlayer == instance.PLAYER2)
+		{
+			lastPullVector = v.cpy();
+		}
+	}
+
+	public static void recordTargetPosition(float x, float y, float impact)
+	{
+		if (RECORDSHOTS && instance.currentPlayer == instance.PLAYER2)
+		{
+			if (impact > 1.0)
+			{
+				//print in Java notation like the following line
+				//add(new Shot(Mission.M_1_1, -3, 7, 10, 20, 75));
+				// to shorten the string
+				Vector2 p = lastPullVector;
+				String m = instance.getCurrentMission().name();
+				float i = impact;
+				System.err.println("add(new Shot(Mission."+m+", "+p.x+"f, "+p.y+"f, "+x+"f, "+y+"f, "+i+"f));");
+			}
+		}
 	}
 
 	public InputMultiplexer getInputMultiplexer() {
@@ -298,7 +324,8 @@ final public class GameManager {
 			throw new RuntimeException("Invalid State change from "+ gameState + " to "+ newState); //$NON-NLS-1$ //$NON-NLS-2$
 		
 		this.gameState = newState;
-		System.out.println("changing game state: " + newState); //$NON-NLS-1$
+		if (DEBUG)
+			System.out.println("changing game state: " + newState); //$NON-NLS-1$
 	}
 
 	public void registerGameObject(AppleflingerGame appleflingerGame) {

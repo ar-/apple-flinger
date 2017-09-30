@@ -25,9 +25,9 @@ import com.badlogic.gdx.scenes.scene2d.utils.Drawable;
 import com.badlogic.gdx.scenes.scene2d.utils.TextureRegionDrawable;
 import com.gitlab.ardash.appleflinger.GameWorld;
 import com.gitlab.ardash.appleflinger.global.Assets;
+import com.gitlab.ardash.appleflinger.global.Assets.SoundGroupAsset;
 import com.gitlab.ardash.appleflinger.global.GameManager;
 import com.gitlab.ardash.appleflinger.global.MaterialConfig;
-import com.gitlab.ardash.appleflinger.global.Assets.SoundGroupAsset;
 import com.gitlab.ardash.appleflinger.global.PlayerStatus.PlayerSide;
 import com.gitlab.ardash.appleflinger.helpers.SoundPlayer;
 
@@ -49,10 +49,8 @@ public class TargetActor extends CircleActor{
 	private final float blinkClosedTime = 0.1f;
 	private final float maxTimeToNExtAnim = 3f;
 	private float timeToNextEyeAnim = MathUtils.random(1f, maxTimeToNExtAnim);
-	private boolean eyeAnimationRunning = false;
 	private EyeState currentEyeState = EyeState.MIDDLE;
 	
-//	private TextureRegionDrawable dork_drawable;
 	private TextureRegionDrawable eyes_closed;
 	private TextureRegionDrawable eyes_down;
 	private TextureRegionDrawable eyes_up;
@@ -67,13 +65,6 @@ public class TargetActor extends CircleActor{
 			float diameter, BodyType bodyType) {
 		super(world, mc, x, y, diameter, bodyType);
 		
-		int addPixelSize =-30;
-		int addPixelMove =20;
-        //this.setDrawable(new TextureRegionDrawable(new TextureRegion(Assets.ben[0].getTexture(), addPixelMove, addPixelMove, Assets.ben[0].getWidth()+addPixelSize, Assets.ben[0].getHeight()+addPixelSize)));
-//        Sprite spr = Assets.dork[0];
-        //spr.getTexture().setFilter(TextureFilter.Linear, TextureFilter.Linear);
-//        spr.getTexture().setFilter(TextureFilter.Nearest, TextureFilter.Nearest);
-//        dork_drawable = new TextureRegionDrawable(spr);
         eyes_closed = new TextureRegionDrawable(Assets.SpriteAsset.EYES_CLOSED.get());
         eyes_down = new TextureRegionDrawable(Assets.SpriteAsset.EYES_DOWN.get());
         eyes_up = new TextureRegionDrawable(Assets.SpriteAsset.EYES_UP.get());
@@ -81,7 +72,6 @@ public class TargetActor extends CircleActor{
         eyes_outer = new TextureRegionDrawable(Assets.SpriteAsset.EYES_OUTER.get());
         eyes_left = new TextureRegionDrawable(Assets.SpriteAsset.EYES_LEFT.get());
         eyes_right = new TextureRegionDrawable(Assets.SpriteAsset.EYES_RIGHT.get());
-//		this.setDrawable(dork_drawable);
 
         // this actually sets the size of the image independently from the physic actor!!!
         scaleBy(0.25f);
@@ -100,6 +90,7 @@ public class TargetActor extends CircleActor{
 	@Override
 	public void playHitSound() {
 		SoundPlayer.playSound(Assets.getRandomSound(SoundGroupAsset.DORK_HIT));
+//		GameManager.recordTargetPosition(getX(), getY());
 	}
 	
 	private EyeState pickRandomEyeState()
@@ -134,8 +125,7 @@ public class TargetActor extends CircleActor{
 				currentEyeState = pickRandomEyeState();
 				break;
 			}
-			//MathUtils.ran
-			//System.out.println("new anim "+timeToNextEyeAnim);
+
 			timeToNextEyeAnim = MathUtils.random(1f, maxTimeToNExtAnim);
 			// eye blinking can be shorter
 			if (currentEyeState == EyeState.BLINK)
@@ -144,7 +134,6 @@ public class TargetActor extends CircleActor{
 		
 	}
 
-//	render
 	@Override
 	public void draw(Batch batch, float parentAlpha) {
 		setAnimationStatus();
@@ -152,7 +141,7 @@ public class TargetActor extends CircleActor{
 		final Drawable originalDrawable = getDrawable();
 		super.draw(batch, parentAlpha);
 		
-		// choose a foreground (eyes etc.) and drwa it			switch (currentEyeState) {
+		// choose a foreground (eyes etc.) and draw it
 		switch (currentEyeState) {
 		case CLOSED:
 		case BLINK:
@@ -184,61 +173,7 @@ public class TargetActor extends CircleActor{
 		
 		// set back to normal for nest draw
 		setDrawable(originalDrawable);
-
-		
-//		ben_drawable.getRegion().getTexture().getTextureData().prepare();
-//		Pixmap pixmap = ben_drawable.getRegion().getTexture().getTextureData().consumePixmap();
-//		
-////		Pixmap pixmap = new Pixmap(
-////        Pixmap pixmap = new Pixmap(512, 512, Pixmap.Format.RGBA8888);
-////		Mandelbrot.generate(pixmap, 0.0, 0.0, 1.0, 1.0, 32);
-//		ColorFilter.generate(pixmap, Color.BLUE, 100, 100, 100, 127, 127, 127, 255);
-//		Texture texture = new Texture(pixmap);
-//		this.setDrawable(new TextureRegionDrawable(new TextureRegion(texture)));
-//		super.draw(batch, parentAlpha);
-		// working color change:
-		
-////		batch.setColor(Color.RED);
-//		batch.setColor(1,0.5f,0.5f,1);
-//		validate();
-//
-////		Color color = getColor();
-////		batch.setColor(color.r, color.g, color.b, color.a * parentAlpha);
-//
-//		float x = getX();
-//		float y = getY();
-//		float scaleX = getScaleX();
-//		float scaleY = getScaleY();
-//		Sprite spr = Assets.ben[0];
-//		
-//		Drawable _drawable = getDrawable();
-//		float _imageX, _imageY, _imageWidth, _imageHeight;
-//		_imageX = getImageX();
-//		_imageY = getImageY();
-//		_imageWidth = getImageWidth();
-//		_imageHeight = getImageHeight();
-//		
-//		if (_drawable instanceof TransformDrawable) {
-//			float rotation = getRotation();
-//			if (scaleX != 1 || scaleY != 1 || rotation != 0) {
-//				((TransformDrawable)_drawable).draw(batch, x + _imageX, y + _imageY, getOriginX() - _imageX, getOriginY() - _imageY,
-//					_imageWidth, _imageHeight, scaleX, scaleY, rotation);
-//				return;
-//			}
-//		}
-//		if (_drawable != null) _drawable.draw(batch, x + _imageX, y + _imageY, _imageWidth * scaleX, _imageHeight * scaleY);
 	}
-
-//	@Override  
-//    public void act(float delta) {  
-//        // here we override Actor's act() method to make the actor follow the box2d body  
-//        super.act(delta);  
-//        setOrigin(RADIUS, RADIUS);  
-//        setRotation(MathUtils.radiansToDegrees * body.getAngle());  
-//        setPosition(body.getPosition().x-RADIUS, body.getPosition().y-RADIUS);  
-//    }
-
-
 
 	public PlayerSide getPlayerSide() {
 		return playerSide;
@@ -269,7 +204,6 @@ public class TargetActor extends CircleActor{
 		if (bodyType == BodyType.DynamicBody)
 			return "group.addActor (new TargetActor(world, MaterialConfig."+mc+", "+(body.getPosition().x)+"f, "+(body.getPosition().y)+"f, 0.5f));"; //$NON-NLS-1$ //$NON-NLS-2$ //$NON-NLS-3$ //$NON-NLS-4$
 	
-//    	return "group.addActor (new BlockActor(world, MaterialConfig."+mc+", "+(body.getPosition().x)+"f, "+(body.getPosition().y)+"f, "+rr+"f, BodyType."+getBodyType()+"));";
 		return "group.addActor (new TargetActor(world, MaterialConfig."+mc+", "+(body.getPosition().x)+"f, "+(body.getPosition().y)+"f, 0.5f, BodyType."+getBodyType()+"));"; //$NON-NLS-1$ //$NON-NLS-2$ //$NON-NLS-3$ //$NON-NLS-4$ //$NON-NLS-5$
 	}
 	

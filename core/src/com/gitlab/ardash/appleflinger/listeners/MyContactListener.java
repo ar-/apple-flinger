@@ -23,14 +23,18 @@ import com.badlogic.gdx.physics.box2d.ContactImpulse;
 import com.badlogic.gdx.physics.box2d.ContactListener;
 import com.badlogic.gdx.physics.box2d.Fixture;
 import com.badlogic.gdx.physics.box2d.Manifold;
+import com.gitlab.ardash.appleflinger.actors.AppleActor;
+import com.gitlab.ardash.appleflinger.actors.Ground;
 import com.gitlab.ardash.appleflinger.actors.PhysicsActor;
+import com.gitlab.ardash.appleflinger.actors.TargetActor;
+import com.gitlab.ardash.appleflinger.actors.TntActor;
+import com.gitlab.ardash.appleflinger.global.GameManager;
 
 public class MyContactListener implements ContactListener{
 	
 	
 	
     public MyContactListener() {
-    	//just
 	}
 
 	@Override 
@@ -70,97 +74,59 @@ public class MyContactListener implements ContactListener{
         if (udA instanceof PhysicsActor) {
 			final PhysicsActor pa = (PhysicsActor)udA;
 			pa.applyDamage(impact);
-//			// if one of them is an apple, play the apple hit sound
-//			if ((pa instanceof TargetActor) || (pa instanceof AppleActor))
-//			{
-//				if (impact >=1f)
-//				SoundPlayer.playSound(Assets.apple_hit.getRandom());
-//			}
-//			if (impact >=1f && (pa instanceof TargetActor))
-//			{
-//				SoundPlayer.playSound(Assets.dork_hit.getRandom());
-//			}
 		}
         if (udB instanceof PhysicsActor) {
 			final PhysicsActor pa = (PhysicsActor)udB;
 			pa.applyDamage(impact);
+		}
+        
+		// record direct apple hits
+		if (GameManager.RECORDSHOTS)
+		{
+			if ((udA instanceof AppleActor) && (udB instanceof TargetActor))
+			{
+				GameManager.recordTargetPosition(((PhysicsActor) udA).getX(), ((PhysicsActor) udA).getY(), impact);
+			}
+			if ((udA instanceof TargetActor) && (udB instanceof AppleActor))
+			{
+				GameManager.recordTargetPosition(((PhysicsActor) udB).getX(), ((PhysicsActor) udB).getY(), impact);
+			}
+			if ((udA instanceof AppleActor) && (udB instanceof TntActor))
+			{
+				GameManager.recordTargetPosition(((PhysicsActor) udA).getX(), ((PhysicsActor) udA).getY(), impact);
+			}
+			if ((udA instanceof TntActor) && (udB instanceof AppleActor))
+			{
+				GameManager.recordTargetPosition(((PhysicsActor) udB).getX(), ((PhysicsActor) udB).getY(), impact);
+			}
 			
-//			// if one of them is an apple, play the apple hit sound
-//			if (impact >1f && (pa instanceof AppleActor))
-//			{
-//				SoundPlayer.playSound(Assets.apple_hit.getRandom());
-//			}
-//			if (impact >=1f && (pa instanceof TargetActor))
-//			{
-//				SoundPlayer.playSound(Assets.dork_hit.getRandom());
-//			}
+			if ((udA instanceof Ground) && (udB instanceof TargetActor))
+			{
+				GameManager.recordTargetPosition(((PhysicsActor) udB).getX(), ((PhysicsActor) udB).getY(), impact);
+			}
+			if ((udA instanceof TargetActor) && (udB instanceof Ground))
+			{
+				GameManager.recordTargetPosition(((PhysicsActor) udA).getX(), ((PhysicsActor) udA).getY(), impact);
+			}
+			
+			if (udA instanceof TargetActor)
+			{
+				GameManager.recordTargetPosition(((PhysicsActor) udA).getX(), ((PhysicsActor) udA).getY(), impact);
+			}
+			if (udB instanceof TargetActor)
+			{
+				GameManager.recordTargetPosition(((PhysicsActor) udB).getX(), ((PhysicsActor) udB).getY(), impact);
+			}
+			
 		}
     }
     
     @Override
     public void preSolve (Contact contact, Manifold oldManifold){
-//        // this happens twice because preSolve is called for (a,b) and (b,a) 
-//    	
-//        Fixture fixtureA = contact.getFixtureA();
-//        Fixture fixtureB = contact.getFixtureB();
-//        Body bodyA = fixtureA.getBody();
-//        Body bodyB = fixtureB.getBody();
-//        Vector2 velocityA = bodyA.getLinearVelocity();
-//        Vector2 velocityB =  bodyB.getLinearVelocity();
-//        
-//        //float impact = velocityA.dot(velocityB);
-//        float impact = velocityA.dst2(velocityB);
-//        //System.out.println(impact);
-//        
-//        // absorb actors
-//        Object udA = fixtureA.getUserData();
-//        Object udB = fixtureB.getUserData();
-//        
-//        if (udA instanceof PhysicsActor && udB instanceof PhysicsActor )
-//        {
-//        	PhysicsActor paA = (PhysicsActor)udA;
-//        	PhysicsActor paB = (PhysicsActor)udB;
-//        	if (paA.isAbsorbing())
-//        	{
-//        		paB.setToBeRemoved(true);
-//        	}
-//        }
-//        
-//        // apply damage
-//        if (udA instanceof PhysicsActor) {
-//			final PhysicsActor pa = (PhysicsActor)udA;
-//			pa.applyDamage(impact);
-//		}
-//        if (udB instanceof PhysicsActor) {
-//			final PhysicsActor pa = (PhysicsActor)udB;
-//			pa.applyDamage(impact);
-//		}
     }
     
     @Override
     public void postSolve (Contact contact, ContactImpulse impulse){
-    	// TODO implement damage, after hit. impact = new direction force of object
-//        if(impulse.getNormalImpulses()[0] > 0.01)
-//        {
-//            /* If body A was hit */
-//            if(contact.getFixtureA() != null)
-//            {
-//                if (Actor.class.isInstance(contact.getFixtureA().getBody().getUserData())) {
-//                    Actor a = (Actor) contact.getFixtureA().getBody().getUserData();
-////                    evalDamage(a, impulse);
-//
-//                }
-//            }
-//
-//            /* If body B was hit */
-//            if(contact.getFixtureB() != null)
-//            {
-//                if (Actor.class.isInstance(contact.getFixtureB().getBody().getUserData())) {
-//                    Actor b = (Actor) contact.getFixtureB().getBody().getUserData();
-////                    evalDamage(b, impulse);
-//                }
-//            }
-//        }
     }
 
 }
