@@ -20,16 +20,13 @@ import com.badlogic.gdx.math.MathUtils;
 import com.badlogic.gdx.math.Vector2;
 import com.badlogic.gdx.scenes.scene2d.InputEvent;
 import com.badlogic.gdx.scenes.scene2d.InputEvent.Type;
-import com.badlogic.gdx.scenes.scene2d.Stage;
 import com.gitlab.ardash.appleflinger.actors.PhysicsActor;
-import com.gitlab.ardash.appleflinger.actors.ThinkBubble;
 import com.gitlab.ardash.appleflinger.global.GameManager;
 
 public class PlayerSimulator {
 
 	public static final PlayerSimulator INSTANCE = new PlayerSimulator();
 	
-	private ThinkBubble thinkBubble = new ThinkBubble(0, 0);
 	private Strategy strategy = new HCStrategy();
 
 	private boolean isDraging = false;
@@ -59,15 +56,6 @@ public class PlayerSimulator {
 		timeActive = 0;
 		pulledSteps = 0;
 		goodPullVector = null;
-		
-		// show thought bubble
-		GameManager gm = GameManager.getInstance();
-		final PhysicsActor currentProjectile = gm.currentPlayer.slingshot.getCurrentProjectile();
-		final Stage stage = currentProjectile.getStage();
-		final Vector2 pp = currentProjectile.getPhysicalCenterPosition();
-		thinkBubble.setPosition(pp.x,pp.y);
-		stage.addActor(thinkBubble);
-		
 	}
 
 	public void act(float delta) {
@@ -89,7 +77,6 @@ public class PlayerSimulator {
 			step++;
 			break;
 		case 1:
-			thinkBubble.remove();
 			// slowly drag to the dragTarget
 			final Vector2 slingShotCenter = gm.currentPlayer.slingshot.getSlingShotCenter();
 
