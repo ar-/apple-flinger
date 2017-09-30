@@ -29,11 +29,11 @@ import com.badlogic.gdx.utils.Align;
 import com.badlogic.gdx.utils.Scaling;
 import com.gitlab.ardash.appleflinger.GameWorld;
 import com.gitlab.ardash.appleflinger.global.Assets;
+import com.gitlab.ardash.appleflinger.global.Assets.SoundGroupAsset;
+import com.gitlab.ardash.appleflinger.global.Assets.TextureAsset;
 import com.gitlab.ardash.appleflinger.global.GameManager;
 import com.gitlab.ardash.appleflinger.global.GameState;
 import com.gitlab.ardash.appleflinger.global.MaterialConfig;
-import com.gitlab.ardash.appleflinger.global.Assets.SoundGroupAsset;
-import com.gitlab.ardash.appleflinger.global.Assets.TextureAsset;
 import com.gitlab.ardash.appleflinger.helpers.SoundPlayer;
 import com.gitlab.ardash.appleflinger.i18n.I18N;
 
@@ -81,10 +81,12 @@ public class ProjectileActor extends CircleActor {
 			@Override
 			public boolean touchDown(InputEvent event, float x, float y,
 					int pointer, int button) {
-				System.out.println("touchDown"+x +","+y); //$NON-NLS-1$ //$NON-NLS-2$
+				GameManager gm = GameManager.getInstance();
+				if (gm.DEBUG)
+					System.out.println("touchDown"+x +","+y); //$NON-NLS-1$ //$NON-NLS-2$
 				lastTouchDown.set(body.getTransform().getPosition().cpy());
 				removePhysics();
-				GameManager.getInstance().setGameState(GameState.DRAGGING);
+				gm.setGameState(GameState.DRAGGING);
 				 pullSoundPlayed = false;
 				return true;
 			}
@@ -144,8 +146,10 @@ public class ProjectileActor extends CircleActor {
 				reAddPhysics();
 				body.setGravityScale(1.0f);
 				
-				if (gm.RECORDSHOTS)
-					System.err.println("Applying "+shootDirection + " len: ");
+				GameManager.recordPullVector(shootDirection.cpy().scl(-1f));
+				if (GameManager.DEBUG)
+					System.out.println(shootDirection);
+					
 				body.applyForceToCenter(shootDirection.scl(shotForceMultiplyer), true);
 
 				gm.setGameState(GameState.WAIT_FOR_PHYSICS);

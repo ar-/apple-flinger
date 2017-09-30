@@ -23,6 +23,7 @@ import com.badlogic.gdx.tools.texturepacker.TexturePacker.Settings;
 import com.gitlab.ardash.appleflinger.ActionResolver;
 import com.gitlab.ardash.appleflinger.AppleflingerGame;
 import com.gitlab.ardash.appleflinger.global.Assets;
+import com.gitlab.ardash.appleflinger.global.GameManager;
 import com.gitlab.ardash.appleflinger.missions.Mission;
 
 public class DesktopLauncher implements ActionResolver{
@@ -92,51 +93,60 @@ public class DesktopLauncher implements ActionResolver{
 			    		ARH.urlEncode(recommendationText), ARH.urlEncode(marketUrl));
 
 		//Gdx.net.openURI(tweetUrl);
-		System.out.println("twPostRecommendation");
+		if (GameManager.DEBUG)
+			System.out.println("twPostRecommendation");
 		return true;
 	}
 
 	@Override
 	public boolean fbPostRecommendation() {
-		System.out.println("fbPostRecommendation");
+		if (GameManager.DEBUG)
+			System.out.println("fbPostRecommendation");
 		return true;
 	}
 
 	@Override
 	public boolean gpPostRecommendation() {
-		System.out.println("gpPostRecommendation");
+		if (GameManager.DEBUG)
+			System.out.println("gpPostRecommendation");
 		return true;
 	}
 
 	@Override
 	public boolean piPostRecommendation() {
-		System.out.println("piPostRecommendation");
+		if (GameManager.DEBUG)
+			System.out.println("piPostRecommendation");
 		return true;
 	}
 
 	@Override
 	public void submitScoreGPGS(String LeaderBoardId, int score) {
-		System.out.println("submitScoreGPGS "+ LeaderBoardId + " : " + score);
+		if (GameManager.DEBUG)
+			System.out.println("submitScoreGPGS "+ LeaderBoardId + " : " + score);
 	}
 
 	@Override
 	public void unlockAchievementGPGS(String achievementId) {
-		System.out.println("unlockAchievement " + achievementId);
+		if (GameManager.DEBUG)
+			System.out.println("unlockAchievement " + achievementId);
 	}
 
 	@Override
 	public void incrementAchievementGPGS(String achievementId, int NumSteps) {
-		System.out.println("incrementAchievement " + achievementId);
+		if (GameManager.DEBUG)
+			System.out.println("incrementAchievement " + achievementId);
 	}
 	
 	@Override
 	public void getLeaderboardGPGS(String LeaderBoardId) {
-		System.out.println("getLeaderboardGPGS " + LeaderBoardId);
+		if (GameManager.DEBUG)
+			System.out.println("getLeaderboardGPGS " + LeaderBoardId);
 	}
 
 	@Override
 	public void getAchievementsGPGS() {
-		System.out.println("getAchievementsGPGS");
+		if (GameManager.DEBUG)
+			System.out.println("getAchievementsGPGS");
 	}
 
 }

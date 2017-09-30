@@ -281,7 +281,7 @@ public abstract class PhysicsActor extends Image {
 			return;
 		}
 		
-		if (initialHealth<=0) // this is also non-destrucable, but also prevents division by 0
+		if (initialHealth<=0) // this is also non-destructable, but also prevents division by 0
 			return;
         final float maxPossibleDmg = health;
         // apply only as much dmg as HP are left

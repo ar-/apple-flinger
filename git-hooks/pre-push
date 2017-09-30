@@ -1,0 +1,4 @@
+#!/bin/bash
+./licensecheck.sh || exit 1
+./validateI18N.sh || exit 1
+./gradlew tests:test --info || exit 1

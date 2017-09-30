@@ -46,4 +46,9 @@ public class DeploymentSanityUnitTest {
 	public void isAlllevelsDisabled() {
 		assertFalse(GameManager.ALLLEVELS);
 	}
+	
+	@Test
+	public void isRecordingDisabled() {
+		assertFalse(GameManager.RECORDSHOTS);
+	}
 }
