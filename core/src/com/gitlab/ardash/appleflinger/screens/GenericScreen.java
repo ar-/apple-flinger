@@ -30,10 +30,10 @@ import com.badlogic.gdx.utils.Align;
 import com.badlogic.gdx.utils.Scaling;
 import com.badlogic.gdx.utils.viewport.FitViewport;
 import com.gitlab.ardash.appleflinger.global.Assets;
-import com.gitlab.ardash.appleflinger.global.GameManager;
-import com.gitlab.ardash.appleflinger.global.GameState;
 import com.gitlab.ardash.appleflinger.global.Assets.MusicAsset;
 import com.gitlab.ardash.appleflinger.global.Assets.TextureAsset;
+import com.gitlab.ardash.appleflinger.global.GameManager;
+import com.gitlab.ardash.appleflinger.global.GameState;
 import com.gitlab.ardash.appleflinger.helpers.Pref;
 import com.gitlab.ardash.appleflinger.helpers.SoundPlayer;
 

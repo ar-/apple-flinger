@@ -28,8 +28,8 @@ import com.badlogic.gdx.scenes.scene2d.ui.Table;
 import com.badlogic.gdx.scenes.scene2d.utils.ClickListener;
 import com.badlogic.gdx.utils.Align;
 import com.gitlab.ardash.appleflinger.global.Assets;
-import com.gitlab.ardash.appleflinger.global.GameManager;
 import com.gitlab.ardash.appleflinger.global.Assets.TextureAsset;
+import com.gitlab.ardash.appleflinger.global.GameManager;
 import com.gitlab.ardash.appleflinger.i18n.I18N;
 import com.gitlab.ardash.appleflinger.missions.Mission;
 

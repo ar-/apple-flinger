@@ -24,9 +24,9 @@ import com.badlogic.gdx.scenes.scene2d.Actor;
 import com.gitlab.ardash.appleflinger.AdvancedStage;
 import com.gitlab.ardash.appleflinger.GameWorld;
 import com.gitlab.ardash.appleflinger.global.Assets;
-import com.gitlab.ardash.appleflinger.global.MaterialConfig;
 import com.gitlab.ardash.appleflinger.global.Assets.ParticleAsset;
 import com.gitlab.ardash.appleflinger.global.Assets.SoundGroupAsset;
+import com.gitlab.ardash.appleflinger.global.MaterialConfig;
 import com.gitlab.ardash.appleflinger.helpers.SoundPlayer;
 
 public class TntActor extends BlockActor{

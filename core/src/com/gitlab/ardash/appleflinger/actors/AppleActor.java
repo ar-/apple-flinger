@@ -25,10 +25,10 @@ import com.badlogic.gdx.physics.box2d.BodyDef.BodyType;
 import com.badlogic.gdx.scenes.scene2d.utils.TextureRegionDrawable;
 import com.gitlab.ardash.appleflinger.GameWorld;
 import com.gitlab.ardash.appleflinger.global.Assets;
-import com.gitlab.ardash.appleflinger.global.MaterialConfig;
 import com.gitlab.ardash.appleflinger.global.Assets.SoundAsset;
 import com.gitlab.ardash.appleflinger.global.Assets.SoundGroupAsset;
 import com.gitlab.ardash.appleflinger.global.Assets.TextureAsset;
+import com.gitlab.ardash.appleflinger.global.MaterialConfig;
 import com.gitlab.ardash.appleflinger.helpers.SoundPlayer;
 
 public class AppleActor extends ProjectileActor{

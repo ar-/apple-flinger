@@ -1,5 +1,5 @@
 /*******************************************************************************
- * Copyright (C) 2017 Andreas Redmer <andreasredmer@mailchuck.com>
+ * Copyright (C) 2015-2017 Andreas Redmer <andreasredmer@mailchuck.com>
  * 
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -19,7 +19,7 @@ package com.gitlab.ardash.appleflinger.ai;
 import com.badlogic.gdx.math.Vector2;
 import com.gitlab.ardash.appleflinger.missions.Mission;
 
-public class Shot implements Comparable<Shot>{
+public class Shot{
 	public Mission mission;
 	public Vector2 pullVector;
 	public Vector2 targetpos;
@@ -82,11 +82,4 @@ public class Shot implements Comparable<Shot>{
 			return false;
 		return true;
 	}
-	@Override
-	public int compareTo(Shot o) {
-		// TODO Auto-generated method stub
-		return 0;
-	}
-	
-	
 }

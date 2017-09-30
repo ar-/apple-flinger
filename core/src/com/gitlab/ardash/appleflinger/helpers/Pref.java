@@ -21,9 +21,9 @@ import java.util.HashMap;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Preferences;
 import com.gitlab.ardash.appleflinger.global.Assets;
+import com.gitlab.ardash.appleflinger.global.Assets.MusicAsset;
 import com.gitlab.ardash.appleflinger.global.GameManager;
 import com.gitlab.ardash.appleflinger.global.GameState;
-import com.gitlab.ardash.appleflinger.global.Assets.MusicAsset;
 import com.gitlab.ardash.appleflinger.i18n.I18N;
 import com.gitlab.ardash.appleflinger.missions.Mission;
 

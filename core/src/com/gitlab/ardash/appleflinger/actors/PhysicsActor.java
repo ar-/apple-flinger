@@ -33,11 +33,11 @@ import com.badlogic.gdx.scenes.scene2d.ui.Label;
 import com.badlogic.gdx.scenes.scene2d.utils.TextureRegionDrawable;
 import com.gitlab.ardash.appleflinger.GameWorld;
 import com.gitlab.ardash.appleflinger.global.Assets;
-import com.gitlab.ardash.appleflinger.global.GameManager;
-import com.gitlab.ardash.appleflinger.global.MaterialConfig;
 import com.gitlab.ardash.appleflinger.global.Assets.ParticleAsset;
 import com.gitlab.ardash.appleflinger.global.Assets.SoundGroupAsset;
 import com.gitlab.ardash.appleflinger.global.Assets.SpriteGroupAsset;
+import com.gitlab.ardash.appleflinger.global.GameManager;
+import com.gitlab.ardash.appleflinger.global.MaterialConfig;
 import com.gitlab.ardash.appleflinger.helpers.LinearInterpolator;
 import com.gitlab.ardash.appleflinger.helpers.SoundPlayer;
 
