@@ -36,14 +36,15 @@ public class MissionM_1_14 implements StageFiller{
 		final BlockActor upperHolder = new BlockActor(world,MaterialConfig.STONE,1.9f, 3.0f,3.3f,0.1f, BodyType.StaticBody);
 		group.addActor( upperHolder); 
 		
-		//upper holder
+		//lower holder
 		final BlockActor lowerHolder = new BlockActor(world,MaterialConfig.STONE,1.9f, 1.5f,3.3f,0.1f, BodyType.StaticBody);
 		group.addActor( lowerHolder); 
 		
-		group.addActor (new BlockActor(world, MaterialConfig.WOOD_RECT, 3.3985267f, 0.32748812f, 4.1254018E-5f, BodyType.DynamicBody));
-		group.addActor (new BlockActor(world, MaterialConfig.WOOD_BL_21, 3.5877075f, 0.7350542f, -1.5660475f, BodyType.DynamicBody));
-		group.addActor (new BlockActor(world, MaterialConfig.WOOD_BL_21, 3.2221515f, 0.733025f, -1.5697492f, BodyType.DynamicBody));
-		group.addActor (new BlockActor(world, MaterialConfig.WOOD_RECT, 3.4260623f, 1.1410545f, -1.5607461f, BodyType.DynamicBody));
+		group.addActor (new BlockActor(world, MaterialConfig.WOOD_RECT, 4.3985267f, 0.32748812f, 4.1254018E-5f, BodyType.DynamicBody));
+		group.addActor (new BlockActor(world, MaterialConfig.WOOD_BL_21, 4.5877075f, 0.7350542f, -1.5660475f, BodyType.DynamicBody));
+		group.addActor (new BlockActor(world, MaterialConfig.WOOD_BL_21, 4.2221515f, 0.733025f, -1.5697492f, BodyType.DynamicBody));
+		group.addActor (new BlockActor(world, MaterialConfig.WOOD_RECT, 4.4260623f, 1.1410545f, -1.5607461f, BodyType.DynamicBody));
+
 		group.addActor (new BlockActor(world, MaterialConfig.WOOD_BL_41, 3.5310295f, 1.8244374f, -1.5723923f, BodyType.DynamicBody));
 		group.addActor (new BlockActor(world, MaterialConfig.WOOD_BL_41, 3.1557539f, 1.8243973f, -1.5711416f, BodyType.DynamicBody));
 		group.addActor (new BlockActor(world, MaterialConfig.WOOD_RECT, 3.342852f, 2.3632987f, -1.5721673f, BodyType.DynamicBody));
@@ -76,31 +77,35 @@ public class MissionM_1_14 implements StageFiller{
 		group.addActor (new BlockActor(world, MaterialConfig.WOOD_BL_21, 1.5779301f, 1.6902937f, 1.5680584f, BodyType.DynamicBody));
 		group.addActor (new BlockActor(world, MaterialConfig.WOOD_BL_81, 1.8275454f, 1.8949584f, -3.1409135f, BodyType.DynamicBody));
 		group.addActor (new BlockActor(world, MaterialConfig.WOOD_BL_81, 1.358654f, 3.662305f, -3.1406808f, BodyType.DynamicBody));
-		group.addActor (new BlockActor(world, MaterialConfig.WOOD_BL_11, 2.1180048f, 0.12213193f, -1.5707484f, BodyType.DynamicBody));
-		group.addActor (new BlockActor(world, MaterialConfig.WOOD_BL_11, 1.6551003f, 0.1232342f, -1.5721027f, BodyType.DynamicBody));
-		group.addActor (new BlockActor(world, MaterialConfig.WOOD_BL_81, 1.8846205f, 0.25994006f, -0.005297168f, BodyType.DynamicBody));
-		group.addActor (new BlockActor(world, MaterialConfig.WOOD_BL_41, 2.1851447f, 0.59749776f, 1.5638201f, BodyType.DynamicBody));
-		group.addActor (new BlockActor(world, MaterialConfig.WOOD_BL_41, 1.6326365f, 0.60056466f, 1.5644f, BodyType.DynamicBody));
+
+		group.addActor (new BlockActor(world, MaterialConfig.WOOD_BL_11, 3.5180048f, 0.12213193f, -1.5707484f, BodyType.DynamicBody));
+		group.addActor (new BlockActor(world, MaterialConfig.WOOD_BL_11, 3.0551003f, 0.1232342f, -1.5721027f, BodyType.DynamicBody));
+		group.addActor (new BlockActor(world, MaterialConfig.WOOD_BL_81, 3.2846205f, 0.25994006f, -0.005297168f, BodyType.DynamicBody));
+		group.addActor (new BlockActor(world, MaterialConfig.WOOD_BL_41, 3.5851447f, 0.59749776f, 1.5638201f, BodyType.DynamicBody));
+		group.addActor (new BlockActor(world, MaterialConfig.WOOD_BL_41, 3.0326365f, 0.60056466f, 1.5644f, BodyType.DynamicBody));
+		
 		group.addActor (new BlockActor(world, MaterialConfig.WOOD_BL_41, 2.0620108f, 2.2336023f, 1.5686724f, BodyType.DynamicBody));
 		group.addActor (new BlockActor(world, MaterialConfig.WOOD_BL_41, 1.5834551f, 2.2332265f, 1.5693667f, BodyType.DynamicBody));
 		group.addActor (new BlockActor(world, MaterialConfig.WOOD_BL_41, 1.6640317f, 4.0015807f, 1.5697863f, BodyType.DynamicBody));
 		group.addActor (new BlockActor(world, MaterialConfig.WOOD_BL_41, 1.0134592f, 4.0006304f, 1.571007f, BodyType.DynamicBody));
 		group.addActor (new BlockActor(world, MaterialConfig.WOOD_BL_81, 1.3200734f, 4.340352f, -3.1397676f, BodyType.DynamicBody));
 		group.addActor (new BlockActor(world, MaterialConfig.WOOD_BL_81, 1.8364581f, 2.5723612f, -3.1407976f, BodyType.DynamicBody));
-		group.addActor (new BlockActor(world, MaterialConfig.WOOD_BL_81, 1.9280925f, 0.93841f, 3.1360018f, BodyType.DynamicBody));
-		group.addActor (new BlockActor(world, MaterialConfig.WOOD_BL_22, 1.9235461f, 1.1435392f, 3.1360247f, BodyType.DynamicBody));
+
+		group.addActor (new BlockActor(world, MaterialConfig.WOOD_BL_81, 3.3280925f, 0.93841f, 3.1360018f, BodyType.DynamicBody));
+		group.addActor (new BlockActor(world, MaterialConfig.WOOD_BL_22, 3.3235461f, 1.1435392f, 3.1360247f, BodyType.DynamicBody));
+
 		group.addActor (new BlockActor(world, MaterialConfig.WOOD_BL_22, 1.8124102f, 2.7767634f, -3.1405687f, BodyType.DynamicBody));
 		
 		//sqeezed in roofs
-		group.addActor (new BlockActor(world, MaterialConfig.WOOD_BL_41, 2.2537014f, 1.2244235f, -0.6477902f, BodyType.DynamicBody));
-		group.addActor (new BlockActor(world, MaterialConfig.WOOD_BL_41, 1.598305f, 1.2298084f, 0.6025335f, BodyType.DynamicBody));
+		group.addActor (new BlockActor(world, MaterialConfig.WOOD_BL_41, 3.6537014f, 1.2244235f, -0.6477902f, BodyType.DynamicBody));
+		group.addActor (new BlockActor(world, MaterialConfig.WOOD_BL_41, 2.998305f, 1.2298084f, 0.6025335f, BodyType.DynamicBody));
 
 		group.addActor (new BlockActor(world, MaterialConfig.WOOD_BL_11, 2.0287724f, 2.7217617f, 0.0049704034f, BodyType.DynamicBody));
 		group.addActor (new BlockActor(world, MaterialConfig.WOOD_BL_11, 1.6198778f, 2.7197065f, 0.010046626f, BodyType.DynamicBody));
 		group.addActor (new BlockActor(world, MaterialConfig.WOOD_BL_21, 2.1888704f, 2.7976527f, -0.8031116f, BodyType.DynamicBody));
 		group.addActor (new BlockActor(world, MaterialConfig.WOOD_BL_21, 1.4622508f, 2.804768f, 0.6783269f, BodyType.DynamicBody));
 		
-		group.addActor (new TargetActor(world, MaterialConfig.TARGET_L, 1.9066067f, 0.58170706f, 0.5f));
+		group.addActor (new TargetActor(world, MaterialConfig.TARGET_L, 3.3066067f, 0.58170706f, 0.5f));
 		group.addActor (new TargetActor(world, MaterialConfig.TARGET_L, 1.8216954f, 2.2195547f, 0.5f));
 		group.addActor (new TargetActor(world, MaterialConfig.TARGET_L, 2.1953123f, 3.3049939f, 0.5f));
 		group.addActor (new TargetActor(world, MaterialConfig.TARGET_L, 1.3355985f, 3.3090641f, 0.5f));

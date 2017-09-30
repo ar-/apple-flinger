@@ -19,14 +19,12 @@ package com.gitlab.ardash.appleflinger.ai;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
-import java.util.TreeSet;
 
 import com.badlogic.gdx.math.MathUtils;
 import com.badlogic.gdx.math.Vector2;
 import com.badlogic.gdx.scenes.scene2d.Actor;
 import com.gitlab.ardash.appleflinger.AdvancedStage;
 import com.gitlab.ardash.appleflinger.actors.TargetActor;
-import com.gitlab.ardash.appleflinger.actors.TntActor;
 import com.gitlab.ardash.appleflinger.global.GameManager;
 import com.gitlab.ardash.appleflinger.global.PlayerStatus.PlayerSide;
 import com.gitlab.ardash.appleflinger.missions.Mission;
@@ -219,9 +217,16 @@ public class HCStrategy implements Strategy {
 			add(new Shot(Mission.M_1_10, 0.5281248f, -0.22187519f, 3.058829f, 0.5305842f, 19.041687f));
 			add(new Shot(Mission.M_1_10, 0.2937498f, -0.54062533f, 4.541158f, 0.44654512f, 15.216998f));
 			add(new Shot(Mission.M_1_10, 0.7838955f, -0.15971279f, 0.8742444f, 0.5482128f, 98.32469f));
+			
 			add(new Shot(Mission.M_1_11, 0.61502314f, -0.51161194f, 2.1019611f, 4.1647277f, 36.225758f));
 			add(new Shot(Mission.M_1_11, 0.61502314f, -0.51161194f, 0.559641f, 3.636055f, 6.223952f));
 			add(new Shot(Mission.M_1_11, 0.38002253f, -0.7039764f, 0.47817236f, 3.6050236f, 34.638016f));
+			add(new Shot(Mission.M_1_11, 0.7901988f, -0.12484288f, 0.5893678f, 1.4355806f, 1.3491069f));
+			add(new Shot(Mission.M_1_11, 0.78797436f, -0.13818955f, 0.59312826f, 1.4390209f, 2.0240557f));
+			add(new Shot(Mission.M_1_11, 0.7869053f, -0.14415288f, 0.5882887f, 1.439563f, 2.0318713f));
+			add(new Shot(Mission.M_1_11, 0.7889571f, -0.13246322f, 1.0095623f, 1.3700974f, 66.38701f));
+			add(new Shot(Mission.M_1_11, 0.7889571f, -0.13246322f, 0.57104754f, 1.4410106f, 66.38701f));
+
 			add(new Shot(Mission.M_1_12, 0.34032822f, -0.72400045f, 1.1813155f, 4.0391135f, 11.037836f));
 			add(new Shot(Mission.M_1_12, 0.21554518f, -0.7704158f, 2.2810433f, 3.6221592f, 12.145056f));
 			add(new Shot(Mission.M_1_12, 0.79614735f, -0.078421354f, 1.24035f, 1.1660893f, 52.44951f));
@@ -250,6 +255,19 @@ public class HCStrategy implements Strategy {
 			add(new Shot(Mission.M_1_14, 0.38124943f, -0.4250002f, 2.1134055f, 0.056158826f, 2.699488f));
 			add(new Shot(Mission.M_1_14, 0.34374905f, -0.4343748f, 2.1522245f, 0.05928345f, 1.5558046f));
 			add(new Shot(Mission.M_1_14, 0.4093752f, -0.39687538f, 2.1231434f, 0.054907814f, 3.9963624f));
+			
+			add(new Shot(Mission.M_1_14, 0.28593254f, -0.74715614f, 3.0600204f, 0.3352782f, 1.4229473f));
+			add(new Shot(Mission.M_1_14, 0.28593254f, -0.74715614f, 3.0712101f, 0.34926486f, 3.5147576f));
+			add(new Shot(Mission.M_1_14, 0.28593254f, -0.74715614f, 3.0927317f, 0.18454131f, 2.1319287f));
+			add(new Shot(Mission.M_1_14, 0.28593254f, -0.74715614f, 3.0927317f, 0.18454131f, 1.8421788f));
+			add(new Shot(Mission.M_1_14, 0.28593254f, -0.74715614f, 2.995223f, 0.15685964f, 5.3848767f));
+
+			add(new Shot(Mission.M_1_14, 0.79974174f, 0.020319939f, 1.4833646f, 1.7933257f, 1.7300074f));
+			add(new Shot(Mission.M_1_14, 0.79974174f, 0.020319939f, 1.4726307f, 1.7990932f, 1.1438392f));
+			add(new Shot(Mission.M_1_14, 0.79974174f, 0.020319939f, 1.6502105f, 1.5456045f, 2.6640677f));
+			add(new Shot(Mission.M_1_14, 0.7994776f, 0.028916836f, 2.1520379f, 1.609506f, 19.482641f));
+			add(new Shot(Mission.M_1_14, 0.7994776f, 0.028916836f, 1.6552823f, 1.5549997f, 19.482641f));
+
 			add(new Shot(Mission.M_1_15, 0.6534977f, -0.46145487f, 1.8517284f, 3.0188062f, 58.500565f));
 			add(new Shot(Mission.M_1_15, 0.78970623f, 0.12791967f, 4.574028f, 0.41466022f, 102.92378f));
 			add(new Shot(Mission.M_1_15, 0.79993343f, 0.010361671f, 3.2760198f, 0.31713986f, 40.861153f));
