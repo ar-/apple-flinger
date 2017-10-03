@@ -123,7 +123,8 @@ public class AppleflingerGame extends Game {
 		// print FPS after screen render - only every second
 		if (secondStart < TimeUtils.millis()-1000)
 		{
-//			System.out.println("FPS: "+Gdx.graphics.getFramesPerSecond());
+			final int fps = Gdx.graphics.getFramesPerSecond();
+			System.out.println("FPS: "+fps);
 			secondStart = TimeUtils.millis();
 		}
 	}
@@ -132,14 +133,12 @@ public class AppleflingerGame extends Game {
 	@Override
 		public void resume() {
 			super.resume();
-		//	PlayerSimulator.INSTANCE.pauseThinking();
 		}
 	
 	@Override
 		public void pause() {
 			super.pause();
 //			Assets.dispose();
-		//	PlayerSimulator.INSTANCE.unpauseThinking();
 		}
 	
 	@Override

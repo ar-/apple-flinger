@@ -20,6 +20,8 @@ import com.badlogic.gdx.graphics.OrthographicCamera;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
 import com.badlogic.gdx.math.Vector2;
+import com.badlogic.gdx.physics.box2d.Fixture;
+import com.badlogic.gdx.physics.box2d.RayCastCallback;
 import com.badlogic.gdx.physics.box2d.BodyDef.BodyType;
 import com.badlogic.gdx.scenes.scene2d.InputEvent;
 import com.badlogic.gdx.scenes.scene2d.InputListener;
@@ -54,6 +56,9 @@ public class ProjectileActor extends CircleActor {
 	private static final float maxLifetime = 10f;
 	private float lifetime = 0;
 	private boolean lifetimeStarted = false;
+	protected boolean obstacleFound = false; // for slow roll detection
+	private Float accLastTimestamp = null; // for acceleration calc
+	private Float accLastSpeed = null; // for acceleration calc
 
 	public ProjectileActor(final GameWorld world, MaterialConfig mc, float x,
 			float y, float diameter, BodyType bodyType) {
@@ -174,6 +179,7 @@ public class ProjectileActor extends CircleActor {
         {
         	lifetime+=delta;
         	killIfLifetimeExpired();
+        	killIfSlowlyRolling();
         }
 
         if (GameManager.DEBUG)
@@ -181,6 +187,7 @@ public class ProjectileActor extends CircleActor {
         	// print velocity in the first frame of lifetime
 	        if (lifetime>0.f && lifetime<=0.04f)
 	        	System.err.println("Velocity "+body.getLinearVelocity().len());
+	        
         }
     }
 	
@@ -193,7 +200,7 @@ public class ProjectileActor extends CircleActor {
 	protected void resetPhysics(MaterialConfig mc, float x,
 			float y, float angle, BodyType bodyType) {
 		super.resetPhysics(mc, x, y, angle, bodyType);
-		// no mass for procetiles - mass will be added on shot
+		// no mass for projectiles - mass will be added on shot
 		body.setGravityScale(0);
 	}
 
@@ -219,4 +226,76 @@ public class ProjectileActor extends CircleActor {
 		lifetime= maxLifetime;
 	}
 	
+	private void killIfSlowlyRolling() {
+		
+		if (obstacleFound)
+			return;
+		
+		// check if not dead
+		if (isToBeDestroyed())
+			return;
+		
+		// check if lifetime is more than 1 sec
+		if (lifetime<=1)
+			return;
+		
+		// check that apple is on ground
+		if ( getY() > 0.1f)
+			return;
+		
+		// check that movement is only horizontally
+		final Vector2 linearVelocity = body.getLinearVelocity();
+		if (Math.abs(linearVelocity.y) > 0f)
+			return;
+		
+		// check if movement is slow 
+		// (also return if speed is almost 0, since there is nothing to do then)
+		final float unitsPerSec = linearVelocity.x;
+		final float absUnitsPerSec = Math.abs(unitsPerSec);
+		if (absUnitsPerSec > 0.2f || absUnitsPerSec < 0.01f)
+			return;
+		
+		// measure acceleration, return if not enough data yet (needs 2 frames)
+		if (accLastSpeed == null || accLastTimestamp == null)
+		{
+			accLastSpeed = absUnitsPerSec;
+			accLastTimestamp = lifetime;
+			return;
+		}
+		
+		final float acceleration = (absUnitsPerSec - accLastSpeed) / (lifetime - accLastTimestamp);
+		final float absDistToStop = (0-absUnitsPerSec*absUnitsPerSec)/(2*acceleration);
+
+		// prepare ray cast
+		final Vector2 worldOrigin = body.getWorldPoint(new Vector2());
+		final Vector2 posAtStop = worldOrigin.cpy();
+		posAtStop.x += (unitsPerSec>0)? absDistToStop : -absDistToStop;
+		
+		// make sure speed is not 0, otherwise ray cast can fail with:
+		// java: ./Box2D/Collision/b2DynamicTree.h:209: void b2DynamicTree::RayCast(T*, const b2RayCastInput&) const [with T = b2WorldRayCastWrapper]: Assertion `r.LengthSquared() > 0.0f' failed.
+		if (absDistToStop < 0.01f)
+			return;
+		
+		// ray cast to find obstacles
+		obstacleFound = false;
+		body.getWorld().rayCast(new RayCastCallback() {
+			
+			// causes an error for distance =0 , must be checked for last touch, or current touch
+			@Override
+			public float reportRayFixture(Fixture fixture, Vector2 point,
+					Vector2 normal, float fraction) {
+				if (point.dst(worldOrigin)+getOriginX() < absDistToStop)
+					obstacleFound = true;
+				return 0f;
+			}
+		}, worldOrigin , posAtStop);
+		if (obstacleFound)
+			return;
+		
+		// arrived here, we can safely assume, that the apple won't have any impact any more
+		endLifetimeNow();
+		System.err.println("KILL "+unitsPerSec);
+	}
+	 
+
 }
