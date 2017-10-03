@@ -168,30 +168,9 @@ public class GameWorld implements Disposable{
     		if (a instanceof SlingShotActor) 
     			gm.PLAYER2.slingshot = (SlingShotActor) a;
     	
-    	//
-          
-        // create box2d bodies and the respective actors here.  
 
-      //BlockActor ba = new BlockActor(this,MaterialConfig.GLASS,2f,3f,0.1f,0.4f, BodyType.DynamicBody);  
-//       stage.addActor( new DamagableBlockActor(this,MaterialConfig.GLASS,2f,3f,0.1f,0.4f, BodyType.DynamicBody));  
-//       stage.addActor( new DamagableBlockActor(this,MaterialConfig.GLASS,0.8f,3f,0.1f,0.4f, BodyType.DynamicBody));  
-//
-//       
-//       stage.addActor( new DamagableBlockActor(this,MaterialConfig.GLASS,6.0f,0.4f,0.1f,0.8f, BodyType.DynamicBody));  
-//       stage.addActor( new DamagableBlockActor(this,MaterialConfig.GLASS,6.0f,1.4f,0.1f,0.8f, BodyType.DynamicBody));  
-//       stage.addActor( new DamagableBlockActor(this,MaterialConfig.GLASS,6.0f,2.4f,0.1f,0.8f, BodyType.DynamicBody));  
-
-//    	stage.addActor(new BlockActor(this,MaterialConfig.STONE,0f,0f,1f,1f, BodyType.StaticBody));
-//    	stage.addActor(new BlockActor(this,MaterialConfig.GLASS,1f,1f,1f,1f, BodyType.StaticBody));
-//    	stage.addActor(new BlockActor(this,MaterialConfig.WOOD,1f,1f,0.5f,0.5f, BodyType.StaticBody));
-
-       //rampCenter = new CircleActor(this,MaterialConfig.GLASS,5.1f,0.7f,0.1f, BodyType.StaticBody);
-       //rampCenterPoint = new Vector2(5.1f,0.7f);
-       //stage.addActor(rampCenter);  
-//       ProjectileActor firstProjectile = new ProjectileActor(this,MaterialConfig.STONE,5.0f,2.0f,0.4f, BodyType.DynamicBody);
-    	
     	final GameWorld thisForListener = this;
-    	// prjectile will now be added as soon as the initial physic get settled
+    	// projectile will now be added as soon as the initial physic get settled
     	physicWorldObserver.removeAllListeners();
     	physicWorldObserver.addListener(new OnPhysicStoppedListener() {
 			
@@ -205,14 +184,14 @@ public class GameWorld implements Disposable{
 					continuePhysics();
 					return;
 				}
-				// if there no no projectile anymore, we can go on and create a new one
+				// if there is no projectile anymore, we can go on and create a new one
 				gm.turnToNextPlayer();
 				if (gm.getGameState()==GameState.GAME_OVER_SCREEN)
 					return;
 			      firstProjectile = new AppleActor(thisForListener,MaterialConfig.PROJECTILE,0,0,0.4f, BodyType.DynamicBody);
 			      gm.currentPlayer.slingshot.addProjectile(firstProjectile);
 			      gm.setGameState(GameState.WAIT_FOR_DRAG);
-			      // pause physical bahaviour once it was stopping already
+			      // pause physical behaviour once it was stopping already
 			      thisForListener.pausePhysics();
 			      
 			      if (gm.isPlayer2CPU() && gm.currentPlayer == gm.PLAYER2)
@@ -224,34 +203,13 @@ public class GameWorld implements Disposable{
 			      {
 			    	  gm.getInputMultiplexer().removeProcessor(stage);
 			    	  gm.getInputMultiplexer().addProcessor(stage);
-			    	  // we just turned to player 1, so the CPU has now time to think about new shots
-			    	  //makes shot too slow and dragging impossible :(
-			    	  //PlayerSimulator.INSTANCE.tickThinking();
 			      }
 			}
 		});
     	
         Ground ground = new Ground(this);
         stage.addActor(ground);  
-        
-        
-//        TargetActor ta = new TargetActor(this, MaterialConfig.STONE, 6, 3, 0.5f, BodyType.DynamicBody);
-//        stage.addActor(ta);
-        
-//        SlingShotActor slingshot1 = new SlingShotActor(this, 3.2f, 0.1f);
-//        SlingShotActor slingshot2 = new SlingShotActor(this, 8.8f, 0.1f);
-////        Vector2 ssc = slingshot.getSlingShotCenter();
-////      ProjectileActor firstProjectile = new ProjectileActor(this,MaterialConfig.STONE,ssc.x,ssc.y,0.4f, BodyType.DynamicBody);
-//      ProjectileActor firstProjectile = new ProjectileActor(this,MaterialConfig.STONE,0,0,0.4f, BodyType.DynamicBody);
-//        slingshot2.addProjectile(firstProjectile);
-//		stage.addActor(slingshot1);
-//		stage.addActor(slingshot2);
-		
-        
-        // add more game elements here  
-        //box2dWorld.setGravity(new Vector2(0.5f, 0.7f));
-        //box2dWorld.
-        
+
     	gm.setGameState(GameState.WAIT_FOR_PHYSICS);
     }  
       

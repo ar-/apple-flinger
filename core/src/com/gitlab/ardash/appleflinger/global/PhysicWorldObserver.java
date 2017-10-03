@@ -81,20 +81,20 @@ public class PhysicWorldObserver {
 				}
 			}
 			
-			// comeing here means nothing moved
+			// coming here means nothing moved
 			changeState (State.INACTIVE);
 			capture();
 			return;
 			
 		}
 		
-		// this point is not eached
-		// at the end of every step the must be a new caputre done
+		// this point is not reached
+		// at the end of every step the must be a new capture done
 		//capture();
 	}
 	
 	/**
-	 * can be called any time. change the state only if the was an actual change
+	 * can be called any time. changes the state only if the was an actual change
 	 */
 	private void changeState (State newState)
 	{
