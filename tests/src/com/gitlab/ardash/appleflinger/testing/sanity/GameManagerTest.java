@@ -17,8 +17,8 @@
 package com.gitlab.ardash.appleflinger.testing.sanity;
 
 import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
 import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertTrue;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -27,7 +27,6 @@ import org.junit.runner.RunWith;
 import com.gitlab.ardash.appleflinger.global.GameManager;
 import com.gitlab.ardash.appleflinger.global.GameManager.OnCurrentPlayerChangeListener;
 import com.gitlab.ardash.appleflinger.global.GameState;
-import com.gitlab.ardash.appleflinger.global.PlayerStatus;
 import com.gitlab.ardash.appleflinger.helpers.Pref;
 import com.gitlab.ardash.appleflinger.missions.Mission;
 import com.gitlab.ardash.appleflinger.testing.GdxTestRunner;

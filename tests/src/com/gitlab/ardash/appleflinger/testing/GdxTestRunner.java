@@ -32,7 +32,6 @@ import com.badlogic.gdx.backends.headless.HeadlessFiles;
 import com.badlogic.gdx.backends.headless.HeadlessNativesLoader;
 import com.badlogic.gdx.backends.headless.HeadlessNet;
 import com.badlogic.gdx.backends.headless.mock.graphics.MockGraphics;
-import com.badlogic.gdx.graphics.GL20;
 
 public class GdxTestRunner extends BlockJUnit4ClassRunner implements ApplicationListener {
 
