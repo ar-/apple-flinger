@@ -50,13 +50,14 @@ public class DesktopLauncher implements ActionResolver{
 //		config.height = (int)(GameScreen.SCREEN_HEIGHT*0.25);
 		
 		
-//        Settings settings = new Settings();
+        Settings settings = new Settings();
 //        settings.maxWidth = 512;
 //        settings.maxHeight = 512;
-//        settings.maxWidth = 1024;
-//        settings.maxHeight = 1024;
+        settings.maxWidth = 1024;
+        settings.maxHeight = 1024;
 //		TexturePacker.process(settings, "../art/sprites/wood", "../android/assets", "wood");
 //		TexturePacker.process(settings, "../art/sprites/ui", "../android/assets", "ui");
+		TexturePacker.process(settings, "../art/sprites/scene", "../android/assets", "scene");
 //        settings.maxWidth = 1024;
 //        settings.maxHeight = 1024;
 //        settings.scale = new float[1];

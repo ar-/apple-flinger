@@ -146,7 +146,7 @@ public class Assets {
 		APPLE, WOOD_RECT;
 		@Override
 		public String toString() {
-			return "" + super.toString().toLowerCase() + ".p"; // "apple.p" //$NON-NLS-1$ //$NON-NLS-2$
+			return "" + super.toString().toLowerCase() + ".p";
 		};
 	}
 
@@ -196,7 +196,7 @@ public class Assets {
 // 	misc_atlas = new TextureAtlas(Gdx.files.internal("misc.atlas"));
 //	seyes_closed = misc_atlas.createSprite("eyes_closed");
 	public enum AtlasAsset {
-		MISC, UI, WOOD;
+		UI, SCENE;
 		@Override
 		public String toString() {
 			return "" + super.toString().toLowerCase() + ".atlas"; // "misc.atlas" //$NON-NLS-1$ //$NON-NLS-2$
