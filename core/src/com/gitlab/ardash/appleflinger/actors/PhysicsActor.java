@@ -141,6 +141,7 @@ public abstract class PhysicsActor extends Image {
 		switch (this.mc) {
 		case WOOD_RECT:
 			particleEffect=new ParticleEffect( Assets.getParticleEffect(ParticleAsset.WOOD_RECT));
+			//particleEffect.loadEmitterImages(Assets.AtlasAsset.SCENE);
 			break;
 		case WOOD_BL_21:
 		case WOOD_BL_22:

@@ -4,464 +4,478 @@ size: 1024,512
 format: RGBA8888
 filter: Nearest,Nearest
 repeat: none
+apple_part
+  rotate: false
+  xy: 2, 386
+  size: 144, 124
+  orig: 144, 124
+  offset: 0, 0
+  index: -1
 bird
   rotate: false
-  xy: 600, 196
+  xy: 988, 477
   size: 33, 33
   orig: 33, 33
   offset: 0, 0
   index: 0
 bird
   rotate: false
-  xy: 174, 9
+  xy: 988, 442
   size: 33, 33
   orig: 33, 33
   offset: 0, 0
   index: 1
 bird
   rotate: false
-  xy: 600, 161
+  xy: 988, 407
   size: 33, 33
   orig: 33, 33
   offset: 0, 0
   index: 2
 bird
   rotate: false
-  xy: 216, 32
+  xy: 577, 214
   size: 33, 33
   orig: 33, 33
   offset: 0, 0
   index: 3
 bird
   rotate: false
-  xy: 251, 32
+  xy: 612, 214
   size: 33, 33
   orig: 33, 33
   offset: 0, 0
   index: 4
 bird
   rotate: false
-  xy: 286, 32
+  xy: 647, 214
   size: 33, 33
   orig: 33, 33
   offset: 0, 0
   index: 5
 bird
   rotate: false
-  xy: 868, 345
+  xy: 704, 211
   size: 33, 33
   orig: 33, 33
   offset: 0, 0
   index: 6
 bird
   rotate: false
-  xy: 903, 345
+  xy: 739, 211
   size: 33, 33
   orig: 33, 33
   offset: 0, 0
   index: 7
 bird
   rotate: false
-  xy: 938, 345
+  xy: 774, 211
   size: 33, 33
   orig: 33, 33
   offset: 0, 0
   index: 8
 bird
   rotate: false
-  xy: 973, 345
+  xy: 809, 211
   size: 33, 33
   orig: 33, 33
   offset: 0, 0
   index: 9
 bird
   rotate: false
-  xy: 321, 32
+  xy: 844, 212
   size: 33, 33
   orig: 33, 33
   offset: 0, 0
   index: 10
 bird
   rotate: false
-  xy: 720, 305
+  xy: 879, 212
   size: 33, 33
   orig: 33, 33
   offset: 0, 0
   index: 11
 dork
   rotate: false
-  xy: 2, 379
+  xy: 2, 253
   size: 118, 131
   orig: 118, 131
   offset: 0, 0
   index: 0
 dork
   rotate: false
-  xy: 2, 246
+  xy: 2, 120
   size: 118, 131
   orig: 118, 131
   offset: 0, 0
   index: 1
 dork
   rotate: false
-  xy: 122, 379
+  xy: 148, 379
   size: 118, 131
   orig: 118, 131
   offset: 0, 0
   index: 2
 dork
   rotate: false
-  xy: 2, 113
+  xy: 268, 379
   size: 118, 131
   orig: 118, 131
   offset: 0, 0
   index: 3
 eyes_closed
   rotate: false
-  xy: 122, 246
+  xy: 388, 379
   size: 118, 131
   orig: 118, 131
   offset: 0, 0
   index: -1
 eyes_down
   rotate: false
-  xy: 242, 379
+  xy: 508, 379
   size: 118, 131
   orig: 118, 131
   offset: 0, 0
   index: -1
 eyes_inner
   rotate: false
-  xy: 122, 113
+  xy: 628, 379
   size: 118, 131
   orig: 118, 131
   offset: 0, 0
   index: -1
 eyes_left
   rotate: false
-  xy: 242, 246
+  xy: 748, 379
   size: 118, 131
   orig: 118, 131
   offset: 0, 0
   index: -1
 eyes_outer
   rotate: false
-  xy: 362, 379
+  xy: 868, 379
   size: 118, 131
   orig: 118, 131
   offset: 0, 0
   index: -1
 eyes_right
   rotate: false
-  xy: 242, 113
+  xy: 122, 246
   size: 118, 131
   orig: 118, 131
   offset: 0, 0
   index: -1
 eyes_up
   rotate: false
-  xy: 362, 246
+  xy: 242, 246
   size: 118, 131
   orig: 118, 131
   offset: 0, 0
   index: -1
 puff
   rotate: false
-  xy: 740, 446
+  xy: 706, 269
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: 0
 puff
   rotate: false
-  xy: 654, 274
+  xy: 772, 269
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: 1
 puff
   rotate: false
-  xy: 740, 380
+  xy: 876, 313
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: 2
 puff
   rotate: false
-  xy: 806, 446
+  xy: 942, 313
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: 3
 puff
   rotate: false
-  xy: 806, 380
+  xy: 260, 48
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: 4
 puff
   rotate: false
-  xy: 872, 446
+  xy: 294, 180
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: 5
 puff
   rotate: false
-  xy: 872, 380
+  xy: 294, 114
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: 6
 puff
   rotate: false
-  xy: 362, 94
+  xy: 326, 48
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: 7
 puff
   rotate: false
-  xy: 654, 208
+  xy: 838, 247
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: 8
 puff
   rotate: false
-  xy: 448, 165
+  xy: 904, 247
   size: 64, 64
   orig: 64, 64
   offset: 0, 0
   index: 9
 wood_bl_11
   rotate: false
-  xy: 720, 283
+  xy: 838, 313
   size: 20, 20
   orig: 20, 20
   offset: 0, 0
   index: 0
 wood_bl_11
   rotate: false
-  xy: 720, 261
+  xy: 682, 227
   size: 20, 20
   orig: 20, 20
   offset: 0, 0
   index: 1
 wood_bl_11
   rotate: false
-  xy: 720, 239
+  xy: 682, 205
   size: 20, 20
   orig: 20, 20
   offset: 0, 0
   index: 2
 wood_bl_11
   rotate: false
-  xy: 720, 217
+  xy: 914, 225
   size: 20, 20
   orig: 20, 20
   offset: 0, 0
   index: 3
 wood_bl_21
   rotate: false
-  xy: 173, 44
+  xy: 791, 246
   size: 41, 21
   orig: 41, 21
   offset: 0, 0
   index: 0
 wood_bl_21
   rotate: false
-  xy: 825, 357
+  xy: 970, 247
   size: 41, 21
   orig: 41, 21
   offset: 0, 0
   index: 1
 wood_bl_21
   rotate: false
-  xy: 514, 165
+  xy: 260, 25
   size: 41, 21
   orig: 41, 21
   offset: 0, 0
   index: 2
 wood_bl_21
   rotate: false
-  xy: 557, 166
+  xy: 257, 2
   size: 41, 21
   orig: 41, 21
   offset: 0, 0
   index: 3
 wood_bl_22
   rotate: false
-  xy: 88, 2
-  size: 41, 40
-  orig: 41, 40
-  offset: 0, 0
-  index: 0
-wood_bl_22
-  rotate: false
-  xy: 131, 2
-  size: 41, 40
-  orig: 41, 40
-  offset: 0, 0
-  index: 1
-wood_bl_22
-  rotate: false
-  xy: 514, 188
+  xy: 970, 270
   size: 41, 41
   orig: 41, 41
   offset: 0, 0
   index: 3
 wood_bl_22
   rotate: false
-  xy: 557, 189
+  xy: 303, 6
+  size: 41, 40
+  orig: 41, 40
+  offset: 0, 0
+  index: 0
+wood_bl_22
+  rotate: false
+  xy: 346, 6
+  size: 41, 40
+  orig: 41, 40
+  offset: 0, 0
+  index: 1
+wood_bl_22
+  rotate: false
+  xy: 534, 207
   size: 41, 40
   orig: 41, 40
   offset: 0, 0
   index: 2
 wood_bl_41
   rotate: false
-  xy: 172, 67
+  xy: 2, 11
   size: 83, 21
   orig: 83, 21
   offset: 0, 0
   index: 0
 wood_bl_41
   rotate: false
-  xy: 740, 357
+  xy: 706, 246
   size: 83, 21
   orig: 83, 21
   offset: 0, 0
   index: 1
 wood_bl_41
   rotate: false
-  xy: 88, 44
+  xy: 87, 5
   size: 83, 21
   orig: 83, 21
   offset: 0, 0
   index: 2
 wood_bl_41
   rotate: false
-  xy: 257, 67
+  xy: 172, 5
   size: 83, 21
   orig: 83, 21
   offset: 0, 0
   index: 3
 wood_bl_42
   rotate: false
-  xy: 938, 468
+  xy: 532, 335
   size: 84, 42
   orig: 84, 42
   offset: 0, 0
   index: 0
 wood_bl_42
   rotate: false
-  xy: 938, 424
+  xy: 618, 335
   size: 84, 42
   orig: 84, 42
   offset: 0, 0
   index: 1
 wood_bl_42
   rotate: false
-  xy: 938, 380
+  xy: 704, 335
   size: 84, 42
   orig: 84, 42
   offset: 0, 0
   index: 2
 wood_bl_42
   rotate: false
-  xy: 2, 23
+  xy: 790, 335
   size: 84, 42
   orig: 84, 42
   offset: 0, 0
   index: 3
 wood_bl_81
   rotate: false
-  xy: 2, 90
+  xy: 122, 223
   size: 168, 21
   orig: 168, 21
   offset: 0, 0
   index: 0
 wood_bl_81
   rotate: false
-  xy: 482, 489
+  xy: 362, 356
   size: 168, 21
   orig: 168, 21
   offset: 0, 0
   index: 1
 wood_bl_81
   rotate: false
-  xy: 2, 67
+  xy: 122, 200
   size: 168, 21
   orig: 168, 21
   offset: 0, 0
   index: 2
 wood_bl_81
   rotate: false
-  xy: 172, 90
+  xy: 362, 333
   size: 168, 21
   orig: 168, 21
   offset: 0, 0
   index: 3
+wood_part
+  rotate: false
+  xy: 988, 390
+  size: 34, 15
+  orig: 34, 15
+  offset: 0, 0
+  index: -1
 wood_rect
   rotate: false
-  xy: 362, 160
+  xy: 2, 34
   size: 84, 84
   orig: 84, 84
   offset: 0, 0
   index: 0
 wood_rect
   rotate: false
-  xy: 482, 403
+  xy: 362, 247
   size: 84, 84
   orig: 84, 84
   offset: 0, 0
   index: 1
 wood_rect
   rotate: false
-  xy: 482, 317
+  xy: 448, 247
   size: 84, 84
   orig: 84, 84
   offset: 0, 0
   index: 2
 wood_rect
   rotate: false
-  xy: 568, 403
+  xy: 122, 114
   size: 84, 84
   orig: 84, 84
   offset: 0, 0
   index: 3
 wood_tnt
   rotate: false
-  xy: 568, 317
+  xy: 208, 114
   size: 84, 84
   orig: 84, 84
   offset: 0, 0
   index: 0
 wood_tria
   rotate: false
-  xy: 482, 231
+  xy: 88, 28
   size: 84, 84
   orig: 84, 84
   offset: 0, 0
   index: 0
 wood_tria
   rotate: false
-  xy: 568, 231
+  xy: 174, 28
   size: 84, 84
   orig: 84, 84
   offset: 0, 0
   index: 1
 wood_tria
   rotate: false
-  xy: 654, 426
+  xy: 534, 249
   size: 84, 84
   orig: 84, 84
   offset: 0, 0
   index: 2
 wood_tria
   rotate: false
-  xy: 654, 340
+  xy: 620, 249
   size: 84, 84
   orig: 84, 84
   offset: 0, 0

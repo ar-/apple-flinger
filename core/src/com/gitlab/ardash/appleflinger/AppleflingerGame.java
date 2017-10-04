@@ -121,12 +121,13 @@ public class AppleflingerGame extends Game {
 		super.render(); // important!
 		
 		// print FPS after screen render - only every second
-		if (secondStart < TimeUtils.millis()-1000)
-		{
-			final int fps = Gdx.graphics.getFramesPerSecond();
-			System.out.println("FPS: "+fps);
-			secondStart = TimeUtils.millis();
-		}
+		if (GameManager.DEBUG)
+			if (secondStart < TimeUtils.millis()-1000)
+			{
+				final int fps = Gdx.graphics.getFramesPerSecond();
+				System.out.println("FPS: "+fps);
+				secondStart = TimeUtils.millis();
+			}
 	}
 	
 	
