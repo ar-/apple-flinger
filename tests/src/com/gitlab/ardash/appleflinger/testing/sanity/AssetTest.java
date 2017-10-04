@@ -33,7 +33,9 @@ public class AssetTest {
 	@Test
 	public void arePngFilesComplete() {
 		assertTrue("Asset file not found.", Gdx.files
-				.internal("assets/wood.png").exists());
+				.internal("assets/scene.png").exists());
+		assertTrue("Asset file not found.", Gdx.files
+				.internal("assets/backgr.png").exists());
 	}
 	
 	@Test
