@@ -61,8 +61,9 @@ public class I18N {
 			return "";
 		case iOS:
 			return "";
+		default:
+			throw new RuntimeException("Unknown application type " + Gdx.app.getType());
 		}
-		throw new RuntimeException("Unknown application type " + Gdx.app.getType());
 	}
 	
 	public static void loadLanguageBundle(String languageCode)

@@ -114,6 +114,7 @@ public class AppleflingerGame extends Game {
 		Gdx.app.debug(this.getClass().getSimpleName(), "setting screen to "+className); //$NON-NLS-1$
 	}
 	
+	@Override
 	public void render() {
         Gdx.gl.glClearColor(0.0f, 0.0f, 0.0f, 1);
         //Gdx.gl.glClearColor(0.3f, 0.3f, 1.0f, 1);

@@ -26,7 +26,6 @@ import com.badlogic.gdx.Gdx;
 import com.gitlab.ardash.appleflinger.i18n.I18N;
 import com.gitlab.ardash.appleflinger.testing.GdxTestRunner;
 
-@SuppressWarnings("unused")
 @RunWith(GdxTestRunner.class)
 public class AssetTest {
 

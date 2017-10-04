@@ -37,6 +37,7 @@ public class GdxTestRunner extends BlockJUnit4ClassRunner implements Application
 
 	private Map<FrameworkMethod, RunNotifier> invokeInRender = new HashMap<FrameworkMethod, RunNotifier>();
 
+	@SuppressWarnings("unused")
 	public GdxTestRunner(Class<?> klass) throws InitializationError {
 		super(klass);
 		

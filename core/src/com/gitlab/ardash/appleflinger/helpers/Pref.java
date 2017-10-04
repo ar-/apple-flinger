@@ -161,7 +161,6 @@ public class Pref {
 		Boolean act = activatedLevels.get(mission);
 		if (act == null)
 		{
-			Preferences prefs = Gdx.app.getPreferences(PREFS_NAME);
 			final String key = Calculator.md5(PEPPER+"Activated"+mission.name()); //$NON-NLS-1$
 			act = prefs.getBoolean(key, false);
 			activatedLevels.put(mission,act);
@@ -171,7 +170,6 @@ public class Pref {
 
 	public static void setMissionActivated(Mission mission, boolean activated) {
 		activatedLevels.put(mission,activated);
-		Preferences prefs = Gdx.app.getPreferences(PREFS_NAME);
 		final String key = Calculator.md5(PEPPER+"Activated"+mission.name()); //$NON-NLS-1$
 		prefs.putBoolean(key, activated);
 		prefs.flush();

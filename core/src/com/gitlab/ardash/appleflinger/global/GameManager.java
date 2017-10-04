@@ -98,6 +98,7 @@ final public class GameManager {
 		resetAll(null);
 	}
 	
+	@SuppressWarnings("unused")
 	public static void recordPullVector(Vector2 v)
 	{
 		if (RECORDSHOTS && instance.currentPlayer == instance.PLAYER2)
@@ -106,6 +107,7 @@ final public class GameManager {
 		}
 	}
 
+	@SuppressWarnings("unused")
 	public static void recordTargetPosition(float x, float y, float impact)
 	{
 		if (RECORDSHOTS && instance.currentPlayer == instance.PLAYER2)

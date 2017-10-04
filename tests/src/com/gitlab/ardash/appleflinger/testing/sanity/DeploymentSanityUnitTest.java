@@ -22,7 +22,6 @@ import org.junit.Test;
 
 import com.gitlab.ardash.appleflinger.global.GameManager;
 
-@SuppressWarnings("unused")
 public class DeploymentSanityUnitTest {
 
 	@Test

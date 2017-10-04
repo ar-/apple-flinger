@@ -87,7 +87,7 @@ public class ProjectileActor extends CircleActor {
 			public boolean touchDown(InputEvent event, float x, float y,
 					int pointer, int button) {
 				GameManager gm = GameManager.getInstance();
-				if (gm.DEBUG)
+				if (GameManager.DEBUG)
 					System.out.println("touchDown"+x +","+y); //$NON-NLS-1$ //$NON-NLS-2$
 				lastTouchDown.set(body.getTransform().getPosition().cpy());
 				removePhysics();
@@ -198,8 +198,8 @@ public class ProjectileActor extends CircleActor {
 	
 	@Override
 	protected void resetPhysics(MaterialConfig mc, float x,
-			float y, float angle, BodyType bodyType) {
-		super.resetPhysics(mc, x, y, angle, bodyType);
+			float y, float angle, BodyType aBodyType) {
+		super.resetPhysics(mc, x, y, angle, aBodyType);
 		// no mass for projectiles - mass will be added on shot
 		body.setGravityScale(0);
 	}
@@ -294,7 +294,8 @@ public class ProjectileActor extends CircleActor {
 		
 		// arrived here, we can safely assume, that the apple won't have any impact any more
 		endLifetimeNow();
-		System.err.println("KILL "+unitsPerSec);
+		if (GameManager.DEBUG)
+			System.err.println("killing slow apple: "+unitsPerSec);
 	}
 	 
 

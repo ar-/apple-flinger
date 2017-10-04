@@ -195,7 +195,7 @@ public abstract class PhysicsActor extends Image {
 //	}
 	
 	protected abstract void resetPhysics(MaterialConfig mc, float x,
-			float y, float angle, BodyType bodyType);
+			float y, float angle, BodyType aBodyType);
 
 	protected void resetPhysics() {
 		//world.box2dWorld.destroyBody(body);
@@ -305,7 +305,7 @@ public abstract class PhysicsActor extends Image {
 			setToBeDestroyed();
 			return;
 		}
-		;
+		
 		//int applicableDamageState = Math.round(1f/(health/initialHealth))-1;
 		int applicableDamageState = (int) (LinearInterpolator.ilx(0, 4, initialHealth, 0, health));
 		applyDestructionState(DestructionState.values()[applicableDamageState]);

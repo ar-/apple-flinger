@@ -93,7 +93,7 @@ public class TargetActor extends CircleActor{
 //		GameManager.recordTargetPosition(getX(), getY());
 	}
 	
-	private EyeState pickRandomEyeState()
+	private static EyeState pickRandomEyeState()
 	{
 		//1 in 3 chance for a blink
 		final int blinkChance = MathUtils.random(0, 2);
