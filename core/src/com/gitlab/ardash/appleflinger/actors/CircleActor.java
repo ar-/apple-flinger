@@ -77,13 +77,13 @@ public class CircleActor extends PhysicsActor {
 	 */
 	@Override
 	protected void resetPhysics(MaterialConfig mc, float x,
-			float y, float angle, BodyType bodyType) {
+			float y, float angle, BodyType abodyType) {
 		// generate bob's box2d body  
         CircleShape circle = new CircleShape();  
         circle.setRadius(RADIUS);  
           
         BodyDef bodyDef = new BodyDef();  
-        bodyDef.type = bodyType;  
+        bodyDef.type = abodyType;  
         bodyDef.position.x = x;  
         bodyDef.position.y = y;  
         bodyDef.angle = angle;

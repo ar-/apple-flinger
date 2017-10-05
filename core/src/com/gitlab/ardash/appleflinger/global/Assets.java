@@ -19,7 +19,6 @@ package com.gitlab.ardash.appleflinger.global;
 import java.util.EnumSet;
 
 import com.badlogic.gdx.Application;
-import com.badlogic.gdx.assets.AssetLoaderParameters;
 import com.badlogic.gdx.assets.AssetManager;
 import com.badlogic.gdx.assets.loaders.FileHandleResolver;
 import com.badlogic.gdx.assets.loaders.ParticleEffectLoader.ParticleEffectParameter;
@@ -39,7 +38,6 @@ import com.badlogic.gdx.graphics.g2d.freetype.FreeTypeFontGenerator;
 import com.badlogic.gdx.graphics.g2d.freetype.FreeTypeFontGenerator.FreeTypeFontParameter;
 import com.badlogic.gdx.graphics.g2d.freetype.FreeTypeFontGeneratorLoader;
 import com.badlogic.gdx.graphics.g2d.freetype.FreetypeFontLoader;
-import com.badlogic.gdx.graphics.g3d.particles.ParticleEffectLoader.ParticleEffectLoadParameter;
 import com.badlogic.gdx.math.MathUtils;
 import com.badlogic.gdx.scenes.scene2d.ui.Label.LabelStyle;
 import com.badlogic.gdx.utils.Logger;
@@ -134,7 +132,7 @@ public class Assets {
 		@Override
 		public String toString() {
 			return "size" + super.toString().replaceAll("[^\\d.]", "") + ".ttf"; // "size72.ttf" //$NON-NLS-1$ //$NON-NLS-2$ //$NON-NLS-3$ //$NON-NLS-4$
-		};
+		}
 	}
 
 	public enum FontGeneratorAsset {
@@ -142,7 +140,7 @@ public class Assets {
 		@Override
 		public String toString() {
 			return "" + super.toString().toLowerCase() + ".ttf"; // "njnaruto.ttf" //$NON-NLS-1$ //$NON-NLS-2$
-		};
+		}
 	}
 
 	public enum ParticleAsset {
@@ -150,7 +148,7 @@ public class Assets {
 		@Override
 		public String toString() {
 			return "" + super.toString().toLowerCase() + ".p";
-		};
+		}
 	}
 
 	public enum TextureAsset {
@@ -158,7 +156,7 @@ public class Assets {
 		@Override
 		public String toString() {
 			return "" + super.toString().toLowerCase() + ".png"; // "backgr.png" //$NON-NLS-1$ //$NON-NLS-2$
-		};
+		}
 	}
 
 	public enum MusicAsset {
@@ -166,7 +164,7 @@ public class Assets {
 		@Override
 		public String toString() {
 			return "sounds/" + super.toString().toLowerCase() + ".mp3"; // "sounds/bg.mp3" //$NON-NLS-1$ //$NON-NLS-2$
-		};
+		}
 	}
 
 	/**
@@ -193,7 +191,7 @@ public class Assets {
 		@Override
 		public String toString() {
 			return "sounds/" + super.toString().toLowerCase() + ".mp3"; // "sounds/apple_hit_1.mp3" //$NON-NLS-1$ //$NON-NLS-2$
-		};
+		}
 	}
 	
 // 	misc_atlas = new TextureAtlas(Gdx.files.internal("misc.atlas"));
@@ -203,7 +201,7 @@ public class Assets {
 		@Override
 		public String toString() {
 			return "" + super.toString().toLowerCase() + ".atlas"; // "misc.atlas" //$NON-NLS-1$ //$NON-NLS-2$
-		};
+		}
 	}
 
 	public enum SpriteAsset {
@@ -326,7 +324,7 @@ public class Assets {
 		@Override
 		public String toString() {
 			return "" + rname + (rindex ==-1 ? "" : "_"+rindex); // "eyes_closed" //$NON-NLS-1$ //$NON-NLS-2$ //$NON-NLS-3$
-		};
+		}
 	}
 
 

@@ -17,8 +17,8 @@
 package com.gitlab.ardash.appleflinger.testing.sanity;
 
 import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
 import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertTrue;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -27,9 +27,9 @@ import org.junit.runner.RunWith;
 import com.gitlab.ardash.appleflinger.global.GameManager;
 import com.gitlab.ardash.appleflinger.global.GameManager.OnCurrentPlayerChangeListener;
 import com.gitlab.ardash.appleflinger.global.GameState;
-import com.gitlab.ardash.appleflinger.global.PlayerStatus;
 import com.gitlab.ardash.appleflinger.helpers.Pref;
 import com.gitlab.ardash.appleflinger.missions.Mission;
+import com.gitlab.ardash.appleflinger.screens.MainMenuScreen;
 import com.gitlab.ardash.appleflinger.testing.GdxTestRunner;
 
 @SuppressWarnings("unused")
@@ -89,6 +89,17 @@ public class GameManagerTest {
 		assertTrue(Pref.isMissionActivated(Mission.M_1_2));
 		Pref.setMissionActivated(Mission.M_1_2,false);
 		assertFalse(Pref.isMissionActivated(Mission.M_1_2));
-}
+	}
+
+	@Test
+	public void headlessTest() {
+		GameState gameState = gm.getGameState();
+		assertEquals(gameState, GameState.START_APP);
+//		MainMenuScreen mms = (MainMenuScreen)gm.getGame().getScreen();
+//		gm.turnToNextPlayer();
+		
+		// TODO build own headless app and use for tests
+	}
+
 
 }

@@ -132,7 +132,7 @@ public class BlockActor extends PhysicsActor {
 	 */
     @Override
     protected void resetPhysics(MaterialConfig mc, float x,
-			float y, float angle, BodyType bodyType) {
+			float y, float angle, BodyType aBodyType) {
 		// generate bob's box2d body  
         PolygonShape recShape = new PolygonShape();  
         recShape.setAsBox(widthRadius,heightRadius);
@@ -146,7 +146,7 @@ public class BlockActor extends PhysicsActor {
         //recShape.setRadius(radius);
           
         BodyDef bodyDef = new BodyDef();  
-        bodyDef.type = bodyType;  
+        bodyDef.type = aBodyType;  
         bodyDef.position.x = x;  
         bodyDef.position.y = y;  
         bodyDef.angle = angle;

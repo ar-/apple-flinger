@@ -24,7 +24,6 @@ import com.badlogic.gdx.scenes.scene2d.Actor;
 import com.badlogic.gdx.scenes.scene2d.Group;
 import com.badlogic.gdx.utils.Array;
 import com.badlogic.gdx.utils.Disposable;
-import com.badlogic.gdx.utils.TimeUtils;
 import com.badlogic.gdx.utils.viewport.FitViewport;
 import com.gitlab.ardash.appleflinger.actors.AppleActor;
 import com.gitlab.ardash.appleflinger.actors.BackgroundActor;
@@ -241,12 +240,6 @@ public class GameWorld implements Disposable{
 	    	 if ( delta > 0.25f ) delta = 0.25f; // note: max frame time to avoid spiral of death
 	    	 accumulator += delta;
 	    	 
-	        double newTime = TimeUtils.millis() / 1000.0;
-	        double frameTime = Math.min(newTime - currentTime, 0.25);
-	        float deltaTime = (float)frameTime;
-
-	        currentTime = newTime;
-
 	        while (accumulator >= step) {
 		        box2dWorld.step(step, 25, 25); // update box2d world (high values stablibise stacks)
 		        physicWorldObserver.step();
@@ -261,14 +254,12 @@ public class GameWorld implements Disposable{
         //System.out.println(delta);
         
         // if player 2 is a CPU it will act now
-//        PlayerSimulator.INSTANCE.loadAIforNewLevelIfNotDoneYet();
         PlayerSimulator.INSTANCE.act(delta);
         
         Bird.pingBirdSpawn(birdGroup);
     }
     
     private double accumulator;
-    private double currentTime;
     private float step = 1.0f / 60.0f;
 
     

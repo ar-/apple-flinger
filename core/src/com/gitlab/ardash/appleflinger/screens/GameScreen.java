@@ -25,7 +25,6 @@ import com.badlogic.gdx.scenes.scene2d.InputEvent;
 import com.badlogic.gdx.scenes.scene2d.InputListener;
 import com.badlogic.gdx.scenes.scene2d.Stage;
 import com.badlogic.gdx.scenes.scene2d.Touchable;
-import com.badlogic.gdx.scenes.scene2d.ui.Cell;
 import com.badlogic.gdx.scenes.scene2d.ui.Label;
 import com.badlogic.gdx.scenes.scene2d.ui.Label.LabelStyle;
 import com.badlogic.gdx.scenes.scene2d.ui.Table;
@@ -321,27 +320,14 @@ public class GameScreen implements Screen {
         miniStatsTable.add(createMiniLabel(I18N.getString("level"))); //$NON-NLS-1$
         miniStatsTable.add(createMiniLabel(mission.getMinor()+"")).left(); //$NON-NLS-1$
 		miniStatsTable.add().width(GameWorld.UNIT_WIDTH/2);
-		final float miniStatsTableWidth = 20*2+60+100*2;
         final Table topLeftTable = new Table();
         topLeftTable.setFillParent(true);
         topLeftTable.align(Align.topLeft);
         topLeftTable.add(btnSound).padLeft(10);
         topLeftTable.add(btnPause).padLeft(10);
-        // banner size is unpredicatble atm
-        //topLeftTable.add(miniStatsTable).width(SCREEN_WIDTH - 2*(10+btnPause.getWidth()) - BANNER_WIDTH).center();
-        //final Cell<Table> miniStatsTableCell = topLeftTable.add(miniStatsTable).padLeft(40).left();
-        final Cell<Table> miniStatsTableCell = topLeftTable.add(miniStatsTable).width(SCREEN_WIDTH - 4*(10+btnPause.getWidth())).padLeft(0).center();
+
         guiStage.addActor(topLeftTable);
         
-//		final Table rootTable = new Table();
-//		rootTable.setFillParent(true);
-//		rootTable.align(Align.top);
-//		rootTable.add(topTable).width(Value.percentWidth(50f));
-//		guiStage.addActor(rootTable);
-
-        
-        // pause screen must be last element to be added pn gui, becasue it overdrwas everything
-//   		guiStage.addActor(pauseScreen);
         // TODO add more other GUI elements here  
 	}  
       

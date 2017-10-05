@@ -72,7 +72,6 @@ public class RandomSet<E> extends AbstractSet<E> {
 
     @Override
     public boolean remove(Object item) {
-        @SuppressWarnings(value = "element-type-mismatch")
         Integer id = idx.get(item);
         if (id == null) {
             return false;

@@ -29,16 +29,13 @@ public class MissionEmpty implements StageFiller{
 	@Override
 	public Group fillMirrorStage(GameWorld world) {
 		Group group = new Group();
-		float height;
-		
+
 		// sling holder
 		group.addActor( new BlockActor(world,MaterialConfig.STONE,5.2f, 5.1f,0.3f,0.1f, BodyType.StaticBody)); 
 
         SlingShotActor slingshot1 = new SlingShotActor(5.2f, 5.1f);
         group.addActor(slingshot1);
         
-        //group.addActor(new TextActor("AAA"));
-        //group.addActor(new PopPointActor("AAA"));
 		return group;
 	}
 

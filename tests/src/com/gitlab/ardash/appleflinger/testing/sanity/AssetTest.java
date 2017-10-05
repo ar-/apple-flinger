@@ -16,8 +16,8 @@
  ******************************************************************************/
 package com.gitlab.ardash.appleflinger.testing.sanity;
 
-import static org.junit.Assert.assertTrue;
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -26,7 +26,6 @@ import com.badlogic.gdx.Gdx;
 import com.gitlab.ardash.appleflinger.i18n.I18N;
 import com.gitlab.ardash.appleflinger.testing.GdxTestRunner;
 
-@SuppressWarnings("unused")
 @RunWith(GdxTestRunner.class)
 public class AssetTest {
 

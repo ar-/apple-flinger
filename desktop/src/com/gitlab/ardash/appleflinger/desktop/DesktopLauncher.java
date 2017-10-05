@@ -18,7 +18,6 @@ package com.gitlab.ardash.appleflinger.desktop;
 
 import com.badlogic.gdx.backends.lwjgl.LwjglApplication;
 import com.badlogic.gdx.backends.lwjgl.LwjglApplicationConfiguration;
-import com.badlogic.gdx.tools.texturepacker.TexturePacker;
 import com.badlogic.gdx.tools.texturepacker.TexturePacker.Settings;
 import com.gitlab.ardash.appleflinger.ActionResolver;
 import com.gitlab.ardash.appleflinger.AppleflingerGame;
@@ -32,6 +31,7 @@ public class DesktopLauncher implements ActionResolver{
 	}
 	
 	
+	@SuppressWarnings("unused")
 	public void launch()
 	{
 		Mission.validate();
@@ -42,8 +42,8 @@ public class DesktopLauncher implements ActionResolver{
 //		config.height = (int)(GameScreen.SCREEN_HEIGHT);
 //		config.width = (int)(GameScreen.SCREEN_WIDTH*0.5);
 //		config.height = (int)(GameScreen.SCREEN_HEIGHT*0.5);
-		config.width = (int)(1280); // PHONE SIZE (Ifor screenshots)
-		config.height = (int)(720); // PHONE SIZE
+		config.width = 1280; // PHONE SIZE (Ifor screenshots)
+		config.height = 720; // PHONE SIZE
 //		config.width = (int)(GameScreen.SCREEN_WIDTH*0.8);
 //		config.height = (int)(GameScreen.SCREEN_HEIGHT*0.8);
 //		config.width = (int)(GameScreen.SCREEN_WIDTH*0.25);

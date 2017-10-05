@@ -93,10 +93,8 @@ public class TntActor extends BlockActor{
 				{
 					// reduce force on projectile
 					if (pa instanceof ProjectileActor) {
-						ProjectileActor pra = (ProjectileActor) pa;
 						force.scl(0.3f);
 					}
-//					pa.body.applyForceToCenter(force , true);
 					pa.body.applyLinearImpulse(force, expVictimCenter, true);
 				}
 				

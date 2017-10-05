@@ -38,7 +38,8 @@ public class GdxFileControl extends Control {
         this.fileType = fileType;  
     }  
       
-    public ResourceBundle newBundle(String baseName, Locale locale, String format, ClassLoader loader, boolean reload)   
+    @Override
+	public ResourceBundle newBundle(String baseName, Locale locale, String format, ClassLoader loader, boolean reload)   
             throws IllegalAccessException, InstantiationException, IOException {  
         // The below is a copy of the default implementation.  
         String bundleName = toBundleName(baseName, locale);  

@@ -64,12 +64,13 @@ public class AndroidLauncher extends AndroidApplication implements ActionResolve
 		getWindow().clearFlags(WindowManager.LayoutParams.FLAG_FORCE_NOT_FULLSCREEN);
 
 		RelativeLayout layout = new RelativeLayout(this);
+		@SuppressWarnings("static-access")
 		RelativeLayout.LayoutParams params = new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.MATCH_PARENT,
 				RelativeLayout.LayoutParams.MATCH_PARENT);
 		layout.setLayoutParams(params);
 
-		View gameView = createGameView(config);
-		layout.addView(gameView);
+		View localGameView = createGameView(config);
+		layout.addView(localGameView);
 
 		setContentView(layout);
 
@@ -125,6 +126,7 @@ public class AndroidLauncher extends AndroidApplication implements ActionResolve
 
 	private View createGameView(AndroidApplicationConfiguration cfg) {
 		gameView = initializeForView(new AppleflingerGame(this), cfg);
+		@SuppressWarnings("static-access")
 		RelativeLayout.LayoutParams params = new RelativeLayout.LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.MATCH_PARENT);
 		// params.addRule(RelativeLayout.ALIGN_PARENT_BOTTOM,
 		// RelativeLayout.TRUE);

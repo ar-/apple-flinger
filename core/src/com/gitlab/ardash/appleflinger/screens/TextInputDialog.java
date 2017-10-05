@@ -144,11 +144,11 @@ public class TextInputDialog extends Dialog{
 		super.draw(batch, parentAlpha);
 	}
 
-	public void show(Stage guiStage, String headline, String initText, OnTextChangeListener changeListener) {
+	public void show(Stage guiStage, String headline, String initText, OnTextChangeListener textChangeListener) {
 		super.show(guiStage);
 		lblHeadline.setText(headline);
 		lblContent.setText(initText);
-		this.changeListener=changeListener;
+		this.changeListener=textChangeListener;
 	}
 	
 }

@@ -23,10 +23,11 @@ import com.gitlab.ardash.appleflinger.global.MaterialConfig;
 
 public class Ground extends BlockActor {  
 
-    public Ground(GameWorld world) {  
+    @SuppressWarnings("static-access")
+	public Ground(GameWorld world) {  
     	//super(world,MaterialConfig.METAL,world.UNIT_WIDTH/2f,0, world.UNIT_WIDTH*2,0.1f,BodyType.StaticBody);
     	super(world,MaterialConfig.INVISIBLE,world.UNIT_WIDTH/2f,0, world.UNIT_WIDTH*2,0.1f,BodyType.StaticBody);
-    	setDamagable(false); // very importent!!
+    	setDamagable(false); // very important!!
     	
         Filter filter = body.getFixtureList().get(0).getFilterData();
         filter.categoryBits = CollisionFilterMasks.GROUND;

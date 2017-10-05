@@ -80,8 +80,8 @@ public class PlayerStatus {
 		return allPoints;
 	}
 
-	protected void incAllPoints(int allPoints) {
-		this.allPoints += allPoints;
+	protected void incAllPoints(int aAllPoints) {
+		this.allPoints += aAllPoints;
 	}
 
 	public int getWins() {

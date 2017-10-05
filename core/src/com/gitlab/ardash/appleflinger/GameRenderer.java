@@ -16,8 +16,6 @@
  ******************************************************************************/
 package com.gitlab.ardash.appleflinger;
 
-import java.util.ArrayList;
-
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Input.Keys;
 import com.badlogic.gdx.graphics.GL20;
@@ -52,7 +50,6 @@ public class GameRenderer  implements Disposable
     private float wantedZoom;
     
     private final Vector2 lastTouchDown;
-    private final ArrayList<Actor> sandboxCreated = new ArrayList<Actor>();
     private MaterialConfig currentSandboxConfig = MaterialConfig.WOOD_RECT;
     private float currentSandboxRotation = 0;
 	private PhysicsActor sandboxPreviewActor = null;
@@ -147,9 +144,6 @@ public class GameRenderer  implements Disposable
 			
 			protected float getTranformedY(float x)
 			{
-				final float base = initialCamPos.y;
-				final float halfInterval = 1.375f;
-				
 				// bring x to interval [0,1]
 				x-=6f;
 				x = Math.abs(x);
@@ -160,9 +154,6 @@ public class GameRenderer  implements Disposable
 			
 			protected float getTransZ(float x)
 			{
-//				final float base = initialCamPos.z;
-//				final float halfInterval = 1.375f;
-				
 				// bring x to interval [0,1]
 				x-=6f;
 				x = Math.abs(x);
@@ -177,12 +168,7 @@ public class GameRenderer  implements Disposable
   
     public void render()  
     {  
-    	// TODO camera can follow main actor here
-//        camera.position.x = world.bob.body.getPosition().x;  
-//        camera.position.y = world.bob.body.getPosition().y;  
-
     	// SANBOX stuff
-    	GameManager gm = GameManager.getInstance();
     	if (GameManager.SANDBOX)
     	{
     		final int mX = Gdx.input.getX();

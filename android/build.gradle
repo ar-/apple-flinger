@@ -30,6 +30,11 @@ android {
         }
     }
 
+    lintOptions {
+        
+        enable 'RtlHardcoded','RtlCompat', 'RtlEnabled', 'TypographyFractions','TypographyQuotes','EasterEgg'
+    }
+
 }
 
 

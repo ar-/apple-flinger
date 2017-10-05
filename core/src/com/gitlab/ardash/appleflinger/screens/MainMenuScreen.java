@@ -16,7 +16,6 @@
  ******************************************************************************/
 package com.gitlab.ardash.appleflinger.screens;
 
-import com.badlogic.gdx.Screen;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.scenes.scene2d.InputEvent;
 import com.badlogic.gdx.scenes.scene2d.InputListener;
@@ -29,7 +28,7 @@ import com.gitlab.ardash.appleflinger.global.Assets;
 import com.gitlab.ardash.appleflinger.global.GameState;
 import com.gitlab.ardash.appleflinger.i18n.I18N;
 
-public class MainMenuScreen extends GenericScreen implements Screen {
+public class MainMenuScreen extends GenericScreen {
 
 	private Label loadingLabel;
 

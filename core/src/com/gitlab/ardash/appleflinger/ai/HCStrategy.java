@@ -108,7 +108,7 @@ public class HCStrategy implements Strategy {
 		return ret;
 	}
 
-	private List<Vector2> getCurrentTragets()
+	private static List<Vector2> getCurrentTragets()
 	{
 		List<Vector2> ret = new ArrayList<Vector2>();
 		GameManager gm = GameManager.getInstance();

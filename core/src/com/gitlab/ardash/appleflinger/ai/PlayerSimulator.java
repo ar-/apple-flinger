@@ -61,15 +61,14 @@ public class PlayerSimulator {
 	public void act(float delta) {
 		GameManager gm = GameManager.getInstance();
 		
-		// don't do anything if not dragging (dragging is only triggered by
-		// playOneRound())
+		// don't do anything if not dragging (dragging is only triggered by playOneRound())
 		if (!isDraging)
 			return;
 
 		// TODO deactivate input on GUI and stage while dragging
 		timeActive += delta;
 		
-		final float pullingSteps = 25;
+		final float pullingSteps = 25; // should be int
 
 		switch (step) {
 		case 0:
@@ -81,11 +80,10 @@ public class PlayerSimulator {
 			final Vector2 slingShotCenter = gm.currentPlayer.slingshot.getSlingShotCenter();
 
 			if (goodPullVector == null)
-//				goodPullVector = findGoodPullVectorForCurrentSlingshot(); // old stuff
 				goodPullVector = getGoodPullVector();
 			
 			Vector2 dragTarget = slingShotCenter.cpy()
-					.add(goodPullVector.cpy().scl(1 * (Math.min(pulledSteps, pullingSteps) / (float) pullingSteps)));
+					.add(goodPullVector.cpy().scl(1 * (Math.min(pulledSteps, pullingSteps) / pullingSteps)));
 			// System.out.println("shooting at: "+dragTarget);
 			// in 10 steps
 			touchDragTo(dragTarget);
@@ -125,6 +123,7 @@ public class PlayerSimulator {
 
 	}
 
+	@SuppressWarnings("static-method")
 	private void touchDown() {
 		GameManager gm = GameManager.getInstance();
 		final PhysicsActor currentProjectile = gm.currentPlayer.slingshot.getCurrentProjectile();
@@ -150,6 +149,7 @@ public class PlayerSimulator {
 		currentProjectile.fire(touchDragged);
 	}
 
+	@SuppressWarnings("static-method")
 	private void touchUp() {
 		GameManager gm = GameManager.getInstance();
 		final PhysicsActor currentProjectile = gm.currentPlayer.slingshot.getCurrentProjectile();

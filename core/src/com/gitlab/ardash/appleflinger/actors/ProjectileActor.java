@@ -20,9 +20,9 @@ import com.badlogic.gdx.graphics.OrthographicCamera;
 import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
 import com.badlogic.gdx.math.Vector2;
+import com.badlogic.gdx.physics.box2d.BodyDef.BodyType;
 import com.badlogic.gdx.physics.box2d.Fixture;
 import com.badlogic.gdx.physics.box2d.RayCastCallback;
-import com.badlogic.gdx.physics.box2d.BodyDef.BodyType;
 import com.badlogic.gdx.scenes.scene2d.InputEvent;
 import com.badlogic.gdx.scenes.scene2d.InputListener;
 import com.badlogic.gdx.scenes.scene2d.Touchable;
@@ -87,7 +87,7 @@ public class ProjectileActor extends CircleActor {
 			public boolean touchDown(InputEvent event, float x, float y,
 					int pointer, int button) {
 				GameManager gm = GameManager.getInstance();
-				if (gm.DEBUG)
+				if (GameManager.DEBUG)
 					System.out.println("touchDown"+x +","+y); //$NON-NLS-1$ //$NON-NLS-2$
 				lastTouchDown.set(body.getTransform().getPosition().cpy());
 				removePhysics();
@@ -198,8 +198,8 @@ public class ProjectileActor extends CircleActor {
 	
 	@Override
 	protected void resetPhysics(MaterialConfig mc, float x,
-			float y, float angle, BodyType bodyType) {
-		super.resetPhysics(mc, x, y, angle, bodyType);
+			float y, float angle, BodyType aBodyType) {
+		super.resetPhysics(mc, x, y, angle, aBodyType);
 		// no mass for projectiles - mass will be added on shot
 		body.setGravityScale(0);
 	}
@@ -294,7 +294,8 @@ public class ProjectileActor extends CircleActor {
 		
 		// arrived here, we can safely assume, that the apple won't have any impact any more
 		endLifetimeNow();
-		System.err.println("KILL "+unitsPerSec);
+		if (GameManager.DEBUG)
+			System.err.println("killing slow apple: "+unitsPerSec);
 	}
 	 
 

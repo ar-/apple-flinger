@@ -67,30 +67,22 @@ public class PhysicWorldObserver {
 			capture();
 			return;
 		}
-		else
+		// else: amount of elements are the same, so we compare all of them
+		for (final Body b : ba)
 		{
-			// amount of elements are the same, so we compare all of them
-			for (final Body b : ba)
+			// if any element is not in there, then something moved
+			if (!transforms.contains(transformToString (b.getTransform())))
 			{
-				// if any element is not in there, then something moved
-				if (!transforms.contains(transformToString (b.getTransform())))
-				{
-					changeState (State.ACTIVE);
-					capture();
-					return;
-				}
+				changeState (State.ACTIVE);
+				capture();
+				return;
 			}
-			
-			// coming here means nothing moved
-			changeState (State.INACTIVE);
-			capture();
-			return;
-			
 		}
 		
-		// this point is not reached
-		// at the end of every step the must be a new capture done
-		//capture();
+		// coming here means nothing moved
+		changeState (State.INACTIVE);
+		capture();
+		return;
 	}
 	
 	/**
