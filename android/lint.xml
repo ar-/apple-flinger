@@ -16,4 +16,19 @@
   along with this program.  If not, see <http://www.gnu.org/licenses/>.
 -->
 <lint>
+	<!-- Disable the given check in this project -->
+    <issue id="IconMissingDensityFolder" severity="error" />
+    <!-- Ignore the ObsoleteLayoutParam issue in the specified files -->
+    <issue id="ObsoleteLayoutParam">
+        <ignore path="res/layout/activation.xml" />
+        <ignore path="res/layout-xlarge/activation.xml" />
+    </issue>
+    <!-- Ignore the UselessLeaf issue in the specified file -->
+    <issue id="UselessLeaf">
+        <ignore path="res/layout/main.xml" />
+    </issue>
+    <!-- Change the severity of hardcoded strings to "error" -->
+    <issue id="HardcodedText" severity="error" />
+    <issue id="EasterEgg" severity="error" />
+    
 </lint>

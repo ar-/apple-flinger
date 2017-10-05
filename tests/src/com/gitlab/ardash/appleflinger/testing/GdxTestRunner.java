@@ -32,6 +32,11 @@ import com.badlogic.gdx.backends.headless.HeadlessFiles;
 import com.badlogic.gdx.backends.headless.HeadlessNativesLoader;
 import com.badlogic.gdx.backends.headless.HeadlessNet;
 import com.badlogic.gdx.backends.headless.mock.graphics.MockGraphics;
+import com.badlogic.gdx.graphics.GL20;
+
+import static org.junit.Assert.*;
+import static org.mockito.Mockito.*;
+import static org.mockito.Matchers.*;
 
 public class GdxTestRunner extends BlockJUnit4ClassRunner implements ApplicationListener {
 
@@ -48,7 +53,7 @@ public class GdxTestRunner extends BlockJUnit4ClassRunner implements Application
 		Gdx.net = headlessNet;
 		HeadlessFiles headlessFiles = new HeadlessFiles();
 		Gdx.files = headlessFiles;
-//		Gdx.gl = mock(GL20.class);
+		Gdx.gl = mock(GL20.class);
 			
 		HeadlessApplicationConfiguration conf = new HeadlessApplicationConfiguration();
 
