@@ -109,16 +109,16 @@ public abstract class PhysicsActor extends Image {
 	 */
 	private void getSoundsByMC() {
 		String mcs = this.mc.toString();
-        if (mcs.contains("_")) //$NON-NLS-1$
+        if (mcs.contains("_")) 
         {
         	mcs = mcs.substring(0, mcs.indexOf('_'));
-        	if (mcs.equals("WOOD")) //$NON-NLS-1$
+        	if (mcs.equals("WOOD")) 
         	{
         		hit_sound=Assets.getRandomSound(SoundGroupAsset.WOOD_HIT);
         		dmg_sound=Assets.getRandomSound(SoundGroupAsset.WOOD_DMG);
         		dest_sound=Assets.getRandomSound(SoundGroupAsset.WOOD_DEST);
         	}
-        	if (mcs.equals("TARGET")) //$NON-NLS-1$
+        	if (mcs.equals("TARGET")) 
         	{
         		dest_sound=Assets.getRandomSound(SoundGroupAsset.DORK_HIT);
         	}
@@ -456,7 +456,7 @@ public abstract class PhysicsActor extends Image {
 
 	public String toJavaString()
     {// TODO maka abstraact
-    	return "PhysicsActor(world, BodyType."+getBodyType()+", MaterialConfig."+mc+")"; //$NON-NLS-1$ //$NON-NLS-2$ //$NON-NLS-3$
+    	return "PhysicsActor(world, BodyType."+getBodyType()+", MaterialConfig."+mc+")";   
     }
 
     /** 

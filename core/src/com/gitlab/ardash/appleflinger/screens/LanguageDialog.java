@@ -36,7 +36,7 @@ public class LanguageDialog extends Dialog{
 	private Image backgrPixel;
 
 	public LanguageDialog() {
-		super("", new WindowStyle( //$NON-NLS-1$
+		super("", new WindowStyle( 
 				Assets.FontAsset.FLINGER_03_B2_DIAG_MINIL.font,Color.WHITE,
 				new TextureRegionDrawable(new TextureRegion(Assets.getTexture(Assets.TextureAsset.LARGE_DIALOG)))
 				));
@@ -49,7 +49,7 @@ public class LanguageDialog extends Dialog{
         backgrPixel.setColor(0, 0, 0, 0.8f);
 
         final LabelStyle lblstyle = Assets.LabelStyleAsset.MINILABEL.style;
-		text(I18N.getString("select_language"), lblstyle); //$NON-NLS-1$
+		text(I18N.getString("select_language"), lblstyle); 
 		
 		getContentTable().row().minHeight(240).top();
 

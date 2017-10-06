@@ -17,13 +17,13 @@
 package com.gitlab.ardash.appleflinger.helpers;
 
 public class GPGS {
-    public static final String ACH_TRIPPLE_POP = "CgkIrZj_yLcCEAIQAg"; //$NON-NLS-1$
-    public static final String ACH_FOURFOLD_POP = "CgkIrZj_yLcCEAIQAw"; //$NON-NLS-1$
-    public static final String ACH_FIVEFOLD_POP = "CgkIrZj_yLcCEAIQBA"; //$NON-NLS-1$
-    public static final String ACH_WREAK_HAVOC = "CgkIrZj_yLcCEAIQBQ"; //$NON-NLS-1$
-    public static final String ACH_BEGINNERS_LUCK = "CgkIrZj_yLcCEAIQBg"; //$NON-NLS-1$
-    public static final String ACH_POINTS_FARMER = "CgkIrZj_yLcCEAIQBw"; //$NON-NLS-1$
-    public static final String ACH_BEGINNER_STREAK = "CgkIrZj_yLcCEAIQCA"; //$NON-NLS-1$
-    public static final String LEAD_MOST_POINTS = "CgkIrZj_yLcCEAIQCQ"; //$NON-NLS-1$
+    public static final String ACH_TRIPPLE_POP = "CgkIrZj_yLcCEAIQAg"; 
+    public static final String ACH_FOURFOLD_POP = "CgkIrZj_yLcCEAIQAw"; 
+    public static final String ACH_FIVEFOLD_POP = "CgkIrZj_yLcCEAIQBA"; 
+    public static final String ACH_WREAK_HAVOC = "CgkIrZj_yLcCEAIQBQ"; 
+    public static final String ACH_BEGINNERS_LUCK = "CgkIrZj_yLcCEAIQBg"; 
+    public static final String ACH_POINTS_FARMER = "CgkIrZj_yLcCEAIQBw"; 
+    public static final String ACH_BEGINNER_STREAK = "CgkIrZj_yLcCEAIQCA"; 
+    public static final String LEAD_MOST_POINTS = "CgkIrZj_yLcCEAIQCQ"; 
 
 }

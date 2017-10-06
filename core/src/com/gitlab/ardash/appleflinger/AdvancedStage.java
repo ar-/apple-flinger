@@ -46,7 +46,7 @@ public class AdvancedStage extends Stage {
 			@Override
 			public void touchUp(InputEvent event, float x, float y, int pointer, int button) {
 				super.touchUp(event, x, y, pointer, button);
-				System.out.println(event.getStageX()+","+event.getStageY()); //$NON-NLS-1$
+				System.out.println(event.getStageX()+","+event.getStageY()); 
 			}
 		});
 	}
@@ -74,7 +74,7 @@ public class AdvancedStage extends Stage {
 	public static void addAllActorsToSet(Set<Actor> sa, Group g)
 	{
 		if (sa == null)
-			throw new RuntimeException("sa can not be null"); //$NON-NLS-1$
+			throw new RuntimeException("sa can not be null"); 
 		
 		if (g==null)
 			return;

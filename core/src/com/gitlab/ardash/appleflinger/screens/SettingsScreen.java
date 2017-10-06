@@ -74,25 +74,25 @@ public class SettingsScreen extends GenericScreen {
         olTable.setFillParent(true);
         olTable.setTouchable(Touchable.disabled);
 
-        Label lbl1 = new Label(I18N.getString("player_names"),menustyle); //$NON-NLS-1$
+        Label lbl1 = new Label(I18N.getString("player_names"),menustyle); 
         lbl1.setAlignment(Align.center);
         lbl1.setTouchable(Touchable.disabled);
     	olTable.add(lbl1).center().top().width(SCREEN_WIDTH/2).expandY().padTop(238);
 
-        final Label lblPN1 = new Label(Pref.getPlayer1name(),Assets.LabelStyleAsset.MINILABEL.style); //$NON-NLS-1$
+        final Label lblPN1 = new Label(Pref.getPlayer1name(),Assets.LabelStyleAsset.MINILABEL.style); 
         lblPN1.setAlignment(Align.center);
         
-        final Label lblPN2 = new Label(Pref.getPlayer2name(),Assets.LabelStyleAsset.MINILABEL.style); //$NON-NLS-1$
+        final Label lblPN2 = new Label(Pref.getPlayer2name(),Assets.LabelStyleAsset.MINILABEL.style); 
         lblPN2.setAlignment(Align.center);
         
-        Label lbl2 = new Label(I18N.getString("Volume"),menustyle); //$NON-NLS-1$
+        Label lbl2 = new Label(I18N.getString("Volume"),menustyle); 
         lbl2.setAlignment(Align.center);
         lbl2.setTouchable(Touchable.disabled);
     	
-        Label lblSound = new Label(I18N.getString("SoundFX"),Assets.LabelStyleAsset.MINILABEL.style); //$NON-NLS-1$
+        Label lblSound = new Label(I18N.getString("SoundFX"),Assets.LabelStyleAsset.MINILABEL.style); 
         lblSound.setAlignment(Align.center);
         
-        Label lblMusic = new Label(I18N.getString("Music"),Assets.LabelStyleAsset.MINILABEL.style); //$NON-NLS-1$
+        Label lblMusic = new Label(I18N.getString("Music"),Assets.LabelStyleAsset.MINILABEL.style); 
         lblMusic.setAlignment(Align.center);
         
         // RIGHT OVERLAY

@@ -41,16 +41,16 @@ public class Calculator {
 	public static String md5 (String s)
 	{
 		try {
-			byte[] bytesOfMessage = s.getBytes("UTF-8"); //$NON-NLS-1$
+			byte[] bytesOfMessage = s.getBytes("UTF-8"); 
 
-			MessageDigest md = MessageDigest.getInstance("MD5"); //$NON-NLS-1$
+			MessageDigest md = MessageDigest.getInstance("MD5"); 
 			byte[] digest = md.digest(bytesOfMessage);
 			
 			BigInteger bigInt = new BigInteger(1,digest);
 			String hashtext = bigInt.toString(16);
 			// Now we need to zero pad it if you actually want the full 32 chars.
 			while(hashtext.length() < 32 ){
-			  hashtext = "0"+hashtext; //$NON-NLS-1$
+			  hashtext = "0"+hashtext; 
 			}
 			return hashtext;
 		} catch (UnsupportedEncodingException e) {

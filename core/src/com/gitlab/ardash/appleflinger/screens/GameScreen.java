@@ -129,14 +129,14 @@ public class GameScreen implements Screen {
         labelMessage.setTouchable(Touchable.disabled);
         guiStage.addActor(labelMessage);  
         
-        Label labelNameP1 = new Label(".", labelstyle);   //$NON-NLS-1$
+        Label labelNameP1 = new Label(".", labelstyle);   
 //        labelNameP1.setWrap(true);
 		labelNameP1.setPosition(0, SCREEN_HEIGHT-lineheight*2);  
         labelNameP1.setAlignment(Align.left);  
 		labelNameP1.setTouchable(Touchable.disabled);
         guiStage.addActor(labelNameP1);  
 
-        Label labelNameP2 = new Label(".", labelstyle);   //$NON-NLS-1$
+        Label labelNameP2 = new Label(".", labelstyle);   
 //        labelNameP1.setWrap(true);
 		labelNameP2.setPosition(0, SCREEN_HEIGHT-lineheight*2);  
 		labelNameP2.setWidth(SCREEN_WIDTH);  
@@ -144,12 +144,12 @@ public class GameScreen implements Screen {
 		labelNameP2.setTouchable(Touchable.disabled);
         guiStage.addActor(labelNameP2);  
         
-        final Label labelPointsP1 = new Label(" "+I18N.getString("POINTS")+":  0 ", labelstyle);   //$NON-NLS-1$ //$NON-NLS-2$ //$NON-NLS-3$
+        final Label labelPointsP1 = new Label(" "+I18N.getString("POINTS")+":  0 ", labelstyle);     
 		labelPointsP1.setPosition(0, SCREEN_HEIGHT-lineheight*3f);  
 		labelPointsP1.setTouchable(Touchable.disabled);
         guiStage.addActor(labelPointsP1);  
         
-        final Label labelPointsP2 = new Label(" "+I18N.getString("POINTS")+":  0  ", labelstyle);   //$NON-NLS-1$ //$NON-NLS-2$ //$NON-NLS-3$
+        final Label labelPointsP2 = new Label(" "+I18N.getString("POINTS")+":  0  ", labelstyle);     
 		labelPointsP2.setPosition(0, SCREEN_HEIGHT-lineheight*3f);  
         labelPointsP2.setWidth(SCREEN_WIDTH);  
         labelPointsP2.setAlignment(Align.right);  
@@ -179,15 +179,15 @@ public class GameScreen implements Screen {
         gm.PLAYER1.setOnPointsChangeListener(new OnPointsChangeListener() {
 			@Override
 			public void onPointChange() {
-				labelPointsP1.setText(String.format(" "+I18N.getString("POINTS")+":  %d ", gm.PLAYER1.getPoints())); //$NON-NLS-1$ //$NON-NLS-2$ //$NON-NLS-3$
-				labelAllPointsP1.setText((gm.PLAYER1.getPoints()+gm.PLAYER1.getAllPoints())+""); //$NON-NLS-1$
+				labelPointsP1.setText(String.format(" "+I18N.getString("POINTS")+":  %d ", gm.PLAYER1.getPoints()));   
+				labelAllPointsP1.setText((gm.PLAYER1.getPoints()+gm.PLAYER1.getAllPoints())+""); 
 			}
 		});
         gm.PLAYER2.setOnPointsChangeListener(new OnPointsChangeListener() {
 			@Override
 			public void onPointChange() {
-				labelPointsP2.setText(String.format(" "+I18N.getString("POINTS")+":  %d  ", gm.PLAYER2.getPoints())); //$NON-NLS-1$ //$NON-NLS-2$ //$NON-NLS-3$
-				labelAllPointsP2.setText((gm.PLAYER2.getPoints()+gm.PLAYER2.getAllPoints())+""); //$NON-NLS-1$
+				labelPointsP2.setText(String.format(" "+I18N.getString("POINTS")+":  %d  ", gm.PLAYER2.getPoints()));   
+				labelAllPointsP2.setText((gm.PLAYER2.getPoints()+gm.PLAYER2.getAllPoints())+""); 
 			}
 		});
         
@@ -198,7 +198,7 @@ public class GameScreen implements Screen {
 			public void onGameOver() {
 				// GUI catches all events from now, game not playable anymore
 				gm.getInputMultiplexer().removeProcessor(world.stage);
-				setAnnouncementText(String.format(I18N.getString("gameOver")+"\n%s "+I18N.getString("won")+"\n"+I18N.getString("withDPoints")+"\n"+I18N.getString("touchScreenToContinue")+".", gm.winner.getName(), gm.winner.getPoints())); //$NON-NLS-1$ //$NON-NLS-2$ //$NON-NLS-3$ //$NON-NLS-4$ //$NON-NLS-5$ //$NON-NLS-6$ //$NON-NLS-7$ //$NON-NLS-8$ //$NON-NLS-9$ //$NON-NLS-10$
+				setAnnouncementText(String.format(I18N.getString("gameOver")+"\n%s "+I18N.getString("won")+"\n"+I18N.getString("withDPoints")+"\n"+I18N.getString("touchScreenToContinue")+".", gm.winner.getName(), gm.winner.getPoints()));
 				freezeAnnouncementText();
 				gm.setGameState(GameState.GAME_OVER_SCREEN);
 				SoundPlayer.playMusic(Assets.getMusic(MusicAsset.BG));
@@ -249,23 +249,23 @@ public class GameScreen implements Screen {
         
     	// set now because names don't change during game
 		gm.PLAYER1.setName(Pref.getPlayer1name());
-   		labelNameP1.setText(String.format(" %s ", gm.PLAYER1.getName())); //$NON-NLS-1$
+   		labelNameP1.setText(String.format(" %s ", gm.PLAYER1.getName())); 
    		
    		if (gm.isPlayer2CPU())
    		{
-   			gm.PLAYER2.setName(I18N.getString("computer")); //$NON-NLS-1$
+   			gm.PLAYER2.setName(I18N.getString("computer")); 
    		}
    		else
    		{
    			gm.PLAYER2.setName(Pref.getPlayer2name());
    		}
-   		labelNameP2.setText(String.format(" %s  ", gm.PLAYER2.getName())); //$NON-NLS-1$
+   		labelNameP2.setText(String.format(" %s  ", gm.PLAYER2.getName())); 
    		
    		// register listener for gamestateChanges
    		gm.setOnCurrentPlayerChangeListener(new OnCurrentPlayerChangeListener() {
 			@Override
 			public void onCurrentPlayerChange() {
-		        setAnnouncementText(String.format("%s\n"+I18N.getString("itIsYourTurn"), gm.currentPlayer.getName()));  //$NON-NLS-1$ //$NON-NLS-2$
+		        setAnnouncementText(String.format("%s\n"+I18N.getString("itIsYourTurn"), gm.currentPlayer.getName()));   
 			}
 		});
    		
@@ -297,28 +297,28 @@ public class GameScreen implements Screen {
         ministyle.font = Assets.FontAsset.FLINGER_03_B2_DIAG_MINIL.font;
         ministyle.fontColor = new Color(1, 1, 1, 0.8f);
 
-        labelAllPointsP1 = createMiniLabel(gm.PLAYER1.getAllPoints()+""); //$NON-NLS-1$
-        labelAllPointsP2 = createMiniLabel(gm.PLAYER2.getAllPoints()+""); //$NON-NLS-1$
-        final Label labelWinsP1 = createMiniLabel(gm.PLAYER1.getWins()+""); //$NON-NLS-1$
-        final Label labelWinsP2 = createMiniLabel(gm.PLAYER2.getWins()+""); //$NON-NLS-1$
+        labelAllPointsP1 = createMiniLabel(gm.PLAYER1.getAllPoints()+""); 
+        labelAllPointsP2 = createMiniLabel(gm.PLAYER2.getAllPoints()+""); 
+        final Label labelWinsP1 = createMiniLabel(gm.PLAYER1.getWins()+""); 
+        final Label labelWinsP2 = createMiniLabel(gm.PLAYER2.getWins()+""); 
         
         final Table miniStatsTable = new Table();
 //        miniStatsTable.a
 //        miniStatsTable.align(Align.topLeft);
         miniStatsTable.setTouchable(Touchable.disabled);
         miniStatsTable.add(labelAllPointsP1).right().top();
-        miniStatsTable.add(createMiniLabel(I18N.getString("points"))).padLeft(20).padRight(20); //$NON-NLS-1$
+        miniStatsTable.add(createMiniLabel(I18N.getString("points"))).padLeft(20).padRight(20); 
         miniStatsTable.add(labelAllPointsP2).left();
 		miniStatsTable.add().width(GameWorld.UNIT_WIDTH/2);
 		miniStatsTable.row();
 		miniStatsTable.add(labelWinsP1).right();
-        miniStatsTable.add(createMiniLabel(I18N.getString("wins"))); //$NON-NLS-1$
+        miniStatsTable.add(createMiniLabel(I18N.getString("wins"))); 
 		miniStatsTable.add(labelWinsP2).left();
 		miniStatsTable.add().width(GameWorld.UNIT_WIDTH/2);
         miniStatsTable.row();
         miniStatsTable.add();
-        miniStatsTable.add(createMiniLabel(I18N.getString("level"))); //$NON-NLS-1$
-        miniStatsTable.add(createMiniLabel(mission.getMinor()+"")).left(); //$NON-NLS-1$
+        miniStatsTable.add(createMiniLabel(I18N.getString("level"))); 
+        miniStatsTable.add(createMiniLabel(mission.getMinor()+"")).left(); 
 		miniStatsTable.add().width(GameWorld.UNIT_WIDTH/2);
         final Table topLeftTable = new Table();
         topLeftTable.setFillParent(true);
@@ -370,7 +370,7 @@ public class GameScreen implements Screen {
 		if (isAnnouncementFrozen)
 			return;
 		
-		labelMessage.setText(text+"\n"); //$NON-NLS-1$
+		labelMessage.setText(text+"\n"); 
 		
 		if (!silent)
 			SoundPlayer.playSound(Assets.getSound(SoundAsset.NOTIFICATION));

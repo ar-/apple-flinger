@@ -29,7 +29,7 @@ public class I18N {
 		gameName,startNewGame
 	}
 
-//	private static final String BUNDLE_NAME = "com.gitlab.ardash.appleflinger.i18n.af"; //$NON-NLS-1$
+//	private static final String BUNDLE_NAME = "com.gitlab.ardash.appleflinger.i18n.af"; 
 
 //	private static final ResourceBundle RESOURCE_BUNDLE = ResourceBundle.getBundle(BUNDLE_NAME);
 	

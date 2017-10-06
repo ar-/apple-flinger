@@ -83,15 +83,15 @@ import com.gitlab.ardash.appleflinger.GameWorld;
 	    	if (this == Empty || this == NONE || this == END_OF_CHAPTER)
 	    		return null;
 	    	try {
-		    	Class<?> clazz = Class.forName("com.gitlab.ardash.appleflinger.missions.Mission"+toString()); //$NON-NLS-1$
+		    	Class<?> clazz = Class.forName("com.gitlab.ardash.appleflinger.missions.Mission"+toString()); 
 		    	Constructor<?> ctor = clazz.getConstructor();
 		    	//Object object = ctor.newInstance(new Object[] { ctorArgument });
 				Object object = ctor.newInstance();
 				if (object instanceof StageFiller)
 					return (StageFiller)object;
-				throw new RuntimeException("object was a class but not a stagefiller"); //$NON-NLS-1$
+				throw new RuntimeException("object was a class but not a stagefiller"); 
 			} catch (Exception e) {
-				throw new RuntimeException("Error getting the StageFillerClass", e); //$NON-NLS-1$
+				throw new RuntimeException("Error getting the StageFillerClass", e); 
 			}
 	    }
 
@@ -99,7 +99,7 @@ import com.gitlab.ardash.appleflinger.GameWorld;
 	    {
 	    	if (this == Empty || this == NONE || this == END_OF_CHAPTER)
 	    		return 0;
-	    	String s = toString().split("_")[1]; //$NON-NLS-1$
+	    	String s = toString().split("_")[1]; 
 	    	return Integer.valueOf(s);
 	    }
 	    
@@ -107,7 +107,7 @@ import com.gitlab.ardash.appleflinger.GameWorld;
 	    {
 	    	if (this == Empty || this == NONE || this == END_OF_CHAPTER)
 	    		return 0;
-			String s = toString().split("_")[2]; //$NON-NLS-1$
+			String s = toString().split("_")[2]; 
 	    	return Integer.valueOf(s);
 	    }
 	    

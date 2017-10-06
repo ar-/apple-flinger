@@ -249,7 +249,7 @@ public class GameRenderer  implements Disposable
     		// P prints them all
     		if(Gdx.input.isKeyPressed(Keys.P)) 
     		{
-				System.out.println("-------------------------------------------"); //$NON-NLS-1$
+				System.out.println("-------------------------------------------"); 
     			for (Actor a: s.getActors())
     			{
     				if (a instanceof PhysicsActor) {
@@ -258,7 +258,7 @@ public class GameRenderer  implements Disposable
 							System.out.println(pa.toJavaString());
 					}
     			}
-				System.out.println("-------------------------------------------"); //$NON-NLS-1$
+				System.out.println("-------------------------------------------"); 
     		}
     		
     		if(Gdx.input.isTouched() &&  Gdx.input.justTouched()) 

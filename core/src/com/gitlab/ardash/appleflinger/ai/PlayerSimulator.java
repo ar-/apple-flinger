@@ -50,7 +50,7 @@ public class PlayerSimulator {
 
 	public void playOneRound() {
 		if (GameManager.DEBUG)
-			System.out.println("Simulating one round ..."); //$NON-NLS-1$
+			System.out.println("Simulating one round ..."); 
 		isDraging = true;
 		step = 0;
 		timeActive = 0;

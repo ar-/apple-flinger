@@ -104,7 +104,7 @@ public class BlockActor extends PhysicsActor {
 		{
 			return Calculator.convPixelToSceneUnits(mc.spriteGroup.get(0).get().getWidth());
 		}
-		throw new RuntimeException("Cannot retrive width if no texture is given."); //$NON-NLS-1$
+		throw new RuntimeException("Cannot retrive width if no texture is given."); 
 	}
 	
 	/**
@@ -120,7 +120,7 @@ public class BlockActor extends PhysicsActor {
 		{
 			return Calculator.convPixelToSceneUnits(mc.spriteGroup.get(0).get().getHeight());
 		}
-		throw new RuntimeException("Cannot retrive height if no texture is given."); //$NON-NLS-1$
+		throw new RuntimeException("Cannot retrive height if no texture is given."); 
 	}
 
 	/**
@@ -182,7 +182,7 @@ public class BlockActor extends PhysicsActor {
     {
     	// initial pos is always set like this: pos - half of raduis
     	final float rr = getPhysicalRotation();
-    	return "group.addActor (new BlockActor(world, MaterialConfig."+mc+", "+(body.getPosition().x)+"f, "+(body.getPosition().y)+"f, "+rr+"f, BodyType."+getBodyType()+"));"; //$NON-NLS-1$ //$NON-NLS-2$ //$NON-NLS-3$ //$NON-NLS-4$ //$NON-NLS-5$ //$NON-NLS-6$
+    	return "group.addActor (new BlockActor(world, MaterialConfig."+mc+", "+(body.getPosition().x)+"f, "+(body.getPosition().y)+"f, "+rr+"f, BodyType."+getBodyType()+"));";
 		//return "PhysicsActor(world, "+getBodyType()+", MaterialConfig."+mc+")";
     }
 
