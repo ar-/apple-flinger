@@ -20,6 +20,7 @@ import java.util.EnumSet;
 
 import com.gitlab.ardash.appleflinger.helpers.HasNextStates;
 
+@SuppressWarnings("all")
 public enum GameState implements HasNextStates {
 
 	START_APP {

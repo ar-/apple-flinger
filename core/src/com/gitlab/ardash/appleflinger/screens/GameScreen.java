@@ -100,10 +100,10 @@ public class GameScreen implements Screen {
         
         // add GUI actors to stage, labels, meters, buttons etc.  
         buildGameGUI();
-        setAnnouncementText(I18N.getString("pleaseWait")); //$NON-NLS-1$
+        setAnnouncementText(I18N.getString("pleaseWait"));
     }
 
-	private Label createMiniLabel(CharSequence text)
+	private static Label createMiniLabel(CharSequence text)
 	{
 		final LabelStyle ministyle = new LabelStyle();
 		ministyle.font = Assets.FontAsset.FLINGER_03_B2_DIAG_MINIL.font;
@@ -121,7 +121,7 @@ public class GameScreen implements Screen {
 //        float lineheight = labelstyle.font.getAscent()+labelstyle.font.getDescent()+labelstyle.font.getCapHeight()+labelstyle.font.getLineHeight();
         float lineheight = labelstyle.font.getLineHeight()+26;
         
-        labelMessage = new Label("A", labelstyle);   //$NON-NLS-1$
+        labelMessage = new Label("A", labelstyle);
 //        labelMessage.setWrap(true);
         labelMessage.setPosition(0, SCREEN_HEIGHT-lineheight*4);  
         labelMessage.setWidth(SCREEN_WIDTH);  
@@ -376,7 +376,7 @@ public class GameScreen implements Screen {
 			SoundPlayer.playSound(Assets.getSound(SoundAsset.NOTIFICATION));
 		
 		// if it is the final message freeze it so it cant be overwritten anymnore
-		// TODO it alos should not disappear anymore
+		// TODO it also should not disappear anymore
 //		GameManager gm = GameManager.getInstance();
 //		if (gm.winner != gm.NONE)
 //		{

@@ -64,11 +64,11 @@ public class LanguageDialog extends Dialog{
         getContentTable().row();
         
         SpriteButton btnYes = new SpriteButton(Assets.SpriteAsset.BTN_SQ_EMPTY.get());
-		btnYes.setText(I18N.getString("cancel")); //$NON-NLS-1$
+		btnYes.setText(I18N.getString("cancel"));
         button(btnYes);
 	}
 
-	private SpriteButton makeLingoButton(final Assets.SpriteAsset sa, String lbl) {
+	private static SpriteButton makeLingoButton(final Assets.SpriteAsset sa, String lbl) {
 		SpriteButton btn = new SpriteButton(sa.get());
         btn.setText("\n"+lbl);
         btn.setLabelStyle(Assets.LabelStyleAsset.MINILABEL.style);
