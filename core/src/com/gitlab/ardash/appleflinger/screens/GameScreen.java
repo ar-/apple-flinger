@@ -25,6 +25,7 @@ import com.badlogic.gdx.scenes.scene2d.InputEvent;
 import com.badlogic.gdx.scenes.scene2d.InputListener;
 import com.badlogic.gdx.scenes.scene2d.Stage;
 import com.badlogic.gdx.scenes.scene2d.Touchable;
+import com.badlogic.gdx.scenes.scene2d.ui.Cell;
 import com.badlogic.gdx.scenes.scene2d.ui.Label;
 import com.badlogic.gdx.scenes.scene2d.ui.Label.LabelStyle;
 import com.badlogic.gdx.scenes.scene2d.ui.Table;
@@ -320,12 +321,14 @@ public class GameScreen implements Screen {
         miniStatsTable.add(createMiniLabel(I18N.getString("level"))); 
         miniStatsTable.add(createMiniLabel(mission.getMinor()+"")).left(); 
 		miniStatsTable.add().width(GameWorld.UNIT_WIDTH/2);
+
         final Table topLeftTable = new Table();
         topLeftTable.setFillParent(true);
         topLeftTable.align(Align.topLeft);
         topLeftTable.add(btnSound).padLeft(10);
         topLeftTable.add(btnPause).padLeft(10);
 
+        final Cell<Table> miniStatsTableCell = topLeftTable.add(miniStatsTable).width(SCREEN_WIDTH - 4*(10+btnPause.getWidth())).padLeft(0).center();
         guiStage.addActor(topLeftTable);
         
         // TODO add more other GUI elements here  
