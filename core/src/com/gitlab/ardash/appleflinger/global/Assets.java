@@ -240,6 +240,7 @@ public class Assets {
 		FLAG_DE,
 		FLAG_EN,
 		FLAG_ES,
+		FLAG_FR,
 		BTN_INFO,
 		BTN_JOYPAD,
 		BTN_LEADER,

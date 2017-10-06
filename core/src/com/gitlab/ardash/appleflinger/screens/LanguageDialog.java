@@ -58,6 +58,8 @@ public class LanguageDialog extends Dialog{
 		getContentTable().row().minHeight(180).top();
 		getContentTable().add(makeLingoButton(Assets.SpriteAsset.FLAG_EN, "english"));
 		getContentTable().add(makeLingoButton(Assets.SpriteAsset.FLAG_ES, "español"));
+		getContentTable().row().minHeight(180).top();
+		getContentTable().add(makeLingoButton(Assets.SpriteAsset.FLAG_FR, "français"));
 
         getContentTable().row();
         
