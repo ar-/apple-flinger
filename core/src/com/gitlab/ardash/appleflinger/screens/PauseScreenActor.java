@@ -62,7 +62,7 @@ public class PauseScreenActor extends Group{
         labelstyle.fontColor = Color.WHITE;
         
         
-		Label labelMessage = new Label(I18N.getString("PAUSE"), labelstyle);   //$NON-NLS-1$
+		Label labelMessage = new Label(I18N.getString("PAUSE"), labelstyle);   
         labelMessage.setPosition(0, SCREEN_HEIGHT-labelstyle.font.getLineHeight());  
         labelMessage.setWidth(SCREEN_WIDTH);  
         labelMessage.setAlignment(Align.center);  
@@ -115,9 +115,9 @@ public class PauseScreenActor extends Group{
         }});
 
         //labels
-        Label lbl1 = new Label(I18N.getString("continue"), labelstyle); //$NON-NLS-1$
-		Label lbl2 = new Label(I18N.getString("restart"), labelstyle); //$NON-NLS-1$
-		Label lbl3 = new Label(I18N.getString("quitToMenu"), labelstyle); //$NON-NLS-1$
+        Label lbl1 = new Label(I18N.getString("continue"), labelstyle); 
+		Label lbl2 = new Label(I18N.getString("restart"), labelstyle); 
+		Label lbl3 = new Label(I18N.getString("quitToMenu"), labelstyle); 
         // centre table
         Table tbl = new Table();
         tbl.setFillParent(true);

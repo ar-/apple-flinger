@@ -111,6 +111,6 @@ public class TntActor extends BlockActor{
 	@Override
 	public String toJavaString() {
     	final float rr = getPhysicalRotation();
-    	return "group.addActor (new TntActor(world, "+(body.getPosition().x)+"f, "+(body.getPosition().y)+"f, "+rr+"f));"; //$NON-NLS-1$ //$NON-NLS-2$ //$NON-NLS-3$ //$NON-NLS-4$
+    	return "group.addActor (new TntActor(world, "+(body.getPosition().x)+"f, "+(body.getPosition().y)+"f, "+rr+"f));";    
 	}
 }

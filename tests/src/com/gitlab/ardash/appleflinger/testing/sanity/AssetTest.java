@@ -58,6 +58,13 @@ public class AssetTest {
 	}
 	
 	@Test
+	public void isI18NWorkingForFR() {
+		I18N.loadLanguageBundle("fr");
+		assertEquals("d'accord", I18N.s("okay"));
+		assertEquals("jeu terminé", I18N.s("gameOver"));
+	}
+	
+	@Test
 	public void arePrpertyFilesComplete() {
 		assertTrue("Asset file not found.", Gdx.files
 				.internal("assets/af.properties").exists());

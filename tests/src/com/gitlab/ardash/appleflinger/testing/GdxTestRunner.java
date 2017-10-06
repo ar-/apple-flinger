@@ -62,10 +62,12 @@ public class GdxTestRunner extends BlockJUnit4ClassRunner implements Application
 
 	@Override
 	public void create() {
+		/*intentionally empty block*/
 	}
 
 	@Override
 	public void resume() {
+		/*intentionally empty block*/
 	}
 
 	@Override
@@ -80,14 +82,17 @@ public class GdxTestRunner extends BlockJUnit4ClassRunner implements Application
 
 	@Override
 	public void resize(int width, int height) {
+		/*intentionally empty block*/
 	}
 
 	@Override
 	public void pause() {
+		/*intentionally empty block*/
 	}
 
 	@Override
 	public void dispose() {
+		/*intentionally empty block*/
 	}
 
 	@Override

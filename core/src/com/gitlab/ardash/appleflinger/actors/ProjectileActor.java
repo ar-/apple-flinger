@@ -88,7 +88,7 @@ public class ProjectileActor extends CircleActor {
 					int pointer, int button) {
 				GameManager gm = GameManager.getInstance();
 				if (GameManager.DEBUG)
-					System.out.println("touchDown"+x +","+y); //$NON-NLS-1$ //$NON-NLS-2$
+					System.out.println("touchDown"+x +","+y);  
 				lastTouchDown.set(body.getTransform().getPosition().cpy());
 				removePhysics();
 				gm.setGameState(GameState.DRAGGING);
@@ -145,7 +145,7 @@ public class ProjectileActor extends CircleActor {
 				// disable touchablity of the game scene
 				gm.getInputMultiplexer().clear();
 				gm.getInputMultiplexer().addProcessor(gm.currentGameScreen.getGuiStage());
-				gm.currentGameScreen.setAnnouncementText(I18N.getString("waiting"), true); //$NON-NLS-1$
+				gm.currentGameScreen.setAnnouncementText(I18N.getString("waiting"), true); 
 				gm.onShotFired();
 				SoundPlayer.playSound(Assets.getRandomSound(SoundGroupAsset.WHIZZ), 0.25f);
 				reAddPhysics();

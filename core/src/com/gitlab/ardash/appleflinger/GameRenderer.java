@@ -115,12 +115,7 @@ public class GameRenderer  implements Disposable
 					return;
 				final float maxx =9f;
 				final float minx =3f;
-				float x,y,z=0; // destination
-				float yfactor= xfactor;
-				if (camera.position.x==initialCamPos.x)
-					yfactor=0;
-				if (camera.position.x>initialCamPos.x)
-					yfactor*=-1;
+				float x,y=0; // destination
 				x = camera.position.x + xfactor;
 				if (x>maxx)
 					x=maxx;
@@ -128,11 +123,7 @@ public class GameRenderer  implements Disposable
 					x=minx;
 				
 				y = getTranformedY(x);
-				//z = getTransZ(y);
 				camera.position.set(x, y, 0f);
-				//camera.zoom = getTransZ(x);
-				//camera.po translate(xfactor, yfactor);
-				//System.out.println("cam x "+camera.position.x+", y "+camera.position.y+", z "+camera.position.z+", zo "+camera.zoom+", xf "+xfactor);
 			}
 			
 			@Override
@@ -258,7 +249,7 @@ public class GameRenderer  implements Disposable
     		// P prints them all
     		if(Gdx.input.isKeyPressed(Keys.P)) 
     		{
-				System.out.println("-------------------------------------------"); //$NON-NLS-1$
+				System.out.println("-------------------------------------------"); 
     			for (Actor a: s.getActors())
     			{
     				if (a instanceof PhysicsActor) {
@@ -267,7 +258,7 @@ public class GameRenderer  implements Disposable
 							System.out.println(pa.toJavaString());
 					}
     			}
-				System.out.println("-------------------------------------------"); //$NON-NLS-1$
+				System.out.println("-------------------------------------------"); 
     		}
     		
     		if(Gdx.input.isTouched() &&  Gdx.input.justTouched()) 

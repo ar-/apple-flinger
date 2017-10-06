@@ -323,11 +323,11 @@ final public class GameManager {
 		
 		// TODO simple don't do it instead of exceptioning
 		if (!gameState.nexts().contains(newState))
-			throw new RuntimeException("Invalid State change from "+ gameState + " to "+ newState); //$NON-NLS-1$ //$NON-NLS-2$
+			throw new RuntimeException("Invalid State change from "+ gameState + " to "+ newState);  
 		
 		this.gameState = newState;
 		if (DEBUG)
-			System.out.println("changing game state: " + newState); //$NON-NLS-1$
+			System.out.println("changing game state: " + newState); 
 	}
 
 	public void registerGameObject(AppleflingerGame appleflingerGame) {

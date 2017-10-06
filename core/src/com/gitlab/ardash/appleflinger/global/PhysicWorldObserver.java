@@ -111,7 +111,7 @@ public class PhysicWorldObserver {
 	
 	private static String transformToString(Transform t)
 	{
-		return t.getPosition().x+"|"+t.getPosition().y+"|"+t.getRotation(); //$NON-NLS-1$ //$NON-NLS-2$
+		return t.getPosition().x+"|"+t.getPosition().y+"|"+t.getRotation();  
 	}
 	
 	/**

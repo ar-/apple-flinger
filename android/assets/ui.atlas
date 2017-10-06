@@ -160,14 +160,14 @@ btn_sq_empty
   index: -1
 btn_tw
   rotate: false
-  xy: 408, 352
+  xy: 308, 143
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 btn_world
   rotate: false
-  xy: 408, 250
+  xy: 308, 41
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
@@ -188,7 +188,7 @@ flag_de
   index: -1
 flag_en
   rotate: false
-  xy: 306, 262
+  xy: 408, 402
   size: 100, 50
   orig: 100, 50
   offset: 0, 0
@@ -196,6 +196,13 @@ flag_en
 flag_es
   rotate: false
   xy: 204, 245
+  size: 100, 67
+  orig: 100, 67
+  offset: 0, 0
+  index: -1
+flag_fr
+  rotate: false
+  xy: 306, 245
   size: 100, 67
   orig: 100, 67
   offset: 0, 0

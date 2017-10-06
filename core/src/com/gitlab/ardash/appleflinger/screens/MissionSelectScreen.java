@@ -80,7 +80,7 @@ public class MissionSelectScreen extends GenericScreen {
         guiStage.addActor(table);
         
         // message label below
-        Label labelMessage = new Label(I18N.getString("chooseALevel"), menustyle);   //$NON-NLS-1$
+        Label labelMessage = new Label(I18N.getString("chooseALevel"), menustyle);   
 		labelMessage.setPosition(0, SCREEN_HEIGHT/4);  
 		labelMessage.setWidth(SCREEN_WIDTH);
 		labelMessage.setAlignment(Align.center);

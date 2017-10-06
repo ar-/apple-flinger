@@ -63,7 +63,7 @@ public class MainMenuScreen extends GenericScreen {
 		
 		final SpriteButton btnStartP2 = new SpriteButton(Assets.SpriteAsset.BTN_2PLAYERS.get());
 
-		final Label newGameLable = new Label(I18N.getString("startNewGame"), menustyle); //$NON-NLS-1$
+		final Label newGameLable = new Label(I18N.getString("startNewGame"), menustyle); 
 		newGameLable.addListener(new InputListener(){
 			@Override
 			public boolean touchDown(InputEvent event, float x, float y, int pointer, int button) {
@@ -85,9 +85,9 @@ public class MainMenuScreen extends GenericScreen {
 		maintable.add(newGameLable).width(newGameLable.getWidth()).colspan(2).center();
 		maintable.add(btnStartP2).width(SCREEN_WIDTH/4);
 		maintable.row();
-		maintable.add(new Label(I18N.getString("alone"), menustyle)); //$NON-NLS-1$
+		maintable.add(new Label(I18N.getString("alone"), menustyle)); 
 		maintable.add().colspan(2);
-		maintable.add(new Label(I18N.getString("twoPlayers"), menustyle)); //$NON-NLS-1$
+		maintable.add(new Label(I18N.getString("twoPlayers"), menustyle)); 
 		maintable.row();
 		maintable.add().height(60);
 		maintable.row();
@@ -133,7 +133,7 @@ public class MainMenuScreen extends GenericScreen {
         LabelStyle loadinglabelstyle = new LabelStyle(menustyle);
         loadinglabelstyle.font=Assets.FontAsset.BURNSTOWNDAM_216.font;
         loadinglabelstyle.fontColor=Color.RED;
-        loadingLabel = new Label(I18N.getString("loading")+" ...\n0%", loadinglabelstyle);   //$NON-NLS-1$ //$NON-NLS-2$
+        loadingLabel = new Label(I18N.getString("loading")+" ...\n0%", loadinglabelstyle);    
        // loadingLabel.setPosition(0, SCREEN_HEIGHT*5f);  
         loadingLabel.setWidth(SCREEN_WIDTH);  
         loadingLabel.setHeight(SCREEN_HEIGHT);  
@@ -200,7 +200,7 @@ public class MainMenuScreen extends GenericScreen {
 		if (!done)
 		{
 			int percent = Assets.getPercentLoaded();
-			loadingLabel.setText(String.format(I18N.getString("loading")+" ...\n%d%%", percent)); //$NON-NLS-1$ //$NON-NLS-2$
+			loadingLabel.setText(String.format(I18N.getString("loading")+" ...\n%d%%", percent));  
 		}
 		else
 		{

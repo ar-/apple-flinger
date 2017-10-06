@@ -32,7 +32,7 @@ public class CreditsDialog extends Dialog{
 	private Image backgrPixel;
 
 	public CreditsDialog() {
-		super("", new WindowStyle( //$NON-NLS-1$
+		super("", new WindowStyle( 
 				Assets.FontAsset.FLINGER_03_B2_DIAG_MINIL.font,Color.WHITE,
 				new TextureRegionDrawable(new TextureRegion(Assets.getTexture(Assets.TextureAsset.LARGE_DIALOG)))
 				));
@@ -47,33 +47,33 @@ public class CreditsDialog extends Dialog{
         backgrPixel.setColor(0, 0, 0, 0.8f);
 
         final LabelStyle lblstyle = Assets.LabelStyleAsset.MINILABEL.style;
-		text(I18N.getString("credits"), lblstyle); //$NON-NLS-1$
+		text(I18N.getString("credits"), lblstyle); 
 		
 		getContentTable().row().minHeight(40).top();
-		text("", lblstyle); //$NON-NLS-1$
+		text("", lblstyle); 
 		getContentTable().row();
-		text(I18N.getString("programming"), lblstyle); //$NON-NLS-1$
+		text(I18N.getString("programming"), lblstyle); 
 		getContentTable().row();
-		text("Andreas", lblstyle); //$NON-NLS-1$
+		text("Andreas", lblstyle); 
 		
 		getContentTable().row().minHeight(40).top();
-		text("", lblstyle); //$NON-NLS-1$
+		text("", lblstyle); 
 		getContentTable().row();
-		text(I18N.getString("engine"), lblstyle); //$NON-NLS-1$
+		text(I18N.getString("engine"), lblstyle); 
 		getContentTable().row();
-		text("libGDX", lblstyle); //$NON-NLS-1$
+		text("libGDX", lblstyle); 
 		
 		getContentTable().row().minHeight(40).top();
-		text("", lblstyle); //$NON-NLS-1$
+		text("", lblstyle); 
 		getContentTable().row();
-		text(I18N.getString("Music"), lblstyle); //$NON-NLS-1$
+		text(I18N.getString("Music"), lblstyle); 
 		getContentTable().row();
-		text("Urbana-Metronica (wooh-yeah mix)", lblstyle); //$NON-NLS-1$
+		text("Urbana-Metronica (wooh-yeah mix)", lblstyle); 
 		getContentTable().row();
-		text("spinningmerkaba feat. Morusque, Jeris, CSoul, Alex Beroza, Yours Truly", lblstyle); //$NON-NLS-1$
+		text("spinningmerkaba feat. Morusque, Jeris, CSoul, Alex Beroza, Yours Truly", lblstyle); 
         
         SpriteButton btnYes = new SpriteButton(Assets.SpriteAsset.BTN_SQ_EMPTY.get());
-		btnYes.setText(I18N.getString("okay")); //$NON-NLS-1$
+		btnYes.setText(I18N.getString("okay")); 
         button(btnYes);
         	}
 	
