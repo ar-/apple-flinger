@@ -43,7 +43,7 @@ public class TextInputDialog extends Dialog{
 
 	public TextInputDialog() 
 	{
-		super("", new WindowStyle( //$NON-NLS-1$
+		super("", new WindowStyle( 
 				Assets.FontAsset.FLINGER_03_B2_DIAG_MINIL.font,Color.WHITE,
 				new TextureRegionDrawable(new TextureRegion(Assets.getTexture(Assets.TextureAsset.LARGE_DIALOG)))
 				));
@@ -56,10 +56,10 @@ public class TextInputDialog extends Dialog{
         backgrPixel.setColor(0, 0, 0, 0.8f);
 
         final LabelStyle lblstyle = Assets.LabelStyleAsset.MINILABEL.style;
-		text(I18N.getString("inputRequired"), lblstyle); //$NON-NLS-1$
+		text(I18N.getString("inputRequired"), lblstyle); 
 		
 		getContentTable().row().minHeight(40).top();
-		text("", lblstyle); //$NON-NLS-1$
+		text("", lblstyle); 
 		getContentTable().row();
 		lblHeadline = new Label("", lblstyle);
 		lblContent = new Label("", lblstyle);
@@ -68,7 +68,7 @@ public class TextInputDialog extends Dialog{
 		text(lblContent);
 		
 		getContentTable().row().minHeight(40).top();
-		text("", lblstyle); //$NON-NLS-1$
+		text("", lblstyle); 
 
         SpriteButton btnBackSpace = new SpriteButton(Assets.SpriteAsset.BTN_BACK.get());
         btnBackSpace.addListener(new ClickListener(){
@@ -94,11 +94,11 @@ public class TextInputDialog extends Dialog{
 		getContentTable().row();
 		
         SpriteButton btnCancel = new SpriteButton(Assets.SpriteAsset.BTN_SQ_EMPTY.get());
-        btnCancel.setText(I18N.getString("cancel")); //$NON-NLS-1$
+        btnCancel.setText(I18N.getString("cancel")); 
         button(btnCancel);
 		
         SpriteButton btnOk = new SpriteButton(Assets.SpriteAsset.BTN_SQ_EMPTY.get());
-		btnOk.setText(I18N.getString("okay")); //$NON-NLS-1$
+		btnOk.setText(I18N.getString("okay")); 
         button(btnOk);
         
         btnOk.addListener(new ClickListener(){

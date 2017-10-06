@@ -100,18 +100,18 @@ public class AppleflingerGame extends Game {
 		super.setScreen(screen);
 		String className = screen.getClass().getSimpleName();
 		if (screen instanceof GameScreen) {
-			className="GS"; //$NON-NLS-1$
+			className="GS"; 
 		}
 		if (screen instanceof MainMenuScreen) {
-			className="MMS"; //$NON-NLS-1$
+			className="MMS"; 
 		}
 		if (screen instanceof MissionSelectScreen) {
-			className="MSS"; //$NON-NLS-1$
+			className="MSS"; 
 		}
 		if (screen instanceof SettingsScreen) {
-			className="SS"; //$NON-NLS-1$
+			className="SS"; 
 		}
-		Gdx.app.debug(this.getClass().getSimpleName(), "setting screen to "+className); //$NON-NLS-1$
+		Gdx.app.debug(this.getClass().getSimpleName(), "setting screen to "+className); 
 	}
 	
 	@Override

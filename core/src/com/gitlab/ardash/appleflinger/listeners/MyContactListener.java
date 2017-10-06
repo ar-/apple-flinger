@@ -35,10 +35,12 @@ public class MyContactListener implements ContactListener{
 	
 	
     public MyContactListener() {
+    	/*intentionally empty block*/
 	}
 
 	@Override 
     public void endContact(Contact contact) {
+		// not needed, was to buggy to memorize current touches
     }
 	  
     @Override
@@ -123,10 +125,12 @@ public class MyContactListener implements ContactListener{
     
     @Override
     public void preSolve (Contact contact, Manifold oldManifold){
+    	//This is called after a contact is updated.
     }
     
     @Override
     public void postSolve (Contact contact, ContactImpulse impulse){
+    	//This lets you inspect a contact after the solver is finished.
     }
 
 }

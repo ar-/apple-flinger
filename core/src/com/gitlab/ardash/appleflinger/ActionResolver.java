@@ -23,22 +23,22 @@ import com.gitlab.ardash.appleflinger.i18n.I18N;
 
 public interface ActionResolver {
 	
-	public static final String recommendationText = I18N.getString("twitterRecommendationtext"); //$NON-NLS-1$
-	public static final String marketUrl = "https://f-droid.org/packages/com.gitlab.ardash.appleflinger.android/"; //$NON-NLS-1$
+	public static final String recommendationText = I18N.getString("twitterRecommendationtext"); 
+	public static final String marketUrl = "https://f-droid.org/packages/com.gitlab.ardash.appleflinger.android/"; 
 	
 	public static class ARH
 	{
 		
 		public static String urlEncode(String s) {
 		    try {
-		        return URLEncoder.encode(s, "UTF-8"); //$NON-NLS-1$
+		        return URLEncoder.encode(s, "UTF-8"); 
 		    }
 		    catch (UnsupportedEncodingException e) {
 		        //Log.wtf(TAG, "UTF-8 should always be supported", e);
 		        //throw new RuntimeException("URLEncoder.encode() failed for " + s);
 		    }
 		
-		return ""; //$NON-NLS-1$
+		return ""; 
 		}
 	}
 	

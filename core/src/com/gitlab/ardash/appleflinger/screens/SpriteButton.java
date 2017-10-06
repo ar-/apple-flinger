@@ -59,7 +59,7 @@ public class SpriteButton extends ImageButton
 
         this.setBackground(new SpriteDrawable(new Sprite(background)));
         
-		label = new Label("", Assets.LabelStyleAsset.MINILABEL.style); //$NON-NLS-1$
+		label = new Label("", Assets.LabelStyleAsset.MINILABEL.style); 
 		label.setAlignment(Align.center);
 		add(label).padTop(-getHeight());
 

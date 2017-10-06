@@ -42,8 +42,7 @@ public class GameManagerTest {
 	public void init() {
 		gm.setOnCurrentPlayerChangeListener(new OnCurrentPlayerChangeListener() {
 			@Override
-			public void onCurrentPlayerChange() {
-			}
+			public void onCurrentPlayerChange() { /*intentionally empty block*/	}
 		});
 		gm.resetAll(null);
 		gm.resetRound(Mission.M_1_1);

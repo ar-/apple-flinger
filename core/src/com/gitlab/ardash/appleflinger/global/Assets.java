@@ -131,7 +131,7 @@ public class Assets {
 		}
 		@Override
 		public String toString() {
-			return "size" + super.toString().replaceAll("[^\\d.]", "") + ".ttf"; // "size72.ttf" //$NON-NLS-1$ //$NON-NLS-2$ //$NON-NLS-3$ //$NON-NLS-4$
+			return "size" + super.toString().replaceAll("[^\\d.]", "") + ".ttf"; // "size72.ttf"    
 		}
 	}
 
@@ -139,7 +139,7 @@ public class Assets {
 		BURNSTOWNDAM, FLINGER;
 		@Override
 		public String toString() {
-			return "" + super.toString().toLowerCase() + ".ttf"; // "njnaruto.ttf" //$NON-NLS-1$ //$NON-NLS-2$
+			return "" + super.toString().toLowerCase() + ".ttf"; // "njnaruto.ttf"  
 		}
 	}
 
@@ -155,7 +155,7 @@ public class Assets {
 		APPLE,SLINGSHOTB,SLINGSHOTF,STONE,BACKGR,INVISIBLE,LARGE_DIALOG,VOLUME,WOODHANGER;
 		@Override
 		public String toString() {
-			return "" + super.toString().toLowerCase() + ".png"; // "backgr.png" //$NON-NLS-1$ //$NON-NLS-2$
+			return "" + super.toString().toLowerCase() + ".png"; // "backgr.png"  
 		}
 	}
 
@@ -163,7 +163,7 @@ public class Assets {
 		BG;
 		@Override
 		public String toString() {
-			return "sounds/" + super.toString().toLowerCase() + ".mp3"; // "sounds/bg.mp3" //$NON-NLS-1$ //$NON-NLS-2$
+			return "sounds/" + super.toString().toLowerCase() + ".mp3"; // "sounds/bg.mp3"  
 		}
 	}
 
@@ -190,7 +190,7 @@ public class Assets {
 
 		@Override
 		public String toString() {
-			return "sounds/" + super.toString().toLowerCase() + ".mp3"; // "sounds/apple_hit_1.mp3" //$NON-NLS-1$ //$NON-NLS-2$
+			return "sounds/" + super.toString().toLowerCase() + ".mp3"; // "sounds/apple_hit_1.mp3"  
 		}
 	}
 	
@@ -200,7 +200,7 @@ public class Assets {
 		UI, SCENE;
 		@Override
 		public String toString() {
-			return "" + super.toString().toLowerCase() + ".atlas"; // "misc.atlas" //$NON-NLS-1$ //$NON-NLS-2$
+			return "" + super.toString().toLowerCase() + ".atlas"; // "misc.atlas"  
 		}
 	}
 
@@ -270,7 +270,7 @@ public class Assets {
 			for (SpriteAsset e : SpriteAsset.values()) {
 				// first the name and index must be set, so thString(works properly)
 				final String lowername = e.name().toLowerCase();
-				if (lowername.contains("_")) //$NON-NLS-1$
+				if (lowername.contains("_")) 
 				{
 					final int uscp = lowername.lastIndexOf('_'); // underscore position
 					e.rname = lowername.substring(0, uscp);
@@ -301,21 +301,21 @@ public class Assets {
 					{
 						foundAtlas = atlas;
 						if (foundRegion.index !=e.rindex)
-							throw new RuntimeException("found region "+ e.toString() + " but with wrong index"); //$NON-NLS-1$ //$NON-NLS-2$
+							throw new RuntimeException("found region "+ e.toString() + " but with wrong index");  
 						break;
 					}
 				}
 				if (foundAtlas == null)
-					throw new RuntimeException("No atlas found for "+e.toString()); //$NON-NLS-1$
+					throw new RuntimeException("No atlas found for "+e.toString()); 
 				foundAtlas.getTextures().first().setFilter(TextureFilter.Linear, TextureFilter.Linear);
 				e.sprite= foundAtlas.createSprite(e.rname,e.rindex);
 				if (e.sprite == null)
-					throw new RuntimeException("Sprite not created for "+e.toString()); //$NON-NLS-1$
+					throw new RuntimeException("Sprite not created for "+e.toString()); 
 			}
 		}
 
 		private Sprite sprite;
-		private String rname =""; //$NON-NLS-1$
+		private String rname =""; 
 		private int rindex=-1;
 		public Sprite get()
 		{
@@ -324,7 +324,7 @@ public class Assets {
 		
 		@Override
 		public String toString() {
-			return "" + rname + (rindex ==-1 ? "" : "_"+rindex); // "eyes_closed" //$NON-NLS-1$ //$NON-NLS-2$ //$NON-NLS-3$
+			return "" + rname + (rindex ==-1 ? "" : "_"+rindex); // "eyes_closed"   
 		}
 	}
 
@@ -346,11 +346,11 @@ public class Assets {
 			for (SoundGroupAsset e : SoundGroupAsset.values()) {
 				if (e.members.size() == 0) {
 					// apply default format - get format from own name
-					final String format = e.name() + "_%d"; //$NON-NLS-1$
+					final String format = e.name() + "_%d"; 
 					e.fillMembersByFormat(format, e.members);
 				}
 				if (e.members.size() == 0)
-					throw new RuntimeException("Empty Asset Group created in " + e.toString()); //$NON-NLS-1$
+					throw new RuntimeException("Empty Asset Group created in " + e.toString()); 
 			}
 		}
 
@@ -364,10 +364,10 @@ public class Assets {
 		 */
 		SoundGroupAsset(EnumSet<SoundAsset> members) {
 			if (members == null)
-				throw new RuntimeException("members can't be null"); //$NON-NLS-1$
+				throw new RuntimeException("members can't be null"); 
 			this.members = members;
 			if (members.size() == 0)
-				throw new RuntimeException("Empty Asset Group created"); //$NON-NLS-1$
+				throw new RuntimeException("Empty Asset Group created"); 
 		}
 
 		/**
@@ -443,11 +443,11 @@ public class Assets {
 			for (SpriteGroupAsset e : SpriteGroupAsset.values()) {
 				if (e.members.size() == 0) {
 					// apply default format - get format from own name
-					final String format = e.name() + "_%d"; //$NON-NLS-1$
+					final String format = e.name() + "_%d"; 
 					e.fillMembersByFormat(format, e.members);
 				}
 				if (e.members.size() == 0)
-					throw new RuntimeException("Empty Asset Group created in " + e.toString()); //$NON-NLS-1$
+					throw new RuntimeException("Empty Asset Group created in " + e.toString()); 
 			}
 		}
 
@@ -512,10 +512,10 @@ public class Assets {
 	static {
 		FileHandleResolver resolver = new InternalFileHandleResolver();
 		manager.setLoader(FreeTypeFontGenerator.class, new FreeTypeFontGeneratorLoader(resolver));
-		manager.setLoader(BitmapFont.class, ".ttf", new FreetypeFontLoader(resolver)); //$NON-NLS-1$
+		manager.setLoader(BitmapFont.class, ".ttf", new FreetypeFontLoader(resolver)); 
 	}
 	
-	private static Logger log = new Logger("Assets", Application.LOG_NONE); //$NON-NLS-1$
+	private static Logger log = new Logger("Assets", Application.LOG_NONE); 
 
 	// actually not needed, just to contentrate the loading time
 	// needed to preload all sounds, otherwise sound on android are not plyed the first time.
@@ -632,7 +632,7 @@ public class Assets {
 		final SoundAsset random = sg.getRandom();
 		final Sound sound = getSound(random);
 		if (sound == null)
-			log.error("sound was null"); //$NON-NLS-1$
+			log.error("sound was null"); 
 			//throw new RuntimeException("sound was null");
 		return sound;
 	}

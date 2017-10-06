@@ -36,7 +36,7 @@ public class LanguageDialog extends Dialog{
 	private Image backgrPixel;
 
 	public LanguageDialog() {
-		super("", new WindowStyle( //$NON-NLS-1$
+		super("", new WindowStyle( 
 				Assets.FontAsset.FLINGER_03_B2_DIAG_MINIL.font,Color.WHITE,
 				new TextureRegionDrawable(new TextureRegion(Assets.getTexture(Assets.TextureAsset.LARGE_DIALOG)))
 				));
@@ -49,7 +49,7 @@ public class LanguageDialog extends Dialog{
         backgrPixel.setColor(0, 0, 0, 0.8f);
 
         final LabelStyle lblstyle = Assets.LabelStyleAsset.MINILABEL.style;
-		text(I18N.getString("select_language"), lblstyle); //$NON-NLS-1$
+		text(I18N.getString("select_language"), lblstyle); 
 		
 		getContentTable().row().minHeight(240).top();
 
@@ -64,11 +64,11 @@ public class LanguageDialog extends Dialog{
         getContentTable().row();
         
         SpriteButton btnYes = new SpriteButton(Assets.SpriteAsset.BTN_SQ_EMPTY.get());
-		btnYes.setText(I18N.getString("cancel")); //$NON-NLS-1$
+		btnYes.setText(I18N.getString("cancel"));
         button(btnYes);
 	}
 
-	private SpriteButton makeLingoButton(final Assets.SpriteAsset sa, String lbl) {
+	private static SpriteButton makeLingoButton(final Assets.SpriteAsset sa, String lbl) {
 		SpriteButton btn = new SpriteButton(sa.get());
         btn.setText("\n"+lbl);
         btn.setLabelStyle(Assets.LabelStyleAsset.MINILABEL.style);

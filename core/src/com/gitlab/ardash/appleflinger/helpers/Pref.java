@@ -32,8 +32,8 @@ import com.gitlab.ardash.appleflinger.missions.Mission;
  *
  */
 public class Pref {
-	private static final String PREFS_NAME = "AppleFlingerPrefs"; //$NON-NLS-1$
-	private static final String PEPPER = "tp6UgD9JKAoWSww1Ogduts2UFlFn9CTqQJX8Zdw7VBZv0o51jKD9QTnuoxzA2Lcj"; //$NON-NLS-1$
+	private static final String PREFS_NAME = "AppleFlingerPrefs"; 
+	private static final String PEPPER = "tp6UgD9JKAoWSww1Ogduts2UFlFn9CTqQJX8Zdw7VBZv0o51jKD9QTnuoxzA2Lcj"; 
 	private static final Preferences prefs = Gdx.app.getPreferences(PREFS_NAME);
 	
 	private static Boolean soundOn = null;
@@ -54,7 +54,7 @@ public class Pref {
 		if (soundOn == null)
 		{
 			//Preferences prefs = Gdx.app.getPreferences(PREFS_NAME);
-			soundOn = prefs.getBoolean("soundOn", true); //$NON-NLS-1$
+			soundOn = prefs.getBoolean("soundOn", true); 
 		}
 		return soundOn;
 	}
@@ -77,7 +77,7 @@ public class Pref {
 			
 		
 		//Preferences prefs = Gdx.app.getPreferences(PREFS_NAME);
-		prefs.putBoolean("soundOn", soundOn); //$NON-NLS-1$
+		prefs.putBoolean("soundOn", soundOn); 
 		prefs.flush();
 	}
 	
@@ -86,56 +86,56 @@ public class Pref {
 	public static float getMusicVol() {
 		if (musicVol == null)
 		{
-			musicVol = prefs.getFloat("musicVol", 1.0f); //$NON-NLS-1$
+			musicVol = prefs.getFloat("musicVol", 1.0f); 
 		}
 		return musicVol;
 	}
 
 	public static void setMusicVol(float amusicVol) {
 		musicVol = amusicVol;
-		prefs.putFloat("musicVol", musicVol); //$NON-NLS-1$
+		prefs.putFloat("musicVol", musicVol); 
 		prefs.flush();
 	}
 
 	public static float getSoundVol() {
 		if (soundVol == null)
 		{
-			soundVol = prefs.getFloat("soundVol", 1.0f); //$NON-NLS-1$
+			soundVol = prefs.getFloat("soundVol", 1.0f); 
 		}
 		return soundVol;
 	}
 
 	public static void setSoundVol(float asoundVol) {
 		soundVol = asoundVol;
-		prefs.putFloat("soundVol", soundVol); //$NON-NLS-1$
+		prefs.putFloat("soundVol", soundVol); 
 		prefs.flush();
 	}
 
 	public static String getPlayer1name() {
 		if (player1name == null)
 		{
-			player1name = prefs.getString("player1name", I18N.s("player1")); //$NON-NLS-1$
+			player1name = prefs.getString("player1name", I18N.s("player1")); 
 		}
 		return player1name;
 	}
 	
 	public static void setPlayer1Name(String aplayer1name) {
 		player1name = aplayer1name;
-		prefs.putString("player1name", player1name); //$NON-NLS-1$
+		prefs.putString("player1name", player1name); 
 		prefs.flush();
 	}
 
 	public static String getPlayer2name() {
 		if (player2name == null)
 		{
-			player2name = prefs.getString("player2name", I18N.s("player2")); //$NON-NLS-1$
+			player2name = prefs.getString("player2name", I18N.s("player2")); 
 		}
 		return player2name;
 	}
 	
 	public static void setPlayer2Name(String aplayer2name) {
 		player2name = aplayer2name;
-		prefs.putString("player2name", player2name); //$NON-NLS-1$
+		prefs.putString("player2name", player2name); 
 		prefs.flush();
 	}
 
@@ -161,7 +161,7 @@ public class Pref {
 		Boolean act = activatedLevels.get(mission);
 		if (act == null)
 		{
-			final String key = Calculator.md5(PEPPER+"Activated"+mission.name()); //$NON-NLS-1$
+			final String key = Calculator.md5(PEPPER+"Activated"+mission.name()); 
 			act = prefs.getBoolean(key, false);
 			activatedLevels.put(mission,act);
 		}
@@ -170,7 +170,7 @@ public class Pref {
 
 	public static void setMissionActivated(Mission mission, boolean activated) {
 		activatedLevels.put(mission,activated);
-		final String key = Calculator.md5(PEPPER+"Activated"+mission.name()); //$NON-NLS-1$
+		final String key = Calculator.md5(PEPPER+"Activated"+mission.name()); 
 		prefs.putBoolean(key, activated);
 		prefs.flush();
 	}

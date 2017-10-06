@@ -87,7 +87,7 @@ public abstract class GenericScreen implements Screen{
 	        
 	        Label gameTitle;
 	        LabelStyle largelabelstyle = Assets.LabelStyleAsset.HEADLINE.style;
-	        gameTitle = new Label("Apple Flinger", largelabelstyle);   //$NON-NLS-1$
+	        gameTitle = new Label("Apple Flinger", largelabelstyle);   
 	        gameTitle.setPosition(0, SCREEN_HEIGHT*0.73f);  
 	        gameTitle.setWidth(SCREEN_WIDTH);  
 	        gameTitle.setAlignment(Align.center);  

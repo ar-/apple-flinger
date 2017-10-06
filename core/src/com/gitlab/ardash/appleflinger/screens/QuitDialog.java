@@ -32,7 +32,7 @@ public class QuitDialog extends Dialog{
 	private Image backgrPixel;
 
 	public QuitDialog() {
-		super("", new WindowStyle(Assets.FontAsset.FLINGER_03_B2_DIAG_MINIL.font,Color.WHITE,new TextureRegionDrawable(Assets.SpriteAsset.DIALOG.get()))); //$NON-NLS-1$
+		super("", new WindowStyle(Assets.FontAsset.FLINGER_03_B2_DIAG_MINIL.font,Color.WHITE,new TextureRegionDrawable(Assets.SpriteAsset.DIALOG.get()))); 
 		setModal(true);
 		setMovable(false);
 		setResizable(false);
@@ -41,12 +41,12 @@ public class QuitDialog extends Dialog{
 		backgrPixel.setSize(GenericScreen.SCREEN_WIDTH, GenericScreen.SCREEN_HEIGHT);
         backgrPixel.setColor(0, 0, 0, 0.8f);
 
-        text(I18N.getString("reallyQuit"), Assets.LabelStyleAsset.MINILABEL.style); //$NON-NLS-1$
+        text(I18N.getString("reallyQuit"), Assets.LabelStyleAsset.MINILABEL.style); 
         
         SpriteButton btnYes = new SpriteButton(Assets.SpriteAsset.BTN_SQ_EMPTY.get());
-		btnYes.setText(I18N.getString("yes")); //$NON-NLS-1$
+		btnYes.setText(I18N.getString("yes")); 
         SpriteButton btnNo = new SpriteButton(Assets.SpriteAsset.BTN_SQ_EMPTY.get());
-        btnNo.setText(I18N.getString("no")); //$NON-NLS-1$
+        btnNo.setText(I18N.getString("no")); 
         
         button(btnYes);
         button(btnNo);
