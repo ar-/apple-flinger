@@ -86,7 +86,6 @@ project(":tests") {
     		
     dependencies {
         compile project(":core")
-        compile project(":desktop") // for screenshot testdrive runner
         
         compile "junit:junit:4.+"
         compile "org.mockito:mockito-all:1.9.+"
