@@ -13,8 +13,6 @@ sourceSets {
             srcDir 'src'
         }
     }
-    
-    
 }
 
 test {
