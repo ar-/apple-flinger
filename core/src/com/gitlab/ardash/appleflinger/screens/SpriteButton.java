@@ -22,11 +22,8 @@ import com.badlogic.gdx.graphics.g2d.Batch;
 import com.badlogic.gdx.graphics.g2d.Sprite;
 import com.badlogic.gdx.scenes.scene2d.InputEvent;
 import com.badlogic.gdx.scenes.scene2d.ui.ImageButton;
-import com.badlogic.gdx.scenes.scene2d.ui.Label;
-import com.badlogic.gdx.scenes.scene2d.ui.Label.LabelStyle;
 import com.badlogic.gdx.scenes.scene2d.utils.ClickListener;
 import com.badlogic.gdx.scenes.scene2d.utils.SpriteDrawable;
-import com.badlogic.gdx.utils.Align;
 import com.gitlab.ardash.appleflinger.global.Assets;
 import com.gitlab.ardash.appleflinger.global.Assets.SoundGroupAsset;
 import com.gitlab.ardash.appleflinger.helpers.SoundPlayer;
@@ -34,7 +31,6 @@ import com.gitlab.ardash.appleflinger.helpers.SoundPlayer;
 public class SpriteButton extends ImageButton
 {   
 	private boolean isCheckable = false;
-	private Label label;
 //	private boolean isMarked;
 	
 	@Deprecated
@@ -58,12 +54,7 @@ public class SpriteButton extends ImageButton
               new SpriteDrawable(new Sprite(texture_down)));
 
         this.setBackground(new SpriteDrawable(new Sprite(background)));
-        
-		label = new Label("", Assets.LabelStyleAsset.MINILABEL.style); 
-		label.setAlignment(Align.center);
-		add(label).padTop(-getHeight());
 
-        
         // all these buttons have the wood sound
         addListener(new ClickListener()
         {@Override
@@ -91,14 +82,6 @@ public class SpriteButton extends ImageButton
     	this(texture_up, texture_up, texture_up);
     }
     
-    public void setText(String s) {
-		label.setText(s);
-	}
-    
-    public void setLabelStyle(LabelStyle ls) {
-		label.setStyle(ls);
-	}
-    
     @Override
     public void setDisabled(boolean isDisabled) {
     	super.setDisabled(isDisabled);
@@ -112,8 +95,7 @@ public class SpriteButton extends ImageButton
         	this.setColor(0, 0, 0, 1f);
     	}
     		
-    }
-    
+    }    
 
     @Override
     public void draw(Batch batch, float parentAlpha) {
@@ -128,13 +110,8 @@ public class SpriteButton extends ImageButton
     	{
         	super.draw(batch, parentAlpha);
     	}
-    	
-//        getImage().setColor(Color.RED);
-    	//marker.draw(batch, parentAlpha);
     }
-    
-    
-    
+
     public boolean isCheckable() {
 		return isCheckable;
 	}

@@ -16,37 +16,17 @@
  ******************************************************************************/
 package com.gitlab.ardash.appleflinger.screens;
 
-import com.badlogic.gdx.graphics.Color;
-import com.badlogic.gdx.graphics.g2d.Batch;
 import com.badlogic.gdx.scenes.scene2d.InputEvent;
-import com.badlogic.gdx.scenes.scene2d.ui.Dialog;
-import com.badlogic.gdx.scenes.scene2d.ui.Image;
 import com.badlogic.gdx.scenes.scene2d.utils.ClickListener;
-import com.badlogic.gdx.scenes.scene2d.utils.TextureRegionDrawable;
 import com.gitlab.ardash.appleflinger.global.Assets;
-import com.gitlab.ardash.appleflinger.global.Assets.TextureAsset;
 import com.gitlab.ardash.appleflinger.i18n.I18N;
 
-public class QuitDialog extends Dialog{
-
-	private Image backgrPixel;
-
+public class QuitDialog extends AdvancedDialog{
 	public QuitDialog() {
-		super("", new WindowStyle(Assets.FontAsset.FLINGER_03_B2_DIAG_MINIL.font,Color.WHITE,new TextureRegionDrawable(Assets.SpriteAsset.DIALOG.get()))); 
-		setModal(true);
-		setMovable(false);
-		setResizable(false);
-		
-        backgrPixel = new Image(Assets.getTexture(TextureAsset.BACKGR)); 
-		backgrPixel.setSize(GenericScreen.SCREEN_WIDTH, GenericScreen.SCREEN_HEIGHT);
-        backgrPixel.setColor(0, 0, 0, 0.8f);
-
         text(I18N.getString("reallyQuit"), Assets.LabelStyleAsset.MINILABEL.style); 
         
-        SpriteButton btnYes = new SpriteButton(Assets.SpriteAsset.BTN_SQ_EMPTY.get());
-		btnYes.setText(I18N.getString("yes")); 
-        SpriteButton btnNo = new SpriteButton(Assets.SpriteAsset.BTN_SQ_EMPTY.get());
-        btnNo.setText(I18N.getString("no")); 
+        LabelSpriteButton btnYes = new LabelSpriteButton(EMPTY_TEX,	I18N.getString("yes")); 
+		LabelSpriteButton btnNo = new LabelSpriteButton(EMPTY_TEX, I18N.getString("no")); 
         
         button(btnYes);
         button(btnNo);
@@ -59,16 +39,5 @@ public class QuitDialog extends Dialog{
         	}
         });
         
-        //scaleBy(1.5f);
-//        setScale(2);
-//        setPosition(0, 0);
-//        invalidate();
 	}
-	
-	@Override
-	public void draw(Batch batch, float parentAlpha) {
-		backgrPixel.draw(batch, parentAlpha); // semi black background
-		super.draw(batch, parentAlpha);
-	}
-	
 }
