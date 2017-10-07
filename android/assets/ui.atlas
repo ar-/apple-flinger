@@ -207,6 +207,13 @@ flag_fr
   orig: 100, 67
   offset: 0, 0
   index: -1
+flag_ru
+  rotate: false
+  xy: 410, 245
+  size: 100, 67
+  orig: 100, 67
+  offset: 0, 0
+  index: -1
 sliderback
   rotate: false
   xy: 2, 2

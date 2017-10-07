@@ -1,5 +1,6 @@
 /*******************************************************************************
  * Copyright (C) 2015-2017 Andreas Redmer <andreasredmer@mailchuck.com>
+ * Copyright (C) 2017 Сухичев Михаил Иванович <sukhichev@yandex.ru>
  * 
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -241,6 +242,7 @@ public class Assets {
 		FLAG_EN,
 		FLAG_ES,
 		FLAG_FR,
+		FLAG_RU,
 		BTN_INFO,
 		BTN_JOYPAD,
 		BTN_LEADER,

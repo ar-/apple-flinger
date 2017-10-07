@@ -1,5 +1,6 @@
 /*******************************************************************************
  * Copyright (C) 2015-2017 Andreas Redmer <andreasredmer@mailchuck.com>
+ * Copyright (C) 2017 Сухичев Михаил Иванович <sukhichev@yandex.ru>
  * 
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -62,6 +63,14 @@ public class AssetTest {
 		I18N.loadLanguageBundle("fr");
 		assertEquals("d'accord", I18N.s("okay"));
 		assertEquals("jeu terminé", I18N.s("gameOver"));
+	}
+	
+	@Test
+	public void isI18NWorkingForRU() {
+		I18N.loadLanguageBundle("ru");
+		assertEquals("Громкость", I18N.s("Volume"));
+		assertEquals("Да", I18N.s("yes"));
+		assertEquals("ИГРА ОКОНЧЕНА", I18N.s("gameOver"));
 	}
 	
 	@Test

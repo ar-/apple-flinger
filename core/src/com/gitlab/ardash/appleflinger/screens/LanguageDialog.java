@@ -1,5 +1,6 @@
 /*******************************************************************************
  * Copyright (C) 2015-2017 Andreas Redmer <andreasredmer@mailchuck.com>
+ * Copyright (C) 2017 Сухичев Михаил Иванович <sukhichev@yandex.ru>
  * 
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -60,6 +61,7 @@ public class LanguageDialog extends Dialog{
 		getContentTable().add(makeLingoButton(Assets.SpriteAsset.FLAG_ES, "español"));
 		getContentTable().row().minHeight(180).top();
 		getContentTable().add(makeLingoButton(Assets.SpriteAsset.FLAG_FR, "français"));
+		getContentTable().add(makeLingoButton(Assets.SpriteAsset.FLAG_RU, "русский"));
 
         getContentTable().row();
         
