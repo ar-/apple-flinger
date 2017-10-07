@@ -51,10 +51,11 @@ public class MainMenuScreen extends GenericScreen {
         btn_close.moveBy(SCREEN_WIDTH-100, SCREEN_HEIGHT-100);
         btn_close.setCheckable(true);
         guiStage.addActor(btn_close);
-        btn_close.addListener(new ClickListener(){@Override
-        public void clicked(InputEvent event, float x, float y) {
-        	super.clicked(event, x, y);
-        	new QuitDialog().show(guiStage);
+        btn_close.addListener(new ClickListener(){
+        	@Override
+	        public void clicked(InputEvent event, float x, float y) {
+	        	super.clicked(event, x, y);
+	        	new QuitDialog().show(guiStage);
         }});
 		
 		Assets.SpriteAsset.BTN_1PLAYER.get().setSize(200, 200);
