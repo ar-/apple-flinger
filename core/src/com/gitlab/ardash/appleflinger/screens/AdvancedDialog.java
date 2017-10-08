@@ -35,7 +35,8 @@ public class AdvancedDialog extends Dialog {
 
 	public AdvancedDialog() {
 		super("", new WindowStyle( 
-				Assets.FontAsset.FLINGER_03_B2_DIAG_MINIL.font,Color.WHITE,
+				Assets.FontAsset.FLINGER_03_B2_DIAG_MINIL.font,
+				Color.WHITE,
 				new TextureRegionDrawable(new TextureRegion(Assets.getTexture(Assets.TextureAsset.LARGE_DIALOG)))
 				));
 		setModal(true);

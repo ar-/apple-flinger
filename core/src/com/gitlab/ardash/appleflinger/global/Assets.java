@@ -18,6 +18,7 @@
 package com.gitlab.ardash.appleflinger.global;
 
 import java.util.EnumSet;
+import java.util.Locale;
 
 import com.badlogic.gdx.Application;
 import com.badlogic.gdx.assets.AssetManager;
@@ -42,9 +43,14 @@ import com.badlogic.gdx.graphics.g2d.freetype.FreetypeFontLoader;
 import com.badlogic.gdx.math.MathUtils;
 import com.badlogic.gdx.scenes.scene2d.ui.Label.LabelStyle;
 import com.badlogic.gdx.utils.Logger;
+import com.gitlab.ardash.appleflinger.helpers.Pref;
 import com.gitlab.ardash.appleflinger.screens.GameScreen;
 
 public class Assets {
+	
+	public static final String RUSSIAN_CHARACTERS = "АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ"
+            + "абвгдеёжзийклмнопрстуфхцчшщъыьэюя"
+            + "1234567890.,:;_¡!¿?\"'+-*/()[]={}";
 	
 	public enum LabelStyleAsset {
 		MINILABEL,
@@ -55,10 +61,14 @@ public class Assets {
 		static {
 			MINILABEL.style = new LabelStyle();
 			MINILABEL.style.font = Assets.FontAsset.FLINGER_03_B2_DIAG_MINIL.font;
+			if (isNonLatinFontNeeded())
+				MINILABEL.style.font = Assets.FontAsset.ZANTROKE_03_B2_DIAG_MINIL_CYRILLIC.font;
 			MINILABEL.style.fontColor=Color.WHITE;
 
 			BIGMENUSTYLE.style = new LabelStyle();
 			BIGMENUSTYLE.style.font = Assets.FontAsset.FLINGER_05_B4_BIGMENU.font;
+			if (isNonLatinFontNeeded())
+				BIGMENUSTYLE.style.font = Assets.FontAsset.ZANTROKE_05_B4_BIGMENU.font;
 			BIGMENUSTYLE.style.fontColor=Color.WHITE;
 			BIGMENUSTYLE.style.fontColor=new Color(1,1,1,0.8f);
 			
@@ -78,6 +88,7 @@ public class Assets {
 		FLINGER_09_B5_POINT_POP,
 		FLINGER_05_B4_BIGMENU, 
 		FLINGER_03_B2_DIAG_MINIL,
+		ZANTROKE_05_B4_BIGMENU,
 		ZANTROKE_03_B2_DIAG_MINIL_CYRILLIC;
 		
 		public BitmapFont font;
@@ -89,64 +100,74 @@ public class Assets {
 			float FONT_SIZE_SMALL_03 = 0.03f * GameScreen.SCREEN_HEIGHT;
 			FreeTypeFontGenerator generator;
 			FreeTypeFontParameter parameter;
-			generator = Assets.getFontGenerator(FontGeneratorAsset.BURNSTOWNDAM);
-			parameter = new FreeTypeFontParameter();
-			parameter.minFilter = Texture.TextureFilter.Nearest;
-			parameter.magFilter = Texture.TextureFilter.MipMapLinearNearest;
-			parameter.size = (int)Math.ceil(FONT_SIZE_LARGE_20);
-			generator.scaleForPixelHeight((int)Math.ceil(FONT_SIZE_LARGE_20));
-			
+			generator = Assets.getFontGenerator(FontGeneratorAsset.BURNSTOWNDAM); // ***************
+			parameter = defaultParameter((int)Math.ceil(FONT_SIZE_LARGE_20),0.1f);
 			parameter.borderColor = Color.WHITE;
-			parameter.borderStraight=false;
-			parameter.borderWidth=0.1f;
+			generator.scaleForPixelHeight((int)Math.ceil(FONT_SIZE_LARGE_20));
 
 			BURNSTOWNDAM_216.font = generator.generateFont(parameter);
 			BURNSTOWNDAM_216.font.getRegion().getTexture().setFilter(TextureFilter.Linear, TextureFilter.Linear);
-			
-			
+
 			parameter.size = (int)Math.ceil(FONT_SIZE_MEDIUM_09);
 			generator.scaleForPixelHeight((int)Math.ceil(FONT_SIZE_MEDIUM_09));
 			BURNSTOWNDAM_75.font = generator.generateFont(parameter);
 			BURNSTOWNDAM_75.font.getRegion().getTexture().setFilter(TextureFilter.Linear, TextureFilter.Linear);
 
-			generator = Assets.getFontGenerator(FontGeneratorAsset.FLINGER);
-			parameter.borderColor = Color.BLACK;
-			parameter.borderStraight=false;
-			parameter.borderWidth=4f;
-			parameter.size = (int)Math.ceil(FONT_SIZE_MEDIUM_05);
+			generator = Assets.getFontGenerator(FontGeneratorAsset.FLINGER); // ***************
+			parameter = defaultParameter((int)Math.ceil(FONT_SIZE_MEDIUM_05),4f);
 			generator.scaleForPixelHeight((int)Math.ceil(FONT_SIZE_MEDIUM_05));
 			FLINGER_05_B4_BIGMENU.font = generator.generateFont(parameter);
 			FLINGER_05_B4_BIGMENU.font.getRegion().getTexture().setFilter(TextureFilter.Linear, TextureFilter.Linear);
 			
-			parameter.borderWidth=5f;
-			parameter.size = (int)Math.ceil(FONT_SIZE_MEDIUM_09);
+			parameter = defaultParameter((int)Math.ceil(FONT_SIZE_MEDIUM_09),5f);
 			generator.scaleForPixelHeight((int)Math.ceil(FONT_SIZE_MEDIUM_09));
 			FLINGER_09_B5_POINT_POP.font = generator.generateFont(parameter);
 			FLINGER_09_B5_POINT_POP.font.getRegion().getTexture().setFilter(TextureFilter.Linear, TextureFilter.Linear);
 
-			parameter.borderWidth=2f;
-			parameter.size = (int)Math.ceil(FONT_SIZE_SMALL_03);
+			parameter = defaultParameter((int)Math.ceil(FONT_SIZE_SMALL_03),2f);
 			generator.scaleForPixelHeight((int)Math.ceil(FONT_SIZE_SMALL_03));
 			FLINGER_03_B2_DIAG_MINIL.font = generator.generateFont(parameter);
 			FLINGER_03_B2_DIAG_MINIL.font.getRegion().getTexture().setFilter(TextureFilter.Linear, TextureFilter.Linear);
 
-			generator = Assets.getFontGenerator(FontGeneratorAsset.ZANTROKE);
+			generator = Assets.getFontGenerator(FontGeneratorAsset.ZANTROKE); // ***************
+			parameter = defaultParameter((int)Math.ceil(FONT_SIZE_MEDIUM_05*.81f),4f);
+			generator.scaleForPixelHeight((int)Math.ceil(FONT_SIZE_MEDIUM_05*.81f));
+			parameter.characters = FreeTypeFontGenerator.DEFAULT_CHARS+RUSSIAN_CHARACTERS;
+			ZANTROKE_05_B4_BIGMENU.font = generator.generateFont(parameter);
+			ZANTROKE_05_B4_BIGMENU.font.getRegion().getTexture().setFilter(TextureFilter.Linear, TextureFilter.Linear);
+
+			parameter = defaultParameter((int)Math.ceil(FONT_SIZE_SMALL_03*.81f),2f);
+			generator.scaleForPixelHeight((int)Math.ceil(FONT_SIZE_SMALL_03*.81f));
+			parameter.characters = FreeTypeFontGenerator.DEFAULT_CHARS+RUSSIAN_CHARACTERS;
 			ZANTROKE_03_B2_DIAG_MINIL_CYRILLIC.font = generator.generateFont(parameter);
 			ZANTROKE_03_B2_DIAG_MINIL_CYRILLIC.font.getRegion().getTexture().setFilter(TextureFilter.Linear, TextureFilter.Linear);
 
 		}
+
+		/* extracted method to save some lines, returns some default params for fonts */
+		private static FreeTypeFontParameter defaultParameter(int size, float borderWidth) {
+			FreeTypeFontParameter parameter = new FreeTypeFontParameter();
+			parameter.minFilter = Texture.TextureFilter.Nearest;
+			parameter.magFilter = Texture.TextureFilter.MipMapLinearNearest;
+			parameter.borderColor = Color.BLACK;
+			parameter.borderStraight=false;
+			parameter.borderWidth=borderWidth;
+			parameter.size=size;
+			return parameter;
+		}
+		
 		@Override
 		public String toString() {
 			return "size" + super.toString().replaceAll("[^\\d.]", "") + ".ttf"; // "size72.ttf"    
 		}
 	}
 
-	public enum FontGeneratorAsset {
+	private enum FontGeneratorAsset {
 		BURNSTOWNDAM, FLINGER, ZANTROKE;
 		@Override
 		public String toString() {
-			if (this == ZANTROKE)
-				return "" + super.toString().toLowerCase() + ".otf"; // example "zantroke.otf"  
+//			if (this == ZANTROKE)
+//				return "" + super.toString().toLowerCase() + ".otf"; // example "zantroke.otf"  
 			return "" + super.toString().toLowerCase() + ".ttf"; // example "fliger.ttf"  
 		}
 	}
@@ -736,7 +757,20 @@ public class Assets {
 		return (int)(manager.getProgress()*100);
 	}
 	
-	
+	public static boolean isNonLatinFontNeeded()
+	{
+		final String userSelectedLingo = Pref.getLingo();
+		if (userSelectedLingo.toLowerCase().startsWith("ru"))
+			return true;
+		
+		if (userSelectedLingo.equals(""))
+		{
+			if (Locale.getDefault().getLanguage().equals(new Locale("ru").getLanguage()))
+				return true;
+		}
+		
+		return false;
+	}
 	
 
 }

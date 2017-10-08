@@ -59,7 +59,6 @@ public class PopPointActor extends Label {
 	private static LabelStyle getLabelStyle(Color color) {
 		final LabelStyle labelstyle = new LabelStyle();
 		labelstyle.font = Assets.FontAsset.FLINGER_09_B5_POINT_POP.font;
-		//labelstyle.fontColor = Color.WHITE;
 		if (color != null)
 			labelstyle.fontColor = color;
 		return labelstyle;

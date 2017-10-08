@@ -17,36 +17,17 @@
  ******************************************************************************/
 package com.gitlab.ardash.appleflinger.screens;
 
-import com.badlogic.gdx.graphics.Color;
-import com.badlogic.gdx.graphics.g2d.Batch;
-import com.badlogic.gdx.graphics.g2d.TextureRegion;
 import com.badlogic.gdx.scenes.scene2d.InputEvent;
-import com.badlogic.gdx.scenes.scene2d.ui.Dialog;
-import com.badlogic.gdx.scenes.scene2d.ui.Image;
 import com.badlogic.gdx.scenes.scene2d.ui.Label.LabelStyle;
 import com.badlogic.gdx.scenes.scene2d.utils.ClickListener;
-import com.badlogic.gdx.scenes.scene2d.utils.TextureRegionDrawable;
 import com.gitlab.ardash.appleflinger.global.Assets;
 import com.gitlab.ardash.appleflinger.global.Assets.SpriteAsset;
-import com.gitlab.ardash.appleflinger.global.Assets.TextureAsset;
 import com.gitlab.ardash.appleflinger.global.GameManager;
 import com.gitlab.ardash.appleflinger.i18n.I18N;
 
 public class LanguageDialog extends AdvancedDialog{
 
 	public LanguageDialog() {
-		super("", new WindowStyle( 
-				Assets.FontAsset.FLINGER_03_B2_DIAG_MINIL.font,Color.WHITE,
-				new TextureRegionDrawable(new TextureRegion(Assets.getTexture(Assets.TextureAsset.LARGE_DIALOG)))
-				));
-		setModal(true);
-		setMovable(false);
-		setResizable(false);
-		
-        backgrPixel = new Image(Assets.getTexture(TextureAsset.BACKGR)); 
-		backgrPixel.setSize(GenericScreen.SCREEN_WIDTH, GenericScreen.SCREEN_HEIGHT);
-        backgrPixel.setColor(0, 0, 0, 0.8f);
-
         final LabelStyle lblstyle = Assets.LabelStyleAsset.MINILABEL.style;
 		text(I18N.getString("select_language"), lblstyle); 
 		

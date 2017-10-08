@@ -20,6 +20,7 @@ import com.badlogic.gdx.graphics.g2d.Batch;
 import com.badlogic.gdx.graphics.g2d.Sprite;
 import com.badlogic.gdx.scenes.scene2d.Actor;
 import com.badlogic.gdx.scenes.scene2d.ui.Label;
+import com.badlogic.gdx.scenes.scene2d.ui.Label.LabelStyle;
 import com.badlogic.gdx.scenes.scene2d.ui.Stack;
 import com.badlogic.gdx.utils.Align;
 import com.gitlab.ardash.appleflinger.global.Assets;
@@ -33,7 +34,17 @@ public class LabelSpriteButton extends Stack {
 		
 		btn = new SpriteButton(texture_up);
 		add(btn);
-		label = new Label(text, Assets.LabelStyleAsset.MINILABEL.style); 
+		label = new Label(text, Assets.LabelStyleAsset.MINILABEL.style);
+		
+		// this is an exception: even if the language is set to latin based
+		// the name of some languages, is written in another char set
+		if (text.contains("и"))
+		{
+			LabelStyle originalStyle = Assets.LabelStyleAsset.MINILABEL.style;
+			LabelStyle cyrillicStyle = new LabelStyle(originalStyle);
+			cyrillicStyle.font = Assets.FontAsset.ZANTROKE_03_B2_DIAG_MINIL_CYRILLIC.font;
+			label.setStyle(cyrillicStyle);
+		}
 		label.setAlignment(Align.center);
 		add(label);
 	}

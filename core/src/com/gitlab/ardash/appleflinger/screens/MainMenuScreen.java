@@ -131,16 +131,14 @@ public class MainMenuScreen extends GenericScreen {
 //		labelMessage.setAlignment(Align.center);
 //		guiStage.addActor(labelMessage);
 
-        LabelStyle loadinglabelstyle = new LabelStyle(menustyle);
-        loadinglabelstyle.font=Assets.FontAsset.BURNSTOWNDAM_216.font;
+        LabelStyle loadinglabelstyle = new LabelStyle(Assets.LabelStyleAsset.BIGMENUSTYLE.style);
         loadinglabelstyle.fontColor=Color.RED;
         loadingLabel = new Label(I18N.getString("loading")+" ...\n0%", loadinglabelstyle);    
        // loadingLabel.setPosition(0, SCREEN_HEIGHT*5f);  
-        loadingLabel.setWidth(SCREEN_WIDTH);  
-        loadingLabel.setHeight(SCREEN_HEIGHT);  
-        loadingLabel.setAlignment(Align.center); 
-   //     loadingLabel.setColor(Color.RED);
-        guiStage.addActor(loadingLabel);  
+        loadingLabel.setWidth(SCREEN_WIDTH);
+        loadingLabel.setHeight(SCREEN_HEIGHT);
+        loadingLabel.setAlignment(Align.center);
+        guiStage.addActor(loadingLabel);
         
         
         // social buttons
