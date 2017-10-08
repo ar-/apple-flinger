@@ -44,7 +44,7 @@ public class PauseScreenActor extends Group{
 		
 		// alpha background that catches all input events
         // ANY image, we draw is black anyway
-        // choones backgr image, becasue maybe it gets drawn on stupid devices, just to be sure
+        // chooses backgr image, because maybe it gets drawn on stupid devices, just to be sure
         Image backgrPixel = new Image(Assets.getTexture(TextureAsset.BACKGR)); 
 		backgrPixel.setSize(SCREEN_WIDTH, SCREEN_HEIGHT);
         backgrPixel.setColor(0, 0, 0, 0.8f);
@@ -59,6 +59,8 @@ public class PauseScreenActor extends Group{
 		
         LabelStyle labelstyle = new LabelStyle();
         labelstyle.font = Assets.FontAsset.BURNSTOWNDAM_216.font;
+        if (Assets.isNonLatinFontNeeded())
+            labelstyle.font = Assets.FontAsset.ZANTROKE_05_B4_BIGMENU.font;
         labelstyle.fontColor = Color.WHITE;
         
         
@@ -83,7 +85,7 @@ public class PauseScreenActor extends Group{
         }});
 
         // continue btn
-        labelstyle.font = Assets.FontAsset.FLINGER_05_B4_BIGMENU.font;
+        labelstyle = new LabelStyle(Assets.LabelStyleAsset.BIGMENUSTYLE.style);
         Sprite smallPlay = new Sprite(Assets.SpriteAsset.BTN_PLAY.get());
         smallPlay.setSize(100,100);
         SpriteButton btn1 = new SpriteButton(smallPlay);

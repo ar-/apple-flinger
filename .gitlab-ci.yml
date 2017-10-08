@@ -40,6 +40,7 @@ licensecheck:
 
 validateI18N:
   script:
+    - apt-get --quiet install --yes fonttools
     - ./validateI18N.sh
   stage: sanitychecks
 

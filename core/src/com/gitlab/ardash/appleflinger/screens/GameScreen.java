@@ -25,7 +25,6 @@ import com.badlogic.gdx.scenes.scene2d.InputEvent;
 import com.badlogic.gdx.scenes.scene2d.InputListener;
 import com.badlogic.gdx.scenes.scene2d.Stage;
 import com.badlogic.gdx.scenes.scene2d.Touchable;
-import com.badlogic.gdx.scenes.scene2d.ui.Cell;
 import com.badlogic.gdx.scenes.scene2d.ui.Label;
 import com.badlogic.gdx.scenes.scene2d.ui.Label.LabelStyle;
 import com.badlogic.gdx.scenes.scene2d.ui.Table;
@@ -35,6 +34,7 @@ import com.badlogic.gdx.utils.viewport.FitViewport;
 import com.gitlab.ardash.appleflinger.GameRenderer;
 import com.gitlab.ardash.appleflinger.GameWorld;
 import com.gitlab.ardash.appleflinger.global.Assets;
+import com.gitlab.ardash.appleflinger.global.Assets.LabelStyleAsset;
 import com.gitlab.ardash.appleflinger.global.Assets.MusicAsset;
 import com.gitlab.ardash.appleflinger.global.Assets.SoundAsset;
 import com.gitlab.ardash.appleflinger.global.GameManager;
@@ -106,8 +106,8 @@ public class GameScreen implements Screen {
 
 	private static Label createMiniLabel(CharSequence text)
 	{
-		final LabelStyle ministyle = new LabelStyle();
-		ministyle.font = Assets.FontAsset.FLINGER_03_B2_DIAG_MINIL.font;
+        final LabelStyle ministyle = new LabelStyle(LabelStyleAsset.MINILABEL.style);
+//		ministyle.font = Assets.FontAsset.FLINGER_03_B2_DIAG_MINIL.font;
 		ministyle.fontColor = new Color(1, 1, 1, 0.8f);
 		final Label labelPointsTop = new Label(text, ministyle);
 		labelPointsTop.setTouchable(Touchable.disabled);
@@ -294,10 +294,6 @@ public class GameScreen implements Screen {
         }});
         btnSound.setChecked(!Pref.getSoundOn());
 
-        LabelStyle ministyle = new LabelStyle();
-        ministyle.font = Assets.FontAsset.FLINGER_03_B2_DIAG_MINIL.font;
-        ministyle.fontColor = new Color(1, 1, 1, 0.8f);
-
         labelAllPointsP1 = createMiniLabel(gm.PLAYER1.getAllPoints()+""); 
         labelAllPointsP2 = createMiniLabel(gm.PLAYER2.getAllPoints()+""); 
         final Label labelWinsP1 = createMiniLabel(gm.PLAYER1.getWins()+""); 
@@ -328,11 +324,11 @@ public class GameScreen implements Screen {
         topLeftTable.add(btnSound).padLeft(10);
         topLeftTable.add(btnPause).padLeft(10);
 
-        final Cell<Table> miniStatsTableCell = topLeftTable.add(miniStatsTable).width(SCREEN_WIDTH - 4*(10+btnPause.getWidth())).padLeft(0).center();
+        topLeftTable.add(miniStatsTable).width(SCREEN_WIDTH - 4*(10+btnPause.getWidth())).padLeft(0).center();
         guiStage.addActor(topLeftTable);
         
         // TODO add more other GUI elements here  
-	}  
+	}
       
     @Override  
     public void render(float delta) {  
