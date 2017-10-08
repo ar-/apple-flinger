@@ -31,7 +31,7 @@ public class CreditsDialog extends AdvancedDialog{
 		getContentTable().row();
 		text(I18N.getString("programming"), lblstyle); 
 		getContentTable().row();
-		text("Andreas", lblstyle); 
+		text("Andreas Redmer", lblstyle); 
 		
 		getContentTable().row().minHeight(40).top();
 		text("", lblstyle); 
