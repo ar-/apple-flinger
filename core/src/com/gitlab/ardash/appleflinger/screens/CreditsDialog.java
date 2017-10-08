@@ -16,36 +16,13 @@
  ******************************************************************************/
 package com.gitlab.ardash.appleflinger.screens;
 
-import com.badlogic.gdx.graphics.Color;
-import com.badlogic.gdx.graphics.g2d.Batch;
-import com.badlogic.gdx.graphics.g2d.TextureRegion;
-import com.badlogic.gdx.scenes.scene2d.ui.Dialog;
-import com.badlogic.gdx.scenes.scene2d.ui.Image;
 import com.badlogic.gdx.scenes.scene2d.ui.Label.LabelStyle;
-import com.badlogic.gdx.scenes.scene2d.utils.TextureRegionDrawable;
 import com.gitlab.ardash.appleflinger.global.Assets;
-import com.gitlab.ardash.appleflinger.global.Assets.TextureAsset;
 import com.gitlab.ardash.appleflinger.i18n.I18N;
 
-public class CreditsDialog extends Dialog{
-
-	private Image backgrPixel;
-
-	public CreditsDialog() {
-		super("", new WindowStyle( 
-				Assets.FontAsset.FLINGER_03_B2_DIAG_MINIL.font,Color.WHITE,
-				new TextureRegionDrawable(new TextureRegion(Assets.getTexture(Assets.TextureAsset.LARGE_DIALOG)))
-				));
-		setModal(true);
-		setMovable(false);
-		setResizable(false);
-		
-//		new Textur
-		
-        backgrPixel = new Image(Assets.getTexture(TextureAsset.BACKGR)); 
-		backgrPixel.setSize(GenericScreen.SCREEN_WIDTH, GenericScreen.SCREEN_HEIGHT);
-        backgrPixel.setColor(0, 0, 0, 0.8f);
-
+public class CreditsDialog extends AdvancedDialog{
+	public CreditsDialog() 
+	{
         final LabelStyle lblstyle = Assets.LabelStyleAsset.MINILABEL.style;
 		text(I18N.getString("credits"), lblstyle); 
 		
@@ -72,15 +49,8 @@ public class CreditsDialog extends Dialog{
 		getContentTable().row();
 		text("spinningmerkaba feat. Morusque, Jeris, CSoul, Alex Beroza, Yours Truly", lblstyle); 
         
-        SpriteButton btnYes = new SpriteButton(Assets.SpriteAsset.BTN_SQ_EMPTY.get());
-		btnYes.setText(I18N.getString("okay")); 
+		LabelSpriteButton btnYes = new LabelSpriteButton(EMPTY_TEX, I18N.getString("okay"));
         button(btnYes);
-        	}
-	
-	@Override
-	public void draw(Batch batch, float parentAlpha) {
-		backgrPixel.draw(batch, parentAlpha); // semi black background
-		super.draw(batch, parentAlpha);
 	}
 	
 }

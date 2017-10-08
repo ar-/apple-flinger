@@ -77,7 +77,7 @@ final public class GameManager {
 	
 	public boolean isPaused;
 	/**
-	 * the current winning streak (checking for non-interrpted streak compared to 'getWins()')
+	 * the current winning streak (checking for non-interrupted streak compared to 'getWins()')
 	 */
 	private int wonRoundsInARow;
 	public final long gameStartTime;

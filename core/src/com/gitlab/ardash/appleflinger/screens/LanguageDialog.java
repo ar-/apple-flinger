@@ -32,9 +32,7 @@ import com.gitlab.ardash.appleflinger.global.Assets.TextureAsset;
 import com.gitlab.ardash.appleflinger.global.GameManager;
 import com.gitlab.ardash.appleflinger.i18n.I18N;
 
-public class LanguageDialog extends Dialog{
-
-	private Image backgrPixel;
+public class LanguageDialog extends AdvancedDialog{
 
 	public LanguageDialog() {
 		super("", new WindowStyle( 
@@ -54,28 +52,28 @@ public class LanguageDialog extends Dialog{
 		
 		getContentTable().row().minHeight(240).top();
 
-		getContentTable().add(makeLingoButton(Assets.SpriteAsset.BTN_REFRESH, I18N.s("default")));
-		getContentTable().add(makeLingoButton(Assets.SpriteAsset.FLAG_DE, "deutsch"));
+		getContentTable().add(makeLingoButton(Assets.SpriteAsset.BTN_REFRESH, "\n\n"+I18N.s("default")));
+		getContentTable().add(makeLingoButton(Assets.SpriteAsset.FLAG_DE, "\n\ndeutsch"));
 		getContentTable().row().minHeight(180).top();
-		getContentTable().add(makeLingoButton(Assets.SpriteAsset.FLAG_EN, "english"));
-		getContentTable().add(makeLingoButton(Assets.SpriteAsset.FLAG_ES, "español"));
+		getContentTable().add(makeLingoButton(Assets.SpriteAsset.FLAG_EN, "\n\nenglish"));
+		getContentTable().add(makeLingoButton(Assets.SpriteAsset.FLAG_ES, "\n\nespañol"));
 		getContentTable().row().minHeight(180).top();
-		getContentTable().add(makeLingoButton(Assets.SpriteAsset.FLAG_FR, "français"));
-		getContentTable().add(makeLingoButton(Assets.SpriteAsset.FLAG_RU, "русский"));
+		getContentTable().add(makeLingoButton(Assets.SpriteAsset.FLAG_FR, "\n\nfrançais"));
+		getContentTable().add(makeLingoButton(Assets.SpriteAsset.FLAG_RU, "\n\nрусский"));
 
         getContentTable().row();
         
-        SpriteButton btnYes = new SpriteButton(Assets.SpriteAsset.BTN_SQ_EMPTY.get());
-		btnYes.setText(I18N.getString("cancel"));
+		LabelSpriteButton btnYes = new LabelSpriteButton(EMPTY_TEX, I18N.getString("cancel"));
         button(btnYes);
 	}
 
-	private static SpriteButton makeLingoButton(final Assets.SpriteAsset sa, String lbl) {
-		SpriteButton btn = new SpriteButton(sa.get());
-        btn.setText("\n"+lbl);
-        btn.setLabelStyle(Assets.LabelStyleAsset.MINILABEL.style);
+	private static LabelSpriteButton makeLingoButton(final Assets.SpriteAsset sa, String lbl) {
+//		SpriteButton btn = new SpriteButton(sa.get());
+//        btn.setText("\n"+lbl);
+//        btn.setLabelStyle(Assets.LabelStyleAsset.MINILABEL.style);
+        LabelSpriteButton btn2 = new LabelSpriteButton(sa.get(), lbl);
         
-        btn.addListener(new ClickListener(){
+        btn2.addListener(new ClickListener(){
         	@Override
         	public void clicked(InputEvent event, float x, float y) {
         		super.clicked(event, x, y);
@@ -91,13 +89,7 @@ public class LanguageDialog extends Dialog{
                 GameManager.getInstance().getActionResolver().restartMySelf();
         	}
         });
-		return btn;
-	}
-	
-	@Override
-	public void draw(Batch batch, float parentAlpha) {
-		backgrPixel.draw(batch, parentAlpha); // semi black background
-		super.draw(batch, parentAlpha);
+		return btn2;
 	}
 	
 }

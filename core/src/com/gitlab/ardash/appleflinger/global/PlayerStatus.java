@@ -40,11 +40,6 @@ public class PlayerStatus {
 	int targetsLostThisRound;
 	private int enemiesKilledThisShot;
 	
-//	/**
-//	 * reference to the point label. If this is tset then the points can be updated on the screen
-//	 */
-//	public Label pointLabel;
-
 	public PlayerStatus(PlayerSide side) {
 		this.side=side;
 		allPoints=0;

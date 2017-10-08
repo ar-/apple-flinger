@@ -16,26 +16,17 @@
  ******************************************************************************/
 package com.gitlab.ardash.appleflinger.screens;
 
-import com.badlogic.gdx.graphics.Color;
-import com.badlogic.gdx.graphics.g2d.Batch;
-import com.badlogic.gdx.graphics.g2d.TextureRegion;
 import com.badlogic.gdx.scenes.scene2d.InputEvent;
 import com.badlogic.gdx.scenes.scene2d.Stage;
-import com.badlogic.gdx.scenes.scene2d.ui.Dialog;
 import com.badlogic.gdx.scenes.scene2d.ui.HorizontalGroup;
-import com.badlogic.gdx.scenes.scene2d.ui.Image;
 import com.badlogic.gdx.scenes.scene2d.ui.Label;
 import com.badlogic.gdx.scenes.scene2d.ui.Label.LabelStyle;
 import com.badlogic.gdx.scenes.scene2d.utils.ClickListener;
-import com.badlogic.gdx.scenes.scene2d.utils.TextureRegionDrawable;
 import com.gitlab.ardash.appleflinger.global.Assets;
-import com.gitlab.ardash.appleflinger.global.Assets.TextureAsset;
 import com.gitlab.ardash.appleflinger.i18n.I18N;
 import com.gitlab.ardash.appleflinger.listeners.OnTextChangeListener;
 
-public class TextInputDialog extends Dialog{
-
-	private Image backgrPixel;
+public class TextInputDialog extends AdvancedDialog{
 	protected OnTextChangeListener changeListener = null;
 	
 	private final Label lblHeadline;
@@ -43,18 +34,6 @@ public class TextInputDialog extends Dialog{
 
 	public TextInputDialog() 
 	{
-		super("", new WindowStyle( 
-				Assets.FontAsset.FLINGER_03_B2_DIAG_MINIL.font,Color.WHITE,
-				new TextureRegionDrawable(new TextureRegion(Assets.getTexture(Assets.TextureAsset.LARGE_DIALOG)))
-				));
-		setModal(true);
-		setMovable(false);
-		setResizable(false);
-		
-        backgrPixel = new Image(Assets.getTexture(TextureAsset.BACKGR)); 
-		backgrPixel.setSize(GenericScreen.SCREEN_WIDTH, GenericScreen.SCREEN_HEIGHT);
-        backgrPixel.setColor(0, 0, 0, 0.8f);
-
         final LabelStyle lblstyle = Assets.LabelStyleAsset.MINILABEL.style;
 		text(I18N.getString("inputRequired"), lblstyle); 
 		
@@ -93,13 +72,11 @@ public class TextInputDialog extends Dialog{
 		getContentTable().add(makeKeyboardRow("ZXCVBNM"));
 		getContentTable().row();
 		
-        SpriteButton btnCancel = new SpriteButton(Assets.SpriteAsset.BTN_SQ_EMPTY.get());
-        btnCancel.setText(I18N.getString("cancel")); 
-        button(btnCancel);
+		LabelSpriteButton btnCancel = new LabelSpriteButton(EMPTY_TEX, I18N.getString("cancel")); 
+		button(btnCancel);
 		
-        SpriteButton btnOk = new SpriteButton(Assets.SpriteAsset.BTN_SQ_EMPTY.get());
-		btnOk.setText(I18N.getString("okay")); 
-        button(btnOk);
+        LabelSpriteButton btnOk = new LabelSpriteButton(EMPTY_TEX, I18N.getString("okay")); 
+		button(btnOk);
         
         btnOk.addListener(new ClickListener(){
         	@Override
@@ -119,9 +96,8 @@ public class TextInputDialog extends Dialog{
 		return hg;
 	}
 
-	private SpriteButton makeCharButton(final String ch) {
-		SpriteButton btnChar = new SpriteButton(Assets.SpriteAsset.BTN_BLANK.get());
-        btnChar.setText(ch);
+	private LabelSpriteButton makeCharButton(final String ch) {
+		LabelSpriteButton btnChar = new LabelSpriteButton(Assets.SpriteAsset.BTN_BLANK.get(), ch);
         
         btnChar.addListener(new ClickListener(){
         	@Override
@@ -138,12 +114,6 @@ public class TextInputDialog extends Dialog{
 		return btnChar;
 	}
 	
-	@Override
-	public void draw(Batch batch, float parentAlpha) {
-		backgrPixel.draw(batch, parentAlpha); // semi black background
-		super.draw(batch, parentAlpha);
-	}
-
 	public void show(Stage guiStage, String headline, String initText, OnTextChangeListener textChangeListener) {
 		super.show(guiStage);
 		lblHeadline.setText(headline);

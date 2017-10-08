@@ -1,11 +1,7 @@
-
-
 apply plugin: "java"
 
 sourceCompatibility = 1.6
 [compileJava, compileTestJava]*.options*.encoding = 'UTF-8'
-
-
 
 sourceSets {
 	test {
@@ -14,11 +10,31 @@ sourceSets {
         }
     }
     
-    
+    integration {
+        java {
+            srcDir 'src-integration'
+        }
+        resources {
+            srcDir 'src-integration'  
+        }
+    }
+}
+
+dependencies {
+        integrationCompile 'junit:junit:4.+'
+        integrationCompile project(":desktop") // for screenshot testdrive runner
+        integrationCompile sourceSets.test.output
+    	integrationRuntime configurations.testRuntime
 }
 
 test {
   workingDir './'
+}
+
+task testIntegration(type: Test) {
+    testClassesDir = sourceSets.integration.output.classesDir
+    classpath = sourceSets.integration.runtimeClasspath
+    debug = false
 }
 
 eclipse.project {
