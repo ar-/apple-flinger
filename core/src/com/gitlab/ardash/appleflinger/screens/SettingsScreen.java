@@ -41,16 +41,6 @@ import com.gitlab.ardash.appleflinger.listeners.OnTextChangeListener;
 
 public class SettingsScreen extends GenericScreen {  
 	   
-//    public SettingsScreen() {
-//
-//	}
-    
-//    @Override
-//    public void show() {
-//    	super.show();
-//		gm.setGameState(GameState.MISSION_SELECT);
-//    }
-    
     @Override
     protected void buildGameGUI() {
     	super.buildGameGUI();
@@ -177,6 +167,8 @@ public class SettingsScreen extends GenericScreen {
 	        			new OnTextChangeListener() {
 							@Override
 							public void onTextChange(String newTextFromDialog) {
+								if (newTextFromDialog.isEmpty())
+									newTextFromDialog = I18N.s("player1");
 			        			Pref.setPlayer1Name(newTextFromDialog);
 			        			lblPN1.setText(newTextFromDialog);
 							}
@@ -195,6 +187,8 @@ public class SettingsScreen extends GenericScreen {
 	        			new OnTextChangeListener() {
 							@Override
 							public void onTextChange(String newTextFromDialog) {
+								if (newTextFromDialog.isEmpty())
+									newTextFromDialog = I18N.s("player2");
 			        			Pref.setPlayer2Name(newTextFromDialog);
 			        			lblPN2.setText(newTextFromDialog);
 							}
