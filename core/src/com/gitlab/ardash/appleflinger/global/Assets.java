@@ -166,8 +166,6 @@ public class Assets {
 		BURNSTOWNDAM, FLINGER, ZANTROKE;
 		@Override
 		public String toString() {
-//			if (this == ZANTROKE)
-//				return "" + super.toString().toLowerCase() + ".otf"; // example "zantroke.otf"  
 			return "" + super.toString().toLowerCase() + ".ttf"; // example "fliger.ttf"  
 		}
 	}

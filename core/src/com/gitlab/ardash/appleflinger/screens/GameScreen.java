@@ -294,10 +294,6 @@ public class GameScreen implements Screen {
         }});
         btnSound.setChecked(!Pref.getSoundOn());
 
-        LabelStyle ministyle = new LabelStyle(LabelStyleAsset.MINILABEL.style);
-        //ministyle.font = LabelStyleAsset.MINILABEL.style.font;
-        ministyle.fontColor = new Color(1, 1, 1, 0.8f);
-
         labelAllPointsP1 = createMiniLabel(gm.PLAYER1.getAllPoints()+""); 
         labelAllPointsP2 = createMiniLabel(gm.PLAYER2.getAllPoints()+""); 
         final Label labelWinsP1 = createMiniLabel(gm.PLAYER1.getWins()+""); 
