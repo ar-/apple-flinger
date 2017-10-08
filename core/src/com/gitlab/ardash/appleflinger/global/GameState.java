@@ -55,23 +55,24 @@ public enum GameState implements HasNextStates {
 	},
 	WAIT_FOR_PHYSICS {
 		public EnumSet<GameState> nexts() {
-			// with the pause screen, this state can go directly to loading scrren (return to menu)
+			// with the pause screen, this state can go directly to loading screen (return to menu)
 			EnumSet<GameState> ret = EnumSet.of(WAIT_FOR_DRAG,GAME_OVER_SCREEN,LOADING_SCREEN);
 			return ret;
 		}
 	},
-	/// waiting for user to pull the projectile (could also be wait for input, in case the seetign screen or another click event (non-drag))
+	/// waiting for user to pull the projectile (could also be wait for input, in case the setting screen or another click event (non-drag))
 	WAIT_FOR_DRAG {
-		// with the pause screen, this state can go directly to loading scrren (return to menu)
+		// with the pause screen, this state can go directly to loading screen (return to menu)
 		public EnumSet<GameState> nexts() {
 			EnumSet<GameState> ret = EnumSet.of(DRAGGING,LOADING_SCREEN);
 			return ret;
 		}
 	},
 	/// projectile is being dragged right now by user
+	/// can also come to loading screen if paused on drag (especially AI-drag) (fixes #23)
 	DRAGGING {
 		public EnumSet<GameState> nexts() {
-			EnumSet<GameState> ret = EnumSet.of(WAIT_FOR_PHYSICS);
+			EnumSet<GameState> ret = EnumSet.of(WAIT_FOR_PHYSICS,LOADING_SCREEN);
 			return ret;
 		}
 	},
