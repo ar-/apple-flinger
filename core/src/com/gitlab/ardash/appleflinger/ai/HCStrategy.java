@@ -20,6 +20,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
 
+import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.math.MathUtils;
 import com.badlogic.gdx.math.Vector2;
 import com.badlogic.gdx.scenes.scene2d.Actor;
@@ -37,6 +38,10 @@ public class HCStrategy implements Strategy {
 	 */
 	private List<Shot> allShots = new HCStrategyData();
 	
+	/**
+	 * A shot straight forward. Only to be user if there are no enemies left, to gain some more points.
+	 * This is the shot that fixes the crash in #33 . 
+	 */
 	private static Vector2 defaultPullVector = new Vector2(0.7672596f,-0.22652423f);
 
 	@Override
@@ -45,13 +50,19 @@ public class HCStrategy implements Strategy {
 		Vector2 ret;
 
 		// select target
-		final List<Vector2> targets = getCurrentTragets();
-		final int selectedTargetId = MathUtils.random(targets.size()-1);
+		final List<Vector2> targets = getCurrentTargets();
+		final int numberOfTargets = targets.size();
+		if (numberOfTargets == 0 )
+			return defaultPullVector; // fix for #33
+		final int selectedTargetId = MathUtils.random(numberOfTargets-1);
 		Vector2 target = targets.get(selectedTargetId);
 		
 		// select shot
 		final List<Shot> shotsForTarget = getShotsForTarget(target);
-		final int selectedShotId = MathUtils.random(shotsForTarget.size()-1);
+		final int numberOfShots = shotsForTarget.size();
+		if (numberOfShots == 0 )
+			return defaultPullVector; // fix for #33
+		final int selectedShotId = MathUtils.random(numberOfShots-1);
 		ret= shotsForTarget.get(selectedShotId).pullVector;
 		
 		return ret;
@@ -89,8 +100,9 @@ public class HCStrategy implements Strategy {
 			ret.add(minShot);
 		}
 		
+		// don't crash the game, but log it, because this is serious malfunction
 		if (ret.isEmpty())
-			throw new RuntimeException("No shots to shoot");
+			Gdx.app.error(getClass().getName(), "No shots to shoot, AI has no training at all");
 		
 		return ret;
 	}
@@ -108,7 +120,7 @@ public class HCStrategy implements Strategy {
 		return ret;
 	}
 
-	private static List<Vector2> getCurrentTragets()
+	private static List<Vector2> getCurrentTargets()
 	{
 		List<Vector2> ret = new ArrayList<Vector2>();
 		GameManager gm = GameManager.getInstance();
@@ -124,9 +136,10 @@ public class HCStrategy implements Strategy {
 				}
 			}
 		}
-		if (ret.isEmpty())
-			throw new RuntimeException("No targets found to aim for");
-		return ret ;
+		
+		// this is commented, if can happen if player kill own targets
+		//if (ret.isEmpty()) throw new RuntimeException("No targets found to aim for");
+		return ret;
 	}
 
 	class HCStrategyData extends ArrayList<Shot>
