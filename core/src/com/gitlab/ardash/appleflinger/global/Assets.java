@@ -56,7 +56,6 @@ public class Assets {
 			MINILABEL.style = new LabelStyle();
 			MINILABEL.style.font = Assets.FontAsset.FLINGER_03_B2_DIAG_MINIL.font;
 			MINILABEL.style.fontColor=Color.WHITE;
-			
 
 			BIGMENUSTYLE.style = new LabelStyle();
 			BIGMENUSTYLE.style.font = Assets.FontAsset.FLINGER_05_B4_BIGMENU.font;
@@ -78,7 +77,8 @@ public class Assets {
 		BURNSTOWNDAM_216, BURNSTOWNDAM_75, 
 		FLINGER_09_B5_POINT_POP,
 		FLINGER_05_B4_BIGMENU, 
-		FLINGER_03_B2_DIAG_MINIL;
+		FLINGER_03_B2_DIAG_MINIL,
+		ZANTROKE_03_B2_DIAG_MINIL_CYRILLIC;
 		
 		public BitmapFont font;
 		// init
@@ -129,6 +129,11 @@ public class Assets {
 			generator.scaleForPixelHeight((int)Math.ceil(FONT_SIZE_SMALL_03));
 			FLINGER_03_B2_DIAG_MINIL.font = generator.generateFont(parameter);
 			FLINGER_03_B2_DIAG_MINIL.font.getRegion().getTexture().setFilter(TextureFilter.Linear, TextureFilter.Linear);
+
+			generator = Assets.getFontGenerator(FontGeneratorAsset.ZANTROKE);
+			ZANTROKE_03_B2_DIAG_MINIL_CYRILLIC.font = generator.generateFont(parameter);
+			ZANTROKE_03_B2_DIAG_MINIL_CYRILLIC.font.getRegion().getTexture().setFilter(TextureFilter.Linear, TextureFilter.Linear);
+
 		}
 		@Override
 		public String toString() {
@@ -137,10 +142,12 @@ public class Assets {
 	}
 
 	public enum FontGeneratorAsset {
-		BURNSTOWNDAM, FLINGER;
+		BURNSTOWNDAM, FLINGER, ZANTROKE;
 		@Override
 		public String toString() {
-			return "" + super.toString().toLowerCase() + ".ttf"; // "njnaruto.ttf"  
+			if (this == ZANTROKE)
+				return "" + super.toString().toLowerCase() + ".otf"; // example "zantroke.otf"  
+			return "" + super.toString().toLowerCase() + ".ttf"; // example "fliger.ttf"  
 		}
 	}
 
