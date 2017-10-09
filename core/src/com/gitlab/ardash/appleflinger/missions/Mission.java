@@ -17,6 +17,8 @@
 package com.gitlab.ardash.appleflinger.missions;
 
 import java.lang.reflect.Constructor;
+import java.util.HashSet;
+import java.util.Set;
 
 import com.badlogic.gdx.scenes.scene2d.Group;
 import com.gitlab.ardash.appleflinger.GameWorld;
@@ -53,18 +55,10 @@ import com.gitlab.ardash.appleflinger.GameWorld;
 	    M_1_17,
 	    M_1_18,
 	    END_OF_CHAPTER,
+	    M_2_1,
 
 	    NONE; // don't use this
 
-//	    private final int major;
-//	    private final int minor;
-//		public StageFiller stageFiller;
-//	    Mission(int major, int minor, StageFiller mission) {
-//	        this.major = major;
-//	        this.minor = minor;
-//	        this.stageFiller = mission;
-//	    }
-	    
 	    /**
 	     * validate all the statuses and check if all the classes are there
 	     */
@@ -91,7 +85,7 @@ import com.gitlab.ardash.appleflinger.GameWorld;
 					return (StageFiller)object;
 				throw new RuntimeException("object was a class but not a stagefiller"); 
 			} catch (Exception e) {
-				throw new RuntimeException("Error getting the StageFillerClass", e); 
+				throw new RuntimeException("Error getting the StageFillerClass "+toString(), e); 
 			}
 	    }
 
@@ -126,6 +120,17 @@ import com.gitlab.ardash.appleflinger.GameWorld;
 	    		return END_OF_CHAPTER;
 	    	
 	    	return next;
+	    }
+	    
+	    public static Set<Integer> getAvailableEpisodes()
+	    {
+	    	Set<Integer> ret = new HashSet<Integer>(3);
+	    	for (Mission m : Mission.values())
+	    	{
+	    		ret.add(m.getMajor());
+	    	}
+
+	    	return ret;
 	    }
 	    
 	    public interface StageFiller {
