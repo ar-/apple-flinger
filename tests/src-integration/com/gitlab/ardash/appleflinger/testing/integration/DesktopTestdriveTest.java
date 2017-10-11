@@ -14,7 +14,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  ******************************************************************************/
-package com.gitlab.ardash.appleflinger.testing.sanity;
+package com.gitlab.ardash.appleflinger.testing.integration;
 
 import java.util.concurrent.TimeUnit;
 
@@ -65,8 +65,8 @@ public class DesktopTestdriveTest implements ActionResolver{
 		LwjglApplicationConfiguration config = new LwjglApplicationConfiguration();
 		config.width = 1280; // PHONE SIZE (for screenshots)
 		config.height = 720; // PHONE SIZE
-		config.allowSoftwareMode=true;
-		config.useGL30 = true;
+//		config.allowSoftwareMode=true;
+//		config.useGL30 = true;
 		
 		try
 		{
@@ -90,18 +90,27 @@ public class DesktopTestdriveTest implements ActionResolver{
 		    				gm.resetAll(Mission.M_1_1);
 		    				gm.setScreen(Mission.M_1_1);
 		    				
-//		    				
-//		    				Gdx.app.postRunnable(new Runnable() {
-//								
-//								@Override
-//								public void run() {
-////									byte[] pixels = ScreenUtils.getFrameBufferPixels(0, 0, Gdx.graphics).getBackBufferWidth(), Gdx.graphics.getBackBufferHeight(), true);
-////
+		    				
+		    				Gdx.app.postRunnable(new Runnable() {
+								
+								@Override
+								public void run() 
+								{
+//									ScreenshotFactory.saveScreenshot();
+//									byte[] pixels = ScreenUtils.getFrameBufferPixels
+//											(0, 0, 
+////													Gdx.graphics.getBackBufferWidth(),Gdx.graphics.getBackBufferHeight(),
+//													100,200,
+//											true);
+//
 ////									Pixmap pixmap = new Pixmap(Gdx.graphics.getBackBufferWidth(), Gdx.graphics.getBackBufferHeight(), Pixmap.Format.RGBA8888);
-////									BufferUtils.copy(pixels, 0, pixmap.getPixels(), pixels.length);
-////									PixmapIO.writePNG(Gdx.files.external("mypixmap.png"), pixmap);
-////									pixmap.dispose();								}
-//							});
+//									Pixmap pixmap = new Pixmap(100, 200, Pixmap.Format.RGBA8888);
+//									BufferUtils.copy(pixels, 0, pixmap.getPixels(), pixels.length);
+//									PixmapIO.writePNG(Gdx.files.external("mypixmap.png"), pixmap);
+//									pixmap.dispose();
+									
+								}
+							});
 							
 						}
 					});
@@ -110,7 +119,14 @@ public class DesktopTestdriveTest implements ActionResolver{
 			});
 //			gm.setPlayer2CPU(true);
 //			gm.setScreen(new MissionSelectScreen());
-			TimeUnit.SECONDS.sleep(11);
+			TimeUnit.SECONDS.sleep(3);
+			Gdx.app.postRunnable(new Runnable() {
+				@Override
+				public void run() {
+					ScreenshotFactory.saveScreenshot();
+				}
+			});
+			TimeUnit.SECONDS.sleep(1);
 			
 		}
 		catch (ExceptionInInitializerError e)
