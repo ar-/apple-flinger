@@ -6,3 +6,8 @@
 ./licensecheck.sh || exit 1
 ./validateI18N.sh || exit 1
 #./gradlew tests:test --info || exit 1
+
+#update AUTHORS file
+echo "Authors\n=======\nWe'd like to thank the following people for their contributions.\n\n" > AUTHORS.md
+git log --raw | grep "^Author: " | sort | uniq | cut -d ' ' -f2- | sed 's/^/- /' >> AUTHORS.md
+
