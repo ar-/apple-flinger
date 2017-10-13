@@ -43,8 +43,8 @@ final public class GameManager {
 //	public static final boolean DEBUGZOOM = true;
 	public static final boolean SANDBOX = false;
 //	public static final boolean SANDBOX = true;
-	public static final boolean ALLLEVELS = false;
-//	public static final boolean ALLLEVELS = true;
+//	public static final boolean ALLLEVELS = false;
+	public static final boolean ALLLEVELS = true;
 	public static final boolean RECORDSHOTS = false;
 //	public static final boolean RECORDSHOTS = true;
 	private static Vector2 lastPullVector = new Vector2();

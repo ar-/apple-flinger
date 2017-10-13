@@ -18,122 +18,122 @@ package com.gitlab.ardash.appleflinger.testing.integration;
 
 import java.util.concurrent.TimeUnit;
 
-import org.junit.Before;
+import org.junit.BeforeClass;
 import org.junit.Test;
+import org.lwjgl.openal.AL;
 
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.backends.lwjgl.LwjglApplication;
 import com.badlogic.gdx.backends.lwjgl.LwjglApplicationConfiguration;
-import com.badlogic.gdx.graphics.Pixmap;
-import com.badlogic.gdx.graphics.PixmapIO;
-import com.badlogic.gdx.utils.BufferUtils;
-import com.badlogic.gdx.utils.ScreenUtils;
+import com.badlogic.gdx.graphics.glutils.ShaderProgram;
 import com.gitlab.ardash.appleflinger.ActionResolver;
 import com.gitlab.ardash.appleflinger.AppleflingerGame;
+import com.gitlab.ardash.appleflinger.ai.PlayerSimulator;
 import com.gitlab.ardash.appleflinger.global.Assets;
 import com.gitlab.ardash.appleflinger.global.GameManager;
+import com.gitlab.ardash.appleflinger.helpers.Pref;
+import com.gitlab.ardash.appleflinger.i18n.I18N;
 import com.gitlab.ardash.appleflinger.missions.Mission;
-import com.gitlab.ardash.appleflinger.screens.MainMenuScreen;
 import com.gitlab.ardash.appleflinger.screens.MissionSelectScreen;
 
 
 public class DesktopTestdriveTest implements ActionResolver{
 
 
-	@Before
-	public void init() {
-//		gm.setOnCurrentPlayerChangeListener(new OnCurrentPlayerChangeListener() {
-//			@Override
-//			public void onCurrentPlayerChange() {
-//			}
-//		});
-//		gm.resetAll(null);
-//		gm.resetRound(Mission.M_1_1);
+	@BeforeClass
+	public static void init() {
+		final LwjglApplication g1 = startNewGame();
+		Mission.validate();
+		Assets.validate();
 	}
 	
 	@Test
-	public void minitTest1() {
-//		String[] arg = new String[0];
-//		DesktopLauncher.main(arg);
+	public void takeScreenShotsEN() {
+		Pref.setLingo("en");
+		I18N.loadLanguageBundle(Pref.getLingo());
+//		sleep(3000);
+		final Mission missionToLoad = Mission.M_1_1;
+		
+		loadMission(missionToLoad);
+		sleep(1000);
+		PlayerSimulator.INSTANCE.playOneRound();
+		sleep(5000);
+		PlayerSimulator.INSTANCE.playOneRound();
+		sleep(2500);
+		saveScreenShot("s01en.png");
+		sleep(10000);
 	}
 
 	@Test
-	public void minitTest2() {
-		Mission.validate();
-		Assets.validate();
+	public void takeScreenShotsFR() {
+		Pref.setLingo("fr");
+		I18N.loadLanguageBundle(Pref.getLingo());
+		final Mission missionToLoad = Mission.M_1_1;
+		
+		loadMission(missionToLoad);
+//		saveScreenShot("s01fr.png");
+		sleep(1000);
+		PlayerSimulator.INSTANCE.playOneRound();
+		sleep(5000);
+		PlayerSimulator.INSTANCE.playOneRound();
+		sleep(2900);
+		saveScreenShot("s01fr.png");
+		sleep(10000);
+		AL.destroy();
+		Gdx.app.exit();
+	}
 
+	private static void loadMission(final Mission missionToLoad) {
+		Gdx.app.postRunnable(new Runnable() {
+			@Override
+			public void run() {
+				final GameManager gm = GameManager.getInstance();
+				gm.setPlayer2CPU(false);
+				gm.setScreen(new MissionSelectScreen());
+				
+				Gdx.app.postRunnable(new Runnable() {
+					@Override
+					public void run() {
+						gm.resetAll(missionToLoad);
+	    				gm.setScreen(missionToLoad);
+					}
+				});
+			}
+		});
+		sleep(3000);
+	}
+
+	private static LwjglApplication startNewGame() {
 		LwjglApplicationConfiguration config = new LwjglApplicationConfiguration();
 		config.width = 1280; // PHONE SIZE (for screenshots)
 		config.height = 720; // PHONE SIZE
+//		config.audioDeviceBufferCount=0;
+//		config.audioDeviceBufferSize=0;
+//		config.audioDeviceSimultaneousSources=0;
 //		config.allowSoftwareMode=true;
 //		config.useGL30 = true;
 		
-		try
-		{
-			final AppleflingerGame game = new AppleflingerGame(this);
-			new LwjglApplication(game, config);
-			TimeUnit.SECONDS.sleep(5);
-			final MainMenuScreen mmscreen = (MainMenuScreen) game.getScreen();
-			
-			Gdx.app.postRunnable(new Runnable() {
-				@Override
-				public void run() {
-					final GameManager gm = GameManager.getInstance();
-					gm.setPlayer2CPU(true);
-					gm.setScreen(new MissionSelectScreen());
-					
-					Gdx.app.postRunnable(new Runnable() {
-						
-						@Override
-						public void run() {
+		//Locale.setDefault(newLocale);
+		final AppleflingerGame game = new AppleflingerGame(new DesktopTestdriveTest());
+		final LwjglApplication app = new LwjglApplication(game, config);
+		config.disableAudio = true;
+		sleep(5000);
+		return app;
+	}
 
-		    				gm.resetAll(Mission.M_1_1);
-		    				gm.setScreen(Mission.M_1_1);
-		    				
-		    				
-		    				Gdx.app.postRunnable(new Runnable() {
-								
-								@Override
-								public void run() 
-								{
-//									ScreenshotFactory.saveScreenshot();
-//									byte[] pixels = ScreenUtils.getFrameBufferPixels
-//											(0, 0, 
-////													Gdx.graphics.getBackBufferWidth(),Gdx.graphics.getBackBufferHeight(),
-//													100,200,
-//											true);
-//
-////									Pixmap pixmap = new Pixmap(Gdx.graphics.getBackBufferWidth(), Gdx.graphics.getBackBufferHeight(), Pixmap.Format.RGBA8888);
-//									Pixmap pixmap = new Pixmap(100, 200, Pixmap.Format.RGBA8888);
-//									BufferUtils.copy(pixels, 0, pixmap.getPixels(), pixels.length);
-//									PixmapIO.writePNG(Gdx.files.external("mypixmap.png"), pixmap);
-//									pixmap.dispose();
-									
-								}
-							});
-							
-						}
-					});
-					
-				}
-			});
-//			gm.setPlayer2CPU(true);
-//			gm.setScreen(new MissionSelectScreen());
-			TimeUnit.SECONDS.sleep(3);
-			Gdx.app.postRunnable(new Runnable() {
-				@Override
-				public void run() {
-					ScreenshotFactory.saveScreenshot();
-				}
-			});
-			TimeUnit.SECONDS.sleep(1);
-			
-		}
-		catch (ExceptionInInitializerError e)
-		{
-			System.err.println("ExceptionInInitializerError");
+	private static void saveScreenShot(final String filename) {
+		Gdx.app.postRunnable(new Runnable() {
+			@Override
+			public void run() {
+				ScreenshotFactory.saveScreenshot(filename);
+			}
+		});
+	}
+
+	private static void sleep(int ms) {
+		try {
+			TimeUnit.MILLISECONDS.sleep(ms);
 		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}
