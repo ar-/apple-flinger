@@ -1,0 +1,4 @@
+1.4.5
+  * Verbesserte französische Übersetzung.  Danke an xin.
+  * Für jede Sprache wurde eine neue lokalisierte Tastatur hinzugefügt, um die Namen der Spieler einzugeben.
+  * Fdroid Screenshots für jede unterstützte Sprache hinzugefügt.

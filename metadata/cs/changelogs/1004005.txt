@@ -1,0 +1,4 @@
+1.4.5
+  * Vylepšený francouzský překlad.  Díky xin.
+  * Přidána nová lokalizovaná klávesnice pro každý jazyk pro zadání jména hráčů.
+  * Přidány screenshoty fdroid pro každý podporovaný jazyk.

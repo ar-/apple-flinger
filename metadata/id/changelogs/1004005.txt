@@ -1,0 +1,4 @@
+1.4.5
+  * Terjemahan Prancis yang lebih baik.  Terima kasih untuk xin
+  * Menambahkan Keyboard lokal baru untuk setiap bahasa untuk memasukkan nama pemain.
+  * Ditambahkan fdroid screenshot untuk setiap bahasa yang didukung.

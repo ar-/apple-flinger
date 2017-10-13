@@ -1,0 +1,4 @@
+1.4.5
+  * Patobulintas prancūzų vertimas.  Dėka xin.
+  * Pridėta nauja lokalizuota klaviatūra kiekvienai kalbai, norint įvesti grotuvo pavadinimus.
+  * Pridėta"fdroid"ekrano kopijų kiekvienai palaikomai kalba.

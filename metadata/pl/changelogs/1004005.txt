@@ -1,0 +1,4 @@
+1.4.5
+Poprawiono tłumaczenie w języku francuskim.  Dzięki xin.
+  * Dodano nową lokalizowaną klawiaturę dla każdego języka, aby wprowadzić nazwy graczy.
+  * Dodano zrzuty ekranu fdroid dla każdego obsługiwanego języka.
