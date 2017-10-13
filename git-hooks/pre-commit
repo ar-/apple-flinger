@@ -8,6 +8,4 @@
 #./gradlew tests:test --info || exit 1
 
 #update AUTHORS file
-echo "Authors\n=======\nWe'd like to thank the following people for their contributions.\n\n" > AUTHORS.md
-git log --raw | grep "^Author: " | sort | uniq | cut -d ' ' -f2- | sed 's/^/- /' >> AUTHORS.md
-
+scripts/update-authors-file.sh
