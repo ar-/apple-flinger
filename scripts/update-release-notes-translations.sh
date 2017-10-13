@@ -32,6 +32,10 @@ function translate {
 
   trans -b -i $fromfile en:$language > /tmp/trans.txt
   
+  #repair auto translate formating
+  sed -i 's/^\* /  \* /g' /tmp/trans.txt
+  sed -i 's/ null$//g' /tmp/trans.txt
+
   #replace tofile only if it has changed or has not existed yet
   if [ ! -f $tofile ]
   then
@@ -40,7 +44,7 @@ function translate {
     touch $tofile
   fi
 
-  `diff /tmp/trans.txt $tofile`
+  diff /tmp/trans.txt $tofile
   isdiff=$?
   if [ $isdiff -ne "0" ]
   then
@@ -71,8 +75,8 @@ do
   if [ ! -d $ld ]
   then
     echo "lingo dir $ld not found"
-    mkdir $ld
-    #exit 4
+    #mkdir $ld
+    exit 4
   fi
 
   cldir_from="$origd/$cl"
