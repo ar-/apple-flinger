@@ -34,6 +34,7 @@ function translate {
   
   #repair auto translate formating
   sed -i 's/^\* /  \* /g' /tmp/trans.txt
+  sed -i 's/^\*/  \* /g' /tmp/trans.txt
   sed -i 's/ null$//g' /tmp/trans.txt
 
   #replace tofile only if it has changed or has not existed yet
