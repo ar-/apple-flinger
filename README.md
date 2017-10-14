@@ -4,6 +4,8 @@
 
 *Funny single- and multiplayer game for Android - Use a slingshot to shoot with apples. Very challenging and addictive.*
 
+![screenshot](https://gitlab.com/ar-/apple-flinger/raw/master/metadata/en-AU/images/featureGraphic.png)
+
 Features:
 
 *    high resolution quality graphics
