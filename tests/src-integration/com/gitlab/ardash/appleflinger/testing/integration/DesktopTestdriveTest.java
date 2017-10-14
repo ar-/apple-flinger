@@ -21,13 +21,10 @@ import java.util.concurrent.TimeUnit;
 
 import org.junit.BeforeClass;
 import org.junit.Test;
-import org.lwjgl.openal.AL;
-import org.lwjgl.util.vector.Matrix;
 
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.backends.lwjgl.LwjglApplication;
 import com.badlogic.gdx.backends.lwjgl.LwjglApplicationConfiguration;
-import com.badlogic.gdx.graphics.glutils.ShaderProgram;
 import com.gitlab.ardash.appleflinger.ActionResolver;
 import com.gitlab.ardash.appleflinger.AppleflingerGame;
 import com.gitlab.ardash.appleflinger.ai.PlayerSimulator;
@@ -42,7 +39,8 @@ import com.gitlab.ardash.appleflinger.screens.MissionSelectScreen;
 
 public class DesktopTestdriveTest implements ActionResolver{
 	
-	private static final String [] langs = {"de","en","es","fr"};
+	private static final String [] langs = {"fr"};
+	//private static final String [] langs = {"de","en","es","fr"};
 	//private static final String [] langs = {"ru"}; // separate non-latin load
 	private static final Mission [] missions = {Mission.M_1_1, Mission.M_1_3, Mission.M_1_4
 		,Mission.M_1_5, Mission.M_1_11, Mission.M_1_14};
