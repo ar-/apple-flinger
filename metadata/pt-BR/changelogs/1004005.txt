@@ -1,0 +1,4 @@
+1.4.5
+  * Tradução aprimorada do francês.  Obrigado ao xin.
+  * Adicionado um novo teclado localizado para cada idioma para inserir nomes de jogadores.
+  * Adicionado screenshots fdroid para cada idioma suportado.

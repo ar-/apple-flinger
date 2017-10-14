@@ -1,0 +1,4 @@
+1.4.5
+  * Amélioration de la traduction française.  Merci à xin.
+  * Ajout d'un nouveau clavier localisé pour chaque langue pour entrer les noms des joueurs.
+  * Ajout de captures d'écran fdroid pour chaque langue prise en charge.

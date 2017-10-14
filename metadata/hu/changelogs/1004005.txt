@@ -1,0 +1,4 @@
+1.4.5
+  * Jobb francia fordítás.  Köszönet xinnek.
+  * Hozzáadott egy új lokalizált billentyűzetet minden nyelvhez a játékos nevének beírásához.
+  * Hozzáadott fdroid screenshotok minden támogatott nyelvhez.

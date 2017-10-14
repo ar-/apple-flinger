@@ -1,0 +1,4 @@
+1.4.5
+  * Verbeterde Franse vertaling.  Dankzij xin.
+  * Een nieuw gelokaliseerd toetsenbord toegevoegd voor elke taal om spelersnamen in te voeren.
+  * Fdroid screenshots toegevoegd voor elke ondersteunde taal.

@@ -1,0 +1,4 @@
+1.4.5
+  * Förbättrad fransk översättning.  Tack vare xin.
+  * Lades till ett nytt lokaliserat tangentbord för varje språk för att ange spelarnamn.
+  * Added fdroid skärmdumpar för varje språk som stöds.
