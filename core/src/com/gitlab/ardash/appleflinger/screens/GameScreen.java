@@ -304,18 +304,18 @@ public class GameScreen implements Screen {
 //        miniStatsTable.align(Align.topLeft);
         miniStatsTable.setTouchable(Touchable.disabled);
         miniStatsTable.add(labelAllPointsP1).right().top();
-        miniStatsTable.add(createMiniLabel(I18N.getString("points"))).padLeft(20).padRight(20); 
+        miniStatsTable.add(createMiniLabel(I18N.getString("points"))).padLeft(20).padRight(20);
         miniStatsTable.add(labelAllPointsP2).left();
 		miniStatsTable.add().width(GameWorld.UNIT_WIDTH/2);
 		miniStatsTable.row();
 		miniStatsTable.add(labelWinsP1).right();
-        miniStatsTable.add(createMiniLabel(I18N.getString("wins"))); 
+        miniStatsTable.add(createMiniLabel(I18N.getString("wins"))).padLeft(20).padRight(20);
 		miniStatsTable.add(labelWinsP2).left();
 		miniStatsTable.add().width(GameWorld.UNIT_WIDTH/2);
         miniStatsTable.row();
         miniStatsTable.add();
-        miniStatsTable.add(createMiniLabel(I18N.getString("level"))); 
-        miniStatsTable.add(createMiniLabel(mission.getMinor()+"")).left(); 
+        miniStatsTable.add(createMiniLabel(I18N.getString("level"))).padLeft(20).padRight(20);
+        miniStatsTable.add(createMiniLabel(mission.getMinor()+"")).left();
 		miniStatsTable.add().width(GameWorld.UNIT_WIDTH/2);
 
         final Table topLeftTable = new Table();
@@ -346,7 +346,8 @@ public class GameScreen implements Screen {
         guiStage.act(delta); // update GUI  
           
         renderer.render(); // draw the box2d world  
-        guiStage.draw(); // draw the GUI  
+        guiStage.setDebugAll(GameManager.DEBUG);
+        guiStage.draw(); // draw the GUI
     }
 
 	@Override
