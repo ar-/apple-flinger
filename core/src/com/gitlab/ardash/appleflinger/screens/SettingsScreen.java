@@ -75,6 +75,18 @@ public class SettingsScreen extends GenericScreen {
         final Label lblPN2 = new Label(Pref.getPlayer2name(),Assets.LabelStyleAsset.MINILABEL.style); 
         lblPN2.setAlignment(Align.center);
         
+        // bugfix: if name not visible (empty or wrong font type: reset it)
+        if (lblPN1.getWidth()==0)
+        {
+        	Pref.setPlayer1Name(I18N.s("player1"));
+        	lblPN1.setText(Pref.getPlayer1name());
+        }
+        if (lblPN2.getWidth()==0)
+        {
+        	Pref.setPlayer2Name(I18N.s("player2"));
+        	lblPN2.setText(Pref.getPlayer2name());
+        }
+        
         Label lbl2 = new Label(I18N.getString("Volume"),menustyle); 
         lbl2.setAlignment(Align.center);
         lbl2.setTouchable(Touchable.disabled);
