@@ -1,0 +1,6 @@
+1.4.6
+  * Traduction russe améliorée.  Merci à Dmitry.
+1.4.5
+  * Traduction française améliorée.  Merci à xin.
+  * Ajout d'un nouveau clavier localisé pour chaque langue pour entrer les noms des joueurs.
+  * Ajout de captures d'écran fdroid pour chaque langue prise en charge.

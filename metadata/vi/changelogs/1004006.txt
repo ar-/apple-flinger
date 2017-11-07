@@ -1,0 +1,6 @@
+1.4.6
+  * Cải thiện bản dịch tiếng Nga.  Nhờ Dmitry.
+1.4.5
+  * Cải thiện bản dịch tiếng Pháp.  Nhờ xin.
+  * Thêm một bàn phím địa phương mới cho mỗi ngôn ngữ để nhập tên người chơi.
+  * Thêm ảnh chụp màn hình fdroid cho mỗi ngôn ngữ được hỗ trợ.

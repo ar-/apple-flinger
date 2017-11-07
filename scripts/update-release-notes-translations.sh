@@ -85,7 +85,8 @@ do
   mkdir -p $cldir_to
 
   # iterate all content files
-  for F in `ls $cldir_from`
+  # pick only the latest file
+  for F in `ls $cldir_from | sort -n | tail -n1`
   do
     translate $I $cldir_from/$F $cldir_to/$F
   done

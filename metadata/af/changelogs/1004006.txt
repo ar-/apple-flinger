@@ -1,0 +1,6 @@
+1.4.6
+  * Verbeterde Russiese vertaling.  Dankie aan Dmitri.
+1.4.5
+  * Verbeterde Franse vertaling.  Dankie aan xin.
+  * Bygevoeg 'n nuwe gelokaliseerde sleutelbord vir elke taal om spelers se name in te voer.
+  * Bygevoeg fdroid skermkiekies vir elke ondersteunde taal.
