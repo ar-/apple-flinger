@@ -109,8 +109,12 @@ public class HCStrategy implements Strategy {
 	
 	private List<Shot> getShotsOfCurrentMission()
 	{
+		return getShotsOfMission(GameManager.getInstance().getCurrentMission());
+	}
+
+	private List<Shot> getShotsOfMission(Mission mission)
+	{
 		List<Shot> ret = new ArrayList<Shot>();
-		Mission mission = GameManager.getInstance().getCurrentMission();
 		for (Shot sh : allShots) {
 			if (sh.mission.equals(mission))
 			{
@@ -118,6 +122,21 @@ public class HCStrategy implements Strategy {
 			}
 		}
 		return ret;
+	}
+	
+	public static void validate()
+	{
+		HCStrategy hcs = new HCStrategy();
+		for (Mission m : Mission.values())
+		{
+			final List<Shot> shotsOfMission = hcs.getShotsOfMission(m);
+			if (Mission.getDummies().contains(m))
+				continue;
+			if (shotsOfMission.isEmpty())
+			{
+//				throw new RuntimeException("no HCStrategy for Mission "+m);
+			}
+		}
 	}
 
 	private static List<Vector2> getCurrentTargets()
@@ -318,6 +337,109 @@ public class HCStrategy implements Strategy {
 			add(new Shot(Mission.M_1_18, 0.79985046f, -0.015466452f, 3.3541024f, 1.1572634f, 1.3616502f));
 			add(new Shot(Mission.M_1_18, 0.79985046f, -0.015466452f, 3.0215683f, 0.7832608f, 7.3445945f));
 
+			
+			// episode 2
+			
+			add(new Shot(Mission.M_2_1, 0.76955986f, -0.21858072f, 2.959427f, 1.0283555f, 33.53893f));
+			add(new Shot(Mission.M_2_1, 0.76955986f, -0.21858072f, 2.73849f, 0.5950147f, 33.53893f));
+			add(new Shot(Mission.M_2_1, 0.73134613f, -0.32424235f, 1.8607669f, 1.0021124f, 72.2779f));
+			add(new Shot(Mission.M_2_1, 0.73134613f, -0.32424235f, 1.6827652f, 0.5955725f, 72.2779f));
+			add(new Shot(Mission.M_2_1, 0.73134613f, -0.32424235f, 0.6389787f, 0.59517777f, 1.1696414f));
+			add(new Shot(Mission.M_2_1, 0.5784006f, -0.55267787f, 0.66832674f, 1.1099834f, 7.384871f));
+			add(new Shot(Mission.M_2_1, 0.5784006f, -0.55267787f, 0.59828526f, 0.595318f, 7.384871f));
+			add(new Shot(Mission.M_2_1, 0.5175638f, -0.61002254f, 0.9564505f, 0.9717682f, 1.09806f));
+			add(new Shot(Mission.M_2_1, 0.5175638f, -0.61002254f, 0.5965998f, 0.59535915f, 1.09806f));
+
+			add(new Shot(Mission.M_2_2, 0.73729134f, -0.31048608f, 1.7859832f, 1.084029f, 4.320441f));
+			add(new Shot(Mission.M_2_2, 0.73729134f, -0.31048608f, 1.6954901f, 0.59575355f, 4.320441f));
+			add(new Shot(Mission.M_2_2, 0.7756605f, -0.19583249f, 2.6862252f, 1.082069f, 9.348601f));
+			add(new Shot(Mission.M_2_2, 0.7756605f, -0.19583249f, 2.7374635f, 0.5950625f, 9.348601f));
+			add(new Shot(Mission.M_2_2, 0.7756605f, -0.19583249f, 1.8063529f, 1.0811855f, 2.6426866f));
+			add(new Shot(Mission.M_2_2, 0.7756605f, -0.19583249f, 1.6872478f, 0.59568506f, 2.6426866f));
+			add(new Shot(Mission.M_2_2, 0.7522125f, -0.27235222f, 2.0349503f, 0.91877586f, 18.84822f));
+			add(new Shot(Mission.M_2_2, 0.7522125f, -0.27235222f, 1.6883918f, 0.595614f, 18.84822f));
+			add(new Shot(Mission.M_2_2, 0.7728052f, -0.206815f, 2.9729817f, 1.0149924f, 30.385574f));
+			add(new Shot(Mission.M_2_2, 0.7728052f, -0.206815f, 2.7367277f, 0.5950633f, 30.385574f));
+			add(new Shot(Mission.M_2_2, 0.7108526f, -0.3669994f, 1.0722005f, 0.69670004f, 9.720369f));
+			add(new Shot(Mission.M_2_2, 0.7108526f, -0.3669994f, 0.5764724f, 0.59559417f, 9.720369f));
+
+			add(new Shot(Mission.M_2_3, 0.7710285f, -0.21334267f, 4.463528f, 1.7287991f, 68.42511f));
+			add(new Shot(Mission.M_2_3, 0.7710285f, -0.21334267f, 4.0884585f, 1.3744006f, 68.42511f));
+			add(new Shot(Mission.M_2_3, 0.7710285f, -0.21334267f, 3.0182958f, 0.95676833f, 19.777222f));
+			add(new Shot(Mission.M_2_3, 0.7710285f, -0.21334267f, 2.5723991f, 0.8866807f, 19.777222f));
+			add(new Shot(Mission.M_2_3, 0.79988575f, -0.01349473f, 7.3965034f, 1.8628204f, 73.974785f));
+			add(new Shot(Mission.M_2_3, 0.79988575f, -0.01349473f, 7.4115744f, 1.3743997f, 73.974785f));
+			add(new Shot(Mission.M_2_3, 0.79988575f, -0.01349473f, 4.585267f, 0.9527033f, 15.148841f));
+			add(new Shot(Mission.M_2_3, 0.79988575f, -0.01349473f, 4.2440906f, 0.53051335f, 15.148841f));
+			add(new Shot(Mission.M_2_3, 0.7552366f, -0.26385188f, 1.1101087f, 0.4105745f, 2.7870967f));
+			add(new Shot(Mission.M_2_3, 0.74967f, -0.27927518f, 1.6479598f, 0.47988397f, 79.07391f));
+			add(new Shot(Mission.M_2_3, 0.74967f, -0.27927518f, 1.7095263f, 0.058633924f, 79.07391f));
+			add(new Shot(Mission.M_2_3, 0.5840702f, -0.5466826f, 0.7008814f, 1.1917554f, 6.4170537f));
+			add(new Shot(Mission.M_2_3, 0.5840702f, -0.5466826f, 0.970696f, 0.87374425f, 6.4170537f));
+			add(new Shot(Mission.M_2_3, 0.74832726f, -0.28285313f, 2.7587209f, 0.051765323f, 8.060161f));
+			add(new Shot(Mission.M_2_3, 0.74832726f, -0.28285313f, 2.7587209f, 0.051765323f, 8.060161f));
+			add(new Shot(Mission.M_2_3, 0.758214f, -0.25516868f, 4.193864f, 1.8850374f, 66.016716f));
+			add(new Shot(Mission.M_2_3, 0.758214f, -0.25516868f, 4.088591f, 1.3776066f, 66.016716f));
+			add(new Shot(Mission.M_2_3, 0.758214f, -0.25516868f, 0.59051716f, 0.51372695f, 2.4404094f));
+			add(new Shot(Mission.M_2_3, 0.758214f, -0.25516868f, 0.5906384f, 0.30654085f, 2.8069594f));
+			add(new Shot(Mission.M_2_3, 0.78807926f, -0.13759112f, 2.7379575f, 0.54233205f, 8.260936f));
+			add(new Shot(Mission.M_2_3, 0.78807926f, -0.13759112f, 2.7154794f, 0.05958593f, 8.260936f));
+			add(new Shot(Mission.M_2_3, 0.79265213f, -0.10817838f, 4.2317486f, 1.0096055f, 37.01789f));
+			add(new Shot(Mission.M_2_3, 0.79265213f, -0.10817838f, 4.240876f, 0.52975625f, 37.01789f));
+			add(new Shot(Mission.M_2_4, 0.74098015f, -0.3015771f, 3.0295446f, 1.6076988f, 66.60081f));
+			add(new Shot(Mission.M_2_4, 0.74098015f, -0.3015771f, 2.7095165f, 1.3144267f, 66.60081f));
+			add(new Shot(Mission.M_2_4, 0.74098015f, -0.3015771f, 1.4398615f, 1.3157979f, 2.164091f));
+			add(new Shot(Mission.M_2_4, 0.74098015f, -0.3015771f, 0.94372964f, 1.3160549f, 2.164091f));
+			add(new Shot(Mission.M_2_4, 0.7083101f, -0.37188196f, 1.2416857f, 0.97801083f, 13.180014f));
+			add(new Shot(Mission.M_2_4, 0.7083101f, -0.37188196f, 0.921618f, 1.2660114f, 13.180014f));
+			add(new Shot(Mission.M_2_4, 0.77048683f, -0.2152896f, 1.8407819f, 0.34077072f, 2.5335643f));
+			add(new Shot(Mission.M_2_4, 0.74402237f, -0.2939918f, 1.8527629f, 0.7642007f, 59.531616f));
+			add(new Shot(Mission.M_2_4, 0.74402237f, -0.2939918f, 1.8358543f, 0.34125197f, 59.531616f));
+			add(new Shot(Mission.M_2_5, 0.7378397f, -0.30917954f, 4.6351194f, 0.5936408f, 1.9138353f));
+			add(new Shot(Mission.M_2_5, 0.48945618f, -0.28470373f, 4.6699657f, 0.54292816f, 50.3387f));
+			add(new Shot(Mission.M_2_5, 0.729249f, -0.32893133f, 2.0169368f, 0.07400563f, 14.930607f));
+			add(new Shot(Mission.M_2_5, 0.729249f, -0.32893133f, 2.0169368f, 0.07400563f, 14.930607f));
+			add(new Shot(Mission.M_2_5, 0.7797613f, -0.17880678f, 1.7784507f, 0.09920137f, 10.303542f));
+			add(new Shot(Mission.M_2_5, 0.7797613f, -0.17880678f, 1.2793183f, 0.05499977f, 10.303542f));
+			add(new Shot(Mission.M_2_5, 0.7797613f, -0.17880678f, 1.6298002f, 0.2064677f, 2.5768363f));
+			add(new Shot(Mission.M_2_5, 0.7797613f, -0.17880678f, 1.2599887f, 0.46539515f, 2.5768363f));
+			add(new Shot(Mission.M_2_5, 0.7797613f, -0.17880678f, 1.2599887f, 0.46539515f, 1.0161703f));
+			add(new Shot(Mission.M_2_5, 0.7797613f, -0.17880678f, 1.6622596f, 0.060396597f, 1.8782126f));
+			add(new Shot(Mission.M_2_5, 0.7797613f, -0.17880678f, 1.2876531f, 0.3147983f, 1.8782126f));
+			add(new Shot(Mission.M_2_5, 0.7797613f, -0.17880678f, 1.2689687f, 0.25455654f, 2.456659f));
+			add(new Shot(Mission.M_2_5, 0.7439375f, -0.2942059f, 1.4832778f, 0.4702928f, 78.76203f));
+			add(new Shot(Mission.M_2_5, 0.7439375f, -0.2942059f, 1.2774825f, 0.055551857f, 78.76203f));
+
+			// high shots
+			add(new Shot(Mission.M_2_6, 0.41080856f, -0.68646646f, 8.015268f, 0.52890027f, 11.187565f));
+			add(new Shot(Mission.M_2_6, 0.41080856f, -0.68646646f, 7.859375f, 0.054999948f, 11.187565f));
+			add(new Shot(Mission.M_2_6, 0.36842823f, -0.7101128f, 8.697418f, 0.51642287f, 3.1032076f));
+			add(new Shot(Mission.M_2_6, 0.36842823f, -0.7101128f, 8.796875f, 0.054999948f, 3.1032076f));
+			add(new Shot(Mission.M_2_6, 0.41245937f, -0.6854763f, 3.811433f, 0.5135406f, 10.483822f));
+			add(new Shot(Mission.M_2_6, 0.41245937f, -0.6854763f, 3.640625f, 0.054999948f, 10.483822f));
+			add(new Shot(Mission.M_2_6, 0.41245937f, -0.6854763f, 1.7139531f, 0.059651613f, 1.6900561f));
+			add(new Shot(Mission.M_2_6, 0.41245937f, -0.6854763f, 1.752882f, 0.05499327f, 1.8058726f));
+			add(new Shot(Mission.M_2_6, 0.3483553f, -0.72017264f, 2.9088666f, 0.48438537f, 14.208538f));
+			add(new Shot(Mission.M_2_6, 0.3483553f, -0.72017264f, 2.759849f, 0.054999948f, 14.208538f));
+			add(new Shot(Mission.M_2_6, 0.40455914f, -0.69016814f, 2.0595105f, 0.35984576f, 74.7936f));
+			add(new Shot(Mission.M_2_6, 0.40455914f, -0.69016814f, 1.726242f, 0.054999948f, 74.7936f));
+		
+			// low shots
+			add(new Shot(Mission.M_2_6, 0.75249386f, -0.27157593f, 7.8362427f, 0.48274142f, 17.46623f));
+			add(new Shot(Mission.M_2_6, 0.75249386f, -0.27157593f, 7.859375f, 0.054999948f, 17.46623f));
+			add(new Shot(Mission.M_2_6, 0.75249386f, -0.27157593f, 8.796875f, 0.054999948f, 7.1575065f));
+			add(new Shot(Mission.M_2_6, 0.75249386f, -0.27157593f, 8.788332f, 0.054999948f, 3.8705091f));
+			add(new Shot(Mission.M_2_6, 0.75249386f, -0.27157593f, 9.804572f, 0.05948016f, 1.1958208f));
+			add(new Shot(Mission.M_2_6, 0.77812576f, -0.18579793f, 3.5830312f, 0.5207483f, 6.875959f));
+			add(new Shot(Mission.M_2_6, 0.77812576f, -0.18579793f, 3.640625f, 0.054999948f, 6.875959f));
+			add(new Shot(Mission.M_2_6, 0.7866087f, -0.14576316f, 2.9498806f, 0.4655118f, 15.13888f));
+			add(new Shot(Mission.M_2_6, 0.7866087f, -0.14576316f, 2.703125f, 0.054999948f, 15.13888f));
+			add(new Shot(Mission.M_2_6, 0.7866087f, -0.14576316f, 3.6982927f, 0.054999948f, 5.0198646f));
+			add(new Shot(Mission.M_2_6, 0.7667036f, -0.22839928f, 2.2052624f, 0.29035574f, 8.183056f));
+			add(new Shot(Mission.M_2_6, 0.7667036f, -0.22839928f, 1.7281246f, 0.059642434f, 8.183056f));
+			add(new Shot(Mission.M_2_6, 0.7787638f, -0.1831057f, 2.1823623f, 0.04633467f, 19.517334f));
+			add(new Shot(Mission.M_2_6, 0.7787638f, -0.1831057f, 1.690644f, 0.054999948f, 19.517334f));
+			
 		}
 	}
 	

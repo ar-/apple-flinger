@@ -31,7 +31,7 @@ import com.gitlab.ardash.appleflinger.missions.Mission;
 public class MissionSelectScreen extends GenericScreen {
 	private static int selectedEpisode=0;
 	   
-    public MissionSelectScreen() {
+	public MissionSelectScreen() {
 
 	}
     
@@ -126,5 +126,11 @@ public class MissionSelectScreen extends GenericScreen {
 
     }
     
+    public static void setSelectedEpisode(int selectedEpisode) 
+    {
+		MissionSelectScreen.selectedEpisode = selectedEpisode;
+	}
+
+
     
 }  
