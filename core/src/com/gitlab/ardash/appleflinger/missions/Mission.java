@@ -56,6 +56,11 @@ import com.gitlab.ardash.appleflinger.GameWorld;
 	    M_1_18,
 	    END_OF_CHAPTER,
 	    M_2_1,
+	    M_2_2,
+	    M_2_3,
+	    M_2_4,
+	    M_2_5,
+	    M_2_6,
 
 	    NONE; // don't use this
 
@@ -124,10 +129,13 @@ import com.gitlab.ardash.appleflinger.GameWorld;
 	    
 	    public static Set<Integer> getAvailableEpisodes()
 	    {
-	    	Set<Integer> ret = new HashSet<Integer>(3);
+	    	Set<Integer> ret = new HashSet<Integer>(2);
 	    	for (Mission m : Mission.values())
 	    	{
-	    		ret.add(m.getMajor());
+	    		if (m.getMajor()>0)
+	    		{
+	    			ret.add(m.getMajor());
+	    		}
 	    	}
 
 	    	return ret;

@@ -22,7 +22,7 @@ import com.gitlab.ardash.appleflinger.global.GameManager;
 import com.gitlab.ardash.appleflinger.global.MaterialConfig;
 import com.gitlab.ardash.appleflinger.global.PlayerStatus.PlayerSide;
 
-public class GeneralTargetActor extends CircleActor {
+public abstract class GeneralTargetActor extends CircleActor {
 
 	private PlayerSide playerSide = null;
 

@@ -235,6 +235,9 @@ public class Assets {
 		PUFF_0,PUFF_1,PUFF_2,PUFF_3,PUFF_4,PUFF_5,PUFF_6,PUFF_7,PUFF_8,PUFF_9,
 		
 		DORK_0,DORK_1,DORK_2,DORK_3,
+
+		PENG_0,
+		EYES_CLOSED_PENG,
 		
 		BIRD_0,BIRD_1,BIRD_2,BIRD_3,BIRD_4,BIRD_5,
 
@@ -465,7 +468,8 @@ public class Assets {
 		WOOD_TNT,
 		PUFF,
 		BIRD,
-		DORK;
+		DORK,
+		PENG;
 
 		static {
 			for (SpriteGroupAsset e : SpriteGroupAsset.values()) {
@@ -500,7 +504,7 @@ public class Assets {
 		 *            must contain %d ,which will be replaced by a number
 		 *            [0,+inf]
 		 * @param result
-		 *            the memebrs array
+		 *            the members array
 		 */
 		private void fillMembersByFormat(final String format, final EnumSet<SpriteAsset> result) {
 			for (int i = 0; i < SpriteAsset.values().length; i++) {

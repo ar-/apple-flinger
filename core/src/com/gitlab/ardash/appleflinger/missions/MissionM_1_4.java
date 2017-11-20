@@ -51,8 +51,8 @@ public class MissionM_1_4 implements StageFiller{
 		group.addActor (new BlockActor(world, MaterialConfig.WOOD_BL_81, 0.5086511f, 0.47160864f, 0.7521575f, BodyType.DynamicBody));
 		
 		// upper blocks
-		group.addActor (new DorkActor(world, MaterialConfig.TARGET_L, 1.5218471f, 0.30607963f, 0.5f, BodyType.DynamicBody));
-		group.addActor (new DorkActor(world, MaterialConfig.TARGET_L, 2.553901f, 0.30498973f, 0.5f, BodyType.DynamicBody));
+		group.addActor (new DorkActor(world, MaterialConfig.TARGET_DORK, 1.5218471f, 0.30607963f, 0.5f, BodyType.DynamicBody));
+		group.addActor (new DorkActor(world, MaterialConfig.TARGET_DORK, 2.553901f, 0.30498973f, 0.5f, BodyType.DynamicBody));
 		group.addActor (new BlockActor(world, MaterialConfig.WOOD_BL_22, 3.509035f, 3.291374f, -0.019707292f, BodyType.DynamicBody));
 		group.addActor (new BlockActor(world, MaterialConfig.WOOD_BL_22, 3.5149214f, 3.5575447f, -0.018731747f, BodyType.DynamicBody));
 		group.addActor (new BlockActor(world, MaterialConfig.WOOD_BL_22, 3.4894013f, 3.8353481f, -0.1047232f, BodyType.DynamicBody));
@@ -72,8 +72,8 @@ public class MissionM_1_4 implements StageFiller{
 		group.addActor (new BlockActor(world, MaterialConfig.WOOD_BL_42, 0.9943434f, 3.8515098f, -0.0015090724f, BodyType.DynamicBody));
 		group.addActor (new BlockActor(world, MaterialConfig.WOOD_BL_42, 0.9965055f, 4.1289434f, -0.0017171538f, BodyType.DynamicBody));
 		group.addActor (new BlockActor(world, MaterialConfig.WOOD_BL_42, 1.4752475f, 3.5743423f, 0.0028604649f, BodyType.DynamicBody));
-		group.addActor (new DorkActor(world, MaterialConfig.TARGET_L, 1.512065f, 3.9610732f, 0.5f, BodyType.DynamicBody));
-		group.addActor (new DorkActor(world, MaterialConfig.TARGET_L, 2.5455685f, 3.6827009f, 0.5f, BodyType.DynamicBody));
+		group.addActor (new DorkActor(world, MaterialConfig.TARGET_DORK, 1.512065f, 3.9610732f, 0.5f, BodyType.DynamicBody));
+		group.addActor (new DorkActor(world, MaterialConfig.TARGET_DORK, 2.5455685f, 3.6827009f, 0.5f, BodyType.DynamicBody));
 		group.addActor (new BlockActor(world, MaterialConfig.WOOD_BL_81, 1.4681557f, 4.339837f, -0.0022993532f, BodyType.DynamicBody));
 		group.addActor (new BlockActor(world, MaterialConfig.WOOD_BL_81, 2.5786269f, 4.3387194f, 3.7666297E-4f, BodyType.DynamicBody));
 		

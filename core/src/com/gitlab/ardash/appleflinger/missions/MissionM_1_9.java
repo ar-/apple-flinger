@@ -77,11 +77,11 @@ public class MissionM_1_9 implements StageFiller{
 		group.addActor( new BlockActor(world,MaterialConfig.WOOD_RECT,1.9f+0*d,d/2f+4*d, 4f*r, BodyType.DynamicBody)); 
 		group.addActor( new BlockActor(world,MaterialConfig.WOOD_RECT,1.9f+1*d,d/2f+4*d, 2f*r, BodyType.DynamicBody)); 
 		
-		group.addActor (new DorkActor(world, MaterialConfig.TARGET_L, 0.65625f, 0.3095085f, 0.5f, BodyType.DynamicBody));
-		group.addActor (new DorkActor(world, MaterialConfig.TARGET_L, 0.6406392f, 1.5153271f, 0.5f, BodyType.DynamicBody));
-		group.addActor (new DorkActor(world, MaterialConfig.TARGET_L, 0.6574342f, 2.7254267f, 0.5f, BodyType.DynamicBody));
-		group.addActor (new DorkActor(world, MaterialConfig.TARGET_L, 0.64214784f, 3.9362338f, 0.5f, BodyType.DynamicBody));
-		group.addActor (new DorkActor(world, MaterialConfig.TARGET_L, 2.1451294f, 2.9948468f, 0.5f, BodyType.DynamicBody));
+		group.addActor (new DorkActor(world, MaterialConfig.TARGET_DORK, 0.65625f, 0.3095085f, 0.5f, BodyType.DynamicBody));
+		group.addActor (new DorkActor(world, MaterialConfig.TARGET_DORK, 0.6406392f, 1.5153271f, 0.5f, BodyType.DynamicBody));
+		group.addActor (new DorkActor(world, MaterialConfig.TARGET_DORK, 0.6574342f, 2.7254267f, 0.5f, BodyType.DynamicBody));
+		group.addActor (new DorkActor(world, MaterialConfig.TARGET_DORK, 0.64214784f, 3.9362338f, 0.5f, BodyType.DynamicBody));
+		group.addActor (new DorkActor(world, MaterialConfig.TARGET_DORK, 2.1451294f, 2.9948468f, 0.5f, BodyType.DynamicBody));
 
 
 		// 45 degree faling boxes

@@ -20,12 +20,12 @@ import com.badlogic.gdx.physics.box2d.BodyDef.BodyType;
 import com.badlogic.gdx.scenes.scene2d.Group;
 import com.gitlab.ardash.appleflinger.GameWorld;
 import com.gitlab.ardash.appleflinger.actors.BlockActor;
+import com.gitlab.ardash.appleflinger.actors.PengActor;
 import com.gitlab.ardash.appleflinger.actors.SlingShotActor;
-import com.gitlab.ardash.appleflinger.actors.DorkActor;
 import com.gitlab.ardash.appleflinger.global.MaterialConfig;
 import com.gitlab.ardash.appleflinger.missions.Mission.StageFiller;
 
-public class MissionM_2_8 implements StageFiller{
+public class MissionM_2_4 implements StageFiller{
 	
 	@Override
 	public Group fillMirrorStage(GameWorld world) {
@@ -59,7 +59,7 @@ public class MissionM_2_8 implements StageFiller{
         group.addActor (new BlockActor(world, MaterialConfig.WOOD_BL_41, 1.7662599f, 0.6118851f, 1.5687867f, BodyType.DynamicBody));
         group.addActor (new BlockActor(world, MaterialConfig.WOOD_BL_42, 1.2811948f, 0.61256367f, 1.5716096f, BodyType.DynamicBody));
         group.addActor (new BlockActor(world, MaterialConfig.WOOD_BL_42, 1.0033822f, 0.61246717f, 1.5701371f, BodyType.DynamicBody));
-        group.addActor (new DorkActor(world, MaterialConfig.TARGET_L, 2.1072779f, 0.59113896f, 0.5f));
+        group.addActor (new PengActor(world, MaterialConfig.TARGET_PENG, 2.1072779f, 0.59113896f, 0.5f));
         group.addActor (new BlockActor(world, MaterialConfig.WOOD_BL_81, 3.550928f, 0.950056f, -0.005610021f, BodyType.DynamicBody));
         group.addActor (new BlockActor(world, MaterialConfig.WOOD_BL_81, 2.4090865f, 0.9514926f, 0.017053096f, BodyType.DynamicBody));
         group.addActor (new BlockActor(world, MaterialConfig.WOOD_BL_81, 1.3411803f, 0.95546263f, 0.001283137f, BodyType.DynamicBody));
@@ -90,8 +90,8 @@ public class MissionM_2_8 implements StageFiller{
         group.addActor (new BlockActor(world, MaterialConfig.WOOD_BL_41, 3.6009269f, 2.059324f, -3.1373644f, BodyType.DynamicBody));
         group.addActor (new BlockActor(world, MaterialConfig.WOOD_BL_22, 3.6099892f, 2.264527f, -3.1375322f, BodyType.DynamicBody));
         group.addActor (new BlockActor(world, MaterialConfig.WOOD_BL_11, 3.6098154f, 2.466769f, -3.1375628f, BodyType.DynamicBody));
-        group.addActor (new DorkActor(world, MaterialConfig.TARGET_L, 2.9721925f, 1.5667893f, 0.5f));
-        group.addActor (new DorkActor(world, MaterialConfig.TARGET_L, 1.1897417f, 1.5586923f, 0.5f));
+        group.addActor (new PengActor(world, MaterialConfig.TARGET_PENG, 2.9721925f, 1.5667893f, 0.5f));
+        group.addActor (new PengActor(world, MaterialConfig.TARGET_PENG, 1.1897417f, 1.5586923f, 0.5f));
 
 		return group;
 	}

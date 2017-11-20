@@ -76,18 +76,18 @@ public class MissionM_1_6 implements StageFiller{
 		
 		// dorks
 		
-		group.addActor (new DorkActor(world, MaterialConfig.TARGET_L, 4.1328125f, 0.30499968f, 0.5f, BodyType.DynamicBody));
-		group.addActor (new DorkActor(world, MaterialConfig.TARGET_L, 3.03125f, 0.30499348f, 0.5f, BodyType.DynamicBody));
-		group.addActor (new DorkActor(world, MaterialConfig.TARGET_L, 1.9609371f, 0.30499995f, 0.5f, BodyType.DynamicBody));
-		group.addActor (new DorkActor(world, MaterialConfig.TARGET_L, 0.9101097f, 0.3058071f, 0.5f, BodyType.DynamicBody));
-		group.addActor (new DorkActor(world, MaterialConfig.TARGET_L, 1.3944867f, 1.6938298f, 0.5f, BodyType.DynamicBody));
-		group.addActor (new DorkActor(world, MaterialConfig.TARGET_L, 2.5519369f, 1.6933044f, 0.5f, BodyType.DynamicBody));
-		group.addActor (new DorkActor(world, MaterialConfig.TARGET_L, 2.4785056f, 2.379539f, 0.5f, BodyType.DynamicBody));
-		group.addActor (new DorkActor(world, MaterialConfig.TARGET_L, 1.5238785f, 2.3799913f, 0.5f, BodyType.DynamicBody));
+		group.addActor (new DorkActor(world, MaterialConfig.TARGET_DORK, 4.1328125f, 0.30499968f, 0.5f, BodyType.DynamicBody));
+		group.addActor (new DorkActor(world, MaterialConfig.TARGET_DORK, 3.03125f, 0.30499348f, 0.5f, BodyType.DynamicBody));
+		group.addActor (new DorkActor(world, MaterialConfig.TARGET_DORK, 1.9609371f, 0.30499995f, 0.5f, BodyType.DynamicBody));
+		group.addActor (new DorkActor(world, MaterialConfig.TARGET_DORK, 0.9101097f, 0.3058071f, 0.5f, BodyType.DynamicBody));
+		group.addActor (new DorkActor(world, MaterialConfig.TARGET_DORK, 1.3944867f, 1.6938298f, 0.5f, BodyType.DynamicBody));
+		group.addActor (new DorkActor(world, MaterialConfig.TARGET_DORK, 2.5519369f, 1.6933044f, 0.5f, BodyType.DynamicBody));
+		group.addActor (new DorkActor(world, MaterialConfig.TARGET_DORK, 2.4785056f, 2.379539f, 0.5f, BodyType.DynamicBody));
+		group.addActor (new DorkActor(world, MaterialConfig.TARGET_DORK, 1.5238785f, 2.3799913f, 0.5f, BodyType.DynamicBody));
 		
-//		group.addActor (new DorkActor(world, MaterialConfig.TARGET_L, 5.9609375f, 0.30499968f, 0.5f, BodyType.DynamicBody));
-//		group.addActor (new DorkActor(world, MaterialConfig.TARGET_L, 4.125f, 0.30499944f, 0.5f, BodyType.DynamicBody));
-//		group.addActor (new DorkActor(world, MaterialConfig.TARGET_L, 7.8812675f, 0.30905384f, 0.5f, BodyType.DynamicBody));
+//		group.addActor (new DorkActor(world, MaterialConfig.TARGET_DORK, 5.9609375f, 0.30499968f, 0.5f, BodyType.DynamicBody));
+//		group.addActor (new DorkActor(world, MaterialConfig.TARGET_DORK, 4.125f, 0.30499944f, 0.5f, BodyType.DynamicBody));
+//		group.addActor (new DorkActor(world, MaterialConfig.TARGET_DORK, 7.8812675f, 0.30905384f, 0.5f, BodyType.DynamicBody));
 
 //		group.addActor (new BlockActor(world, MaterialConfig.WOOD_RECT, 3.0547273f, 0.3289174f, 0.005092918f, BodyType.DynamicBody));
 //		group.addActor (new BlockActor(world, MaterialConfig.WOOD_RECT, 1.9554245f, 0.32915226f, -0.0052048806f, BodyType.DynamicBody));

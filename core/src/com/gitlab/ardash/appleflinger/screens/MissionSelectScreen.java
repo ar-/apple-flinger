@@ -29,7 +29,7 @@ import com.gitlab.ardash.appleflinger.i18n.I18N;
 import com.gitlab.ardash.appleflinger.missions.Mission;
 
 public class MissionSelectScreen extends GenericScreen {
-	private static int selectedEpisde=0;
+	private static int selectedEpisode=0;
 	   
     public MissionSelectScreen() {
 
@@ -48,7 +48,7 @@ public class MissionSelectScreen extends GenericScreen {
         Table table = new Table();
         table.setFillParent(true);
         
-        if (selectedEpisde == 0)
+        if (selectedEpisode == 0)
         {
         	// btn for each episode
         	for (final Integer episode : Mission.getAvailableEpisodes()) {
@@ -58,7 +58,7 @@ public class MissionSelectScreen extends GenericScreen {
     	        	@Override
     	        	public void clicked(InputEvent event, float x, float y) {
     	        		super.clicked(event, x, y);
-    	        		selectedEpisde = episode;
+    	        		selectedEpisode = episode;
     	        		show();
     	        	}
     	        });
@@ -70,7 +70,7 @@ public class MissionSelectScreen extends GenericScreen {
 	    	for (final Mission mission : Mission.values())
 	    	{
 	    		//int thisMajor = 1;
-	    		if (mission.getMajor() == selectedEpisde)
+	    		if (mission.getMajor() == selectedEpisode)
 	    		{
 			        final LevelButton btnMission = new LevelButton(mission.getMinor());
 			        btnMission.moveBy(SCREEN_WIDTH/2-100, SCREEN_HEIGHT/2-100);
@@ -112,13 +112,13 @@ public class MissionSelectScreen extends GenericScreen {
 			@Override
 			public void clicked(InputEvent event, float x, float y) {
 				super.clicked(event, x, y);
-				if (selectedEpisde == 0)
+				if (selectedEpisode == 0)
 				{
 					gm.setScreen(new MainMenuScreen());
 				}
 				else
 				{
-					selectedEpisde = 0;
+					selectedEpisode = 0;
 					show();
 				}
 			}

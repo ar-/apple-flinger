@@ -95,12 +95,12 @@ public class MissionM_1_5 implements StageFiller{
 		group.addActor (new BlockActor(world, MaterialConfig.WOOD_BL_11, 1.7988331f, 1.5094274f, -8.5635186E-4f, BodyType.DynamicBody));
 		group.addActor (new BlockActor(world, MaterialConfig.WOOD_BL_11, 1.8152106f, 1.0936363f, -0.0019759657f, BodyType.DynamicBody));
 		group.addActor (new BlockActor(world, MaterialConfig.WOOD_BL_11, 2.2271507f, 1.0929005f, 0.0031128405f, BodyType.DynamicBody));
-		group.addActor (new DorkActor(world, MaterialConfig.TARGET_L, 4.5508933f, 1.1313812f, 0.5f));
-		group.addActor (new DorkActor(world, MaterialConfig.TARGET_L, 2.532829f, 1.2737975f, 0.5f));
-		group.addActor (new DorkActor(world, MaterialConfig.TARGET_L, 1.3210675f, 0.56721085f, 0.5f));
-		group.addActor (new DorkActor(world, MaterialConfig.TARGET_L, 1.3437505f, 1.9288769f, 0.5f));
-		group.addActor (new DorkActor(world, MaterialConfig.TARGET_L, 0.6020787f, 3.078099f, 0.5f));
-		group.addActor (new DorkActor(world, MaterialConfig.TARGET_L, 3.3090098f, 3.078296f, 0.5f));
+		group.addActor (new DorkActor(world, MaterialConfig.TARGET_DORK, 4.5508933f, 1.1313812f, 0.5f));
+		group.addActor (new DorkActor(world, MaterialConfig.TARGET_DORK, 2.532829f, 1.2737975f, 0.5f));
+		group.addActor (new DorkActor(world, MaterialConfig.TARGET_DORK, 1.3210675f, 0.56721085f, 0.5f));
+		group.addActor (new DorkActor(world, MaterialConfig.TARGET_DORK, 1.3437505f, 1.9288769f, 0.5f));
+		group.addActor (new DorkActor(world, MaterialConfig.TARGET_DORK, 0.6020787f, 3.078099f, 0.5f));
+		group.addActor (new DorkActor(world, MaterialConfig.TARGET_DORK, 3.3090098f, 3.078296f, 0.5f));
 		
 		// sling holder
 		final Vector2 slingBase = new Vector2(2,3);

@@ -68,11 +68,11 @@ public class MissionM_1_3 implements StageFiller{
 		group.addActor (new BlockActor(world, MaterialConfig.WOOD_BL_81, 1.6332525f, 1.7561816f, 3.1408339f, BodyType.DynamicBody));
 
 		// dorks
-		group.addActor (new DorkActor(world, MaterialConfig.TARGET_L, 1.648844f, 2.075746f, 0.5f));
-		group.addActor (new DorkActor(world, MaterialConfig.TARGET_L, 3.2681744f, 2.06656f, 0.5f));
-		group.addActor (new DorkActor(world, MaterialConfig.TARGET_L, 3.235356f, 0.30499995f, 0.5f));
-		group.addActor (new DorkActor(world, MaterialConfig.TARGET_L, 1.631023f, 0.30584022f, 0.5f));
-		group.addActor (new DorkActor(world, MaterialConfig.TARGET_L, 2.4144242f, 0.3090124f, 0.5f));
+		group.addActor (new DorkActor(world, MaterialConfig.TARGET_DORK, 1.648844f, 2.075746f, 0.5f));
+		group.addActor (new DorkActor(world, MaterialConfig.TARGET_DORK, 3.2681744f, 2.06656f, 0.5f));
+		group.addActor (new DorkActor(world, MaterialConfig.TARGET_DORK, 3.235356f, 0.30499995f, 0.5f));
+		group.addActor (new DorkActor(world, MaterialConfig.TARGET_DORK, 1.631023f, 0.30584022f, 0.5f));
+		group.addActor (new DorkActor(world, MaterialConfig.TARGET_DORK, 2.4144242f, 0.3090124f, 0.5f));
 		
 		
 		

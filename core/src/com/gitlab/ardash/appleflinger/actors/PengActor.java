@@ -29,7 +29,7 @@ import com.gitlab.ardash.appleflinger.global.Assets.SoundGroupAsset;
 import com.gitlab.ardash.appleflinger.global.MaterialConfig;
 import com.gitlab.ardash.appleflinger.helpers.SoundPlayer;
 
-public class DorkActor extends GeneralTargetActor{
+public class PengActor extends GeneralTargetActor{
 	
 	protected enum EyeState 
 	{
@@ -50,24 +50,12 @@ public class DorkActor extends GeneralTargetActor{
 	private EyeState currentEyeState = EyeState.MIDDLE;
 	
 	private TextureRegionDrawable eyes_closed;
-	private TextureRegionDrawable eyes_down;
-	private TextureRegionDrawable eyes_up;
-	private TextureRegionDrawable eyes_inner;
-	private TextureRegionDrawable eyes_outer;
-	private TextureRegionDrawable eyes_left;
-	private TextureRegionDrawable eyes_right;
 	
-	public DorkActor(GameWorld world, MaterialConfig mc, float x, float y,
+	public PengActor(GameWorld world, MaterialConfig mc, float x, float y,
 			float diameter, BodyType bodyType) {
 		super(world, mc, x, y, diameter, bodyType);
 		
-        eyes_closed = new TextureRegionDrawable(Assets.SpriteAsset.EYES_CLOSED.get());
-        eyes_down = new TextureRegionDrawable(Assets.SpriteAsset.EYES_DOWN.get());
-        eyes_up = new TextureRegionDrawable(Assets.SpriteAsset.EYES_UP.get());
-        eyes_inner = new TextureRegionDrawable(Assets.SpriteAsset.EYES_INNER.get());
-        eyes_outer = new TextureRegionDrawable(Assets.SpriteAsset.EYES_OUTER.get());
-        eyes_left = new TextureRegionDrawable(Assets.SpriteAsset.EYES_LEFT.get());
-        eyes_right = new TextureRegionDrawable(Assets.SpriteAsset.EYES_RIGHT.get());
+        eyes_closed = new TextureRegionDrawable(Assets.SpriteAsset.EYES_CLOSED_PENG.get());
 
         // this actually sets the size of the image independently from the physic actor!!!
         scaleBy(0.25f);
@@ -78,7 +66,7 @@ public class DorkActor extends GeneralTargetActor{
 	}
 	
 	
-	public DorkActor(GameWorld world, MaterialConfig mc, float x, float y,
+	public PengActor(GameWorld world, MaterialConfig mc, float x, float y,
 			float diameter) {
 		this(world, mc, x, y, diameter, BodyType.DynamicBody);
 	}
@@ -141,24 +129,6 @@ public class DorkActor extends GeneralTargetActor{
 		case CLOSED:
 		case BLINK:
 			setDrawable(eyes_closed);
-			break;
-		case INNER:
-			setDrawable(eyes_inner);
-			break;
-		case OUTER:
-			setDrawable(eyes_outer);
-			break;
-		case LEFT:
-			setDrawable(eyes_left);
-			break;
-		case RIGHT:
-			setDrawable(eyes_right);
-			break;
-		case UP:
-			setDrawable(eyes_up);
-			break;
-		case DOWN:
-			setDrawable(eyes_down);
 			break;
 		case MIDDLE:
 		default:

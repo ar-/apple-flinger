@@ -66,7 +66,7 @@ public class MissionM_1_11 implements StageFiller{
 		group.addActor (new BlockActor(world, MaterialConfig.WOOD_BL_42, 1.7931751f, 2.2534347f, -1.5796126f, BodyType.DynamicBody));
 		group.addActor (new BlockActor(world, MaterialConfig.WOOD_BL_42, 1.5153593f, 2.2554622f, -1.5818061f, BodyType.DynamicBody));
 		group.addActor (new BlockActor(world, MaterialConfig.WOOD_BL_42, 1.2363315f, 2.2592676f, -1.5856856f, BodyType.DynamicBody));
-//		group.addActor (new DorkActor(world, MaterialConfig.TARGET_L, 0.8397567f, 1.6875254f, 0.5f));
+//		group.addActor (new DorkActor(world, MaterialConfig.TARGET_DORK, 0.8397567f, 1.6875254f, 0.5f));
 		group.addActor (new BlockActor(world, MaterialConfig.WOOD_BL_21, 2.063146f, 2.657117f, -1.5753897f, BodyType.DynamicBody));
 		group.addActor (new BlockActor(world, MaterialConfig.WOOD_BL_21, 1.3756862f, 2.600297f, -0.013674196f, BodyType.DynamicBody));
 		group.addActor (new BlockActor(world, MaterialConfig.WOOD_BL_11, 1.3879765f, 2.7430954f, -0.013666566f, BodyType.DynamicBody));
@@ -76,13 +76,13 @@ public class MissionM_1_11 implements StageFiller{
 //		group.addActor (new BlockActor(world, MaterialConfig.WOOD_BL_22, 2.3834407f, 3.5675204f, 0.0037131947f, BodyType.DynamicBody));
 //		group.addActor (new BlockActor(world, MaterialConfig.WOOD_BL_22, 3.195296f, 3.5676851f, 0.0015006702f, BodyType.DynamicBody));
 //		group.addActor (new BlockActor(world, MaterialConfig.WOOD_BL_22, 2.110644f, 3.565637f, 0.010129515f, BodyType.DynamicBody));
-//		group.addActor (new DorkActor(world, MaterialConfig.TARGET_L, 0.9124999f, 3.4049938f, 0.5f));
+//		group.addActor (new DorkActor(world, MaterialConfig.TARGET_DORK, 0.9124999f, 3.4049938f, 0.5f));
 //		group.addActor (new BlockActor(world, MaterialConfig.WOOD_BL_22, 1.8426515f, 3.2897449f, 9.055774E-4f, BodyType.DynamicBody));
 //		group.addActor (new BlockActor(world, MaterialConfig.WOOD_BL_22, 1.8359488f, 3.5542033f, 0.002904479f, BodyType.DynamicBody));
 //		group.addActor (new BlockActor(world, MaterialConfig.WOOD_BL_22, 2.0852728f, 3.829236f, 0.016950194f, BodyType.DynamicBody));
 //		group.addActor (new BlockActor(world, MaterialConfig.WOOD_BL_22, 1.8119463f, 3.8188555f, 0.0036674181f, BodyType.DynamicBody));
 //		group.addActor (new BlockActor(world, MaterialConfig.WOOD_BL_22, 1.9226589f, 4.089627f, 0.043378416f, BodyType.DynamicBody));
-//		group.addActor (new DorkActor(world, MaterialConfig.TARGET_L, 2.474419f, 3.9495397f, 0.5f));
+//		group.addActor (new DorkActor(world, MaterialConfig.TARGET_DORK, 2.474419f, 3.9495397f, 0.5f));
 
 		group.addActor (new BlockActor(world, MaterialConfig.WOOD_BL_22, 1.2934214f, 3.2900562f, -3.0160823E-4f, BodyType.DynamicBody));
 		group.addActor (new BlockActor(world, MaterialConfig.WOOD_BL_22, 1.290536f, 3.5561075f, -0.0049441373f, BodyType.DynamicBody));
@@ -96,9 +96,9 @@ public class MissionM_1_11 implements StageFiller{
 		group.addActor (new BlockActor(world, MaterialConfig.WOOD_BL_22, 2.0711493f, 3.8195658f, 0.02410154f, BodyType.DynamicBody));
 		group.addActor (new BlockActor(world, MaterialConfig.WOOD_BL_41, 1.9111594f, 4.018157f, 0.016844101f, BodyType.DynamicBody));
 		group.addActor (new BlockActor(world, MaterialConfig.WOOD_BL_41, 1.3758771f, 4.0240073f, -0.004339735f, BodyType.DynamicBody));
-		group.addActor (new DorkActor(world, MaterialConfig.TARGET_L, 1.9346718f, 4.336325f, 0.5f));
-		group.addActor (new DorkActor(world, MaterialConfig.TARGET_L, 0.8000002f, 3.4049993f, 0.5f));
-		group.addActor (new DorkActor(world, MaterialConfig.TARGET_L, 0.8421941f, 1.6690935f, 0.5f));
+		group.addActor (new DorkActor(world, MaterialConfig.TARGET_DORK, 1.9346718f, 4.336325f, 0.5f));
+		group.addActor (new DorkActor(world, MaterialConfig.TARGET_DORK, 0.8000002f, 3.4049993f, 0.5f));
+		group.addActor (new DorkActor(world, MaterialConfig.TARGET_DORK, 0.8421941f, 1.6690935f, 0.5f));
 
 		// sling holder
 		group.addActor( new BlockActor(world,MaterialConfig.STONE,5.2f, 2.1f,0.3f,0.1f, BodyType.StaticBody)); 

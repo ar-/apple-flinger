@@ -176,7 +176,9 @@ public class GameRenderer  implements Disposable
     		if(Gdx.input.isKeyPressed(Keys.NUM_1)) 
     			currentSandboxConfig = MaterialConfig.WOOD_RECT;
     		if(Gdx.input.isKeyPressed(Keys.NUM_2)) 
-    			currentSandboxConfig = MaterialConfig.TARGET_L;
+    			currentSandboxConfig = MaterialConfig.TARGET_DORK;
+    		if(Gdx.input.isKeyPressed(Keys.W)) 
+    			currentSandboxConfig = MaterialConfig.TARGET_DORK;
     		if(Gdx.input.isKeyPressed(Keys.NUM_3)) 
     			currentSandboxConfig = MaterialConfig.WOOD_BL_11;
     		if(Gdx.input.isKeyPressed(Keys.NUM_4)) 
@@ -195,7 +197,7 @@ public class GameRenderer  implements Disposable
     		if (currentSandboxConfig!=null)
     		{
     			switch (currentSandboxConfig) {
-				case TARGET_L:
+				case TARGET_DORK:
 	    			sandboxPreviewActor = new DorkActor(world,currentSandboxConfig, 10, 6, 0.5f, BodyType.StaticBody);
 					break;
 				case WOOD_TNT:
@@ -264,7 +266,7 @@ public class GameRenderer  implements Disposable
     		if(Gdx.input.isTouched() &&  Gdx.input.justTouched()) 
     		{
     			switch (currentSandboxConfig) {
-				case TARGET_L:
+				case TARGET_DORK:
 	    			s.addActor(new DorkActor(world,currentSandboxConfig, x, y, 0.5f, BodyType.DynamicBody));
 					break;
 

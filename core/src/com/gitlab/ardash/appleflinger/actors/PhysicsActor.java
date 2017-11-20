@@ -297,7 +297,7 @@ public abstract class PhysicsActor extends Image {
 			grantPoints(dmg);
 		}
 		
-		// if the hit was too weak, or less than 1 HP left, the item will still be destroyed, but no points granted (unlikly)
+		// if the hit was too weak, or less than 1 HP left, the item will still be destroyed, but no points granted (unlikely)
 		if (health<=0)
 		{
 			if (isToBeDestroyed)
@@ -334,7 +334,7 @@ public abstract class PhysicsActor extends Image {
 		{
 			final int dso = ds.ordinal();
 			//if (mc==MaterialConfig.WOOD_RECT)
-				//System.out.println("New State of desturction: "+ds+" ("+dso+") for health "+ health);
+				//System.out.println("New State of destruction: "+ds+" ("+dso+") for health "+ health);
 			
 			// if many sprites available
 			final SpriteGroupAsset spa = mc.spriteGroup;
