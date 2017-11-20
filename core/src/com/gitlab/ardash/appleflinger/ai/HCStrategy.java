@@ -25,7 +25,7 @@ import com.badlogic.gdx.math.MathUtils;
 import com.badlogic.gdx.math.Vector2;
 import com.badlogic.gdx.scenes.scene2d.Actor;
 import com.gitlab.ardash.appleflinger.AdvancedStage;
-import com.gitlab.ardash.appleflinger.actors.TargetActor;
+import com.gitlab.ardash.appleflinger.actors.GeneralTargetActor;
 import com.gitlab.ardash.appleflinger.global.GameManager;
 import com.gitlab.ardash.appleflinger.global.PlayerStatus.PlayerSide;
 import com.gitlab.ardash.appleflinger.missions.Mission;
@@ -127,8 +127,8 @@ public class HCStrategy implements Strategy {
 		final AdvancedStage stage = gm.currentGameScreen.getRenderer().world.stage;
 		Set<Actor> allActors = stage.getAllActors();
 		for (Actor a : allActors) {
-			if (a instanceof TargetActor) {
-				TargetActor ta = (TargetActor) a;
+			if (a instanceof GeneralTargetActor) {
+				GeneralTargetActor ta = (GeneralTargetActor) a;
 				if (ta.getPlayerSide()==PlayerSide.LEFT)
 				{
 					Vector2 v = new Vector2(a.getX()+a.getOriginX(),a.getY()+a.getOriginY());

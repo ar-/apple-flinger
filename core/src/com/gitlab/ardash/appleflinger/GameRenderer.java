@@ -36,7 +36,7 @@ import com.badlogic.gdx.utils.Disposable;
 import com.gitlab.ardash.appleflinger.actors.BlockActor;
 import com.gitlab.ardash.appleflinger.actors.CollisionFilterMasks;
 import com.gitlab.ardash.appleflinger.actors.PhysicsActor;
-import com.gitlab.ardash.appleflinger.actors.TargetActor;
+import com.gitlab.ardash.appleflinger.actors.DorkActor;
 import com.gitlab.ardash.appleflinger.actors.TntActor;
 import com.gitlab.ardash.appleflinger.global.GameManager;
 import com.gitlab.ardash.appleflinger.global.GameState;
@@ -196,7 +196,7 @@ public class GameRenderer  implements Disposable
     		{
     			switch (currentSandboxConfig) {
 				case TARGET_L:
-	    			sandboxPreviewActor = new TargetActor(world,currentSandboxConfig, 10, 6, 0.5f, BodyType.StaticBody);
+	    			sandboxPreviewActor = new DorkActor(world,currentSandboxConfig, 10, 6, 0.5f, BodyType.StaticBody);
 					break;
 				case WOOD_TNT:
 	    			sandboxPreviewActor = new TntActor(world, 10, 6, 0.5f,BodyType.StaticBody);
@@ -265,7 +265,7 @@ public class GameRenderer  implements Disposable
     		{
     			switch (currentSandboxConfig) {
 				case TARGET_L:
-	    			s.addActor(new TargetActor(world,currentSandboxConfig, x, y, 0.5f, BodyType.DynamicBody));
+	    			s.addActor(new DorkActor(world,currentSandboxConfig, x, y, 0.5f, BodyType.DynamicBody));
 					break;
 
 				case WOOD_TNT:

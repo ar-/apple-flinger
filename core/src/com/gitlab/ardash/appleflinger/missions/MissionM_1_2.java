@@ -22,7 +22,7 @@ import com.badlogic.gdx.scenes.scene2d.Group;
 import com.gitlab.ardash.appleflinger.GameWorld;
 import com.gitlab.ardash.appleflinger.actors.BlockActor;
 import com.gitlab.ardash.appleflinger.actors.SlingShotActor;
-import com.gitlab.ardash.appleflinger.actors.TargetActor;
+import com.gitlab.ardash.appleflinger.actors.DorkActor;
 import com.gitlab.ardash.appleflinger.actors.TntActor;
 import com.gitlab.ardash.appleflinger.global.MaterialConfig;
 import com.gitlab.ardash.appleflinger.missions.Mission.StageFiller;
@@ -42,15 +42,15 @@ public class MissionM_1_2 implements StageFiller{
 		group.addActor (new BlockActor(world, MaterialConfig.WOOD_BL_42, 1.6850768f, 0.3278254f, 1.5732833f, BodyType.DynamicBody));
 		group.addActor (new BlockActor(world, MaterialConfig.WOOD_BL_42, 2.238128f, 0.32721043f, 1.569719f, BodyType.DynamicBody));
 		group.addActor (new BlockActor(world, MaterialConfig.WOOD_BL_81, 1.8530482f, 0.6712069f, 3.1368935f, BodyType.DynamicBody));
-		group.addActor (new TargetActor(world, MaterialConfig.TARGET_L, 0.9983855f, 0.9950306f, 0.5f));
+		group.addActor (new DorkActor(world, MaterialConfig.TARGET_L, 0.9983855f, 0.9950306f, 0.5f));
 		group.addActor (new BlockActor(world, MaterialConfig.WOOD_RECT, 1.5943154f, 1.0198929f, 3.1367218f, BodyType.DynamicBody));
 		group.addActor (new BlockActor(world, MaterialConfig.WOOD_RECT, 2.6701865f, 0.3294694f, 3.1336691f, BodyType.DynamicBody));
 		group.addActor (new BlockActor(world, MaterialConfig.WOOD_BL_22, 3.350742f, 0.18997864f, 3.141454f, BodyType.DynamicBody));
 		group.addActor (new BlockActor(world, MaterialConfig.WOOD_BL_22, 3.35071f, 0.456873f, 3.1259577f, BodyType.DynamicBody));
 		group.addActor (new BlockActor(world, MaterialConfig.WOOD_BL_81, 2.9673777f, 0.6697333f, 3.1235974f, BodyType.DynamicBody));
 		group.addActor (new BlockActor(world, MaterialConfig.WOOD_RECT, 2.6634784f, 1.0196042f, 3.1293023f, BodyType.DynamicBody));
-		group.addActor (new TargetActor(world, MaterialConfig.TARGET_L, 3.1861773f, 0.9863603f, 0.5f));
-		group.addActor (new TargetActor(world, MaterialConfig.TARGET_L, 2.1400447f, 0.98934007f, 0.5f));
+		group.addActor (new DorkActor(world, MaterialConfig.TARGET_L, 3.1861773f, 0.9863603f, 0.5f));
+		group.addActor (new DorkActor(world, MaterialConfig.TARGET_L, 2.1400447f, 0.98934007f, 0.5f));
 		group.addActor (new TntActor(world, 0.46671215f, 1.5517133f, 0.0028804922f));
 
 		// sling holder

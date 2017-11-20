@@ -18,8 +18,8 @@ package com.gitlab.ardash.appleflinger.global;
 
 import com.badlogic.gdx.scenes.scene2d.Actor;
 import com.gitlab.ardash.appleflinger.AdvancedStage;
+import com.gitlab.ardash.appleflinger.actors.GeneralTargetActor;
 import com.gitlab.ardash.appleflinger.actors.SlingShotActor;
-import com.gitlab.ardash.appleflinger.actors.TargetActor;
 import com.gitlab.ardash.appleflinger.listeners.OnPointsChangeListener;
 
 public class PlayerStatus {
@@ -123,14 +123,14 @@ public class PlayerStatus {
 
 	public int getOwnTargetsAlive() {
 		int ret=0;
-		// over the slingshot we can go to the stage - on the stage we can count the targets
+		// via the slingshot we can go to the stage - on the stage we can count the targets
 		if (slingshot==null)
 			return 99;
 		final AdvancedStage s = (AdvancedStage)slingshot.getStage();
 		for (Actor a : s.getAllActors())
 		{
-			if (a instanceof TargetActor) {
-				TargetActor ta = (TargetActor) a;
+			if (a instanceof GeneralTargetActor) {
+				GeneralTargetActor ta = (GeneralTargetActor) a;
 				if (ta.getPlayerSide()==side)
 					ret++;
 			}

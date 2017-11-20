@@ -23,7 +23,7 @@ import com.badlogic.gdx.math.Vector2;
 import com.badlogic.gdx.utils.TimeUtils;
 import com.gitlab.ardash.appleflinger.ActionResolver;
 import com.gitlab.ardash.appleflinger.AppleflingerGame;
-import com.gitlab.ardash.appleflinger.actors.TargetActor;
+import com.gitlab.ardash.appleflinger.actors.GeneralTargetActor;
 import com.gitlab.ardash.appleflinger.global.PlayerStatus.PlayerSide;
 import com.gitlab.ardash.appleflinger.helpers.GPGS;
 import com.gitlab.ardash.appleflinger.helpers.Pref;
@@ -241,7 +241,7 @@ final public class GameManager {
 	 * good for statistics/achievements/ads
 	 * @param ta
 	 */
-	public void onTargetDestroyed(TargetActor ta)
+	public void onTargetDestroyed(GeneralTargetActor ta)
 	{
 		targetsDestroyedThisRound++;
 		

@@ -29,11 +29,11 @@ import com.gitlab.ardash.appleflinger.actors.AppleActor;
 import com.gitlab.ardash.appleflinger.actors.BackgroundActor;
 import com.gitlab.ardash.appleflinger.actors.Bird;
 import com.gitlab.ardash.appleflinger.actors.BlockActor;
+import com.gitlab.ardash.appleflinger.actors.GeneralTargetActor;
 import com.gitlab.ardash.appleflinger.actors.Ground;
 import com.gitlab.ardash.appleflinger.actors.PhysicsActor;
 import com.gitlab.ardash.appleflinger.actors.ProjectileActor;
 import com.gitlab.ardash.appleflinger.actors.SlingShotActor;
-import com.gitlab.ardash.appleflinger.actors.TargetActor;
 import com.gitlab.ardash.appleflinger.ai.PlayerSimulator;
 import com.gitlab.ardash.appleflinger.global.GameManager;
 import com.gitlab.ardash.appleflinger.global.GameState;
@@ -143,15 +143,15 @@ public class GameWorld implements Disposable{
     	// apply player sides to the TargetActors
     	for (Actor a : leftSideMirror.getChildren())
     	{
-    		if (a instanceof TargetActor) {
-				TargetActor ta = (TargetActor) a;
+    		if (a instanceof GeneralTargetActor) {
+				GeneralTargetActor ta = (GeneralTargetActor) a;
 				ta.setPlayerSide(PlayerSide.LEFT);
 			}
     	}
     	for (Actor a : rightSideMirror.getChildren())
     	{
-    		if (a instanceof TargetActor) {
-				TargetActor ta = (TargetActor) a;
+    		if (a instanceof GeneralTargetActor) {
+				GeneralTargetActor ta = (GeneralTargetActor) a;
 				ta.setPlayerSide(PlayerSide.RIGHT);
 			}
     	}

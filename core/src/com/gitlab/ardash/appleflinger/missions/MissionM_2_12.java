@@ -21,7 +21,7 @@ import com.badlogic.gdx.scenes.scene2d.Group;
 import com.gitlab.ardash.appleflinger.GameWorld;
 import com.gitlab.ardash.appleflinger.actors.BlockActor;
 import com.gitlab.ardash.appleflinger.actors.SlingShotActor;
-import com.gitlab.ardash.appleflinger.actors.TargetActor;
+import com.gitlab.ardash.appleflinger.actors.DorkActor;
 import com.gitlab.ardash.appleflinger.global.MaterialConfig;
 import com.gitlab.ardash.appleflinger.missions.Mission.StageFiller;
 
@@ -51,9 +51,9 @@ public class MissionM_2_12 implements StageFiller{
         group.addActor (new BlockActor(world, MaterialConfig.WOOD_RECT, 2.4710948f, 0.8675664f, 2.4604137E-4f, BodyType.DynamicBody));
         group.addActor (new BlockActor(world, MaterialConfig.WOOD_RECT, 3.5420861f, 0.3275703f, 2.4711122E-4f, BodyType.DynamicBody));
         group.addActor (new BlockActor(world, MaterialConfig.WOOD_RECT, 3.5062015f, 0.8676475f, -1.2457105E-5f, BodyType.DynamicBody));
-        group.addActor (new TargetActor(world, MaterialConfig.TARGET_L, 2.9887016f, 0.8450719f, 0.5f));
-        group.addActor (new TargetActor(world, MaterialConfig.TARGET_L, 1.9472197f, 0.84576565f, 0.5f));
-        group.addActor (new TargetActor(world, MaterialConfig.TARGET_L, 0.8553181f, 0.844999f, 0.5f));
+        group.addActor (new DorkActor(world, MaterialConfig.TARGET_L, 2.9887016f, 0.8450719f, 0.5f));
+        group.addActor (new DorkActor(world, MaterialConfig.TARGET_L, 1.9472197f, 0.84576565f, 0.5f));
+        group.addActor (new DorkActor(world, MaterialConfig.TARGET_L, 0.8553181f, 0.844999f, 0.5f));
         group.addActor (new BlockActor(world, MaterialConfig.WOOD_BL_22, 2.5844548f, 1.2700938f, 2.447186E-4f, BodyType.DynamicBody));
         group.addActor (new BlockActor(world, MaterialConfig.WOOD_BL_22, 3.647332f, 1.2713505f, 0.009433967f, BodyType.DynamicBody));
         group.addActor (new BlockActor(world, MaterialConfig.WOOD_BL_22, 1.5626123f, 1.2753172f, -0.01814559f, BodyType.DynamicBody));

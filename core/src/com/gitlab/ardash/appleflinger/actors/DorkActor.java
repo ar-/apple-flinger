@@ -26,12 +26,10 @@ import com.badlogic.gdx.scenes.scene2d.utils.TextureRegionDrawable;
 import com.gitlab.ardash.appleflinger.GameWorld;
 import com.gitlab.ardash.appleflinger.global.Assets;
 import com.gitlab.ardash.appleflinger.global.Assets.SoundGroupAsset;
-import com.gitlab.ardash.appleflinger.global.GameManager;
 import com.gitlab.ardash.appleflinger.global.MaterialConfig;
-import com.gitlab.ardash.appleflinger.global.PlayerStatus.PlayerSide;
 import com.gitlab.ardash.appleflinger.helpers.SoundPlayer;
 
-public class TargetActor extends CircleActor{
+public class DorkActor extends GeneralTargetActor{
 	
 	protected enum EyeState 
 	{
@@ -59,9 +57,7 @@ public class TargetActor extends CircleActor{
 	private TextureRegionDrawable eyes_left;
 	private TextureRegionDrawable eyes_right;
 	
-	private PlayerSide playerSide = null;
-	
-	public TargetActor(GameWorld world, MaterialConfig mc, float x, float y,
+	public DorkActor(GameWorld world, MaterialConfig mc, float x, float y,
 			float diameter, BodyType bodyType) {
 		super(world, mc, x, y, diameter, bodyType);
 		
@@ -82,7 +78,7 @@ public class TargetActor extends CircleActor{
 	}
 	
 	
-	public TargetActor(GameWorld world, MaterialConfig mc, float x, float y,
+	public DorkActor(GameWorld world, MaterialConfig mc, float x, float y,
 			float diameter) {
 		this(world, mc, x, y, diameter, BodyType.DynamicBody);
 	}
@@ -175,43 +171,12 @@ public class TargetActor extends CircleActor{
 		setDrawable(originalDrawable);
 	}
 
-	public PlayerSide getPlayerSide() {
-		return playerSide;
-	}
-
-
-	public void setPlayerSide(PlayerSide playerSide) {
-		this.playerSide = playerSide;
-	}
-	
-	@Override
-	protected int getDamageToPointsFactor() {
-		GameManager gm = GameManager.getInstance();
-		if (gm.currentPlayer.side == this.playerSide)
-			return 0;
-		return 100;
-	}
-	
-	@Override
-	public void setToBeDestroyed() {
-		super.setToBeDestroyed();
-		Puff p = new Puff(getPhysicalCenterPosition().x, getPhysicalCenterPosition().y);
-		getStage().addActor(p);
-	}
-	
 	@Override
 	public String toJavaString() {
 		if (bodyType == BodyType.DynamicBody)
 			return "group.addActor (new TargetActor(world, MaterialConfig."+mc+", "+(body.getPosition().x)+"f, "+(body.getPosition().y)+"f, 0.5f));";    
 	
 		return "group.addActor (new TargetActor(world, MaterialConfig."+mc+", "+(body.getPosition().x)+"f, "+(body.getPosition().y)+"f, 0.5f, BodyType."+getBodyType()+"));";     
-	}
-	
-	@Override
-	public boolean remove() {
-		// inform the game master
-		GameManager.getInstance().onTargetDestroyed(this);
-		return super.remove();
 	}
 	
 }
