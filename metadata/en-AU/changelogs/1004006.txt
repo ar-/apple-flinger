@@ -1,0 +1,8 @@
+1.4.6
+  * Improved Russian translation. Thanks to Dmitry.
+
+1.4.5
+  * Improved French translation. Thanks to xin.
+  * Added a new localized Keyboard for each language to enter player names.
+  * Added fdroid screenshots for each supported language.
+

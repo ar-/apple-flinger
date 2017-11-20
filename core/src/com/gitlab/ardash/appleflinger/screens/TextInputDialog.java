@@ -21,8 +21,10 @@ import com.badlogic.gdx.scenes.scene2d.Stage;
 import com.badlogic.gdx.scenes.scene2d.ui.HorizontalGroup;
 import com.badlogic.gdx.scenes.scene2d.ui.Label;
 import com.badlogic.gdx.scenes.scene2d.ui.Label.LabelStyle;
+import com.badlogic.gdx.scenes.scene2d.ui.Table;
 import com.badlogic.gdx.scenes.scene2d.utils.ClickListener;
 import com.gitlab.ardash.appleflinger.global.Assets;
+import com.gitlab.ardash.appleflinger.helpers.Pref;
 import com.gitlab.ardash.appleflinger.i18n.I18N;
 import com.gitlab.ardash.appleflinger.listeners.OnTextChangeListener;
 
@@ -37,40 +39,20 @@ public class TextInputDialog extends AdvancedDialog{
         final LabelStyle lblstyle = Assets.LabelStyleAsset.MINILABEL.style;
 		text(I18N.getString("inputRequired"), lblstyle); 
 		
-		getContentTable().row().minHeight(40).top();
+		final Table tblContent = getContentTable();
+		tblContent.row().minHeight(40).top();
 		text("", lblstyle); 
-		getContentTable().row();
+		tblContent.row();
 		lblHeadline = new Label("", lblstyle);
 		lblContent = new Label("", lblstyle);
 		text(lblHeadline);
-		getContentTable().row();
+		tblContent.row();
 		text(lblContent);
 		
-		getContentTable().row().minHeight(40).top();
+		tblContent.row().minHeight(40).top();
 		text("", lblstyle); 
 
-        SpriteButton btnBackSpace = new SpriteButton(Assets.SpriteAsset.BTN_BACK.get());
-        btnBackSpace.addListener(new ClickListener(){
-        	@Override
-        	public void clicked(InputEvent event, float x, float y) {
-        		super.clicked(event, x, y);
-        		String s = lblContent.getText().toString();
-        		if (s.length()<=0)
-        			return;
-        		s= s.substring(0, s.length()-1);
-        		lblContent.setText(s);
-        	}
-        });
-        
-		// TODO internationalize keyboard
-		getContentTable().row();
-		getContentTable().add(makeKeyboardRow("QWERTYUIOP"));
-        getContentTable().add(btnBackSpace);
-		getContentTable().row();
-		getContentTable().add(makeKeyboardRow("ASDFGHJKL"));
-		getContentTable().row();
-		getContentTable().add(makeKeyboardRow("ZXCVBNM"));
-		getContentTable().row();
+        addLocalizedKeyboard(tblContent);
 		
 		LabelSpriteButton btnCancel = new LabelSpriteButton(EMPTY_TEX, I18N.getString("cancel")); 
 		button(btnCancel);
@@ -86,6 +68,88 @@ public class TextInputDialog extends AdvancedDialog{
         	}
         });
     }
+
+	private void addLocalizedKeyboard(final Table tblContent) {
+		SpriteButton btnBackSpace = new SpriteButton(Assets.SpriteAsset.BTN_BACK.get());
+        btnBackSpace.addListener(new ClickListener(){
+        	@Override
+        	public void clicked(InputEvent event, float x, float y) {
+        		super.clicked(event, x, y);
+        		String s = lblContent.getText().toString();
+        		if (s.length()<=0)
+        			return;
+        		s= s.substring(0, s.length()-1);
+        		lblContent.setText(s);
+        	}
+        });
+        
+		// internationalize keyboard
+        String lingo = Pref.getLingo();
+        if (lingo.length()>=2)
+        {
+        	lingo=lingo.substring(0, 2);
+    		addLocalizedKeyboard(tblContent, btnBackSpace, lingo);
+        }
+        else
+        {
+    		addLocalizedKeyboard(tblContent, btnBackSpace, "en");
+        }
+	}
+
+	private void addLocalizedKeyboard(final Table tblContent,
+			SpriteButton btnBackSpace, String langCode)
+	{
+		langCode = langCode.toLowerCase();
+		if (langCode.equals("de")) {
+			tblContent.row();
+			tblContent.add(makeKeyboardRow("QWERTZUIOPÜ"));
+	        tblContent.add(btnBackSpace);
+			tblContent.row();
+			tblContent.add(makeKeyboardRow("ASDFGHJKLÖÄ"));
+			tblContent.row();
+			tblContent.add(makeKeyboardRow("YXCVBNM"));
+			tblContent.row();
+		} else if (langCode.equals("es")) {
+			tblContent.row();
+			tblContent.add(makeKeyboardRow("QWERTYUIOPÜÚ"));
+	        tblContent.add(btnBackSpace);
+			tblContent.row();
+			tblContent.add(makeKeyboardRow("ASDFGHJKLÑÇ"));
+			tblContent.row();
+			tblContent.add(makeKeyboardRow("ZXCVBNMÁÉÍÓ"));
+		} else if (langCode.equals("fr")) {
+			tblContent.row();
+			tblContent.add(makeKeyboardRow("ÉÊËÈÔÇÀÂ")); // Ÿ is not in font
+			tblContent.row();
+			tblContent.add(makeKeyboardRow("AZERTYUIOPÛÜ"));
+	        tblContent.add(btnBackSpace);
+			tblContent.row();
+			tblContent.add(makeKeyboardRow("QSDFGHJKLMÙ"));
+			tblContent.row();
+			tblContent.add(makeKeyboardRow("WXCVBNÏÎ"));
+			tblContent.row();
+		} else if (langCode.equals("ru")) {
+			tblContent.row();
+			tblContent.add(makeKeyboardRow("ЙЦУКЕНГШЩЗХЪ"));
+	        tblContent.add(btnBackSpace);
+			tblContent.row();
+			tblContent.add(makeKeyboardRow("ФЫВАПРОЛДЖЭ"));
+			tblContent.row();
+			tblContent.add(makeKeyboardRow("ЯЧСМИТЬБЮЁ"));
+			tblContent.row();
+		}
+		else {
+			tblContent.row();
+			tblContent.add(makeKeyboardRow("QWERTYUIOP"));
+	        tblContent.add(btnBackSpace);
+			tblContent.row();
+			tblContent.add(makeKeyboardRow("ASDFGHJKL"));
+			tblContent.row();
+			tblContent.add(makeKeyboardRow("ZXCVBNM"));
+			tblContent.row();
+		}
+		
+	}
 
 	private HorizontalGroup makeKeyboardRow(String string) {
 		HorizontalGroup hg = new HorizontalGroup();

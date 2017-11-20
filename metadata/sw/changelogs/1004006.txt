@@ -1,0 +1,6 @@
+1.4.6
+  * Tafsiri ya Kirusi iliyoboreshwa.  Shukrani kwa Dmitry.
+1.4.5
+  * Tafsiri ya Kifaransa iliyoboreshwa.  Shukrani kwa xin.
+  * Aliongeza Kinanda mpya iliyoboreshwa kwa kila lugha ili kuingia majina ya mchezaji.
+Aliongeza viwambo vya skrini vya fdroid kwa kila lugha inayoungwa mkono.

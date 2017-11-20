@@ -1,0 +1,4 @@
+1.4.5
+  * Itzulpen frantsesaren hobekuntza.  Xin esker.
+  * Hizkuntza bakoitzerako lokalizatutako teklatua gehitu zaio jokalari izenei sartzeko.
+  * Fdroid pantailetan gehitutako euskarri bakoitzerako.

@@ -1,10 +1,5 @@
 image: openjdk:8-jdk
 
-variables:
-  ANDROID_TARGET_SDK: "24"
-  ANDROID_BUILD_TOOLS: "24.0.0"
-  ANDROID_SDK_TOOLS: "24.4.1"
-
 stages:
   - sanitychecks
   - build
@@ -17,18 +12,6 @@ cache:
 
 before_script:
   - apt-get --quiet update --yes
-  - echo "echo Setting up Android SDK" > sc_setup_android_sdk.sh
-  - echo apt-get --quiet install --yes wget tar unzip lib32stdc++6 lib32z1 >> sc_setup_android_sdk.sh
-  - echo wget --quiet --output-document=android-sdk.tgz https://dl.google.com/android/android-sdk_r${ANDROID_SDK_TOOLS}-linux.tgz >> sc_setup_android_sdk.sh
-  - echo tar --extract --gzip --file=android-sdk.tgz >> sc_setup_android_sdk.sh
-  - echo mkdir -p tmp >> sc_setup_android_sdk.sh
-  - echo rm -rf tmp/android-sdk-linux >> sc_setup_android_sdk.sh
-  - echo mv android-sdk-linux tmp/ >> sc_setup_android_sdk.sh
-  - echo export ANDROID_HOME=$PWD/tmp/android-sdk-linux >> sc_setup_android_sdk.sh
-  - echo "echo y | tmp/android-sdk-linux/tools/android --silent update sdk --no-ui --all --filter android-${ANDROID_TARGET_SDK},platform-tools,build-tools-${ANDROID_BUILD_TOOLS},extra-android-m2repository" >> sc_setup_android_sdk.sh
-  - echo "echo Finished setting up Android SDK" >> sc_setup_android_sdk.sh
-  - chmod +x ./sc_setup_android_sdk.sh
-  - cat ./sc_setup_android_sdk.sh
   - export GRADLE_USER_HOME=`pwd`/tmp/.gradle
   - chmod +x ./gradlew
 
@@ -46,7 +29,7 @@ validateI18N:
 
 build_debug:
   script:
-    - . ./sc_setup_android_sdk.sh
+    - . ./scripts/setup-android-sdk.sh
     - ./gradlew assembleDebug
   stage: build
   artifacts:
@@ -55,7 +38,7 @@ build_debug:
 
 build_release:
   script:
-    - . ./sc_setup_android_sdk.sh
+    - . ./scripts/setup-android-sdk.sh
     - ./gradlew assembleRelease
   stage: build
   artifacts:
@@ -72,7 +55,7 @@ build_desktop:
 
 unit_tests:
   script:
-    - . ./sc_setup_android_sdk.sh
+    - . ./scripts/setup-android-sdk.sh
     - ./gradlew tests:test --info
   stage: test
   artifacts:
@@ -81,7 +64,7 @@ unit_tests:
 
 fdroid_build:
   script:
-    - . ./sc_setup_android_sdk.sh
+    - . ./scripts/setup-android-sdk.sh
     - wget https://services.gradle.org/distributions/gradle-2.2-bin.zip
     - mkdir /opt/gradle
     - unzip -d /opt/gradle gradle-2.2-bin.zip

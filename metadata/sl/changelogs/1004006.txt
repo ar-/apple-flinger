@@ -1,0 +1,6 @@
+1.4.6
+  * Izboljšan ruski prevod.  Hvala, Dmitrij.
+1.4.5
+  * Izboljšan francoski prevod.  Hvala za xin.
+  * Za vsak jezik je dodana nova lokalizirana tipkovnica za vnos imena igralcev.
+  * Dodane fdroid screenshots za vsak podprl jezik.

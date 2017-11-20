@@ -1,0 +1,4 @@
+1.4.5
+  * Forbedret fransk oversettelse.  Takk til xin.
+  * Lagt til et nytt lokalisert tastatur for hvert språk for å skrive inn spillernes navn.
+  * Lagt til fdroid skjermbilder for hvert støttet språk.

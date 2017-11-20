@@ -1,0 +1,6 @@
+1.4.6
+  * Ulepszone rosyjskie tłumaczenie.  Dzięki Dmitry.
+1.4.5
+  * Ulepszone francuskie tłumaczenie.  Dzięki Xin.
+  * Dodano nową zlokalizowaną klawiaturę dla każdego języka, aby wprowadzić nazwy graczy.
+  * Dodano zrzuty ekranowe fdroid dla każdego obsługiwanego języka.

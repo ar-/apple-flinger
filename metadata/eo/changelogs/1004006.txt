@@ -1,0 +1,6 @@
+1.4.6
+  * Plibonigita rusa traduko.  Danke al Dmitry.
+1.4.5
+  * Plibonigita franca traduko.  Danke al xin.
+  * Aldonita nova lokalizita Klavaro por ĉiu lingvo por eniri ludantnomojn.
+  * Aldonis fdroid ekrankopioj por ĉiu subtenata lingvo.

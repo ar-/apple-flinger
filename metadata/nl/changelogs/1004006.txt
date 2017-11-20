@@ -1,0 +1,6 @@
+1.4.6
+  * Verbeterde Russische vertaling.  Met dank aan Dmitry.
+1.4.5
+  * Verbeterde Franse vertaling.  Dank aan Xin.
+  * Een nieuw gelokaliseerd toetsenbord voor elke taal toegevoegd om spelersnamen in te voeren.
+  * Fdroid-schermafbeeldingen toegevoegd voor elke ondersteunde taal.

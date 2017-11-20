@@ -1,0 +1,6 @@
+1.4.6
+  * Traducere rusă îmbunătățită.  Mulțumită lui Dmitry.
+1.4.5
+  * Traducere franceză îmbunătățită.  Mulțumită lui xin.
+  * A fost adăugată o nouă tastatură localizată pentru fiecare limbă pentru a introduce numele jucătorului.
+  * Adăugat screenshot-uri fdroid pentru fiecare limbă acceptată.
