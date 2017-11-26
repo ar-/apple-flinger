@@ -143,9 +143,9 @@ public class PengActor extends GeneralTargetActor{
 	@Override
 	public String toJavaString() {
 		if (bodyType == BodyType.DynamicBody)
-			return "group.addActor (new DorkActor(world, MaterialConfig."+mc+", "+(body.getPosition().x)+"f, "+(body.getPosition().y)+"f, 0.5f));";    
+			return "group.addActor (new PengActor(world, MaterialConfig."+mc+", "+(body.getPosition().x)+"f, "+(body.getPosition().y)+"f, 0.5f));";    
 	
-		return "group.addActor (new DorkActor(world, MaterialConfig."+mc+", "+(body.getPosition().x)+"f, "+(body.getPosition().y)+"f, 0.5f, BodyType."+getBodyType()+"));";     
+		return "group.addActor (new PengActor(world, MaterialConfig."+mc+", "+(body.getPosition().x)+"f, "+(body.getPosition().y)+"f, 0.5f, BodyType."+getBodyType()+"));";     
 	}
 	
 }
