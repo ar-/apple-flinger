@@ -179,7 +179,7 @@ public class Assets {
 	}
 
 	public enum TextureAsset {
-		APPLE,SLINGSHOTB,SLINGSHOTF,STONE,BACKGR,INVISIBLE,LARGE_DIALOG,VOLUME,WOODHANGER;
+		APPLE,SLINGSHOTB,SLINGSHOTF,STONE,BACKGR,BACKGR_WINTER,INVISIBLE,LARGE_DIALOG,VOLUME,WOODHANGER;
 		@Override
 		public String toString() {
 			return "" + super.toString().toLowerCase() + ".png"; // "backgr.png"  

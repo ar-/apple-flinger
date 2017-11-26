@@ -57,7 +57,7 @@ public class DesktopLauncher implements ActionResolver{
         settings.maxWidth = 1024;
         settings.maxHeight = 1024;
 //		TexturePacker.process(settings, "../art/sprites/ui", "../android/assets", "ui");
-		TexturePacker.process(settings, "../art/sprites/scene", "../android/assets", "scene");
+//		TexturePacker.process(settings, "../art/sprites/scene", "../android/assets", "scene");
 		
 		try
 		{

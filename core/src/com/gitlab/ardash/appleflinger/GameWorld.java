@@ -34,6 +34,7 @@ import com.gitlab.ardash.appleflinger.actors.Ground;
 import com.gitlab.ardash.appleflinger.actors.PhysicsActor;
 import com.gitlab.ardash.appleflinger.actors.ProjectileActor;
 import com.gitlab.ardash.appleflinger.actors.SlingShotActor;
+import com.gitlab.ardash.appleflinger.actors.BackgroundActor.BackgroundConfiguration;
 import com.gitlab.ardash.appleflinger.ai.PlayerSimulator;
 import com.gitlab.ardash.appleflinger.global.GameManager;
 import com.gitlab.ardash.appleflinger.global.GameState;
@@ -91,7 +92,18 @@ public class GameWorld implements Disposable{
     private void createWorld() {
     	final GameManager gm = GameManager.getInstance();
     	gm.setGameState(GameState.INIT_WORLD);
-    	stage.addActor(new BackgroundActor());
+    	
+    	// choose background
+    	switch (mission.getMajor()) {
+		case 1:
+	    	stage.addActor(new BackgroundActor(BackgroundConfiguration.ORIGINAL));
+			break;
+		case 2:
+	    	stage.addActor(new BackgroundActor(BackgroundConfiguration.WINTER));
+			break;
+		default:
+			throw new RuntimeException("no background image assigned for episode " + mission.getMajor());
+		}
     	
     	birdGroup = new Group();
     	stage.addActor(birdGroup);
@@ -116,7 +128,7 @@ public class GameWorld implements Disposable{
     	Group rightSideMirror = mission.getStageFiller().fillMirrorStage(this);
     	
     	// apply a translation for all right side elements
-    	// can't use a transformation matrix here, because the physics wont be transformed
+    	// can't use a transformation matrix here, because the physics won't be transformed
     	for (Actor a : rightSideMirror.getChildren())
     	{
     		final float center = UNIT_WIDTH/2f;
@@ -221,7 +233,7 @@ public class GameWorld implements Disposable{
     		Object ud = f.getUserData();
     		if (ud instanceof PhysicsActor)
     		{
-    			// check if it was absorbed / or exipration has ended the exlposion animation
+    			// check if it was absorbed / or expiration has ended the explosion animation
     			boolean remove = ((PhysicsActor)ud).isToBeRemoved();
     			if (remove)
     			{
@@ -241,12 +253,12 @@ public class GameWorld implements Disposable{
 	    	 accumulator += delta;
 	    	 
 	        while (accumulator >= step) {
-		        box2dWorld.step(step, 25, 25); // update box2d world (high values stablibise stacks)
+		        box2dWorld.step(step, 25, 25); // update box2d world (high values stabilize stacks)
 		        physicWorldObserver.step();
 	            accumulator -= step;
 	        }
 	        
-//	        box2dWorld.step(delta, 25, 25); // update box2d world (high values stablibise stacks)
+//	        box2dWorld.step(delta, 25, 25); // update box2d world (high values stabilize stacks)
 //	        physicWorldObserver.step();
 	        //System.out.println(delta);
     	}
@@ -270,7 +282,7 @@ public class GameWorld implements Disposable{
     
     public void continuePhysics()
     {
-    	//System.out.println("Continueing Physics. lastDelta: "+Gdx.graphics.getDeltaTime());
+    	//System.out.println("Continuing Physics. lastDelta: "+Gdx.graphics.getDeltaTime());
 		//System.err.println("Applying "+shootDirection + " len: "+shootDirection.len()+ " ang: "+shootDirection.angle());
 		
     	isPhysicPaused = false;

@@ -20,35 +20,63 @@ import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.g2d.Batch;
 import com.badlogic.gdx.graphics.glutils.ShapeRenderer;
 import com.badlogic.gdx.graphics.glutils.ShapeRenderer.ShapeType;
+import com.badlogic.gdx.math.Vector2;
 import com.badlogic.gdx.scenes.scene2d.ui.Image;
 import com.gitlab.ardash.appleflinger.GameWorld;
 import com.gitlab.ardash.appleflinger.global.Assets;
 import com.gitlab.ardash.appleflinger.global.Assets.TextureAsset;
 
-public class BackgroundActor extends Image{
+public class BackgroundActor extends Image
+{
+	
+	public enum BackgroundConfiguration
+	{
+		ORIGINAL, WINTER;
+		
+		public TextureAsset textureAsset;
+		public Vector2 size;
+		public Vector2 position;
+		public Color skyColour;
+		public Color groundColour;
+		static
+		{
+			ORIGINAL.textureAsset = TextureAsset.BACKGR;
+			ORIGINAL.size = new Vector2(GameWorld.UNIT_WIDTH*1.5f, GameWorld.UNIT_HEIGHT);
+			ORIGINAL.position = new Vector2(-GameWorld.UNIT_WIDTH/4, -0.7f);
+			ORIGINAL.skyColour = new Color(88/255f,183/255f,255/255f,1);
+			ORIGINAL.groundColour = new Color(62/255f,45/255f,29/255f,1);
+			WINTER.textureAsset = TextureAsset.BACKGR_WINTER;
+			WINTER.size = new Vector2(GameWorld.UNIT_WIDTH*1.5f, GameWorld.UNIT_HEIGHT*1.1f);
+			WINTER.position = new Vector2(-GameWorld.UNIT_WIDTH/4, -0.7f);
+			WINTER.skyColour = new Color(93/255f,209/255f,232/255f,1);
+			WINTER.groundColour = new Color(176/255f,227/255f,255/255f,1); //ice
+		}
+	}
+	
 	private ShapeRenderer shapeRenderer;
+	private BackgroundConfiguration config;
     
-    public BackgroundActor() {
-    	super(Assets.getTexture(TextureAsset.BACKGR));
-    	setSize(GameWorld.UNIT_WIDTH*1.5f, GameWorld.UNIT_HEIGHT);
-    	setPosition(-GameWorld.UNIT_WIDTH/4, -0.7f);
+    public BackgroundActor(BackgroundConfiguration config) {
+    	super(Assets.getTexture(config.textureAsset));
+    	this.config = config;
+    	setSize(config.size.x, config.size.y);
+    	setPosition(config.position.x, config.position.y);
     	
         shapeRenderer = new ShapeRenderer();
 
     }
 
     @Override
-    public void draw(Batch batch, float parentAlpha) {
-    	final Color skyColor = new Color(88/255f,183/255f,255/255f,1);
-    	final Color groundColor = new Color(62/255f,45/255f,29/255f,1);
+    public void draw(Batch batch, float parentAlpha) 
+    {
         batch.end();
         shapeRenderer.setProjectionMatrix(batch.getProjectionMatrix());
         shapeRenderer.setAutoShapeType(true);
         shapeRenderer.begin();
         shapeRenderer.set(ShapeType.Filled);
-        shapeRenderer.setColor(skyColor);
+        shapeRenderer.setColor(config.skyColour);
         shapeRenderer.rect(-GameWorld.UNIT_WIDTH/2, 0, GameWorld.UNIT_WIDTH*2, GameWorld.UNIT_HEIGHT*2);
-        shapeRenderer.setColor(groundColor);
+        shapeRenderer.setColor(config.groundColour);
         shapeRenderer.rect(-GameWorld.UNIT_WIDTH/2, -GameWorld.UNIT_HEIGHT*2, GameWorld.UNIT_WIDTH*2, GameWorld.UNIT_HEIGHT*2);
         shapeRenderer.end();
         batch.begin();
@@ -56,15 +84,10 @@ public class BackgroundActor extends Image{
     }
     
     @Override
-    public boolean remove() {
+    public boolean remove() 
+    {
     	shapeRenderer.dispose();
     	return super.remove();
     }
-    
-//    @Override
-//    public Actor hit(float x, float y, boolean touchable) {
-////    	return null;
-//    	//return super.hit(x, y, touchable);
-//    }
     
 }

@@ -48,11 +48,13 @@ public class MissionSelectScreen extends GenericScreen {
         Table table = new Table();
         table.setFillParent(true);
         
+        // make user select episode if none is selected yet
         if (selectedEpisode == 0)
         {
         	// btn for each episode
         	for (final Integer episode : Mission.getAvailableEpisodes()) {
-    	        final LabelSpriteButton episodeBtn = new LabelSpriteButton(Assets.SpriteAsset.BTN_FL_EMPTY.get(), "original");
+    	        final LabelSpriteButton episodeBtn = new LabelSpriteButton(Assets.SpriteAsset.BTN_FL_EMPTY.get(),
+    	        		getEpisodeName(episode));
     	        table.add(episodeBtn);
     	        episodeBtn.addListener(new ClickListener() {
     	        	@Override
@@ -125,6 +127,17 @@ public class MissionSelectScreen extends GenericScreen {
 		});
 
     }
+
+	private static String getEpisodeName(Integer episode) {
+		switch (episode) {
+		case 1:
+			return I18N.getString("original");
+		case 2:
+			return I18N.getString("winter");
+		default:
+			throw new RuntimeException("No episode name found for episode number "+episode);
+		}
+	}
     
     public static void setSelectedEpisode(int selectedEpisode) 
     {
