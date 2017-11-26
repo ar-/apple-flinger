@@ -1,0 +1,9 @@
+1.4.7
+  * Viene el invierno.  Se agregaron algunos niveles nuevos.
+  * Me quedé sin ideas.  Por favor, envíame ideas para nuevos niveles.
+1.4.6
+  * Mejor traducción rusa.  Gracias a Dmitry.
+1.4.5
+  * Mejor traducción al francés.  Gracias a xin.
+  * Se agregó un nuevo teclado localizado para cada idioma para ingresar los nombres de los jugadores.
+  * Se agregaron capturas de pantalla fdroid para cada idioma compatible.

@@ -1,0 +1,9 @@
+1.4.7
+  * Vinteren kommer.  Lagt til noen nye nivåer.
+  * Jeg gikk tom for ideer.  Vennligst send meg ideer til nye nivåer.
+1.4.6
+  * Forbedret russisk oversettelse.  Takk til Dmitry.
+1.4.5
+  * Forbedret fransk oversettelse.  Takk til xin.
+  * Lagt til et nytt lokalisert tastatur for hvert språk for å skrive inn spillernes navn.
+  * Lagt til fdroid skjermbilder for hvert støttet språk.

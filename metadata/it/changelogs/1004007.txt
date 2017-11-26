@@ -1,0 +1,9 @@
+1.4.7
+  * L'inverno sta arrivando.  Aggiunti alcuni nuovi livelli.
+  * Ho esaurito le idee.  Per favore mandami idee per nuovi livelli.
+1.4.6
+  * Miglioramento della traduzione in russo.  Grazie a Dmitry.
+1.4.5
+  * Traduzione francese migliorata.  Grazie a xin.
+  * Aggiunta una nuova tastiera localizzata per ogni lingua per inserire i nomi dei giocatori.
+  * Aggiunto screenshot di fdroid per ogni lingua supportata.

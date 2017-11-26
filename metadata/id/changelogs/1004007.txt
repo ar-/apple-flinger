@@ -1,0 +1,9 @@
+1.4.7
+  * Musim dingin datang.  Menambahkan beberapa level baru.
+Aku kehabisan ide.  Kirimkan ide untuk level baru.
+1.4.6
+  * Peningkatan terjemahan bahasa Rusia.  Terima kasih untuk Dmitry.
+1.4.5
+  * Terjemahan Prancis yang lebih baik.  Terima kasih untuk xin
+  * Menambahkan Keyboard lokal baru untuk setiap bahasa untuk memasukkan nama pemain.
+  * Ditambahkan fdroid screenshot untuk setiap bahasa yang didukung.

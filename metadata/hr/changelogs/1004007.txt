@@ -1,0 +1,9 @@
+1.4.7
+  * Zima dolazi.  Dodano je neke nove razine.
+  * Nestala sam izvan ideja.  Pošaljite mi ideje za nove razine.
+1.4.6
+  * Poboljšani ruski prijevod.  Zahvaljujući Dmitryju.
+1.4.5
+  * Poboljšani francuski prijevod.  Zahvaljujući xin.
+  * Dodana je nova lokalizirana tipkovnica za svaki jezik za unos imena igrača.
+  * Dodani screenshotovi fdroid za svaki podržani jezik.
