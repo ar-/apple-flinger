@@ -22,7 +22,7 @@ import com.badlogic.gdx.scenes.scene2d.Group;
 import com.gitlab.ardash.appleflinger.GameWorld;
 import com.gitlab.ardash.appleflinger.actors.BlockActor;
 import com.gitlab.ardash.appleflinger.actors.SlingShotActor;
-import com.gitlab.ardash.appleflinger.actors.TargetActor;
+import com.gitlab.ardash.appleflinger.actors.DorkActor;
 import com.gitlab.ardash.appleflinger.global.MaterialConfig;
 import com.gitlab.ardash.appleflinger.missions.Mission.StageFiller;
 
@@ -36,14 +36,14 @@ public class MissionM_1_1 implements StageFiller{
 		group.addActor (new BlockActor(world, MaterialConfig.WOOD_RECT, 2.6541371f, 0.32740512f, -1.9341712E-4f, BodyType.DynamicBody));
 		group.addActor (new BlockActor(world, MaterialConfig.WOOD_RECT, 2.114022f, 0.3275287f, -1.1006929E-4f, BodyType.DynamicBody));
 		group.addActor (new BlockActor(world, MaterialConfig.WOOD_RECT, 2.381676f, 1.4076012f, -1.0334604E-4f, BodyType.DynamicBody));
-		group.addActor (new TargetActor(world, MaterialConfig.TARGET_L, 2.3818345f, 1.9255339f, 0.5f));
+		group.addActor (new DorkActor(world, MaterialConfig.TARGET_DORK, 2.3818345f, 1.9255339f, 0.5f));
 		group.addActor (new BlockActor(world, MaterialConfig.WOOD_RECT, 3.5005078f, 0.32812473f, -2.7146062E-4f, BodyType.DynamicBody));
 		group.addActor (new BlockActor(world, MaterialConfig.WOOD_BL_42, 3.5156767f, 0.737255f, 0.0013751519f, BodyType.DynamicBody));
 		group.addActor (new BlockActor(world, MaterialConfig.WOOD_BL_42, 3.5155432f, 1.0147022f, 0.0014561831f, BodyType.DynamicBody));
 		group.addActor (new BlockActor(world, MaterialConfig.WOOD_BL_42, 4.575633f, 0.19625017f, 1.4191855E-6f, BodyType.DynamicBody));
 		group.addActor (new BlockActor(world, MaterialConfig.WOOD_BL_42, 4.5746264f, 0.47562853f, 0.0071716937f, BodyType.DynamicBody));
-		group.addActor (new TargetActor(world, MaterialConfig.TARGET_L, 3.5080411f, 1.4009242f, 0.5f));
-		group.addActor (new TargetActor(world, MaterialConfig.TARGET_L, 4.5405188f, 0.8616436f, 0.5f));
+		group.addActor (new DorkActor(world, MaterialConfig.TARGET_DORK, 3.5080411f, 1.4009242f, 0.5f));
+		group.addActor (new DorkActor(world, MaterialConfig.TARGET_DORK, 4.5405188f, 0.8616436f, 0.5f));
 		group.addActor (new BlockActor(world, MaterialConfig.WOOD_BL_81, 1.4475332f, 0.4137654f, 0.5953806f, BodyType.DynamicBody));
 		group.addActor (new BlockActor(world, MaterialConfig.WOOD_BL_81, 0.7209617f, 0.28437674f, 0.29645586f, BodyType.DynamicBody));
 		group.addActor (new BlockActor(world, MaterialConfig.WOOD_BL_21, 4.996915f, 0.1303093f, 0.0013641214f, BodyType.DynamicBody));

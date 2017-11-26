@@ -35,8 +35,9 @@ import com.badlogic.gdx.utils.Array;
 import com.badlogic.gdx.utils.Disposable;
 import com.gitlab.ardash.appleflinger.actors.BlockActor;
 import com.gitlab.ardash.appleflinger.actors.CollisionFilterMasks;
+import com.gitlab.ardash.appleflinger.actors.DorkActor;
+import com.gitlab.ardash.appleflinger.actors.PengActor;
 import com.gitlab.ardash.appleflinger.actors.PhysicsActor;
-import com.gitlab.ardash.appleflinger.actors.TargetActor;
 import com.gitlab.ardash.appleflinger.actors.TntActor;
 import com.gitlab.ardash.appleflinger.global.GameManager;
 import com.gitlab.ardash.appleflinger.global.GameState;
@@ -176,7 +177,9 @@ public class GameRenderer  implements Disposable
     		if(Gdx.input.isKeyPressed(Keys.NUM_1)) 
     			currentSandboxConfig = MaterialConfig.WOOD_RECT;
     		if(Gdx.input.isKeyPressed(Keys.NUM_2)) 
-    			currentSandboxConfig = MaterialConfig.TARGET_L;
+    			currentSandboxConfig = MaterialConfig.TARGET_DORK;
+    		if(Gdx.input.isKeyPressed(Keys.W)) 
+    			currentSandboxConfig = MaterialConfig.TARGET_PENG;
     		if(Gdx.input.isKeyPressed(Keys.NUM_3)) 
     			currentSandboxConfig = MaterialConfig.WOOD_BL_11;
     		if(Gdx.input.isKeyPressed(Keys.NUM_4)) 
@@ -195,8 +198,11 @@ public class GameRenderer  implements Disposable
     		if (currentSandboxConfig!=null)
     		{
     			switch (currentSandboxConfig) {
-				case TARGET_L:
-	    			sandboxPreviewActor = new TargetActor(world,currentSandboxConfig, 10, 6, 0.5f, BodyType.StaticBody);
+				case TARGET_DORK:
+	    			sandboxPreviewActor = new DorkActor(world,currentSandboxConfig, 10, 6, 0.5f, BodyType.StaticBody);
+					break;
+				case TARGET_PENG:
+	    			sandboxPreviewActor = new PengActor(world,currentSandboxConfig, 10, 6, 0.5f, BodyType.StaticBody);
 					break;
 				case WOOD_TNT:
 	    			sandboxPreviewActor = new TntActor(world, 10, 6, 0.5f,BodyType.StaticBody);
@@ -264,8 +270,12 @@ public class GameRenderer  implements Disposable
     		if(Gdx.input.isTouched() &&  Gdx.input.justTouched()) 
     		{
     			switch (currentSandboxConfig) {
-				case TARGET_L:
-	    			s.addActor(new TargetActor(world,currentSandboxConfig, x, y, 0.5f, BodyType.DynamicBody));
+				case TARGET_DORK:
+	    			s.addActor(new DorkActor(world,currentSandboxConfig, x, y, 0.5f, BodyType.DynamicBody));
+					break;
+
+				case TARGET_PENG:
+	    			s.addActor(new PengActor(world,currentSandboxConfig, x, y, 0.5f, BodyType.DynamicBody));
 					break;
 
 				case WOOD_TNT:

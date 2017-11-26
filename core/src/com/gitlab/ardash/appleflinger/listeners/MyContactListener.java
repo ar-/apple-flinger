@@ -24,9 +24,9 @@ import com.badlogic.gdx.physics.box2d.ContactListener;
 import com.badlogic.gdx.physics.box2d.Fixture;
 import com.badlogic.gdx.physics.box2d.Manifold;
 import com.gitlab.ardash.appleflinger.actors.AppleActor;
+import com.gitlab.ardash.appleflinger.actors.GeneralTargetActor;
 import com.gitlab.ardash.appleflinger.actors.Ground;
 import com.gitlab.ardash.appleflinger.actors.PhysicsActor;
-import com.gitlab.ardash.appleflinger.actors.TargetActor;
 import com.gitlab.ardash.appleflinger.actors.TntActor;
 import com.gitlab.ardash.appleflinger.global.GameManager;
 
@@ -85,11 +85,11 @@ public class MyContactListener implements ContactListener{
 		// record direct apple hits
 		if (GameManager.RECORDSHOTS)
 		{
-			if ((udA instanceof AppleActor) && (udB instanceof TargetActor))
+			if ((udA instanceof AppleActor) && (udB instanceof GeneralTargetActor))
 			{
 				GameManager.recordTargetPosition(((PhysicsActor) udA).getX(), ((PhysicsActor) udA).getY(), impact);
 			}
-			if ((udA instanceof TargetActor) && (udB instanceof AppleActor))
+			if ((udA instanceof GeneralTargetActor) && (udB instanceof AppleActor))
 			{
 				GameManager.recordTargetPosition(((PhysicsActor) udB).getX(), ((PhysicsActor) udB).getY(), impact);
 			}
@@ -102,20 +102,20 @@ public class MyContactListener implements ContactListener{
 				GameManager.recordTargetPosition(((PhysicsActor) udB).getX(), ((PhysicsActor) udB).getY(), impact);
 			}
 			
-			if ((udA instanceof Ground) && (udB instanceof TargetActor))
+			if ((udA instanceof Ground) && (udB instanceof GeneralTargetActor))
 			{
 				GameManager.recordTargetPosition(((PhysicsActor) udB).getX(), ((PhysicsActor) udB).getY(), impact);
 			}
-			if ((udA instanceof TargetActor) && (udB instanceof Ground))
+			if ((udA instanceof GeneralTargetActor) && (udB instanceof Ground))
 			{
 				GameManager.recordTargetPosition(((PhysicsActor) udA).getX(), ((PhysicsActor) udA).getY(), impact);
 			}
 			
-			if (udA instanceof TargetActor)
+			if (udA instanceof GeneralTargetActor)
 			{
 				GameManager.recordTargetPosition(((PhysicsActor) udA).getX(), ((PhysicsActor) udA).getY(), impact);
 			}
-			if (udB instanceof TargetActor)
+			if (udB instanceof GeneralTargetActor)
 			{
 				GameManager.recordTargetPosition(((PhysicsActor) udB).getX(), ((PhysicsActor) udB).getY(), impact);
 			}

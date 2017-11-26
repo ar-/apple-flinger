@@ -78,7 +78,6 @@ public class GameScreen implements Screen {
 		// if there is  no assync loading done before, this will cause a delay and button stays down a while
 		//MAssets.load(); // just to be sure, in case something was skipped by assync loading
         final GameManager gm = GameManager.getInstance();
-        // gm.getActionResolver().t_SetAndSendScreenName(mission.name()); //  General GS is enough
 		gm.setGameState(GameState.LOADING_SCREEN);
 		SoundPlayer.pauseMusic(Assets.getMusic(MusicAsset.BG));
 

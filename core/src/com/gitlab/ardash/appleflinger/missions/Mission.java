@@ -17,6 +17,9 @@
 package com.gitlab.ardash.appleflinger.missions;
 
 import java.lang.reflect.Constructor;
+import java.util.EnumSet;
+import java.util.HashSet;
+import java.util.Set;
 
 import com.badlogic.gdx.scenes.scene2d.Group;
 import com.gitlab.ardash.appleflinger.GameWorld;
@@ -52,19 +55,17 @@ import com.gitlab.ardash.appleflinger.GameWorld;
 	    M_1_16,
 	    M_1_17,
 	    M_1_18,
-	    END_OF_CHAPTER,
+	    END_OF_EPISODE_1,
+	    M_2_1,
+	    M_2_2,
+	    M_2_3,
+	    M_2_4,
+	    M_2_5,
+	    M_2_6,
+	    END_OF_EPISODE_2,
 
 	    NONE; // don't use this
 
-//	    private final int major;
-//	    private final int minor;
-//		public StageFiller stageFiller;
-//	    Mission(int major, int minor, StageFiller mission) {
-//	        this.major = major;
-//	        this.minor = minor;
-//	        this.stageFiller = mission;
-//	    }
-	    
 	    /**
 	     * validate all the statuses and check if all the classes are there
 	     */
@@ -80,7 +81,7 @@ import com.gitlab.ardash.appleflinger.GameWorld;
 	    
 	    public StageFiller getStageFiller()
 	    {
-	    	if (this == Empty || this == NONE || this == END_OF_CHAPTER)
+	    	if (getDummies().contains(this))
 	    		return null;
 	    	try {
 		    	Class<?> clazz = Class.forName("com.gitlab.ardash.appleflinger.missions.Mission"+toString()); 
@@ -91,13 +92,13 @@ import com.gitlab.ardash.appleflinger.GameWorld;
 					return (StageFiller)object;
 				throw new RuntimeException("object was a class but not a stagefiller"); 
 			} catch (Exception e) {
-				throw new RuntimeException("Error getting the StageFillerClass", e); 
+				throw new RuntimeException("Error getting the StageFillerClass "+toString(), e); 
 			}
 	    }
 
 	    public int getMajor()
 	    {
-	    	if (this == Empty || this == NONE || this == END_OF_CHAPTER)
+	    	if (getDummies().contains(this))
 	    		return 0;
 	    	String s = toString().split("_")[1]; 
 	    	return Integer.valueOf(s);
@@ -105,7 +106,7 @@ import com.gitlab.ardash.appleflinger.GameWorld;
 	    
 	    public int getMinor()
 	    {
-	    	if (this == Empty || this == NONE || this == END_OF_CHAPTER)
+	    	if (getDummies().contains(this))
 	    		return 0;
 			String s = toString().split("_")[2]; 
 	    	return Integer.valueOf(s);
@@ -113,19 +114,39 @@ import com.gitlab.ardash.appleflinger.GameWorld;
 	    
 	    public Mission getNext()
 	    {
-	    	if (this == Empty || this == NONE || this == END_OF_CHAPTER)
-	    		return END_OF_CHAPTER;
+	    	if (getDummies().contains(this))
+	    		return END_OF_EPISODE_1;
 	    	
 	    	int thisOrd = this.ordinal();
 	    	Mission next = Mission.values()[thisOrd+1];
 	    	
 	    	if (next.getMajor()!=this.getMajor())
-	    		return END_OF_CHAPTER;
+	    		return END_OF_EPISODE_1;
 	    	
 	    	if (next.getMinor()!=this.getMinor()+1)
-	    		return END_OF_CHAPTER;
+	    		return END_OF_EPISODE_1;
 	    	
 	    	return next;
+	    }
+	    
+	    @SuppressWarnings("static-method")
+		public static EnumSet<Mission> getDummies()
+	    {
+	    	return EnumSet.of(Empty, NONE, END_OF_EPISODE_1, END_OF_EPISODE_2);
+	    }
+	    
+	    public static Set<Integer> getAvailableEpisodes()
+	    {
+	    	Set<Integer> ret = new HashSet<Integer>(2);
+	    	for (Mission m : Mission.values())
+	    	{
+	    		if (m.getMajor()>0)
+	    		{
+	    			ret.add(m.getMajor());
+	    		}
+	    	}
+
+	    	return ret;
 	    }
 	    
 	    public interface StageFiller {

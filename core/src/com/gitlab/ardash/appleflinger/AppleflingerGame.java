@@ -80,16 +80,28 @@ public class AppleflingerGame extends Game {
 	 * mission name as parameter means we want to start the actual gameplay with a certain mission
 	 * @param s
 	 */
-	public void setScreen(Mission mission) {
-		if (mission != Mission.NONE && mission != Mission.END_OF_CHAPTER)
+	public void setScreen(Mission mission) 
+	{
+		switch (mission) 
 		{
-			
-			this.setScreen(new GameScreen(mission));
+			case NONE:
+				MissionSelectScreen.setSelectedEpisode(0);
+				this.setScreen(new MissionSelectScreen());
+				break;
+			case END_OF_EPISODE_1:
+				// this comes when 1 episode is finished - set this to episode 2
+				MissionSelectScreen.setSelectedEpisode(2);
+				this.setScreen(new MissionSelectScreen());
+				break;
+			case END_OF_EPISODE_2:
+				// this comes when 2 episode is finished - set this to episode selection sub-menu
+				MissionSelectScreen.setSelectedEpisode(0);
+				this.setScreen(new MissionSelectScreen());
+				break;
+			default:
+				this.setScreen(new GameScreen(mission));
+				break;
 		}
-		else
-			// TODO this come when 1 chapter is finished - set this to chapter selection sub-menu as soon as it exists
-			this.setScreen(new MissionSelectScreen());
-			
 	}
 	
 	@Override

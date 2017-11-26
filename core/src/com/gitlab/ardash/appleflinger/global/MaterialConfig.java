@@ -37,7 +37,8 @@ public enum MaterialConfig {
     WOOD_BL_81 (Assets.SpriteGroupAsset.WOOD_BL_81, 25, 0.1f, 0.4f, 1, 0.5f, 0.0f),
     
     PROJECTILE (Assets.TextureAsset.STONE, 500, 0.1f, 0.99f, 	1, 0.9f, 0.1f),
-    TARGET_L (Assets.SpriteGroupAsset.DORK, 10, 0.1f, 500f, 10, 0.9f, 0.0f); // high damping so they don't roll easily
+    TARGET_DORK (Assets.SpriteGroupAsset.DORK, 10, 0.1f, 500f, 10, 0.9f, 0.0f), // high damping so they don't roll easily
+    TARGET_PENG (Assets.SpriteGroupAsset.PENG, 10, 0.1f, 500f, 10, 0.9f, 0.0f); // high damping so they don't roll easily
     
 
     public Texture texture;
