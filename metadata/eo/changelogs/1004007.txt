@@ -6,4 +6,4 @@
 1.4.5
   * Plibonigita franca traduko.  Danke al xin.
   * Aldonita nova tradukita klavaro por ĉiu lingvo por eniri ludantnomojn.
-  * Aldonis ekrankopioj al F-Droid por ĉiu subtenata lingvo.
+  * Aldonis ekrankopiojn al F-Droid por ĉiu subtenata lingvo.
