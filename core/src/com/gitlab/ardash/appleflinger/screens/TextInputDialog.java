@@ -146,7 +146,7 @@ public class TextInputDialog extends AdvancedDialog{
 			tblContent.row();
 			tblContent.add(makeKeyboardRow("ZĈCVBNMĤ"));
 			tblContent.row();
-		else {
+		} else {
 			tblContent.row();
 			tblContent.add(makeKeyboardRow("QWERTYUIOP"));
 	        tblContent.add(btnBackSpace);
