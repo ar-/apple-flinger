@@ -272,6 +272,8 @@ public class Assets {
 		FLAG_ES,
 		FLAG_FR,
 		FLAG_RU,
+		FLAG_EO,
+		FLAG_PL,
 		BTN_INFO,
 		BTN_JOYPAD,
 		BTN_LEADER,
