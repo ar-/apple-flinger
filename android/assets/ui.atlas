@@ -1,4 +1,3 @@
-
 ui.png
 size: 1024,1024
 format: RGBA8888
@@ -193,6 +192,13 @@ flag_en
   orig: 100, 50
   offset: 0, 0
   index: -1
+flag_eo
+  rotate: false
+  xy: 517, 246
+  size: 100, 67
+  orig: 100, 67
+  offset: 0, 0
+  index: -1
 flag_es
   rotate: false
   xy: 204, 245
@@ -205,6 +211,13 @@ flag_fr
   xy: 306, 245
   size: 100, 67
   orig: 100, 67
+  offset: 0, 0
+  index: -1
+flag_pl
+  rotate: false
+  xy: 410, 316
+  size: 100, 62
+  orig: 100, 62
   offset: 0, 0
   index: -1
 flag_ru
