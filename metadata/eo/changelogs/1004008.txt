@@ -1,0 +1,12 @@
+1.4.8
+  * Aldonita pola traduko.  Danke al verdulo.
+  * Aldonita Esperanta traduko.  Danke al verdulo.
+1.4.7
+  * Vintro venas.  Aldonis iujn novajn nivelojn.
+  * Ideoj mankas al mi.  Bonvolu sendi al mi ideojn por novaj niveloj.
+1.4.6
+  * Plibonigita rusa traduko.  Danke al Dmitry.
+1.4.5
+  * Plibonigita franca traduko.  Danke al xin.
+  * Aldonita nova tradukita klavaro por ĉiu lingvo por eniri ludantnomojn.
+  * Aldonis ekrankopiojn al F-Droid por ĉiu subtenata lingvo.

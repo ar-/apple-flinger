@@ -31,8 +31,7 @@ public class DesktopLauncher implements ActionResolver{
 	public static void main (String[] arg) {
 		(new DesktopLauncher()).launch();
 	}
-	
-	
+
 	@SuppressWarnings("unused")
 	public void launch()
 	{
