@@ -48,9 +48,17 @@ import com.gitlab.ardash.appleflinger.screens.GameScreen;
 
 public class Assets {
 	
-	public static final String RUSSIAN_CHARACTERS = "АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ"
+	private static final String RUSSIAN_CHARACTERS = "АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ"
             + "абвгдеёжзийклмнопрстуфхцчшщъыьэюя"
             + "1234567890.,:;_¡!¿?\"'+-*/()[]={}";
+	
+	private static final String POLISH_CHARACTERS = "ABCDEFGHIJKLMNOPRSTUVWYZĄĆĘŁŃÓŚŹŻ"
+            + "abcdefghijklmnoprstuvwyząćęłńóśźż"
+            + "1234567890.,:;_¡!¿?\"'+-*/()[]={}";
+	
+	private static final String EO_CHARACTERS = "ĉĝĥĵŝŭĈĜĤĴŜŬ";
+	
+	private static final String EXTRA_CHARACTERS = RUSSIAN_CHARACTERS + POLISH_CHARACTERS + EO_CHARACTERS;
 	
 	public enum LabelStyleAsset {
 		MINILABEL,
@@ -132,13 +140,13 @@ public class Assets {
 			generator = Assets.getFontGenerator(FontGeneratorAsset.ZANTROKE); // ***************
 			parameter = defaultParameter((int)Math.ceil(FONT_SIZE_MEDIUM_05*.81f),4f);
 			generator.scaleForPixelHeight((int)Math.ceil(FONT_SIZE_MEDIUM_05*.81f));
-			parameter.characters = FreeTypeFontGenerator.DEFAULT_CHARS+RUSSIAN_CHARACTERS;
+			parameter.characters = FreeTypeFontGenerator.DEFAULT_CHARS+EXTRA_CHARACTERS;
 			ZANTROKE_05_B4_BIGMENU.font = generator.generateFont(parameter);
 			ZANTROKE_05_B4_BIGMENU.font.getRegion().getTexture().setFilter(TextureFilter.Linear, TextureFilter.Linear);
 
 			parameter = defaultParameter((int)Math.ceil(FONT_SIZE_SMALL_03*.81f),2f);
 			generator.scaleForPixelHeight((int)Math.ceil(FONT_SIZE_SMALL_03*.81f));
-			parameter.characters = FreeTypeFontGenerator.DEFAULT_CHARS+RUSSIAN_CHARACTERS;
+			parameter.characters = FreeTypeFontGenerator.DEFAULT_CHARS+EXTRA_CHARACTERS;
 			ZANTROKE_03_B2_DIAG_MINIL_CYRILLIC.font = generator.generateFont(parameter);
 			ZANTROKE_03_B2_DIAG_MINIL_CYRILLIC.font.getRegion().getTexture().setFilter(TextureFilter.Linear, TextureFilter.Linear);
 
@@ -269,8 +277,10 @@ public class Assets {
 		SLIDERBACK,
 		FLAG_DE,
 		FLAG_EN,
+		FLAG_EO,
 		FLAG_ES,
 		FLAG_FR,
+		FLAG_PL,
 		FLAG_RU,
 		BTN_INFO,
 		BTN_JOYPAD,
@@ -762,12 +772,20 @@ public class Assets {
 	public static boolean isNonLatinFontNeeded()
 	{
 		final String userSelectedLingo = Pref.getLingo();
+		if (userSelectedLingo.toLowerCase().startsWith("eo"))
+			return true;
 		if (userSelectedLingo.toLowerCase().startsWith("ru"))
+			return true;
+		if (userSelectedLingo.toLowerCase().startsWith("pl"))
 			return true;
 		
 		if (userSelectedLingo.equals(""))
 		{
+			if (Locale.getDefault().getLanguage().equals(new Locale("eo").getLanguage()))
+				return true;
 			if (Locale.getDefault().getLanguage().equals(new Locale("ru").getLanguage()))
+				return true;
+			if (Locale.getDefault().getLanguage().equals(new Locale("pl").getLanguage()))
 				return true;
 		}
 		

@@ -1,0 +1,16 @@
+1.4.8
+  * Added Polish translation. Thanks to verdulo.
+  * Added Esperanto translation. Thanks to verdulo.
+
+1.4.7
+  * Winter is coming. Added some new levels.
+  * I ran out of ideas. Please send me ideas for new levels.
+
+1.4.6
+  * Improved Russian translation. Thanks to Dmitry.
+
+1.4.5
+  * Improved French translation. Thanks to xin.
+  * Added a new localized Keyboard for each language to enter player names.
+  * Added fdroid screenshots for each supported language.
+

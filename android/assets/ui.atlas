@@ -181,35 +181,49 @@ dialog
   index: -1
 flag_de
   rotate: false
-  xy: 406, 454
+  xy: 408, 252
   size: 100, 60
   orig: 100, 60
   offset: 0, 0
   index: -1
 flag_en
   rotate: false
-  xy: 408, 402
+  xy: 410, 200
   size: 100, 50
   orig: 100, 50
   offset: 0, 0
   index: -1
-flag_es
+flag_eo
   rotate: false
   xy: 204, 245
   size: 100, 67
   orig: 100, 67
   offset: 0, 0
   index: -1
-flag_fr
+flag_es
   rotate: false
   xy: 306, 245
   size: 100, 67
   orig: 100, 67
   offset: 0, 0
   index: -1
+flag_fr
+  rotate: false
+  xy: 406, 447
+  size: 100, 67
+  orig: 100, 67
+  offset: 0, 0
+  index: -1
+flag_pl
+  rotate: false
+  xy: 408, 314
+  size: 100, 62
+  orig: 100, 62
+  offset: 0, 0
+  index: -1
 flag_ru
   rotate: false
-  xy: 410, 245
+  xy: 408, 378
   size: 100, 67
   orig: 100, 67
   offset: 0, 0

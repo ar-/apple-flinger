@@ -109,6 +109,15 @@ public class TextInputDialog extends AdvancedDialog{
 			tblContent.row();
 			tblContent.add(makeKeyboardRow("YXCVBNM"));
 			tblContent.row();
+	    } else if (langCode.equals("eo")) {
+			tblContent.row();
+			tblContent.add(makeKeyboardRow("ŜĜERTŬUIOP"));
+	        tblContent.add(btnBackSpace);
+			tblContent.row();
+			tblContent.add(makeKeyboardRow("ASDFGHJKLĴ"));
+			tblContent.row();
+			tblContent.add(makeKeyboardRow("ZĈCVBNMĤ"));
+			tblContent.row();
 		} else if (langCode.equals("es")) {
 			tblContent.row();
 			tblContent.add(makeKeyboardRow("QWERTYUIOPÜÚ"));
@@ -137,8 +146,7 @@ public class TextInputDialog extends AdvancedDialog{
 			tblContent.row();
 			tblContent.add(makeKeyboardRow("ЯЧСМИТЬБЮЁ"));
 			tblContent.row();
-		}
-		else {
+		} else {
 			tblContent.row();
 			tblContent.add(makeKeyboardRow("QWERTYUIOP"));
 	        tblContent.add(btnBackSpace);
