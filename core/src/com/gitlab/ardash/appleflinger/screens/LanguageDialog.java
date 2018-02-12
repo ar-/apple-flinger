@@ -41,7 +41,7 @@ public class LanguageDialog extends AdvancedDialog{
 		getContentTable().add(makeLingoButton(Assets.SpriteAsset.FLAG_ES, "\n\nespañol"));
 		getContentTable().row().minHeight(180).top();
 		getContentTable().add(makeLingoButton(Assets.SpriteAsset.FLAG_FR, "\n\nfrançais"));
-		getContentTable().add(makeLingoButton(Assets.SpriteAsset.FLAG_PL, "\n\npolszczyzna"));
+		getContentTable().add(makeLingoButton(Assets.SpriteAsset.FLAG_PL, "\n\npolski"));
 		getContentTable().add(makeLingoButton(Assets.SpriteAsset.FLAG_RU, "\n\nрусский"));
 
         getContentTable().row();
