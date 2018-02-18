@@ -1,0 +1,14 @@
+1.4.9
+  * Mõni väiksem tõlke parandus
+1.4.8
+  * Lisatud poola tõlge.  Tänu verdulole.
+  * Lisatud esperanto tõlge.  Tänu verdulole.
+1.4.7
+  * Talv on tulekul.  Lisas mõned uued tasemed.
+  * Ma väljusin ideedest.  Palun saatke mulle ideed uute tasemete jaoks.
+1.4.6
+  * Täiustatud vene tõlge.  Tänu Dmitrile.
+1.4.5
+  * Parem prantsuse tõlge.  Tänu xinile.
+  * Lisati mängijate nimede sisestamiseks iga keelena uus lokaliseeritud klaviatuur.
+  * Lisatud fdroid ekraanikuvasid iga toetatud keeles.

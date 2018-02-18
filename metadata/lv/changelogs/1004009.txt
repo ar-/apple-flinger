@@ -1,0 +1,14 @@
+1.4.9
+  * Daži nelieli tulkošanas labojumi
+1.4.8
+  * Pievienots poļu tulkojums.  Pateicoties verdulo.
+  * Pievienots esperanto tulkojums.  Pateicoties verdulo.
+1.4.7
+  * Ziema nāk.  Pievienots daži jauni līmeņi.
+  * Es izbēgu no idejām.  Lūdzu, atsūtiet man idejas jauniem līmeņiem.
+1.4.6
+  * Uzlabota krievu tulkošana.  Pateicoties Dmitrijam.
+1.4.5
+  * Uzlabota franču tulkošana.  Pateicoties xin.
+  * Pievienota jauna lokalizēta tastatūra katrai valodai, lai ievadītu spēlētāju vārdus.
+  * Pievienoti fdroid ekrānuzņēmumi katrai atbalstītajai valodai.

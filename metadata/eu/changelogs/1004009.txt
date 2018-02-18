@@ -1,0 +1,14 @@
+1.4.9
+  * Zenbait itzulpen konponketa txikia
+1.4.8
+  * Poloniera itzulpen gehitua.  Eskerrik asko verdulo
+  * Esperantoa ingelesez gehitu da.  Eskerrik asko verdulo
+1.4.7
+  * Negua badator.  Maila berri batzuk gehitu dira.
+  * Ideiak atera nituen.  Bidali niri ideiak maila berrietarako.
+1.4.6
+  * Errusiako itzulpen hobetua.  Dmitryri esker.
+1.4.5
+  * Itzulpen frantsesaren hobekuntza.  Xin esker.
+  * Hizkuntza bakoitzerako lokalizatutako teklatua gehitu zaio jokalari izenei sartzeko.
+  * Fdroid pantailetan gehitutako euskarri bakoitzerako.

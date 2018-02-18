@@ -1,0 +1,14 @@
+1.4.9
+  * Einige kleinere Übersetzungsfehler
+1.4.8
+  * Hinzugefügt polnische Übersetzung.  Danke an Verdulo.
+  * Esperanto-Übersetzung hinzugefügt.  Danke an Verdulo.
+1.4.7
+  * Der Winter kommt.  Neue Ebenen hinzugefügt.
+  * Ich hatte keine Ideen mehr.  Bitte senden Sie mir Ideen für neue Levels.
+1.4.6
+  * Verbesserte russische Übersetzung.  Danke an Dmitry.
+1.4.5
+  * Verbesserte französische Übersetzung.  Danke an Xin.
+  * Es wurde eine neue lokalisierte Tastatur für jede Sprache hinzugefügt, um Spielernamen einzugeben.
+  * Fdroid Screenshots für jede unterstützte Sprache hinzugefügt.

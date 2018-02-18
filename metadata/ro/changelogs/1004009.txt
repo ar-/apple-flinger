@@ -1,0 +1,14 @@
+1.4.9
+  * Sunt câteva corecții minore ale traducerilor
+1.4.8
+  * Traducerea în poloneză.  Mulțumită lui verdulo.
+  * A fost adăugată traducerea esperanto.  Mulțumită lui verdulo.
+1.4.7
+  * Vine iarna.  Adăugat nivele noi.
+  * Am rămas fără idei.  Trimiteți-mi idei pentru noi nivele.
+1.4.6
+  * Traducere rusă îmbunătățită.  Mulțumită lui Dmitry.
+1.4.5
+  * Traducere franceză îmbunătățită.  Mulțumită lui xin.
+  * A fost adăugată o nouă tastatură localizată pentru fiecare limbă pentru a introduce numele jucătorului.
+  * Adăugat screenshot-uri fdroid pentru fiecare limbă acceptată.

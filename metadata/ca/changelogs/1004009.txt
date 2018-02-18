@@ -1,0 +1,14 @@
+1.4.9
+  * Algunes correccions de traducció menors
+1.4.8
+  * S'ha afegit la traducció polonesa.  Gràcies al verdulo.
+  * S'ha afegit la traducció esperantista.  Gràcies al verdulo.
+1.4.7
+  * Arriba l'hivern.  S'han afegit nous nivells.
+  * Em vaig quedar sense idees.  Envieu-me idees per a nous nivells.
+1.4.6
+  * Millora de la traducció russa.  Gràcies a Dmitry.
+1.4.5
+  * Traducció francesa millorada.  Gràcies a xin.
+  * S'ha afegit un nou teclat localitzat per a cada idioma per introduir noms de jugadors.
+  * S'han afegit pantalles de pantalla fdroid per a cada idioma que s'admet.

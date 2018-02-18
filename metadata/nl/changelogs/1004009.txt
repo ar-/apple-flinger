@@ -1,0 +1,14 @@
+1.4.9
+  * Enkele kleine vertaaloplossingen
+1.4.8
+  * Poolse vertaling toegevoegd.  Dankzij Verdulo.
+  * Esperanto-vertaling toegevoegd.  Dankzij Verdulo.
+1.4.7
+  * De winter komt eraan.  Enkele nieuwe niveaus toegevoegd.
+  * Ik had geen ideeën meer.  Stuur me alsjeblieft ideeën voor nieuwe niveaus.
+1.4.6
+  * Verbeterde Russische vertaling.  Met dank aan Dmitry.
+1.4.5
+  * Verbeterde Franse vertaling.  Dank aan Xin.
+  * Een nieuw gelokaliseerd toetsenbord voor elke taal toegevoegd om spelersnamen in te voeren.
+  * Fdroid-schermafbeeldingen toegevoegd voor elke ondersteunde taal.

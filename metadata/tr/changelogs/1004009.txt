@@ -1,0 +1,14 @@
+1.4.9
+  * Bazı küçük çeviri düzeltmeleri
+1.4.8
+  * Lehçe çeviri eklendi.  Verdulo'ya teşekkürler.
+  * Esperanto tercümesi eklendi.  Verdulo'ya teşekkürler.
+1.4.7
+  * Kış geliyor.  Bazı yeni düzeyler eklendi.
+  * Fikirler tükendi.  Lütfen bana yeni seviyeler için fikir gönder.
+1.4.6
+  * Geliştirilmiş Rusça çeviri.  Dmitry'ye teşekkürler.
+1.4.5
+  * Geliştirilmiş Fransızca çeviri.  Xin sayesinde.
+  * Oyuncu isimleri girmek için her dil için yeni bir yerelleştirilmiş Klavye eklendi.
+  * Her desteklenen dil için fdroid ekran görüntüleri eklendi.

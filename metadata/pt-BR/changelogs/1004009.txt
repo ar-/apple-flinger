@@ -1,0 +1,14 @@
+1.4.9
+  * Algumas pequenas correções de tradução
+1.4.8
+  * Adicionado tradução polonês.  Graças ao verdulo.
+  * Adicionado tradução de esperanto.  Graças ao verdulo.
+1.4.7
+  * O inverno está chegando.  Adicionado alguns novos níveis.
+  * Eu esqueci de idéias.  Por favor envie-me ideias para novos níveis.
+1.4.6
+  * Tradução russa melhorada.  Obrigado a Dmitry.
+1.4.5
+  * Tradução aprimorada do francês.  Obrigado ao xin.
+  * Adicionado um novo teclado localizado para cada idioma para inserir nomes de jogadores.
+  * Adicionado screenshots fdroid para cada idioma suportado.

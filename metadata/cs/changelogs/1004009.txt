@@ -1,0 +1,14 @@
+1.4.9
+  * Některé drobné opravy překladu
+1.4.8
+  * Přidáno polský překlad.  Díky verdulo.
+  * Přidáno esperanto překlad.  Díky verdulo.
+1.4.7
+  * Zima přichází.  Přidány některé nové úrovně.
+  * Vypadl jsem z nápadů.  Zašlete mi návrhy na nové úrovně.
+1.4.6
+  * Zlepšení ruského překladu.  Díky Dmitriju.
+1.4.5
+  * Vylepšený francouzský překlad.  Díky xin.
+  * Přidána nová lokalizovaná klávesnice pro každý jazyk pro zadání jména hráčů.
+  * Přidány screenshoty fdroid pro každý podporovaný jazyk.
