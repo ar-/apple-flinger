@@ -1,5 +1,5 @@
 1.4.9
-  * Kelkaj plej malgrandaj tradukoj korektas
+  * Kelkaj plej malgrandaj korektoj de tradukoj
 1.4.8
   * Aldonita pola traduko.  Danke al verdulo.
   * Aldonita Esperanta traduko.  Danke al verdulo.
