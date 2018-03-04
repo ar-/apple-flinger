@@ -1,0 +1,22 @@
+Zabawna gra turowa dla jednego lub dwóch graczy. Bardzo nowoczesna, wyzywająca i wciągająca.
+
+Cechy:
+* wysokiej rozdzielczości grafika
+* realistyczna fizyka gry
+* rozgrywka bez opóźnień i zacięć
+* szczegółowe animacje i system cząstek
+* całkiem nowy i innowacyjny koncept gry
+* dla pojedynczego i wielu graczy
+* w 100% otwartoźródłowa (GPL3)
+
+Użyj procy, aby strzelać jabłkami. Bądź pierwszym, który zniszczy bazę wroga, ale uważaj, przeciwnik też strzela. Ta gra jest wyważonym połączeniem łamigłówki, strategii, cierpliwości i akcji.
+
+Gra dla jednego lub wielu graczy! Możesz grać przeciwko kumplowi siedzącego obok lub z samym sobą. Możesz też grać z przeciwnikiem sterowanym przez komputer. Więcej funkcji, poziomów i zabawy wkrótce.
+
+międzynarodowe kategorie wiekowe:
+* ACB: G (dla wszystkich)
+* ClassInd: L
+* ESRB: E (dla wszystkich)
+* PEGI:3
+* USK: 0
+* IARC: 3
