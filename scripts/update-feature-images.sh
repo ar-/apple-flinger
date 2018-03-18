@@ -28,7 +28,11 @@ do
   echo "next language is $I"
   ls metadata/$I/images/phoneScreenshots/M_1_5.png
   #example: convert metadata/en-AU/images/phoneScreenshots/M_1_5.png -crop 1024x500+128+220\!  metadata/en-AU/images/featureGraphic.png
+  # crop (vertical offset works for both font types)
   convert metadata/$I/images/phoneScreenshots/M_1_5.png -crop 1024x500+128+195\!  metadata/$I/images/featureGraphic.png
+  # convert transparant slingerband to dark brown
+  convert metadata/$I/images/featureGraphic.png -background "#552200" -alpha remove metadata/$I/images/featureGraphic.png
+
 done
 
 
