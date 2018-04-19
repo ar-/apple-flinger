@@ -1,0 +1,10 @@
+1.4.10
+  * Fdroid-erako pantailentzako itzulitako irudiak
+1.4.9
+  * Zenbait itzulpen konponketa txikia
+1.4.8
+  * Poloniera itzulpen gehitua.  Eskerrik asko verdulo
+  * Esperantoa ingelesez gehitu da.  Eskerrik asko verdulo
+1.4.7
+  * Negua badator.  Maila berri batzuk gehitu dira.
+  * Ideiak atera nituen.  Bidali niri ideiak maila berrietarako.

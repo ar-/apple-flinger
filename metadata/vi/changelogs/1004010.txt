@@ -1,0 +1,10 @@
+1.4.10
+  * Ảnh chụp màn hình dịch cho fdroid
+1.4.9
+  * Một số sửa lỗi bản dịch nhỏ
+1.4.8
+  * Thêm bản dịch tiếng Ba Lan.  Nhờ verdulo.
+  * Thêm bản dịch Esperanto.  Nhờ verdulo.
+1.4.7
+  * Mùa đông đang tới.  Thêm một số cấp độ mới.
+  * Tôi chạy ra khỏi ý tưởng.  Xin vui lòng gửi cho tôi những ý tưởng cho các cấp độ mới.

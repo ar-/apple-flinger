@@ -1,0 +1,10 @@
+1.4.10
+  * Vertaal skermkiekies vir fdroid
+1.4.9
+  * Enkele klein vertaling oplossings
+1.4.8
+  * Pools vertaling bygevoeg.  Dankie aan verdulo.
+  * Bygevoeg Esperanto vertaling.  Dankie aan verdulo.
+1.4.7
+  * Winter is oppad.  Bygevoeg 'n paar nuwe vlakke.
+  * Ek het uit idees gehardloop.  Stuur asseblief vir my idees vir nuwe vlakke.

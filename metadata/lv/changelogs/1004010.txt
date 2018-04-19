@@ -1,0 +1,10 @@
+1.4.10
+  * Pārvērsti fdroid ekrānšāviņi
+1.4.9
+  * Daži nelieli tulkošanas labojumi
+1.4.8
+  * Pievienots poļu tulkojums.  Pateicoties verdulo.
+  * Pievienots esperanto tulkojums.  Pateicoties verdulo.
+1.4.7
+  * Ziema nāk.  Pievienots daži jauni līmeņi.
+  * Es izbēgu no idejām.  Lūdzu, atsūtiet man idejas jauniem līmeņiem.

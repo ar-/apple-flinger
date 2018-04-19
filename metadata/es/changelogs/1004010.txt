@@ -1,0 +1,10 @@
+1.4.10
+  * Capturas de pantalla traducidas para fdroid
+1.4.9
+  * Algunas correcciones de traducción menores
+1.4.8
+  * Se agregó traducción polaca.  Gracias a verdulo.
+  * Se agregó traducción al Esperanto.  Gracias a verdulo.
+1.4.7
+  * Viene el invierno.  Se agregaron algunos niveles nuevos.
+  * Me quedé sin ideas.  Por favor, envíame ideas para nuevos niveles.

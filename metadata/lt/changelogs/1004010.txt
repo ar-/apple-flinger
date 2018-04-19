@@ -1,0 +1,10 @@
+1.4.10
+  * Išversta"fdroid"ekrano kopija
+1.4.9
+  * Nedideli vertimo pakeitimai
+1.4.8
+  * Pridėtas vertimas iš Lenkijos.  Ačiū verdulo.
+  * Pridėta esperanto vertimas.  Ačiū verdulo.
+1.4.7
+  * Žiema ateina.  Pridėta keletas naujų lygių.
+  * Aš išbėgau idėjų.  Prašome atsiųsti man idėjų naujiems lygiams.

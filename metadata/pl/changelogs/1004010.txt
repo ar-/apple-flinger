@@ -1,0 +1,10 @@
+1.4.10
+  * Przetłumaczone zrzuty ekranu dla fdroid
+1.4.9
+  * Niektóre drobne poprawki tłumaczeń
+1.4.8
+  * Dodano polskie tłumaczenie.  Dzięki verdulo.
+  * Dodano tłumaczenie na Esperanto.  Dzięki verdulo.
+1.4.7
+  * Zima nadchodzi.  Dodano kilka nowych poziomów.
+  * Zabrakło mi pomysłów.  Prześlijcie mi pomysły na nowe poziomy.

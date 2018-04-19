@@ -1,0 +1,10 @@
+1.4.10
+  * Fdroid için çevrilmiş ekran görüntüleri
+1.4.9
+  * Bazı küçük çeviri düzeltmeleri
+1.4.8
+  * Lehçe çeviri eklendi.  Verdulo'ya teşekkürler.
+  * Esperanto çeviri eklendi.  Verdulo'ya teşekkürler.
+1.4.7
+  * Kış geliyor.  Bazı yeni seviyeler eklendi.
+  * Fikirlerim tükendi.  Lütfen bana yeni seviyeler için fikirler yollayın.

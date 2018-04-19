@@ -1,0 +1,10 @@
+1.4.10
+  * Diterjemahkan screenshot untuk fdroid
+1.4.9
+  * Beberapa perbaikan terjemahan kecil
+1.4.8
+  * Ditambahkan terjemahan Polandia.  Terima kasih kepada verdulo.
+  * Ditambahkan terjemahan Esperanto.  Terima kasih kepada verdulo.
+1.4.7
+  * Musim dingin datang.  Menambahkan beberapa level baru.
+  * Saya kehabisan ide.  Tolong kirimkan saya ide untuk level baru.

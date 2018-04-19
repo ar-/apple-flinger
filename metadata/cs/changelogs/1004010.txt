@@ -1,0 +1,10 @@
+1.4.10
+  * Přeložené screenshoty pro fdroid
+1.4.9
+  * Některé drobné opravy překladu
+1.4.8
+  * Přidáno polský překlad.  Díky verdulo.
+  * Přidáno esperanto překlad.  Díky verdulo.
+1.4.7
+  * Zima přichází.  Přidány některé nové úrovně.
+  * Vypadl jsem z nápadů.  Zašlete mi návrhy na nové úrovně.

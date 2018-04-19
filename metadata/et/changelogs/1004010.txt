@@ -1,0 +1,10 @@
+1.4.10
+  * Tõlgitud ekraanipildid fdroid'ile
+1.4.9
+  * Mõni väiksem tõlke parandus
+1.4.8
+  * Lisatud poola tõlge.  Tänu verdulole.
+  * Lisatud esperanto tõlge.  Tänu verdulole.
+1.4.7
+  * Talv on tulekul.  Lisas mõned uued tasemed.
+  * Ma väljusin ideedest.  Palun saatke mulle ideed uute tasemete jaoks.

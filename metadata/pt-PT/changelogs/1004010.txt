@@ -1,0 +1,10 @@
+1.4.10
+  * Imagens traduzidas para fdroid
+1.4.9
+  * Algumas pequenas correções de tradução
+1.4.8
+  * Adicionado tradução polaca.  Graças ao verdulo.
+  * Adicionado tradução em esperanto.  Graças ao verdulo.
+1.4.7
+  * O inverno está chegando.  Adicionado alguns novos níveis.
+  * Eu fiquei sem ideias.  Por favor, envie-me ideias para novos níveis.

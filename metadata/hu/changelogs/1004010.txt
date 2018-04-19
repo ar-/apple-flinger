@@ -1,0 +1,10 @@
+1.4.10
+  * Fordított screenshotok a fdroid számára
+1.4.9
+  * Néhány kisebb fordítási javítás
+1.4.8
+  * Lengyel fordítás hozzáadása.  Köszönet a verdulának.
+  * Hozzáadott eszperantó fordítás.  Köszönet a verdulának.
+1.4.7
+  * A tél közeleg.  Hozzáadott néhány új szintet.
+  * Elfogytam az ötletekből.  Kérem küldjenek ötleteket új szintekre.

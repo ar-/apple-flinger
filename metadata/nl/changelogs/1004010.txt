@@ -1,0 +1,10 @@
+1.4.10
+  * Vertaalde screenshots voor fdroid
+1.4.9
+  * Enkele kleine vertaaloplossingen
+1.4.8
+  * Poolse vertaling toegevoegd.  Dankzij Verdulo.
+  * Esperanto-vertaling toegevoegd.  Dankzij Verdulo.
+1.4.7
+  * De winter komt eraan.  Enkele nieuwe niveaus toegevoegd.
+  * Ik had geen ideeën meer.  Stuur me alsjeblieft ideeën voor nieuwe niveaus.

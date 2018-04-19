@@ -1,0 +1,10 @@
+1.4.10
+  * Tradukitaj ekrankopioj por fdroid
+1.4.9
+  * Kelkaj plej malgrandaj tradukoj korektas
+1.4.8
+  * Aldonita pola traduko.  Danke al verdulo.
+  * Aldonita Esperanta traduko.  Danke al verdulo.
+1.4.7
+  * Vintro venas.  Aldonis iujn novajn nivelojn.
+  * Mi forkuris de ideoj.  Bonvolu sendi al mi ideojn por novaj niveloj.

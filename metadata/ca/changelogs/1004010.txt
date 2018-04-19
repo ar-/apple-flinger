@@ -1,0 +1,10 @@
+1.4.10
+  * Captures de pantalla traduïdes per fdroid
+1.4.9
+  * Algunes correccions de traducció menors
+1.4.8
+  * S'ha afegit la traducció polonesa.  Gràcies al verdulo.
+  * S'ha afegit la traducció esperantista.  Gràcies al verdulo.
+1.4.7
+  * Arriba l'hivern.  S'han afegit nous nivells.
+  * Em vaig quedar sense idees.  Envieu-me idees per a nous nivells.

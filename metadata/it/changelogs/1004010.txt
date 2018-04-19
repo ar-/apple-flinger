@@ -1,0 +1,10 @@
+1.4.10
+  * Schermate tradotte per fdroid
+1.4.9
+  * Alcune correzioni di traduzione minori
+1.4.8
+  * Aggiunta la traduzione polacca.  Grazie a verdulo.
+  * Aggiunta la traduzione in esperanto.  Grazie a verdulo.
+1.4.7
+  * L'inverno sta arrivando.  Aggiunti alcuni nuovi livelli.
+  * Ho esaurito le idee.  Per favore mandami idee per nuovi livelli.
