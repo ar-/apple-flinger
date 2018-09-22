@@ -1,0 +1,6 @@
+NOTE: THIS APP DOES NOT CONTAIN ANTIFEATURES OR UNWANTED FEATURES. What you see below is an error in F-Droid.
+
+1.4.11
+  * Minor translation fixes. Thanks to verdulo again.
+  * Upped target SDK version for the idiotic google playstore
+
