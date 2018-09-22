@@ -1,0 +1,22 @@
+Amuza runda ludo por unu aŭ du ludantoj. Tre moderna, defia kaj temp-ŝtelanta.
+
+Ecoj:
+* alt-distingive kvalita grafiko
+* realisma lud-fiziko
+* senprokrasta kaj glata lud-maniero
+* detalplenaj animacioj kaj fragment-sistemo
+* moderna kaj nova koncepto por ludo
+* unu- / plur- ludanta
+* 100% malfermkoda (GPL3)
+
+Vi uzas katapulton por ĵetpafi per pomoj. Estu unua por detrui malamikan bazon, sed estu singarda, ĉar la aliulo ankaŭ ĵetpafas reen. Tiu ĉi ludo estas ekvilibrigita miksaĵo de puzlo, strategio, pacienco kaj ago.
+
+Ĝi estas por unu aŭ du ludantoj! Vi povas ludi kontraŭ via amiko apud vi aŭ kontraŭ vi mem. Vi ankaŭ povas ludi kontraŭ kontrolata de komputilo malamiko. Pli da ebloj, niveloj kaj amuzo baldaŭ.
+
+internaciaj aĝ-taksoj:
+* ACB: G (por ĉiuj)
+* ClassInd: L
+* ESRB: E (por ĉiuj)
+* PEGI:3
+* USK: 0
+* IARC: 3
