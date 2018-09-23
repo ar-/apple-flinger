@@ -1,6 +1,6 @@
 # Apple Flinger
 
-[![build status](https://gitlab.com/ar-/apple-flinger/badges/master/build.svg)](https://gitlab.com/ar-/apple-flinger/builds)
+[![build status](https://gitlab.com/ar-/apple-flinger/badges/master/build.svg)](https://gitlab.com/ar-/apple-flinger/builds) [![CII Best Practices](https://bestpractices.coreinfrastructure.org/projects/2233/badge)](https://bestpractices.coreinfrastructure.org/projects/2233)
 
 *Funny single- and multiplayer game for Android - Use a slingshot to shoot with apples. Very challenging and addictive.*
 
