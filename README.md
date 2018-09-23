@@ -33,17 +33,19 @@ international age ratings:
 
 Option 1: [![Get it on F-Droid](https://f-droid.org/wiki/images/3/31/F-Droid-button_get-it-on_smaller.png)](https://f-droid.org/packages/com.gitlab.ardash.appleflinger.android/)
 
-Option 2: Download the latest release or an older release from
-https://gitlab.com/ar-/apple-flinger/tags
-
-Option 3: Download the latest stable build from gitlab's master branch.
+Option 2: Download the latest stable build from gitlab's master branch.
 https://gitlab.com/ar-/apple-flinger/-/jobs/artifacts/master/download?job=build_release
+
+Option 3: Download the latest release or an older release from
+https://gitlab.com/ar-/apple-flinger/tags
 
 Option 4: Build it from source
 
 	git clone https://gitlab.com/ar-/apple-flinger.git
 	cd apple-flinger
 	./gradlew assembleRelease
+
+Option 5: Get if from google play store: [click here](https://play.google.com/store/apps/details?id=com.ardash.appleflinger.android)
 
 ## Contributors
 
