@@ -26,13 +26,29 @@ reps=0
 for I in $todo
 do
   echo "next language is $I"
+  tmpfile=`tempfile -s .png`
   ls metadata/$I/images/phoneScreenshots/M_1_5.png
   #example: convert metadata/en-AU/images/phoneScreenshots/M_1_5.png -crop 1024x500+128+220\!  metadata/en-AU/images/featureGraphic.png
   # crop (vertical offset works for both font types)
-  convert metadata/$I/images/phoneScreenshots/M_1_5.png -crop 1024x500+128+195\!  metadata/$I/images/featureGraphic.png
+  convert metadata/$I/images/phoneScreenshots/M_1_5.png -crop 1024x500+128+195\! $tmpfile
   # convert transparant slingerband to dark brown
-  convert metadata/$I/images/featureGraphic.png -background "#552200" -alpha remove metadata/$I/images/featureGraphic.png
+  convert $tmpfile -background "#552200" -alpha remove $tmpfile
 
+  compare -verbose -metric PSNR metadata/$I/images/featureGraphic.png $tmpfile /tmp/c.png
+
+  di=$?
+  
+  if [ $di == "0" ]
+  then
+    echo "no feature graphic updates found"
+  else
+    echo "new feature graphic updates found. updating file. commit again"
+    cp $tmpfile metadata/$I/images/featureGraphic.png
+    #exit 1
+  fi
+
+
+  rm -f $tmpfile
 done
 
 

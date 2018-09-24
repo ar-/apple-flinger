@@ -27,8 +27,12 @@ echo -e "Authors\n=======\nWe'd like to thank the following people for their con
 git log --raw | grep "^Author: " | sort | uniq | cut -d ' ' -f2- | sed 's/^/- /' >> /tmp/AUTHORS.md
 
 # remove authors that don't want to be inlcuded or old email addresses 
-cat /tmp/AUTHORS.md | grep -v "andreasredmer@mailchuck.com" > /tmp/AUTHORS_tmp.md
-cp /tmp/AUTHORS_tmp.md /tmp/AUTHORS.md
+for AE in andreasredmer@mailchuck.com ar-gitlab@abga.be
+do
+  echo excluding $AE
+  cat /tmp/AUTHORS.md | grep -v "$AE" > /tmp/AUTHORS_tmp.md
+  cp /tmp/AUTHORS_tmp.md /tmp/AUTHORS.md
+done
 
 # now make the markdown look nice and put some spamprotection on the email addresses
 sed -i 's/\./∙/g' /tmp/AUTHORS.md
