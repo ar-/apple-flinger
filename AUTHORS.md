@@ -4,6 +4,7 @@ We'd like to thank the following people for their contributions:
 
 
 - Andreas Redmer \<andreasredmer⒜mailchuck∙com\>
+- Andreas Redmer \<ar-appleflinger⒜abga∙be\>
 - Dmitry Mikhirev \<mikhirev⒜gmail∙com\>
 - vagrant \<vagrant⒜vagrant∙vm\>
 - Verdulo \<cybertomek⒜openmailbox∙org\>
