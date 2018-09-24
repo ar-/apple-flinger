@@ -196,8 +196,13 @@ final public class GameManager {
 		// if there is a winner
 		if (winner != NONE)
 		{
-			PLAYER1.incAllPoints(PLAYER1.getPoints());
-			PLAYER2.incAllPoints(PLAYER2.getPoints());
+			if ( !(isPlayer2CPU()&&winner==PLAYER2) )
+			{
+				// fix for #57 : special case if one player was CPU, the round will be restarted
+				// so 'wins' can accumulate but 'points' should not
+				PLAYER1.incAllPoints(PLAYER1.getPoints());
+				PLAYER2.incAllPoints(PLAYER2.getPoints());
+			}
 			winner.incWins();
 			onGameOverListener.onGameOver();
 			
@@ -219,10 +224,10 @@ final public class GameManager {
 				}
 			}
 			
-			// achievement to google
+			// achievement to system
 			getActionResolver().incrementAchievementGPGS(GPGS.ACH_POINTS_FARMER, PLAYER1.getPoints()/100);
 			
-			// submit highscore to google
+			// submit highscore to system
 			getActionResolver().submitScoreGPGS(GPGS.LEAD_MOST_POINTS, PLAYER1.getAllPoints());
 			
 			// save winner for next round 
