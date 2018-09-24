@@ -32,7 +32,7 @@ public class PlayerSimulator {
 	private boolean isDraging = false;
 	private int step = 0;
 	private int pulledSteps = 0;
-	private float timeActive = 0;
+//	private float timeActive = 0;
 	private Vector2 goodPullVector = null;
 
 	private PlayerSimulator() {
@@ -45,7 +45,6 @@ public class PlayerSimulator {
 		isDraging = false;
 		step = 0;
 		pulledSteps = 0;
-		timeActive = 0;
 	}
 
 	public void playOneRound() {
@@ -53,12 +52,11 @@ public class PlayerSimulator {
 			System.out.println("Simulating one round ..."); 
 		isDraging = true;
 		step = 0;
-		timeActive = 0;
 		pulledSteps = 0;
 		goodPullVector = null;
 	}
 
-	public void act(float delta) {
+	public void act() {
 		GameManager gm = GameManager.getInstance();
 		
 		// don't do anything if not dragging (dragging is only triggered by playOneRound())
@@ -66,7 +64,6 @@ public class PlayerSimulator {
 			return;
 
 		// TODO deactivate input on GUI and stage while dragging
-		timeActive += delta;
 		
 		final float pullingSteps = 25; // should be int
 

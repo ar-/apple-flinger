@@ -1,34 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--
-  Copyright (C) 2015-2017 Andreas Redmer <andreasredmer@mailchuck.com>
-  
-  This program is free software: you can redistribute it and/or modify
-  it under the terms of the GNU General Public License as published by
-  the Free Software Foundation, either version 3 of the License, or
-  (at your option) any later version.
-  
-  This program is distributed in the hope that it will be useful,
-  but WITHOUT ANY WARRANTY; without even the implied warranty of
-  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-  GNU General Public License for more details.
-  
-  You should have received a copy of the GNU General Public License
-  along with this program.  If not, see <http://www.gnu.org/licenses/>.
--->
 <lint>
-	<!-- Disable the given check in this project -->
+    <issue id="EasterEgg" severity="error" />
+    <issue id="HardcodedText" severity="error" />
     <issue id="IconMissingDensityFolder" severity="error" />
-    <!-- Ignore the ObsoleteLayoutParam issue in the specified files -->
     <issue id="ObsoleteLayoutParam">
         <ignore path="res/layout/activation.xml" />
         <ignore path="res/layout-xlarge/activation.xml" />
     </issue>
-    <!-- Ignore the UselessLeaf issue in the specified file -->
+    <issue id="OldTargetApi">
+        <ignore path="AndroidManifest.xml" />
+    </issue>
     <issue id="UselessLeaf">
         <ignore path="res/layout/main.xml" />
     </issue>
-    <!-- Change the severity of hardcoded strings to "error" -->
-    <issue id="HardcodedText" severity="error" />
-    <issue id="EasterEgg" severity="error" />
-    
 </lint>

@@ -38,6 +38,7 @@ public class MissionM_1_9 implements StageFiller{
 	 * @param y
 	 * @return
 	 */
+	@SuppressWarnings("static-method")
 	protected float createInverseU(GameWorld world, Group group, float x, float y)
 	{
 		final float r= 90f * MathUtils.degreesToRadians;

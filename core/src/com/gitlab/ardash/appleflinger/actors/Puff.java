@@ -26,7 +26,7 @@ import com.gitlab.ardash.appleflinger.global.Assets;
 
 public class Puff extends Image {
 	
-	private ArrayList<SpriteDrawable> sprites = new ArrayList<SpriteDrawable>(10);
+	private ArrayList<SpriteDrawable> sprites = new ArrayList<>(10);
 	private int step =0;
 	private long lastStepTime=0;
 	

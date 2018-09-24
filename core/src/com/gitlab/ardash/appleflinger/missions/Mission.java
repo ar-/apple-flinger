@@ -129,7 +129,6 @@ import com.gitlab.ardash.appleflinger.GameWorld;
 	    	return next;
 	    }
 	    
-	    @SuppressWarnings("static-method")
 		public static EnumSet<Mission> getDummies()
 	    {
 	    	return EnumSet.of(Empty, NONE, END_OF_EPISODE_1, END_OF_EPISODE_2);
@@ -137,7 +136,7 @@ import com.gitlab.ardash.appleflinger.GameWorld;
 	    
 	    public static Set<Integer> getAvailableEpisodes()
 	    {
-	    	Set<Integer> ret = new HashSet<Integer>(2);
+	    	Set<Integer> ret = new HashSet<>(2);
 	    	for (Mission m : Mission.values())
 	    	{
 	    		if (m.getMajor()>0)
