@@ -14,39 +14,27 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  ******************************************************************************/
-package com.gitlab.ardash.appleflinger;
+package com.gitlab.ardash.appleflinger.screens;
 
-import java.io.UnsupportedEncodingException;
-import java.net.URLEncoder;
-
+import com.badlogic.gdx.scenes.scene2d.ui.Label.LabelStyle;
+import com.gitlab.ardash.appleflinger.global.Assets;
+import com.gitlab.ardash.appleflinger.helpers.Achievement;
 import com.gitlab.ardash.appleflinger.i18n.I18N;
 
-public interface ActionResolver {
-	
-	public static final String recommendationText = I18N.getString("twitterRecommendationtext"); 
-	public static final String marketUrl = "https://f-droid.org/packages/com.gitlab.ardash.appleflinger.android/"; 
-	
-	public static class ARH
+public class AchievementDescriptionDialog extends AdvancedDialog{
+	public AchievementDescriptionDialog(Achievement a) 
 	{
+        final LabelStyle lblstyle = Assets.LabelStyleAsset.MINILABEL.style;
+		text(I18N.getString(a.getNameId()), lblstyle); 
 		
-		public static String urlEncode(String s) {
-		    try {
-		        return URLEncoder.encode(s, "UTF-8"); 
-		    }
-		    catch (UnsupportedEncodingException e) {
-		        //Log.wtf(TAG, "UTF-8 should always be supported", e);
-		        //throw new RuntimeException("URLEncoder.encode() failed for " + s);
-		    }
-		
-		return ""; 
-		}
+		getContentTable().row().minHeight(40).top();
+		text("", lblstyle); 
+		getContentTable().row();
+		text(I18N.getString(a.getDescriptionId()), lblstyle); 
+		getContentTable().row();
+        
+		LabelSpriteButton btnYes = new LabelSpriteButton(EMPTY_TEX, I18N.getString("okay"));
+        button(btnYes);
 	}
 	
-	public void restartMySelf();
-	
-	public boolean twPostRecommendation();
-	public boolean fbPostRecommendation();
-	public boolean gpPostRecommendation();
-	public boolean piPostRecommendation();
-
 }

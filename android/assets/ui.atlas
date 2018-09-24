@@ -6,224 +6,238 @@ filter: Nearest,Nearest
 repeat: none
 btn_1player
   rotate: false
-  xy: 585, 714
+  xy: 585, 712
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 btn_2players
   rotate: false
-  xy: 2, 112
+  xy: 406, 514
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 btn_abort
   rotate: false
-  xy: 204, 314
+  xy: 204, 110
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 btn_achi
   rotate: false
-  xy: 2, 416
+  xy: 2, 414
   size: 200, 200
   orig: 200, 200
   offset: 0, 0
   index: -1
 btn_back
   rotate: false
-  xy: 406, 516
+  xy: 687, 712
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 btn_blank
   rotate: false
-  xy: 687, 714
+  xy: 406, 412
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 btn_close
   rotate: false
-  xy: 2, 10
+  xy: 789, 712
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 btn_fb
   rotate: false
-  xy: 789, 714
+  xy: 406, 310
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 btn_fl_empty
   rotate: false
-  xy: 585, 816
+  xy: 585, 814
   size: 200, 200
   orig: 200, 200
   offset: 0, 0
   index: -1
 btn_gp
   rotate: false
-  xy: 104, 112
+  xy: 204, 8
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 btn_info
   rotate: false
-  xy: 104, 10
+  xy: 306, 110
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 btn_joypad
   rotate: false
-  xy: 2, 214
+  xy: 2, 212
   size: 200, 200
   orig: 200, 200
   offset: 0, 0
   index: -1
 btn_leader
   rotate: false
-  xy: 204, 416
+  xy: 204, 414
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
+btn_locked
+  rotate: false
+  xy: 787, 814
   size: 200, 200
   orig: 200, 200
   offset: 0, 0
   index: -1
 btn_logout
   rotate: false
-  xy: 306, 314
+  xy: 306, 8
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 btn_pause
   rotate: false
-  xy: 891, 714
+  xy: 891, 712
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 btn_pi
   rotate: false
-  xy: 585, 612
+  xy: 585, 610
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 btn_play
   rotate: false
-  xy: 687, 612
+  xy: 687, 610
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 btn_refresh
   rotate: false
-  xy: 789, 612
+  xy: 789, 610
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 btn_settings
   rotate: false
-  xy: 891, 612
+  xy: 891, 610
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 btn_sound_off
   rotate: false
-  xy: 206, 143
+  xy: 408, 139
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 btn_sound_on
   rotate: false
-  xy: 206, 41
+  xy: 408, 37
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 btn_sq_empty
   rotate: false
-  xy: 787, 816
+  xy: 2, 10
   size: 200, 200
   orig: 200, 200
   offset: 0, 0
   index: -1
 btn_tw
   rotate: false
-  xy: 308, 143
+  xy: 508, 508
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
+btn_unlocked
+  rotate: false
+  xy: 204, 212
+  size: 200, 200
+  orig: 200, 200
+  offset: 0, 0
+  index: -1
 btn_world
   rotate: false
-  xy: 308, 41
+  xy: 508, 406
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 dialog
   rotate: false
-  xy: 2, 618
+  xy: 2, 616
   size: 581, 398
   orig: 581, 398
   offset: 0, 0
   index: -1
 flag_de
   rotate: false
-  xy: 408, 252
+  xy: 508, 275
   size: 100, 60
   orig: 100, 60
   offset: 0, 0
   index: -1
 flag_en
   rotate: false
-  xy: 410, 200
+  xy: 610, 420
   size: 100, 50
   orig: 100, 50
   offset: 0, 0
   index: -1
 flag_eo
   rotate: false
-  xy: 204, 245
+  xy: 406, 241
   size: 100, 67
   orig: 100, 67
   offset: 0, 0
   index: -1
 flag_es
   rotate: false
-  xy: 306, 245
+  xy: 610, 541
   size: 100, 67
   orig: 100, 67
   offset: 0, 0
   index: -1
 flag_fr
   rotate: false
-  xy: 406, 447
+  xy: 508, 337
   size: 100, 67
   orig: 100, 67
   offset: 0, 0
   index: -1
 flag_pl
   rotate: false
-  xy: 408, 314
+  xy: 712, 546
   size: 100, 62
   orig: 100, 62
   offset: 0, 0
   index: -1
 flag_ru
   rotate: false
-  xy: 408, 378
+  xy: 610, 472
   size: 100, 67
   orig: 100, 67
   offset: 0, 0

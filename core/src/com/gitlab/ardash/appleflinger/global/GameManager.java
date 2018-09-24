@@ -25,7 +25,7 @@ import com.gitlab.ardash.appleflinger.ActionResolver;
 import com.gitlab.ardash.appleflinger.AppleflingerGame;
 import com.gitlab.ardash.appleflinger.actors.GeneralTargetActor;
 import com.gitlab.ardash.appleflinger.global.PlayerStatus.PlayerSide;
-import com.gitlab.ardash.appleflinger.helpers.GPGS;
+import com.gitlab.ardash.appleflinger.helpers.Achievement;
 import com.gitlab.ardash.appleflinger.helpers.Pref;
 import com.gitlab.ardash.appleflinger.listeners.OnGameOverListener;
 import com.gitlab.ardash.appleflinger.missions.Mission;
@@ -37,14 +37,14 @@ import com.gitlab.ardash.appleflinger.screens.GameScreen;
  */
 final public class GameManager {
 	
-	public static final boolean DEBUG = false;
-//	public static final boolean DEBUG = true;
+//	public static final boolean DEBUG = false;
+	public static final boolean DEBUG = true;
 	public static final boolean DEBUGZOOM = false;
 //	public static final boolean DEBUGZOOM = true;
 	public static final boolean SANDBOX = false;
 //	public static final boolean SANDBOX = true;
-	public static final boolean ALLLEVELS = false;
-//	public static final boolean ALLLEVELS = true;
+//	public static final boolean ALLLEVELS = false;
+	public static final boolean ALLLEVELS = true;
 	public static final boolean RECORDSHOTS = false;
 //	public static final boolean RECORDSHOTS = true;
 	private static Vector2 lastPullVector = new Vector2();
@@ -139,22 +139,22 @@ final public class GameManager {
 		
 		if (PLAYER1.getPointsThisShot()>=10000)
 		{
-			getActionResolver().unlockAchievementGPGS(GPGS.ACH_WREAK_HAVOC);
+			Pref.unlockAchievement(Achievement.ACH_WREAK_HAVOC);
 		}
 		
 		if (PLAYER1.getEnemiesKilledThisShot()==3)
 		{
-			getActionResolver().unlockAchievementGPGS(GPGS.ACH_TRIPPLE_POP);
+			Pref.unlockAchievement(Achievement.ACH_TRIPLE_POP);
 		}
 		
 		if (PLAYER1.getEnemiesKilledThisShot()==4)
 		{
-			getActionResolver().unlockAchievementGPGS(GPGS.ACH_FOURFOLD_POP);
+			Pref.unlockAchievement(Achievement.ACH_FOURFOLD_POP);
 		}
 		
 		if (PLAYER1.getEnemiesKilledThisShot()>=5)
 		{
-			getActionResolver().unlockAchievementGPGS(GPGS.ACH_FIVEFOLD_POP);
+			Pref.unlockAchievement(Achievement.ACH_FIVEFOLD_POP);
 		}
 		
 		// TODO shot based rest function for gamemanager needed ?
@@ -215,20 +215,20 @@ final public class GameManager {
 			{
 				if (wonRoundsInARow==3)
 				{
-					getActionResolver().unlockAchievementGPGS(GPGS.ACH_BEGINNER_STREAK);
+					Pref.unlockAchievement(Achievement.ACH_BEGINNER_STREAK);
 				}
 				
-				if (shotsFiredThisRound<=2 && currentMission == Mission.M_1_9)
+				if (shotsFiredThisRound<=1)
 				{
-					getActionResolver().unlockAchievementGPGS(GPGS.ACH_BEGINNERS_LUCK);
+					Pref.unlockAchievement(Achievement.ACH_BEGINNERS_LUCK);
 				}
 			}
 			
 			// achievement to system
-			getActionResolver().incrementAchievementGPGS(GPGS.ACH_POINTS_FARMER, PLAYER1.getPoints()/100);
+			Pref.incrementAchievement(Achievement.ACH_POINTS_FARMER, PLAYER1.getPoints(),1000000);
 			
 			// submit highscore to system
-			getActionResolver().submitScoreGPGS(GPGS.LEAD_MOST_POINTS, PLAYER1.getAllPoints());
+			//getActionResolver().submitScore(GPGS.LEAD_MOST_POINTS, PLAYER1.getAllPoints());
 			
 			// save winner for next round 
 			previousRoundWinner = winner;
@@ -334,7 +334,7 @@ final public class GameManager {
 		if (DEBUG)
 			System.out.println("changing game state: " + newState); 
 	}
-
+	
 	public void registerGameObject(AppleflingerGame appleflingerGame) {
 		this.game = appleflingerGame;
 	}

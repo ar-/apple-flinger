@@ -288,6 +288,8 @@ public class Assets {
 		BTN_ACHI,
 		BTN_SQ_EMPTY,
 		BTN_FL_EMPTY,
+		BTN_UNLOCKED,
+		BTN_LOCKED,
 		BTN_TW,
 		BTN_FB,
 		BTN_GP,
