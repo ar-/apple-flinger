@@ -26,13 +26,22 @@ reps=0
 for I in $todo
 do
   echo "next language is $I"
+  tmpfile=`tempfile -s .png`
   ls metadata/$I/images/phoneScreenshots/M_1_5.png
   #example: convert metadata/en-AU/images/phoneScreenshots/M_1_5.png -crop 1024x500+128+220\!  metadata/en-AU/images/featureGraphic.png
   # crop (vertical offset works for both font types)
-  convert metadata/$I/images/phoneScreenshots/M_1_5.png -crop 1024x500+128+195\!  metadata/$I/images/featureGraphic.png
+  convert metadata/$I/images/phoneScreenshots/M_1_5.png -crop 1024x500+128+195\! $tmpfile
   # convert transparant slingerband to dark brown
-  convert metadata/$I/images/featureGraphic.png -background "#552200" -alpha remove metadata/$I/images/featureGraphic.png
+  convert $tmpfile -background "#552200" -alpha remove $tmpfile
 
+  convert metadata/$I/images/phoneScreenshots/M_1_5.png /tmp/a.rgba
+  convert $tmpfile /tmp/b.rgba
+  diff /tmp/{a,b}.rgba
+  #cmp /tmp/{a,b}.rgba
+  #compare -verbose -metric PSNR tux_orig.png tux_modified.png tux_difference.png
+#exit
+  #cp $tmpfile metadata/$I/images/featureGraphic.png
+  rm -f $tmpfile /tmp/{a,b}.rgba
 done
 
 
