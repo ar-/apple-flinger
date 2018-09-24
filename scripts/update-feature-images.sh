@@ -34,14 +34,21 @@ do
   # convert transparant slingerband to dark brown
   convert $tmpfile -background "#552200" -alpha remove $tmpfile
 
-  convert metadata/$I/images/phoneScreenshots/M_1_5.png /tmp/a.rgba
-  convert $tmpfile /tmp/b.rgba
-  diff /tmp/{a,b}.rgba
-  #cmp /tmp/{a,b}.rgba
-  #compare -verbose -metric PSNR tux_orig.png tux_modified.png tux_difference.png
-#exit
-  #cp $tmpfile metadata/$I/images/featureGraphic.png
-  rm -f $tmpfile /tmp/{a,b}.rgba
+  compare -verbose -metric PSNR metadata/$I/images/featureGraphic.png $tmpfile /tmp/c.png
+
+  di=$?
+  
+  if [ $di == "0" ]
+  then
+    echo "no feature graphic updates found"
+  else
+    echo "new feature graphic updates found. updating file. commit again"
+    cp $tmpfile metadata/$I/images/featureGraphic.png
+    #exit 1
+  fi
+
+
+  rm -f $tmpfile
 done
 
 
