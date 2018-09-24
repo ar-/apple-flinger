@@ -24,7 +24,7 @@ commits=`git rev-list --all --count`
 reposize=`git count-objects -vH | grep "size:" | sed "s/size: //g"`
 apksize=`du -hs android/build/outputs/apk/android-release-unsigned.apk | sed "s/\t/ /g" | egrep -o ".* "`
 mergedrequests=`wget -O- "https://gitlab.com/ar-/apple-flinger/merge_requests?scope=all&utf8=%E2%9C%93&state=merged" 2>/dev/null | grep Merged | egrep -o "badge badge-pill.*" | egrep -o "[0-9]*" | head -n1`
-echo "{contributors:'$contributors',translations:'$translations',commits:'$commits',reposize:'$reposize',apksize:'$apksize',mergedrequests:'$mergedrequests'}" > /tmp/status.json
+echo "{'contributors':'$contributors','translations':'$translations','commits':'$commits','reposize':'$reposize','apksize':'$apksize','mergedrequests':'$mergedrequests'}" > /tmp/status.json
 
 diff /tmp/status.json status.json
 di=$?
