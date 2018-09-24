@@ -64,8 +64,8 @@ public class MainMenuScreen extends GenericScreen {
 		
 		final SpriteButton btnStartP2 = new SpriteButton(Assets.SpriteAsset.BTN_2PLAYERS.get());
 
-		final Label newGameLable = new Label(I18N.getString("startNewGame"), menustyle); 
-		newGameLable.addListener(new InputListener(){
+		final Label newGameLabel = new Label(I18N.getString("startNewGame"), menustyle); 
+		newGameLabel.addListener(new InputListener(){
 			@Override
 			public boolean touchDown(InputEvent event, float x, float y, int pointer, int button) {
 				btnStartP1.mark(true);
@@ -83,7 +83,7 @@ public class MainMenuScreen extends GenericScreen {
 		Table maintable = new Table();
 		maintable.setFillParent(true);
 		maintable.add(btnStartP1).width(SCREEN_WIDTH/4);
-		maintable.add(newGameLable).width(newGameLable.getWidth()).colspan(2).center();
+		maintable.add(newGameLabel).width(newGameLabel.getWidth()).colspan(2).center();
 		maintable.add(btnStartP2).width(SCREEN_WIDTH/4);
 		maintable.row();
 		maintable.add(new Label(I18N.getString("alone"), menustyle)); 
