@@ -96,7 +96,7 @@ public class AdvancedStage extends Stage {
 			addAllActorsToSet(allActors, getRoot());
 			
 			//always return a copy of the set, the internal one is only used for the recursive alls
-			return new LinkedHashSet<Actor>(allActors);
+			return new LinkedHashSet<>(allActors);
 		}
 	}
 	

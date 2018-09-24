@@ -225,7 +225,7 @@ public class GameWorld implements Disposable{
     }  
       
     public void update(float delta) {  
-      Array<Fixture> fixtures = new Array<Fixture>(0);
+      Array<Fixture> fixtures = new Array<>(0);
 		// remove destroyed actors, before simulation step starts
     	box2dWorld.getFixtures(fixtures);
     	for (Fixture f : fixtures)
@@ -266,7 +266,7 @@ public class GameWorld implements Disposable{
         //System.out.println(delta);
         
         // if player 2 is a CPU it will act now
-        PlayerSimulator.INSTANCE.act(delta);
+        PlayerSimulator.INSTANCE.act();
         
         Bird.pingBirdSpawn(birdGroup);
     }

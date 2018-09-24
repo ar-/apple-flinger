@@ -47,7 +47,7 @@ public class Pref {
 	 * System language is "".
 	 */
 	private static String lingo = null;
-	private static HashMap<Mission,Boolean> activatedLevels = new HashMap<Mission, Boolean>();
+	private static HashMap<Mission,Boolean> activatedLevels = new HashMap<>();
 
 	
 	public static boolean getSoundOn() {

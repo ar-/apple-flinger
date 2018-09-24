@@ -70,7 +70,7 @@ public class HCStrategy implements Strategy {
 	
 	private List<Shot> getShotsForTarget(Vector2 t)
 	{
-		List<Shot> ret = new ArrayList<Shot>();
+		List<Shot> ret = new ArrayList<>();
 		final float targetSize = 0.9f;
 		List<Shot> possibleShots = getShotsOfCurrentMission();
 
@@ -114,7 +114,7 @@ public class HCStrategy implements Strategy {
 
 	private List<Shot> getShotsOfMission(Mission mission)
 	{
-		List<Shot> ret = new ArrayList<Shot>();
+		List<Shot> ret = new ArrayList<>();
 		for (Shot sh : allShots) {
 			if (sh.mission.equals(mission))
 			{
@@ -141,7 +141,7 @@ public class HCStrategy implements Strategy {
 
 	private static List<Vector2> getCurrentTargets()
 	{
-		List<Vector2> ret = new ArrayList<Vector2>();
+		List<Vector2> ret = new ArrayList<>();
 		GameManager gm = GameManager.getInstance();
 		final AdvancedStage stage = gm.currentGameScreen.getRenderer().world.stage;
 		Set<Actor> allActors = stage.getAllActors();

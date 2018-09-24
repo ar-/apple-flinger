@@ -28,8 +28,8 @@ import com.badlogic.gdx.math.MathUtils;
 
 public class RandomSet<E> extends AbstractSet<E> {
 
-    List<E> dta = new ArrayList<E>();
-    Map<E, Integer> idx = new HashMap<E, Integer>();
+    List<E> dta = new ArrayList<>();
+    Map<E, Integer> idx = new HashMap<>();
 
     public RandomSet() {
     }
