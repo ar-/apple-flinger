@@ -240,9 +240,9 @@ public class GameRenderer  implements Disposable
 					}
     			}
     			
-    			Array<Body> bodies = new Array<Body>();
+    			Array<Body> bodies = new Array<>();
 				world.box2dWorld.getBodies(bodies);
-				Array<Fixture> fixtures = new Array<Fixture>();
+				Array<Fixture> fixtures = new Array<>();
 				world.box2dWorld.getFixtures(fixtures);
 				// clears the ground too :(
 				for (Body body : bodies)

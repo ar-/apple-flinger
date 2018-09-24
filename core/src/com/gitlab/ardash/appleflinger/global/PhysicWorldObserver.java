@@ -42,8 +42,8 @@ public class PhysicWorldObserver {
 		super();
 		this.physicWorld = physicWorld;
 		this.state = State.NONE;
-		this.transforms = new LinkedHashSet<String>(200);
-		this.listeners = new ArrayList<OnPhysicStateChangeListener>(1);
+		this.transforms = new LinkedHashSet<>(200);
+		this.listeners = new ArrayList<>(1);
 	}
 	
 	/**
@@ -57,7 +57,7 @@ public class PhysicWorldObserver {
 		// TODO change this ot makes the onPhysicStarted listener obsolete until now
 		if (! (GameManager.getInstance().getGameState()==GameState.WAIT_FOR_PHYSICS) )
 			return;
-		final Array<Body> ba =new Array<Body>();
+		final Array<Body> ba =new Array<>();
 		physicWorld.getBodies(ba);
 		// first check change in size
 		if (ba.size != transforms.size())
@@ -120,7 +120,7 @@ public class PhysicWorldObserver {
 	private void capture()
 	{
 		transforms.clear();
-		final Array<Body> ba =new Array<Body>();
+		final Array<Body> ba =new Array<>();
 		physicWorld.getBodies(ba);
 		for (final Body b : ba)
 		{

@@ -64,7 +64,7 @@ public class Bird extends Image {
 		}
 	}
 	
-	private ArrayList<SpriteDrawable> sprites = new ArrayList<SpriteDrawable>(12);
+	private ArrayList<SpriteDrawable> sprites = new ArrayList<>(12);
 	private int step =0;
 	
 	public Bird() {

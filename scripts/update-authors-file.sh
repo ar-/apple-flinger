@@ -1,6 +1,6 @@
 #!/bin/bash
 #-------------------------------------------------------------------------------
-# Copyright (C) 2017 Andreas Redmer <andreasredmer@mailchuck.com>
+# Copyright (C) 2017,2018 Andreas Redmer <andreasredmer@mailchuck.com>
 # 
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -25,10 +25,17 @@ fi
 echo "collecting authors"
 echo -e "Authors\n=======\nWe'd like to thank the following people for their contributions:\n\n" > /tmp/AUTHORS.md
 git log --raw | grep "^Author: " | sort | uniq | cut -d ' ' -f2- | sed 's/^/- /' >> /tmp/AUTHORS.md
+
+# remove authors that don't want to be inlcuded or old email addresses 
+cat /tmp/AUTHORS.md | grep -v "andreasredmer@mailchuck.com" > /tmp/AUTHORS_tmp.md
+cp /tmp/AUTHORS_tmp.md /tmp/AUTHORS.md
+
+# now make the markdown look nice and put some spamprotection on the email addresses
 sed -i 's/\./∙/g' /tmp/AUTHORS.md
 sed -i 's/\@/⒜/g' /tmp/AUTHORS.md
 sed -i 's/</\\</g' /tmp/AUTHORS.md
 sed -i 's/>/\\>/g' /tmp/AUTHORS.md
+
 
 echo "diffing"
 diff /tmp/AUTHORS.md AUTHORS.md

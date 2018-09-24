@@ -44,6 +44,7 @@ Option 4: Build it from source
 	git clone https://gitlab.com/ar-/apple-flinger.git
 	cd apple-flinger
 	./gradlew assembleRelease
+	# note: your APK file is now here: ./android/build/outputs/apk/android-release-unsigned.apk
 
 Option 5: Get if from google play store: [click here](https://play.google.com/store/apps/details?id=com.ardash.appleflinger.android)
 
@@ -54,6 +55,13 @@ See the [AUTHORS](AUTHORS.md) file for a list of all contributors.
 All merge requests are welcome. Contributions can be made towards:
 Programming, Testing, Graphic Design, Web page, Sound engineering, Level design, Documentation, Consulting, ...
 
-Send an email to incoming+ar-/apple-flinger@gitlab.com if you need help with anything.
+Send an email to <incoming+ar-/apple-flinger@gitlab.com> if you need help with anything.
+
+## How to report an error? How to suggest a new feature?
+If you don't have a GitLab account (and don't want to create one), you can send an email to <incoming+ar-/apple-flinger@gitlab.com> or to <ar-appleflinger@abga.be>. This will automatically create an issue here in the Gitlab system.
+
+If you have a GitLab account: you can [CLICK HERE](https://gitlab.com/ar-/apple-flinger/issues/new) to raise a new issue. 
+
+The issue tracking is used for both: bugs and feature requests.
 
 
