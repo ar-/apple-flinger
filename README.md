@@ -44,6 +44,7 @@ Option 4: Build it from source
 	git clone https://gitlab.com/ar-/apple-flinger.git
 	cd apple-flinger
 	./gradlew assembleRelease
+	# note: your APK file is now here: ./android/build/outputs/apk/android-release-unsigned.apk
 
 Option 5: Get if from google play store: [click here](https://play.google.com/store/apps/details?id=com.ardash.appleflinger.android)
 
