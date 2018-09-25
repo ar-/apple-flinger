@@ -30,6 +30,7 @@ public class LanguageDialog extends AdvancedDialog{
 	public LanguageDialog() {
         final LabelStyle lblstyle = Assets.LabelStyleAsset.MINILABEL.style;
 		text(I18N.getString("select_language"), lblstyle); 
+		getContentTable().getCells().get(0).colspan(3);
 		
 		getContentTable().row().minHeight(240).top();
 
