@@ -1,5 +1,5 @@
 /*******************************************************************************
- * Copyright (C) 2015-2017 Andreas Redmer <andreasredmer@mailchuck.com>
+ * Copyright (C) 2015-2018 Andreas Redmer <andreasredmer@mailchuck.com>
  * Copyright (C) 2017 Сухичев Михаил Иванович <sukhichev@yandex.ru>
  * 
  * This program is free software: you can redistribute it and/or modify
@@ -208,6 +208,7 @@ public class Assets {
 	 */
 	public enum SoundAsset {
 		NOTIFICATION,
+		BELL,
 		
 		EXPLOSION_0,EXPLOSION_1,
 		
@@ -288,6 +289,8 @@ public class Assets {
 		BTN_ACHI,
 		BTN_SQ_EMPTY,
 		BTN_FL_EMPTY,
+		BTN_UNLOCKED,
+		BTN_LOCKED,
 		BTN_TW,
 		BTN_FB,
 		BTN_GP,

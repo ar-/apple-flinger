@@ -88,42 +88,6 @@ public class AndroidLauncher extends AndroidApplication implements ActionResolve
 		System.exit(0);
 	}
 
-
-	@Override
-	public void submitScoreGPGS(String LeaderBoardId, int score) {
-//		if (getSignedInGPGS())
-//			Games.Leaderboards.submitScore(gameHelper.getGamesClient(), LeaderBoardId, score);
-	}
-
-	@Override
-	public void unlockAchievementGPGS(String achievementId) {
-//		if (getSignedInGPGS())
-//			Games.Achievements.unlock(gameHelper.getGamesClient(), achievementId);
-	}
-
-	@Override
-	public void incrementAchievementGPGS(String achievementId, int numSteps) {
-//		if (numSteps<=0)
-//			return;
-//		if (getSignedInGPGS())
-//			Games.Achievements.increment(gameHelper.getGamesClient(), achievementId, numSteps);
-	}
-
-	@Override
-	public void getLeaderboardGPGS(String LeaderBoardId) {
-//		if (getSignedInGPGS())
-//			startActivityForResult(Games.Leaderboards.getLeaderboardIntent(gameHelper.getGamesClient(),
-//				LeaderBoardId), 100);
-	}
-
-	@Override
-	public void getAchievementsGPGS() {
-//		if (getSignedInGPGS())
-//			startActivityForResult(Games.Achievements.getAchievementsIntent(gameHelper.getGamesClient()),
-//				101);
-	}
-
-
 	private View createGameView(AndroidApplicationConfiguration cfg) {
 		gameView = initializeForView(new AppleflingerGame(this), cfg);
 		@SuppressWarnings("static-access")

@@ -1,5 +1,5 @@
 /*******************************************************************************
- * Copyright (C) 2017 Andreas Redmer <andreas.redmer@posteo.de>
+ * Copyright (C) 2017-2018 Andreas Redmer <andreas.redmer@posteo.de>
  * 
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -35,6 +35,14 @@ public class Pref {
 	private static final String PREFS_NAME = "AppleFlingerPrefs"; 
 	private static final String PEPPER = "tp6UgD9JKAoWSww1Ogduts2UFlFn9CTqQJX8Zdw7VBZv0o51jKD9QTnuoxzA2Lcj"; 
 	private static final Preferences prefs = Gdx.app.getPreferences(PREFS_NAME);
+//	private static final HashMap h;
+//	public enum P{
+//		soundOn,
+//		musicVol,
+//		soundVol,
+//		player1name,
+//		player2name;
+//	}
 	
 	private static Boolean soundOn = null;
 	private static Float musicVol = null;
@@ -48,12 +56,12 @@ public class Pref {
 	 */
 	private static String lingo = null;
 	private static HashMap<Mission,Boolean> activatedLevels = new HashMap<>();
+	private static HashMap<Achievement,Integer> unlockedAchievements = new HashMap<>();
 
 	
 	public static boolean getSoundOn() {
 		if (soundOn == null)
 		{
-			//Preferences prefs = Gdx.app.getPreferences(PREFS_NAME);
 			soundOn = prefs.getBoolean("soundOn", true); 
 		}
 		return soundOn;
@@ -173,6 +181,46 @@ public class Pref {
 		final String key = Calculator.md5(PEPPER+"Activated"+mission.name()); 
 		prefs.putBoolean(key, activated);
 		prefs.flush();
+	}
+
+	public static boolean isAchievementUnlocked(Achievement achievement) {
+		Integer unl = getAchievementProgress(achievement);
+		return unl.equals(Integer.MAX_VALUE);
+	}
+
+	private static Integer getAchievementProgress(Achievement achievement) {
+		Integer progress = unlockedAchievements.get(achievement);
+		if (progress == null)
+		{
+			final String key = Calculator.md5(PEPPER+"Achieved"+achievement.name()); 
+			progress = prefs.getInteger(key, 0);
+			unlockedAchievements.put(achievement,progress);
+		}
+		return progress;
+	}
+
+	public static void unlockAchievement(Achievement achievement){
+		incrementAchievement(achievement, 1, 1);
+	}
+	
+	public static void incrementAchievement(Achievement achievement, int numSteps, int goal){
+		if (isAchievementUnlocked(achievement))
+			return; // is already unlocked
+
+		Integer progress = getAchievementProgress(achievement);
+		progress+=numSteps;
+		if (progress>=goal)
+		{
+			// this is the one and only place were an achievement can get unlocked (only one time)
+			progress = Integer.MAX_VALUE;
+			GameManager.getInstance().onUnlockAchievement(achievement);
+		}
+		unlockedAchievements.put(achievement,progress);
+		final String key = Calculator.md5(PEPPER+"Achieved"+achievement.name()); 
+		prefs.putInteger(key, progress);
+		prefs.flush();
+		
+		Gdx.app.log("Pref", "Achievement " + achievement + " set to " + progress);
 	}
 
 }

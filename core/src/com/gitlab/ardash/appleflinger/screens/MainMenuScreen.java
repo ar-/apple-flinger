@@ -1,5 +1,5 @@
 /*******************************************************************************
- * Copyright (C) 2015-2017 Andreas Redmer <andreasredmer@mailchuck.com>
+ * Copyright (C) 2015-2018 Andreas Redmer <andreasredmer@mailchuck.com>
  * 
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -64,6 +64,9 @@ public class MainMenuScreen extends GenericScreen {
 		
 		final SpriteButton btnStartP2 = new SpriteButton(Assets.SpriteAsset.BTN_2PLAYERS.get());
 
+		Assets.SpriteAsset.BTN_ACHI.get().setSize(150, 150);
+		final SpriteButton btnAchievements = new SpriteButton(Assets.SpriteAsset.BTN_ACHI.get());
+
 		final Label newGameLabel = new Label(I18N.getString("startNewGame"), menustyle); 
 		newGameLabel.addListener(new InputListener(){
 			@Override
@@ -90,8 +93,9 @@ public class MainMenuScreen extends GenericScreen {
 		maintable.add().colspan(2);
 		maintable.add(new Label(I18N.getString("twoPlayers"), menustyle)); 
 		maintable.row();
-		maintable.add().height(60);
+		maintable.add().height(30);
 		maintable.row();
+		maintable.add(btnAchievements).colspan(4); 
 		guiStage.addActor(maintable);
 		
 		btnStartP1.addListener(new ClickListener() {
@@ -111,6 +115,15 @@ public class MainMenuScreen extends GenericScreen {
 				gm.setScreen(new MissionSelectScreen());
 			}
 		});
+		
+		btnAchievements.addListener(new ClickListener() {
+			@Override
+			public void clicked(InputEvent event, float x, float y) {
+				super.clicked(event, x, y);
+				gm.setScreen(new AchievementsScreen());
+			}
+		});
+
 
 		SpriteButton btnSettings = new SpriteButton(Assets.SpriteAsset.BTN_SETTINGS.get());
         btnSettings.setHeight(btnSettings.getHeight()*2);

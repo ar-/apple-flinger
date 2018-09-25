@@ -1,5 +1,5 @@
 /*******************************************************************************
- * Copyright (C) 2015-2017 Andreas Redmer <andreasredmer@mailchuck.com>
+ * Copyright (C) 2015-2018 Andreas Redmer <andreasredmer@mailchuck.com>
  * Copyright (C) 2017 Сухичев Михаил Иванович <sukhichev@yandex.ru>
  * 
  * This program is free software: you can redistribute it and/or modify
@@ -30,6 +30,7 @@ public class LanguageDialog extends AdvancedDialog{
 	public LanguageDialog() {
         final LabelStyle lblstyle = Assets.LabelStyleAsset.MINILABEL.style;
 		text(I18N.getString("select_language"), lblstyle); 
+		getContentTable().getCells().get(0).colspan(3);
 		
 		getContentTable().row().minHeight(240).top();
 

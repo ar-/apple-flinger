@@ -1,5 +1,5 @@
 /*******************************************************************************
- * Copyright (C) 2015-2017 Andreas Redmer <andreasredmer@mailchuck.com>
+ * Copyright (C) 2015-2018 Andreas Redmer <andreasredmer@mailchuck.com>
  * 
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -18,7 +18,6 @@ package com.gitlab.ardash.appleflinger.desktop;
 
 import com.badlogic.gdx.backends.lwjgl.LwjglApplication;
 import com.badlogic.gdx.backends.lwjgl.LwjglApplicationConfiguration;
-import com.badlogic.gdx.tools.texturepacker.TexturePacker;
 import com.badlogic.gdx.tools.texturepacker.TexturePacker.Settings;
 import com.gitlab.ardash.appleflinger.ActionResolver;
 import com.gitlab.ardash.appleflinger.AppleflingerGame;
@@ -107,36 +106,6 @@ public class DesktopLauncher implements ActionResolver{
 		if (GameManager.DEBUG)
 			System.out.println("piPostRecommendation");
 		return true;
-	}
-
-	@Override
-	public void submitScoreGPGS(String LeaderBoardId, int score) {
-		if (GameManager.DEBUG)
-			System.out.println("submitScoreGPGS "+ LeaderBoardId + " : " + score);
-	}
-
-	@Override
-	public void unlockAchievementGPGS(String achievementId) {
-		if (GameManager.DEBUG)
-			System.out.println("unlockAchievement " + achievementId);
-	}
-
-	@Override
-	public void incrementAchievementGPGS(String achievementId, int NumSteps) {
-		if (GameManager.DEBUG)
-			System.out.println("incrementAchievement " + achievementId);
-	}
-	
-	@Override
-	public void getLeaderboardGPGS(String LeaderBoardId) {
-		if (GameManager.DEBUG)
-			System.out.println("getLeaderboardGPGS " + LeaderBoardId);
-	}
-
-	@Override
-	public void getAchievementsGPGS() {
-		if (GameManager.DEBUG)
-			System.out.println("getAchievementsGPGS");
 	}
 
 }

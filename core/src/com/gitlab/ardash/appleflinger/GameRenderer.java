@@ -1,5 +1,5 @@
 /*******************************************************************************
- * Copyright (C) 2015-2017 Andreas Redmer <andreasredmer@mailchuck.com>
+ * Copyright (C) 2015-2018 Andreas Redmer <andreasredmer@mailchuck.com>
  * 
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -42,6 +42,7 @@ import com.gitlab.ardash.appleflinger.actors.TntActor;
 import com.gitlab.ardash.appleflinger.global.GameManager;
 import com.gitlab.ardash.appleflinger.global.GameState;
 import com.gitlab.ardash.appleflinger.global.MaterialConfig;
+import com.gitlab.ardash.appleflinger.helpers.Achievement;
 
 public class GameRenderer  implements Disposable
 {      
@@ -265,6 +266,12 @@ public class GameRenderer  implements Disposable
 					}
     			}
 				System.out.println("-------------------------------------------"); 
+    		}
+    		
+    		// A shows an achievement popup
+    		if(Gdx.input.isKeyPressed(Keys.A)) 
+    		{
+				GameManager.getInstance().currentGameScreen.spawnAchievementPopup(Achievement.ACH_BEGINNER_STREAK);
     		}
     		
     		if(Gdx.input.isTouched() &&  Gdx.input.justTouched()) 

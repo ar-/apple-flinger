@@ -53,6 +53,7 @@ public class MissionSelectScreen extends GenericScreen {
         {
         	// btn for each episode
         	for (final Integer episode : Mission.getAvailableEpisodes()) {
+        		Assets.SpriteAsset.BTN_FL_EMPTY.get().setSize(200, 200);
     	        final LabelSpriteButton episodeBtn = new LabelSpriteButton(Assets.SpriteAsset.BTN_FL_EMPTY.get(),
     	        		getEpisodeName(episode));
     	        table.add(episodeBtn);

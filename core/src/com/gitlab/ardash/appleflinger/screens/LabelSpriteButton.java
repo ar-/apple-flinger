@@ -1,5 +1,5 @@
 /*******************************************************************************
- * Copyright (C) 2017 Andreas Redmer <andreasredmer@mailchuck.com>
+ * Copyright (C) 2017-2018 Andreas Redmer <andreasredmer@mailchuck.com>
  * 
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -68,5 +68,9 @@ public class LabelSpriteButton extends Stack {
     public Actor hit(float x, float y, boolean touchable) {
     	return btn.hit(x, y, touchable);
     }
+    
+    public Label getLabel() {
+		return label;
+	}
 
 }
