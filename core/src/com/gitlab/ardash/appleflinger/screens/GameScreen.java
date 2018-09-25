@@ -1,5 +1,5 @@
 /*******************************************************************************
- * Copyright (C) 2015-2017 Andreas Redmer <andreasredmer@mailchuck.com>
+ * Copyright (C) 2015-2018 Andreas Redmer <andreasredmer@mailchuck.com>
  * 
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -16,15 +16,23 @@
  ******************************************************************************/
 package com.gitlab.ardash.appleflinger.screens;
 
+import javax.swing.GroupLayout.Alignment;
+
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Screen;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.OrthographicCamera;
+import com.badlogic.gdx.graphics.g2d.Sprite;
+import com.badlogic.gdx.math.Interpolation;
+import com.badlogic.gdx.scenes.scene2d.Action;
+import com.badlogic.gdx.scenes.scene2d.Group;
 import com.badlogic.gdx.scenes.scene2d.InputEvent;
 import com.badlogic.gdx.scenes.scene2d.InputListener;
 import com.badlogic.gdx.scenes.scene2d.Stage;
 import com.badlogic.gdx.scenes.scene2d.Touchable;
+import com.badlogic.gdx.scenes.scene2d.actions.Actions;
+import com.badlogic.gdx.scenes.scene2d.ui.Image;
 import com.badlogic.gdx.scenes.scene2d.ui.Label;
 import com.badlogic.gdx.scenes.scene2d.ui.Label.LabelStyle;
 import com.badlogic.gdx.scenes.scene2d.ui.Table;
@@ -40,11 +48,13 @@ import com.gitlab.ardash.appleflinger.global.Assets.SoundAsset;
 import com.gitlab.ardash.appleflinger.global.GameManager;
 import com.gitlab.ardash.appleflinger.global.GameManager.OnCurrentPlayerChangeListener;
 import com.gitlab.ardash.appleflinger.global.GameState;
+import com.gitlab.ardash.appleflinger.helpers.Achievement;
 import com.gitlab.ardash.appleflinger.helpers.Pref;
 import com.gitlab.ardash.appleflinger.helpers.SoundPlayer;
 import com.gitlab.ardash.appleflinger.i18n.I18N;
 import com.gitlab.ardash.appleflinger.listeners.OnGameOverListener;
 import com.gitlab.ardash.appleflinger.listeners.OnPointsChangeListener;
+import com.gitlab.ardash.appleflinger.listeners.OnUnlockAchievementListener;
 import com.gitlab.ardash.appleflinger.missions.Mission;
 
 public class GameScreen implements Screen {  
@@ -326,6 +336,14 @@ public class GameScreen implements Screen {
         topLeftTable.add(miniStatsTable).width(SCREEN_WIDTH - 4*(10+btnPause.getWidth())).padLeft(0).center();
         guiStage.addActor(topLeftTable);
         
+        // register achievement unlocked listener to drop the popup in time
+        gm.setOnUlockAchievementListener(new OnUnlockAchievementListener() {
+			@Override
+			public void onUnlockAchievement(Achievement a) {
+				spawnAchievementPopup(a);
+			}
+		});
+        
         // TODO add more other GUI elements here  
 	}
       
@@ -386,8 +404,33 @@ public class GameScreen implements Screen {
 	private void freezeAnnouncementText() {
 		//labelMessage.setPosition(0, SCREEN_HEIGHT/2);
 		isAnnouncementFrozen = true;
-		
 	}
+
+	public void spawnAchievementPopup(Achievement a) {
+		final Sprite sprite = Assets.SpriteAsset.BTN_UNLOCKED.get();
+        final String luText = I18N.getString("unlocked");
+		final String labelText = I18N.getString(a.getNameId())+"\n"+luText;
+		final LabelSpriteButton achBtn = new LabelSpriteButton(sprite, labelText);
+		achBtn.setTouchable(Touchable.disabled);
+		Group grp = new Group();
+		Image img = new Image(sprite);
+		img.setSize(390, 390);
+		grp.addActor(img);
+		final Label label = achBtn.getLabel();
+		grp.addActor(label);
+		label.setAlignment(Align.center);
+		label.setSize(390, 390);
+		guiStage.addActor(grp);
+		grp.setPosition(GameScreen.SCREEN_WIDTH/2 - img.getWidth()/2, GameScreen.SCREEN_HEIGHT);
+		grp.setTouchable(Touchable.disabled);
+		
+		// bounce in and fade+bounce out
+		Action a1 = Actions.moveBy(0, -SCREEN_HEIGHT, 5, Interpolation.bounceOut);
+		Action a2 = Actions.parallel(Actions.fadeOut(5), Actions.moveBy(0, -390,5,Interpolation.elasticIn));
+		Action action = Actions.sequence(a1,Actions.delay(1),a2, Actions.removeActor(grp));
+		grp.addAction(action );
+		SoundPlayer.playSound(Assets.getSound(SoundAsset.BELL));
+	}  
 
 	public Stage getGuiStage() {
 		return guiStage;
@@ -423,5 +466,5 @@ public class GameScreen implements Screen {
 	public void dispose() {
 		// TODO Auto-generated method stub
 		
-	}  
+	}
 }  

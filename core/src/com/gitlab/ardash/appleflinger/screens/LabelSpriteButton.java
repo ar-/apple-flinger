@@ -68,5 +68,9 @@ public class LabelSpriteButton extends Stack {
     public Actor hit(float x, float y, boolean touchable) {
     	return btn.hit(x, y, touchable);
     }
+    
+    public Label getLabel() {
+		return label;
+	}
 
 }

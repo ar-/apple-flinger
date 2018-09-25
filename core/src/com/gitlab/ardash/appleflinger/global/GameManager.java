@@ -28,6 +28,7 @@ import com.gitlab.ardash.appleflinger.global.PlayerStatus.PlayerSide;
 import com.gitlab.ardash.appleflinger.helpers.Achievement;
 import com.gitlab.ardash.appleflinger.helpers.Pref;
 import com.gitlab.ardash.appleflinger.listeners.OnGameOverListener;
+import com.gitlab.ardash.appleflinger.listeners.OnUnlockAchievementListener;
 import com.gitlab.ardash.appleflinger.missions.Mission;
 import com.gitlab.ardash.appleflinger.screens.GameScreen;
 
@@ -37,8 +38,8 @@ import com.gitlab.ardash.appleflinger.screens.GameScreen;
  */
 final public class GameManager {
 	
-//	public static final boolean DEBUG = false;
-	public static final boolean DEBUG = true;
+	public static final boolean DEBUG = false;
+//	public static final boolean DEBUG = true;
 	public static final boolean DEBUGZOOM = false;
 //	public static final boolean DEBUGZOOM = true;
 	public static final boolean SANDBOX = false;
@@ -55,6 +56,7 @@ final public class GameManager {
 	private static GameManager instance;
 	private OnCurrentPlayerChangeListener onCurrentPlayerChangeListener;
 	private OnGameOverListener onGameOverListener;
+	private OnUnlockAchievementListener onUnlockAchievementListener;
 	private Mission currentMission = null;
 
 	private boolean isPlayer2CPU = true;
@@ -218,7 +220,7 @@ final public class GameManager {
 					Pref.unlockAchievement(Achievement.ACH_BEGINNER_STREAK);
 				}
 				
-				if (shotsFiredThisRound<=1)
+				if (shotsFiredThisRound<=2)
 				{
 					Pref.unlockAchievement(Achievement.ACH_BEGINNERS_LUCK);
 				}
@@ -262,6 +264,19 @@ final public class GameManager {
 		if (ta.getPlayerSide()!=currentPlayer.side)
 			currentPlayer.incEnemiesKilledThisShot();
 
+	}
+	
+	/**
+	 * The game manager get informed of this exactly once for each achievement.
+	 * It can be used to show a message to the user.
+	 * @param a The achievement that has just been unlocked.
+	 */
+	public void onUnlockAchievement(Achievement a)
+	{
+		if (onUnlockAchievementListener != null)
+		{
+			onUnlockAchievementListener.onUnlockAchievement(a);
+		}
 	}
 
 	/**
@@ -310,6 +325,10 @@ final public class GameManager {
 
 	public void setOnGameOverListener(OnGameOverListener onGameOverListener) {
 		this.onGameOverListener = onGameOverListener;
+	}
+
+	public void setOnUlockAchievementListener(OnUnlockAchievementListener onUnlockAchievementListener) {
+		this.onUnlockAchievementListener = onUnlockAchievementListener;
 	}
 
 	public GameState getGameState() {

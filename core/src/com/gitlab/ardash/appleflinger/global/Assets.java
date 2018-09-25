@@ -208,6 +208,7 @@ public class Assets {
 	 */
 	public enum SoundAsset {
 		NOTIFICATION,
+		BELL,
 		
 		EXPLOSION_0,EXPLOSION_1,
 		

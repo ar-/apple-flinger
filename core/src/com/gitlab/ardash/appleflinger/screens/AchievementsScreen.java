@@ -55,10 +55,10 @@ public class AchievementsScreen extends GenericScreen {
 			sprite.setSize(390, 390);
             final String luText = Pref.isAchievementUnlocked(a)?I18N.getString("unlocked"):I18N.getString("locked");
 			final String labelText = I18N.getString(a.getNameId())+"\n"+luText;
-			final LabelSpriteButton episodeBtn = new LabelSpriteButton(sprite, labelText);
+			final LabelSpriteButton achBtn = new LabelSpriteButton(sprite, labelText);
 //            episodeBtn.get
-    		table.add(episodeBtn);
-    		episodeBtn.addListener(new ClickListener() {
+    		table.add(achBtn);
+    		achBtn.addListener(new ClickListener() {
     			@Override
     			public void clicked(InputEvent event, float x, float y) {
     				super.clicked(event, x, y);

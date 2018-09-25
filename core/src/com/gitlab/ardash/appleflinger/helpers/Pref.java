@@ -1,5 +1,5 @@
 /*******************************************************************************
- * Copyright (C) 2017 Andreas Redmer <andreas.redmer@posteo.de>
+ * Copyright (C) 2017-2018 Andreas Redmer <andreas.redmer@posteo.de>
  * 
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -210,7 +210,11 @@ public class Pref {
 		Integer progress = getAchievementProgress(achievement);
 		progress+=numSteps;
 		if (progress>=goal)
+		{
+			// this is the one and only place were an achievement can get unlocked (only one time)
 			progress = Integer.MAX_VALUE;
+			GameManager.getInstance().onUnlockAchievement(achievement);
+		}
 		unlockedAchievements.put(achievement,progress);
 		final String key = Calculator.md5(PEPPER+"Achieved"+achievement.name()); 
 		prefs.putInteger(key, progress);

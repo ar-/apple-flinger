@@ -31,6 +31,7 @@ import com.badlogic.gdx.physics.box2d.Fixture;
 import com.badlogic.gdx.scenes.scene2d.Actor;
 import com.badlogic.gdx.scenes.scene2d.InputEvent;
 import com.badlogic.gdx.scenes.scene2d.InputListener;
+import com.badlogic.gdx.scenes.scene2d.Stage;
 import com.badlogic.gdx.utils.Array;
 import com.badlogic.gdx.utils.Disposable;
 import com.gitlab.ardash.appleflinger.actors.BlockActor;
@@ -42,6 +43,8 @@ import com.gitlab.ardash.appleflinger.actors.TntActor;
 import com.gitlab.ardash.appleflinger.global.GameManager;
 import com.gitlab.ardash.appleflinger.global.GameState;
 import com.gitlab.ardash.appleflinger.global.MaterialConfig;
+import com.gitlab.ardash.appleflinger.helpers.Achievement;
+import com.gitlab.ardash.appleflinger.screens.GameScreen;
 
 public class GameRenderer  implements Disposable
 {      
@@ -265,6 +268,12 @@ public class GameRenderer  implements Disposable
 					}
     			}
 				System.out.println("-------------------------------------------"); 
+    		}
+    		
+    		// A show an achievement popup
+    		if(Gdx.input.isKeyPressed(Keys.A)) 
+    		{
+				GameManager.getInstance().currentGameScreen.spawnAchievementPopup(Achievement.ACH_BEGINNER_STREAK);
     		}
     		
     		if(Gdx.input.isTouched() &&  Gdx.input.justTouched()) 
