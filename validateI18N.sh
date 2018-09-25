@@ -1,5 +1,5 @@
 #-------------------------------------------------------------------------------
-# Copyright (C) 2017 Andreas Redmer <andreasredmer@mailchuck.com>
+# Copyright (C) 2017-2018 Andreas Redmer <andreasredmer@mailchuck.com>
 # 
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -15,10 +15,20 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #-------------------------------------------------------------------------------
 error_file=/tmp/i18nerrors.log
+achi_file=/tmp/tmp_achi_file.txt
 rm -f $error_file
 touch $error_file
 in_source=`egrep -a -r "I18N.getString|I18N.s" core/ | egrep -a -o "I18N.getString.*)|I18N.s.*)" | sed "s/I18N/\nI18N/g" | egrep -a -o "I18N.getString.*\")|I18N.s.*\")" | egrep -a -o '".*"' | sort -u | egrep -o "[a-zA-Z0-9_]*"`
+achi=`cat core/src/com/gitlab/ardash/appleflinger/helpers/Achievement.java | grep ACH_ | tr '[:upper:]' '[:lower:]' | egrep -o "[a-z_]*"`
 prop_files=`ls android/assets/af*properties`
+
+all_achis=''
+for a in $achi
+do
+	all_achis=`echo $all_achis name_$a desc_$a`
+done
+echo $all_achis > $achi_file
+in_source=`echo $in_source $all_achis`
 
 # check string in java code that do not come up in prop files
 echo these are i18n strings in the source code
@@ -26,7 +36,7 @@ echo $in_source
 echo 
 echo checking all of them
 echo 
-
+#exit
 for ins in $in_source
 do
 	echo checking: $ins
@@ -52,8 +62,10 @@ do
 	do
 		echo searching for uses of: $fin
 		NUM=`egrep -a -r "I18N.getString\(\"$fin\"\)|I18N.s\(\"$fin\"\)" core/ | wc -l`
-		echo occurences of $fin: $NUM 
-		[[ $NUM -ge "1" ]] || echo ERROR $fin in $pro does not occur in any java code | tee -a $error_file
+		NUM2=`echo $all_achis | egrep -a $fin | wc -l`
+		echo occurences of $fin in java code: $NUM 
+		echo occurences of $fin in java enums: $NUM2 
+		[[ $NUM -ge "1" ]] || [[ $NUM2 -ge "1" ]] || echo ERROR $fin in $pro does not occur in any java code | tee -a $error_file
 	done
 
 #	[[ $NUM -eq $number_of_ins ]] || echo ERROR $pro contains $NUM lines, but in java code there are $number_of_ins references | tee -a $error_file
