@@ -1,5 +1,5 @@
 /*******************************************************************************
- * Copyright (C) 2015-2017 Andreas Redmer <andreasredmer@mailchuck.com>
+ * Copyright (C) 2015-2018 Andreas Redmer <andreasredmer@mailchuck.com>
  * 
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -31,7 +31,6 @@ import com.badlogic.gdx.physics.box2d.Fixture;
 import com.badlogic.gdx.scenes.scene2d.Actor;
 import com.badlogic.gdx.scenes.scene2d.InputEvent;
 import com.badlogic.gdx.scenes.scene2d.InputListener;
-import com.badlogic.gdx.scenes.scene2d.Stage;
 import com.badlogic.gdx.utils.Array;
 import com.badlogic.gdx.utils.Disposable;
 import com.gitlab.ardash.appleflinger.actors.BlockActor;
@@ -44,7 +43,6 @@ import com.gitlab.ardash.appleflinger.global.GameManager;
 import com.gitlab.ardash.appleflinger.global.GameState;
 import com.gitlab.ardash.appleflinger.global.MaterialConfig;
 import com.gitlab.ardash.appleflinger.helpers.Achievement;
-import com.gitlab.ardash.appleflinger.screens.GameScreen;
 
 public class GameRenderer  implements Disposable
 {      
@@ -270,7 +268,7 @@ public class GameRenderer  implements Disposable
 				System.out.println("-------------------------------------------"); 
     		}
     		
-    		// A show an achievement popup
+    		// A shows an achievement popup
     		if(Gdx.input.isKeyPressed(Keys.A)) 
     		{
 				GameManager.getInstance().currentGameScreen.spawnAchievementPopup(Achievement.ACH_BEGINNER_STREAK);

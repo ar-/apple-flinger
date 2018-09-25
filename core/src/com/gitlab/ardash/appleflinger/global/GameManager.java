@@ -1,5 +1,5 @@
 /*******************************************************************************
- * Copyright (C) 2015-2017 Andreas Redmer <andreasredmer@mailchuck.com>
+ * Copyright (C) 2015-2018 Andreas Redmer <andreasredmer@mailchuck.com>
  * 
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -267,7 +267,7 @@ final public class GameManager {
 	}
 	
 	/**
-	 * The game manager get informed of this exactly once for each achievement.
+	 * The game manager gets informed of this exactly once for each achievement.
 	 * It can be used to show a message to the user.
 	 * @param a The achievement that has just been unlocked.
 	 */
