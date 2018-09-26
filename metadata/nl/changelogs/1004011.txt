@@ -1,6 +1,6 @@
+OPMERKING: DEZE APP BEVAT GEEN ANTIFEATUREN OF ONGEWENSTE FUNCTIES. Wat je hieronder ziet, is een fout in F-Droid.
 
-
-
-
-
+1.4.11
+  * Kleine vertaaloplossingen. Nogmaals bedankt aan Verdulo.
+  * Upped-doel-SDK-versie voor de idiote Google Play Store
 

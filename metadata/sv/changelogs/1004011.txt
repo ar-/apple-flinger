@@ -1,6 +1,6 @@
+OBS! DENNA APP innehåller INTE ANTIFEATURES ELLER UNWANTED FEATURES. Vad du ser nedan är ett fel i F-Droid.
 
-
-
-
-
+1.4.11
+  * Mindre översättningskorrigeringar. Tack vare verdulo igen.
+  * Upped target SDK-version för den idiotiska google play-butiken
 

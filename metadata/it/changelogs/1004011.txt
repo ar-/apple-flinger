@@ -2,5 +2,5 @@ NOTA: QUESTA APP NON CONTIENE ANTIFEATURE O CARATTERISTICHE INDESIDERATE. Quello
 
 1.4.11
   * Correzioni di traduzione minori. Grazie a verdulo di nuovo.
-
+  * Versione di SDK target messa per il play store di Google
 

@@ -1,6 +1,6 @@
+UWAGA: NINIEJSZA APLIKACJA NIE ZAWIERA ANTYFUZYCJI LUB NIEPOTRZEBNYCH FUNKCJI. Poniżej znajduje się błąd w F-Droid.
 
-
-
-
-
+1.4.11
+  * Drobne poprawki tłumaczeń. Dzięki ponownie verdulo.
+  * Wzmocniona docelowa wersja SDK dla idiotycznego sklepu Google Play
 

@@ -1,6 +1,6 @@
+PASTABA: ŠIAME APP NEĮVEIKI ANTIFIKATUS ARBA NEMOKAMAS YPATUMAS. Tai, ką matote žemiau, yra "F-Droid" klaida.
 
-
-
-
-
+1.4.11
+  * Nedideli vertimo pakeitimai. Ačiū verdulo dar kartą.
+  * Įdiegta tikslinė SDK versija idiotiškajai "Google Play" parduotuvėje
 

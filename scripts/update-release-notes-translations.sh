@@ -89,6 +89,8 @@ do
   for F in `ls $cldir_from | sort -n | tail -n1`
   do
     translate $I $cldir_from/$F $cldir_to/$F
+    echo waiting 30 secs to five google a break
+    sleep 30
   done
 done
 

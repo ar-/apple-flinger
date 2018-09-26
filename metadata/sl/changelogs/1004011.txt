@@ -1,6 +1,6 @@
+OPOMBA: TEGA APP NE VSEBUJE PRESKUSOV ALI NEČESNIH ZNAČILNOSTI. Kaj vidite spodaj je napaka v F-Droidu.
 
-
-
-
-
+1.4.11
+  * Manjša popravka prevodov. Hvala še enkrat.
+  * Upped ciljno različico SDK za idiotično skladišče Google Play
 
