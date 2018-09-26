@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-  Copyright (C) 2015-2017 Andreas Redmer <andreasredmer@mailchuck.com>
+  Copyright (C) 2015-2018 Andreas Redmer <andreasredmer@mailchuck.com>
   
   This program is free software: you can redistribute it and/or modify
   it under the terms of the GNU General Public License as published by
@@ -19,8 +19,8 @@
     package="com.gitlab.ardash.appleflinger.android"
     xmlns:android="http://schemas.android.com/apk/res/android"
 
-    android:versionCode="1004011"
-    android:versionName="1.4.11" >
+    android:versionCode="1005000"
+    android:versionName="1.5.0" >
 
     <uses-sdk android:minSdkVersion="9" android:targetSdkVersion="26" />
 
