@@ -4,5 +4,5 @@
 
 1.4.11
   * Malgrandaj tradukaj korektoj. Danke al verdulo denove.
-  * Upped celo SDK-versio por la idiota google-ludejo
+  * Upped celo SDK-versio por la idiota google play store
 

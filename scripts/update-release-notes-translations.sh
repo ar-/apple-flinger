@@ -31,6 +31,9 @@ function translate {
   echo "translating en:$language file $fromfile into $tofile"
 
   torify trans -b -i $fromfile en:$language > /tmp/trans.txt
+
+  # get a new public IP forr the next run
+  echo -e 'AUTHENTICATE ""\r\nsignal NEWNYM\r\nQUIT' | nc 127.0.0.1 9051
   
   #repair auto translate formating
   sed -i 's/^\* /  \* /g' /tmp/trans.txt
@@ -48,6 +51,8 @@ function translate {
   resultsize=`stat --printf="%s" /tmp/trans.txt`
   if (( resultsize < 20 )); then
     echo $I is too small. not using it
+    echo waiting 10 minutes
+    sleep 1
   else
     echo "file size is fine, check if we need to replace it"
     diff /tmp/trans.txt $tofile
@@ -73,8 +78,8 @@ do
   resultsize=`stat --printf="%s" metadata/$I/changelogs/$latestfile`
   if (( resultsize < 20 )); then
       echo $I is still small
-  else
-      echo "fine"
+  #else
+      #echo "fine"
   fi
 done
 
@@ -117,7 +122,7 @@ do
     translate $I $cldir_from/$F $cldir_to/$F 
 
     echo waiting 30 secs to give google a break
-    sleep 30
+    sleep 3
   done
 done
 

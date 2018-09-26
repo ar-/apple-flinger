@@ -4,5 +4,5 @@
 
 1.4.11
   * Minor translation fixes. Thanks to verdulo again.
-  * Upped target SDK version for the idiotic google playstore
+  * Upped target SDK version for the idiotic google play store
 
