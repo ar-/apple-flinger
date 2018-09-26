@@ -1,6 +1,6 @@
+LƯU Ý: ỨNG DỤNG NÀY KHÔNG BAO GỒM ANTIFEATURES HOẶC CÁC TÍNH NĂNG KHÔNG ƯU TIÊN. Những gì bạn thấy dưới đây là một lỗi trong F-Droid.
 
-
-
-
-
+1,4,11
+  * Sửa bản dịch nhỏ. Nhờ verdulo một lần nữa.
+  * Phiên bản SDK được nhắm mục tiêu nâng lên cho cửa hàng play google play
 

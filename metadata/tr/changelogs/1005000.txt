@@ -1,0 +1,8 @@
+1.5.0
+  * başarılar eklendi
+  * bugfix: bilgisayara karşı kaybetme nedeniyle yuvarlak tekrarlar zaman genel puan arttırma
+
+1.4.11
+  * Küçük çeviri düzeltmeleri. Yine verdulo'ya teşekkürler.
+  * Idiotic google oyun mağazası için hedef SDK sürümü başlatıldı
+

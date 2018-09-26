@@ -1,0 +1,8 @@
+1.5.0
+  * ha aggiunto risultati
+  * bugfix: non incrementare i punti complessivi quando si ripetono le ripetizioni a causa della perdita del computer
+
+1.4.11
+  * Correzioni di traduzione minori. Grazie a verdulo di nuovo.
+  * Versione di SDK target messa per il play store di Google
+

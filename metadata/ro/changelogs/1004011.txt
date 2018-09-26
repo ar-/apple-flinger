@@ -1,6 +1,6 @@
+NOTĂ: ACEASTĂ APP nu conține ANTIFEATURI SAU CARACTERISTICI NECESARE. Ceea ce vedeți mai jos este o eroare în F-Droid.
 
-
-
-
-
+1.4.11
+  * Remedieri minore de traducere. Mulțumită lui verdulo din nou.
+  * Versiune SDK pentru țintă avansată pentru magazinul idiotic de redare Google
 

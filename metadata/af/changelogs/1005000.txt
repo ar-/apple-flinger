@@ -1,0 +1,8 @@
+1.5.0
+  * toegevoegde prestasies
+  * Bugfix: moenie algehele punte verhoog wanneer ronde herhaal word as gevolg van verlies aan rekenaar nie
+
+1.4.11
+  * Minder vertaaloplossings. Dankie aan verdulo weer.
+  * Oped teiken SDK weergawe vir die idioot Google Play winkel
+

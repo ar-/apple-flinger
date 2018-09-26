@@ -1,6 +1,6 @@
+CATATAN: APLIKASI INI TIDAK MENGANDUNG ANTIFESATUR ATAU FITUR YANG TIDAK DIINGINKAN. Apa yang Anda lihat di bawah ini adalah kesalahan dalam F-Droid.
 
-
-
-
-
+1.4.11
+  * Perbaikan terjemahan kecil. Berkat verdulo lagi.
+  * Versi SDK target yang telah ditingkatkan untuk toko google play yang bodoh
 

@@ -30,7 +30,10 @@ function translate {
 
   echo "translating en:$language file $fromfile into $tofile"
 
-  trans -b -i $fromfile en:$language > /tmp/trans.txt
+  torify trans -b -i $fromfile en:$language > /tmp/trans.txt
+
+  # get a new public IP forr the next run
+  echo -e 'AUTHENTICATE ""\r\nsignal NEWNYM\r\nQUIT' | nc 127.0.0.1 9051
   
   #repair auto translate formating
   sed -i 's/^\* /  \* /g' /tmp/trans.txt
@@ -45,17 +48,45 @@ function translate {
     touch $tofile
   fi
 
-  diff /tmp/trans.txt $tofile
-  isdiff=$?
-  if [ $isdiff -ne "0" ]
-  then
-    ((reps++))
-    echo "file $tofile has changed. replacing it $reps "
-    cat /tmp/trans.txt > $tofile
+  resultsize=`stat --printf="%s" /tmp/trans.txt`
+  if (( resultsize < 20 )); then
+    echo $I is too small. not using it
+    echo waiting 10 minutes
+    sleep 1
+  else
+    echo "file size is fine, check if we need to replace it"
+    diff /tmp/trans.txt $tofile
+    isdiff=$?
+    if [ $isdiff -ne "0" ]
+    then
+      ((reps++))
+      echo "file $tofile has changed. replacing it $reps "
+      cat /tmp/trans.txt > $tofile
+    fi
   fi
 
 }
 
+# program starts here
+cldir_from="$origd/$cl"
+latestfile=`ls $cldir_from | sort -n | tail -n1`
+
+# init all target file with 0 bytes (assume that all dirs exist, otherwise run twice)
+for I in $todo
+do
+  touch metadata/$I/changelogs/$latestfile
+  resultsize=`stat --printf="%s" metadata/$I/changelogs/$latestfile`
+  if (( resultsize < 20 )); then
+      echo $I is still small
+  #else
+      #echo "fine"
+  fi
+done
+
+# order todolis by size
+todo=`ls -laSr metadata/*/changelogs/1005000.txt | egrep -o "metadata/.*" | sed "s/metadata\///g" |  sed "s/\/changelogs.*//g"`
+#ls -laSr metadata/*/changelogs/$latestfile
+#exit
 
 if [ ! -d $md ]
 then
@@ -88,7 +119,10 @@ do
   # pick only the latest file
   for F in `ls $cldir_from | sort -n | tail -n1`
   do
-    translate $I $cldir_from/$F $cldir_to/$F
+    translate $I $cldir_from/$F $cldir_to/$F 
+
+    echo waiting 30 secs to give google a break
+    sleep 3
   done
 done
 

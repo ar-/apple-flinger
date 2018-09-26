@@ -1,0 +1,8 @@
+1.5.0
+  * Lorpenak gehitu dira
+  * Errore-errorea: ez dira puntu orokorrak gehitzen errepikatzen direnean, ordenagailuaren aurka galtzen direnean
+
+1.4.11
+  * Minor itzulpena konponketak. Berriro verdulo esker.
+  * Aldi baterako SDK bertsioa google play denda idiotic
+

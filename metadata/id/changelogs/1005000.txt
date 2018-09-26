@@ -1,0 +1,8 @@
+1.5.0
+  * Menambahkan pencapaian
+  * perbaikan bug: tidak menaikkan keseluruhan poin ketika putaran berulang karena kalah melawan komputer
+
+1.4.11
+  * Perbaikan terjemahan kecil. Berkat verdulo lagi.
+  * Versi SDK target yang telah ditingkatkan untuk toko google play yang bodoh
+

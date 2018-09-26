@@ -1,0 +1,8 @@
+1.5.0
+  * réalisations supplémentaires
+  * correction de bugs: n'incrémente pas les points globaux lors des répétitions rondes dues à la perte contre l'ordinateur
+
+1.4.11
+  * Corrections mineures de traduction. Merci encore à verdulo.
+  * Version SDK cible mise à niveau pour le magasin de jeux google idiot
+

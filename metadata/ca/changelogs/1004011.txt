@@ -1,6 +1,6 @@
+NOTA: AQUESTA APLICACIÓ NO conté ANTIFEATURES O CARACTERÍSTIQUES NO desitjades. El que veus a continuació és un error en F-Droid.
 
-
-
-
-
+1.4.11
+  * Reduccions de traducció menors. Gràcies a verdulo de nou.
+  * Obteniu la versió de SDK de destinació per a la botiga google Play idiotic
 

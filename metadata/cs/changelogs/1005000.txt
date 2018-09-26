@@ -1,0 +1,8 @@
+1.5.0
+  * přidané úspěchy
+  * bugfix: nepleťte celkový počet bodů, když se opakují kola kvůli ztrátě proti počítači
+
+1.4.11
+  * Drobné opravy překladu. Díky verdulo znovu.
+  * Vylepšená verze sady SDK pro idiotický obchod Google Play
+
