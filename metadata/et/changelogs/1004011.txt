@@ -1,6 +1,6 @@
+MÄRKUS: APP ei sisalda ANTIFAATSIOONID VÕI MÄRKIMATA OMADUSED. Allpool näete F-Droidis viga.
 
-
-
-
-
+1.4.11
+  * Väiksemad tõlke parandused. Tänu verdulole jälle.
+  * Uuendatud SDK-i versioon idiootilisse Google Play poest
 

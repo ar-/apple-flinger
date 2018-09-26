@@ -1,6 +1,6 @@
+OHARRA: APLIKAZIO HORIEK EZINBESTEKO EDO EZAUGARRI OROKORRAK. Azpitik ikusten duzuna errorea da F-Droid-en.
 
-
-
-
-
+1.4.11
+  * Minor itzulpena konponketak. Berriro verdulo esker.
+  * Aldi baterako SDK bertsioa google play denda idiotic
 

@@ -1,6 +1,6 @@
+MEGJEGYZÉS: Ez az APP NEM TARTALMAZZA a TÉNYLEGES ANYAGOKAT, VAGY NEM VESZETT JELLEMZŐKET. Az alábbiakban látható az F-Droid hibája.
 
-
-
-
-
+1.4.11
+  * Kis fordítási javítások. Köszönhetően a verdulo ismét.
+  * A célzott SDK-verzió az idiótikus google play boltban
 

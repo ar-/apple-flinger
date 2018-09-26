@@ -1,6 +1,6 @@
+NOTO: Ĉi tiu apliko ne konsistas pri pruvoj aŭ senvaloraj karakterizaĵoj. Kion vi vidas sube estas eraro en F-Droid.
 
-
-
-
-
+1.4.11
+  * Malgrandaj tradukaj korektoj. Danke al verdulo denove.
+  * Upped celo SDK-versio por la idiota google play store
 

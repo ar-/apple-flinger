@@ -1,6 +1,6 @@
+NOTA: ESTA APLICACIÓN NO CONTIENE CARACTERÍSTICAS O CARACTERÍSTICAS NO DESEADAS. Lo que ves a continuación es un error en F-Droid.
 
-
-
-
-
+1.4.11
+  * Correcciones de traducción menores. Gracias al verdulo de nuevo.
+  * Versión de SDK de destino mejorada para la idiota tienda de Google Play
 
