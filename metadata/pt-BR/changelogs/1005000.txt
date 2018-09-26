@@ -1,0 +1,8 @@
+1.5.0
+  * conquistas adicionadas
+  * bugfix: não incrementa pontos totais quando a repetição se repete devido à perda do computador
+
+1.4.11
+  * Pequenas correções de tradução. Graças a verdulo novamente.
+  * Atualizada a versão alvo do SDK para a loja idiota do google play
+

@@ -1,0 +1,8 @@
+1.5.0
+  * realizări suplimentare
+  * bugfix: nu incrementați punctele globale atunci când se repetă rotunjit din cauza pierderii împotriva calculatorului
+
+1.4.11
+  * Remedieri minore de traducere. Mulțumită lui verdulo din nou.
+  * Versiune SDK pentru țintă avansată pentru magazinul idiotic de redare Google
+

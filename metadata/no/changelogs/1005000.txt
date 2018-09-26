@@ -1,0 +1,8 @@
+1.5.0
+  * lagt til prestasjoner
+  * bugfix: Ikke øk samlet poeng når runde gjentakelser på grunn av å miste mot datamaskinen
+
+1.4.11
+  * Mindre oversettelsesrettinger. Takk til verdulo igjen.
+  * Opped mål SDK-versjon for den idiotiske google spillbutikken
+

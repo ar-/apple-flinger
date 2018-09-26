@@ -1,0 +1,8 @@
+1.5.0
+  * mafanikio yaliongezwa
+  * bugfix: usiongeza pointi kwa ujumla wakati kurudia kwa sababu ya kupoteza dhidi ya kompyuta
+
+1.4.11
+  * Marekebisho madogo ya tafsiri. Shukrani kwa verdulo tena.
+  * Ilipangwa toleo la SDK la lengo la duka la google la kucheza idiotic
+
