@@ -88,6 +88,14 @@ public class AndroidLauncher extends AndroidApplication implements ActionResolve
 		System.exit(0);
 	}
 
+	@Override
+	public void keepScreenOn(boolean on) {
+		if (on)
+			getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
+		else
+			getWindow().clearFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
+	}
+
 	private View createGameView(AndroidApplicationConfiguration cfg) {
 		gameView = initializeForView(new AppleflingerGame(this), cfg);
 		@SuppressWarnings("static-access")

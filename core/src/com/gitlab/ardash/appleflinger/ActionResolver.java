@@ -44,6 +44,12 @@ public interface ActionResolver {
 	
 	public void restartMySelf();
 	
+	/**
+	 * Tell the host to keep the screen on, or allow it to turn off again.
+	 * @param TRUE to keep screen on, FALSE to allow screen off
+	 */
+	public void keepScreenOn(boolean on);
+	
 	public boolean twPostRecommendation();
 	public boolean fbPostRecommendation();
 	public boolean gpPostRecommendation();

@@ -201,4 +201,9 @@ public class DesktopTestdriveTest implements ActionResolver{
 		return false;
 	}
 
+	@Override
+	public void keepScreenOn(boolean on) {
+		// not used in this test implementation
+	}
+
 }

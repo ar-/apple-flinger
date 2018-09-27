@@ -16,6 +16,7 @@
  ******************************************************************************/
 package com.gitlab.ardash.appleflinger.desktop;
 
+import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.backends.lwjgl.LwjglApplication;
 import com.badlogic.gdx.backends.lwjgl.LwjglApplicationConfiguration;
 import com.badlogic.gdx.tools.texturepacker.TexturePacker.Settings;
@@ -71,6 +72,12 @@ public class DesktopLauncher implements ActionResolver{
 	public void restartMySelf() {
 		System.out.println("Cannot restart desktop app. Please start it again.");
 		System.exit(0);
+	}
+	
+	@Override
+	public void keepScreenOn(boolean on) {
+		// TODO Auto-generated method stub
+		Gdx.app.log("ActionResolver", "keepScreenOn");
 	}
 
 	@Override
