@@ -1,0 +1,11 @@
+1.5.1
+  * Lass den Bildschirm ein wenig länger angeschaltet, solange das Spiel aktiv gespielt wird.
+
+1.5.0
+  * Errungenschaften hinzugefügt
+  * Bugfix: Erhöhe nicht die Gesamtpunkte, wenn die Runde aufgrund von einer verlorenen Runde gegen den Computer wiederholt wird
+
+1.4.11
+  * Kleine Korrekturen in Übersetzungen. Danke nochmal an Verdulo.
+  * Target SDK-Version leich angehoben für den idiotischen Google Play Store
+

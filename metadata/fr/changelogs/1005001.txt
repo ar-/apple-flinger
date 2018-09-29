@@ -1,0 +1,11 @@
+1.5.1
+  * Gardez l'écran un peu plus longtemps, aussi longtemps que le jeu est activement joué.
+
+1.5.0
+  * réalisations supplémentaires
+  * correction de bugs: n'incrémente pas les points globaux lors des répétitions rondes dues à la perte contre l'ordinateur
+
+1.4.11
+  * Corrections de traduction mineures. Merci encore à Verdulo.
+  * Version de SDK cible augmentée pour l'idiot de Google Play Store
+

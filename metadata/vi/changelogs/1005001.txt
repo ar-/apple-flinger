@@ -1,0 +1,11 @@
+1.5.1
+  * Giữ màn hình lâu hơn một chút, miễn là trò chơi đang được chủ động chơi.
+
+1.5.0
+  * thành tích bổ sung
+  * bugfix: không tăng tổng điểm khi lặp lại vòng do mất máy tính
+
+1,4,11
+  * Sửa bản dịch nhỏ. Nhờ verdulo một lần nữa.
+  * Phiên bản SDK được nhắm mục tiêu nâng lên cho cửa hàng play google play
+

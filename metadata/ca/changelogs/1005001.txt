@@ -1,0 +1,11 @@
+1.5.1
+  * Mantenir la pantalla una mica més, mentre el joc s'estigui jugant activament.
+
+1.5.0
+  * Èxits afegits
+  * error: no augmenti els punts globals quan es repeteix la ronda per perdre contra l'ordinador
+
+1.4.11
+  * Reduccions de traducció menors. Gràcies a verdulo de nou.
+  * Obteniu la versió de SDK de destinació per a la botiga google Play idiotic
+

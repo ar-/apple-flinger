@@ -1,0 +1,11 @@
+1.5.1
+  * Pozostaw ekran nieco dłużej, o ile gra jest aktywnie odtwarzana.
+
+1.5.0
+  * dodane osiągnięcia
+  * Poprawka: nie zwiększaj ogólnej liczby punktów, gdy runda powtarza się z powodu przegranej z komputerem
+
+1.4.11
+  * Drobne poprawki tłumaczeń. Dzięki ponownie verdulo.
+  * Wzmocniona docelowa wersja SDK dla idiotycznego sklepu Google Play
+

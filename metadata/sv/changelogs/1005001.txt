@@ -1,0 +1,11 @@
+1.5.1
+  * Håll skärmen lite längre, så länge spelet spelas aktivt.
+
+1.5.0
+  * Tillagda resultat
+  * bugfix: öka inte totala poäng när runda upprepningar beror på att du förlorar mot datorn
+
+1.4.11
+  * Mindre översättningskorrigeringar. Tack vare verdulo igen.
+  * Upped target SDK-version för den idiotiska google play-butiken
+

@@ -1,0 +1,11 @@
+1.5.1
+  * Držite ekran malo duže, sve dok se igra aktivno reproducira.
+
+1.5.0
+  * dodano dostignuća
+  * bugfix: ne povećavajte ukupne bodove kada se okrugli ponovi zbog gubitka na računalu
+
+1.4.11
+  * Manje popravke prijevoda. Zahvaljujući verdulo opet.
+  * Uložena verzija SDK cilja za idiotski Google Play trgovinu
+

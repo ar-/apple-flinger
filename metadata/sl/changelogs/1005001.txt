@@ -1,0 +1,11 @@
+1.5.1
+  * Zaslon naj bo malo dlje, dokler se igra aktivno predvaja.
+
+1.5.0
+  * dodani dosežki
+  * bugfix: ne povečajte skupnih točk, ko se okrog ponovi zaradi izgube računalnika
+
+1.4.11
+  * Manjša popravka prevodov. Hvala še enkrat.
+  * Upped ciljno različico SDK za idiotično skladišče Google Play
+

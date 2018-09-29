@@ -1,0 +1,11 @@
+1.5.1
+  * Weka skrini kwa muda mrefu, kwa muda mrefu mchezo huu unachezwa kikamilifu.
+
+1.5.0
+  * mafanikio yaliongezwa
+  * bugfix: usiongeza pointi kwa ujumla wakati kurudia kwa sababu ya kupoteza kompyuta
+
+1.4.11
+  * Marekebisho madogo ya tafsiri. Shukrani kwa verdulo tena.
+  * Ilipangwa toleo la SDK la lengo la duka la google la kucheza idiotic
+
