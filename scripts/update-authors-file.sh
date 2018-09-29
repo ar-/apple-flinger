@@ -18,7 +18,7 @@
 
 if [ ! -f "AUTHORS.md" ]
 then
-  echo "AUTHORS.md not found. you mudt be in the wrong directory"
+  echo "AUTHORS.md not found. you must be in the wrong directory"
   exit 2
 fi
 
@@ -27,7 +27,7 @@ echo -e "Authors\n=======\nWe'd like to thank the following people for their con
 git log --raw | grep "^Author: " | sort | uniq | cut -d ' ' -f2- | sed 's/^/- /' >> /tmp/AUTHORS.md
 
 # remove authors that don't want to be inlcuded or old email addresses 
-for AE in ar-appleflinger@abga.be ar-gitlab@abga.be
+for AE in ar-gitlab@abga.be andreasredmer@mailchuck.com
 do
   echo excluding $AE
   cat /tmp/AUTHORS.md | grep -v "$AE" > /tmp/AUTHORS_tmp.md
