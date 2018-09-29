@@ -1,0 +1,11 @@
+1.5.1
+  * Houd het scherm iets langer open, zolang het spel actief wordt gespeeld.
+
+1.5.0
+  * Prestaties toegevoegd
+  * bugfix: verhoog het totaal aantal punten niet wanneer ronde herhalingen te wijten zijn aan het verliezen van de computer
+
+1.4.11
+  * Kleine vertaaloplossingen. Nogmaals bedankt aan Verdulo.
+  * Upped-doel-SDK-versie voor de idiote Google Play Store
+

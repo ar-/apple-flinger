@@ -1,13 +1,11 @@
 Funny round based single/multiplayer game for awesome times. New,
 challenging and addictive.
 
-No Anti-Features: What you see below is a bug in F-Droid
-
 Features:
 
 * high resolution quality graphics
 * realistic physics
-* lag-free and smooth gameplay
+* lag-free and smooth gameplay (even on old devices)
 * fine detailed animations and particle systems
 * brand new and innovative game concept
 * single/multiplayer

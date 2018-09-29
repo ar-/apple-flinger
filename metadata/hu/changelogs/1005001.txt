@@ -1,0 +1,11 @@
+1.5.1
+  * Tartsa a képernyő egy kicsit hosszabb ideig, amíg a játék aktívan játszik.
+
+1.5.0
+  * hozzáadott eredmények
+  * hibajavítás: ne növelje az összpontszámokat, amikor a számítógépes veszteség miatt megismétlődik
+
+1.4.11
+  * Kis fordítási javítások. Köszönhetően a verdulo ismét.
+  * A célzott SDK-verzió az idiótikus google play boltban
+

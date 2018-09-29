@@ -1,0 +1,11 @@
+1.5.1
+  * Saglabājiet ekrānu mazliet ilgāk, kamēr spēle tiek aktīvi atskaņota.
+
+1.5.0
+  * pievienoti sasniegumi
+  * Bugfix: nepalieliniet kopējos punktus, kad apļa atkārtojas, jo zaudēties pret datoru
+
+1.4.11
+  * Neliels tulkošanas labojums. Pateicoties verdulo vēlreiz.
+  * Izveidota mērķa SDK versija idiotiskai Google Play veiklai
+

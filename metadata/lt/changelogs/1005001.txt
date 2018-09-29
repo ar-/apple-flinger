@@ -1,0 +1,11 @@
+1.5.1
+  * Laikykite ekraną šiek tiek ilgiau, kol žaidimą aktyviai žaisite.
+
+1.5.0
+  * pridėti pasiekimai
+  * bugfix: nepadidinkite bendrų taškų, kai apvalios kartoja, nes praranda kompiuterį
+
+1.4.11
+  * Nedideli vertimo pakeitimai. Ačiū verdulo dar kartą.
+  * Įdiegta tikslinė SDK versija idiotiškajai "Google Play" parduotuvėje
+
