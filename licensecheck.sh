@@ -25,6 +25,8 @@ else
 	exit 1
 fi
 
+licensecheck `git whatchanged --since '01/01/2012' --oneline --name-only --pretty=format: | sort | uniq` |grep -v "GPL (v3 or later)" | grep -v "GENERATED FILE" | grep -v ".md:" | grep -v COPYING
+
 #check COPYING files
 LICSHA=`find . -name "COPYING" -not -path "$EXCLUDE" | xargs sha512sum | egrep -o "[a-f0-9]+ " | sort -u`
 LICMD5=`find . -name "COPYING" -not -path "$EXCLUDE" | xargs    md5sum | egrep -o "[a-f0-9]+ " | sort -u`
