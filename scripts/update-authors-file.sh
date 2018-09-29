@@ -1,6 +1,6 @@
 #!/bin/bash
 #-------------------------------------------------------------------------------
-# Copyright (C) 2017,2018 Andreas Redmer <andreasredmer@mailchuck.com>
+# Copyright (C) 2017,2018 Andreas Redmer <ar-appleflinger@abga.be>
 # 
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -27,7 +27,7 @@ echo -e "Authors\n=======\nWe'd like to thank the following people for their con
 git log --raw | grep "^Author: " | sort | uniq | cut -d ' ' -f2- | sed 's/^/- /' >> /tmp/AUTHORS.md
 
 # remove authors that don't want to be inlcuded or old email addresses 
-for AE in andreasredmer@mailchuck.com ar-gitlab@abga.be
+for AE in ar-appleflinger@abga.be ar-gitlab@abga.be
 do
   echo excluding $AE
   cat /tmp/AUTHORS.md | grep -v "$AE" > /tmp/AUTHORS_tmp.md
