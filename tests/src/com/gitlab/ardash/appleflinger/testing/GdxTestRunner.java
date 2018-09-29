@@ -1,5 +1,5 @@
 /*******************************************************************************
- * Copyright (C) 2015-2017 Andreas Redmer <andreasredmer@mailchuck.com>
+ * Copyright (C) 2015-2018 Andreas Redmer <andreasredmer@mailchuck.com>
  * 
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -15,6 +15,8 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  ******************************************************************************/
 package com.gitlab.ardash.appleflinger.testing;
+
+import static org.mockito.Mockito.mock;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -33,10 +35,6 @@ import com.badlogic.gdx.backends.headless.HeadlessNativesLoader;
 import com.badlogic.gdx.backends.headless.HeadlessNet;
 import com.badlogic.gdx.backends.headless.mock.graphics.MockGraphics;
 import com.badlogic.gdx.graphics.GL20;
-
-import static org.junit.Assert.*;
-import static org.mockito.Mockito.*;
-import static org.mockito.Matchers.*;
 
 public class GdxTestRunner extends BlockJUnit4ClassRunner implements ApplicationListener {
 

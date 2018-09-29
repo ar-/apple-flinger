@@ -76,8 +76,7 @@ public class DesktopLauncher implements ActionResolver{
 	
 	@Override
 	public void keepScreenOn(boolean on) {
-		// TODO Auto-generated method stub
-		Gdx.app.log("ActionResolver", "keepScreenOn");
+		Gdx.app.log("ActionResolver", "keepScreenOn "+ new Boolean(on).toString().toUpperCase());
 	}
 
 	@Override

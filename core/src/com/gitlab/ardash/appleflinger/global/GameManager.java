@@ -20,7 +20,6 @@ import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.InputMultiplexer;
 import com.badlogic.gdx.Screen;
 import com.badlogic.gdx.math.Vector2;
-import com.badlogic.gdx.utils.TimeUtils;
 import com.gitlab.ardash.appleflinger.ActionResolver;
 import com.gitlab.ardash.appleflinger.AppleflingerGame;
 import com.gitlab.ardash.appleflinger.actors.GeneralTargetActor;
@@ -82,7 +81,8 @@ final public class GameManager {
 	 * the current winning streak (checking for non-interrupted streak compared to 'getWins()')
 	 */
 	private int wonRoundsInARow;
-	public final long gameStartTime;
+	private float gameRunTime;
+	private float lastGameStateTime;
 	
 	public static GameManager getInstance()
 	{
@@ -93,7 +93,7 @@ final public class GameManager {
 	
 	private GameManager()
 	{
-		this.gameStartTime = TimeUtils.millis();
+		this.gameRunTime = 0;
 		gameState = GameState.START_APP;
 		inputMultiplexer = new InputMultiplexer();
 		Gdx.input.setInputProcessor(inputMultiplexer);
@@ -349,11 +349,23 @@ final public class GameManager {
 		if (!gameState.nexts().contains(newState))
 			throw new RuntimeException("Invalid State change from "+ gameState + " to "+ newState);  
 		
+		// keep screen on for a while longer
+		getActionResolver().keepScreenOn(true);
+		lastGameStateTime=gameRunTime;
+		
 		this.gameState = newState;
 		if (DEBUG)
 			System.out.println("changing game state: " + newState); 
 	}
 	
+	public void addGameRuntime(float deltaTime) {
+		gameRunTime += deltaTime;
+		
+		// allow the OS to turn the screen off
+		if (gameRunTime - lastGameStateTime > 30)
+			getActionResolver().keepScreenOn(false);
+	}
+
 	public void registerGameObject(AppleflingerGame appleflingerGame) {
 		this.game = appleflingerGame;
 	}
@@ -400,6 +412,5 @@ final public class GameManager {
 	public void setPaused(boolean isPaused) {
 		this.isPaused = isPaused;
 	}
-	
-	
+
 }
