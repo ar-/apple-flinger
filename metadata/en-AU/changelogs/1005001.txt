@@ -1,0 +1,11 @@
+1.5.1
+  * Keep the screen on a bit longer, as long the the game is actively being played.
+
+1.5.0
+  * added achievements
+  * bugfix: don't increment overall points when round repeats due to losing against computer
+
+1.4.11
+  * Minor translation fixes. Thanks to verdulo again.
+  * Upped target SDK version for the idiotic google play store
+

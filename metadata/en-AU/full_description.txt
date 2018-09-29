@@ -7,7 +7,7 @@ Features:
 
 * high resolution quality graphics
 * realistic physics
-* lag-free and smooth gameplay
+* lag-free and smooth gameplay (even on old devices)
 * fine detailed animations and particle systems
 * brand new and innovative game concept
 * single/multiplayer

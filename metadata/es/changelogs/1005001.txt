@@ -1,0 +1,11 @@
+1.5.1
+  * Mantenga la pantalla un poco más activa, siempre que el juego se esté reproduciendo activamente.
+
+1.5.0
+  * logros agregados
+  * corrección de errores: no incrementa los puntos generales cuando se repite la ronda debido a perder contra la computadora
+
+1.4.11
+  * Correcciones de traducción menores. Gracias al verdulo de nuevo.
+  * Versión de SDK de destino mejorada para la idiota tienda de Google Play
+

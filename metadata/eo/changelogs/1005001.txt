@@ -1,0 +1,11 @@
+1.5.1
+  * Konservu la ekranon iom pli longan, dum la ludo ludas.
+
+1.5.0
+  * Aldonis atingojn
+  * bugfix: ne pliigu ĝeneralajn punktojn kiam rondaj ripetoj pro perdado kontraŭ komputilo
+
+1.4.11
+  * Malgrandaj tradukaj korektoj. Danke al verdulo denove.
+  * Upped celo SDK-versio por la idiota google play store
+

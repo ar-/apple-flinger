@@ -1,0 +1,11 @@
+1.5.1
+  * Hoidke ekraani natuke kauem, kui kaua mängitakse aktiivselt.
+
+1.5.0
+  * lisatud saavutused
+  * Bugfix: ärge suurendage üldisi punkte, kui üllatunud kordub arvuti kaotamise tõttu
+
+1.4.11
+  * Väiksemad tõlke parandused. Tänu verdulole jälle.
+  * Uuendatud SDK-i versioon idiootilisse Google Play poest
+

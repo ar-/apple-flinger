@@ -1,0 +1,11 @@
+1.5.1
+  * Tieni lo schermo un po 'più a lungo, a condizione che il gioco venga attivamente riprodotto.
+
+1.5.0
+  * ha aggiunto risultati
+  * bugfix: non incrementare i punti complessivi quando si ripetono le ripetizioni a causa della perdita del computer
+
+1.4.11
+  * Correzioni di traduzione minori. Grazie a verdulo di nuovo.
+  * Versione di SDK target messa per il play store di Google
+
