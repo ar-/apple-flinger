@@ -26,6 +26,7 @@ import android.content.Intent;
 import android.content.pm.ResolveInfo;
 import android.net.Uri;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
@@ -40,10 +41,11 @@ import com.gitlab.ardash.appleflinger.global.GameManager;
 
 public class AndroidLauncher extends AndroidApplication implements ActionResolver {
 
+	protected View gameView;
+	private static final String TAG = "MyActivity";
+
 	public AndroidLauncher() {
 	}
-
-	protected View gameView;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -74,6 +76,7 @@ public class AndroidLauncher extends AndroidApplication implements ActionResolve
 
 		setContentView(layout);
 
+		keepScreenOn(true);
 		// initialize(new AppleflingerGame(this), config);
 		// System.out.println("nothing");
 	}
@@ -86,6 +89,26 @@ public class AndroidLauncher extends AndroidApplication implements ActionResolve
 		AlarmManager mgr = (AlarmManager)this.getContext().getSystemService(Context.ALARM_SERVICE);
 		mgr.set(AlarmManager.RTC, System.currentTimeMillis() + 100, mPendingIntent);
 		System.exit(0);
+	}
+
+	@Override
+	public void keepScreenOn(final boolean on) {
+		try{
+	       runOnUiThread(new Runnable() { 
+	            @Override 
+	            public void run() { 
+	                try {
+						gameView.setKeepScreenOn(on);
+					} catch (Throwable t) {
+						Log.e(TAG, "could not set KEEP_SCREEN_ON flag to a view", t);
+					} 
+	            } 
+	       });
+		}
+		catch (Throwable t)
+		{
+			Log.e(TAG, "could not run Runnable on Ui thread ", t);
+		}
 	}
 
 	private View createGameView(AndroidApplicationConfiguration cfg) {

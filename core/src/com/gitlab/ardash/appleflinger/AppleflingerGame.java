@@ -133,6 +133,9 @@ public class AppleflingerGame extends Game {
         //Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
 		super.render(); // important!
 		
+		// inform gamemanger about runtime
+		GameManager.getInstance().addGameRuntime(Gdx.graphics.getDeltaTime());
+		
 		// print FPS after screen render - only every second
 		if (GameManager.DEBUG)
 			if (secondStart < TimeUtils.millis()-1000)
