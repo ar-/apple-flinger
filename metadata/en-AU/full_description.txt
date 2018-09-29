@@ -1,8 +1,6 @@
 Funny round based single/multiplayer game for awesome times. New,
 challenging and addictive.
 
-No Anti-Features: What you see below is a bug in F-Droid
-
 Features:
 
 * high resolution quality graphics
