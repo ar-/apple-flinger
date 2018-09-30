@@ -125,10 +125,17 @@ public class GameScreen implements Screen {
 	 * 
 	 */
 	private void buildGameGUI() {
+        final GameManager gm = GameManager.getInstance();
         LabelStyle labelstyle = Assets.LabelStyleAsset.BIGMENUSTYLE.style;
 //        float lineheight = labelstyle.font.getAscent()+labelstyle.font.getDescent()+labelstyle.font.getCapHeight()+labelstyle.font.getLineHeight();
         float lineheight = labelstyle.font.getLineHeight()+26;
         
+        // these are some labels in the toptable, they get some updates in listeners below
+        labelAllPointsP1 = createMiniLabel(gm.PLAYER1.getAllPoints()+""); 
+        labelAllPointsP2 = createMiniLabel(gm.PLAYER2.getAllPoints()+""); 
+        final Label labelWinsP1 = createMiniLabel(gm.PLAYER1.getWins()+""); 
+        final Label labelWinsP2 = createMiniLabel(gm.PLAYER2.getWins()+""); 
+
         labelMessage = new Label("A", labelstyle);
 //        labelMessage.setWrap(true);
         labelMessage.setPosition(0, SCREEN_HEIGHT-lineheight*4);  
@@ -137,15 +144,13 @@ public class GameScreen implements Screen {
         labelMessage.setTouchable(Touchable.disabled);
         guiStage.addActor(labelMessage);  
         
-        Label labelNameP1 = new Label(".", labelstyle);   
-//        labelNameP1.setWrap(true);
+        final Label labelNameP1 = new Label(".", labelstyle);   
 		labelNameP1.setPosition(0, SCREEN_HEIGHT-lineheight*2);  
         labelNameP1.setAlignment(Align.left);  
 		labelNameP1.setTouchable(Touchable.disabled);
         guiStage.addActor(labelNameP1);  
 
-        Label labelNameP2 = new Label(".", labelstyle);   
-//        labelNameP1.setWrap(true);
+        final Label labelNameP2 = new Label(".", labelstyle);   
 		labelNameP2.setPosition(0, SCREEN_HEIGHT-lineheight*2);  
 		labelNameP2.setWidth(SCREEN_WIDTH);  
 		labelNameP2.setAlignment(Align.right);  
@@ -164,38 +169,25 @@ public class GameScreen implements Screen {
         labelPointsP2.setTouchable(Touchable.disabled);
         guiStage.addActor(labelPointsP2); 
         
-//        Table bigMessageTable = new Table();
-//        bigMessageTable.pad(0);
-//        bigMessageTable.setTouchable(Touchable.disabled);
-//        bigMessageTable.setFillParent(true);
-//        bigMessageTable.align(Align.top);
-////        bigMessageTable.add();
-////        bigMessageTable.add();
-////        bigMessageTable.add();
-////        bigMessageTable.add();
-////        bigMessageTable.row();
-//        bigMessageTable.add(labelNameP1).right().width(SCREEN_WIDTH*0.2f);
-//        bigMessageTable.add(labelNameP2).left().width(SCREEN_WIDTH*0.2f);
-//        bigMessageTable.row();
-//        bigMessageTable.add(labelPointsP1).width(SCREEN_WIDTH*0.25f).left();
-////        bigMessageTable.add(labelMessage).colspan(2).width(SCREEN_WIDTH/3).center();
-////        bigMessageTable.add(labelPointsP2).width(SCREEN_WIDTH*0.25f).right();
-//        guiStage.addActor(bigMessageTable); 
-        
-        final GameManager gm = GameManager.getInstance();
         // set listeners for points change
         gm.PLAYER1.setOnPointsChangeListener(new OnPointsChangeListener() {
 			@Override
 			public void onPointChange() {
-				labelPointsP1.setText(String.format(" "+I18N.getString("POINTS")+":  %d ", gm.PLAYER1.getPoints()));   
-				labelAllPointsP1.setText((gm.PLAYER1.getPoints()+gm.PLAYER1.getAllPoints())+""); 
+				labelPointsP1.setText(String.format(" "+I18N.getString("POINTS")+":  %d ", gm.PLAYER1.getPoints()));  
+				labelAllPointsP1.setText((gm.PLAYER1.getPoints()+gm.PLAYER1.getAllPoints())+"");
+				adjustPointLabelColors(labelPointsP1,labelPointsP2,gm.PLAYER1.getPoints(),gm.PLAYER2.getPoints());
+				adjustPointLabelColors(labelAllPointsP1,labelAllPointsP2,
+						gm.PLAYER1.getPoints()+gm.PLAYER1.getAllPoints(),gm.PLAYER2.getPoints()+gm.PLAYER2.getAllPoints());
 			}
 		});
         gm.PLAYER2.setOnPointsChangeListener(new OnPointsChangeListener() {
 			@Override
 			public void onPointChange() {
-				labelPointsP2.setText(String.format(" "+I18N.getString("POINTS")+":  %d  ", gm.PLAYER2.getPoints()));   
-				labelAllPointsP2.setText((gm.PLAYER2.getPoints()+gm.PLAYER2.getAllPoints())+""); 
+				labelPointsP2.setText(String.format(" "+I18N.getString("POINTS")+":  %d  ", gm.PLAYER2.getPoints()));
+				labelAllPointsP2.setText((gm.PLAYER2.getPoints()+gm.PLAYER2.getAllPoints())+"");
+				adjustPointLabelColors(labelPointsP1,labelPointsP2,gm.PLAYER1.getPoints(),gm.PLAYER2.getPoints());
+				adjustPointLabelColors(labelAllPointsP1,labelAllPointsP2,
+						gm.PLAYER1.getPoints()+gm.PLAYER1.getAllPoints(),gm.PLAYER2.getPoints()+gm.PLAYER2.getAllPoints());
 			}
 		});
         
@@ -208,6 +200,22 @@ public class GameScreen implements Screen {
 				gm.getInputMultiplexer().removeProcessor(world.stage);
 				setAnnouncementText(String.format(I18N.getString("gameOver")+"\n%s "+I18N.getString("won")+"\n"+I18N.getString("withDPoints")+"\n"+I18N.getString("touchScreenToContinue")+".", gm.winner.getName(), gm.winner.getPoints()));
 				freezeAnnouncementText();
+				
+				// center colour
+				labelMessage.addAction(Actions.color(Color.GREEN, 1));
+				
+				// winner label colours, set colour by using 0 or 1 or 2 points
+				final int windicator = gm.winner == gm.PLAYER1 ? 0 : 2;
+				adjustPointLabelColors(labelPointsP1,labelPointsP2,1,windicator);
+				adjustPointLabelColors(labelAllPointsP1,labelAllPointsP2,1,windicator);
+				adjustPointLabelColors(labelNameP1,labelNameP2,1,windicator);
+				adjustPointLabelColors(labelWinsP1,labelWinsP2,1,windicator);
+				
+				// update the wins-label as well, they are correct on next screen load,
+				// but it looks bad to have them not incremented here.
+				Label winsLabel = gm.winner == gm.PLAYER1 ? labelWinsP1 : labelWinsP2;
+				winsLabel.setText("" + (Integer.parseInt(winsLabel.getText().toString()) +1));
+
 				gm.setGameState(GameState.GAME_OVER_SCREEN);
 				SoundPlayer.playMusic(Assets.getMusic(MusicAsset.BG));
 				
@@ -229,7 +237,7 @@ public class GameScreen implements Screen {
 				}
 				else
 				{
-					// playing against so else, doesn't unlock anything, but it goes over to the next level in any case
+					// playing against human so else, doesn't unlock anything, but it goes over to the next level in any case
 					nextmission = mission.getNext();
 				}
         		
@@ -301,11 +309,6 @@ public class GameScreen implements Screen {
         }});
         btnSound.setChecked(!Pref.getSoundOn());
 
-        labelAllPointsP1 = createMiniLabel(gm.PLAYER1.getAllPoints()+""); 
-        labelAllPointsP2 = createMiniLabel(gm.PLAYER2.getAllPoints()+""); 
-        final Label labelWinsP1 = createMiniLabel(gm.PLAYER1.getWins()+""); 
-        final Label labelWinsP2 = createMiniLabel(gm.PLAYER2.getWins()+""); 
-        
         final Table miniStatsTable = new Table();
 //        miniStatsTable.a
 //        miniStatsTable.align(Align.topLeft);
@@ -344,6 +347,29 @@ public class GameScreen implements Screen {
         
         // TODO add more other GUI elements here  
 	}
+	
+	/**
+	 * Adjust the colours of 2 labels according to the points in the input parameters.
+	 * If p1 is higher then labelPointsP1, will be converted to green. otherwise 
+	 * labelPointsP2 will become green. The other label will be set to white.
+	 * @param labelPointsP1
+	 * @param labelPointsP2
+	 * @param p1
+	 * @param p2
+	 */
+	private static void adjustPointLabelColors(Label labelPointsP1, Label labelPointsP2, int p1, int p2) {
+		Color cL1 = Color.WHITE;
+		Color cL2 = Color.WHITE;
+		
+		if (p1 > p2)
+			cL1 = Color.GREEN;
+		if (p1 < p2)
+			cL2 = Color.GREEN;
+		
+		labelPointsP1.setColor(cL1);
+		labelPointsP2.setColor(cL2);
+	}
+
       
     @Override  
     public void render(float delta) {  
@@ -390,7 +416,7 @@ public class GameScreen implements Screen {
 		if (!silent)
 			SoundPlayer.playSound(Assets.getSound(SoundAsset.NOTIFICATION));
 		
-		// if it is the final message freeze it so it cant be overwritten anymnore
+		// if it is the final message freeze it so it can't be overwritten anymore
 		// TODO it also should not disappear anymore
 //		GameManager gm = GameManager.getInstance();
 //		if (gm.winner != gm.NONE)
