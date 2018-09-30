@@ -39,16 +39,8 @@ public class PopPointActor extends Label {
 		setWidth(50);
 		setPosition(x * GameWorld.UNIT_TO_SCREEN, y * GameWorld.UNIT_TO_SCREEN);
 		setAlignment(Align.center);
-		// final Matrix4 invProjectionView =
-		// GameManager.getInstance().currentGameScreen.getGuiStage().getCamera().invProjectionView;
-		// Vector3 position = new Vector3();
-		// invProjectionView.getTranslation(position);
-		// setPosition(position.x+150, position.y+10);
-		// setWidth(5);
-		// setAlignment(Align.center);
-		// setScale(1112.1f);
-		
 	}
+	
 	public PopPointActor(String text, float x, float y) {
 		this(text, x, y, Color.WHITE);
 	}
