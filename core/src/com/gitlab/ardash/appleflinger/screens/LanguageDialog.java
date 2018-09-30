@@ -18,6 +18,10 @@
 package com.gitlab.ardash.appleflinger.screens;
 
 import com.badlogic.gdx.scenes.scene2d.InputEvent;
+import com.badlogic.gdx.scenes.scene2d.Stage;
+import com.badlogic.gdx.scenes.scene2d.actions.Actions;
+import com.badlogic.gdx.scenes.scene2d.ui.Dialog;
+import com.badlogic.gdx.scenes.scene2d.ui.Label;
 import com.badlogic.gdx.scenes.scene2d.ui.Label.LabelStyle;
 import com.badlogic.gdx.scenes.scene2d.utils.ClickListener;
 import com.gitlab.ardash.appleflinger.global.Assets;
@@ -26,6 +30,8 @@ import com.gitlab.ardash.appleflinger.global.GameManager;
 import com.gitlab.ardash.appleflinger.i18n.I18N;
 
 public class LanguageDialog extends AdvancedDialog{
+	
+	static Stage lastStage = null;
 
 	public LanguageDialog() {
         final LabelStyle lblstyle = Assets.LabelStyleAsset.MINILABEL.style;
@@ -52,15 +58,13 @@ public class LanguageDialog extends AdvancedDialog{
 	}
 
 	private static LabelSpriteButton makeLingoButton(final Assets.SpriteAsset sa, String lbl) {
-//		SpriteButton btn = new SpriteButton(sa.get());
-//        btn.setText("\n"+lbl);
-//        btn.setLabelStyle(Assets.LabelStyleAsset.MINILABEL.style);
         LabelSpriteButton btn2 = new LabelSpriteButton(sa.get(), lbl);
         
         btn2.addListener(new ClickListener(){
         	@Override
         	public void clicked(InputEvent event, float x, float y) {
         		super.clicked(event, x, y);
+                final String loadingTextInCurrentLanguage = I18N.s("loading");
                 if (sa == SpriteAsset.BTN_REFRESH)
                 {
                     I18N.loadLanguageBundle("");
@@ -70,10 +74,26 @@ public class LanguageDialog extends AdvancedDialog{
                 	String languageCode = sa.name().replace("FLAG_", "").toLowerCase();
                 	I18N.loadLanguageBundle(languageCode);
                 }
-                GameManager.getInstance().getActionResolver().restartMySelf();
+                
+                // show a brief (1 second) loading dialog as fix for #56 .
+                // AndroidPreferences doesn't commit() on flush(), so it needs a bit more time.
+                AdvancedDialog d = new AdvancedDialog();
+				d.getContentTable().add(new Label(loadingTextInCurrentLanguage+"...", Assets.LabelStyleAsset.MINILABEL.style));
+                d.show(lastStage);
+                d.addAction(Actions.delay(1, Actions.run(new Runnable() {
+					@Override
+					public void run() {
+		                GameManager.getInstance().getActionResolver().restartMySelf();
+					}
+				})));
         	}
         });
 		return btn2;
 	}
 	
+	@Override
+	public Dialog show(Stage stage) {
+		lastStage = stage;
+		return super.show(stage);
+	}
 }

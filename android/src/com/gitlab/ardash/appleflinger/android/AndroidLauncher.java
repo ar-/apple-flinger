@@ -80,7 +80,7 @@ public class AndroidLauncher extends AndroidApplication implements ActionResolve
 		// initialize(new AppleflingerGame(this), config);
 		// System.out.println("nothing");
 	}
-
+	
 	@Override
 	public void restartMySelf() {
 		Intent mStartActivity = new Intent(this.getContext(), AndroidLauncher.class);
