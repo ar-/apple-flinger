@@ -47,6 +47,8 @@ import com.gitlab.ardash.appleflinger.global.GameManager;
 import com.gitlab.ardash.appleflinger.global.GameManager.OnCurrentPlayerChangeListener;
 import com.gitlab.ardash.appleflinger.global.GameState;
 import com.gitlab.ardash.appleflinger.helpers.Achievement;
+import com.gitlab.ardash.appleflinger.helpers.BackButtonAdapter;
+import com.gitlab.ardash.appleflinger.helpers.Clicker;
 import com.gitlab.ardash.appleflinger.helpers.Pref;
 import com.gitlab.ardash.appleflinger.helpers.SoundPlayer;
 import com.gitlab.ardash.appleflinger.i18n.I18N;
@@ -296,11 +298,19 @@ public class GameScreen implements Screen {
         	super.clicked(event, x, y);
         }});
         
+        // handle hardware button
+        gm.getInputMultiplexer().addProcessor(new BackButtonAdapter() {
+			@Override
+			public boolean handleBackButton() {
+				Clicker.click(btnPause);
+				return true;
+			}
+		});
+        
         // sound button
         final SpriteButton btnSound = new SpriteButton(Assets.SpriteAsset.BTN_SOUND_ON.get(),Assets.SpriteAsset.BTN_SOUND_OFF.get());
         btnSound.moveBy(0, SCREEN_HEIGHT-100);
         btnSound.setCheckable(true);
-        //guiStage.addActor(btnSound);
         btnSound.addListener(new ClickListener(){
         	@Override
         public void clicked(InputEvent event, float x, float y) {
@@ -310,8 +320,6 @@ public class GameScreen implements Screen {
         btnSound.setChecked(!Pref.getSoundOn());
 
         final Table miniStatsTable = new Table();
-//        miniStatsTable.a
-//        miniStatsTable.align(Align.topLeft);
         miniStatsTable.setTouchable(Touchable.disabled);
         miniStatsTable.add(labelAllPointsP1).right().top();
         miniStatsTable.add(createMiniLabel(I18N.getString("points"))).padLeft(20).padRight(20);

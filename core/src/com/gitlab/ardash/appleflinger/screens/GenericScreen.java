@@ -34,6 +34,7 @@ import com.gitlab.ardash.appleflinger.global.Assets.MusicAsset;
 import com.gitlab.ardash.appleflinger.global.Assets.TextureAsset;
 import com.gitlab.ardash.appleflinger.global.GameManager;
 import com.gitlab.ardash.appleflinger.global.GameState;
+import com.gitlab.ardash.appleflinger.helpers.BackButtonAdapter;
 import com.gitlab.ardash.appleflinger.helpers.Pref;
 import com.gitlab.ardash.appleflinger.helpers.SoundPlayer;
 
@@ -45,6 +46,7 @@ public abstract class GenericScreen implements Screen{
 	protected OrthographicCamera guiCam;
 	protected GameManager gm;
 	protected LabelStyle menustyle;
+	protected BackButtonAdapter backButtonAdapter;
 
 	public GenericScreen() {
 		super();
@@ -105,19 +107,19 @@ public abstract class GenericScreen implements Screen{
 	        }});
 	        btnSound.setChecked(!Pref.getSoundOn());
 	        
-	        SpriteButton btn_world = new SpriteButton(Assets.SpriteAsset.BTN_WORLD.get());
-	        btn_world.moveBy(SCREEN_WIDTH-400, SCREEN_HEIGHT-100);
-	        guiStage.addActor(btn_world);
-	        btn_world.addListener(new ClickListener(){@Override
+	        SpriteButton btnWorld = new SpriteButton(Assets.SpriteAsset.BTN_WORLD.get());
+	        btnWorld.moveBy(SCREEN_WIDTH-400, SCREEN_HEIGHT-100);
+	        guiStage.addActor(btnWorld);
+	        btnWorld.addListener(new ClickListener(){@Override
 	        public void clicked(InputEvent event, float x, float y) {
 	        	super.clicked(event, x, y);
 	        	new LanguageDialog().show(guiStage);
 	        }});
 	
-	        SpriteButton btn_info = new SpriteButton(Assets.SpriteAsset.BTN_INFO.get());
-	        btn_info.moveBy(SCREEN_WIDTH-250, SCREEN_HEIGHT-100);
-	        guiStage.addActor(btn_info);
-	        btn_info.addListener(new ClickListener(){@Override
+	        SpriteButton btnInfo = new SpriteButton(Assets.SpriteAsset.BTN_INFO.get());
+	        btnInfo.moveBy(SCREEN_WIDTH-250, SCREEN_HEIGHT-100);
+	        guiStage.addActor(btnInfo);
+	        btnInfo.addListener(new ClickListener(){@Override
 	        public void clicked(InputEvent event, float x, float y) {
 	        	super.clicked(event, x, y);
 	        	new CreditsDialog().show(guiStage);
