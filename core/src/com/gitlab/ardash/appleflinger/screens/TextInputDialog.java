@@ -24,6 +24,8 @@ import com.badlogic.gdx.scenes.scene2d.ui.Label.LabelStyle;
 import com.badlogic.gdx.scenes.scene2d.ui.Table;
 import com.badlogic.gdx.scenes.scene2d.utils.ClickListener;
 import com.gitlab.ardash.appleflinger.global.Assets;
+import com.gitlab.ardash.appleflinger.global.GameManager;
+import com.gitlab.ardash.appleflinger.helpers.BackButtonAdapter;
 import com.gitlab.ardash.appleflinger.helpers.Pref;
 import com.gitlab.ardash.appleflinger.i18n.I18N;
 import com.gitlab.ardash.appleflinger.listeners.OnTextChangeListener;
@@ -67,8 +69,28 @@ public class TextInputDialog extends AdvancedDialog{
         		changeListener.onTextChange(lblContent.getText().toString());
         	}
         });
-    }
-
+        
+        GenericScreen.linkHardwareBackButtonToAdapter(new BackButtonAdapter() {
+			@Override
+			public boolean handleBackButton() {
+				GameManager.getInstance().setScreen(new SettingsScreen());
+				return true;
+			}
+		});
+	}
+	
+	@Override
+	public void hide() {
+		GenericScreen.linkHardwareBackButtonToAdapter(new BackButtonAdapter() {
+			@Override
+			public boolean handleBackButton() {
+				GameManager.getInstance().setScreen(new MainMenuScreen());
+				return true;
+			}
+		});
+		super.hide();
+	}
+	
 	private void addLocalizedKeyboard(final Table tblContent) {
 		SpriteButton btnBackSpace = new SpriteButton(Assets.SpriteAsset.BTN_BACK.get());
         btnBackSpace.addListener(new ClickListener(){

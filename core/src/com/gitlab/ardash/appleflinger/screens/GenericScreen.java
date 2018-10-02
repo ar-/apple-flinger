@@ -17,9 +17,11 @@
 package com.gitlab.ardash.appleflinger.screens;
 
 import com.badlogic.gdx.Gdx;
+import com.badlogic.gdx.InputProcessor;
 import com.badlogic.gdx.Screen;
 import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.OrthographicCamera;
+import com.badlogic.gdx.scenes.scene2d.Actor;
 import com.badlogic.gdx.scenes.scene2d.InputEvent;
 import com.badlogic.gdx.scenes.scene2d.Stage;
 import com.badlogic.gdx.scenes.scene2d.ui.Image;
@@ -34,6 +36,8 @@ import com.gitlab.ardash.appleflinger.global.Assets.MusicAsset;
 import com.gitlab.ardash.appleflinger.global.Assets.TextureAsset;
 import com.gitlab.ardash.appleflinger.global.GameManager;
 import com.gitlab.ardash.appleflinger.global.GameState;
+import com.gitlab.ardash.appleflinger.helpers.BackButtonAdapter;
+import com.gitlab.ardash.appleflinger.helpers.Clicker;
 import com.gitlab.ardash.appleflinger.helpers.Pref;
 import com.gitlab.ardash.appleflinger.helpers.SoundPlayer;
 
@@ -52,7 +56,7 @@ public abstract class GenericScreen implements Screen{
 	}
 
 	@Override
-	public void show() {  
+	public void show() {
 	    gm.setGameState(GameState.LOADING_SCREEN);
 		SoundPlayer.playMusic(Assets.getMusic(MusicAsset.BG));
 		
@@ -77,54 +81,94 @@ public abstract class GenericScreen implements Screen{
 	 * 
 	 */
 	protected void buildGameGUI() {
-	        menustyle = Assets.LabelStyleAsset.BIGMENUSTYLE.style;
+        menustyle = Assets.LabelStyleAsset.BIGMENUSTYLE.style;
+    
+        Image background = new Image(Assets.getTexture(TextureAsset.BACKGR));
+        background.setAlign(Align.center);
+        background.setSize(SCREEN_WIDTH, SCREEN_HEIGHT);
+        background.setScaling(Scaling.fill);
+        guiStage.addActor(background);
         
-	        Image background = new Image(Assets.getTexture(TextureAsset.BACKGR));
-	        background.setAlign(Align.center);
-	        background.setSize(SCREEN_WIDTH, SCREEN_HEIGHT);
-	        background.setScaling(Scaling.fill);
-	        guiStage.addActor(background);
-	        
-	        Label gameTitle;
-	        LabelStyle largelabelstyle = Assets.LabelStyleAsset.HEADLINE.style;
-	        gameTitle = new Label("ApPlE FlInGeR", largelabelstyle);   
-	        gameTitle.setPosition(0, SCREEN_HEIGHT*0.73f);  
-	        gameTitle.setWidth(SCREEN_WIDTH);  
-	        gameTitle.setAlignment(Align.center);  
-	        guiStage.addActor(gameTitle);  
-	        
-	        final SpriteButton btnSound = new SpriteButton(Assets.SpriteAsset.BTN_SOUND_ON.get(),Assets.SpriteAsset.BTN_SOUND_OFF.get());
-	        btnSound.moveBy(0, SCREEN_HEIGHT-100);
-	        btnSound.setCheckable(true);
-	        guiStage.addActor(btnSound);
-	        btnSound.addListener(new ClickListener(){
-	        	@Override
-	        public void clicked(InputEvent event, float x, float y) {
-	        	super.clicked(event, x, y);
-	        		Pref.setSoundOn(!btnSound.isChecked());
-	        }});
-	        btnSound.setChecked(!Pref.getSoundOn());
-	        
-	        SpriteButton btn_world = new SpriteButton(Assets.SpriteAsset.BTN_WORLD.get());
-	        btn_world.moveBy(SCREEN_WIDTH-400, SCREEN_HEIGHT-100);
-	        guiStage.addActor(btn_world);
-	        btn_world.addListener(new ClickListener(){@Override
-	        public void clicked(InputEvent event, float x, float y) {
-	        	super.clicked(event, x, y);
-	        	new LanguageDialog().show(guiStage);
-	        }});
+        Label gameTitle;
+        LabelStyle largelabelstyle = Assets.LabelStyleAsset.HEADLINE.style;
+        gameTitle = new Label("ApPlE FlInGeR", largelabelstyle);   
+        gameTitle.setPosition(0, SCREEN_HEIGHT*0.73f);  
+        gameTitle.setWidth(SCREEN_WIDTH);  
+        gameTitle.setAlignment(Align.center);  
+        guiStage.addActor(gameTitle);  
+        
+        final SpriteButton btnSound = new SpriteButton(Assets.SpriteAsset.BTN_SOUND_ON.get(),Assets.SpriteAsset.BTN_SOUND_OFF.get());
+        btnSound.moveBy(0, SCREEN_HEIGHT-100);
+        btnSound.setCheckable(true);
+        guiStage.addActor(btnSound);
+        btnSound.addListener(new ClickListener(){
+        	@Override
+        public void clicked(InputEvent event, float x, float y) {
+        	super.clicked(event, x, y);
+        		Pref.setSoundOn(!btnSound.isChecked());
+        }});
+        btnSound.setChecked(!Pref.getSoundOn());
+        
+        SpriteButton btnWorld = new SpriteButton(Assets.SpriteAsset.BTN_WORLD.get());
+        btnWorld.moveBy(SCREEN_WIDTH-400, SCREEN_HEIGHT-100);
+        guiStage.addActor(btnWorld);
+        btnWorld.addListener(new ClickListener(){@Override
+        public void clicked(InputEvent event, float x, float y) {
+        	super.clicked(event, x, y);
+        	new LanguageDialog().show(guiStage);
+        }});
+
+        SpriteButton btnInfo = new SpriteButton(Assets.SpriteAsset.BTN_INFO.get());
+        btnInfo.moveBy(SCREEN_WIDTH-250, SCREEN_HEIGHT-100);
+        guiStage.addActor(btnInfo);
+        btnInfo.addListener(new ClickListener(){@Override
+        public void clicked(InputEvent event, float x, float y) {
+        	super.clicked(event, x, y);
+        	new CreditsDialog().show(guiStage);
+        }});
+
+        // TODO add more other GUI elements here  
+	}
 	
-	        SpriteButton btn_info = new SpriteButton(Assets.SpriteAsset.BTN_INFO.get());
-	        btn_info.moveBy(SCREEN_WIDTH-250, SCREEN_HEIGHT-100);
-	        guiStage.addActor(btn_info);
-	        btn_info.addListener(new ClickListener(){@Override
-	        public void clicked(InputEvent event, float x, float y) {
-	        	super.clicked(event, x, y);
-	        	new CreditsDialog().show(guiStage);
-	        }});
-	
-	        // TODO add more other GUI elements here  
+	static protected void linkHardwareBackButtonToButton(final Actor btnBack) {
+		GameManager gm = GameManager.getInstance();
+		// clear all existing bba
+        for (InputProcessor ip : gm.getInputMultiplexer().getProcessors()) {
+			if (ip instanceof BackButtonAdapter) {
+				BackButtonAdapter bba = (BackButtonAdapter) ip;
+				gm.getInputMultiplexer().removeProcessor(bba);
+			}
 		}
+        
+        if (btnBack == null)
+        	return;
+        
+        // add a new one
+        gm.getInputMultiplexer().addProcessor(0, new BackButtonAdapter() {
+			@Override
+			public boolean handleBackButton() {
+				Clicker.click(btnBack);
+				return true;
+			}
+		});
+	}
+
+	static protected void linkHardwareBackButtonToAdapter(final BackButtonAdapter newbba) {
+		GameManager gm = GameManager.getInstance();
+		// clear all existing bba
+        for (InputProcessor ip : gm.getInputMultiplexer().getProcessors()) {
+			if (ip instanceof BackButtonAdapter) {
+				BackButtonAdapter bba = (BackButtonAdapter) ip;
+				gm.getInputMultiplexer().removeProcessor(bba);
+			}
+		}
+        
+        if (newbba == null)
+        	return;
+        
+        // add a new one
+        gm.getInputMultiplexer().addProcessor(0, newbba);
+	}
 
 	@Override
 	public void render(float delta) {

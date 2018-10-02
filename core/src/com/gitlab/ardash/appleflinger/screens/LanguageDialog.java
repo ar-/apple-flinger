@@ -27,6 +27,7 @@ import com.badlogic.gdx.scenes.scene2d.utils.ClickListener;
 import com.gitlab.ardash.appleflinger.global.Assets;
 import com.gitlab.ardash.appleflinger.global.Assets.SpriteAsset;
 import com.gitlab.ardash.appleflinger.global.GameManager;
+import com.gitlab.ardash.appleflinger.helpers.BackButtonAdapter;
 import com.gitlab.ardash.appleflinger.i18n.I18N;
 
 public class LanguageDialog extends AdvancedDialog{
@@ -53,10 +54,29 @@ public class LanguageDialog extends AdvancedDialog{
 
         getContentTable().row();
         
-		LabelSpriteButton btnYes = new LabelSpriteButton(EMPTY_TEX, I18N.getString("cancel"));
-        button(btnYes);
+		LabelSpriteButton btnCancel = new LabelSpriteButton(EMPTY_TEX, I18N.getString("cancel"));
+        button(btnCancel);
+        GenericScreen.linkHardwareBackButtonToAdapter(new BackButtonAdapter() {
+			@Override
+			public boolean handleBackButton() {
+				GameManager.getInstance().setScreen(new MainMenuScreen());
+				return true;
+			}
+		});
 	}
-
+	
+	@Override
+	public void hide() {
+		GenericScreen.linkHardwareBackButtonToAdapter(new BackButtonAdapter() {
+			@Override
+			public boolean handleBackButton() {
+				GameManager.getInstance().setScreen(new MainMenuScreen());
+				return true;
+			}
+		});
+		super.hide();
+	}
+	
 	private static LabelSpriteButton makeLingoButton(final Assets.SpriteAsset sa, String lbl) {
         LabelSpriteButton btn2 = new LabelSpriteButton(sa.get(), lbl);
         

@@ -23,7 +23,9 @@ import com.badlogic.gdx.scenes.scene2d.ui.Table;
 import com.badlogic.gdx.scenes.scene2d.utils.ClickListener;
 import com.badlogic.gdx.utils.Align;
 import com.gitlab.ardash.appleflinger.global.Assets;
+import com.gitlab.ardash.appleflinger.global.GameManager;
 import com.gitlab.ardash.appleflinger.helpers.Achievement;
+import com.gitlab.ardash.appleflinger.helpers.BackButtonAdapter;
 import com.gitlab.ardash.appleflinger.helpers.Pref;
 import com.gitlab.ardash.appleflinger.i18n.I18N;
 
@@ -59,6 +61,13 @@ public class AchievementsScreen extends GenericScreen {
     			@Override
     			public void clicked(InputEvent event, float x, float y) {
     				super.clicked(event, x, y);
+    				GenericScreen.linkHardwareBackButtonToAdapter(new BackButtonAdapter() {
+    					@Override
+    					public boolean handleBackButton() {
+    	    				GameManager.getInstance().setScreen(new AchievementsScreen());
+    						return true;
+    					}
+    				});
     				new AchievementDescriptionDialog(a).show(guiStage);
     			}
     		});
@@ -77,7 +86,7 @@ public class AchievementsScreen extends GenericScreen {
         guiStage.addActor(labelMessage);
         
         //back btn
-        SpriteButton btnBack = new SpriteButton(Assets.SpriteAsset.BTN_BACK.get());
+        final SpriteButton btnBack = new SpriteButton(Assets.SpriteAsset.BTN_BACK.get());
         btnBack.moveBy(SCREEN_WIDTH-100, SCREEN_HEIGHT-100);
         guiStage.addActor(btnBack);
         btnBack.addListener(new ClickListener() {
@@ -88,7 +97,7 @@ public class AchievementsScreen extends GenericScreen {
 			}
 		});
 
+        linkHardwareBackButtonToButton(btnBack);
     }
-
     
 }  

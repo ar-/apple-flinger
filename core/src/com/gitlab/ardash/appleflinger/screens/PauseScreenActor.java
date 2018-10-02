@@ -21,6 +21,7 @@ import com.badlogic.gdx.graphics.g2d.Sprite;
 import com.badlogic.gdx.scenes.scene2d.Group;
 import com.badlogic.gdx.scenes.scene2d.InputEvent;
 import com.badlogic.gdx.scenes.scene2d.InputListener;
+import com.badlogic.gdx.scenes.scene2d.Stage;
 import com.badlogic.gdx.scenes.scene2d.ui.Image;
 import com.badlogic.gdx.scenes.scene2d.ui.Label;
 import com.badlogic.gdx.scenes.scene2d.ui.Label.LabelStyle;
@@ -30,10 +31,14 @@ import com.badlogic.gdx.utils.Align;
 import com.gitlab.ardash.appleflinger.global.Assets;
 import com.gitlab.ardash.appleflinger.global.Assets.TextureAsset;
 import com.gitlab.ardash.appleflinger.global.GameManager;
+import com.gitlab.ardash.appleflinger.helpers.BackButtonAdapter;
+import com.gitlab.ardash.appleflinger.helpers.Clicker;
 import com.gitlab.ardash.appleflinger.i18n.I18N;
 import com.gitlab.ardash.appleflinger.missions.Mission;
 
 public class PauseScreenActor extends Group{
+	
+	private BackButtonAdapter backButtonAdapter;
 	
 	public PauseScreenActor() {
         final float SCREEN_WIDTH = GameScreen.SCREEN_WIDTH;
@@ -71,11 +76,11 @@ public class PauseScreenActor extends Group{
         addActor(labelMessage);  
         
         // close button
-        SpriteButton btn_close = new SpriteButton(Assets.SpriteAsset.BTN_CLOSE.get());
-        btn_close.moveBy(SCREEN_WIDTH-100, SCREEN_HEIGHT-100);
-        btn_close.setCheckable(true);
-        addActor(btn_close);
-        btn_close.addListener(new ClickListener(){@Override
+        final SpriteButton btnClose = new SpriteButton(Assets.SpriteAsset.BTN_CLOSE.get());
+        btnClose.moveBy(SCREEN_WIDTH-100, SCREEN_HEIGHT-100);
+        btnClose.setCheckable(true);
+        addActor(btnClose);
+        btnClose.addListener(new ClickListener(){@Override
         public void clicked(InputEvent event, float x, float y) {
 //        	setVisible(false);
         	remove();
@@ -137,6 +142,30 @@ public class PauseScreenActor extends Group{
 		
         
 //		setVisible(false);
+        
+        backButtonAdapter = new BackButtonAdapter() {
+			@Override
+			public boolean handleBackButton() {
+				Clicker.click(btnClose);
+				return true;
+			}
+		};
+	}
+	
+	@Override
+	protected void setStage(Stage stage) {
+		super.setStage(stage);
+		
+		if (stage != null)
+		{
+			// this actor was just added to a stage
+			GameManager.getInstance().getInputMultiplexer().addProcessor(0, backButtonAdapter);
+		}
+		else
+		{
+			// this actor was just removed from a stage
+			GameManager.getInstance().getInputMultiplexer().removeProcessor(backButtonAdapter);
+		}
 	}
 	
 	@Override

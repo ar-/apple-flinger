@@ -143,7 +143,7 @@ public class ProjectileActor extends CircleActor {
 				// SHOOT !!!
 				caller.setTouchable(Touchable.disabled);
 				// disable touchablity of the game scene
-				gm.getInputMultiplexer().clear();
+				gm.getInputMultiplexer().removeProcessor(gm.currentGameScreen.getRenderer().world.stage);
 				gm.getInputMultiplexer().addProcessor(gm.currentGameScreen.getGuiStage());
 				gm.currentGameScreen.setAnnouncementText(I18N.getString("waiting"), true); 
 				gm.onShotFired();

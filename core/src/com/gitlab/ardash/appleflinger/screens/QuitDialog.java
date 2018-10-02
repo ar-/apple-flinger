@@ -19,6 +19,8 @@ package com.gitlab.ardash.appleflinger.screens;
 import com.badlogic.gdx.scenes.scene2d.InputEvent;
 import com.badlogic.gdx.scenes.scene2d.utils.ClickListener;
 import com.gitlab.ardash.appleflinger.global.Assets;
+import com.gitlab.ardash.appleflinger.global.GameManager;
+import com.gitlab.ardash.appleflinger.helpers.BackButtonAdapter;
 import com.gitlab.ardash.appleflinger.i18n.I18N;
 
 public class QuitDialog extends AdvancedDialog{
@@ -38,6 +40,25 @@ public class QuitDialog extends AdvancedDialog{
         		System.exit(0);
         	}
         });
-        
+        GenericScreen.linkHardwareBackButtonToAdapter(new BackButtonAdapter() {
+			@Override
+			public boolean handleBackButton() {
+				GameManager.getInstance().setScreen(new MainMenuScreen());
+				return true;
+			}
+		});
 	}
+		
+	@Override
+	public void hide() {
+		GenericScreen.linkHardwareBackButtonToAdapter(new BackButtonAdapter() {
+			@Override
+			public boolean handleBackButton() {
+				GameManager.getInstance().setScreen(new MainMenuScreen());
+				return true;
+			}
+		});
+		super.hide();
+	}
+
 }

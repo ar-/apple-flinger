@@ -18,6 +18,8 @@ package com.gitlab.ardash.appleflinger.screens;
 
 import com.badlogic.gdx.scenes.scene2d.ui.Label.LabelStyle;
 import com.gitlab.ardash.appleflinger.global.Assets;
+import com.gitlab.ardash.appleflinger.global.GameManager;
+import com.gitlab.ardash.appleflinger.helpers.BackButtonAdapter;
 import com.gitlab.ardash.appleflinger.i18n.I18N;
 
 public class CreditsDialog extends AdvancedDialog{
@@ -49,8 +51,27 @@ public class CreditsDialog extends AdvancedDialog{
 		getContentTable().row();
 		text("spinningmerkaba feat. Morusque, Jeris, CSoul, Alex Beroza, Yours Truly", lblstyle); 
         
-		LabelSpriteButton btnYes = new LabelSpriteButton(EMPTY_TEX, I18N.getString("okay"));
-        button(btnYes);
+		LabelSpriteButton btnOkay = new LabelSpriteButton(EMPTY_TEX, I18N.getString("okay"));
+        button(btnOkay);
+        GenericScreen.linkHardwareBackButtonToAdapter(new BackButtonAdapter() {
+			@Override
+			public boolean handleBackButton() {
+				GameManager.getInstance().setScreen(new MainMenuScreen());
+				return true;
+			}
+		});
+	}
+	
+	@Override
+	public void hide() {
+		GenericScreen.linkHardwareBackButtonToAdapter(new BackButtonAdapter() {
+			@Override
+			public boolean handleBackButton() {
+				GameManager.getInstance().setScreen(new MainMenuScreen());
+				return true;
+			}
+		});
+		super.hide();
 	}
 	
 }

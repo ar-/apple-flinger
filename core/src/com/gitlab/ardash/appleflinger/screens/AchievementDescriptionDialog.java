@@ -18,10 +18,14 @@ package com.gitlab.ardash.appleflinger.screens;
 
 import com.badlogic.gdx.scenes.scene2d.ui.Label.LabelStyle;
 import com.gitlab.ardash.appleflinger.global.Assets;
+import com.gitlab.ardash.appleflinger.global.GameManager;
 import com.gitlab.ardash.appleflinger.helpers.Achievement;
+import com.gitlab.ardash.appleflinger.helpers.BackButtonAdapter;
 import com.gitlab.ardash.appleflinger.i18n.I18N;
 
 public class AchievementDescriptionDialog extends AdvancedDialog{
+	private final LabelSpriteButton btnOkay;
+
 	public AchievementDescriptionDialog(Achievement a) 
 	{
         final LabelStyle lblstyle = Assets.LabelStyleAsset.MINILABEL.style;
@@ -33,8 +37,20 @@ public class AchievementDescriptionDialog extends AdvancedDialog{
 		text(I18N.getString(a.getDescriptionId()), lblstyle); 
 		getContentTable().row();
         
-		LabelSpriteButton btnYes = new LabelSpriteButton(EMPTY_TEX, I18N.getString("okay"));
-        button(btnYes);
+		btnOkay = new LabelSpriteButton(EMPTY_TEX, I18N.getString("okay"));
+        button(btnOkay);
+	}
+	
+	@Override
+	public void hide() {
+		GenericScreen.linkHardwareBackButtonToAdapter(new BackButtonAdapter() {
+			@Override
+			public boolean handleBackButton() {
+				GameManager.getInstance().setScreen(new MainMenuScreen());
+				return true;
+			}
+		});
+		super.hide();
 	}
 	
 }
