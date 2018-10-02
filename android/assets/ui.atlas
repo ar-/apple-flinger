@@ -195,14 +195,14 @@ dialog
   index: -1
 flag_de
   rotate: false
-  xy: 508, 275
+  xy: 610, 410
   size: 100, 60
   orig: 100, 60
   offset: 0, 0
   index: -1
 flag_en
   rotate: false
-  xy: 610, 420
+  xy: 712, 489
   size: 100, 50
   orig: 100, 50
   offset: 0, 0
@@ -230,14 +230,21 @@ flag_fr
   index: -1
 flag_pl
   rotate: false
-  xy: 712, 546
+  xy: 508, 273
   size: 100, 62
   orig: 100, 62
   offset: 0, 0
   index: -1
-flag_ru
+flag_pt
   rotate: false
   xy: 610, 472
+  size: 100, 67
+  orig: 100, 67
+  offset: 0, 0
+  index: -1
+flag_ru
+  rotate: false
+  xy: 712, 541
   size: 100, 67
   orig: 100, 67
   offset: 0, 0

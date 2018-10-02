@@ -80,6 +80,13 @@ public class AssetTest {
 	}
 	
 	@Test
+	public void isI18NWorkingForPT() {
+		I18N.loadLanguageBundle("pt");
+		assertEquals("Não", I18N.s("no"));
+		assertEquals("entrada necessária", I18N.s("inputRequired"));
+	}
+	
+	@Test
 	public void isI18NWorkingForRU() {
 		I18N.loadLanguageBundle("ru");
 		assertEquals("Громкость", I18N.s("Volume"));
