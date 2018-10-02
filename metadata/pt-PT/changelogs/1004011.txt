@@ -1,6 +1,0 @@
-OBSERVAÇÃO: ESTE APP NÃO CONTÉM ANTIFEATURAS OU RECURSOS INDESEJADOS. O que você vê abaixo é um erro no F-Droid.
-
-1.4.11
-  * Pequenas correções de tradução. Graças a verdulo novamente.
-  * Atualizada a versão alvo do SDK para a loja idiota do google play
-

@@ -41,11 +41,12 @@ public class DesktopTestdriveTest implements ActionResolver{
 	
 //	private static final String [] langs = {"es", "fr"};
 //	private static final String [] langs = {"de","en","es","fr"};
-	private static final String [] langs = {"eo","pl"};
+//	private static final String [] langs = {"eo","pl"};
+	private static final String [] langs = {"pt"};
 //	private static final String [] langs = {"ru"}; // separate non-latin load
-	private static final Mission [] missions = {Mission.M_1_1, Mission.M_1_3, Mission.M_1_4
-		,Mission.M_1_5, Mission.M_1_11, Mission.M_1_14};
-//	private static final Mission [] missions = {Mission.M_2_3};
+//	private static final Mission [] missions = {Mission.M_1_1, Mission.M_1_3, Mission.M_1_4
+//		,Mission.M_1_5, Mission.M_1_11, Mission.M_1_14};
+	private static final Mission [] missions = {Mission.M_2_3};
 
 
 	@BeforeClass
@@ -104,6 +105,8 @@ public class DesktopTestdriveTest implements ActionResolver{
 		n2.put("fr", "Debonnaire".toUpperCase());
 		n1.put("pl", "Szymon".toUpperCase());
 		n2.put("pl", "Amelia".toUpperCase());
+		n1.put("pt", "Adriano".toUpperCase());
+		n2.put("pt", "Valencia".toUpperCase());
 		n1.put("ru", "Михаи́л".toUpperCase());
 		n2.put("ru", "Светлана".toUpperCase());
 		

@@ -20,7 +20,7 @@ md=metadata
 orig=en-AU
 origd="$md/$orig"
 cl=changelogs
-todo="af am ar bg bo ca cs de el eo es et eu fa fr hi hr hu id it ja ko lt lv nb nl no pl pt-BR pt-PT ro ru sl sr sv sw th tr uk vi zh-CN zh-TW"
+todo="af am ar bg bo ca cs de el eo es et eu fa fr hi hr hu id it ja ko lt lv nb nl no pl pt-BR ro ru sl sr sv sw th tr uk vi zh-CN zh-TW"
 reps=0
 
 function translate {
