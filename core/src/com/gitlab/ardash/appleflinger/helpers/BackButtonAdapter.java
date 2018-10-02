@@ -29,5 +29,10 @@ public abstract class BackButtonAdapter extends InputAdapter {
 		return false;
 	}
 	abstract public boolean handleBackButton();
+	
+	@Override
+	public String toString() {
+		return "BackButtonAdapter";
+	}
 
 }

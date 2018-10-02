@@ -127,6 +127,7 @@ public class MissionSelectScreen extends GenericScreen {
 			}
 		});
 
+        linkHardwareBackButtonToButton(btnBack);
     }
 
 	private static String getEpisodeName(Integer episode) {

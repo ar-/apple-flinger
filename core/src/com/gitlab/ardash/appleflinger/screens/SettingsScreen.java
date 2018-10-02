@@ -166,7 +166,7 @@ public class SettingsScreen extends GenericScreen {
 				gm.setScreen(new MainMenuScreen());
 			}
 		});
-        
+        linkHardwareBackButtonToButton(btnBack);
         
         // player lbl action listeners
         lblPN1.addListener(new ClickListener(){

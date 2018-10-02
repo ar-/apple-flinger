@@ -47,16 +47,17 @@ public class MainMenuScreen extends GenericScreen {
 	protected void buildGameGUI() {
 		super.buildGameGUI();
 		
-        SpriteButton btn_close = new SpriteButton(Assets.SpriteAsset.BTN_CLOSE.get());
-        btn_close.moveBy(SCREEN_WIDTH-100, SCREEN_HEIGHT-100);
-        btn_close.setCheckable(true);
-        guiStage.addActor(btn_close);
-        btn_close.addListener(new ClickListener(){
+        SpriteButton btnClose = new SpriteButton(Assets.SpriteAsset.BTN_CLOSE.get());
+        btnClose.moveBy(SCREEN_WIDTH-100, SCREEN_HEIGHT-100);
+        btnClose.setCheckable(true);
+        guiStage.addActor(btnClose);
+        btnClose.addListener(new ClickListener(){
         	@Override
 	        public void clicked(InputEvent event, float x, float y) {
 	        	super.clicked(event, x, y);
 	        	new QuitDialog().show(guiStage);
         }});
+        linkHardwareBackButtonToButton(btnClose);
 		
 		Assets.SpriteAsset.BTN_1PLAYER.get().setSize(200, 200);
 		Assets.SpriteAsset.BTN_2PLAYERS.get().setSize(200, 200);
