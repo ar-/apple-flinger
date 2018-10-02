@@ -34,16 +34,16 @@ in_source=`echo $in_source $all_achis`
 echo these are i18n strings in the source code
 echo $in_source
 echo 
-echo checking all of them
+echo checking all of them ...
 echo 
 #exit
 for ins in $in_source
 do
-	echo checking: $ins
+#	echo checking: $ins
 
 	for pro in $prop_files
 	do
-		echo in prop file: $pro
+#		echo in prop file: $pro
 		NUM=`egrep -a "^$ins=" $pro | wc -l`
 		[[ $NUM -eq "1" ]] || echo ERROR $ins is in Java code but not in $pro | tee -a $error_file
 	done
@@ -55,16 +55,16 @@ echo
 echo checking values in prop files that are not used in java source code
 for pro in $prop_files
 do
-	echo in prop file: $pro
+#	echo in prop file: $pro
 	in_this_prop=`egrep -a -o "^.*=" $pro | tr -d '='`
 
 	for fin in $in_this_prop
 	do
-		echo searching for uses of: $fin
+#		echo searching for uses of: $fin
 		NUM=`egrep -a -r "I18N.getString\(\"$fin\"\)|I18N.s\(\"$fin\"\)" core/ | wc -l`
 		NUM2=`echo $all_achis | egrep -a $fin | wc -l`
-		echo occurences of $fin in java code: $NUM 
-		echo occurences of $fin in java enums: $NUM2 
+#		echo occurences of $fin in java code: $NUM 
+#		echo occurences of $fin in java enums: $NUM2 
 		[[ $NUM -ge "1" ]] || [[ $NUM2 -ge "1" ]] || echo ERROR $fin in $pro does not occur in any java code | tee -a $error_file
 	done
 
@@ -78,7 +78,7 @@ echo checking number of lines in prop files
 number_of_ins=`echo $in_source | wc -w`
 for pro in $prop_files
 do
-	echo in prop file: $pro
+#	echo in prop file: $pro
 	NUM=`egrep -a "^.*=" $pro | wc -l`
 	[[ $NUM -eq $number_of_ins ]] || echo ERROR $pro contains $NUM lines, but in java code there are $number_of_ins references | tee -a $error_file
 done
