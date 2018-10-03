@@ -19,6 +19,7 @@ package com.gitlab.ardash.appleflinger.screens;
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.scenes.scene2d.InputEvent;
 import com.badlogic.gdx.scenes.scene2d.InputListener;
+import com.badlogic.gdx.scenes.scene2d.Touchable;
 import com.badlogic.gdx.scenes.scene2d.ui.Label;
 import com.badlogic.gdx.scenes.scene2d.ui.Label.LabelStyle;
 import com.badlogic.gdx.scenes.scene2d.ui.Table;
@@ -130,6 +131,11 @@ public class MainMenuScreen extends GenericScreen {
         btnSettings.setHeight(btnSettings.getHeight()*2);
         btnSettings.setWidth( btnSettings.getWidth()*2);
         guiStage.addActor(btnSettings);
+        btnSettings.padLeft(300);
+        btnSettings.padBottom(50);
+        btnSettings.setFillParent(true);
+        btnSettings.align(Align.bottomLeft);
+        btnSettings.setTouchable(Touchable.childrenOnly);
 
 		btnSettings.addListener(new ClickListener() {
 			@Override
@@ -170,6 +176,7 @@ public class MainMenuScreen extends GenericScreen {
 		bottomtable.add(btnPI).width(btnPI.getWidth()*1.5f).height(btnPI.getWidth()*2);
 		bottomtable.add().width(btnTW.getWidth()*0.25f);
 		guiStage.addActor(bottomtable);
+		bottomtable.padRight(300);
 
 		btnTW.addListener(new ClickListener() {
 			@Override

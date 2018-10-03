@@ -97,6 +97,12 @@ public abstract class GenericScreen implements Screen{
         gameTitle.setAlignment(Align.center);  
         guiStage.addActor(gameTitle);  
         
+        Image imgForkMe = new Image(Assets.SpriteAsset.FORK_ME.get());
+        guiStage.addActor(imgForkMe);  
+        Image imgGpl3 = new Image(Assets.SpriteAsset.GPL3.get());
+        imgGpl3.setPosition(SCREEN_WIDTH-imgGpl3.getWidth()-20, 20);
+        guiStage.addActor(imgGpl3);  
+        
         final SpriteButton btnSound = new SpriteButton(Assets.SpriteAsset.BTN_SOUND_ON.get(),Assets.SpriteAsset.BTN_SOUND_OFF.get());
         btnSound.moveBy(0, SCREEN_HEIGHT-100);
         btnSound.setCheckable(true);

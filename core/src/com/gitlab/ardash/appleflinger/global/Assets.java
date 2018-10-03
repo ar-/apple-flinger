@@ -275,7 +275,6 @@ public class Assets {
 		EYES_UP,
 
 		DIALOG,
-		SLIDERBACK,
 		FLAG_DE,
 		FLAG_EN,
 		FLAG_EO,
@@ -284,6 +283,9 @@ public class Assets {
 		FLAG_PL,
 		FLAG_PT,
 		FLAG_RU,
+		FORK_ME,
+		GPL3,
+		SLIDERBACK,
 		BTN_INFO,
 		BTN_JOYPAD,
 		BTN_LEADER,
