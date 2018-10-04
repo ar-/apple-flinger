@@ -1,0 +1,15 @@
+1.5.2
+  * added Portuguese translation
+  * made the winner and the highest points more colourful
+  * activated hardware back-button to leave the game or go to previous screen
+  * fixed Polish and Esperanto translations (by Verdulo)
+  * bugfix: language selection sometimes not working
+  * added GPL3 and gitlab badges to background
+
+1.5.1
+  * Keep the screen on a bit longer, as long the the game is actively being played.
+
+1.5.0
+  * added achievements
+  * bugfix: don't increment overall points when round repeats due to losing against computer
+

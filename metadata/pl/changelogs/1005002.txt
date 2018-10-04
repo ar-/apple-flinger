@@ -1,0 +1,15 @@
+1.5.2
+  * dodano portugalskie tłumaczenie
+  * sprawił, że zwycięzca i najwyższe punkty były bardziej kolorowe
+  * aktywowany przycisk powrotu sprzętu, aby opuścić grę lub przejść do poprzedniego ekranu
+  * naprawione tłumaczenia polskie i esperanckie (autor: Verdulo)
+  * bugfix: wybór języka czasami nie działa
+  * dodano odznaki GPL3 i gitlab do tła
+
+1.5.1
+  * Pozostaw ekran nieco dłużej, o ile gra jest aktywnie odtwarzana.
+
+1.5.0
+  * dodane osiągnięcia
+  * Poprawka: nie zwiększaj ogólnej liczby punktów, gdy runda powtarza się z powodu przegranej z komputerem
+

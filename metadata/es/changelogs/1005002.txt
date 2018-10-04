@@ -1,0 +1,15 @@
+1.5.2
+  * Añadida traducción al portugués.
+  * Hizo el ganador y los puntos más altos más coloridos.
+  * botón de retroceso de hardware activado para abandonar el juego o ir a la pantalla anterior
+  * Traducciones fijas al polaco y al esperanto (por Verdulo).
+  * corrección de errores: selección de idioma a veces no funciona
+  * se agregaron GPL3 y gitlab insignias al fondo
+
+1.5.1
+  * Mantenga la pantalla un poco más larga, siempre que el juego se esté jugando activamente.
+
+1.5.0
+  * logros añadidos
+  * corrección de errores: no se incrementan los puntos generales cuando se repite la ronda debido a la pérdida contra la computadora
+
