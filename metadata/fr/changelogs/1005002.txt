@@ -1,0 +1,15 @@
+1.5.2
+  * ajout de la traduction portugaise
+  * fait le gagnant et les points les plus hauts plus colorés
+  * bouton de retour du matériel activé pour quitter le jeu ou aller à l'écran précédent
+  * traductions fixes en polonais et en espéranto (par Verdulo)
+  * correction de bug: la sélection de la langue ne fonctionnait parfois pas
+  * ajout des badges GPL3 et Gitlab au fond
+
+1.5.1
+  * Gardez l'écran un peu plus longtemps, aussi longtemps que le jeu est activement joué.
+
+1.5.0
+  * réalisations supplémentaires
+  * correction de bug: ne pas incrémenter le total des points lors des répétitions de parties en raison d'une défaite contre l'ordinateur
+

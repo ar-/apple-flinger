@@ -1,0 +1,15 @@
+1.5.2
+  * bygevoeg Portugese vertaling
+  * het die wenner en die hoogste punte meer kleurvol gemaak
+  * Geaktiveerde hardeware-terugknoppie om die spel te verlaat of na vorige skerm te gaan
+  * vaste Pools en Esperanto vertalings (deur Verdulo)
+  * Bugfix: taal keuse soms werk nie
+  * GPL3 en gitlab badges bygevoeg na agtergrond
+
+1.5.1
+  * Hou die skerm 'n bietjie langer, solank die spel aktief gespeel word.
+
+1.5.0
+  * toegevoegde prestasies
+  * Bugfix: moenie algehele punte verhoog wanneer ronde herhaal word as gevolg van verlies aan rekenaar nie
+

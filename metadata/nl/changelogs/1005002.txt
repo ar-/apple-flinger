@@ -1,0 +1,15 @@
+1.5.2
+  * Portugese vertaling toegevoegd
+  * maakte de winnaar en de hoogste punten kleurrijker
+  * geactiveerde hardware-terugknop om het spel te verlaten of naar het vorige scherm te gaan
+  * vaste Poolse en Esperanto-vertalingen (door Verdulo)
+  * bugfix: taalselectie werkt soms niet
+  * GPL3- en gitlab-badges toegevoegd aan de achtergrond
+
+1.5.1
+  * Houd het scherm iets langer open, zolang het spel actief wordt gespeeld.
+
+1.5.0
+  * Prestaties toegevoegd
+  * bugfix: verhoog het totaal aantal punten niet wanneer ronde herhalingen te wijten zijn aan het verliezen van de computer
+

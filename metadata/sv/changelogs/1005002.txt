@@ -1,0 +1,15 @@
+1.5.2
+  * lagt till portugisiska översättning
+  * gjorde vinnaren och de högsta poängen mer färgstarka
+  * aktiverad hårdvaruback-knapp för att lämna spelet eller gå till föregående skärm
+  * fasta polska och esperanto översättningar (av Verdulo)
+  * Bugfix: Språkval fungerar ibland inte
+  * lagt till GPL3 och gitlab-märken till bakgrund
+
+1.5.1
+  * Håll skärmen lite längre, så länge spelet spelas aktivt.
+
+1.5.0
+  * Tillagda resultat
+  * bugfix: öka inte totala poäng när runda upprepningar beror på att du förlorar mot datorn
+

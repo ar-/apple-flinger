@@ -1,0 +1,15 @@
+1.5.2
+  * afegit la traducció al portuguès
+  * va fer que el guanyador i els punts més alts de color
+  * botó de seguretat de maquinari activat per sortir del joc o anar a la pantalla anterior
+  * Traduccions fetes poloneses i esperantoques (per Verdulo)
+  * error: la selecció d'idiomes a vegades no funciona
+  * Va afegir insígnies GPL3 i gitlab al fons
+
+1.5.1
+  * Mantenir la pantalla una mica més, mentre el joc s'estigui jugant activament.
+
+1.5.0
+  * Èxits afegits
+  * error: no augmenti els punts globals quan es repeteix la ronda per perdre contra l'ordinador
+

@@ -1,0 +1,15 @@
+1.5.2
+  * dodao portugalski prijevod
+  * pobijedio je i najviši bodovi bili su šareni
+  * aktivirani hardverski back-gumb za napuštanje igre ili prijelaz na prethodni zaslon
+  * fiksni poljski i esperanto prijevodi (Verdulo)
+  * bugfix: izbor jezika ponekad ne radi
+  * dodao je GPL3 i gitlab značke u pozadinu
+
+1.5.1
+  * Držite ekran malo duže, sve dok se igra aktivno reproducira.
+
+1.5.0
+  * dodano dostignuća
+  * bugfix: ne povećavajte ukupne bodove kada se okrugli ponovi zbog gubitka na računalu
+

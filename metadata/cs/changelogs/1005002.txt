@@ -1,0 +1,15 @@
+1.5.2
+  * přidán portugalský překlad
+  * udělal vítěze a nejvyšší body barevnější
+  * Aktivované hardwarové zpětné tlačítko pro opuštění hry nebo přechod na předchozí obrazovku
+  * pevné a polské esperantské překlady (Verdulo)
+  * bugfix: někdy nefunguje výběr jazyka
+  * přidány GPL3 a gitlab odznaky na pozadí
+
+1.5.1
+  * Držte obrazovku trochu déle, dokud se hra aktivně hraje.
+
+1.5.0
+  * přidané úspěchy
+  * bugfix: nepleťte celkový počet bodů, když se opakují kola kvůli ztrátě proti počítači
+

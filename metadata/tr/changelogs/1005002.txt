@@ -1,0 +1,15 @@
+1.5.2
+  * Portekizce çeviri eklendi
+  * Kazanan ve en yüksek puanları daha renkli yaptı
+  * Oyundan çıkmak veya önceki ekrana gitmek için aktif donanım geri düğmesi
+  * Sabit Lehçe ve Esperanto çevirileri (Verdulo tarafından)
+  * bugfix: dil seçimi bazen çalışmıyor
+  * GPL3 ve gitlab rozetlerini arka plana ekledi
+
+1.5.1
+  * Oyun aktif olarak oynatıldığı sürece ekranı biraz daha uzun tutun.
+
+1.5.0
+  * başarılar eklendi
+  * bugfix: bilgisayara karşı kaybetme nedeniyle yuvarlak tekrarlar zaman genel puan arttırma
+

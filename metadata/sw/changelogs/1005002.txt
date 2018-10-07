@@ -1,0 +1,15 @@
+1.5.2
+  * aliongeza tafsiri ya Kireno
+  * alifanya mshindi na pointi ya juu zaidi ya rangi
+  * iliyoboreshwa vifaa vya nyuma-kifungo kuondoka mchezo au kwenda skrini ya awali
+  * fasta tafsiri ya Kipolishi na Kiesperanto (kwa Verdulo)
+  * Bugfix: uteuzi wa lugha wakati mwingine haufanyi kazi
+  * aliongeza GPL3 na beji za gitrib kwa historia
+
+1.5.1
+  * Weka skrini kwa muda mrefu, kwa muda mrefu mchezo huu unachezwa kikamilifu.
+
+1.5.0
+  * mafanikio yaliongezwa
+  * bugfix: usiongeza pointi kwa ujumla wakati kurudia kwa sababu ya kupoteza dhidi ya kompyuta
+
