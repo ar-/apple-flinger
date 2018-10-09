@@ -1,6 +1,8 @@
 # Apple Flinger
 
-[![build status](https://gitlab.com/ar-/apple-flinger/badges/master/build.svg)](https://gitlab.com/ar-/apple-flinger/builds) [![CII Best Practices](https://bestpractices.coreinfrastructure.org/projects/2233/badge)](https://bestpractices.coreinfrastructure.org/projects/2233)
+[![build status](https://gitlab.com/ar-/apple-flinger/badges/master/build.svg)](https://gitlab.com/ar-/apple-flinger/builds) 
+[![CII Best Practices](https://bestpractices.coreinfrastructure.org/projects/2233/badge)](https://bestpractices.coreinfrastructure.org/projects/2233)
+[![Translation status](https://hosted.weblate.org/widgets/apple-flinger/-/translations/svg-badge.svg)](https://hosted.weblate.org/engage/apple-flinger/?utm_source=widget)
 
 *Funny single- and multiplayer game for Android - Use a slingshot to shoot with apples. Very challenging and addictive.*
 
@@ -50,12 +52,21 @@ Option 5: Get if from google play store: [click here](https://play.google.com/st
 
 ## Contributors
 
-See the [AUTHORS](AUTHORS.md) file for a list of all contributors.
+See the [AUTHORS](AUTHORS.md) file for a list of all contributors. Merged changes from all authors will automatically add them to this file. please let me know if you don't want to be listed in [AUTHORS](AUTHORS.md) or if you are missing your name.
 
 All merge requests are welcome. Contributions can be made towards:
 Programming, Testing, Graphic Design, Web page, Sound engineering, Level design, Documentation, Consulting, ...
 
 Send an email to <incoming+ar-/apple-flinger@gitlab.com> if you need help with anything.
+
+## Translate
+
+You can translate the properties file and send a merge request, or (for the technically less experienced) you can simply use the convinient web-interface on weblate https://hosted.weblate.org/engage/apple-flinger/ . There you can add new languages to the game and improve existing translations. By default you will be mentionend in the AUTHORS file of this project (that is done by a script). Let me know by email, if you don't want that.
+
+Here are some Weblate statistics:
+[![Translation status](https://hosted.weblate.org/widgets/apple-flinger/-/translations/287x66-grey.png)](https://hosted.weblate.org/engage/apple-flinger/?utm_source=widget)
+
+[![Translation status](https://hosted.weblate.org/widgets/apple-flinger/-/translations/multi-auto.svg)](https://hosted.weblate.org/engage/apple-flinger/?utm_source=widget)
 
 ## How to report an error? How to suggest a new feature?
 If you don't have a GitLab account (and don't want to create one), you can send an email to <incoming+ar-/apple-flinger@gitlab.com> or to <ar-appleflinger@abga.be>. This will automatically create an issue here in the Gitlab system.
