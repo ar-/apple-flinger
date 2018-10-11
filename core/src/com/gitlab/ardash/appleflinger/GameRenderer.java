@@ -66,10 +66,6 @@ public class GameRenderer  implements Disposable
         // we obtain a reference to the game stage camera. The camera is scaled to box2d meter units  
         this.camera = (OrthographicCamera) world.stage.getCamera();  
       
-        // TODO center the camera on bob (optional)  THIS CASUE A SEVERE PROJECTION BUG !!!
-//        camera.position.x = world.bob.body.getPosition().x;  
-//        camera.position.y = world.bob.body.getPosition().y;  
-        
         // cam movement listener
         world.stage.addListener(new InputListener(){
         	private final Vector2 lastDrag = new Vector2(0,0);
@@ -79,7 +75,8 @@ public class GameRenderer  implements Disposable
         			int pointer, int button) {
         		lastDrag.set(0,0);
         		lastTouchDown.set(x,y);
-        		//System.out.println("s drag "+x+","+y+ " ev: "+event.getRelatedActor());
+        		if (GameManager.DEBUG)
+        			System.out.println("s touc "+x+","+y+ " ev: "+event.getRelatedActor());
         		return true;
         	}
         	@Override
@@ -88,7 +85,13 @@ public class GameRenderer  implements Disposable
         		// don't do anything if the user is dragging the projectile
         		if (GameManager.getInstance().getGameState()==GameState.DRAGGING)
         			return;
-        		//System.out.println("s drag "+x+","+y+ "ev:"+event.getRelatedActor());
+        		if (GameManager.DEBUG)
+        			System.out.println("s drag "+x+","+y+ "ev:"+event.getRelatedActor());
+        		
+        		// fix for iss #55, drop out, if the drag is too close to the projectile
+        		final Vector2 slingShotCenter = GameManager.getInstance().currentPlayer.slingshot.getSlingShotCenter();
+        		if (slingShotCenter.dst2(x, y) < 1f)
+        			return;
 
         		super.touchDragged(event, x, y, pointer);
         		final float stageX = event.getStageX();
@@ -101,7 +104,8 @@ public class GameRenderer  implements Disposable
 				if (lastDrag.epsilonEquals(stageX, stageY, 0.1f))
 					return;
         			
-        		//System.out.println("s drag "+stageX+","+stageY);
+        		if (GameManager.DEBUG)
+        			System.out.println("s dra2 "+stageX+","+stageY);
         		float factor = 0.1f;
         		if (stageX>lastDrag.x)
         			factor *=-1;
