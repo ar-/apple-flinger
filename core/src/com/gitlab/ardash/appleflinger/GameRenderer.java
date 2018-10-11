@@ -89,10 +89,18 @@ public class GameRenderer  implements Disposable
         			System.out.println("s drag "+x+","+y+ "ev:"+event.getRelatedActor());
         		
         		// fix for iss #55, drop out, if the drag is too close to the projectile
-        		final Vector2 slingShotCenter = GameManager.getInstance().currentPlayer.slingshot.getSlingShotCenter();
-        		if (slingShotCenter.dst2(x, y) < 1f)
-        			return;
-
+        		try
+        		{
+	        		final Vector2 slingShotCenter = GameManager.getInstance().currentPlayer.slingshot.getSlingShotCenter();
+	        		if (slingShotCenter.dst2(x, y) < 1f)
+	        			return;
+        		}
+        		catch (NullPointerException e)
+        		{
+        			// no worries! current player or slingshot not set yet.
+        			// player dragged (touched) too early, while stage is still in initial swinging 
+        		}
+        		
         		super.touchDragged(event, x, y, pointer);
         		final float stageX = event.getStageX();
 				final float stageY = event.getStageY();
