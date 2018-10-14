@@ -30,9 +30,9 @@ mv android-sdk-linux tmp/
 export ANDROID_HOME=$PWD/tmp/android-sdk-linux
 
 # a machine cannot agree to a licence, but for the idiots @ google we do it anyway
+mkdir tmp/android-sdk-linux/licenses
 printf "8933bad161af4178b1185d1a37fbf41ea5269c55\nd56f5187479451eabf01fb78af6dfcb131a6481e" > tmp/android-sdk-linux/licenses/android-sdk-license
 printf "84831b9409646a918e30573bab4c9c91346d8abd" > tmp/android-sdk-linux/licenses/android-sdk-preview-license
-mkdir android-sdk-linux/licenses
 
 echo y | tmp/android-sdk-linux/tools/android --silent update sdk --no-ui --all --filter android-${ANDROID_TARGET_SDK},platform-tools,build-tools-${ANDROID_BUILD_TOOLS},extra-android-m2repository
 
