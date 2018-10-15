@@ -280,6 +280,7 @@ public class Assets {
 		FLAG_EO,
 		FLAG_ES,
 		FLAG_FR,
+		FLAG_NB,
 		FLAG_PL,
 		FLAG_PT,
 		FLAG_RU,
