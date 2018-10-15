@@ -3,6 +3,7 @@ Authors
 We'd like to thank the following people for their contributions:
 
 
+- Allan Nordhøy \<epost⒜anotheragency∙no\>
 - Andreas Redmer \<ar-appleflinger⒜abga∙be\>
 - Dmitry Mikhirev \<mikhirev⒜gmail∙com\>
 - vagrant \<vagrant⒜vagrant∙vm\>
