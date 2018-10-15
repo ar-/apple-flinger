@@ -65,10 +65,10 @@ unit_tests:
 fdroid_build:
   script:
     - . ./scripts/setup-android-sdk.sh
-    - wget https://services.gradle.org/distributions/gradle-2.2-bin.zip
+    - wget https://services.gradle.org/distributions/gradle-3.3-bin.zip
     - mkdir /opt/gradle
-    - unzip -d /opt/gradle gradle-2.2-bin.zip
-    - export PATH=$PATH:/opt/gradle/gradle-2.2/bin
+    - unzip -d /opt/gradle gradle-3.3-bin.zip
+    - export PATH=$PATH:/opt/gradle/gradle-3.3/bin
     - gradle -v
     - apt-get --quiet install --yes fdroidserver
     - git clone https://gitlab.com/fdroid/fdroidserver.git
