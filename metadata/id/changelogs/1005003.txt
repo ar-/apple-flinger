@@ -1,0 +1,15 @@
+1.5.3
+  * menambahkan ikon adaptif (Android 8 dan lebih tinggi)
+  * Zoom latar belakang yang cacat di dekat apel
+  * menambahkan bahasa Norwegia (terima kasih kepada Allan di weblate)
+
+1.5.2
+  * menambahkan terjemahan Portugis
+  * membuat pemenang dan poin tertinggi lebih berwarna
+  * tombol kembali perangkat keras yang diaktifkan untuk meninggalkan game atau pergi ke layar sebelumnya
+  * Terjemahan Polandia dan Esperanto (oleh Verdulo)
+  * perbaikan bug: pemilihan bahasa terkadang tidak berfungsi
+  * menambahkan lencana GPL3 dan gitlab ke latar belakang
+
+1.5.1
+  * Pertahankan layar sedikit lebih lama, asalkan gim aktif dimainkan.

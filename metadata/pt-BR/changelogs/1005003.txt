@@ -1,0 +1,15 @@
+1.5.3
+  * ícone adaptativo adicionado (Android 8 e superior)
+  * zoom de fundo desativado perto da maçã
+  * Adicionado idioma norueguês (graças a Allan no weblate)
+
+1.5.2
+  * adicionado em português
+  * fez o vencedor e os pontos mais altos mais coloridos
+  * botão de volta do hardware ativado para sair do jogo ou ir para a tela anterior
+  * traduções fixas de polonês e esperanto (por Verdulo)
+  * bugfix: seleção de idioma às vezes não funciona
+  * adicionou emblemas GPL3 e gitlab ao plano de fundo
+
+1.5.1
+  * Mantenha a tela um pouco mais longa, desde que o jogo esteja sendo jogado ativamente.

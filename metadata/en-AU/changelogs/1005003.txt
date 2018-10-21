@@ -1,6 +1,8 @@
 1.5.3
   * added adaptive icon (Android 8 and higher)
   * disabled background zoom near the apple
+  * added Norwegian language (thanks to Allan on weblate)
+
 1.5.2
   * added Portuguese translation
   * made the winner and the highest points more colourful

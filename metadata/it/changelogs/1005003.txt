@@ -1,0 +1,15 @@
+1.5.3
+  * aggiunta un'icona adattiva (Android 8 e versioni successive)
+  * zoom di sfondo disattivato vicino alla mela
+  * aggiunta lingua norvegese (grazie ad Allan su weblate)
+
+1.5.2
+  * aggiunta traduzione portoghese
+  * ha reso il vincitore e i punti più alti più colorati
+  * pulsante hardware attivato per uscire dal gioco o andare alla schermata precedente
+  * risolto le traduzioni in polacco ed in esperanto (di Verdulo)
+  * bugfix: la selezione della lingua a volte non funziona
+  * aggiunto badge GPL3 e gitlab allo sfondo
+
+1.5.1
+  * Tieni lo schermo un po 'più a lungo, a condizione che il gioco venga attivamente riprodotto.

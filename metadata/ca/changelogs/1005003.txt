@@ -1,0 +1,15 @@
+1.5.3
+  * icona d'adaptació afegida (Android 8 i superior)
+  * zoom de fons desactivat a prop de la poma
+  * ha afegit la llengua noruega (gràcies a Allan a weblate)
+
+1.5.2
+  * afegit la traducció al portuguès
+  * va fer que el guanyador i els punts més alts de color
+  * botó de seguretat de maquinari activat per sortir del joc o anar a la pantalla anterior
+  * Traduccions fetes poloneses i esperantoques (per Verdulo)
+  * error: la selecció d'idiomes a vegades no funciona
+  * Va afegir insígnies GPL3 i gitlab al fons
+
+1.5.1
+  * Mantenir la pantalla una mica més, mentre el joc s'estigui jugant activament.

@@ -1,0 +1,15 @@
+1.5.3
+  * Aldonis adapta ikono (Android 8 kaj pli alta)
+  * Malŝaltita fono-zoom proksime al la pomo
+  * aldonis norvega lingvo (danke al Allan sur weblate)
+
+1.5.2
+  * aldonis portugalan tradukadon
+  * faris la gajninton kaj la plej altajn punktojn pli pitoreskaj
+  * aktivigita aparataro-butonon por forlasi la ludon aŭ iri al antaŭa ekrano
+  * Fiksaj polaj kaj esperantaj tradukoj (per Verdulo)
+  * bugfix: lingva elekto foje ne funkcias
+  * aldonis GPL3 kaj gitlab-insignojn al fono
+
+1.5.1
+  * Konservu la ekranon iom pli longan, dum la ludo ludas.

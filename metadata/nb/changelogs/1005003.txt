@@ -1,0 +1,15 @@
+1.5.3
+  * lagt tilpasningsikon (Android 8 og høyere)
+  * deaktivert bakgrunn zoom nær eplet
+  * lagt til norsk språk (takk til Allan på weblate)
+
+1.5.2
+  * lagt til portugisisk oversettelse
+  * gjorde vinneren og de høyeste punktene mer fargerik
+  * aktivert maskinvare tilbakeknapp for å forlate spillet eller gå til forrige skjerm
+  * Fast polsk og esperanto oversettelser (av Verdulo)
+  * Bugfix: Språkvalg fungerer noen ganger ikke
+  * lagt til GPL3 og gitlab-merker til bakgrunn
+
+1.5.1
+  * Hold skjermen litt lenger, så lenge spillet blir aktivt spilt.

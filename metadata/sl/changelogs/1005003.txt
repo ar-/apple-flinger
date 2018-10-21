@@ -1,0 +1,15 @@
+1.5.3
+  * dodana prilagodljiva ikona (Android 8 in novejše)
+  * onemogočeno ozadje zoom v bližini jabolka
+  * dodal norveški jezik (zahvaljujoč Allanu na spletnem mestu)
+
+1.5.2
+  * dodan portugalski prevod
+  * je bil zmagovalec in najvišje točke bolj barvita
+  * aktivirani strojni gumb za nazaj, da zapustite igro ali pojdite na prejšnji zaslon
+  * fiksni poljski in esperantski prevodi (po Verdulu)
+  * bugfix: izbira jezika včasih ne deluje
+  * dodane GPL3 in gitlab značke v ozadje
+
+1.5.1
+  * Zaslon naj bo malo dlje, dokler se igra aktivno predvaja.

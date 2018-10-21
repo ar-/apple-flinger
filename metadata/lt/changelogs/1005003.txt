@@ -1,0 +1,15 @@
+1.5.3
+  * pridėta pritaikoma piktograma ("Android" 8 ir naujesnė versija)
+  * Fono išjungimas priartinamas prie obuolio
+  * pridėjo norvegų kalbą (ačiū Allanui weblate)
+
+1.5.2
+  * pridėjo portugalų vertimą
+  * padarė nugalėtoją ir aukščiausius taškus labiau spalvingais
+  * įjungtas aparatūros atgalinis mygtukas, norint palikti žaidimą arba eiti į ankstesnį ekraną
+  * fiksuoti lenkų ir esperanto vertimai (pagal Verdulo)
+  * klaida: kalbos pasirinkimas kartais neveikia
+  * pridėtos GPL3 ir gitlab ženkleliai fone
+
+1.5.1
+  * Laikykite ekraną šiek tiek ilgiau, kol žaidimą aktyviai žaisite.
