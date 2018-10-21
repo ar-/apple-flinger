@@ -122,7 +122,17 @@ public class TextInputDialog extends AdvancedDialog{
 			SpriteButton btnBackSpace, String langCode)
 	{
 		langCode = langCode.toLowerCase();
-		if (langCode.equals("de")) {
+		if (langCode.equals("nb")) {
+			tblContent.row();
+			tblContent.add(makeKeyboardRow("QWERTYUIOPÅ"));
+	        tblContent.add(btnBackSpace);
+			tblContent.row();
+			tblContent.add(makeKeyboardRow("ASDFGHJKLØÆ"));
+			tblContent.row();
+			tblContent.add(makeKeyboardRow("ZXCVBNM"));
+			tblContent.row();
+		}
+		else if (langCode.equals("de")) {
 			tblContent.row();
 			tblContent.add(makeKeyboardRow("QWERTZUIOPÜ"));
 	        tblContent.add(btnBackSpace);

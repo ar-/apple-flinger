@@ -1,15 +1,14 @@
 1.5.2
   * Portugiesische Übersetzung hinzugefügt
-  * machte den Gewinner und die höchsten Punkte bunter
+  * zeige den Gewinner und die höchsten Punkte grün
   * aktivierte Hardware-Zurück-Taste, um das Spiel zu verlassen oder zum vorherigen Bildschirm zurückzukehren
-  * feste polnische und Esperanto-Übersetzungen (von Verdulo)
-  * Bugfix: Sprachauswahl funktioniert manchmal nicht
+  * verbesserte polnische und Esperanto-Übersetzungen (von Verdulo)
+  * Bugfix: Sprachauswahl funktionierte manchmal nicht
   * GPL3 und gitlab Badges zum Hintergrund hinzugefügt
 
 1.5.1
-  * Halten Sie den Bildschirm ein wenig länger, solange das Spiel aktiv gespielt wird.
+  * Lass den Bildschirm ein wenig länger angeschaltet, solange das Spiel aktiv gespielt wird.
 
 1.5.0
-  * hinzugefügt Erfolge
-  * Bugfix: Erhöhen Sie nicht die Gesamtpunkte, wenn die Runde aufgrund von Verlusten gegen den Computer wiederholt wird
-
+  * Errungenschaften hinzugefügt
+  * Bugfix: Erhöhe nicht die Gesamtpunkte, wenn die Runde aufgrund von einer verlorenen Runde gegen den Computer wiederholt wird

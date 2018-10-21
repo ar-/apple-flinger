@@ -47,6 +47,12 @@ public class AssetTest {
 	}
 
 	@Test
+	public void isI18NWorkingForNB() {
+		I18N.loadLanguageBundle("nb");
+		assertEquals("låst", I18N.s("locked"));
+	}
+	
+	@Test
 	public void isI18NWorkingForDE() {
 		I18N.loadLanguageBundle("de");
 		assertEquals("Lautstärke", I18N.s("Volume"));
