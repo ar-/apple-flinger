@@ -86,6 +86,10 @@ fdroid_build:
     - cat build.log
     - bash -c "exit `grep 'BUILD FAILED' build.log | wc -l`"
   stage: test
+  artifacts:
+    paths:
+    - fdroiddata/build/com.gitlab.ardash.appleflinger.android/android/build/outputs/apk/android-release-unsigned.apk
   except:
     - google-play
+
 
