@@ -24,13 +24,14 @@ echo checking transparent pixels
 for pngfile in  metadata/*/images/featureGraphic.png metadata/*/images/*/*.png
 do
 	echo checking $pngfile ...
-	identify -verbose $pngfile | grep bKGD
+	#identify -verbose $pngfile | grep bKGD
 	count=`identify -verbose $pngfile | grep bKGD | wc -l`
 	[[ $count -eq "1" ]] || echo "ERROR $pngfile contains transparent pixels" | tee -a $error_file
 
 	# also fix it, in case of local copy (pre-comit) commit can be attemted again
-	echo fixing ....
-	convert $pngfile -background "#552200" -alpha remove $pngfile
+	[[ $count -eq "1" ]] || echo fixing ....
+	[[ $count -eq "1" ]] || convert $pngfile -background "#552200" -alpha remove $pngfile
+
 done
 echo 
 

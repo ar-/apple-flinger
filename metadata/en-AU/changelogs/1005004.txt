@@ -1,0 +1,18 @@
+1.5.4
+  * added translators to the credits-screen in the game
+  * added Dutch language (thanks to Heimen on weblate)
+  * added Galician language (thanks to Iván on weblate)
+  * improved Spanish translation (thanks to Markel on weblate)
+
+1.5.3
+  * added adaptive icon (Android 8 and higher)
+  * disabled background zoom near the apple
+  * added Norwegian language (thanks to Allan on weblate)
+
+1.5.2
+  * added Portuguese translation
+  * made the winner and the highest points more colourful
+  * activated hardware back-button to leave the game or go to previous screen
+  * fixed Polish and Esperanto translations (by Verdulo)
+  * bugfix: language selection sometimes not working
+  * added GPL3 and gitlab badges to background
