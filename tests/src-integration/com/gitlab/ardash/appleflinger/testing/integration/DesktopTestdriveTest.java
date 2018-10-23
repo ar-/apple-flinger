@@ -44,7 +44,8 @@ public class DesktopTestdriveTest implements ActionResolver{
 //	private static final String [] langs = {"de","en","es","fr"};
 //	private static final String [] langs = {"eo","pl"};
 //	private static final String [] langs = {"pt"};
-	private static final String [] langs = {"ru"}; // separate non-latin load
+	private static final String [] langs = {"nl","gl"};
+//	private static final String [] langs = {"ru"}; // separate non-latin load
 	
 	private static final Mission [] missions = {Mission.M_1_1, Mission.M_1_3, Mission.M_1_4
 		,Mission.M_1_5, Mission.M_1_11, Mission.M_1_14, Mission.M_2_3};
