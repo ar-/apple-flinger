@@ -29,7 +29,8 @@ do
 	[[ $count -eq "1" ]] || echo "ERROR $pngfile contains transparent pixels" | tee -a $error_file
 
 	# also fix it, in case of local copy (pre-comit) commit can be attemted again
-	# echo fixing ....
+	echo fixing ....
+	convert $pngfile -background "#552200" -alpha remove $pngfile
 done
 echo 
 

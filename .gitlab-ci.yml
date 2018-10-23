@@ -27,7 +27,7 @@ validateI18N:
     - ./validateI18N.sh
   stage: sanitychecks
 
-validateI18N:
+validate_images:
   script:
     - apt-get --quiet install --yes imagemagick
     - ./scripts/validate-images.sh
