@@ -30,6 +30,8 @@ import com.gitlab.ardash.appleflinger.helpers.Pref;
 import com.gitlab.ardash.appleflinger.i18n.I18N;
 
 public class AchievementsScreen extends GenericScreen {
+	public static final float ACH_BTN_WIDTH = 390f;
+	public static final float ACH_TXT_WIDTH = ACH_BTN_WIDTH * 0.8f;
 	   
 	public AchievementsScreen() {
 
@@ -51,11 +53,10 @@ public class AchievementsScreen extends GenericScreen {
         for (final Achievement a : Achievement.values())
         {
     		final Sprite sprite = Pref.isAchievementUnlocked(a)?Assets.SpriteAsset.BTN_UNLOCKED.get():Assets.SpriteAsset.BTN_LOCKED.get();
-			sprite.setSize(390, 390);
+			sprite.setSize(ACH_BTN_WIDTH, ACH_BTN_WIDTH);
             final String luText = Pref.isAchievementUnlocked(a)?I18N.getString("unlocked"):I18N.getString("locked");
 			final String labelText = I18N.getString(a.getNameId())+"\n"+luText;
-			final LabelSpriteButton achBtn = new LabelSpriteButton(sprite, labelText);
-//            episodeBtn.get
+			final LabelSpriteButton achBtn = new LabelSpriteButton(sprite, labelText, ACH_TXT_WIDTH);
     		table.add(achBtn);
     		achBtn.addListener(new ClickListener() {
     			@Override

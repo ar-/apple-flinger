@@ -120,6 +120,14 @@ wrong_file_enc_count=`grep -i "\." android/assets/af*.properties | egrep -v "# "
 [[ $wrong_file_enc_count -eq "0" ]] || echo "ERROR at least one file ($wrong_file_enc_count) has a dot. remove it" | tee -a $error_file
 echo 
 
+# check for dots
+echo 
+echo checking for backslash-n or backslash-t
+egrep -i '\\n|\\t|\\r'  android/assets/af*.properties
+wrong_file_enc_count=`grep -F "\n"  android/assets/af*.properties | wc -l`
+[[ $wrong_file_enc_count -eq "0" ]] || echo "ERROR at least one file ($wrong_file_enc_count) has a backslash-n or backslash-t. remove it" | tee -a $error_file
+echo 
+
 error_count=`cat $error_file | wc -l`
 echo 
 echo found $error_count errors:

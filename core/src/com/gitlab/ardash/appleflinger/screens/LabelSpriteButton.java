@@ -22,6 +22,7 @@ import com.badlogic.gdx.scenes.scene2d.Actor;
 import com.badlogic.gdx.scenes.scene2d.ui.Label;
 import com.badlogic.gdx.scenes.scene2d.ui.Label.LabelStyle;
 import com.badlogic.gdx.scenes.scene2d.ui.Stack;
+import com.badlogic.gdx.scenes.scene2d.ui.Table;
 import com.badlogic.gdx.utils.Align;
 import com.gitlab.ardash.appleflinger.global.Assets;
 
@@ -29,6 +30,7 @@ public class LabelSpriteButton extends Stack {
 
 	private Label label;
 	private SpriteButton btn;
+	private Table table;
 
 	public LabelSpriteButton(Sprite texture_up, String text) {
 		
@@ -46,10 +48,18 @@ public class LabelSpriteButton extends Stack {
 			label.setStyle(cyrillicStyle);
 		}
 		label.setAlignment(Align.center);
-		add(label);
+		table = new Table();
+		table.add(label);
+		add(table);
 	}
 
-    @Override
+    public LabelSpriteButton(Sprite sprite, String labelText, float wrapWidth) {
+		this(sprite, labelText);
+		label.setWrap(true);
+		table.getCell(label).width(wrapWidth);
+	}
+
+	@Override
     public void draw(Batch batch, float parentAlpha) {
 
     	if (btn.isPressed() && !btn.isDisabled())

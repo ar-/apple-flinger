@@ -442,7 +442,7 @@ public class GameScreen implements Screen {
 		final Sprite sprite = Assets.SpriteAsset.BTN_UNLOCKED.get();
         final String luText = I18N.getString("unlocked");
 		final String labelText = I18N.getString(a.getNameId())+"\n"+luText;
-		final LabelSpriteButton achBtn = new LabelSpriteButton(sprite, labelText);
+		final LabelSpriteButton achBtn = new LabelSpriteButton(sprite, labelText, AchievementsScreen.ACH_TXT_WIDTH);
 		achBtn.setTouchable(Touchable.disabled);
 		Group grp = new Group();
 		Image img = new Image(sprite);
