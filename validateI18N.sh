@@ -91,7 +91,17 @@ wrong_file_enc_count=`file -L android/assets/af*.properties | egrep -v "UTF-8 Un
 [[ $wrong_file_enc_count -eq "0" ]] || echo "ERROR at least one file ($wrong_file_enc_count) is not UTF-8, please run: iconv -f ISO-8859-15 -t UTF-8 android/assets/af_de.properties > tmp.properties" | tee -a $error_file
 echo 
 file -L android/assets/af*.properties | egrep -v "UTF-8 Unicode text|ASCII text"
+echo 
 
+# check escaped hashtags in twitter recommendation texts
+echo 
+echo checking escaped hashtags in twitter recommendation texts
+grep -i " #" android/assets/af_*.properties
+wrong_file_enc_count=`grep -i " #" android/assets/af_*.properties | wc -l`
+[[ $wrong_file_enc_count -eq "0" ]] || echo "ERROR at least one file ($wrong_file_enc_count) has the twitter hashtag not escaped, error was corrected. please run again" | tee -a $error_file
+
+# correct it with sed (only if it was wrong, otherwise it confuses the git staging process)
+[[ $wrong_file_enc_count -eq "0" ]] || sed -i -e 's/ #/ \\#/g' `find  android/assets/af*.properties -maxdepth 1 -type f`
 echo 
 
 error_count=`cat $error_file | wc -l`
