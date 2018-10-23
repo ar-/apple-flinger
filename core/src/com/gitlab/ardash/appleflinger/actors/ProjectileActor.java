@@ -145,7 +145,7 @@ public class ProjectileActor extends CircleActor {
 				// disable touchablity of the game scene
 				gm.getInputMultiplexer().removeProcessor(gm.currentGameScreen.getRenderer().world.stage);
 				gm.getInputMultiplexer().addProcessor(gm.currentGameScreen.getGuiStage());
-				gm.currentGameScreen.setAnnouncementText(I18N.getString("waiting"), true); 
+				gm.currentGameScreen.setAnnouncementText(I18N.getString("pleaseWait")+" ...", true); 
 				gm.onShotFired();
 				SoundPlayer.playSound(Assets.getRandomSound(SoundGroupAsset.WHIZZ), 0.25f);
 				reAddPhysics();

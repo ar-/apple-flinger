@@ -110,7 +110,7 @@ public class GameScreen implements Screen {
         
         // add GUI actors to stage, labels, meters, buttons etc.  
         buildGameGUI();
-        setAnnouncementText(I18N.getString("pleaseWait"));
+        setAnnouncementText(I18N.getString("pleaseWait")+" ...");
     }
 
 	private static Label createMiniLabel(CharSequence text)

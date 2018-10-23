@@ -55,7 +55,8 @@ public class AssetTest {
 	@Test
 	public void isI18NWorkingForNL() {
 		I18N.loadLanguageBundle("nl");
-		assertEquals("låst", I18N.s("locked"));
+		assertEquals("Oké", I18N.s("okay"));
+		assertEquals("Nee", I18N.s("no"));
 	}
 	
 	@Test
@@ -82,6 +83,13 @@ public class AssetTest {
 		I18N.loadLanguageBundle("fr");
 		assertEquals("touche l'écran pour continuer", I18N.s("touchScreenToContinue"));
 		assertEquals("JEU TERMINÉ", I18N.s("gameOver"));
+	}
+	
+	@Test
+	public void isI18NWorkingForGL() {
+		I18N.loadLanguageBundle("gl");
+		assertEquals("Só", I18N.s("alone"));
+		assertEquals("Música", I18N.s("Music"));
 	}
 	
 	@Test
