@@ -27,7 +27,7 @@ echo -e "Authors\n=======\nWe'd like to thank the following people for their con
 git log --raw | grep "^Author: " | sort | uniq | cut -d ' ' -f2- | sed 's/^/- /' >> /tmp/AUTHORS.md
 
 # remove authors that don't want to be inlcuded or old email addresses 
-for AE in ar-gitlab@abga.be andreasredmer@mailchuck.com michal@cihar.com hosted@weblate.org
+for AE in ar-gitlab@abga.be andreasredmer@mailchuck.com a_r@posteo.de vagrant@vagrant.vm michal@cihar.com hosted@weblate.org
 do
   echo excluding $AE
   cat /tmp/AUTHORS.md | grep -v "$AE" > /tmp/AUTHORS_tmp.md
