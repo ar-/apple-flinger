@@ -14,7 +14,7 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #-------------------------------------------------------------------------------
-# check for dots
+
 error_file=/tmp/imgerrors.log
 rm -f $error_file
 touch $error_file
@@ -24,11 +24,11 @@ echo checking transparent pixels
 for pngfile in  metadata/*/images/featureGraphic.png metadata/*/images/*/*.png
 do
 	echo checking $pngfile ...
-	#identify -verbose $pngfile | grep bKGD
+	# identify -verbose $pngfile | grep bKGD
 	count=`identify -verbose $pngfile | grep bKGD | wc -l`
 	[[ $count -eq "1" ]] || echo "ERROR $pngfile contains transparent pixels" | tee -a $error_file
 
-	# also fix it, in case of local copy (pre-comit) commit can be attemted again
+	# also fix it, in case of local copy (pre-comit) commit can be attempted again
 	[[ $count -eq "1" ]] || echo fixing ....
 	[[ $count -eq "1" ]] || convert $pngfile -background "#552200" -alpha remove $pngfile
 
