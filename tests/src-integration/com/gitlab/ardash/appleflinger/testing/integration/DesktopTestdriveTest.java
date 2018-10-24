@@ -39,12 +39,13 @@ import com.gitlab.ardash.appleflinger.screens.MissionSelectScreen;
 
 public class DesktopTestdriveTest implements ActionResolver{
 	
-//	private static final String [] langs = {"de","en","eo","es","fr","nb","pl","pl"}; // all latin
+	private static final String [] langs = {"de","en","eo","es","fr","gl","nb","nl","pl","pt"}; // all latin
 //	private static final String [] langs = {"es", "fr"};
 //	private static final String [] langs = {"de","en","es","fr"};
 //	private static final String [] langs = {"eo","pl"};
 //	private static final String [] langs = {"pt"};
-	private static final String [] langs = {"ru"}; // separate non-latin load
+//	private static final String [] langs = {"nl","gl"};
+//	private static final String [] langs = {"ru"}; // separate non-latin load
 	
 	private static final Mission [] missions = {Mission.M_1_1, Mission.M_1_3, Mission.M_1_4
 		,Mission.M_1_5, Mission.M_1_11, Mission.M_1_14, Mission.M_2_3};
@@ -105,8 +106,12 @@ public class DesktopTestdriveTest implements ActionResolver{
 		n2.put("es", "Sofía".toUpperCase());
 		n1.put("fr", "Pierre".toUpperCase());
 		n2.put("fr", "Debonnaire".toUpperCase());
+		n1.put("gl", "Estevo".toUpperCase());
+		n2.put("gl", "Maruxa".toUpperCase());
 		n1.put("nb", "Jørgen".toUpperCase());
 		n2.put("nb", "Ragnhild".toUpperCase());
+		n1.put("nl", "Espen".toUpperCase());
+		n2.put("nl", "Maryse".toUpperCase());
 		n1.put("pl", "Szymon".toUpperCase());
 		n2.put("pl", "Amelia".toUpperCase());
 		n1.put("pt", "Adriano".toUpperCase());

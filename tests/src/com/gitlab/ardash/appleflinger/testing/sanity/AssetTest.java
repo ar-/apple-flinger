@@ -53,6 +53,13 @@ public class AssetTest {
 	}
 	
 	@Test
+	public void isI18NWorkingForNL() {
+		I18N.loadLanguageBundle("nl");
+		assertEquals("Oké", I18N.s("okay"));
+		assertEquals("Nee", I18N.s("no"));
+	}
+	
+	@Test
 	public void isI18NWorkingForDE() {
 		I18N.loadLanguageBundle("de");
 		assertEquals("Lautstärke", I18N.s("Volume"));
@@ -68,7 +75,7 @@ public class AssetTest {
 	@Test
 	public void isI18NWorkingForES() {
 		I18N.loadLanguageBundle("es");
-		assertEquals("sí", I18N.s("yes"));
+		assertEquals("Sí", I18N.s("yes"));
 	}
 	
 	@Test
@@ -76,6 +83,13 @@ public class AssetTest {
 		I18N.loadLanguageBundle("fr");
 		assertEquals("touche l'écran pour continuer", I18N.s("touchScreenToContinue"));
 		assertEquals("JEU TERMINÉ", I18N.s("gameOver"));
+	}
+	
+	@Test
+	public void isI18NWorkingForGL() {
+		I18N.loadLanguageBundle("gl");
+		assertEquals("Só", I18N.s("alone"));
+		assertEquals("Música", I18N.s("Music"));
 	}
 	
 	@Test

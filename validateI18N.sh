@@ -18,7 +18,7 @@ error_file=/tmp/i18nerrors.log
 achi_file=/tmp/tmp_achi_file.txt
 rm -f $error_file
 touch $error_file
-in_source=`egrep -a -r "I18N.getString|I18N.s" core/ | egrep -a -o "I18N.getString.*)|I18N.s.*)" | sed "s/I18N/\nI18N/g" | egrep -a -o "I18N.getString.*\")|I18N.s.*\")" | egrep -a -o '".*"' | sort -u | egrep -o "[a-zA-Z0-9_]*"`
+in_source=`egrep -a -r "I18N.getString|I18N.s" core/ | egrep -a -o "I18N.getString.*)|I18N.s.*)" | sed "s/I18N/\nI18N/g" | egrep -a -o "I18N.getString.*\")|I18N.s.*\")" | egrep -a -o '".*"' | sort -u | egrep -o "[a-zA-Z0-9_]*" | sort -u`
 achi=`cat core/src/com/gitlab/ardash/appleflinger/helpers/Achievement.java | grep ACH_ | tr '[:upper:]' '[:lower:]' | egrep -o "[a-z_]*"`
 prop_files=`ls android/assets/af*properties`
 
@@ -91,7 +91,41 @@ wrong_file_enc_count=`file -L android/assets/af*.properties | egrep -v "UTF-8 Un
 [[ $wrong_file_enc_count -eq "0" ]] || echo "ERROR at least one file ($wrong_file_enc_count) is not UTF-8, please run: iconv -f ISO-8859-15 -t UTF-8 android/assets/af_de.properties > tmp.properties" | tee -a $error_file
 echo 
 file -L android/assets/af*.properties | egrep -v "UTF-8 Unicode text|ASCII text"
+echo 
 
+# check escaped hashtags in twitter recommendation texts
+echo 
+echo checking escaped hashtags in twitter recommendation texts
+grep -i " #" android/assets/af_*.properties
+wrong_file_enc_count=`grep -i " #" android/assets/af_*.properties | wc -l`
+[[ $wrong_file_enc_count -eq "0" ]] || echo "ERROR at least one file ($wrong_file_enc_count) has the twitter hashtag not escaped, error was corrected. please run again" | tee -a $error_file
+
+# correct it with sed (only if it was wrong, otherwise it confuses the git staging process)
+[[ $wrong_file_enc_count -eq "0" ]] || sed -i -e 's/ #/ \\#/g' `find  android/assets/af*.properties -maxdepth 1 -type f`
+echo 
+
+# check for … character
+echo 
+echo check for … character
+grep -i "…" android/assets/af_*.properties
+wrong_file_enc_count=`grep -i "…" android/assets/af_*.properties | wc -l`
+[[ $wrong_file_enc_count -eq "0" ]] || echo "ERROR at least one file ($wrong_file_enc_count) has a … UTF character. remove it" | tee -a $error_file
+echo 
+
+# check for dots
+echo 
+echo checking for dots
+grep -i "\." android/assets/af*.properties | egrep -v "# " | grep -v twitter
+wrong_file_enc_count=`grep -i "\." android/assets/af*.properties | egrep -v "# " | grep -v twitter | wc -l`
+[[ $wrong_file_enc_count -eq "0" ]] || echo "ERROR at least one file ($wrong_file_enc_count) has a dot. remove it" | tee -a $error_file
+echo 
+
+# check for dots
+echo 
+echo checking for backslash-n or backslash-t
+egrep -i '\\n|\\t|\\r'  android/assets/af*.properties
+wrong_file_enc_count=`grep -F "\n"  android/assets/af*.properties | wc -l`
+[[ $wrong_file_enc_count -eq "0" ]] || echo "ERROR at least one file ($wrong_file_enc_count) has a backslash-n or backslash-t. remove it" | tee -a $error_file
 echo 
 
 error_count=`cat $error_file | wc -l`

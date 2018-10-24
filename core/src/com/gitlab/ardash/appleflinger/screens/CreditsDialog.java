@@ -16,6 +16,7 @@
  ******************************************************************************/
 package com.gitlab.ardash.appleflinger.screens;
 
+import com.badlogic.gdx.scenes.scene2d.ui.AdvancedDialog;
 import com.badlogic.gdx.scenes.scene2d.ui.Label.LabelStyle;
 import com.gitlab.ardash.appleflinger.global.Assets;
 import com.gitlab.ardash.appleflinger.global.GameManager;
@@ -23,26 +24,37 @@ import com.gitlab.ardash.appleflinger.helpers.BackButtonAdapter;
 import com.gitlab.ardash.appleflinger.i18n.I18N;
 
 public class CreditsDialog extends AdvancedDialog{
+	static String translators="Allan Nordhøy, Andreas Redmer, ButterflyOfFire, Dmitry Mikhirev, Heimen Stoffels, Iván, Markel, Sukhichev Mikhail Ivanovich, Verdulo, WaldiS, xin, ";
+	
 	public CreditsDialog() 
 	{
+		final int paragraphPadding = 20;
         final LabelStyle lblstyle = Assets.LabelStyleAsset.MINILABEL.style;
 		text(I18N.getString("credits"), lblstyle); 
 		
-		getContentTable().row().minHeight(40).top();
+		getContentTable().row().minHeight(paragraphPadding).maxHeight(paragraphPadding).top();
 		text("", lblstyle); 
 		getContentTable().row();
 		text(I18N.getString("programming"), lblstyle); 
 		getContentTable().row();
 		text("Andreas Redmer", lblstyle); 
 		
-		getContentTable().row().minHeight(40).top();
+		getContentTable().row().minHeight(paragraphPadding).maxHeight(paragraphPadding).top();
+		text("", lblstyle); 
+		getContentTable().row();
+		text(I18N.getString("translations"), lblstyle); 
+		getContentTable().row();
+		translators = translators.trim();
+		text(translators.substring(0, translators.length() - 1), lblstyle, GenericScreen.SCREEN_WIDTH*0.7f); 
+		
+		getContentTable().row().minHeight(paragraphPadding).maxHeight(paragraphPadding).top();
 		text("", lblstyle); 
 		getContentTable().row();
 		text(I18N.getString("engine"), lblstyle); 
 		getContentTable().row();
 		text("libGDX", lblstyle); 
 		
-		getContentTable().row().minHeight(40).top();
+		getContentTable().row().minHeight(paragraphPadding).maxHeight(paragraphPadding).top();
 		text("", lblstyle); 
 		getContentTable().row();
 		text(I18N.getString("Music"), lblstyle); 

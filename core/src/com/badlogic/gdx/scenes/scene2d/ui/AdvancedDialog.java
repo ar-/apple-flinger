@@ -14,19 +14,21 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  ******************************************************************************/
-package com.gitlab.ardash.appleflinger.screens;
+package com.badlogic.gdx.scenes.scene2d.ui;
 
 import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.g2d.Batch;
 import com.badlogic.gdx.graphics.g2d.Sprite;
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
 import com.badlogic.gdx.scenes.scene2d.Actor;
-import com.badlogic.gdx.scenes.scene2d.ui.Dialog;
-import com.badlogic.gdx.scenes.scene2d.ui.Image;
+import com.badlogic.gdx.scenes.scene2d.ui.Label.LabelStyle;
 import com.badlogic.gdx.scenes.scene2d.utils.ChangeListener;
 import com.badlogic.gdx.scenes.scene2d.utils.TextureRegionDrawable;
+import com.badlogic.gdx.utils.Align;
 import com.gitlab.ardash.appleflinger.global.Assets;
 import com.gitlab.ardash.appleflinger.global.Assets.TextureAsset;
+import com.gitlab.ardash.appleflinger.screens.GenericScreen;
+import com.gitlab.ardash.appleflinger.screens.LabelSpriteButton;
 
 public class AdvancedDialog extends Dialog {
 
@@ -60,6 +62,16 @@ public class AdvancedDialog extends Dialog {
 	protected void button(LabelSpriteButton btnCancel) {
 		getButtonTable().add(btnCancel);
 		setObject(btnCancel, "");
+	}
+	
+	public Dialog text(String text, LabelStyle labelStyle, float wordWrapWidth) {
+		//final Dialog ret = text(text, labelStyle);
+		Label label = new Label(text, labelStyle);
+		label.setWrap(true);
+		label.setAlignment(Align.center, Align.center) ;
+		label.setWidth(wordWrapWidth);
+		contentTable.add(label).width(wordWrapWidth).center();
+		return this;
 	}
 
 	@Override

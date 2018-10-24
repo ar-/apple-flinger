@@ -17,6 +17,7 @@
 package com.gitlab.ardash.appleflinger.screens;
 
 import com.badlogic.gdx.scenes.scene2d.InputEvent;
+import com.badlogic.gdx.scenes.scene2d.ui.AdvancedDialog;
 import com.badlogic.gdx.scenes.scene2d.utils.ClickListener;
 import com.gitlab.ardash.appleflinger.global.Assets;
 import com.gitlab.ardash.appleflinger.global.GameManager;

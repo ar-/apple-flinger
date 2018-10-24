@@ -27,7 +27,8 @@ echo -e "Authors\n=======\nWe'd like to thank the following people for their con
 git log --raw | grep "^Author: " | sort | uniq | cut -d ' ' -f2- | sed 's/^/- /' >> /tmp/AUTHORS.md
 
 # remove authors that don't want to be inlcuded or old email addresses 
-for AE in ar-gitlab@abga.be andreasredmer@mailchuck.com
+excl="ar-gitlab@abga.be andreasredmer@mailchuck.com a_r@posteo.de vagrant@vagrant.vm michal@cihar.com hosted@weblate.org"
+for AE in $excl
 do
   echo excluding $AE
   cat /tmp/AUTHORS.md | grep -v "$AE" > /tmp/AUTHORS_tmp.md
@@ -51,6 +52,17 @@ then
 else
   echo "new authors found. updating file. commit again"
   cat /tmp/AUTHORS.md > AUTHORS.md
+
+  # also update in-code authors that helped with the translation
+  excl_regex=`echo $excl | tr ' ' '|'`
+
+  # collect authors of property files, exclude the excluded, remove email addresses and put all in one line
+  # unfortunatally also replace cyrillic names with the latin transcription, because the libgdx label, looks too messed up otherwise
+  translators=`git log --raw android/assets/af*.properties | grep "^Author: " | sort | uniq | cut -d ' ' -f2- | egrep -v $excl_regex | egrep -o ".* <" | egrep -o ".* " | sed -e "s/Сухичев Михаил Иванович/Sukhichev Mikhail Ivanovich/g" | sort -u | tr '\n' ',' | sed -e "s/ ,/, /g"`
+  
+  # smack it into the source code
+  sed -i "s/.*static String translators.*/\tstatic String translators=\"${translators}\";/" core/src/com/gitlab/ardash/appleflinger/screens/CreditsDialog.java
+  echo "possibly added translators to the credit screen. should be checked in both font types?"
   exit 1
 fi
 

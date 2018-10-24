@@ -27,6 +27,12 @@ validateI18N:
     - ./validateI18N.sh
   stage: sanitychecks
 
+validate_images:
+  script:
+    - apt-get --quiet install --yes imagemagick
+    - ./scripts/validate-images.sh
+  stage: sanitychecks
+
 build_debug:
   script:
     - . ./scripts/setup-android-sdk.sh
