@@ -1,0 +1,19 @@
+1.5.4
+  * Übersetzer werden nun auf dem Credits-Bildschirm im Spiel angezeigt
+  * Niederländisch hinzugefügt (Danke an Heimen auf Weblate)
+  * Galicische Sprache hinzugefügt (danke an Iván auf Weblate)
+  * verbesserte spanische Übersetzung (danke an Markel auf Weblate)
+  * Transparente Pixel aus Screenshots entfernt
+
+1.5.3
+  * adaptives Symbol hinzugefügt (Android 8 und höher)
+  * Hintergrund Zoom in der Nähe des Apfels deaktiviert
+  * Norwegische Sprache hinzugefügt (danke an Allan auf Weblate)
+
+1.5.2
+  * Portugiesische Übersetzung hinzugefügt
+  * zeige den Gewinner und die höchsten Punkte grün
+  * aktivierte Hardware-Zurück-Taste, um das Spiel zu verlassen oder zum vorherigen Bildschirm zurückzukehren
+  * verbesserte polnische und Esperanto-Übersetzungen (von Verdulo)
+  * Bugfix: Sprachauswahl funktionierte manchmal nicht
+  * GPL3 und gitlab Badges zum Hintergrund hinzugefügt

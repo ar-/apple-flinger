@@ -1,0 +1,19 @@
+1.5.4
+  * dodali su prevoditelje na zaslone kredita u igri
+  * dodan nizozemski jezik (zahvaljujući Heimenu na webu)
+  * dodao galicijski jezik (zahvaljujući Iván na webu)
+  * poboljšani španjolski prijevod (zahvaljujući Markelu na web stranici)
+  * uklonili su prozirne piksele sa snimaka zaslona
+
+1.5.3
+  * dodana ikona prilagodljiva (Android 8 i noviji)
+  * onemogućeno pozadinsko zumiranje blizu jabuke
+  * dodao je norveški jezik (zahvaljujući Allanu na webu)
+
+1.5.2
+  * dodao portugalski prijevod
+  * pobijedio je i najviši bodovi bili su šareni
+  * aktivirani hardverski back-gumb za napuštanje igre ili prijelaz na prethodni zaslon
+  * fiksni poljski i esperanto prijevodi (Verdulo)
+  * bugfix: izbor jezika ponekad ne radi
+  * dodao je GPL3 i gitlab značke u pozadinu

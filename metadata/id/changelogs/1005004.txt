@@ -1,0 +1,19 @@
+1.5.4
+  * menambahkan penerjemah ke layar kredit dalam game
+  * menambahkan bahasa Belanda (terima kasih kepada Heimen di weblate)
+  * ditambahkan bahasa Galicia (terima kasih kepada Iván di weblate)
+  * Terjemahan bahasa Spanyol yang disempurnakan (terima kasih kepada Markel di weblate)
+  * menghapus piksel transparan dari tangkapan layar
+
+1.5.3
+  * menambahkan ikon adaptif (Android 8 dan lebih tinggi)
+  * Zoom latar belakang yang cacat di dekat apel
+  * menambahkan bahasa Norwegia (terima kasih kepada Allan di weblate)
+
+1.5.2
+  * menambahkan terjemahan Portugis
+  * membuat pemenang dan poin tertinggi lebih berwarna
+  * tombol kembali perangkat keras yang diaktifkan untuk meninggalkan game atau pergi ke layar sebelumnya
+  * Terjemahan Polandia dan Esperanto (oleh Verdulo)
+  * perbaikan bug: pemilihan bahasa terkadang tidak berfungsi
+  * menambahkan lencana GPL3 dan gitlab ke latar belakang

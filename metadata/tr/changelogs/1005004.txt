@@ -1,0 +1,19 @@
+1.5.4
+  * Oyundaki kredi ekranına çevirmenler ekledi
+  * Hollanda dili eklendi (weblate'de Heimen'e teşekkürler)
+  * Galiçya dili eklendi (weblate'de Iván'a teşekkürler)
+  * İspanyolca çeviri geliştirilmiş (web üzerinde Markel sayesinde)
+  * Ekran görüntülerinden şeffaf piksel kaldırıldı
+
+1.5.3
+  * Uyarlanmış simge eklendi (Android 8 ve üstü)
+  * apple'nın yakınında engelli arka plan yakınlaştırma
+  * Norveççe dil eklendi (weblate'de Allan'a teşekkürler)
+
+1.5.2
+  * Portekizce çeviri eklendi
+  * Kazanan ve en yüksek puanları daha renkli yaptı
+  * Oyundan çıkmak veya önceki ekrana gitmek için aktif donanım geri düğmesi
+  * Sabit Lehçe ve Esperanto çevirileri (Verdulo tarafından)
+  * bugfix: dil seçimi bazen çalışmıyor
+  * GPL3 ve gitlab rozetlerini arka plana ekledi

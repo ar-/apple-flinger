@@ -1,0 +1,19 @@
+1.5.4
+  * ajout de traducteurs à l'écran des crédits dans le jeu
+  * ajout du néerlandais (merci à Heimen pour le web)
+  * ajout de la langue galicienne (merci à Iván sur weblate)
+  * amélioration de la traduction en espagnol (merci à Markel sur weblate)
+  * suppression des pixels transparents des captures d'écran
+
+1.5.3
+  * icône adaptative ajoutée (Android 8 et supérieur)
+  * zoom d'arrière-plan désactivé près de la pomme
+  * ajout de la langue norvégienne (merci à Allan sur weblate)
+
+1.5.2
+  * ajout de la traduction portugaise
+  * fait le gagnant et les points les plus hauts plus colorés
+  * bouton de retour du matériel activé pour quitter le jeu ou aller à l'écran précédent
+  * traductions fixes en polonais et en espéranto (par Verdulo)
+  * correction de bug: la sélection de la langue ne fonctionnait parfois pas
+  * ajout des badges GPL3 et Gitlab au fond

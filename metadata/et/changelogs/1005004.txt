@@ -1,0 +1,19 @@
+1.5.4
+  * lisasid tõlkijad mängude loeteludesse
+  * lisatud hollandi keel (tänu Heimenile weblate'is)
+  * lisatud galisia keel (tänu Ivánile weblate'is)
+  * parandatud hispaaniakeelne tõlge (tänu Markelile weblate'is)
+  * eemaldas läbipaistvad pikslid ekraanipiltest
+
+1.5.3
+  * lisatud adaptiivne ikoon (Android 8 ja uuem)
+  * puu taust suumi lähedal õuna
+  * lisas norra keele (tänu Allanile weblate'is)
+
+1.5.2
+  * lisatud portugalikeelne tõlge
+  * muutis võitja ja kõrgeimad punktid värvilisemaks
+  * aktiveeritud riistvara taasesituse nupp mängust lahkumiseks või eelmisele ekraanile minekuks
+  * fikseeritud poola ja esperanto tõlked (autor Verdulo)
+  * bugfix: keelevalik mõnikord ei tööta
+  * lisatud taustale GPL3 ja gitlab märgid

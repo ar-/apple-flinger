@@ -1,0 +1,19 @@
+1.5.4
+  * Přidali překladatelé na obrazovku kreditů ve hře
+  * přidán holandský jazyk (díky Heimenovi na webu)
+  * přidán jazyk galicijštiny (díky Ivánovi na webu)
+  * Vylepšený překlad do Španělska (díky Markelovi na webu)
+  * odstranění průhledných pixelů ze snímků obrazovky
+
+1.5.3
+  * Adaptivní ikona přidaná (Android 8 a vyšší)
+  * zakázáno přiblížení na pozadí v blízkosti jablka
+  * přidán norský jazyk (díky Allanovi na webu)
+
+1.5.2
+  * přidán portugalský překlad
+  * udělal vítěze a nejvyšší body barevnější
+  * Aktivované hardwarové zpětné tlačítko pro opuštění hry nebo přechod na předchozí obrazovku
+  * pevné a polské esperantské překlady (Verdulo)
+  * bugfix: někdy nefunguje výběr jazyka
+  * přidány GPL3 a gitlab odznaky na pozadí

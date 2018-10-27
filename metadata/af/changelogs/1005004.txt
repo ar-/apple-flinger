@@ -1,0 +1,19 @@
+1.5.4
+  * Voeg vertalers by die krediete-skerm in die spel
+  * bygevoeg Nederlandse taal (danksy Heimen op webblad)
+  * bygevoeg Galisiese taal (danksy Iván op webblad)
+  * verbeterde Spaanse vertaling (danksy Markel op webblad)
+  * Verwyder deursigtige pixels van skermkiekies
+
+1.5.3
+  * Adaptiewe ikoon (Android 8 en hoër) bygevoeg
+  * Gestremde agtergrond zoom naby die appel
+  * Noorse taal bygevoeg (dankie Allan op webblad)
+
+1.5.2
+  * bygevoeg Portugese vertaling
+  * het die wenner en die hoogste punte meer kleurvol gemaak
+  * Geaktiveerde hardeware-terugknoppie om die spel te verlaat of na vorige skerm te gaan
+  * vaste Pools en Esperanto vertalings (deur Verdulo)
+  * Bugfix: taal keuse soms werk nie
+  * GPL3 en gitlab badges bygevoeg na agtergrond

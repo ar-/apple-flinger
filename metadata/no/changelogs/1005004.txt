@@ -1,0 +1,19 @@
+1.5.4
+  * lagt oversettere til kreditter-skjermen i spillet
+  * lagt til nederlandsk språk (takket være Heimen på weblate)
+  * lagt til galisisk språk (takk til Iván på weblate)
+  * forbedret spansk oversettelse (takket være Markel på weblate)
+  * fjernet gjennomsiktige piksler fra skjermbilder
+
+1.5.3
+  * lagt tilpasningsikon (Android 8 og høyere)
+  * deaktivert bakgrunn zoom nær eplet
+  * lagt til norsk språk (takk til Allan på weblate)
+
+1.5.2
+  * lagt til portugisisk oversettelse
+  * gjorde vinneren og de høyeste punktene mer fargerik
+  * aktivert maskinvare tilbakeknapp for å forlate spillet eller gå til forrige skjerm
+  * Fast polsk og esperanto oversettelser (av Verdulo)
+  * Bugfix: Språkvalg fungerer noen ganger ikke
+  * lagt til GPL3 og gitlab-merker til bakgrunn

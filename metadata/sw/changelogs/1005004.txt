@@ -1,0 +1,19 @@
+1.5.4
+  * aliongeza wafsiri katika skrini ya credits katika mchezo
+  * aliongeza lugha Kiholanzi (shukrani kwa Heimen kwenye weblate)
+  * aliongeza lugha ya Kigalisia (shukrani kwa Iván kwenye weblate)
+  * kuboresha tafsiri ya Kihispania (shukrani kwa Markel kwenye weblate)
+  * imeondolewa saizi za uwazi kutoka viwambo vya viwambo
+
+1.5.3
+  * imeongeza icon ya kuingilia (Android 8 na ya juu)
+  * zoom zoom ya walemavu karibu na apple
+  * aliongeza lugha ya Kinorwe (shukrani kwa Allan kwenye weblate)
+
+1.5.2
+  * aliongeza tafsiri ya Kireno
+  * alifanya mshindi na pointi ya juu zaidi ya rangi
+  * iliyoboreshwa vifaa vya nyuma-kifungo kuondoka mchezo au kwenda skrini ya awali
+  * fasta tafsiri ya Kipolishi na Kiesperanto (kwa Verdulo)
+  * Bugfix: uteuzi wa lugha wakati mwingine haufanyi kazi
+  * aliongeza GPL3 na beji za gitrib kwa historia
