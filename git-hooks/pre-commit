@@ -23,9 +23,9 @@
 # also ensuring that it actually builds it good
 ANDROID_HOME=~/devel/android-sdk-linux/ ./gradlew assembleRelease || exit 1
 
+# commented it here and moved it to the release translations
 # this test fails mostly, so it comes first
-scripts/update-project-status.sh || exit 1
-
+# scripts/update-project-status.sh || exit 1
 
 ./licensecheck.sh || exit 1
 ./validateI18N.sh || exit 1

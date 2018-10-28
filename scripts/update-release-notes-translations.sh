@@ -126,6 +126,16 @@ do
   done
 done
 
+# updating the status for each commit is way to complex and disturbing to other procedures
+# updateing it for each release is fine
+
+# need to build the latest release apkm so the size is correct in status
+# also ensuring that it actually builds it good
+ANDROID_HOME=~/devel/android-sdk-linux/ ./gradlew assembleRelease || exit 1
+
+# update projet status
+scripts/update-project-status.sh
+
 
 if [ $reps == "0" ]
 then
