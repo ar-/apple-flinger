@@ -16,12 +16,16 @@
  ******************************************************************************/
 package com.gitlab.ardash.appleflinger.screens;
 
+import com.badlogic.gdx.math.MathUtils;
 import com.badlogic.gdx.scenes.scene2d.ui.AdvancedDialog;
 import com.badlogic.gdx.scenes.scene2d.ui.Label.LabelStyle;
+import com.badlogic.gdx.scenes.scene2d.ui.ProgressBar;
+import com.badlogic.gdx.scenes.scene2d.ui.ProgressBar.ProgressBarStyle;
 import com.gitlab.ardash.appleflinger.global.Assets;
 import com.gitlab.ardash.appleflinger.global.GameManager;
 import com.gitlab.ardash.appleflinger.helpers.Achievement;
 import com.gitlab.ardash.appleflinger.helpers.BackButtonAdapter;
+import com.gitlab.ardash.appleflinger.helpers.Pref;
 import com.gitlab.ardash.appleflinger.i18n.I18N;
 
 public class AchievementDescriptionDialog extends AdvancedDialog{
@@ -37,6 +41,25 @@ public class AchievementDescriptionDialog extends AdvancedDialog{
 		getContentTable().row();
 		text(I18N.getString(a.getDescriptionId()), lblstyle); 
 		getContentTable().row();
+		
+		// #65 show progress of incremental achievements
+		if (a.isIncremental())
+		{
+			final int goal = a.getGoal();
+			int progress = goal;
+			int percent = 100;
+			
+			if (! Pref.isAchievementUnlocked(a))
+			{
+				progress = Pref.getAchievementProgress(a);
+				percent = MathUtils.round(((progress/(float)goal))*100f);
+			}
+			final String lblText = progress + " / " + goal + "\n" + percent + "%";
+			text(lblText, lblstyle, 500);
+		}
+		ProgressBarStyle pbs = new ProgressBarStyle();
+		ProgressBar pb = new ProgressBar(0, 100, 1, false,pbs);
+		getContentTable().add(pb);
         
 		btnOkay = new LabelSpriteButton(EMPTY_TEX, I18N.getString("okay"));
         button(btnOkay);
