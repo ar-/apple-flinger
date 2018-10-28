@@ -225,9 +225,9 @@ final public class GameManager {
 					Pref.unlockAchievement(Achievement.ACH_BEGINNERS_LUCK);
 				}
 			}
-			
+
 			// achievement to system
-			Pref.incrementAchievement(Achievement.ACH_POINTS_FARMER, PLAYER1.getPoints(),1000000);
+			Pref.incrementAchievement(Achievement.ACH_POINTS_FARMER, PLAYER1.getPoints());
 			
 			// submit highscore to system
 			//getActionResolver().submitScore(GPGS.LEAD_MOST_POINTS, PLAYER1.getAllPoints());

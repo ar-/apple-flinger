@@ -19,7 +19,7 @@ achi_file=/tmp/tmp_achi_file.txt
 rm -f $error_file
 touch $error_file
 in_source=`egrep -a -r "I18N.getString|I18N.s" core/ | egrep -a -o "I18N.getString.*)|I18N.s.*)" | sed "s/I18N/\nI18N/g" | egrep -a -o "I18N.getString.*\")|I18N.s.*\")" | egrep -a -o '".*"' | sort -u | egrep -o "[a-zA-Z0-9_]*" | sort -u`
-achi=`cat core/src/com/gitlab/ardash/appleflinger/helpers/Achievement.java | grep ACH_ | tr '[:upper:]' '[:lower:]' | egrep -o "[a-z_]*"`
+achi=`cat core/src/com/gitlab/ardash/appleflinger/helpers/Achievement.java | egrep "\sACH_" | tr '[:upper:]' '[:lower:]' | egrep -o "[a-z_]*"`
 prop_files=`ls android/assets/af*properties`
 
 all_achis=''
