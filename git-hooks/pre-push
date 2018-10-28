@@ -17,4 +17,12 @@
 #-------------------------------------------------------------------------------
 ./licensecheck.sh || exit 1
 ./validateI18N.sh || exit 1
+
+# ensure it builds
+ANDROID_HOME=~/devel/android-sdk-linux/ ./gradlew assembleRelease || exit 1
+
+# run tests
 ./gradlew tests:test --info || exit 1
+
+# validating images (no transparent pixels) - takes a long time but rarely fails, so it is performed last
+scripts/validate-images.sh || exit 1

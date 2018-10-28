@@ -21,7 +21,7 @@
 #rm -f $tf*
 #need to build the latest release apkm so the size is correct in status
 # also ensuring that it actually builds it good
-ANDROID_HOME=~/devel/android-sdk-linux/ ./gradlew assembleRelease || exit 1
+#ANDROID_HOME=~/devel/android-sdk-linux/ ./gradlew assembleRelease || exit 1
 
 # commented it here and moved it to the release translations
 # this test fails mostly, so it comes first
@@ -33,6 +33,3 @@ ANDROID_HOME=~/devel/android-sdk-linux/ ./gradlew assembleRelease || exit 1
 
 #update AUTHORS file
 scripts/update-authors-file.sh || exit 1
-
-# validating images (no transparent pixels) - takes a long time but rarely fails, so it is performed last
-scripts/validate-images.sh || exit 1
