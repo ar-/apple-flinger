@@ -23,6 +23,7 @@ import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.OrthographicCamera;
 import com.badlogic.gdx.graphics.g2d.Sprite;
 import com.badlogic.gdx.math.Interpolation;
+import com.badlogic.gdx.math.MathUtils;
 import com.badlogic.gdx.scenes.scene2d.Action;
 import com.badlogic.gdx.scenes.scene2d.Group;
 import com.badlogic.gdx.scenes.scene2d.InputEvent;
@@ -73,10 +74,12 @@ public class GameScreen implements Screen {
     
     public final Mission mission;
 	private Label labelMessage;
+	private Label labelTime;
 	private PauseScreenActor pauseScreen = new PauseScreenActor();
 	private boolean isAnnouncementFrozen= false;
 	private Label labelAllPointsP1;
 	private Label labelAllPointsP2;
+	private float notPausedTimeOnScreen = 0;
     
     public GameScreen(Mission mission) {
 		this.mission = mission;
@@ -144,7 +147,15 @@ public class GameScreen implements Screen {
         labelMessage.setWidth(SCREEN_WIDTH);  
         labelMessage.setAlignment(Align.top);  
         labelMessage.setTouchable(Touchable.disabled);
-        guiStage.addActor(labelMessage);  
+        guiStage.addActor(labelMessage);
+
+        // label to show expired game time
+        labelTime = createMiniLabel("00:00");
+        labelTime.setWidth(SCREEN_WIDTH);
+        labelTime.setHeight(SCREEN_HEIGHT);
+        labelTime.setAlignment(Align.topRight);
+        labelTime.setTouchable(Touchable.disabled);
+        guiStage.addActor(labelTime);
         
         final Label labelNameP1 = new Label(".", labelstyle);   
 		labelNameP1.setPosition(0, SCREEN_HEIGHT-lineheight*2);  
@@ -391,10 +402,14 @@ public class GameScreen implements Screen {
   
         // dont update the world, if game paused
         if (!GameManager.getInstance().isPaused())
-        	world.update(delta); // update the box2d world          
-        guiStage.act(delta); // update GUI  
+        {
+        	world.update(delta); // update the box2d world
+        	notPausedTimeOnScreen  += delta;
+            updateTimeOnScreen(notPausedTimeOnScreen);
+        }
+        guiStage.act(delta); // update GUI
           
-        renderer.render(); // draw the box2d world  
+        renderer.render(); // draw the box2d world
         guiStage.setDebugAll(GameManager.DEBUG);
         guiStage.draw(); // draw the GUI
     }
@@ -405,7 +420,7 @@ public class GameScreen implements Screen {
 		guiStage.getViewport().update(width, height, true);
 		
 		// make the actors and stage still react to touch after resize, but coordinates are still fucked after resize
-		// taken out becasue every click refreshes the handler now
+		// taken out because every click refreshes the handler now
 //		Gdx.input.setInputProcessor(world.stage);
 	}
 	
@@ -462,7 +477,28 @@ public class GameScreen implements Screen {
 		Action action = Actions.sequence(a1,Actions.delay(1),a2, Actions.removeActor(grp));
 		grp.addAction(action );
 		SoundPlayer.playSound(Assets.getSound(SoundAsset.BELL));
-	}  
+	}
+	
+	public void updateTimeOnScreen(float playTime) {
+		
+		// if game is already over, no nee to update that label any more
+		if (isAnnouncementFrozen)
+			return;
+		
+		final int totalSecs = MathUtils.round(playTime);
+		final int hours = totalSecs / 3600;
+		final int minutes = (totalSecs % 3600) / 60;
+		final int seconds = totalSecs % 60;
+
+		final String timeString;
+		if (hours == 0)
+			timeString = String.format("%02d:%02d", minutes, seconds);
+		else
+		{
+			timeString = String.format("%02d:%02d:%02d", hours, minutes, seconds);
+		}
+		labelTime.setText(timeString);
+	}
 
 	public Stage getGuiStage() {
 		return guiStage;
