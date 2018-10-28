@@ -1,4 +1,8 @@
 1.5.4 ()
+  * added display for the percentage of incremental achivements
+  * added the time to the display on the screen
+
+1.5.4 (2018-10-28)
   * added translators to the credits-screen in the game
   * added Dutch language (thanks to Heimen on weblate)
   * added Galician language (thanks to Iván on weblate)
