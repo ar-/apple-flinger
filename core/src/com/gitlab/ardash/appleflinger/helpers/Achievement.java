@@ -34,4 +34,17 @@ public enum Achievement {
 	{
 		return "desc_"+name().toLowerCase();
 	}
+	
+	public int getGoal() {
+		if (this.equals(ACH_POINTS_FARMER))
+		{
+			return 1000000;
+		}
+		
+		return 1;
+	}
+	
+	public boolean isIncremental() {
+		return getGoal()!=1;
+	}
 }
