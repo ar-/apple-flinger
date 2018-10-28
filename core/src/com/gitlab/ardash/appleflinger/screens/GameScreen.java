@@ -403,9 +403,9 @@ public class GameScreen implements Screen {
         // dont update the world, if game paused
         if (!GameManager.getInstance().isPaused())
         {
-        	world.update(delta); // update the box2d world
-        	notPausedTimeOnScreen  += delta;
-            updateTimeOnScreen(notPausedTimeOnScreen);
+			world.update(delta); // update the box2d world
+			notPausedTimeOnScreen  += delta;
+			updateTimeOnScreen(notPausedTimeOnScreen);
         }
         guiStage.act(delta); // update GUI
           
