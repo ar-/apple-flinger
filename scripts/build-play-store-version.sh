@@ -1,5 +1,6 @@
+#!/bin/bash
 #-------------------------------------------------------------------------------
-# Copyright (C) 2017-2018 Andreas Redmer <ar-appleflinger@abga.be>
+# Copyright (C) 2017 Andreas Redmer <andreasredmer@mailchuck.com>
 # 
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -14,6 +15,12 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #-------------------------------------------------------------------------------
-#./gradlew tests:test --info
-./gradlew desktop:dist # desktop:run
-java -jar desktop/build/libs/desktop-1.0.jar
+
+export ANDROID_HOME=~/devel/android-sdk-linux/
+./gradlew android assembleRelease
+jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore android_keystore.jks android/build/outputs/apk/android-release-unsigned.apk appleslinger 
+mv android/build/outputs/apk/android-release-unsigned.apk android/build/outputs/apk/android-release-signed.apk
+zipalign -f 4 android/build/outputs/apk/android-release-signed.apk android/build/outputs/apk/android-release-final.apk
+rm -f android/build/outputs/apk/android-release-signed.apk
+echo product is here:
+ls -la android/build/outputs/apk/android-release-final.apk

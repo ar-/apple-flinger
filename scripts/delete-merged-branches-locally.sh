@@ -1,5 +1,6 @@
+#!/bin/bash
 #-------------------------------------------------------------------------------
-# Copyright (C) 2017-2018 Andreas Redmer <ar-appleflinger@abga.be>
+# Copyright (C) 2018 Andreas Redmer <andreasredmer@mailchuck.com>
 # 
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -14,6 +15,10 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #-------------------------------------------------------------------------------
-#./gradlew tests:test --info
-./gradlew desktop:dist # desktop:run
-java -jar desktop/build/libs/desktop-1.0.jar
+git checkout master || exit 1
+
+git branch --merged | egrep -v "(^\*|master|dev|weblate)" | xargs git branch -d
+
+echo here are the remaining branches:
+echo 
+git branch

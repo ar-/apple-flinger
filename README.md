@@ -59,6 +59,9 @@ Programming, Testing, Graphic Design, Web page, Sound engineering, Level design,
 
 Send an email to <incoming+ar-/apple-flinger@gitlab.com> if you need help with anything.
 
+## Create Levels
+If you like to create levels (or maps or missions or episodes), There is a wiki-page for it: https://gitlab.com/ar-/apple-flinger/wikis/create-new-level . Check it out! Please send you levels, no matter if you make 1 or 100. All contributions are welcome.
+
 ## Translate
 
 You can translate the properties file and send a merge request, or (for the technically less experienced) you can simply use the convinient web-interface on weblate https://hosted.weblate.org/engage/apple-flinger/ . There you can add new languages to the game and improve existing translations. By default you will be mentionend in the AUTHORS file of this project (that is done by a script). Let me know by email, if you don't want that.

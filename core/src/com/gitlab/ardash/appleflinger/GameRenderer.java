@@ -93,7 +93,6 @@ public class GameRenderer  implements Disposable
         		{
         			final float disabledDist = 2f;
 	        		final Vector2 slingShotCenter = GameManager.getInstance().currentPlayer.slingshot.getSlingShotCenter();
-        			System.out.println("dst "+slingShotCenter.dst2(x, y));
 	        		if (slingShotCenter.dst2(x, y) < disabledDist*disabledDist)
 	        			return;
         		}
