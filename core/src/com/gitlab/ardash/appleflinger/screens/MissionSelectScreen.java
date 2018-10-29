@@ -18,6 +18,7 @@ package com.gitlab.ardash.appleflinger.screens;
 
 import com.badlogic.gdx.scenes.scene2d.InputEvent;
 import com.badlogic.gdx.scenes.scene2d.ui.Label;
+import com.badlogic.gdx.scenes.scene2d.ui.Label.LabelStyle;
 import com.badlogic.gdx.scenes.scene2d.ui.Table;
 import com.badlogic.gdx.scenes.scene2d.utils.ClickListener;
 import com.badlogic.gdx.utils.Align;
@@ -51,7 +52,7 @@ public class MissionSelectScreen extends GenericScreen {
         // make user select episode if none is selected yet
         if (selectedEpisode == 0)
         {
-        	// btn for each episode
+        	// btn for each episode (episode selection screen)
         	for (final Integer episode : Mission.getAvailableEpisodes()) {
         		Assets.SpriteAsset.BTN_FL_EMPTY.get().setSize(200, 200);
     	        final LabelSpriteButton episodeBtn = new LabelSpriteButton(Assets.SpriteAsset.BTN_FL_EMPTY.get(),
@@ -72,7 +73,15 @@ public class MissionSelectScreen extends GenericScreen {
 	        int i=0;
 	    	for (final Mission mission : Mission.values())
 	    	{
-	    		//int thisMajor = 1;
+	            // label below for name of episode
+	            Label lblEpiName = new Label(getEpisodeName(selectedEpisode), Assets.LabelStyleAsset.MINILABEL.style);   
+	    		lblEpiName.setPosition(0, SCREEN_HEIGHT - SCREEN_HEIGHT/3);  
+	    		lblEpiName.setWidth(SCREEN_WIDTH);
+	    		lblEpiName.setAlignment(Align.center);
+	            guiStage.addActor(lblEpiName);
+	            lblEpiName.setColor(0.9f,0.9f,0.9f,0.9f);
+
+	    		//button for each missing in the selected episode
 	    		if (mission.getMajor() == selectedEpisode)
 	    		{
 			        final LevelButton btnMission = new LevelButton(mission.getMinor());
