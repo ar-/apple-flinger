@@ -39,7 +39,7 @@ public class HCStrategy implements Strategy {
 	private List<Shot> allShots = new HCStrategyData();
 	
 	/**
-	 * A shot straight forward. Only to be user if there are no enemies left, to gain some more points.
+	 * A shot straight forward. Only to be used if there are no enemies left, to gain some more points.
 	 * This is the shot that fixes the crash in #33 . 
 	 */
 	private static Vector2 defaultPullVector = new Vector2(0.7672596f,-0.22652423f);
@@ -134,7 +134,7 @@ public class HCStrategy implements Strategy {
 				continue;
 			if (shotsOfMission.isEmpty())
 			{
-//				throw new RuntimeException("no HCStrategy for Mission "+m);
+				throw new RuntimeException("no HCStrategy for Mission "+m);
 			}
 		}
 	}
@@ -462,6 +462,24 @@ public class HCStrategy implements Strategy {
 			add(new Shot(Mission.M_2_7, 0.7985344f, -0.04839611f, 1.8357701f, 0.059061944f, 1.5739541f));
 			add(new Shot(Mission.M_2_7, 0.798831f, -0.0432415f, 1.9503412f, 0.49386936f, 58.834145f));
 			add(new Shot(Mission.M_2_7, 0.798831f, -0.0432415f, 1.8335636f, 0.059061944f, 58.834145f));
+			
+			add(new Shot(Mission.M_2_8, 0.3209529f, -0.7327956f, 1.2987515f, 2.6105936f, 36.067627f));
+			add(new Shot(Mission.M_2_8, 0.3209529f, -0.7327956f, 1.3343754f, 2.1784885f, 36.067627f));
+			add(new Shot(Mission.M_2_8, 0.2653675f, -0.7547052f, 2.016709f, 1.6353656f, 9.90425f));
+			add(new Shot(Mission.M_2_8, 0.2653675f, -0.7547052f, 2.0f, 1.1854502f, 9.90425f));
+			add(new Shot(Mission.M_2_8, 0.27581215f, -0.7509512f, 2.010451f, 1.6302868f, 28.461231f));
+			add(new Shot(Mission.M_2_8, 0.27581215f, -0.7509512f, 1.9841044f, 1.1854494f, 28.461231f));
+			add(new Shot(Mission.M_2_8, 0.23772144f, -0.7638643f, 2.7617447f, 2.6576393f, 47.79635f));
+			add(new Shot(Mission.M_2_8, 0.23772144f, -0.7638643f, 2.7124999f, 2.18545f, 47.79635f));
+			add(new Shot(Mission.M_2_8, 0.7264824f, -0.3349967f, 1.6100115f, 2.572815f, 14.867577f));
+			add(new Shot(Mission.M_2_8, 0.7264824f, -0.3349967f, 1.3343754f, 2.1784885f, 14.867577f));
+			add(new Shot(Mission.M_2_8, 0.74090576f, -0.30175972f, 2.7085128f, 2.6677105f, 56.50676f));
+			add(new Shot(Mission.M_2_8, 0.74090576f, -0.30175972f, 2.7124999f, 2.18545f, 56.50676f));
+			add(new Shot(Mission.M_2_8, 0.2627635f, -0.75561583f, 2.1464279f, 1.6361883f, 9.169114f));
+			add(new Shot(Mission.M_2_8, 0.2627635f, -0.75561583f, 2.0f, 1.1854502f, 9.169114f));
+			add(new Shot(Mission.M_2_8, 0.2846732f, -0.74763715f, 2.083602f, 1.6603206f, 9.029316f));
+			add(new Shot(Mission.M_2_8, 0.2846732f, -0.74763715f, 1.9966092f, 1.1854502f, 9.029316f));
+
 		}
 	}
 	

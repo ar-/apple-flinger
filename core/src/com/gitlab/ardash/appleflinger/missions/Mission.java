@@ -25,17 +25,11 @@ import com.badlogic.gdx.scenes.scene2d.Group;
 import com.gitlab.ardash.appleflinger.GameWorld;
 
 /**
- * All StageFiller impleentation are lightweigt and hold only the function to fill the stage.
+ * All StageFiller implementation are lightweight and hold only the function to fill the stage.
  * So they can all be loaded.
  *
  */
 	public enum Mission {
-//	    Empty (0, 0, new MissionEmpty()),
-//	    M_1_1 (1, 1, new MissionM_1_1()),
-//	    M_1_2 (1, 2, new MissionM_1_2()),
-//	    M_1_3 (1, 3, new MissionM_1_3()),
-//
-//	    NONE (0, 0, null); // don't use this
 	    Empty,
 	    M_1_1,
 	    M_1_2,
@@ -63,6 +57,7 @@ import com.gitlab.ardash.appleflinger.GameWorld;
 	    M_2_5,
 	    M_2_6,
 	    M_2_7,
+	    M_2_8,
 	    END_OF_EPISODE_2,
 
 	    NONE; // don't use this

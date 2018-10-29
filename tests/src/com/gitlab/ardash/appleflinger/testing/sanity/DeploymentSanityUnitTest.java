@@ -20,7 +20,9 @@ import static org.junit.Assert.assertFalse;
 
 import org.junit.Test;
 
+import com.gitlab.ardash.appleflinger.ai.HCStrategy;
 import com.gitlab.ardash.appleflinger.global.GameManager;
+import com.gitlab.ardash.appleflinger.missions.Mission;
 
 public class DeploymentSanityUnitTest {
 
@@ -47,5 +49,10 @@ public class DeploymentSanityUnitTest {
 	@Test
 	public void isRecordingDisabled() {
 		assertFalse(GameManager.RECORDSHOTS);
+	}
+	
+	@Test
+	public void areAllMissionsRecordedInAI() {
+		HCStrategy.validate();
 	}
 }

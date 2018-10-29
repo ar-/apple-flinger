@@ -393,7 +393,7 @@ final public class GameManager {
 		return currentMission;
 	}
 
-	protected void setCurrentMission(Mission currentMission) {
+	public void setCurrentMission(Mission currentMission) {
 		this.currentMission = currentMission;
 	}
 

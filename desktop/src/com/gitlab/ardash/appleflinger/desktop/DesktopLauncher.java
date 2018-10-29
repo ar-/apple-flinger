@@ -19,11 +19,9 @@ package com.gitlab.ardash.appleflinger.desktop;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.backends.lwjgl.LwjglApplication;
 import com.badlogic.gdx.backends.lwjgl.LwjglApplicationConfiguration;
-import com.badlogic.gdx.tools.texturepacker.TexturePacker;
 import com.badlogic.gdx.tools.texturepacker.TexturePacker.Settings;
 import com.gitlab.ardash.appleflinger.ActionResolver;
 import com.gitlab.ardash.appleflinger.AppleflingerGame;
-import com.gitlab.ardash.appleflinger.ai.HCStrategy;
 import com.gitlab.ardash.appleflinger.global.Assets;
 import com.gitlab.ardash.appleflinger.global.GameManager;
 import com.gitlab.ardash.appleflinger.missions.Mission;
@@ -38,7 +36,7 @@ public class DesktopLauncher implements ActionResolver{
 	{
 		Mission.validate();
 		Assets.validate();
-		HCStrategy.validate();
+		//HCStrategy.validate(); done in sanity check (test stage)
 
 		LwjglApplicationConfiguration config = new LwjglApplicationConfiguration();
 //		config.width = (int)(GameScreen.SCREEN_WIDTH);
