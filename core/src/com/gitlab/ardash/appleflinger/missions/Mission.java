@@ -58,6 +58,16 @@ import com.gitlab.ardash.appleflinger.GameWorld;
 	    M_2_6,
 	    M_2_7,
 	    M_2_8,
+	    M_2_9,
+	    M_2_10,
+	    M_2_11,
+	    M_2_12,
+	    M_2_13,
+	    M_2_14,
+	    M_2_15,
+	    M_2_16,
+	    M_2_17,
+	    M_2_18,
 	    END_OF_EPISODE_2,
 
 	    NONE; // don't use this
