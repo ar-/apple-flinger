@@ -1,5 +1,5 @@
 1.5.5
-  * ukurasa wa wiki hakuna tovuti iliyoundwa, kuelezea jinsi ya kuunda ngazi mpya
+  * ukurasa wa wiki kwenye tovuti iliyoundwa, kuelezea jinsi ya kujenga ngazi mpya
   * Viwango 12 vya baridi viliongeza
   * kuonyesha kwa asilimia ya mafanikio ya ziada yaliongezwa
   * aliongeza wakati wa kuonyesha kwenye skrini

@@ -1,5 +1,5 @@
 1.5.5
-  * wiki puslapis nėra sukurta svetainė, aprašoma, kaip kurti naujus lygius
+  * svetainės wiki puslapis, sukurtas, kuriame aprašoma, kaip sukurti naujus lygius
   * Dar pridėta dar 12 žiemos lygių
   * Rodomas papildomų pasiekimų procentas
   * ekrane rodomas ekrano laikas

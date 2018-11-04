@@ -1,5 +1,5 @@
 1.5.5
-Pàgina de wiki no s'ha creat el lloc web, que descriu com crear nous nivells
+  * Pàgina wiki del lloc web creat, que descriu com crear nous nivells
   * S'han afegit 12 nivells d'hivern més
   * Mostra el percentatge d'assoliments incrementals afegits
   * S'ha afegit el temps a la pantalla a la pantalla

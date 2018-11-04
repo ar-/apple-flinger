@@ -1,5 +1,5 @@
 1.5.5
-  * wiki-pagina nee de website is gemaakt en beschrijft hoe je nieuwe levels maakt
+  * Wiki-pagina op de website gemaakt, beschrijft hoe nieuwe niveaus te creëren
   * 12 extra winterlevels toegevoegd
   * weergave voor het percentage toegevoegde incrementele prestaties
   * heeft de tijd toegevoegd aan het display op het scherm

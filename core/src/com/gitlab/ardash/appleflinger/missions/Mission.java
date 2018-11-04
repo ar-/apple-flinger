@@ -25,7 +25,7 @@ import com.badlogic.gdx.scenes.scene2d.Group;
 import com.gitlab.ardash.appleflinger.GameWorld;
 
 /**
- * All StageFiller implementation are lightweight and hold only the function to fill the stage.
+ * All StageFiller implementations are lightweight and hold only the function to fill the stage.
  * So they can all be loaded.
  *
  */

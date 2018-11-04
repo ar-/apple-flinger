@@ -1,5 +1,5 @@
 1.5.5
-  * pagina wiki nr site-ul creat, descriind modul de creare a nivelelor noi
+  * pagina wiki de pe site-ul web creat, descriind modul de creare a nivelelor noi
   * Au fost adăugate încă 12 nivele de iarnă
   * afișează procentajul de realizări incrementale adăugate
   * a adăugat timpul de afișare pe ecran

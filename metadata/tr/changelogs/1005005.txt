@@ -1,5 +1,5 @@
 1.5.5
-  * wiki sayfası hiçbir web sitesi oluşturulmadı, nasıl yeni seviyeler yaratılacağını açıklıyor
+  * Web sitesinde oluşturulan wiki sayfası, yeni seviyelerin nasıl oluşturulacağını açıklıyor
   * 12 daha kış seviyesi eklendi
   * Artımlı başarıların yüzdesi için görüntüleme
   * Ekrandaki zamana zaman ekledi

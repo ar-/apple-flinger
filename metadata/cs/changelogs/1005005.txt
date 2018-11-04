@@ -1,5 +1,5 @@
 1.5.5
-  * wiki page no vytvořený web, který popisuje, jak vytvořit nové úrovně
+  * wiki stránky na vytvořené webové stránce, která popisuje, jak vytvořit nové úrovně
   * Přidáno dalších 12 úrovní
   * zobrazí se procentní podíl přírůstkových přírůstků
   * přidal čas na displej na obrazovce

@@ -1,5 +1,5 @@
 1.5.5
-  * page wiki non le site Web créé, décrivant comment créer de nouveaux niveaux
+  * Page wiki sur le site créé, décrivant comment créer de nouveaux niveaux
   * 12 niveaux d'hiver supplémentaires ajoutés
   * affichage du pourcentage de réalisations supplémentaires ajouté
   * ajout de l'heure à l'affichage à l'écran

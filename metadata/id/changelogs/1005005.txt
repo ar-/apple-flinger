@@ -1,5 +1,5 @@
 1.5.5
-  * Halaman wiki tidak ada situs web yang dibuat, menjelaskan cara membuat level baru
+  * halaman wiki di situs web yang dibuat, menjelaskan cara membuat level baru
   * 12 lebih banyak tingkat musim dingin ditambahkan
   * Tampilan untuk persentase pencapaian tambahan ditambahkan
   * menambahkan waktu ke tampilan di layar

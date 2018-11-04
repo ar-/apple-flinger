@@ -1,5 +1,5 @@
 1.5.5
-  * wiki sida nej webbsidan skapad, beskriver hur man skapar nya nivåer
+  * wiki-sida på webbplatsen skapad, beskriver hur man skapar nya nivåer
   * Ytterligare 12 vinternivåer tillagd
   * Visa för procentuellt antal ökade prestationer
   * lagt till tiden till skärmen på skärmen

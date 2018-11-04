@@ -1,5 +1,5 @@
 1.5.5
-  * strona wiki nie utworzono strony internetowej, opisującej sposób tworzenia nowych poziomów
+  * Strona wiki na stronie internetowej, opisująca sposób tworzenia nowych poziomów
   * Dodano 12 dodatkowych poziomów zimowych
   * wyświetlanie procentowego przyrostu dodanych osiągnięć
   * dodał czas do wyświetlenia na ekranie

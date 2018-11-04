@@ -1,5 +1,5 @@
 1.5.5
-  * Página wiki no website criado, descrevendo como criar novos níveis
+  * Página wiki no site criado, descrevendo como criar novos níveis
   * 12 mais níveis de inverno adicionados
   * exibição da porcentagem de conquistas incrementais adicionadas
   * adicionado o tempo para a exibição na tela

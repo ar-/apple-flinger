@@ -1,5 +1,5 @@
 1.5.5
-  * La página wiki no creó el sitio web, describiendo cómo crear nuevos niveles.
+  * Página wiki en el sitio web creado, que describe cómo crear nuevos niveles.
   * 12 niveles más de invierno añadidos
   * Visualización para el porcentaje de logros incrementales agregados.
   * Añadido el tiempo a la pantalla en la pantalla.

@@ -60,7 +60,7 @@ Programming, Testing, Graphic Design, Web page, Sound engineering, Level design,
 Send an email to <incoming+ar-/apple-flinger@gitlab.com> if you need help with anything.
 
 ## Create Levels
-If you like to create levels (or maps or missions or episodes), There is a wiki-page for it: https://gitlab.com/ar-/apple-flinger/wikis/create-new-level . Check it out! Please send you levels, no matter if you make 1 or 100. All contributions are welcome.
+If you like to create levels (or maps or missions or episodes), There is a wiki-page for it: https://gitlab.com/ar-/apple-flinger/wikis/create-new-level . Check it out! Please send your levels, no matter if you make 1 or 100. All contributions are welcome.
 
 ## Translate
 

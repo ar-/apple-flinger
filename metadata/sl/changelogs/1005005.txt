@@ -1,5 +1,5 @@
 1.5.5
-  * wiki stran ni ustvarila spletna stran, ki opisuje, kako ustvariti nove ravni
+  * wiki stran na spletni strani je ustvarila, ki opisuje, kako ustvariti nove ravni
   * Dodanih je 12 dodatnih zimskih stopenj
   * prikazan je odstotek dodatnih dosežkov
   * je na zaslonu dodal čas na zaslonu

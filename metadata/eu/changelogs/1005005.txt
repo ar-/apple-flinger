@@ -1,5 +1,5 @@
 1.5.5
-  * wiki orrialdea ez da webgunea sortu, maila berriak nola sortu deskribatuz
+  * wiki-orria sortu da, maila berriak nola sortu deskribatuz
   * 12 neguko maila gehiago gehitu dira
   * Gehikuntza inkrementalen portzentajeen bistaratzea
   * Pantailan pantailako ordua gehitu da

@@ -1,5 +1,5 @@
 1.5.5
-  * wiki lapā nav izveidota tīmekļa vietne, kurā aprakstīts, kā izveidot jaunus līmeņus
+  * izveidotajā vietnes wiki lapā, kurā aprakstīts, kā izveidot jaunus līmeņus
   * Pievienoti vēl 12 ziemas līmeņi
   * ekrāns pievienoto pieauguma pakāpju procentuālā izteiksmē
   * pievienots ekrāna displeja laiks

@@ -1,5 +1,5 @@
 1.5.5
-  * Pagina wiki non creata dal sito Web, che descrive come creare nuovi livelli
+  * Pagina wiki sul sito Web creata, che descrive come creare nuovi livelli
   * 12 nuovi livelli invernali aggiunti
   * mostra la percentuale di risultati incrementali aggiunti
   * aggiunto il tempo al display sullo schermo

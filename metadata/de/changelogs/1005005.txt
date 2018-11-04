@@ -1,8 +1,8 @@
 1.5.5
-  * Wiki-Seite, keine Website erstellt, die beschreibt, wie neue Level erstellt werden
-  * 12 weitere Winterstufen hinzugefügt
-  * Anzeige für den Prozentsatz der hinzugefügten Zusatzleistungen
-  * fügte die Zeit zur Anzeige auf dem Bildschirm hinzu
+  * Wiki-Seite auf der Webseite erstellt, in der beschrieben wird, wie neue Level erstellt werden
+  * 12 weitere Winterlevel hinzugefügt
+  * Anzeige für den Prozentsatz von inkrementellen Errungenschaften
+  * die Zeit zur Anzeige auf dem Bildschirm hinzugefügt
 
 1.5.4
   * Übersetzer werden nun auf dem Credits-Bildschirm im Spiel angezeigt
@@ -13,6 +13,5 @@
 
 1.5.3
   * adaptives Symbol hinzugefügt (Android 8 und höher)
-  * Hintergrund Zoom in der Nähe des Apfels deaktiviert
-  * Norwegische Sprache hinzugefügt (danke an Allan auf Weblate)
-
+  * Hintergrundzoom in der Nähe des Apfels deaktiviert
+  * Norwegisch hinzugefügt (Danke an Allan auf weblate)

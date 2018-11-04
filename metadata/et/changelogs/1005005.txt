@@ -1,5 +1,5 @@
 1.5.5
-  * Veebileheküljel ei loodud veebisaiti, kirjeldades kuidas luua uusi tasemeid
+  * Veebilehe wiki leht, kus kirjeldatakse, kuidas luua uusi tasemeid
   * Lisatud 12 veel talve taset
   * kuvatakse lisanduvate lisaväärtuste protsent
   * lisas ekraanile ekraanil aja

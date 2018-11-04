@@ -1,5 +1,5 @@
 1.5.5
-  * trang wiki không có trang web được tạo ra, mô tả cách tạo cấp độ mới
+  * trang wiki trên trang web được tạo, mô tả cách tạo cấp độ mới
   * Thêm 12 cấp độ mùa đông
   * hiển thị phần trăm các thành tích gia tăng
   * thêm thời gian vào màn hình hiển thị trên màn hình

@@ -1,5 +1,5 @@
 1.5.5
-  * vikpaĝo ne kreis la retejon, priskribante kiel krei novajn nivelojn
+  * paĝo en la retejo kreita, priskribante kiel krei novajn nivelojn
   * 12 pli vintraj niveloj aldonitaj
   * montriĝo por la procento de pliiĝaj atingoj aldonitaj
   * Aldonis la tempon al la ekrano sur la ekrano
