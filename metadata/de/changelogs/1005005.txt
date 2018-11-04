@@ -1,0 +1,17 @@
+1.5.5
+  * Wiki-Seite, keine Website erstellt, die beschreibt, wie neue Level erstellt werden
+  * 12 weitere Winterstufen hinzugefügt
+  * Anzeige für den Prozentsatz der hinzugefügten Zusatzleistungen
+  * fügte die Zeit zur Anzeige auf dem Bildschirm hinzu
+
+1.5.4
+  * Übersetzer wurden dem Credits-Bildschirm im Spiel hinzugefügt
+  * Niederländisch hinzugefügt (danke an Heimen auf weblate)
+  * Galizische Sprache hinzugefügt (Dank an Iván auf weblate)
+  * verbesserte spanische Übersetzung (danke an Markel auf weblate)
+  * Transparente Pixel aus Screenshots entfernt
+
+1.5.3
+  * adaptives Symbol hinzugefügt (Android 8 und höher)
+  * Hintergrundzoom in der Nähe des Apfels deaktiviert
+  * Norwegisch hinzugefügt (Danke an Allan auf weblate)
