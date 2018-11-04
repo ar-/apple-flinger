@@ -19,8 +19,8 @@
     package="com.gitlab.ardash.appleflinger.android"
     xmlns:android="http://schemas.android.com/apk/res/android"
 
-    android:versionCode="1005003"
-    android:versionName="1.5.3" >
+    android:versionCode="1005004"
+    android:versionName="1.5.4" >
 
     <uses-sdk android:minSdkVersion="9" android:targetSdkVersion="26" />
 
