@@ -1,0 +1,17 @@
+1.5.5
+  * wiki stránky na vytvořené webové stránce, která popisuje, jak vytvořit nové úrovně
+  * Přidáno dalších 12 úrovní
+  * zobrazí se procentní podíl přírůstkových přírůstků
+  * přidal čas na displej na obrazovce
+
+1.5.4
+  * Přidali překladatelé na obrazovku kreditů ve hře
+  * přidán holandský jazyk (díky Heimenovi na webu)
+  * přidán jazyk galicijštiny (díky Ivánovi na webu)
+  * Vylepšený překlad do Španělska (díky Markelovi na webu)
+  * odstranění průhledných pixelů ze snímků obrazovky
+
+1.5.3
+  * Adaptivní ikona přidaná (Android 8 a vyšší)
+  * zakázáno přiblížení na pozadí v blízkosti jablka
+  * přidán norský jazyk (díky Allanovi na webu)

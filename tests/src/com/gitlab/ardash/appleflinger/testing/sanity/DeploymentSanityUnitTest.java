@@ -19,9 +19,15 @@ package com.gitlab.ardash.appleflinger.testing.sanity;
 import static org.junit.Assert.assertFalse;
 
 import org.junit.Test;
+import org.junit.runner.RunWith;
 
+import com.gitlab.ardash.appleflinger.ai.HCStrategy;
+import com.gitlab.ardash.appleflinger.global.Assets;
 import com.gitlab.ardash.appleflinger.global.GameManager;
+import com.gitlab.ardash.appleflinger.missions.Mission;
+import com.gitlab.ardash.appleflinger.testing.GdxTestRunner;
 
+@RunWith(GdxTestRunner.class)
 public class DeploymentSanityUnitTest {
 
 	@Test
@@ -47,5 +53,20 @@ public class DeploymentSanityUnitTest {
 	@Test
 	public void isRecordingDisabled() {
 		assertFalse(GameManager.RECORDSHOTS);
+	}
+	
+	@Test
+	public void areAllMissionsRecordedInAI() {
+		HCStrategy.validate();
+	}
+	
+	@Test
+	public void areAllMissionsValid() {
+		Mission.validate();
+	}
+	
+	@Test
+	public void areAllAssetsValid() {
+		Assets.validate();
 	}
 }

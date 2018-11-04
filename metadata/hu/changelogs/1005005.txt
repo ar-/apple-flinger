@@ -1,0 +1,17 @@
+1.5.5
+  * wiki oldal a létrehozott weboldalon, leírva az új szintek létrehozását
+  * 12 további téli szint került hozzáadásra
+  * megjeleníti a hozzáadott értékek százalékos arányát
+  * hozzáadta az időt a képernyőn megjelenő képernyőhöz
+
+1.5.4
+  * hozzáadott fordítók a játék kredit képernyőjéhez
+  * holland nyelv hozzáadásával (hála a Heimennek a weboldalon)
+  * hozzáadta a galíciai nyelvet (köszönhetően Ivánnak a weboldalon)
+  * javult a spanyol fordítás (köszönhetően Markelnek a weboldalon)
+  * átlátszó képpontokat távolított el a képernyőképekről
+
+1.5.3
+  * hozzáadott adaptív ikon (Android 8 és újabb)
+  * tiltott háttérkép nagyítás az alma közelében
+  * norvég nyelvvel kiegészítve (köszönhetően Allannak a weboldalon)

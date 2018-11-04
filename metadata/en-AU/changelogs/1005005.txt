@@ -1,5 +1,7 @@
 1.5.5
-  * added display for the percentage of incremental achivements
+  * wiki page on the website created, describing how to create new levels
+  * 12 more winter levels added
+  * display for the percentage of incremental achievements added
   * added the time to the display on the screen
 
 1.5.4

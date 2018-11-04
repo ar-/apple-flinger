@@ -1,0 +1,17 @@
+1.5.5
+  * wiki-siden på nettstedet opprettet, og beskriver hvordan man lager nye nivåer
+  * 12 flere vinternivåer lagt til
+  * Vis for prosentandelen av inkrementelle prestasjoner som er lagt til
+  * lagt tiden til skjermen på skjermen
+
+1.5.4
+  * lagt oversettere til kreditter-skjermen i spillet
+  * lagt til nederlandsk språk (takket være Heimen på weblate)
+  * lagt til galisisk språk (takk til Iván på weblate)
+  * forbedret spansk oversettelse (takket være Markel på weblate)
+  * fjernet gjennomsiktige piksler fra skjermbilder
+
+1.5.3
+  * lagt tilpasningsikon (Android 8 og høyere)
+  * deaktivert bakgrunn zoom nær eplet
+  * lagt til norsk språk (takk til Allan på weblate)

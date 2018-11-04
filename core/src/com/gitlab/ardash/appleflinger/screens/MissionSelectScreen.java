@@ -51,7 +51,7 @@ public class MissionSelectScreen extends GenericScreen {
         // make user select episode if none is selected yet
         if (selectedEpisode == 0)
         {
-        	// btn for each episode
+        	// btn for each episode (episode selection screen)
         	for (final Integer episode : Mission.getAvailableEpisodes()) {
         		Assets.SpriteAsset.BTN_FL_EMPTY.get().setSize(200, 200);
     	        final LabelSpriteButton episodeBtn = new LabelSpriteButton(Assets.SpriteAsset.BTN_FL_EMPTY.get(),
@@ -69,10 +69,17 @@ public class MissionSelectScreen extends GenericScreen {
         }
         else
         {
+            // label for name of episode
+            Label lblEpiName = new Label(getEpisodeName(selectedEpisode), menustyle);   
+    		lblEpiName.setPosition(0, SCREEN_HEIGHT - SCREEN_HEIGHT/3);  
+    		lblEpiName.setWidth(SCREEN_WIDTH);
+    		lblEpiName.setAlignment(Align.center);
+    		
+            guiStage.addActor(lblEpiName);
 	        int i=0;
 	    	for (final Mission mission : Mission.values())
 	    	{
-	    		//int thisMajor = 1;
+	    		//button for each missing in the selected episode
 	    		if (mission.getMajor() == selectedEpisode)
 	    		{
 			        final LevelButton btnMission = new LevelButton(mission.getMinor());

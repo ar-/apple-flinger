@@ -115,6 +115,19 @@ public class AssetTest {
 	}
 	
 	@Test
+	/**
+	 * just set back to english. The last test always sets it to an unsuitable language at dev time
+	 */
+	public void isI18NWorkingEN() {
+		I18N.loadLanguageBundle("en");
+		assertEquals("Yes", I18N.s("yes"));
+		I18N.loadLanguageBundle("");
+		assertEquals("Yes", I18N.s("yes"));
+	}
+
+
+	
+	@Test
 	public void arePrpertyFilesComplete() {
 		assertTrue("Asset file not found.", Gdx.files
 				.internal("assets/af.properties").exists());

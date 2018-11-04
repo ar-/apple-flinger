@@ -1,0 +1,17 @@
+1.5.5
+  * Wiki bladsy op die webwerf geskep, beskryf hoe om nuwe vlakke te skep
+  * Nog 12 wintervlakke bygevoeg
+  * vertoon vir die persentasie van die inkrementele prestasies wat bygevoeg is
+  * het die tyd aan die skerm op die skerm bygevoeg
+
+1.5.4
+  * Voeg vertalers by die krediete-skerm in die spel
+  * bygevoeg Nederlandse taal (danksy Heimen op webblad)
+  * bygevoeg Galisiese taal (danksy Iván op webblad)
+  * verbeterde Spaanse vertaling (danksy Markel op webblad)
+  * Verwyder deursigtige pixels van skermkiekies
+
+1.5.3
+  * Adaptiewe ikoon (Android 8 en hoër) bygevoeg
+  * Gestremde agtergrond zoom naby die appel
+  * Noorse taal bygevoeg (dankie Allan op webblad)

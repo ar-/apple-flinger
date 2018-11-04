@@ -1,0 +1,17 @@
+1.5.5
+  * wiki stranica na kreiranoj web stranici, opisujući kako stvoriti nove razine
+Dodano je još 12 zimskih nivoa
+  * prikazati postotak dodanih postignuća
+  * dodao je vrijeme na zaslon na zaslonu
+
+1.5.4
+  * dodali su prevoditelje na zaslone kredita u igri
+  * dodan nizozemski jezik (zahvaljujući Heimenu na webu)
+  * dodan galicijski jezik (zahvaljujući Iván na webu)
+  * poboljšani španjolski prijevod (zahvaljujući Markelu na web stranici)
+  * uklonili su prozirne piksele sa snimaka zaslona
+
+1.5.3
+  * dodana ikona prilagodljiva (Android 8 i noviji)
+  * onemogućeno pozadinsko zumiranje blizu jabuke
+  * dodao je norveški jezik (zahvaljujući Allanu na webu)

@@ -105,13 +105,19 @@ public class PlayerSimulator {
 	// return null if there is none , is avoided
 	public Vector2 getGoodPullVector ()
 	{
-			// TODO add variation (calibrate here)
+			// strategies can be adjusted here
 			final Vector2 pullVector = strategy.getPullVector();
+			
+			// degree around 0,360,180 : is horizontal shot -> strength can be adjusted
+			// degree around 90,270 (sin > 0.75 ): is vertical shot -> strength should not be reduced (will hit own targets)
+			boolean verticalShot = Math.abs(MathUtils.sin(pullVector.angleRad())) > 0.9f;
 
 			// deviation in strength of 6.25%
-			final float clamp = MathUtils.random(-0.0625f, 0.0625f); 
-			final float xoffset = MathUtils.random(-0.035f, 0.035f);
-			final float yoffset = MathUtils.random(-0.035f, 0.035f);
+			final float devStrength = 0.0625f;
+			final float devPosition = 0.035f;
+			final float clamp = MathUtils.random(verticalShot?-devStrength:0, devStrength); 
+			final float xoffset = MathUtils.random(-devPosition, devPosition);
+			final float yoffset = MathUtils.random(-devPosition, devPosition);
 			pullVector.x += xoffset;
 			pullVector.y += yoffset;
 			pullVector.scl(1f + clamp);
