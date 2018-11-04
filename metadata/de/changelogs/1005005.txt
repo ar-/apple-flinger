@@ -5,13 +5,14 @@
   * fügte die Zeit zur Anzeige auf dem Bildschirm hinzu
 
 1.5.4
-  * Übersetzer wurden dem Credits-Bildschirm im Spiel hinzugefügt
-  * Niederländisch hinzugefügt (danke an Heimen auf weblate)
-  * Galizische Sprache hinzugefügt (Dank an Iván auf weblate)
-  * verbesserte spanische Übersetzung (danke an Markel auf weblate)
+  * Übersetzer werden nun auf dem Credits-Bildschirm im Spiel angezeigt
+  * Niederländisch hinzugefügt (Danke an Heimen auf Weblate)
+  * Galicische Sprache hinzugefügt (danke an Iván auf Weblate)
+  * verbesserte spanische Übersetzung (danke an Markel auf Weblate)
   * Transparente Pixel aus Screenshots entfernt
 
 1.5.3
   * adaptives Symbol hinzugefügt (Android 8 und höher)
-  * Hintergrundzoom in der Nähe des Apfels deaktiviert
-  * Norwegisch hinzugefügt (Danke an Allan auf weblate)
+  * Hintergrund Zoom in der Nähe des Apfels deaktiviert
+  * Norwegische Sprache hinzugefügt (danke an Allan auf Weblate)
+
