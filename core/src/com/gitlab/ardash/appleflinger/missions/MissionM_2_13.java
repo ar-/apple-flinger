@@ -54,10 +54,8 @@ public class MissionM_2_13 implements StageFiller{
 		group.addActor (new BlockActor(world, MaterialConfig.WOOD_BL_41, 2.1104858f, 1.786165f, 0.013155551f, BodyType.DynamicBody));
 		group.addActor (new BlockActor(world, MaterialConfig.WOOD_BL_22, 1.9491282f, 1.9887817f, 0.0149975475f, BodyType.DynamicBody));
 		group.addActor (new BlockActor(world, MaterialConfig.WOOD_BL_22, 2.2424755f, 1.9926769f, 0.011324759f, BodyType.DynamicBody));
-		group.addActor (new BlockActor(world, MaterialConfig.WOOD_BL_21, 1.94806f, 2.1939585f, 0.01508578f, BodyType.DynamicBody));
-		group.addActor (new BlockActor(world, MaterialConfig.WOOD_BL_21, 2.2238777f, 2.1975412f, 0.011650892f, BodyType.DynamicBody));
+		group.addActor (new BlockActor(world, MaterialConfig.WOOD_BL_41, 2.0906107f, 2.1972513f, 0.012414436f, BodyType.DynamicBody));
 		group.addActor (new PengActor(world, MaterialConfig.TARGET_PENG, 2.093635f, 2.518517f, 0.5f));
-		
 		return group;
 	}
 
