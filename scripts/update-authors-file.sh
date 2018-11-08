@@ -35,6 +35,14 @@ do
   cp /tmp/AUTHORS_tmp.md /tmp/AUTHORS.md
 done
 
+# exclude one of Iván who commited with 2 email addresses (can't be covered by the simple grep above)
+cat /tmp/AUTHORS.md | grep -v "Iván <ivanrsm1997@gmail.com>" > /tmp/AUTHORS_tmp.md
+cp /tmp/AUTHORS_tmp.md /tmp/AUTHORS.md
+
+# exclude Markels duplicate
+cat /tmp/AUTHORS.md | grep -v "Markel @wakutiteo" > /tmp/AUTHORS_tmp.md
+cp /tmp/AUTHORS_tmp.md /tmp/AUTHORS.md
+
 # now make the markdown look nice and put some spamprotection on the email addresses
 sed -i 's/\./∙/g' /tmp/AUTHORS.md
 sed -i 's/\@/⒜/g' /tmp/AUTHORS.md
@@ -58,8 +66,14 @@ else
 
   # collect authors of property files, exclude the excluded, remove email addresses and put all in one line
   # unfortunatally also replace cyrillic names with the latin transcription, because the libgdx label, looks too messed up otherwise
-  translators=`git log --raw android/assets/af*.properties | grep "^Author: " | sort | uniq | cut -d ' ' -f2- | egrep -v $excl_regex | egrep -o ".* <" | egrep -o ".* " | sed -e "s/Сухичев Михаил Иванович/Sukhichev Mikhail Ivanovich/g" | sort -u | tr '\n' ',' | sed -e "s/ ,/, /g"`
+  translators=`git log --raw android/assets/af*.properties | grep "^Author: " | sort | uniq | cut -d ' ' -f2- | egrep -v $excl_regex | egrep -o ".* <" | egrep -o ".* " | sed -e "s/Сухичев Михаил Иванович/Sukhichev Mikhail Ivanovich/g" | sed -e "s/xxssmaoxx/Simon Dottor/g" | sed -e "s/Markel @wakutiteo/Markel/g" | sort -u | tr '\n' ',' | sed -e "s/ ,/, /g"`
   
+  # repair Iván who come up twice
+  translators=${translators/Iván, Iván Seoane/Iván Seoane}
+
+  # remove Markels duplicate
+
+
   # smack it into the source code
   sed -i "s/.*static String translators.*/\tstatic String translators=\"${translators}\";/" core/src/com/gitlab/ardash/appleflinger/screens/CreditsDialog.java
   echo "possibly added translators to the credit screen. should be checked in both font types?"

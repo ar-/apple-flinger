@@ -8,9 +8,11 @@ We'd like to thank the following people for their contributions:
 - ButterflyOfFire \<ButterflyOfFire⒜protonmail∙com\>
 - Dmitry Mikhirev \<mikhirev⒜gmail∙com\>
 - Heimen Stoffels \<vistausss⒜outlook∙com\>
-- Iván \<ivanrsm1997⒜gmail∙com\>
+- Iván Seoane \<ivanrsm1997⒜gmail∙com\>
 - Markel \<wakutiteo⒜protonmail∙com\>
+- Sérgio Marques \<smarquespt⒜gmail∙com\>
 - Verdulo \<cybertomek⒜openmailbox∙org\>
 - WaldiS \<admin⒜sto∙ugu∙pl\>
 - xin \<xin⒜riseup∙net\>
+- xxssmaoxx \<simon∙dottor⒜gmail∙com\>
 - Сухичев Михаил Иванович \<sukhichev⒜yandex∙ru\>
