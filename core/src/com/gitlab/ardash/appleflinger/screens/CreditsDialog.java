@@ -48,11 +48,9 @@ public class CreditsDialog extends AdvancedDialog{
 		text(translators.substring(0, translators.length() - 1), lblstyle, GenericScreen.SCREEN_WIDTH*0.7f); 
 		
 		getContentTable().row().minHeight(paragraphPadding).maxHeight(paragraphPadding).top();
-		text("", lblstyle); 
+		text("", lblstyle);
 		getContentTable().row();
-		text(I18N.getString("engine"), lblstyle); 
-		getContentTable().row();
-		text("libGDX", lblstyle); 
+		text(I18N.getString("engine") + ": libGDX", lblstyle);
 		
 		getContentTable().row().minHeight(paragraphPadding).maxHeight(paragraphPadding).top();
 		text("", lblstyle); 
