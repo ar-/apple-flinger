@@ -1,0 +1,16 @@
+1.5.6
+  * Feste Winterstufe 13 festgefahren
+  * italienische Sprache hinzugefügt
+
+1.5.5
+  * Wiki-Seite auf der Website erstellt, in der beschrieben wird, wie neue Ebenen erstellt werden
+  * 12 weitere Winterstufen hinzugefügt
+  * Anzeige für den Prozentsatz der hinzugefügten Zusatzleistungen
+  * fügte die Zeit zur Anzeige auf dem Bildschirm hinzu
+
+1.5.4
+  * Übersetzer wurden dem Credits-Bildschirm im Spiel hinzugefügt
+  * Niederländisch hinzugefügt (danke an Heimen auf weblate)
+  * Galizische Sprache hinzugefügt (Dank an Iván auf weblate)
+  * verbesserte spanische Übersetzung (danke an Markel auf weblate)
+  * Transparente Pixel aus Screenshots entfernt
