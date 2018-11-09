@@ -93,6 +93,13 @@ public class AssetTest {
 	}
 	
 	@Test
+	public void isI18NWorkingForIT() {
+		I18N.loadLanguageBundle("it");
+		assertEquals("È Il Tuo Turno", I18N.s("itIsYourTurn"));
+		assertEquals("inizia nuova partita", I18N.s("startNewGame"));
+	}
+	
+	@Test
 	public void isI18NWorkingForPL() {
 		I18N.loadLanguageBundle("pl");
 		assertEquals("domyślny", I18N.s("default"));
