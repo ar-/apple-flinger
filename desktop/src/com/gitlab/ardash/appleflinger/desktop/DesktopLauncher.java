@@ -19,6 +19,7 @@ package com.gitlab.ardash.appleflinger.desktop;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.backends.lwjgl.LwjglApplication;
 import com.badlogic.gdx.backends.lwjgl.LwjglApplicationConfiguration;
+import com.badlogic.gdx.tools.texturepacker.TexturePacker;
 import com.badlogic.gdx.tools.texturepacker.TexturePacker.Settings;
 import com.gitlab.ardash.appleflinger.ActionResolver;
 import com.gitlab.ardash.appleflinger.AppleflingerGame;
@@ -56,7 +57,7 @@ public class DesktopLauncher implements ActionResolver{
         settings.maxHeight = 2048;
 //		TexturePacker.process(settings, "../art/sprites/ui", "../android/assets", "ui");
 //		TexturePacker.process(settings, "../art/sprites/scene", "../android/assets", "scene");
-		
+		TexturePacker t; // keep this here, otherwise import gets always removed
 		try
 		{
 			new LwjglApplication(new AppleflingerGame(this), config);

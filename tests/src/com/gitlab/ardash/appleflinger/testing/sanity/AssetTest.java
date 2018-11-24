@@ -122,6 +122,13 @@ public class AssetTest {
 	}
 	
 	@Test
+	public void isI18NWorkingForSV() {
+		I18N.loadLanguageBundle("sv");
+		assertEquals("Välj en nivå", I18N.s("chooseALevel"));
+		assertEquals("SPELET ÖVER", I18N.s("gameOver"));
+	}
+	
+	@Test
 	/**
 	 * just set back to english. The last test always sets it to an unsuitable language at dev time
 	 */

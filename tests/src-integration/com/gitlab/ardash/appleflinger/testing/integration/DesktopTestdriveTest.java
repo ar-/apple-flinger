@@ -39,8 +39,8 @@ import com.gitlab.ardash.appleflinger.screens.MissionSelectScreen;
 
 public class DesktopTestdriveTest implements ActionResolver{
 	
-//	private static final String [] langs = {"de","en","eo","es","fr","gl","it","nb","nl","pl","pt"}; // all latin
-	private static final String [] langs = {"es","gl","it","pt"}; // recently updated ones
+//	private static final String [] langs = {"de","en","eo","es","fr","gl","it","nb","nl","pl","pt","sv"}; // all latin
+	private static final String [] langs = {"sv"}; // recently updated ones
 //	private static final String [] langs = {"ru"}; // separate non-latin load
 	
 	private static final Mission [] missions = {Mission.M_1_1, Mission.M_1_3, Mission.M_1_4
@@ -116,6 +116,8 @@ public class DesktopTestdriveTest implements ActionResolver{
 		n2.put("pt", "Valencia".toUpperCase());
 		n1.put("ru", "Михаи́л".toUpperCase());
 		n2.put("ru", "Светлана".toUpperCase());
+		n1.put("sv", "Anders".toUpperCase());
+		n2.put("sv", "Karin".toUpperCase());
 		
 		if (player == 1)
 			ret = n1.get(lang);
