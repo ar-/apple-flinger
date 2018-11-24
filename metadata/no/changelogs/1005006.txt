@@ -1,6 +1,7 @@
 1.5.6
   * Fast vinternivå 13 blir sittende fast
   * lagt til italiensk språk
+  * lagt til svensk språk
 
 1.5.5
   * wiki-siden på nettstedet opprettet, og beskriver hvordan man lager nye nivåer

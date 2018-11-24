@@ -83,8 +83,8 @@ do
   fi
 done
 
-# order todolis by size
-todo=`ls -laSr metadata/*/changelogs/1005000.txt | egrep -o "metadata/.*" | sed "s/metadata\///g" |  sed "s/\/changelogs.*//g"`
+# order todolist by size
+todo=`ls -laSr metadata/*/changelogs/$latestfile | egrep -o "metadata/.*" | sed "s/metadata\///g" |  sed "s/\/changelogs.*//g"`
 #ls -laSr metadata/*/changelogs/$latestfile
 #exit
 

@@ -1,6 +1,7 @@
 1.5.6
   * niveau d'hiver fixe 13 se coincer
   * ajouté la langue italienne
+  * langue suédoise ajoutée
 
 1.5.5
   * Page wiki sur le site créé, décrivant comment créer de nouveaux niveaux

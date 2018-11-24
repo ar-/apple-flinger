@@ -1,6 +1,7 @@
 1.5.6
   * fasta baridi ngazi ya 13 kukwama
   * aliongeza lugha ya Kiitaliano
+  * aliongeza lugha ya Kiswidi
 
 1.5.5
   * ukurasa wa wiki kwenye tovuti iliyoundwa, kuelezea jinsi ya kujenga ngazi mpya

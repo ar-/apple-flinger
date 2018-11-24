@@ -1,6 +1,7 @@
 1.5.6
   * Naprawiono zablokowanie poziomu zimowego 13
   * dodano język włoski
+  * dodano język szwedzki
 
 1.5.5
   * Strona wiki na stronie internetowej, opisująca sposób tworzenia nowych poziomów

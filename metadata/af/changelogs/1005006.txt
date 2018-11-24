@@ -1,6 +1,7 @@
 1.5.6
   * Vaste wintervlak 13 vas
   * Italiaanse taal bygevoeg
+  * Sweedse taal bygevoeg
 
 1.5.5
   * Wiki bladsy op die webwerf geskep, beskryf hoe om nuwe vlakke te skep

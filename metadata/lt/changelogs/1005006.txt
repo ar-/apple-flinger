@@ -1,6 +1,7 @@
 1.5.6
   * nustatytas žiemos lygis 13 įstrigo
   * pridėjo italų kalbą
+  * pridėjo švedų kalbą
 
 1.5.5
   * svetainės wiki puslapis, sukurtas, kuriame aprašoma, kaip sukurti naujus lygius
