@@ -5,7 +5,6 @@ We'd like to thank the following people for their contributions:
 
 - Allan Nordhøy \<epost⒜anotheragency∙no\>
 - Andreas Redmer \<ar-appleflinger⒜abga∙be\>
-- Andreas Redmer \<ar-gdroid⒜abga∙be\>
 - ButterflyOfFire \<ButterflyOfFire⒜protonmail∙com\>
 - Dmitry Mikhirev \<mikhirev⒜gmail∙com\>
 - Heimen Stoffels \<vistausss⒜outlook∙com\>
