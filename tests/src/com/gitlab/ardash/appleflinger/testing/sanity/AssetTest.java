@@ -81,7 +81,7 @@ public class AssetTest {
 	@Test
 	public void isI18NWorkingForFR() {
 		I18N.loadLanguageBundle("fr");
-		assertEquals("touche l'écran pour continuer", I18N.s("touchScreenToContinue"));
+		assertEquals("Touche l'écran pour continuer", I18N.s("touchScreenToContinue"));
 		assertEquals("JEU TERMINÉ", I18N.s("gameOver"));
 	}
 	
