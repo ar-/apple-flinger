@@ -9,6 +9,7 @@ We'd like to thank the following people for their contributions:
 - Dmitry Mikhirev \<mikhirev⒜gmail∙com\>
 - Heimen Stoffels \<vistausss⒜outlook∙com\>
 - Iván Seoane \<ivanrsm1997⒜gmail∙com\>
+- Jonatan Nyberg \<jonatan∙nyberg∙karl⒜gmail∙com\>
 - Markel \<wakutiteo⒜protonmail∙com\>
 - Sérgio Marques \<smarquespt⒜gmail∙com\>
 - Verdulo \<cybertomek⒜openmailbox∙org\>

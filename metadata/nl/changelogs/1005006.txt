@@ -1,6 +1,7 @@
 1.5.6
   * vast winterniveau 13 vast komen te zitten
   * Toegevoegd Italiaanse taal
+  * Toegevoegd Zweeds
 
 1.5.5
   * Wiki-pagina op de website gemaakt, beschrijft hoe nieuwe niveaus te creëren

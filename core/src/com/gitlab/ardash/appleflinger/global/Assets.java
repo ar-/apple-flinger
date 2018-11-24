@@ -287,6 +287,7 @@ public class Assets {
 		FLAG_PL,
 		FLAG_PT,
 		FLAG_RU,
+		FLAG_SV,
 		FORK_ME,
 		GPL3,
 		SLIDERBACK,

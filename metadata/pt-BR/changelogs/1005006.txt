@@ -1,6 +1,7 @@
 1.5.6
   * nível de inverno fixo 13 ficando preso
   * adicionado idioma italiano
+  * adicionado idioma sueco
 
 1.5.5
   * Página wiki no site criado, descrevendo como criar novos níveis

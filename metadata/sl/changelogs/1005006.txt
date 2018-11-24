@@ -1,6 +1,7 @@
 1.5.6
   * fiksna zimska stopnja 13 se zatakne
   * dodan italijanski jezik
+  * dodal švedski jezik
 
 1.5.5
   * wiki stran na spletni strani je ustvarila, ki opisuje, kako ustvariti nove ravni

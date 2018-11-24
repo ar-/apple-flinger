@@ -1,6 +1,7 @@
 1.5.6
   * fiksna zimska razina 13 koja se zaglavi
   * dodao je talijanski jezik
+  * dodao je švedski jezik
 
 1.5.5
   * wiki stranica na kreiranoj web stranici, opisujući kako stvoriti nove razine

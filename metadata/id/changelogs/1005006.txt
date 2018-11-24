@@ -1,6 +1,7 @@
 1.5.6
   * Tingkat musim dingin tetap 13 semakin macet
   * menambahkan bahasa Italia
+  * menambahkan bahasa Swedia
 
 1.5.5
   * halaman wiki di situs web yang dibuat, menjelaskan cara membuat level baru

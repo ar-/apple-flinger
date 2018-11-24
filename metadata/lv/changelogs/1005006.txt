@@ -1,6 +1,7 @@
 1.5.6
   * fiksēts ziemas līmenis 13 iestrēdzis
   * pievienota itāļu valoda
+  * pievienoja zviedru valodu
 
 1.5.5
   * izveidotajā vietnes wiki lapā, kurā aprakstīts, kā izveidot jaunus līmeņus

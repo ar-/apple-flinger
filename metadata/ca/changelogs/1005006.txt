@@ -1,6 +1,7 @@
 1.5.6
   * S'ha quedat fixat el nivell fix d'hivern 13
   * afegit idioma italià
+  * ha afegit la llengua sueca
 
 1.5.5
   * Pàgina wiki del lloc web creat, que descriu com crear nous nivells
@@ -12,5 +13,5 @@
   * Va afegir traductors a la pantalla de crèdits del joc
   * afegit l'idioma holandès (gràcies a Heimen a la web)
   * afegit llengua gallega (gràcies a Iván en weblate)
-  * millora de la traducció a l'espanyol (gràcies a Markel al weblate)
+  * millora de la traducció a l'espanyol (gràcies a Markel en weblate)
   * S'han eliminat píxels transparents de captures de pantalla

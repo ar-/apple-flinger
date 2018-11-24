@@ -1,16 +1,17 @@
 1.5.6
-  * Feste Winterstufe 13 festgefahren
+  * Winterlevel 13 kann nicht mehr festfahren
   * italienische Sprache hinzugefügt
+  * schwedische Sprache hinzugefügt
 
 1.5.5
-  * Wiki-Seite auf der Website erstellt, in der beschrieben wird, wie neue Ebenen erstellt werden
-  * 12 weitere Winterstufen hinzugefügt
-  * Anzeige für den Prozentsatz der hinzugefügten Zusatzleistungen
-  * fügte die Zeit zur Anzeige auf dem Bildschirm hinzu
+  * Wiki-Seite auf der Webseite erstellt, in der beschrieben wird, wie neue Level erstellt werden
+  * 12 weitere Winterlevel hinzugefügt
+  * Anzeige für den Prozentsatz von inkrementellen Errungenschaften
+  * die Zeit zur Anzeige auf dem Bildschirm hinzugefügt
 
 1.5.4
-  * Übersetzer wurden dem Credits-Bildschirm im Spiel hinzugefügt
-  * Niederländisch hinzugefügt (danke an Heimen auf weblate)
-  * Galizische Sprache hinzugefügt (Dank an Iván auf weblate)
-  * verbesserte spanische Übersetzung (danke an Markel auf weblate)
+  * Übersetzer werden nun auf dem Credits-Bildschirm im Spiel angezeigt
+  * Niederländisch hinzugefügt (Danke an Heimen auf Weblate)
+  * Galicische Sprache hinzugefügt (danke an Iván auf Weblate)
+  * verbesserte spanische Übersetzung (danke an Markel auf Weblate)
   * Transparente Pixel aus Screenshots entfernt

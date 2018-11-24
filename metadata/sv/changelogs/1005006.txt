@@ -1,6 +1,7 @@
 1.5.6
   * Fast vinternivå 13 fastnar
   * lagt till italienska
+  * lagt till svenska
 
 1.5.5
   * wiki-sida på webbplatsen skapad, beskriver hur man skapar nya nivåer

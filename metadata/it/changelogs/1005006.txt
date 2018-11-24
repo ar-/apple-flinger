@@ -1,6 +1,7 @@
 1.5.6
   * Fissato il livello invernale 13 rimanendo bloccato
   * aggiunta la lingua italiana
+  * aggiunta la lingua svedese
 
 1.5.5
   * Pagina wiki sul sito Web creata, che descrive come creare nuovi livelli
