@@ -3,4 +3,3 @@ OPMERKING: DEZE APP BEVAT GEEN ANTIFEATUREN OF ONGEWENSTE FUNCTIES. Wat je hiero
 1.4.11
   * Kleine vertaaloplossingen. Nogmaals bedankt aan Verdulo.
   * Upped-doel-SDK-versie voor de idiote Google Play Store
-

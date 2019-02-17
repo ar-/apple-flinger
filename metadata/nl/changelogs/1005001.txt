@@ -8,4 +8,3 @@
 1.4.11
   * Kleine vertaaloplossingen. Nogmaals bedankt aan Verdulo.
   * Upped-doel-SDK-versie voor de idiote Google Play Store
-

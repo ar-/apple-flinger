@@ -1,0 +1,27 @@
+Leuk op rondes gebaseerd spel voor één of meerdere personen. Nieuw,
+uitdagend en verslaven.
+
+Kenmerken:
+
+* objecten van hoge kwaliteit
+* realistische bewegingen
+* vertragingsvrij en vloeiend, zelfs op oude apparaten
+* zeer gedetailleerde animaties en deeltjes
+* gloednieuw, innovatief spelconcept
+* voor één of meerdere spelers
+* 100& open source (GPLv3)
+
+Je schiet appels met een katapult. Probeer als eerste het hele
+vijandelijke kamp te vernietigen, maar let op: de vijand schiet terug!
+Dit spel bevat een gebalanceerde mix van puzzel, strategie, geduld en actie.
+
+Dit spel is geschikt voor één of twee spelers. Je kunt spelen met iemand naast je,
+tegen jezelf of tegen de computer. Binnenkort volgen meer functies en levels.
+
+Internationale leeftijdsclassificaties:
+* ACB: G (general)
+* ClassInd: L
+* ESRB: E (everyone)
+* PEGI:3
+* USK: 0
+* IARC: 3

@@ -1,0 +1,11 @@
+1.5.4
+  * vertalers toegevoegd aan het scherm 'met dank aan'
+  * Nederlandse vertaling (met dank aan Heimen van Weblate)
+  * Galicische vertaling (met dank aan Iván van Weblate)
+  * verbeterde Spaanse vertaling (met dank aan Markel van Weblate)
+  * transprante pixels verwijderd uit schermafdrukken
+
+1.5.3
+  * adaptief pictogram toegevoegd (Android 8 en hoger)
+  * achtergrondzoom weggehaald bij appels
+  * Noorse vertaling toegevoegd (met dank aan Allan van Weblate)
