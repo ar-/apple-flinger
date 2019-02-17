@@ -1,14 +1,13 @@
-1.4.9
-  * Kelkaj plej malgrandaj korektoj de tradukoj
-1.4.8
-  * Aldonita pola traduko.  Danke al verdulo.
-  * Aldonita Esperanta traduko.  Danke al verdulo.
-1.4.7
-  * Vintro venas.  Aldonis iujn novajn nivelojn.
-  * Mi forkuris de ideoj.  Bonvolu sendi al mi ideojn por novaj niveloj.
-1.4.6
-  * Plibonigita rusa traduko.  Danke al Dmitry.
-1.4.5
-  * Plibonigita franca traduko.  Danke al xin.
-  * Aldonita nova lokalizita Klavaro por ĉiu lingvo por eniri ludantnomojn.
-  * Aldonis fdroid ekrankopioj por ĉiu subtenata lingvo.
+1.4.9:
+ * etaj korektoj al tradukoj
+
+1.4.8:
+ * aldonis polan tradukon (danke al Verdulo)
+ * aldonis Esperantan tradukon (danke al Verdulo)
+
+1.4.7:
+ * vintro baldaŭas… – aldonis novajn nivelojn
+ * ideoj mankas al mi, bonvolu sendi al mi ideojn pri novaj niveloj
+
+1.4.6:
+ * plibonigita rusa traduko, danke al Dmitry

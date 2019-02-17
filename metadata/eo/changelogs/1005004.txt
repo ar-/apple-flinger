@@ -1,0 +1,11 @@
+1.5.4:
+ * aldonis tradukantoj al la ekrano “dankoj”
+ * aldonis nederlandan tradukon (danke al Heimen ĉe Weblate)
+ * aldonis galegan tradukon (danke al Iván ĉe Weblate)
+ * plibonigis hispanan tradukon (danke al Markel ĉe Weblate)
+ * forigis travideblajn restrumerojn el ekrankopioj
+
+1.5.3:
+ * aldonis mem-alĝustigeblan piktogramon (Android 8.0 aŭ pli nova)
+ * malaktivigis fonan pligrandigon ĉe pomo
+ * aldonis norvegan tradukon (danke al Allan ĉe Weblate)
