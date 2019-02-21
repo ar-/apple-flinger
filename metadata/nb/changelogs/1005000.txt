@@ -5,4 +5,3 @@
 1.4.11
   * Mindre oversettelsesrettinger. Takk til verdulo igjen.
   * Opped mål SDK-versjon for den idiotiske google spillbutikken
-

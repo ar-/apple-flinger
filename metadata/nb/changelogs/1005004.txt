@@ -1,0 +1,15 @@
+1.5.4
+  * Oversettelser lagt til i æreshenvisninger
+  * Ny Hollandsk oversettelser (takket være Heimen på Weblate)
+  * Ny Gallisk oversettelser (takket være Iván på Weblate)
+  * Forbedret Spansk oversettelse (Takket være Markel på Weblate)
+ * Forbedrede gjennomsiktige piksler fra skjermavbildninger
+  
+1.5.3
+  Tilpassningsdyktig ikon (Android 8 og nyere)
+  * Bakgrunnsforstørrelse nær eplet avskrud
+  * Norsk Bokmål, ved Allan Nordhøy på Weblate
+
+1.5.2
+  * Ny Portugisisk oversettelse
+  * Vinner og

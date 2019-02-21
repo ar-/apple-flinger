@@ -1,0 +1,29 @@
+Artigrunde basert på spill for én eller flere for gode opplevelser. Nytt,
+utfordrende og avhengighetsskapende.
+
+Funksjoner:
+
+* Høyoppløselig kvalitetsgrafikk
+* Realistisk fysikk
+* Forsinkelsesfri og silkemykt spillytelse (selv på gamle enheter)
+* Veldig detaljerte animasjoner og partikkelsystem
+* Helt nytt og innovativt spillkonsept
+* For én eller flere spillere
+* 100% friprog (GPL3)
+
+Du bruker en sprettert til å skyte epler. Vær først til å ødelegge hele
+fiendebasen, men husk, motstanderen skyter tilbake. Dette spillet har en
+blanding av logikk, strategi, tålmodighet og kamp.
+
+Dette spillet er for én eller flere. Du kan spille mot noen som sitter ved siden av deg
+- eller mot deg selv. Du kan også spille mot datamaskinen. Flere funksjoner, mer gøy,
+og flere nivåer kommer snart.
+
+Internasjonale aldersgrenser:
+
+* ACB: G (generelt)
+* ClassInd: L
+* ESRB: E (alle)
+* PEGI:3
+* USK: 0
+* IARC: 3
