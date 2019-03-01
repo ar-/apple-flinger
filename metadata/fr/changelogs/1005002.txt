@@ -12,4 +12,3 @@
 1.5.0
   * réalisations supplémentaires
   * correction de bug: ne pas incrémenter le total des points lors des répétitions de parties en raison d'une défaite contre l'ordinateur
-
