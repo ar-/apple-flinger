@@ -3,7 +3,7 @@
  * aldonis nederlandan tradukon (danke al Heimen ĉe Weblate)
  * aldonis galegan tradukon (danke al Iván ĉe Weblate)
  * plibonigis hispanan tradukon (danke al Markel ĉe Weblate)
- * forigis travideblajn restrumerojn el ekrankopioj
+ * forigis travideblajn rastrumerojn el ekrankopioj
 
 1.5.3:
  * aldonis mem-alĝustigeblan piktogramon (Android 8.0 aŭ pli nova)
