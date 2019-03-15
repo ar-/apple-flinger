@@ -13,4 +13,3 @@
 
 1.5.1
   * Lass den Bildschirm ein wenig länger angeschaltet, solange das Spiel aktiv gespielt wird.
-

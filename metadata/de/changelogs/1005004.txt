@@ -1,0 +1,11 @@
+1.5.4
+  * Nennung der Übersetzer in den Credits
+  * Niederländische Übersetzung hinzugefügt (Danke an Heimen auf Weblate)
+  * Galicische/Iberische Übersetzung hinzugefügt (Danke an Iván auf Weblate)
+  * Spanisch verbessert hinzugefügt (Danke an Markel auf Weblate)
+  * Durchsichtige Pixel auf Screenshots entfernt
+
+1.5.3
+  * adaptives Symbol hinzugefügt (Android 8 und höher)
+  * Hintergrund Zoom in der Nähe des Apfels deaktiviert
+  * Norwegische Übersetzung hinzugefügt (Danke an Allan auf Weblate)
