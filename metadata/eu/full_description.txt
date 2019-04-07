@@ -1,0 +1,24 @@
+Txandaka dabilen jolas dibertigarria, jokalari bat edo hainbatentzako. Berria, desafiatzailea eta erakargarria.
+
+Ezaugarriak:
+
+* Bereizmen altuko kalitatezko grafikoak
+* Fisika errealista
+* Atzerapenik gabeko jolasgarritasuna (gailu zaharretan ere)
+* Xehetasun handiko animazioak eta partikula sistema
+* Jolas kontzeptu berritzailea
+* jokalari bat edo hainbat
+* % 100 librea (GPL3)
+
+Tiragoma batekin sagarrak botatzen dituzu. Suntsitu etsaia berak zu baino lehenago, baina kontuz berak ere erantzun dezake. Puzzle, estrategia pazientzia eta ekintza orekatua.
+
+Jokalari bat edo birentzako! Ondoan eserita dagoen edonorekin jolastu dezakezu, edo zure buruaren aurka. Gailuak kontrolatutako arerio baten aurka jolastu dezakezu ere. Ezaugarri, eta dibertsio gehiago etortzeke.
+
+Nazioarteko adin klasifikazioak:
+
+* ACB: G (orokorra)
+* ClassInd: L
+* ESRB: E (denak)
+* PEGI:3
+* USK: 0
+* IARC: 3
