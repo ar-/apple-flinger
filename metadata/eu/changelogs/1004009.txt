@@ -14,5 +14,5 @@
  
 1.4.5
  * Frantsesera hobetua. Xin-i esker.
- * Teklatu lokalizatua jokalariaren izena sartzeko
-* F-Droid-entzako pantaila argazkiak hizkuntzako
+ * Teklatu lokalizatua jokalariaren izena sartzeko.
+* F-Droid-entzako pantaila argazkiak hizkuntzako.

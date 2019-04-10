@@ -12,4 +12,4 @@
 * GPL3 eta gitlab ikonoak atzealdean
 
 1.5.1
- * Pantaila luzeago mantentzen da piztuta, edo jolasten ari zaren bitartean
+ * Pantaila luzeago mantentzen da piztuta,  jolasten ari zaren bitartean.
