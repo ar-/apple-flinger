@@ -1,0 +1,10 @@
+1.5.4
+   * dodani prevoditelji na ekran kredita u igri
+   * dodan je nizozemski jezik (zahvaljujući Heimen na weblate)
+   * dodao galicijski jezik (zahvaljujući Iván na weblate)
+   * poboljšani španjolski prijevod (zahvaljujući Markelu na web-listi)
+   * uklonili su prozirne piksele iz snimki zaslona  
+1.5.3
+   * dodana prilagodljiva ikona (Android 8 i novije)
+   * onemogućeno pozadinsko zumiranje u blizini jabuke
+   * dodan je norveški jezik (zahvaljujući Allanu na weblate)

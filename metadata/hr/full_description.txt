@@ -1,0 +1,27 @@
+Zabavna igra u kolima, jednostavna / multiplayer za igra za zabavna vremena. Nova,
+izazovna i zarazna.
+
+Značajke:
+
+* grafika visoke razlučivosti
+* realistična fizika
+* jedonstavna i lagana igra (čak i na starim uređajima)
+* fine detaljne animacije i sustavi čestica
+* potpuno novi i inovativni koncept igre
+* pojedinačni / multiplayer modus
+* 100% otvorenog koda (GPL3)
+
+Koristite praćku za pucanje s jabukama. Budite prvi koji će uništiti čitavu neprijateljsku
+bazu, ali budite svjesni, druga strana puca natrag. Ova igra ima uravnoteženu kombinaciju
+zagonetka, strategija, strpljenje i djelovanje.
+
+Ovo je za jednog ili dva igrača! To možete igrati protiv svakoga tko sjedi do vas - ili protiv sebe. Također možete igrati protiv računala kao protivnika. Više značajki, više zabave i više razina doći će uskoro.
+
+ocjene međunarodne dobi:
+
+* ACB: G (općenito)
+* Klasa I: L
+* ESRB: E (svi)
+* PEGI: 3
+* USK: 0
+* IARC: 3
