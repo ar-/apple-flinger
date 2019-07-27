@@ -1,0 +1,11 @@
+1.4.7
+  * Talvi on tulossa. Lisätty joitain uusia tasoja.
+  * Minulla ei ollut ideoita. Ole hyvä ja lähetä minulle ideoita uusiksi tasoiksi.
+
+1.4.6
+  * Parannettu venäjänkielistä käännöstä. Kiitos Dmitrille.
+
+1.4.5
+  * Parannettu ranskankielistä käännöstä. Kiitos xinille.
+  * Lisätty uusi lokalisoitu näppäimistö jokaiselle kielelle pelaajien nimien syöttämiseksi.
+  * Lisätty F-Droid-näyttökuvat jokaiselle tuetulle kielelle.

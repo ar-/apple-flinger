@@ -1,0 +1,5 @@
+HUOMAUTUS: TÄMÄ SOVELLUS EI SISÄLLÄ ANTIOMINAISUUKSIA TAI TARPEETTOMIA OMINAISUUKSIA. Alla näet virheen F-Droidissa.
+
+1.4.11
+  * Pienet käännöskorjaukset. Kiitos taas verdulolle.
+  * Päivitetty kohdesdk-versio idioottiseen Google Play -kauppaan

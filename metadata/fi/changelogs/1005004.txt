@@ -1,0 +1,12 @@
+1.5.4
+  * lisätty kääntäjiä pelin tekijät-näkymään
+  * lisätty hollannin kieli (kiitos Heimenille weblatessa)
+  * lisätty galician kieli (kiitos Ivánille weblatessa)
+  * parannettu espanjan kielen käännöstä (kiitos Markelille weblatessa)
+  * poistettu läpinäkyvät pikselit kuvakaappauksista
+1.5.3
+  * lisätty mukautuva kuvake (Android 8 tai uudempi)
+  * poistettu käytöstä taustan zoomaus omenan lähellä
+  * lisätty norjan kieli (kiitos Allanille weblatessa)
+1.5.2
+  * lisätty portugalin käännös

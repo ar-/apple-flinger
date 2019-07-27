@@ -1,0 +1,10 @@
+1.5.3
+  * lisätty mukautuva kuvake (Android 8 tai uudempi)
+  * poistettu käytöstä taustan zoomaus omenan lähellä
+  * lisätty norjan kieli (kiitos Allanille weblatessa)
+1.5.2
+  * lisätty portugalin käännös
+  * muutettu voittaja ja korkeimmat pisteet värikkäämmiksi
+  * aktivoitu laitteiston takaisin-painike poistuaksesi pelistä tai siirtyäksesi edelliselle näytölle
+  * korjattu puolan ja esperanton käännökset (Verdulo)
+  * bugikorjaus: kielivalinta ei toisinaan toimi
