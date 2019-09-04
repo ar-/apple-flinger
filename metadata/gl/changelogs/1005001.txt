@@ -1,0 +1,10 @@
+1.5.1
+  * Mantén a pantalla un pouco máis activa, sempre que o xogo se estea a reproducir activamente.
+
+1.5.0
+  * Logros engadidos
+  * Corrección de erros: non incrementa os puntos xerais cando se repite a rolda debido a perder contra a computadora
+
+1.4.11
+  * Correccións de traducións menores. Grazas a verdulo de novo.
+  * Versión de SDK de destino mellorada para a parva tenda de Google Play
