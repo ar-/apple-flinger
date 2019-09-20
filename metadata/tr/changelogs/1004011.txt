@@ -3,4 +3,3 @@ NOT: BU APP ANTIFEATURES VEYA İSTENMEYEN ÖZELLİKLERİ İÇERMEZ. Aşağıda g
 1.4.11
   * Küçük çeviri düzeltmeleri. Yine verdulo'ya teşekkürler.
   * Idiotic google oyun mağazası için hedef SDK sürümü başlatıldı
-
