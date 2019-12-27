@@ -1,4 +1,4 @@
-Zabavna igra u kolima, jednostavna / multiplayer za igra za zabavna vremena. Nova,
+Zabavna igra s rundama za jednog ili više igrača za zabavna vremena. Nova,
 izazovna i zarazna.
 
 Značajke:
@@ -8,20 +8,20 @@ Značajke:
 * jedonstavna i lagana igra (čak i na starim uređajima)
 * fine detaljne animacije i sustavi čestica
 * potpuno novi i inovativni koncept igre
-* pojedinačni / multiplayer modus
-* 100% otvorenog koda (GPL3)
+* modus za jednog/više igrača
+* 100 % otvorenog koda (GPL3)
 
-Koristite praćku za pucanje s jabukama. Budite prvi koji će uništiti čitavu neprijateljsku
-bazu, ali budite svjesni, druga strana puca natrag. Ova igra ima uravnoteženu kombinaciju
-zagonetka, strategija, strpljenje i djelovanje.
+Koristi praćku za pucanje s jabukama. Budi prvi koji će uništiti čitavu neprijateljsku
+bazu, ali pazi, druga strana puca natrag. Ova igra ima uravnoteženu kombinaciju
+zagonetke, strategije, strpljenja i igranja.
 
-Ovo je za jednog ili dva igrača! To možete igrati protiv svakoga tko sjedi do vas - ili protiv sebe. Također možete igrati protiv računala kao protivnika. Više značajki, više zabave i više razina doći će uskoro.
+Ovo je za jednog ili dva igrača! To možeš igrati protiv svakoga tko sjedi pored tebe – ili protiv sebe. Također možeš igrati protiv računala kao protivnika. Više značajki, više zabave i više razina doći će uskoro.
 
-ocjene međunarodne dobi:
+međunarodne dobne oznake:
 
-* ACB: G (općenito)
+* ACB: G (opća)
 * Klasa I: L
-* ESRB: E (svi)
+* ESRB: E (svatko)
 * PEGI: 3
 * USK: 0
 * IARC: 3

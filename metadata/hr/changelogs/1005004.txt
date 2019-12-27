@@ -1,7 +1,7 @@
 1.5.4
-   * dodani prevoditelji na ekran kredita u igri
+   * dodani su prevoditelji na prozoru zasluga u igri
    * dodan je nizozemski jezik (zahvaljujući Heimen na weblate)
-   * dodao galicijski jezik (zahvaljujući Iván na weblate)
+   * dodan je galicijski jezik (zahvaljujući Iván na weblate)
    * poboljšani španjolski prijevod (zahvaljujući Markelu na web-listi)
    * uklonili su prozirne piksele iz snimki zaslona  
 1.5.3
