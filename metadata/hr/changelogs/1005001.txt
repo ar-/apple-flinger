@@ -8,4 +8,3 @@
 1.4.11
   * Manje popravke prijevoda. Zahvaljujući verdulo opet.
   * Uložena verzija SDK cilja za idiotski Google Play trgovinu
-

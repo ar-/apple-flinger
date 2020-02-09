@@ -1,19 +1,16 @@
 1.5.4
-  * lagt till översättare till krediter-skärmen i spelet
-  * lagt till nederländska språk (tack vare Heimen på webbsidan)
-  * lagt till galiciska språk (tack vare Iván på webbsidan)
-  * förbättrad spansk översättning (tack vare Markel på webbsidan)
-  * Ta bort transparenta pixlar från skärmdumpar
+* ㏊r lagt tiᄔ öve₨ättare tiᄔ medver㎄ndeskärmen i speᇉt
+* lagt tiᄔ nederländs㎄(av Heimen) ᅂh galicis㎄(av Iván)
+* förbätt㎭ s㎩㎱k öve₨ättn㏌g(av Markel)
+* tagit bort tra㎱㎩renta pⅸlar från skärmdu㎫r
 
 1.5.3
-  * lagt till adaptiv ikon (Android 8 och högre)
-  * inaktiverad bakgrund zooma nära äpplet
-  * lagt till norska språk (tack till Allan på webbsidan)
+* tiᄔagd a㍲ptⅳ ikon(Android 8 ᅂh se㎁re)
+* i㎁㏏ⅳe㎭ ba㎏rundszᅇm nära äppᇉt
+* lagt tiᄔ no₨㏏ s㏚åk(av Aᄔan)
 
 1.5.2
-  * lagt till portugisiska översättning
-  * gjorde vinnaren och de högsta poängen mer färgstarka
-  * aktiverad hårdvaruback-knapp för att lämna spelet eller gå till föregående skärm
-  * fasta polska och esperanto översättningar (av Verdulo)
-  * Bugfix: Språkval fungerar ibland inte
-  * lagt till GPL3 och gitlab-märken till bakgrund
+* lade tiᄔ port㎍isisk öve₨ättn㏌g
+* gjorde ⅵn㎁ren ᅂh de högﬆa poäng mer färgﬆar㎄
+* a㏏ⅳe㎭ hårdvaruk㎁pp för att läm㎁ speᇉt elᇉr gå tiᄔ föregående skärm
+* fⅸade poʪ㎄ ᅂh esperanto öve₨ättn㏌g

@@ -8,4 +8,3 @@
 1.4.11
   * Corrections de traduction mineures. Merci encore à Verdulo.
   * Version de SDK cible augmentée pour l'idiot de Google Play Store
-

@@ -1,0 +1,28 @@
+Harika zamanlar için raund tabanlı eğlenceli tek/çok kişilik oyun. Yeni,
+zorlu and bağımlılık yapıcı.
+
+Özellikler:
+
+* yüksek çözünürlükte kaliteli grafikler
+* gerçekçi fizik
+* gecikmesiz ve pürüzsüz oyun deneyimi (eski cihazlarda bile)
+* ince ayrıntılı animasyonlar ve partikül sistemleri
+* yepyeni ve inovatif oyun konsepti
+* tek/çok kişilik
+* %100 açık kaynak (GPL3)
+
+Elmalarla atış yapmak için bir sapan kullanıyorsunuz. Bütün düşman üssünü ilk yok eden olun, fakat dikkat edin, diğer taraf karşı atış yapıyor. Bu oyun bulmaca, strateji, sabır ve aksiyonun
+dengeli bir birleşimidir.
+
+Bu bir ya da iki oyuncu içindir! Bunu yanınızda oturan herhangi bir kişiye karşı
+oynayabilirsiniz - ya da kendinize karşı. Birgisayar tarafından kontrol edilen bir rakibe
+karşı da oynayabilirsiniz. Daha fazla özellik, daha fazla eğlence ve daha fazla seviye yakında gelecek.
+
+uluslararası yaş derecelendirmeleri:
+
+* ACB: G (genel)
+* ClassInd: L
+* ESRB: E (herkes)
+* PEGI:3
+* USK: 0
+* IARC: 3

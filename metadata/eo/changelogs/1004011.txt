@@ -1,6 +1,5 @@
-NOTO: Ĉi tiu apliko ne konsistas pri pruvoj aŭ senvaloraj karakterizaĵoj. Kion vi vidas sube estas eraro en F-Droid.
+RIMARKO: tiu ĉi aplikaĵo NE ENHAVAS FIEBLOJN. La mesaĝo sube estas eraro de F-Droid.
 
-1.4.11
-  * Malgrandaj tradukaj korektoj. Danke al verdulo denove.
-  * Upped celo SDK-versio por la idiota google play store
-
+1.4.11:
+ * tradukaj korektetoj, danke al Verdulo
+ * pliigita alcela SDK-versio pro malsaĝa vendejo Google Play

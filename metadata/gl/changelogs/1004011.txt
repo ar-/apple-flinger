@@ -1,0 +1,5 @@
+NOTA: ESTA APLICACIÓN NON CONTÉN FUNCIÓNS NON DESEXADAS. O que ves deseguido é un erro no F-Droid.
+
+1.4.11
+  * Correccións de traducións menores. Grazas a verdulo de novo.
+  * Versión de SDK de destino mellorada para a parva tenda de Google Play

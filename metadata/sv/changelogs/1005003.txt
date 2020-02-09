@@ -1,15 +1,15 @@
 1.5.3
-  * lagt till adaptiv ikon (Android 8 och högre)
-  * inaktiverad bakgrund zooma nära äpplet
-  * lagt till norska språk (tack till Allan på webbsidan)
+* lagt tiᄔ a㍲ptⅳ ikon(Android 8 ᅂh högre)
+* i㎁㏏ⅳe㎭ ba㎏rund zᅇ㎃ nära äppᇉt
+* lagt tiᄔ no₨㎄ s㏚åk(av Aᄔan på weЫate)
 
 1.5.2
-  * lagt till portugisiska översättning
-  * gjorde vinnaren och de högsta poängen mer färgstarka
-  * aktiverad hårdvaruback-knapp för att lämna spelet eller gå till föregående skärm
-  * fasta polska och esperanto översättningar (av Verdulo)
-  * Bugfix: Språkval fungerar ibland inte
-  * lagt till GPL3 och gitlab-märken till bakgrund
+* lagt tiᄔ port㎍isis㎄ öve₨ättn㏌g
+* gjorde ⅵn㎁ren ᅂh de högﬆa poängen mer färgﬆar㎄
+* a㏏ⅳe㎭ hårdvaruback-k㎁pp för att läm㎁ speᇉt elᇉr gå tiᄔ föregående skärm
+* fⅸade poʪ㎄ ᅂh esperanto öve₨ättn㏌gar(av Verdulo)
+* B㎍fⅸ: S㏚å㎸al fungerar iЫand ㏌te
+* lagt tiᄔ GPL3 ᅂh gitlab-märken tiᄔ ba㎏rund
 
 1.5.1
-  * Håll skärmen lite längre, så länge spelet spelas aktivt.
+* Håᄔ skärmen lite längre, så länge speᇉt spelas a㏏ⅳt.

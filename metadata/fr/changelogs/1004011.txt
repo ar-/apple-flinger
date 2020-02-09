@@ -3,4 +3,3 @@ REMARQUE: CETTE APPLICATION NE CONTIENT PAS DE CARACTÉRISTIQUES ANTIFÉATURES O
 1.4.11
   * Corrections mineures de traduction. Merci encore à verdulo.
   * Version SDK cible mise à niveau pour le magasin de jeux google idiot
-

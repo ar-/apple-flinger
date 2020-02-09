@@ -1,0 +1,13 @@
+1.5.2
+  * Engadida tradución ó portugués.
+  * Facer ó gañador cos puntos máis altos e máis coridos.
+  * Botón de retroceso de hardware activado para abandonar o xogo ou ir á pantalla anterior
+  * Traducións arranxadas ó polaco e ó esperanto (por Verdulo).
+  * Corrección de erros: selección de lingua ás veces non funciona
+  * Engadíronse as iconas de GPL3 e gitlab ó fondo
+
+1.5.1
+  * Mantén a pantalla un pouco máis longa, sempre que o xogo se estea a xogar activamente.
+
+1.5.0
+  * Logros engadidos

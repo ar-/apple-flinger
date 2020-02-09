@@ -1,0 +1,27 @@
+Zabavna igra s rundama za jednog ili više igrača za zabavna vremena. Nova,
+izazovna i zarazna.
+
+Značajke:
+
+* grafika visoke razlučivosti
+* realistična fizika
+* jedonstavna i lagana igra (čak i na starim uređajima)
+* fine detaljne animacije i sustavi čestica
+* potpuno novi i inovativni koncept igre
+* modus za jednog/više igrača
+* 100 % otvorenog koda (GPL3)
+
+Koristi praćku za pucanje s jabukama. Budi prvi koji će uništiti čitavu neprijateljsku
+bazu, ali pazi, druga strana puca natrag. Ova igra ima uravnoteženu kombinaciju
+zagonetke, strategije, strpljenja i igranja.
+
+Ovo je za jednog ili dva igrača! To možeš igrati protiv svakoga tko sjedi pored tebe – ili protiv sebe. Također možeš igrati protiv računala kao protivnika. Više značajki, više zabave i više razina doći će uskoro.
+
+međunarodne dobne oznake:
+
+* ACB: G (opća)
+* Klasa I: L
+* ESRB: E (svatko)
+* PEGI: 3
+* USK: 0
+* IARC: 3

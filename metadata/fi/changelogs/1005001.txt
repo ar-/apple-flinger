@@ -1,0 +1,10 @@
+1.5.1
+  * Pidä näyttöä päällä pidempään, kunhan peliä pelataan aktiivisesti.
+
+1.5.0
+  * lisätty saavutuksia
+  * bugikorjaus: älä lisää kokonaispisteitä, kun kierros toistuu tietokoneelle häviämisen takia
+
+1.4.11
+  * Pienet käännöskorjaukset. Kiitos taas verdulolle.
+  * Päivitetty kohdesdk-versio idioottiseen Google Play -kauppaan

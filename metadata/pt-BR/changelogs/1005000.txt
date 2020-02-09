@@ -1,8 +1,7 @@
 1.5.0
-  * conquistas adicionadas
-  * bugfix: não incrementa pontos totais quando a repetição se repete devido à perda do computador
-
+  * adicionadas proezas
+  * correção: não aumentar pontos globais quando o turno se repete por perder contra o computador
+  
 1.4.11
-  * Pequenas correções de tradução. Graças a verdulo novamente.
-  * Atualizada a versão alvo do SDK para a loja idiota do google play
-
+  * pequenas correções de tradução, por Verdulo
+  * atualizada a versão-alvo do SDK para a loja idiota do Google Play

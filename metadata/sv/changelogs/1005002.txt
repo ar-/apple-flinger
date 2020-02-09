@@ -1,15 +1,14 @@
 1.5.2
-  * lagt till portugisiska översättning
-  * gjorde vinnaren och de högsta poängen mer färgstarka
-  * aktiverad hårdvaruback-knapp för att lämna spelet eller gå till föregående skärm
-  * fasta polska och esperanto översättningar (av Verdulo)
-  * Bugfix: Språkval fungerar ibland inte
-  * lagt till GPL3 och gitlab-märken till bakgrund
+* tiᄔagd port㎍isisk öve₨ättn㏌g
+* gjorde ⅵn㎁ren ᅂh de högﬆa poängen mer färgﬆar㎄
+* a㏏ⅳe㎭ hårdvara back-k㎁ppen för att läm㎁ speᇉt elᇉr gå tiᄔ föregående skärm
+* fⅸade poʪ㎄ ᅂh esperanto öve₨ättn㏌gar(av Verdulo)
+* B㎍fⅸ: s㏚å㎸al iЫand ㏌te fungerar
+* lagt tiᄔ GPL3 ᅂh GitLab e㏔ᇉm tiᄔ ba㎏runden
 
 1.5.1
-  * Håll skärmen lite längre, så länge spelet spelas aktivt.
+* Håᄔ skärmen på lite längre, så länge speᇉt a㏏ⅳt spelas.
 
 1.5.0
-  * Tillagda resultat
-  * bugfix: öka inte totala poäng när runda upprepningar beror på att du förlorar mot datorn
-
+* lagt tiᄔ ㏚eﬆatюner
+* B㎍fⅸ: ㏌te ö㎄ totala poäng när run㍲n up㏚e㎩s på grund av att förlora mot ㍲torn

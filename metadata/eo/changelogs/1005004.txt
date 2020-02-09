@@ -1,19 +1,11 @@
-1.5.4
-  * Aldonis tradukistojn al la kredito-ekrano en la ludo
-  * aldonis nederlanda lingvo (danke al Heimen sur weblate)
-  * aldonis galega lingvo (danke al Iván sur weblate)
-  * plibonigita hispana traduko (danke al Markel sur weblate)
-  * forigis travideblajn pikselojn el ekrankopioj
+1.5.4:
+ * aldonis tradukantoj al la ekrano “dankoj”
+ * aldonis nederlandan tradukon (danke al Heimen ĉe Weblate)
+ * aldonis galegan tradukon (danke al Iván ĉe Weblate)
+ * plibonigis hispanan tradukon (danke al Markel ĉe Weblate)
+ * forigis travideblajn rastrumerojn el ekrankopioj
 
-1.5.3
-  * Aldonis adapta ikono (Android 8 kaj pli alta)
-  * Malŝaltita fono-zoom proksime al la pomo
-  * aldonis norvega lingvo (danke al Allan sur weblate)
-
-1.5.2
-  * aldonis portugalan tradukadon
-  * faris la gajninton kaj la plej altajn punktojn pli pitoreskaj
-  * aktivigita aparataro-butonon por forlasi la ludon aŭ iri al antaŭa ekrano
-  * Fiksaj polaj kaj esperantaj tradukoj (per Verdulo)
-  * bugfix: lingva elekto foje ne funkcias
-  * aldonis GPL3 kaj gitlab-insignojn al fono
+1.5.3:
+ * aldonis mem-alĝustigeblan piktogramon (Android 8.0 aŭ pli nova)
+ * malaktivigis fonan pligrandigon ĉe pomo
+ * aldonis norvegan tradukon (danke al Allan ĉe Weblate)

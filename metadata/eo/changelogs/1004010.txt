@@ -1,10 +1,13 @@
-1.4.10
-  * Tradukitaj ekrankopioj por fdroid
-1.4.9
-  * Kelkaj plej malgrandaj tradukoj korektas
-1.4.8
-  * Aldonita pola traduko.  Danke al verdulo.
-  * Aldonita Esperanta traduko.  Danke al verdulo.
-1.4.7
-  * Vintro venas.  Aldonis iujn novajn nivelojn.
-  * Mi forkuris de ideoj.  Bonvolu sendi al mi ideojn por novaj niveloj.
+1.4.10:
+ * tradukitaj ekrankopioj por F-Droid
+
+1.4.9:
+ * etaj korektoj al tradukoj
+
+1.4.8:
+ * aldonis polan tradukon (danke al Verdulo)
+ * aldonis Esperantan tradukon (danke al Verdulo)
+
+1.4.7:
+ * vintro baldaŭas… – aldonis novajn nivelojn
+ * ideoj mankas al mi, bonvolu sendi al mi ideojn pri novaj niveloj

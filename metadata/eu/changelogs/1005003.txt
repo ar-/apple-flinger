@@ -1,15 +1,15 @@
 1.5.3
-  * Gehitu moldatzaile ikonoa (Android 8 eta handiagoa)
-  * Ezgaitutako atzeko planoan saguaren inguruko zooma
-  * Norvegiako hizkuntza gehitu (Allan-en web orriari esker)
+ * ikono adaptatiboa (Android 8tik gora)
+ * sagarretik hurbil atzealdearen zooma desgaituta
+ * Norbegiera gehituta (Allan)
 
 1.5.2
-  * Portugesa itzulpen gehitu da
-  * Irabazle eta puntu altuena koloretsuagoa izan zen
-  * hardware back-button aktibatuta jokoa utzi edo aurreko pantailara joateko
-  * Polonierazko eta esperantziarako itzulpenak (Verdulo-ren bidez)
-  * Bugfix: hizkuntzaren hautapena batzuetan ez da funtzionatzen
-  * GPL3 eta gitlab txapak gehitu dira hondoan
+ * Portugesa gehitu da
+ * Irabazlearen eta errekorren puntu koloretsuagoak
+ * hardware bidezko atzera botoia aktibatuta
+ * Poloniera eta Esperantoa (Verdulo)
+ * Akats konponketa: hizkuntza hautua ez zebilen beti
+* GPL3 eta gitlab ikonoak atzealdean
 
 1.5.1
-  * Mantendu pantaila pixka bat luzeagoan, jokoan aktiboki jokatzen ari den bitartean.
+ * Pantaila luzeago mantentzen da piztuta,  jolasten ari zaren bitartean.

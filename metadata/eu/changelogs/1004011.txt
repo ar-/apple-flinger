@@ -1,6 +1,5 @@
-OHARRA: APLIKAZIO HORIEK EZINBESTEKO EDO EZAUGARRI OROKORRAK. Azpitik ikusten duzuna errorea da F-Droid-en.
+OHARRA: APLIKAZIO HONEK EZ DU EZAUGARRI ZALANTZAGARRIRIK. Beheko hori F-Droiden akats bat da.
 
 1.4.11
-  * Minor itzulpena konponketak. Berriro verdulo esker.
-  * Aldi baterako SDK bertsioa google play denda idiotic
-
+ * Konponketak itzulpenetan. Verdulori esker.
+ * SDK bertsioa aldatu da Google Play aluarentzat
