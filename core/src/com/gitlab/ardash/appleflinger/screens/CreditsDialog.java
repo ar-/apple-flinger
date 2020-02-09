@@ -24,7 +24,7 @@ import com.gitlab.ardash.appleflinger.helpers.BackButtonAdapter;
 import com.gitlab.ardash.appleflinger.i18n.I18N;
 
 public class CreditsDialog extends AdvancedDialog{
-	static String translators="Allan Nordhøy, Andreas Redmer, ButterflyOfFire, Dmitry Mikhirev, Heimen Stoffels, Iván Seoane, Jonatan Nyberg, Markel, Sérgio Marques, Simon Dottor, Sukhichev Mikhail Ivanovich, Verdulo, WaldiS, xin, ";
+	static String translators="Adolfo Jayme Barrientos, Albynton, Alex, Alexandr Eremeev, Allan Nordhøy, Andreas Redmer, Arttu Ylhävuori, ButterflyOfFire, Dmitry Mikhirev, Heimen Stoffels, Iván Seoane, JC Staudt, Jonatan Nyberg, Manuela Silva, Markel, Milo Ivir, Oguz Ersen, Osoitz, Rui Mendes, Sérgio Marques, Simon Dottor, Sukhichev Mikhail Ivanovich, Verdulo, WaldiS, xin, ";
 	
 	public CreditsDialog() 
 	{

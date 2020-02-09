@@ -120,7 +120,7 @@ wrong_file_enc_count=`grep -i "\." android/assets/af*.properties | egrep -v "# "
 [[ $wrong_file_enc_count -eq "0" ]] || echo "ERROR at least one file ($wrong_file_enc_count) has a dot. remove it" | tee -a $error_file
 echo 
 
-# check for dots
+# check for backslashes
 echo 
 echo checking for backslash-n or backslash-t
 egrep -i '\\n|\\t|\\r'  android/assets/af*.properties
