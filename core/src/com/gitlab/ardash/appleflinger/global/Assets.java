@@ -301,7 +301,6 @@ public class Assets {
 		BTN_LOCKED,
 		BTN_TW,
 		BTN_FB,
-		BTN_GP,
 		BTN_PI,
 		BTN_CLOSE,
 		BTN_PLAY,
