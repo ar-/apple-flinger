@@ -82,8 +82,8 @@ fdroid_build:
     - git show -s --pretty=%d HEAD
     - CB=`git show -s --pretty=%d HEAD | egrep -o '/.*)'| egrep -o '[a-zA-Z0-9_-]*' | head -n1`
     - cd fdroiddata
-    - sed -i "s/commit=.*/commit=$CB/g" metadata/com.gitlab.ardash.appleflinger.android.txt
-    - grep commit metadata/com.gitlab.ardash.appleflinger.android.txt
+    - sed -i "s/commit=.*/commit=$CB/g" metadata/com.gitlab.ardash.appleflinger.android.yml
+    - grep commit metadata/com.gitlab.ardash.appleflinger.android.yml
     - cp ../fdroidserver/examples/config.py ./
     - chmod 0600 config.py
     - echo 'sdk_path = "$PWD/../tmp/android-sdk-linux"' >> config.py
