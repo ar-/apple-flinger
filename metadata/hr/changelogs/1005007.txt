@@ -1,0 +1,17 @@
+1.5.7
+  * dodan baskijski jezik
+  * dodan brazilski jezik
+  * dodan hrvatski jezik
+  * dodan finski jezik
+  * dodan turski jezik
+
+1.5.6
+  * fiksna zimska razina 13 zaglavila se
+  * dodan talijanski jezik
+  * dodan švedski jezik
+
+1.5.5
+  * wiki stranica na stvorenoj web stranici koja opisuje kako stvoriti nove razine
+  * Dodano je još 12 zimskih razina
+  * prikaz za postotak dodanih postignuća
+  * dodali vrijeme prikazu na zaslonu

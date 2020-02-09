@@ -1,0 +1,17 @@
+1.5.7
+  * přidán baskický jazyk
+  * přidán brazilský jazyk
+  * přidán chorvatský jazyk
+  * přidán finský jazyk
+  * přidán turecký jazyk
+
+1.5.6
+  * pevná zimní úroveň 13 uvízne
+  * přidán italský jazyk
+  * přidán švédský jazyk
+
+1.5.5
+  * Stránka wiki na webu byla vytvořena a popisuje, jak vytvořit nové úrovně
+  * Přidáno dalších 12 zimních úrovní
+  * zobrazení procento přidaných dílčích úspěchů
+  * přidal čas k zobrazení na obrazovce

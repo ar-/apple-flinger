@@ -1,0 +1,17 @@
+1.5.7
+  * Baskiese taal bygevoeg
+  * Brasiliaanse taal bygevoeg
+  * Kroaties taal bygevoeg
+  * Finse taal bygevoeg
+  * Turkse taal bygevoeg
+
+1.5.6
+  * vaste wintervlak 13 raak vas
+  * Italiaanse taal bygevoeg
+  * Sweedse taal bygevoeg
+
+1.5.5
+  * Wiki-bladsy op die webwerf wat geskep word, en beskryf hoe u nuwe vlakke kan skep
+  * Nog 12 wintervlakke bygevoeg
+  * vertoon vir die persentasie inkrementele prestasies wat bygevoeg is
+  * het die tyd bygevoeg tot die skerm op die skerm

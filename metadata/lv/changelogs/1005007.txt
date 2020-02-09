@@ -1,0 +1,17 @@
+1.5.7
+  * pievienota basku valoda
+  * pievienota Brazīlijas valoda
+  * pievienota horvātu valoda
+  * pievienota somu valoda
+  * pievienota turku valoda
+
+1.5.6
+  * fiksēts ziemas līmenis 13 iestrēdzis
+  * pievienota itāļu valoda
+  * pievienota zviedru valoda
+
+1.5.5
+  * izveidotās vietnes wiki lapa, kurā aprakstīts, kā izveidot jaunus līmeņus
+  * Pievienoti vēl 12 ziemas līmeņi
+  * parādīts pievienoto papildu sasniegumu procents
+  * pievienoja laiku ekrāna rādīšanai

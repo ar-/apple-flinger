@@ -1,0 +1,17 @@
+1.5.7
+  * aggiunta la lingua basca
+  * aggiunta la lingua brasiliana
+  * aggiunta la lingua croata
+  * aggiunta la lingua finlandese
+  * aggiunta la lingua turca
+
+1.5.6
+  * fisso livello invernale 13 che si blocca
+  * aggiunta la lingua italiana
+  * aggiunta la lingua svedese
+
+1.5.5
+  * pagina wiki sul sito Web creata, che descrive come creare nuovi livelli
+  * Aggiunti altri 12 livelli invernali
+  * visualizzazione della percentuale di risultati incrementali aggiunti
+  * aggiunto il tempo al display sullo schermo

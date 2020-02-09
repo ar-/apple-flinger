@@ -1,0 +1,17 @@
+1.5.7
+  * imeongeza lugha ya Kibasque
+  * imeongeza lugha ya Kibrazil
+  * imeongeza lugha ya Kikroeshia
+  * imeongeza lugha ya Kifini
+  * imeongeza lugha ya Kituruki
+
+1.5.6
+  * Kiwango cha baridi cha kudumu 13 kukwama
+  * imeongeza lugha ya Italia
+  * imeongeza lugha ya Uswidi
+
+1.5.5
+  * Ukurasa wa wiki kwenye wavuti iliyoundwa, ikielezea jinsi ya kuunda viwango vipya
+  * Viwango 12 vya msimu wa baridi zaidi vimeongezwa
+  * Onyesha kwa asilimia ya mafanikio ya kuongezeka yaliyoongezwa
+  * ameongeza muda kwenye onyesho kwenye skrini

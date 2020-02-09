@@ -1,0 +1,17 @@
+1.5.7
+  * lagt til baskisk språk
+  * lagt til brasiliansk språk
+  * lagt til kroatisk språk
+  * lagt til finsk språk
+  * lagt til tyrkisk språk
+
+1.5.6
+  * fast vinternivå 13 som blir sittende fast
+  * lagt til italiensk språk
+  * lagt til svensk
+
+1.5.5
+  * wikiside på nettstedet som er opprettet, og beskriver hvordan du oppretter nye nivåer
+  * 12 vinternivåer til
+  * vis for prosentandelen av trinnvise prestasjoner lagt til
+  * la tiden til skjermen på skjermen

@@ -1,0 +1,17 @@
+1.5.7
+  * hozzáadta a baszk nyelvet
+  * hozzáadta a brazil nyelvet
+  * hozzáadta a horvát nyelvet
+  * hozzáadott finn nyelv
+  * hozzáadta a török u200bu200bnyelvet
+
+1.5.6
+  * rögzített téli 13. szint elakad
+  * hozzáadott olasz nyelv
+  * hozzáadva a svéd nyelvet
+
+1.5.5
+  * A létrehozott weboldal wiki oldala, amely leírja, hogyan kell létrehozni új szinteket
+  * 12 további téli szint hozzáadva
+  * a hozzáadott növekményes eredmények százalékos arányának megjelenítése
+  * hozzáadta az időt a képernyő megjelenítéséhez

@@ -40,7 +40,7 @@ import com.gitlab.ardash.appleflinger.screens.MissionSelectScreen;
 public class DesktopTestdriveTest implements ActionResolver{
 	
 //	private static final String [] langs = {"de","en","eo","es","fr","gl","it","nb","nl","pl","pt","sv"}; // all latin
-	private static final String [] langs = {"sv"}; // recently updated ones
+	private static final String [] langs = {"tr","eu","hr","fi"}; // recently updated ones
 //	private static final String [] langs = {"ru"}; // separate non-latin load
 	
 	private static final Mission [] missions = {Mission.M_1_1, Mission.M_1_3, Mission.M_1_4
@@ -79,7 +79,7 @@ public class DesktopTestdriveTest implements ActionResolver{
 				}
 				PlayerSimulator.INSTANCE.playOneRound();
 				sleep(4200);
-				saveScreenShot("../metadata/"+lang+"/images/phoneScreenshots/"+missionToLoad+".png");
+				saveScreenShot("./metadata/"+lang+"/images/phoneScreenshots/"+missionToLoad+".png");
 				sleep(1000);
 				
 			}
@@ -118,7 +118,16 @@ public class DesktopTestdriveTest implements ActionResolver{
 		n2.put("ru", "Светлана".toUpperCase());
 		n1.put("sv", "Anders".toUpperCase());
 		n2.put("sv", "Karin".toUpperCase());
-		
+
+		n1.put("tr", "Mustafa".toUpperCase());
+		n2.put("tr", "Aylin".toUpperCase());
+		n1.put("eu", "Aitor".toUpperCase());
+		n2.put("eu", "Elixane".toUpperCase());
+		n1.put("hr", "Josip".toUpperCase());
+		n2.put("hr", "Lucija".toUpperCase());
+		n1.put("fi", "Heikki".toUpperCase());
+		n2.put("fi", "Liisa".toUpperCase());
+
 		if (player == 1)
 			ret = n1.get(lang);
 		if (player == 2)

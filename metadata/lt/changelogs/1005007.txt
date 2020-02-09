@@ -1,0 +1,17 @@
+1.5.7
+  * pridėta baskų kalba
+  * pridėta Brazilijos kalba
+  * pridėta kroatų kalba
+  * pridėta suomių kalba
+  * pridėta turkų kalba
+
+1.5.6
+  * fiksuotas žiemos lygis 13 užstringa
+  * pridėta italų kalba
+  * pridėta švedų kalba
+
+1.5.5
+  * sukurtame tinklalapyje yra wiki puslapis, kuriame aprašoma, kaip sukurti naujus lygius
+  * Pridėta dar 12 žiemos lygių
+  * pridedamų pavienių laimėjimų procentas
+  * pridėjo laiką ekrane

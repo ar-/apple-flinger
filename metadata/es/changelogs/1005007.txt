@@ -1,0 +1,17 @@
+1.5.7
+  * idioma vasco agregado
+  * idioma brasileño agregado
+  * idioma croata añadido
+  * añadido idioma finlandés
+  * idioma turco añadido
+
+1.5.6
+  * Se arregló el nivel de invierno 13 atascado
+  * idioma italiano añadido
+  * idioma sueco agregado
+
+1.5.5
+  * página wiki en el sitio web creado, que describe cómo crear nuevos niveles
+  * 12 niveles más de invierno añadidos
+  * muestra el porcentaje de logros incrementales agregados
+  * añadido el tiempo a la visualización en pantalla

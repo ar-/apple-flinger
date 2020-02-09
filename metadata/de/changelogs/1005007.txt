@@ -1,0 +1,17 @@
+1.5.7
+  * Baskische Sprache hinzugefügt
+  * Brasilianische Sprache hinzugefügt
+  * Kroatische Sprache hinzugefügt
+  * Finnische Sprache hinzugefügt
+  * Türkische Sprache hinzugefügt
+
+1.5.6
+  * Fehler behoben, bei dem die Winterstufe 13 stecken blieb
+  * Italienische Sprache hinzugefügt
+  * Schwedische Sprache hinzugefügt
+
+1.5.5
+  * Wiki-Seite auf der Website erstellt, die beschreibt, wie neue Ebenen erstellt werden
+  * 12 weitere Winterlevel hinzugefügt
+  * Anzeige für den Prozentsatz der hinzugefügten inkrementellen Erfolge
+  * Die Uhrzeit wurde zur Anzeige auf dem Bildschirm hinzugefügt

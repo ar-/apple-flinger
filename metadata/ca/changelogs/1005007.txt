@@ -1,0 +1,17 @@
+1.5.7
+  * va afegir la llengua basca
+  * va afegir idioma brasiler
+  * va afegir idioma croat
+  * va afegir idioma finès
+  * va afegir llengua turca
+
+1.5.6
+  * nivell d’hivern fixat 13 quedant encallat
+  * afegir idioma italià
+  * Va afegir idioma suec
+
+1.5.5
+  * Pàgina wiki al lloc web creat, que descriu com crear nous nivells
+  * 12 nivells d'hivern més afegits
+  * Visualització del percentatge d’incidents incrementals afegits
+  * va afegir el temps a la pantalla de la pantalla

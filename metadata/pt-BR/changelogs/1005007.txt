@@ -1,0 +1,17 @@
+1.5.7
+  * idioma basco adicionado
+  * idioma brasileiro adicionado
+  * idioma croata adicionado
+  * idioma finlandês adicionado
+  * idioma turco adicionado
+
+1.5.6
+  * nível fixo de inverno 13 ficando preso
+  * idioma italiano adicionado
+  * idioma sueco adicionado
+
+1.5.5
+  * página wiki no site criado, descrevendo como criar novos níveis
+  * Mais 12 níveis de inverno adicionados
+  * exibição da porcentagem de conquistas incrementais adicionadas
+  * adicionou o tempo para a exibição na tela

@@ -1,0 +1,17 @@
+1.5.7
+  * lagt till baskiska språket
+  * lagt till brasilianska språk
+  * läggs till kroatiska
+  * läggs till finska
+  * läggs till turkiskt
+
+1.5.6
+  * fast vinternivå 13 fastnar
+  * lagt till italienska språket
+  * lagt till svenska
+
+1.5.5
+  * wikisida på webbplatsen skapad och beskriver hur man skapar nya nivåer
+  * Ytterligare 12 vinternivåer tillagda
+  * visning för den procentuella grad av tillagda steg
+  * lägger till tiden på skärmen

@@ -1,0 +1,17 @@
+1.5.7
+  * aldonita eŭska lingvo
+  * aldonita brazila lingvo
+  * aldonis kroatan lingvon
+  * aldonis finna lingvo
+  * aldonis turka lingvo
+
+1.5.6
+  * fiksita vintra nivelo 13 batante
+  * aldonis itala lingvo
+  * aldonis sveda lingvo
+
+1.5.5
+  * vikia paĝo en la retejo kreita, priskribanta kiel krei novajn nivelojn
+  * 12 pliaj vintraj niveloj aldonitaj
+  * montrado por la procento de pliigaj atingoj aldonitaj
+  * aldonis la tempon al la ekrano sur la ekrano
