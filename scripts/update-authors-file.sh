@@ -45,6 +45,10 @@ cp /tmp/AUTHORS_tmp.md /tmp/AUTHORS.md
 cat /tmp/AUTHORS.md | grep -v "Iván <ivanrsm1997@gmail.com>" > /tmp/AUTHORS_tmp.md
 cp /tmp/AUTHORS_tmp.md /tmp/AUTHORS.md
 
+# exclude one of Verdulo who commited with 2 email addresses (can't be covered by the simple grep above)
+cat /tmp/AUTHORS.md | grep -v "Verdulo <cybertomek@openmailbox.org>" > /tmp/AUTHORS_tmp.md
+cp /tmp/AUTHORS_tmp.md /tmp/AUTHORS.md
+
 # exclude Markels duplicate
 cat /tmp/AUTHORS.md | grep -v "Markel @wakutiteo" > /tmp/AUTHORS_tmp.md
 cp /tmp/AUTHORS_tmp.md /tmp/AUTHORS.md
@@ -62,8 +66,8 @@ di=$?
 
 if [ $di == "0" ]
 then
-#   echo "no new authors found"
-# else
+  echo "no new authors found"
+else
   echo "new authors found. updating file. commit again"
   cat /tmp/AUTHORS.md > AUTHORS.md
 

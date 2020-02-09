@@ -34,7 +34,6 @@ We'd like to thank the following people for their contributions:
 - Rui Mendes \<xz9⒜protonmail∙com\>
 - Sérgio Marques \<smarquespt⒜gmail∙com\>
 - urain39 \<hexiedeshijie⒜gmail∙com\>
-- Verdulo \<cybertomek⒜openmailbox∙org\>
 - Verdulo \<tomek⒜disroot∙org\>
 - WaldiS \<admin⒜sto∙ugu∙pl\>
 - xin \<xin⒜riseup∙net\>
