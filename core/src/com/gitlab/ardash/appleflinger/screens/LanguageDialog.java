@@ -50,7 +50,7 @@ public class LanguageDialog extends AdvancedDialog{
 		getContentTable().row().minHeight(180).top();
 		getContentTable().add(makeLingoButton(Assets.SpriteAsset.FLAG_ES, "\n\nespañol"));
 		getContentTable().add(makeLingoButton(Assets.SpriteAsset.FLAG_EO, "\n\nesperanto"));
-		getContentTable().add(makeLingoButton(Assets.SpriteAsset.FLAG_EU, "\n\neuskara"));
+		getContentTable().add(makeLingoButton(Assets.SpriteAsset.FLAG_EU, "\n\neuskara")); // basque
 		getContentTable().add(makeLingoButton(Assets.SpriteAsset.FLAG_FR, "\n\nfrançais"));
 		getContentTable().add(makeLingoButton(Assets.SpriteAsset.FLAG_GL, "\n\ngalego"));
 		getContentTable().row().minHeight(180).top();
