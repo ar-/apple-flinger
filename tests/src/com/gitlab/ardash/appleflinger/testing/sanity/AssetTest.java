@@ -129,6 +129,41 @@ public class AssetTest {
 	}
 	
 	@Test
+	public void isI18NWorkingForTR() {
+		I18N.loadLanguageBundle("tr");
+		assertEquals("açık", I18N.s("unlocked"));
+		assertEquals("Müzik", I18N.s("Music"));
+	}
+	
+	@Test
+	public void isI18NWorkingForPTBR() {
+		I18N.loadLanguageBundle("pt_br");
+		assertEquals("traduções", I18N.s("translations"));
+		assertEquals("Não", I18N.s("no"));
+	}
+	
+	@Test
+	public void isI18NWorkingForEU() {
+		I18N.loadLanguageBundle("eu");
+		assertEquals("desblokeatuta", I18N.s("unlocked"));
+		assertEquals("negua", I18N.s("winter"));
+	}
+	
+	@Test
+	public void isI18NWorkingForHR() {
+		I18N.loadLanguageBundle("sv");
+		assertEquals("Välj en nivå", I18N.s("chooseALevel"));
+		assertEquals("SPELET ÖVER", I18N.s("gameOver"));
+	}
+	
+	@Test
+	public void isI18NWorkingForFI() {
+		I18N.loadLanguageBundle("fi");
+		assertEquals("Selvä", I18N.s("okay"));
+		assertEquals("alkuperäinen", I18N.s("original"));
+	}
+	
+	@Test
 	/**
 	 * just set back to english. The last test always sets it to an unsuitable language at dev time
 	 */
