@@ -1,6 +1,6 @@
 #!/bin/bash
 #-------------------------------------------------------------------------------
-# Copyright (C) 2018 Andreas Redmer <ar-appleflinger@abga.be.com>
+# Copyright (C) 2018-2020 Andreas Redmer <ar-appleflinger@abga.be.com>
 # 
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
