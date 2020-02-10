@@ -1,0 +1,4 @@
+1.4.5
+  * Parannettu ranskankielistä käännöstä. Kiitos xinille.
+  * Lisätty uusi lokalisoitu näppäimistö jokaiselle kielelle pelaajien nimien syöttämiseksi.
+  * Lisätty F-Droid-näyttökuvat jokaiselle tuetulle kielelle.

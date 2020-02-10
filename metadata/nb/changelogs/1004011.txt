@@ -3,4 +3,3 @@ MERK: DENNE APPEN INKLUDERER IKKE ANTIFEATURER ELLER UØYE FUNKSJONER. Det du se
 1.4.11
   * Mindre oversettelsesrettinger. Takk til verdulo igjen.
   * Opped mål SDK-versjon for den idiotiske google spillbutikken
-

@@ -8,4 +8,3 @@
 1.4.11
   * Kleine Korrekturen in Übersetzungen. Danke nochmal an Verdulo.
   * Target SDK-Version leich angehoben für den idiotischen Google Play Store
-

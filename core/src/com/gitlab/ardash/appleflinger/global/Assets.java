@@ -1,5 +1,5 @@
 /*******************************************************************************
- * Copyright (C) 2015-2018 Andreas Redmer <ar-appleflinger@abga.be>
+ * Copyright (C) 2015-2020 Andreas Redmer <ar-appleflinger@abga.be>
  * Copyright (C) 2017 Сухичев Михаил Иванович <sukhichev@yandex.ru>
  * 
  * This program is free software: you can redistribute it and/or modify
@@ -279,15 +279,20 @@ public class Assets {
 		FLAG_EN,
 		FLAG_EO,
 		FLAG_ES,
+		FLAG_EU,
+		FLAG_FI,
 		FLAG_FR,
 		FLAG_GL,
+		FLAG_HR,
 		FLAG_IT,
 		FLAG_NB,
 		FLAG_NL,
 		FLAG_PL,
 		FLAG_PT,
+		FLAG_PT_BR,
 		FLAG_RU,
 		FLAG_SV,
+		FLAG_TR,
 		FORK_ME,
 		GPL3,
 		SLIDERBACK,

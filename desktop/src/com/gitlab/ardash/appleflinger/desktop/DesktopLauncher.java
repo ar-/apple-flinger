@@ -1,5 +1,5 @@
 /*******************************************************************************
- * Copyright (C) 2015-2018 Andreas Redmer <ar-appleflinger@abga.be>
+ * Copyright (C) 2015-2020 Andreas Redmer <ar-appleflinger@abga.be>
  * 
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -55,7 +55,7 @@ public class DesktopLauncher implements ActionResolver{
         Settings settings = new Settings();
         settings.maxWidth = 2048;
         settings.maxHeight = 2048;
-//		TexturePacker.process(settings, "../art/sprites/ui", "../android/assets", "ui");
+//		TexturePacker.process(settings, "./art/sprites/ui", "./android/assets", "ui");
 //		TexturePacker.process(settings, "../art/sprites/scene", "../android/assets", "scene");
 		TexturePacker t; // keep this here, otherwise import gets always removed
 		try

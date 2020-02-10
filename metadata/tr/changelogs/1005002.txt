@@ -12,4 +12,3 @@
 1.5.0
   * başarılar eklendi
   * bugfix: bilgisayara karşı kaybetme nedeniyle yuvarlak tekrarlar zaman genel puan arttırma
-

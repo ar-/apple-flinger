@@ -1,0 +1,29 @@
+Hauska kierrospohjainen yksin- tai moninpeli mahtaviin hetkiin.
+Uusi, haastava ja koukuttava.
+
+Ominaisuudet:
+* korkealaatuinen grafiikka
+* realistinen fysiikka
+* viiveetön ja sujuva peli (jopa vanhoilla laitteilla)
+* hienot yksityiskohtaiset animaatiot ja hiukkasjärjestelmät
+* upouusi ja innovatiivinen pelikonsepti
+* yksin- / moninpeli
+* 100% avoin lähdekoodi (GPL3)
+
+Käytä ritsaa ampuaksesi omenoita. Tuhoa ensin koko vihollisen tukikohta, mutta
+ole varuillasi: toinen puoli ampuu takaisin. Tämä peli on tasapainoinen
+palapelin, strategian, maltin ja toiminnan sekoitus.
+
+Tämä sopii yhdelle tai kahdelle pelaajalle! Voit pelata tätä ketä tahansa
+vieressäsi istuvaa vastaan – tai itseäsi vastaan. Voit myös pelata
+tietokoneohjattua vastustajaa vastaan. Lisää ominaisuuksia, lisää hauskuutta
+ja lisää tasoja tulee pian.
+
+Kansainväliset ikäluokitukset:
+
+* ACB: G (yleinen)
+* ClassInd: L
+* ESRB: E (jokainen)
+* PEGI: 3
+* USK: 0
+* IARC: 3

@@ -1,0 +1,10 @@
+1.4.10
+  * Capturas de pantalla traducidas para o fdroid
+1.4.9
+  * Algunhas correccións de traducións menores
+1.4.8
+  * Engadiuse a tradución polaca.  Grazas a verdulo.
+  * Engadiuse a tradución ó esperanto.  Grazas a verdulo.
+1.4.7
+  * Vén o inverno.  Engadíronse algúns niveis novos.
+  * Fiquei sen ideas.  Por favor, envíame ideas para novos niveis.

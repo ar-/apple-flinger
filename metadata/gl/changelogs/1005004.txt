@@ -1,0 +1,11 @@
+1.5.4
+   * Tradutores engadidos á pantalla de cretos no xogo
+   * Lingua holandesa engadida (grazas a Heimen no Weblate)
+   * Lingua galega engadida (grazas a Iváns no Weblate)
+   * Tradución ó español mellorada (grazas a Markel no Weblate)
+   * Eliminaronse píxeles transparentes das capturas de pantalla
+  
+ 1.5.3
+   * Icona adaptábel engadida (Android 8 e superior)
+   * Achegamento de fondo deshabilitado preto da mazá
+   * Lingua norueguesa engadida (grazas a Allan no Weblate)

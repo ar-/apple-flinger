@@ -1,0 +1,29 @@
+Jeu amusant tour par tour à un ou plusieurs joueurs pour des moments inoubliables. Nouveau,
+stimulant et addictif.
+
+Caractéristiques :
+
+* graphiques en haute résolution
+* physique réaliste
+* une mécanique de jeu sans décalage et fluide (même sur les anciens appareils)
+* animations détaillées et systèmes de particules
+* concept de jeu flambant neuf et innovant
+* solo/multijoueur
+* 100% libre et open source (GPL3)
+
+Vous utilisez un lance-pierre pour tirer avec des pommes. Soyez le premier à détruire toute la base
+ennemie, mais attention, l'autre côté riposte. Ce jeu a un mélange équilibré de
+puzzle, stratégie, patience et action.
+
+C'est pour un ou deux joueurs ! Tu peux jouer contre n'importe qui s'asseyant à côté
+de toi – ou contre vous-même. Vous pouvez également jouer contre un adversaire contrôlé par
+ordinateur. Plus de fonctionnalités, plus de plaisir et plus de niveaux seront bientôt disponibles.
+
+classements internationaux selon l'âge :
+
+* ACB : G (général)
+* ClassInd : L
+* ESRB : E (tout le monde)
+* PEGI : 3
+* USK : 0
+* IARC : 3

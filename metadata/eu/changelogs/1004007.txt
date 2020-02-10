@@ -1,9 +1,11 @@
 1.4.7
   * Negua badator.  Maila berri batzuk gehitu dira.
-  * Ideiak atera nituen.  Bidali niri ideiak maila berrietarako.
+  * Ideiak agortu zaizkit  Bidali nazazue ideiak maila berrietarako.
+
 1.4.6
-  * Errusiako itzulpen hobetua.  Dmitryri esker.
+ * Errusiera hobetua. Dmitry-ri esker.
+ 
 1.4.5
-  * Itzulpen frantsesaren hobekuntza.  Xin esker.
-  * Hizkuntza bakoitzerako lokalizatutako teklatua gehitu zaio jokalari izenei sartzeko.
-  * Fdroid pantailetan gehitutako euskarri bakoitzerako.
+ * Frantsesera hobetua. Xin-i esker.
+ * Teklatu lokalizatua jokalariaren izena sartzeko.
+ * F-Droid-entzako pantaila argazkiak hizkuntzako.

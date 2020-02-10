@@ -1,5 +1,5 @@
 /*******************************************************************************
- * Copyright (C) 2015-2018 Andreas Redmer <ar-appleflinger@abga.be>
+ * Copyright (C) 2015-2020 Andreas Redmer <ar-appleflinger@abga.be>
  * Copyright (C) 2017 Сухичев Михаил Иванович <sukhichev@yandex.ru>
  * 
  * This program is free software: you can redistribute it and/or modify
@@ -44,20 +44,26 @@ public class LanguageDialog extends AdvancedDialog{
 
 		getContentTable().add(makeLingoButton(Assets.SpriteAsset.BTN_REFRESH, "\n\n"+I18N.s("default")));
 		getContentTable().add(makeLingoButton(Assets.SpriteAsset.FLAG_NB, "\n\nbokmål"));
+		getContentTable().add(makeLingoButton(Assets.SpriteAsset.FLAG_PT_BR, "\n\nbrasileiro"));
 		getContentTable().add(makeLingoButton(Assets.SpriteAsset.FLAG_DE, "\n\ndeutsch"));
 		getContentTable().add(makeLingoButton(Assets.SpriteAsset.FLAG_EN, "\n\nenglish"));
 		getContentTable().row().minHeight(180).top();
-		getContentTable().add(makeLingoButton(Assets.SpriteAsset.FLAG_EO, "\n\nesperanto"));
 		getContentTable().add(makeLingoButton(Assets.SpriteAsset.FLAG_ES, "\n\nespañol"));
+		getContentTable().add(makeLingoButton(Assets.SpriteAsset.FLAG_EO, "\n\nesperanto"));
+		getContentTable().add(makeLingoButton(Assets.SpriteAsset.FLAG_EU, "\n\neuskara")); // basque
 		getContentTable().add(makeLingoButton(Assets.SpriteAsset.FLAG_FR, "\n\nfrançais"));
 		getContentTable().add(makeLingoButton(Assets.SpriteAsset.FLAG_GL, "\n\ngalego"));
-		getContentTable().add(makeLingoButton(Assets.SpriteAsset.FLAG_IT, "\n\nitaliano"));
 		getContentTable().row().minHeight(180).top();
+		getContentTable().add(makeLingoButton(Assets.SpriteAsset.FLAG_HR, "\n\nhrvatski")); //croatic
+		getContentTable().add(makeLingoButton(Assets.SpriteAsset.FLAG_IT, "\n\nitaliano"));
 		getContentTable().add(makeLingoButton(Assets.SpriteAsset.FLAG_NL, "\n\nnederlands"));
 		getContentTable().add(makeLingoButton(Assets.SpriteAsset.FLAG_PL, "\n\npolski"));
 		getContentTable().add(makeLingoButton(Assets.SpriteAsset.FLAG_PT, "\n\nportuguês"));
+		getContentTable().row().minHeight(180).top();
 		getContentTable().add(makeLingoButton(Assets.SpriteAsset.FLAG_RU, "\n\nрусский")); //russkiy
+		getContentTable().add(makeLingoButton(Assets.SpriteAsset.FLAG_FI, "\n\nsuomi"));
 		getContentTable().add(makeLingoButton(Assets.SpriteAsset.FLAG_SV, "\n\nsvenska"));
+		getContentTable().add(makeLingoButton(Assets.SpriteAsset.FLAG_TR, "\n\ntürkçe"));
 
         getContentTable().row();
         

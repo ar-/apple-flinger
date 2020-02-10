@@ -1,0 +1,29 @@
+Rolig runda baserade singel/flerspelar spel för grymma tider. Nytt,
+utmanande och beroendeframkallande.
+
+Funktion:
+
+* grafik med hög upplösning
+* realistisk fysik
+* lag-fri och smidig spelande (även på gamla enheter)
+* fina detaljerade animationer och partikelsystem
+* helt nytt och innovativt spelkoncept
+* singel-/flerspelare
+* 100% öppen källkod (GPL3)
+
+Du använder en slangbella för att skjuta äpplen. Var först med att förstöra hela fiendebasen, 
+men var medveten om att den andra sidan skjuter tillbaka. Detta spel har en balanserad blandning av
+pussel, strategi, tålamod och handling.
+
+Detta är för en eller två spelare! Du kan spela detta mot alla som sitter
+bredvid dig - eller mot dig själv. Du kan också spela mot en datorstyrd
+motståndare. Fler funktioner, roligare och fler nivåer kommer snart.
+
+internationella åldersgränser:
+
+* ACB: G (allmänt)
+* ClassInd: L
+* ESRB: E (alla)
+* PEGI:3
+* USK: 0
+* IARC: 3

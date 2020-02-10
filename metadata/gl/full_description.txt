@@ -1,0 +1,29 @@
+Divertido xogo baseado en roldas individuais ou multixogador con tempos entretidos.  Novo,
+ desafiante e adictivo.
+
+ Funcións:
+
+ * Gráficos de calidade de alta resolución
+ * Físicas realistas
+ * Xogo sen atrasos e sen problemas (incluso en dispositivos antigos)
+ * Finas animacións detalladas e sistemas de partículas
+ * Novo e innovador concepto de xogo
+ * Individual / multixogador
+ * 100% de código aberto (GPL3)
+
+ Emprega un tiracroios para disparar con mazás.  Sé o primeiro en destruir a toda a base enimiga,
+pero ten en conta, o outro lado dispara cara atrás.  Este xogo ten unha mestura equilibrada de
+ crebacabezas, estratexia, paciencia e acción.
+
+ Isto é para un ou dous xogadores!  Podes xogar isto contra calquera que se sinta disposto a xogar
+ ou contra ti mesmo.  Tamén podes xogar contra unha computadora controlada de
+ adversario.  Máis funcións, máis diversión e máis niveis virán pronto.
+
+ Clasificacións internacionais de idade:
+
+ * ACB: G (xeral)
+ * Clase: L
+ * ESRB: E (todos)
+ * PEGI: 3
+ * USK: 0
+ * IARC: 3

@@ -1,0 +1,17 @@
+1.5.7
+  * dodan baskovski jezik
+  * dodan brazilski jezik
+  * dodan hrvaški jezik
+  * dodan finski jezik
+  * dodan turški jezik
+
+1.5.6
+  * fiksna zimska raven 13 se zatakne
+  * dodan italijanski jezik
+  * dodan švedski jezik
+
+1.5.5
+  * wiki stran na ustvarjenem spletnem mestu, ki opisuje, kako ustvariti nove ravni
+  * Dodanih še 12 zimskih nivojev
+  * prikaz za dodani odstotek dodanih dosežkov
+  * je dodal čas prikazu na zaslonu

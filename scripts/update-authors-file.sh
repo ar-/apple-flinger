@@ -1,6 +1,6 @@
 #!/bin/bash
 #-------------------------------------------------------------------------------
-# Copyright (C) 2017,2018 Andreas Redmer <ar-appleflinger@abga.be>
+# Copyright (C) 2017-2020 Andreas Redmer <ar-appleflinger@abga.be>
 # 
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -27,7 +27,7 @@ echo -e "Authors\n=======\nWe'd like to thank the following people for their con
 git log --raw | grep "^Author: " | sort | uniq | cut -d ' ' -f2- | sed 's/^/- /' >> /tmp/AUTHORS.md
 
 # remove authors that don't want to be inlcuded or old email addresses 
-excl="ar-gitlab@abga.be ar-gdroid@abga.be andreasredmer@mailchuck.com a_r@posteo.de vagrant@vagrant.vm michal@cihar.com hosted@weblate.org"
+excl="z@z ar-gdroid@abga.be ar-gitlab@abga.be andreasredmer@mailchuck.com a_r@posteo.de vagrant@vagrant.vm michal@cihar.com hosted@weblate.org"
 for AE in $excl
 do
   echo excluding $AE
@@ -35,8 +35,18 @@ do
   cp /tmp/AUTHORS_tmp.md /tmp/AUTHORS.md
 done
 
+#exclude another duplicate
+AE="Andreas <ar-appleflinger@abga.be>"
+echo excluding $AE
+cat /tmp/AUTHORS.md | grep -v "$AE" > /tmp/AUTHORS_tmp.md
+cp /tmp/AUTHORS_tmp.md /tmp/AUTHORS.md
+
 # exclude one of Iván who commited with 2 email addresses (can't be covered by the simple grep above)
 cat /tmp/AUTHORS.md | grep -v "Iván <ivanrsm1997@gmail.com>" > /tmp/AUTHORS_tmp.md
+cp /tmp/AUTHORS_tmp.md /tmp/AUTHORS.md
+
+# exclude one of Verdulo who commited with 2 email addresses (can't be covered by the simple grep above)
+cat /tmp/AUTHORS.md | grep -v "Verdulo <cybertomek@openmailbox.org>" > /tmp/AUTHORS_tmp.md
 cp /tmp/AUTHORS_tmp.md /tmp/AUTHORS.md
 
 # exclude Markels duplicate
@@ -68,10 +78,15 @@ else
   # unfortunatally also replace cyrillic names with the latin transcription, because the libgdx label, looks too messed up otherwise
   translators=`git log --raw android/assets/af*.properties | grep "^Author: " | sort | uniq | cut -d ' ' -f2- | egrep -v $excl_regex | egrep -o ".* <" | egrep -o ".* " | sed -e "s/Сухичев Михаил Иванович/Sukhichev Mikhail Ivanovich/g" | sed -e "s/xxssmaoxx/Simon Dottor/g" | sed -e "s/Markel @wakutiteo/Markel/g" | sort -u | tr '\n' ',' | sed -e "s/ ,/, /g"`
   
-  # repair Iván who come up twice
+  echo $translators
+  # repair Andreas who comes up twice
+  translators=${translators/Andreas, Andreas Redmer/Andreas Redmer}
+
+  # repair Iván who comes up twice
   translators=${translators/Iván, Iván Seoane/Iván Seoane}
 
-  # remove Markels duplicate
+  # remove John Doe
+  translators=${translators/John Doe, /}
 
 
   # smack it into the source code

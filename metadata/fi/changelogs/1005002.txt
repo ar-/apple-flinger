@@ -1,0 +1,14 @@
+1.5.2
+  * lisätty portugalin käännös
+  * muutettu voittaja ja korkeimmat pisteet värikkäämmiksi
+  * aktivoitu laitteiston takaisin-painike poistuaksesi pelistä tai siirtyäksesi edelliselle näytölle
+  * korjattu puolan ja esperanton käännökset (Verdulo)
+  * bugikorjaus: kielivalinta ei toisinaan toimi
+  * lisätty taustaan GPL3- ja Gitlab-merkit
+
+1.5.1
+  * Pidä näyttöä päällä pidempään, kunhan peliä pelataan aktiivisesti.
+
+1.5.0
+  * lisätty saavutuksia
+  * bugikorjaus

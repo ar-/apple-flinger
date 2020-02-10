@@ -1,0 +1,17 @@
+1.5.7
+  * thêm ngôn ngữ tiếng Basque
+  * thêm ngôn ngữ Brazil
+  * thêm ngôn ngữ Croatia
+  * thêm tiếng Phần Lan
+  * thêm tiếng Thổ Nhĩ Kỳ
+
+1.5.6
+  * cố định mùa đông cấp 13 bị kẹt
+  * thêm tiếng Ý
+  * thêm tiếng Thụy Điển
+
+1,5,5
+  * trang wiki trên trang web được tạo, mô tả cách tạo cấp độ mới
+  * Thêm 12 cấp độ mùa đông được thêm vào
+  * hiển thị phần trăm thành tích gia tăng được thêm vào
+  * thêm thời gian vào màn hình trên màn hình

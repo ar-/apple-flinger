@@ -1,0 +1,17 @@
+1.5.7
+  * menambahkan bahasa Basque
+  * menambahkan bahasa Brasil
+  * menambahkan bahasa Kroasia
+  * menambahkan bahasa Finlandia
+  * menambahkan bahasa Turki
+
+1.5.6
+  * Memperbaiki level musim dingin 13 macet
+  * menambahkan bahasa Italia
+  * menambahkan bahasa Swedia
+
+1.5.5
+  * halaman wiki di situs web yang dibuat, menjelaskan cara membuat level baru
+  * 12 level musim dingin ditambahkan
+  * tampilan untuk persentase pencapaian tambahan yang ditambahkan
+  * menambahkan waktu ke tampilan di layar

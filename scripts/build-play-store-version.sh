@@ -1,6 +1,6 @@
 #!/bin/bash
 #-------------------------------------------------------------------------------
-# Copyright (C) 2018 Andreas Redmer <andreasredmer@mailchuck.com>
+# Copyright (C) 2018-2020 Andreas Redmer <andreasredmer@mailchuck.com>
 # 
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -17,6 +17,7 @@
 #-------------------------------------------------------------------------------
 
 export ANDROID_HOME=~/devel/android-sdk-linux/
+export ANDROID_HOME=~/Android/Sdk/
 ./gradlew android assembleRelease
 jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore android_keystore.jks android/build/outputs/apk/android-release-unsigned.apk appleslinger 
 mv android/build/outputs/apk/android-release-unsigned.apk android/build/outputs/apk/android-release-signed.apk

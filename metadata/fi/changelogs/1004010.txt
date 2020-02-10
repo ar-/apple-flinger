@@ -1,0 +1,13 @@
+1.4.10
+  * Käännetyt F-Droidin kuvakaappaukset
+
+1.4.9
+  * Joitain pieniä käännöskorjauksia
+
+1.4.8
+  * Lisätty käännös puolaksi. Kiitos verdulolle.
+  * Lisätty käännös esperantoksi. Kiitos verdulolle.
+
+1.4.7
+  * Talvi on tulossa. Lisätty joitain uusia tasoja.
+  * Minulla ei ollut ideoita. Ole hyvä ja lähetä minulle ideoita uusiksi tasoiksi.

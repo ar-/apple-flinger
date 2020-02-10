@@ -12,4 +12,3 @@
 1.5.0
   * Prestaties toegevoegd
   * bugfix: verhoog het totaal aantal punten niet wanneer ronde herhalingen te wijten zijn aan het verliezen van de computer
-

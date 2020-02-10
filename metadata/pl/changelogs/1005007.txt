@@ -1,0 +1,17 @@
+1.5.7
+  * dodano język baskijski
+  * dodano język brazylijski
+  * dodano język chorwacki
+  * dodano język fiński
+  * dodano język turecki
+
+1.5.6
+  * naprawiono blokowanie się poziomu zimowego 13
+  * dodano język włoski
+  * dodano język szwedzki
+
+1.5.5
+  * strona wiki w utworzonej witrynie, opisująca sposób tworzenia nowych poziomów
+  * Dodano 12 dodatkowych poziomów zimowych
+  * wyświetlanie procentu dodanych osiągnięć przyrostowych
+  * Dodano czas do wyświetlenia na ekranie
