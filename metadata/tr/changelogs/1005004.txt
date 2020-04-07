@@ -1,0 +1,11 @@
+1.5.4
+  * oyundaki krediler ekranına çevirmenler ekledi
+  * Flemenkçe eklendi (weblate'deki Heimen sayesinde)
+  * Galiçyaca eklendi (weblate'deki Iván sayesinde)
+  * İspanyolca çeviri iyileştirildi (weblate'deki Markel sayesinde)
+  * ekran görüntülerinden saydam pikseller kaldırıldı
+
+1.5.3
+  * uyarlanabilir simge eklendi (Android 8 ve üstü)
+  * elma yakınındaki arka plan zoom devre dışı bırakıldı
+  * Norveççe eklendi (weblate'deki Allan sayesinde)
