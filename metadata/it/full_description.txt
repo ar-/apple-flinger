@@ -1,0 +1,29 @@
+Divertente gioco a turni singolo/multigiocatore per momenti appassionanti. Nuovo,
+stimolante e coinvolgente.
+
+Caratteristiche:
+
+- grafiche ad alta risoluzione
+- fisica realistica
+- gioco senza ritardi e fluido (anche su vecchi dispositivi)
+- animazioni dettagliate fini e sistemi di particelle
+- concetto di gioco nuovo e innovativo
+- singolo/multigiocatore
+- open-source al 100% (GPL3)
+
+Si usa una fionda per sparare con le mele. Sii il primo a distruggere l'intera base
+nemica, ma attenzione, l'altro lato risponde. Questo gioco ha un mix equilibrato di
+puzzle, strategia, pazienza e azione.
+
+È per uno o due giocatori! Si può giocare contro chiunque vicino a voi o contro voi 
+stessi. È inoltre possibile giocare contro un avversario controllato dal computer. 
+Più funzioni, più divertimento e più livelli sono in arrivo.
+
+tassi di età internazionali:
+
+* ACB: G (general)
+* ClassInd: L
+* ESRB: E (everyone)
+* PEGI:3
+* USK: 0
+* IARC: 3
