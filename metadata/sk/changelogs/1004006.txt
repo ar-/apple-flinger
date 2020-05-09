@@ -1,0 +1,7 @@
+1.4.6
+  * upravený jazyk ruský (ďakujeme autorovi: Dmitry)
+
+1.4.5
+  * pridaný jazyk francúzsky (ďakujeme autorovi: xin)
+  * pridaná nová lokalizovaná klávesnica pre každý jazyk na zadávanie mena hráča
+  * pridané obrázky obrazovky

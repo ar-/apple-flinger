@@ -1,0 +1,13 @@
+1.4.10
+  * preložené obrázky obrazovky pre fdroid
+
+1.4.9
+  * malé opravy chýb prekladu
+
+1.4.8
+  * pridaný jazyk poľský (ďakujeme autorovi: verdulo)
+  * pridaný jazyk esperanto (ďakujeme autorovi: verdulo)
+
+1.4.7
+  * Zima prichádza. Pridané nové úrovne.
+  * Nemám nové nápady. Prosím, pošlite mi nápady na nové úrovne.
