@@ -1,14 +1,14 @@
 1.4.9
   * Neki manji ispravci u prijevodima
 1.4.8
-  * Dodan prijevod za poljski. Hvala verdulo.
-  * Dodano prijevod za esperanto. Hvala verdulo.
+  * Dodan poljski prijevod. Hvala verdulo.
+  * Dodan prijevod za esperanto. Hvala verdulo.
 1.4.7
-  * Zima dolazi. Dodane su neke nove razine.
-  * Nestalo mi je ideja. Pošaljite mi ideje za nove razine.
+  * Dolazi zima. Dodane su neke nove razine.
+  * Ponestalo mi je ideja. Pošalji mi ideje za nove razine.
 1.4.6
   * Poboljšani ruski prijevod. Hvala Dmitry.
 1.4.5
   * Poboljšani francuski prijevod. Hvala xin.
   * Dodana je nova lokalizirana tipkovnica za svaki jezik za unos imena igrača.
-  * Dodani fdroid snimke ekrana za svaki podržani jezik.
+  * Dodane su fdroid snimke ekrana za svaki podržani jezik.
