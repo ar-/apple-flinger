@@ -6,6 +6,14 @@
    * uklonjeni su prozirni piksli iz snimki ekrana  
 
 1.5.3
-   * dodana je prilagodljiva ikona (Android 8 i novije)
-   * onemogućeno je pozadinsko zumiranje u blizini jabuke
-   * dodan je norveški jezik (Hvala, Allan na weblateu)
+  * dodana je prilagodljiva ikona (Android 8 i noviji)
+  * onemogućeno pozadinsko zumiranje blizu jabuke
+  * dodan je norveški jezik (Hvala, Allan na weblate)
+
+1.5.2
+  * dodan je portugalski prijevod
+  * pobijednik i najviši bodovi su šareniji
+  * aktivirani hardverski back-gumb za napuštanje igre ili prijelaz na prethodni zaslon
+  * ispravljeni poljski i esperanto prijevodi (Verdulo)
+  * bugfix: izbor jezika ponekad ne radi
+  * dodane su GPL3 i gitlab značke pozadini

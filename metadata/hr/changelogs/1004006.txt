@@ -1,5 +1,6 @@
 1.4.6
   * Poboljšani ruski prijevod. Hvala Dmitry.
+
 1.4.5
   * Poboljšani francuski prijevod. Hvala xin.
   * Dodana je nova lokalizirana tipkovnica za svaki jezik za unos imena igrača.

@@ -1,11 +1,14 @@
 1.4.8
   * Dodan poljski prijevod. Hvala verdulo.
   * Dodan prijevod za esperanto. Hvala verdulo.
+
 1.4.7
   * Dolazi zima. Dodane su neke nove razine.
   * Ponestalo mi je ideja. Pošalji mi ideje za nove razine.
+
 1.4.6
   * Poboljšani ruski prijevod. Hvala Dmitry.
+
 1.4.5
   * Poboljšani francuski prijevod. Hvala xin.
   * Dodana je nova lokalizirana tipkovnica za svaki jezik za unos imena igrača.
