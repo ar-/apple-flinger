@@ -11,12 +11,13 @@ zorlu and bağımlılık yapıcı.
 * tek/çok kişilik
 * %100 açık kaynak (GPL3)
 
-Elmalarla atış yapmak için bir sapan kullanıyorsunuz. Bütün düşman üssünü ilk yok eden olun, fakat dikkat edin, diğer taraf karşı atış yapıyor. Bu oyun bulmaca, strateji, sabır ve aksiyonun
-dengeli bir birleşimidir.
+Elmalarla atış yapmak için bir sapan kullanıyorsunuz. Bütün düşman
+üssünü ilk yok eden olun, fakat dikkat edin, diğer taraf karşı atış yapıyor.
+Bu oyun bulmaca, strateji, sabır ve aksiyonun dengeli bir birleşimidir.
 
-Bu bir ya da iki oyuncu içindir! Bunu yanınızda oturan herhangi bir kişiye karşı
-oynayabilirsiniz - ya da kendinize karşı. Birgisayar tarafından kontrol edilen bir rakibe
-karşı da oynayabilirsiniz. Daha fazla özellik, daha fazla eğlence ve daha fazla seviye yakında gelecek.
+Bu bir ya da iki oyuncu içindir! Bunu yanınızda oturan herhangi bir kişiye - ya da
+kendinize karşı oynayabilirsiniz. Bilgisayar tarafından yönlendirilen bir rakibe karşı
+da oynayabilirsiniz. Daha fazla özellik, eğlence ve seviye yakında gelecek.
 
 uluslararası yaş derecelendirmeleri:
 
