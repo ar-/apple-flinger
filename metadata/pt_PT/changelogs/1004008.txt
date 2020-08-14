@@ -1,0 +1,11 @@
+1.4.8
+  * Adicionada tradução em polaco e esperanto, por verdulo.
+1.4.7
+  * O inverno está a chegar. Adicionado alguns níveis novos.
+  * Fiquei sem ideias. Por favor envie-me ideias para novos níveis.
+1.4.6
+  * Tradução russa melhorada, por Dmitry.
+1.4.5
+  * Tradução melhorada do francês, por xin.
+  * Adicionado teclado localizado para cada idioma para inserir nomes de jogadores.
+  * Adicionadas capturas de ecrã no F-Droid para cada idioma suportado.

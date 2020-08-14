@@ -1,0 +1,5 @@
+NOTA: ESTA APLICAÇÃO NÃO CONTÉM CARACTERÍSTICAS INDESEJÁVEIS. Os avisos que vê abaixo são devido a um erro no F-Droid.
+
+1.4.11
+  * pequenas correções de tradução, por Verdulo
+  * atualizada a versão-alvo do SDK para a loja idiota do Google Play

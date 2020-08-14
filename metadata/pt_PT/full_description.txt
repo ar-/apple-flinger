@@ -5,7 +5,7 @@ Funcionalidades:
 
 * qualidade de gráficos de alta resolução
 * física realista
-* jogabilidade sem atrasos e suave (mesmo nos dispositivos antigos)
+* jogabilidade sem atrasos e suave (mesmo nos aparelhos antigos)
 * animações detalhadas nítidas e sistemas de partículas
 * conceito de jogo inovador e totalmente novo
 * um ou vários jogadores
