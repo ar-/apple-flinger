@@ -1,25 +1,25 @@
-Harika zamanlar için raund tabanlı eğlenceli tek/çok kişilik oyun. Yeni,
-zorlu and bağımlılık yapıcı.
+Harika zamanlar için tur tabanlı eğlenceli tek/çok kişilik oyun. Yeni,
+zorlu ve bağımlılık yapıcı.
 
 Özellikler:
 
 * yüksek çözünürlükte kaliteli grafikler
-* gerçekçi fizik
+* gerçekçi fizik kuralları
 * gecikmesiz ve pürüzsüz oyun deneyimi (eski cihazlarda bile)
-* ince ayrıntılı animasyonlar ve partikül sistemleri
-* yepyeni ve inovatif oyun konsepti
+* ince ayrıntılı animasyonlar ve parçacık sistemleri
+* yepyeni ve yenilikçi oyun kavramı
 * tek/çok kişilik
-* %100 açık kaynak (GPL3)
+* %100 açık kaynaklı (GPL3)
 
 Elmalarla atış yapmak için bir sapan kullanıyorsunuz. Bütün düşman
 üssünü ilk yok eden olun, fakat dikkat edin, diğer taraf karşı atış yapıyor.
 Bu oyun bulmaca, strateji, sabır ve aksiyonun dengeli bir birleşimidir.
 
-Bu bir ya da iki oyuncu içindir! Bunu yanınızda oturan herhangi bir kişiye - ya da
+Bu bir veya iki oyuncu içindir! Bunu yanınızda oturan herhangi bir kişiye - veya
 kendinize karşı oynayabilirsiniz. Bilgisayar tarafından yönlendirilen bir rakibe karşı
 da oynayabilirsiniz. Daha fazla özellik, eğlence ve seviye yakında gelecek.
 
-uluslararası yaş derecelendirmeleri:
+Uluslararası yaş derecelendirmeleri:
 
 * ACB: G (genel)
 * ClassInd: L

@@ -7,4 +7,4 @@
   * GPL3 ve gitlab rozetleri eklendi
 
 1.5.1
-  * oyun aktif olarak oynandığı sürece ekranı biraz daha açık tut
+  * oyun etkin olarak oynandığı sürece ekranı biraz daha açık tut

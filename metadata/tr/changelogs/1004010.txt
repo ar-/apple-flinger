@@ -1,5 +1,5 @@
 1.4.10
-  * Fdroid için çevrilmiş ekran görüntüleri
+  * Fdroid için ekran görüntüleri çevrildi
 
 1.4.9
   * Bazı küçük çeviri düzeltmeleri

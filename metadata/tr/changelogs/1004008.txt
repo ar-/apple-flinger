@@ -11,5 +11,5 @@
 
 1.4.5
   * Fransızca çeviri iyileştirildi. xin'e teşekkürler.
-  * Oyuncu adlarını girmek için her dil için yeni bir yerelleştirilmiş Klavye eklendi.
-  * Ekran görüntüleri eklendi.
+  * Oyuncu adlarını girmek için her dil için yeni yerelleştirilmiş klavye eklendi.
+  * Desteklenen her dil için ekran görüntüleri eklendi.

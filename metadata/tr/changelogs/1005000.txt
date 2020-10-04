@@ -1,6 +1,6 @@
 1.5.0
   * başarılar eklendi
-  * hata düzeltme: bilgisayara karşı kaybetme nedeniyle raund tekrarlandığında toplam puanları arttırma
+  * hata düzeltme: bilgisayara karşı kaybetme nedeniyle tur tekrarlandığında toplam puanları arttırma
 
 1.4.11
   * Küçük çeviri düzeltmeleri. Verdulo'ya tekrar teşekkürler.

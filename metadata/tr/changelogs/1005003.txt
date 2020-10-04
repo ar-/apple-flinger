@@ -1,6 +1,6 @@
 1.5.3
   * uyarlanabilir simge eklendi (Android 8 ve üstü)
-  * elma yakınındaki arka plan zoom devre dışı bırakıldı
+  * elma yakınındaki arka plan yakınlaştırma devre dışı bırakıldı
   * Norveççe eklendi (weblate'deki Allan sayesinde)
 
 1.5.2
