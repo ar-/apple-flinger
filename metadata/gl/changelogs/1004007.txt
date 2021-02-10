@@ -1,9 +1,9 @@
 1.4.7
-  * Vén o inverno.  Engadíronse algúns niveis novos.
-  * Fiquei sen ideas.  Por favor, envíame ideas para novos niveis.
+  * Vén o inverno. Engadíronse algúns niveis novos.
+  * Fiquei sen ideas. Por favor, envíame ideas para novos niveis.
 1.4.6
-  * Mellor tradución rusa.  Grazas a Dmitry.
+  * Mellor tradución rusa. Grazas a Dmitry.
 1.4.5
-  * Mellor tradución ó francés.  Grazas a xin.
+  * Mellor tradución ó francés. Grazas a xin.
   * Engadiuse un novo teclado localizado para cada lingua para inserir os nomes.
   * Engadíronse capturas de pantalla fdroid para cada lingua compatíbel.

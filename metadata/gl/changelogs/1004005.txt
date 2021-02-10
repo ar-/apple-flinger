@@ -1,4 +1,4 @@
 1.4.5
-  * Mellor tradución ó francés.  Grazas a xin.
+  * Mellor tradución ó francés. Grazas a xin.
   * Engadiuse un novo teclado localizado para cada lingua para inserir os nomes.
   * Engadíronse capturas de pantalla fdroid para cada lingua compatíbel.
