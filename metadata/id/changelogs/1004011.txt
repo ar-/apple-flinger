@@ -3,4 +3,3 @@ CATATAN: APLIKASI INI TIDAK MENGANDUNG ANTIFESATUR ATAU FITUR YANG TIDAK DIINGIN
 1.4.11
   * Perbaikan terjemahan kecil. Berkat verdulo lagi.
   * Versi SDK target yang telah ditingkatkan untuk toko google play yang bodoh
-
