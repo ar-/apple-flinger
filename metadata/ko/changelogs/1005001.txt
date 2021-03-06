@@ -8,4 +8,3 @@
 1.4.11
   * 사소한 번역본 수정. verdulo 덕분에 다시.
   * idiotic google play 스토어 용 타겟 SDK 버전
-
