@@ -1,14 +1,18 @@
 1.4.9
   * Beberapa perbaikan terjemahan minor
+
 1.4.8
-  * Ditambahkan terjemahan Polandia.  Terima kasih untuk verdulo.
-  * Ditambahkan terjemahan Esperanto.  Terima kasih untuk verdulo.
+  * terjemahan Polandia.  Oleh verdulo.
+  * terjemahan Esperanto.  Oleh verdulo.
+
 1.4.7
   * Musim dingin datang.  Menambahkan beberapa level baru.
 Aku kehabisan ide.  Kirimkan ide untuk level baru.
+
 1.4.6
-  * Peningkatan terjemahan bahasa Rusia.  Terima kasih untuk Dmitry.
+  * Peningkatan terjemahan bahasa Rusia.  Oleh Dmitry.
+
 1.4.5
-  * Terjemahan Prancis yang lebih baik.  Terima kasih untuk xin
-  * Menambahkan Keyboard lokal baru untuk setiap bahasa untuk memasukkan nama pemain.
-  * Ditambahkan fdroid screenshot untuk setiap bahasa yang didukung.
+  * Perbaikan terjemahan Prancis.  Oleh xin
+  * Keyboard lokal baru untuk setiap bahasa untuk memasukkan nama pemain.
+  * fdroid screenshot untuk setiap bahasa yang didukung.

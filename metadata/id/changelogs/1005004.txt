@@ -1,0 +1,19 @@
+1.5.4
+ * kredit penerjemah dalam game
+ * bahasa Belanda (Heimen)
+ * bahasa Galicia (iván)
+ * perbaikan bahasa Spanyol (Markel)
+ * Menghapus piksel transparan dari screenshot
+
+1.5.3
+ * ikon adaptif (Android 8 atau ^ )
+ * Zoom latar belakang dimatikan di dekat apel
+ * bahasa Norwegia (Allan)
+
+1.5.2
+ * bahasa Portugis
+ * Pemenang dan poin tertinggi lebih berwarna
+ * Tombol kembali perangkat keras kini diaktifkan
+ * bahasa Polandia dan Esperanto (Verdulo)
+ * perbaikan bug
+ * Lencana GPL3 dan gitlab
