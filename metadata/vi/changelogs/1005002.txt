@@ -12,4 +12,3 @@
 1.5.0
   * thành tích bổ sung
   * bugfix: không tăng điểm tổng thể khi lặp lại vòng do mất máy tính
-

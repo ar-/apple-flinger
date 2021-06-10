@@ -5,4 +5,3 @@
 1,4,11
   * Sửa bản dịch nhỏ. Nhờ verdulo một lần nữa.
   * Phiên bản SDK được nhắm mục tiêu nâng lên cho cửa hàng play google play
-

@@ -1,0 +1,25 @@
+Một trò chơi đơn/nhiều người chơi vui nhộn dựa vào hình tròn.Mới,
+thử thách và thu hút.
+
+Tính năng:
+
+* Độ phân giải cao và đồ họa chất lượng
+* Vật lí thực tế
+* Không giật lag, trải nghiệm mượt mà(Kể cả thiết bị cũ)
+* Hình ảnh động chi tiết tốt và hệ thống hạt
+* Khái niệm trò chơi hoàn toàn mới và sáng tạo
+* Đơn/Nhiều người chơi
+* 100% mã nguồn mở (GPL3)
+
+Bạn sử dụng súng cao su để bắn táo. Hãy là người đầu tiên tiêu diệt căn cứ của địch, nhưng hãy lưu ý, địch có thể bắn trả. Trò chơi này có sự kết hợp cân bằng giữa câu đố, chiến lược, kiên nhẫn và hành động.
+
+Cái này dành cho một hoặc hai người chơi! Bạn có thể chơi trò này với bất kỳ ai ngồi tiếp theo với bạn - hoặc chống lại chính bạn. Bạn cũng có thể chơi với một máy tính được điều khiển phản đối. Nhiều tính năng hơn, thú vị hơn và nhiều cấp độ hơn sẽ sớm ra mắt.
+
+international age ratings:
+
+* ACB: G (general)
+* ClassInd: L
+* ESRB: E (everyone)
+* PEGI:3
+* USK: 0
+* IARC: 3
