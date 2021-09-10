@@ -1,5 +1,6 @@
 1.4.6
   * Tradução russa melhorada, por Dmitry.
+
 1.4.5
   * Tradução melhorada do francês, por xin.
   * Adicionado teclado localizado para cada idioma para inserir nomes de jogadores.
