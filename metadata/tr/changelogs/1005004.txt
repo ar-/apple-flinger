@@ -1,6 +1,6 @@
 1.5.4
   * oyundaki krediler ekranına çevirmenler ekledi
-  * Flemenkçe eklendi (weblate'deki Heimen sayesinde)
+  * Felemenkçe eklendi (weblate'deki Heimen sayesinde)
   * Galiçyaca eklendi (weblate'deki Iván sayesinde)
   * İspanyolca çeviri iyileştirildi (weblate'deki Markel sayesinde)
   * ekran görüntülerinden saydam pikseller kaldırıldı
