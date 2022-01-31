@@ -1,0 +1,7 @@
+1.5.0
+  * pridané úspechy
+  * opravená chyba: nepripočítaj body do celkového hodnotenia, keď sa kolo opakuje po prehratí pro počítaču
+
+1.4.1
+  * malé opravy chýb v preklade. Opäť ďakujeme verdulovi.
+  * zvýšená verzia SDK, aby bol google play spokojný

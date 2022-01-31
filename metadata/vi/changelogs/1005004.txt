@@ -1,0 +1,19 @@
+1.5.4
+  * đã thêm những người phiên dịch đến màn hình credits trong game
+  * thêm tiếng Đức (Cảm ơn Heimen trên weblate)
+  * thêm tiếng Galicia (Cảm ơn Iván trên weblate)
+  * cải thiện bản dịch tiếng Tây Ban Nha (cám ơn Markel trên weblate)
+  * đã xóa pixel trong suốt khỏi ảnh chụp màn hình
+  
+1.5.3
+  * đã thêm biểu tượng thích ứng (Android 8 trở lên)
+  * đã tắt tính năng thu phóng nền gần quả táo
+  * thêm tiếng norwegian (thanks to Allan on weblate)
+
+1
+1
+1
+1
+1
+1
+1

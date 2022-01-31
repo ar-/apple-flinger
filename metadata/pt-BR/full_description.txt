@@ -1,30 +1,29 @@
-Jogo engraçado, para 1 ou vários jogadores, por turnos.
-Novo, desafiante e viciante.
+Jogo engraçado de um ou vários jogadores para momentos fantásticos.
+Novo estimulante e aditivo.
 
 Funcionalidades:
 
-* gráficos em alta resolução
+* qualidade de gráficos de alta resolução
 * física realista
-* jogabilidade fluída e sem atrasos de rede (mesmo em dispositivos antigos)
-* animações detalhadas e sistemas de partículas
-* conceito novo e inovador
-* 1 ou vários jogadores
-* 100% código-fonte aberto (GPL3)
+* jogabilidade sem atrasos e suave (mesmo nos aparelhos antigos)
+* animações detalhadas nítidas e sistemas de partículas
+* conceito de jogo inovador e totalmente novo
+* um ou vários jogadores
+* 100% de código aberto (GPL3)
 
-Atira maças com uma fisga. Sê o primeiro a derrotar o adversário, mas atenção,
-o outro lado também tem uma fisga.  Este jogo é uma mistura equilibrada
-de quebra-cabeças, estratégia, paciência e ação.
+Use um estilingue para atirar as maças. Seja o primeiro a destruir toda a base do
+ inimigo, mas tenha cuidado, o outro lado irá revidar. Este jogo tem uma mistura
+balanceada de enigma, estratégia, paciência e ação.
 
-Isto é para 1 ou vários jogadores! Podes jogar contra qualquer um ao teu lado,
-ou contra ti mesmo. Também podes jogar contra um adversário controlado
-pelo computador. Chegarão em breve mais funcionalidades,
-mais diversão e mais níveis.
+O jogo é para um ou vários jogadores! Pode jogar contra qualquer pessoa que esteja ao seu
+lado - ou contra si mesmo. Também pode jogar contra um oponente controlado por
+um computador. Mais funcionalidades, mais diversão e mais níveis em breve.
 
+Classificações de idade internacionais:
 
-Classificação internacional de idades:
 * ACB: G (geral)
 * ClassInd: L
 * ESRB: E (todos)
-* PEGI: 3
+* PEGI:3
 * USK: 0
 * IARC: 3

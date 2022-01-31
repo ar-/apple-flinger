@@ -1,0 +1,5 @@
+Táto aplikácia neobsahuje anti-funkcie alebo nechcené funkcie. To, čo vidíte nižšie, je chyba v F-Droide.
+
+1.4.11
+  * Malé opravy prekladu. Opäť vďaka, verdulo.
+  * Zvýšená verzia SDK pre blbý google playstore

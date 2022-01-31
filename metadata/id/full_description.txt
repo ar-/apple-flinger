@@ -1,0 +1,29 @@
+Permainan tunggal / multipemain berbasis ronde lucu untuk hiburan. Baru,
+menantang dan membuat ketagihan.
+
+Fitur:
+
+* Grafik berkualitas resolusi tinggi
+* Fisika realistis
+* gameplay yang bebas lag dan mulus (bahkan di perangkat lama)
+* Animasi detail halus dan sistem partikel
+* Konsep permainan baru dan inovatif
+* tunggal / multipemain
+* 100% sumber terbuka (GPL3)
+
+Anda menggunakan ketapel untuk menembak dengan apel. Jadilah yang pertama untuk menghancurkan seluruh musuh
+dasar, tetapi hati-hati, sisi lain menembak ke belakang. Game ini memiliki perpaduan yang seimbang
+teka-teki, strategi, kesabaran dan tindakan.
+
+Bisa main sendiri atau berdua! Anda dapat memainkan ini melawan siapa saja yang duduk di sebelahnya
+untuk Anda - atau terhadap diri Anda sendiri. Anda juga bisa bermain melawan komputer yang dikendalikan
+lawan. Lebih banyak fitur, lebih banyak kesenangan, dan lebih banyak level akan segera hadir.
+
+peringkat usia internasional:
+
+* ACB: G (umum)
+* ClassInd: L
+* ESRB: E (semua orang)
+* PEGI: 3
+* USK: 0
+* IARC: 3

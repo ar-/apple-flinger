@@ -1,14 +1,14 @@
 1.5.2
-  * adicionado idioma português
-  * vencedor e pontos mais altos mais coloridos
-  * botão voltar ativado: sair ou ecrã anterior
-  * traduções atualizadas: polaco e esperanto por Verdulo
+  * adicionada tradução para Português
+  * vencedor e recorde de pontos mais coloridos
+  * botão voltar ativado: sair ou voltar a tela anterior
+  * traduções atualizadas: Polonês e Esperanto (por Verdulo)
   * correção na seleção de idioma
   * adicionadas etiquetas GPL3 e GitLab
 
 1.5.1
-  * manter ecrã ligado mais tempo, se estiverem a jogar
+  * manter a tela ligada por mais tempo, se estiverem a jogar
 
 1.5.0
-  * adicionadas proezas
-  * correção: não aumentar pontos globais quando o turno se repete por perder contra o computador
+  * Conquistas adicionadas
+  * Correção: não aumentar pontos globais quando o turno se repete por perder de novo contra o computador

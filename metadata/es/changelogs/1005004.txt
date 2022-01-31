@@ -1,0 +1,11 @@
+1.5.4
+  * añadidos traductores a los créditos finales del juego
+  * añadido el idioma holandés (gracias a Heimen en Weblate)
+  * añadido el idioma gallego (gracias a Iván en Weblate)
+  * mejorada la traducción al español (gracias a Markel en Weblate)
+  * píxeles transparentes de las capturas de pantalla eliminados
+  
+1.5.3
+  * añadido icono de adaptación (Android 8 y superior)
+  * desactivado el zoom de fondo cerca de la manzana
+  * añadido el idioma noruego (gracias a Allan en Weblate)

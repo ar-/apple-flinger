@@ -1,0 +1,15 @@
+1.4.8
+  * pridaný jazyk poľský (ďakujeme autorovi: verdulo)
+  * pridaný jazyk esperanto (ďakujeme autorovi: verdulo)
+
+1.4.7
+  * Zima prichádza. Pridané nové úrovne.
+  * Nemám nové nápady. Prosím, pošlite mi nápady na nové úrovne.
+
+1.4.6
+  * upravený jazyk ruský (ďakujeme autorovi: Dmitry)
+
+1.4.5
+  * pridaný jazyk francúzsky (ďakujeme autorovi: xin)
+  * pridaná nová lokalizovaná klávesnica pre každý jazyk na zadávanie mena hráča
+  * pridané obrázky obrazovky pre každý podporovaný jazyk

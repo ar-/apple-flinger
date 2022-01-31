@@ -1,4 +1,4 @@
 1.4.5
-  * Tradução melhorada do francês, por xin.
-  * Adicionado teclado localizado para cada idioma para inserir nomes de jogadores.
-  * Adicionadas capturas de ecrã no F-Droid para cada idioma suportado.
+  * Tradução para Francês melhorada. Obrigado xin.
+  * Adicionado novo teclado localizado para cada idioma para inserir nomes de jogadores.
+  * Adicionado capturas de tela na F-droid para cada idioma suportado.

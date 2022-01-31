@@ -12,4 +12,3 @@
 1.5.0
   * logros añadidos
   * corrección de errores: no se incrementan los puntos generales cuando se repite la ronda debido a la pérdida contra la computadora
-

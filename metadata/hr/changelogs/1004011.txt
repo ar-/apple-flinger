@@ -1,5 +1,5 @@
-NAPOMENA: OVAJ APP NE SADRŽI ANTIFATURA ILI NAJVEĆI ZNAČAJKE. Ono što vidite u nastavku je pogreška u F-Droidu.
+NAPOMENA: OVAJ DODATAK NE SADRŽAVA KONTRA-FUNKCIJE ILI NEŽELJENE FUNKCIJE. Ono što se vidi niže dolje je greška u F-Droidu.
 
 1.4.11
-  * Manje popravke prijevoda. Zahvaljujući verdulo opet.
-  * Uložena verzija SDK cilja za idiotski Google Play trgovinu
+   * Manji popravci prijevoda. Ponovo hvala, verdulo.
+   * Aktualizirana ciljna verzija SDK za idiotski Google playstore

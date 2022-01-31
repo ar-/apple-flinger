@@ -1,4 +1,4 @@
 1.4.5
-  * Geliştirilmiş Fransızca çeviri.  Xin sayesinde.
-  * Oyuncu isimleri girmek için her dil için yeni bir yerelleştirilmiş Klavye eklendi.
-  * Her desteklenen dil için fdroid ekran görüntüleri eklendi.
+  * Fransızca çeviri iyileştirildi. xin'e teşekkürler.
+  * Oyuncu adlarını girmek için her dil için yeni bir yerelleştirilmiş klavye eklendi.
+  * Desteklenen her dil için fdroid ekran görüntüleri eklendi.

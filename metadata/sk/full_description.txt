@@ -1,0 +1,29 @@
+Zábavná jednoduchá hra pre jedného alebo dvoch hráčov.
+Nová, podnetná a návyková.
+
+Môžete sa tešiť na:
+
+* kvalitná grafika vo vysokom rozlíšení
+* realistická fyzika
+* plynulá hra bez sekania (aj na starších zariadeniach)
+* detailné animácie a čiastkové systémy
+* úplne nový a inovatívny koncept hry
+* jeden hráč/dvaja hráči
+* 100% otvorený zdrojový kód (GPL3)
+
+Strielate jablká prakom. Hráč, ktorý ako prvý zničí celú nepriateľskú základňu, vyhráva.
+Ale pozor, nepriateľ striela tiež! Táto hra poskytuje vyvážený mix
+záhady, stratégie,  trpezlivosti a akcie.
+
+Hra je pre jedného alebo dvoch hráčov. Hráte proti komukoľvek, kto sedí vedľa vás,
+alebo proti sebe samému. Môžete tiež hrať proti počítaču.
+Viac možností, viac zábavy a viac úrovní dodáme už čoskoro!
+
+Medzinárodné vekové hodnotenia:
+
+* ACB: G (general)
+* ClassInd: L
+* ESRB: E (everyone)
+* PEGI:3
+* USK: 0
+* IARC: 3

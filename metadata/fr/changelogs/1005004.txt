@@ -1,0 +1,11 @@
+1.5.4
+  * Ajout des traducteurs à l'écran des crédits du jeu
+  * Ajout des traductions en néerlandais (merci à Heimen sur Weblate)
+  * Ajout des traduction en galicien (merci à Iván sur Weblate)
+  * Amélioration des traductions en espagnol (merci à Markel sur Weblate)
+  * Suppression des pixels transparents dans les captures d'écran
+  
+1.5.3
+  * Ajout d'une icône adaptative (Android 8 et ultérieur)
+  * Désactivation du zoom de l'arrière-plan près de la pomme
+  * Ajout des traductions en norvégie

@@ -1,0 +1,14 @@
+1.5.4
+  * prekladatelia pridaní do zoznamu poďakovaní v hre
+  * pridaný jazyk galícijský (ďakujeme Ivánovi na weblate)
+  * vylepšený jazky španielsky (ďakujeme Markelovi na weblate)
+  * odstránené prehliadne pixely z fotiek obrazovky
+
+1.5.3
+  * pridaná adaptívna ikona (Android 8 a vyššie)
+  * zakázané priblíženie pozadia pri jablku
+  * pridaný jazyk nórsky (ďakujeme Allanovi na weblate)
+
+1.5.2
+  * pridaný jazyk portugalský (ďakujeme Ivánovi na weblate)
+  * pridané viac farebnosti víťazovi

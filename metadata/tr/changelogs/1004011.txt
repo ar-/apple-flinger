@@ -1,5 +1,5 @@
-NOT: BU APP ANTIFEATURES VEYA İSTENMEYEN ÖZELLİKLERİ İÇERMEZ. Aşağıda gördüğünüz F-Droid'teki bir hatadır.
+NOT: BU UYGULAMA KARŞI ÖZELLİKLER VEYA İSTENMEYEN ÖZELLİKLER İÇERMEZ. Aşağıda gördüğünüz F-Droid'teki bir hatadır.
 
 1.4.11
-  * Küçük çeviri düzeltmeleri. Yine verdulo'ya teşekkürler.
-  * Idiotic google oyun mağazası için hedef SDK sürümü başlatıldı
+  * Küçük çeviri düzeltmeleri. Verdulo'ya tekrar teşekkürler.
+  * Salak google play store için hedef SDK sürümü yükseltildi
