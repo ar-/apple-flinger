@@ -1,10 +1,10 @@
 1.5.1
-  * Oyun aktif olarak oynatıldığı sürece ekranı biraz daha uzun tutun.
+  * oyun etkin olarak oynandığı sürece ekranı biraz daha açık tut
 
 1.5.0
   * başarılar eklendi
-  * bugfix: bilgisayara karşı kaybetme nedeniyle yuvarlak tekrarlar zaman genel puan arttırma
+  * hata düzeltme: bilgisayara karşı kaybetme nedeniyle tur tekrarlandığında toplam puanları arttırma
 
 1.4.11
-  * Küçük çeviri düzeltmeleri. Yine verdulo'ya teşekkürler.
-  * Idiotic google oyun mağazası için hedef SDK sürümü başlatıldı
+  * Küçük çeviri düzeltmeleri. Verdulo'ya tekrar teşekkürler.
+  * Salak google play store için hedef SDK sürümü yükseltildi

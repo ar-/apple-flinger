@@ -1,5 +1,5 @@
 /*******************************************************************************
- * Copyright (C) 2015-2020 Andreas Redmer <ar-appleflinger@abga.be>
+ * Copyright (C) 2015-2022 Andreas Redmer <ar-appleflinger@abga.be>
  * Copyright (C) 2017 Сухичев Михаил Иванович <sukhichev@yandex.ru>
  * 
  * This program is free software: you can redistribute it and/or modify
@@ -81,8 +81,8 @@ public class AssetTest {
 	@Test
 	public void isI18NWorkingForFR() {
 		I18N.loadLanguageBundle("fr");
-		assertEquals("Touche l'écran pour continuer", I18N.s("touchScreenToContinue"));
-		assertEquals("JEU TERMINÉ", I18N.s("gameOver"));
+		assertEquals("Touchez l'écran pour continuer", I18N.s("touchScreenToContinue"));
+		// assertEquals("JEU TERMINÉ", I18N.s("gameOver"));
 	}
 	
 	@Test
@@ -110,7 +110,7 @@ public class AssetTest {
 	public void isI18NWorkingForPT() {
 		I18N.loadLanguageBundle("pt");
 		assertEquals("Não", I18N.s("no"));
-		assertEquals("entrada necessária", I18N.s("inputRequired"));
+		assertEquals("digite", I18N.s("inputRequired"));
 	}
 	
 	@Test

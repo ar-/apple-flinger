@@ -1,0 +1,29 @@
+Divertido juego para un solo jugador o para varios, para momentos increíbles. Nuevo,
+desafiante y adictivo.
+
+Características:
+
+* gráficos de calidad de alta resolución
+* física realista
+* juego sin retrasos y sin problemas (incluso en dispositivos antiguos)
+* finas y detalladas animaciones y sistemas de partículas
+* un nuevo e innovador concepto de juego
+* un solo jugador/multijugador
+* 100% código abierto (GPL3)
+
+Usas una honda para disparar con manzanas. Sé el primero en destruir a todo la base
+enemiga, pero estate alerta, el otro lado devuelve los disparos. Este juego tiene una mezcla equilibrada de
+rompecabezas, estrategia, paciencia y acción.
+
+¡Esto es para uno o dos jugadores! Puedes jugar esto contra cualquiera que se siente al lado
+tuya... o contra ti mismo. También puedes jugar contra un oponente controlado
+por ordenador. Pronto habrá más características, más diversión y más niveles.
+
+clasificaciones internacionales por edades:
+
+* ACB: G (general)
+* ClassInd: L
+* ESRB: E (todos)
+* PEGI:3
+* USK: 0
+* IARC: 3

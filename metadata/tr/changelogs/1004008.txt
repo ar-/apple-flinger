@@ -1,12 +1,15 @@
 1.4.8
   * Lehçe çeviri eklendi.  Verdulo'ya teşekkürler.
-  * Esperanto tercümesi eklendi.  Verdulo'ya teşekkürler.
+  * Esperanto  eklendi.  Verdulo'ya teşekkürler.
+
 1.4.7
-  * Kış geliyor.  Bazı yeni düzeyler eklendi.
-  * Fikirler tükendi.  Lütfen bana yeni seviyeler için fikir gönder.
+  * Kış geliyor.  Bazı yeni seviyeler eklendi.
+  * Fikirlerim tükendi.  Lütfen bana yeni seviyeler için fikirler yollayın.
+
 1.4.6
-  * Geliştirilmiş Rusça çeviri.  Dmitry'ye teşekkürler.
+  * Rusça çeviri iyileştirildi.  Dmitry'ye teşekkürler.
+
 1.4.5
-  * Geliştirilmiş Fransızca çeviri.  Xin sayesinde.
-  * Oyuncu isimleri girmek için her dil için yeni bir yerelleştirilmiş Klavye eklendi.
-  * Her desteklenen dil için fdroid ekran görüntüleri eklendi.
+  * Fransızca çeviri iyileştirildi. xin'e teşekkürler.
+  * Oyuncu adlarını girmek için her dil için yeni yerelleştirilmiş klavye eklendi.
+  * Desteklenen her dil için ekran görüntüleri eklendi.

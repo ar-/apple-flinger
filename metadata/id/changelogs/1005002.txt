@@ -3,7 +3,7 @@
   * membuat pemenang dan poin tertinggi lebih berwarna
   * tombol kembali perangkat keras yang diaktifkan untuk meninggalkan game atau pergi ke layar sebelumnya
   * Terjemahan Polandia dan Esperanto (oleh Verdulo)
-  * perbaikan bug: pemilihan bahasa terkadang tidak berfungsi
+  * perbaikan bug
   * menambahkan lencana GPL3 dan gitlab ke latar belakang
 
 1.5.1
@@ -11,5 +11,4 @@
 
 1.5.0
   * Menambahkan pencapaian
-  * perbaikan bug: tidak menaikkan keseluruhan poin ketika putaran berulang karena kalah melawan komputer
-
+  * perbaikan bug

@@ -1,6 +1,7 @@
 1.4.6
-  * Tradução russa melhorada, por Dmitry.
+  * Tradução russa melhorada, Obrigado Dmitry.
+
 1.4.5
-  * Tradução melhorada do francês, por xin.
+  * Tradução do Francês melhorada. Obrigado xin.
   * Adicionado teclado localizado para cada idioma para inserir nomes de jogadores.
-  * Adicionadas capturas de ecrã no F-Droid para cada idioma suportado.
+  * Adicionadas capturas de tela no F-Droid para cada idioma suportado.

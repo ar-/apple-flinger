@@ -3,4 +3,3 @@ UWAGA: NINIEJSZA APLIKACJA NIE ZAWIERA ANTYFUZYCJI LUB NIEPOTRZEBNYCH FUNKCJI. P
 1.4.11
   * Drobne poprawki tłumaczeń. Dzięki ponownie verdulo.
   * Wzmocniona docelowa wersja SDK dla idiotycznego sklepu Google Play
-

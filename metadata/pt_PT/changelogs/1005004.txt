@@ -1,0 +1,6 @@
+1.5.4
+  * adicionados tradutores ao ecrã de créditos no jogo
+  * adicionado o idioma holandês (obrigado a Heimen no weblate)
+  * adicionado o idioma galaico (obrigado a Iván no weblate)
+  * melhoarada a tradução em espanhol (obrigado a Markel no weblate)
+  * removidos os píxeis transparentes das capturas de ecrã
