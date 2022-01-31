@@ -1,0 +1,13 @@
+1.5.2
+  * pridaný jazyk portugalský (ďakujeme Ivánovi na weblate)
+  * pridané viac farebnosti víťazovi a najvyššiemu počtu bodov
+  * aktivované hardvérové tlačidlo návrat späť na ukončenie hry alebo na návrat do predošlého zobrazenia
+  * opravené preklady jazykov poľského a experanto (autor: Verdulo)
+  * opravená chyba: výber jazyka občas nefungoval
+  * pridaný odkaz na GPL3 a gitlab do pozadia hry
+
+1.5.1
+  * obrazovka zapnutá trochu dlhšie, keď sa hrá aktívne
+
+1.5.0
+  * pridané úspechy

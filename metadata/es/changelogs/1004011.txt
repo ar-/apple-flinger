@@ -3,4 +3,3 @@ NOTA: ESTA APLICACIÓN NO CONTIENE CARACTERÍSTICAS O CARACTERÍSTICAS NO DESEAD
 1.4.11
   * Correcciones de traducción menores. Gracias al verdulo de nuevo.
   * Versión de SDK de destino mejorada para la idiota tienda de Google Play
-

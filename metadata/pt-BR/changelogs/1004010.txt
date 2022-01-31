@@ -1,10 +1,13 @@
 1.4.10
-  * Imagens traduzidas para F-Droid
+  * imagens traduzidas para o F-Droid
+
 1.4.9
   * Algumas pequenas correções de tradução
+
 1.4.8
-  * Adicionada tradução em polaco. Graças ao verdulo.
-  * Adicionada tradução em esperanto. Graças ao verdulo.
+  * Adicionada tradução para Polonês. Obrigado verdulo.
+  * Adicionada tradução para Esperanto. Obrigado verdulo.
+
 1.4.7
-  * O inverno está a chegar. Adicionado alguns níveis novos.
-  * Eu fiquei sem ideias. Por favor, envie-me ideias para novos níveis.
+  * O inverno está chegando. Adicionamos alguns níveis novos.
+  * Eu fiquei sem ideias. Por favor, me enviem ideias para novos níveis.

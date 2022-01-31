@@ -1,18 +1,6 @@
 1.5.4
-  * +nomes dos tradutores
-  * +neerlandês por Heimen
-  * +galego por Iván
-  * +espanhol melhorado por Markel
-  
-1.5.3
-  * +ícone adaptativo para Android 8+
-  * ampliação do fundo desativada perto da maçã
-  * +norueguês por Allan
-
-1.5.2
-  * +português
-  * vencedor e pontos mais altos mais coloridos
-  * botão voltar ativado: sair ou ecrã anterior
-  * traduções atualizadas: polaco e esperanto por Verdulo
-  * correção na seleção de idioma
-  * adicionadas etiquetas GPL3 e GitLab
+  * adicionados tradutores a tela de créditos
+  * adicionado o idioma Holandês (por Heimen no weblate)
+  * adicionado o idioma Galaico (por Iván no weblate)
+  * melhorada a tradução em Espanhol (por Markel no weblate)
+  * removidos os píxeis transparentes das capturas de tela

@@ -1,10 +1,19 @@
 1.5.4
-   * dodani su prevoditelji na prozoru zasluga u igri
-   * dodan je nizozemski jezik (zahvaljujući Heimen na weblate)
-   * dodan je galicijski jezik (zahvaljujući Iván na weblate)
-   * poboljšani španjolski prijevod (zahvaljujući Markelu na web-listi)
-   * uklonili su prozirne piksele iz snimki zaslona  
+   * dodani su prevoditelji na prozoru zasluga igre
+   * dodan je nizozemski jezik (Hvala, Heimen na weblateu)
+   * dodan je galicijski jezik (Hvala, Iván na weblateu)
+   * poboljšani španjolski prijevod (Hvala, Markel na weblateu)
+   * uklonjeni su prozirni piksli iz snimki ekrana  
+
 1.5.3
-   * dodana prilagodljiva ikona (Android 8 i novije)
-   * onemogućeno pozadinsko zumiranje u blizini jabuke
-   * dodan je norveški jezik (zahvaljujući Allanu na weblate)
+  * dodana je prilagodljiva ikona (Android 8 i noviji)
+  * onemogućeno pozadinsko zumiranje blizu jabuke
+  * dodan je norveški jezik (Hvala, Allan na weblate)
+
+1.5.2
+  * dodan je portugalski prijevod
+  * pobijednik i najviši bodovi su šareniji
+  * aktivirani hardverski back-gumb za napuštanje igre ili prijelaz na prethodni zaslon
+  * ispravljeni poljski i esperanto prijevodi (Verdulo)
+  * bugfix: izbor jezika ponekad ne radi
+  * dodane su GPL3 i gitlab značke pozadini

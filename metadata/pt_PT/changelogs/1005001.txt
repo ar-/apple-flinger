@@ -1,0 +1,10 @@
+1.5.1
+  * manter ecrã ligado mais tempo, se estiverem a jogar
+
+1.5.0
+  * adicionadas proezas
+  * correção: não aumentar pontos globais quando o turno se repete por perder contra o computador
+  
+1.4.11
+  * pequenas correções de tradução, por Verdulo
+  * atualizada a versão-alvo do SDK para a loja idiota do Google Play

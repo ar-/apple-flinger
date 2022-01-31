@@ -1,0 +1,29 @@
+Jogo engraçado de um ou vários jogadores para momentos fantásticos.
+Novo estimulante e aditivo.
+
+Funcionalidades:
+
+* qualidade de gráficos de alta resolução
+* física realista
+* jogabilidade sem atrasos e suave (mesmo nos aparelhos antigos)
+* animações detalhadas nítidas e sistemas de partículas
+* conceito de jogo inovador e totalmente novo
+* um ou vários jogadores
+* 100% de código aberto (GPL3)
+
+Utiliza uma fisga para atirar as maças. Seja o primeiro a destruir toda a base do
+ inimigo, mas tenha cuidado, o outro lado responde. Este jogo tem uma mistura
+balanceada de enigma, estratégia, paciência e ação.
+
+Este é para um ou vários jogadores! Pode jogar contra qualquer pessoa que esteja ao seu
+lado - ou contra si mesmo. Também pode jogar contra um computador controlado por
+um oponente. Mais funcionalidades, mais divertimento e mais níveis brevemente.
+
+Classificações de idade internacionais:
+
+* ACB: G (geral)
+* ClassInd: L
+* ESRB: E (toda a gente)
+* PEGI:3
+* USK: 0
+* IARC: 3

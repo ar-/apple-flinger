@@ -1,15 +1,15 @@
 1.5.3
   * adicionado ícone adaptativo para Android 8+
-  * ampliação do fundo desativada perto da maçã
-  * adicionado idioma norueguês por Allan
+  * zoom de fundo desativado perto da maçã
+  * adicionado idioma Norueguês (obrigado ao Allan)
 
 1.5.2
-  * adicionado idioma português
-  * vencedor e pontos mais altos mais coloridos
-  * botão voltar ativado: sair ou ecrã anterior
-  * traduções atualizadas: polaco e esperanto por Verdulo
+  * adicionado idioma Português
+  * vencedor e recorde de pontos mais coloridos
+  * botão voltar ativado: sair ou voltar à tela anterior
+  * traduções atualizadas: Polonês e Esperanto por Verdulo
   * correção na seleção de idioma
   * adicionadas etiquetas GPL3 e GitLab
 
 1.5.1
-  * manter ecrã ligado mais tempo, se estiverem a jogar.
+  * manter a tela ligada por mais tempo, se estiverem a jogar.

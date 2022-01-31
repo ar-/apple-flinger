@@ -1,0 +1,13 @@
+1.4.10
+  * Capturas de ecrã traduzidas para F-Droid
+
+1.4.9
+  * Pequenas correções nas traduções
+
+1.4.8
+  * Adicionada tradução em polaco. Graças a verdulo.
+  * Adicionada tradução em esperanto. Graças a verdulo.
+
+1.4.7
+  * O inverno está a chegar. Adicionados alguns níveis novos.
+  * Fiquei sem ideias. Por favor, envie-me ideias para novos níveis.
