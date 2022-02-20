@@ -1,4 +1,4 @@
-HINWEIS: DIESE APP ENTHÄLT KEINE ANTIFEATURES ODER UNERWÜNSCHTE FUNKTIONEN. Was Sie unten sehen, ist ein Fehler in F-Droid.
+HINWEIS: DIESE APP ENTHÄLT KEINE ANTIFEATURES ODER UNERWÜNSCHTE FUNKTIONEN. Was Du unten siehst, ist ein Fehler in F-Droid.
 
 1.4.11
   * Kleine Übersetzung korrigiert. Danke nochmal an Verdulo.
