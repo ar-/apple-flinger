@@ -1,0 +1,19 @@
+1.5.4
+  * do Poděkování přidáni noví překladatelé
+  * přidána Holandština (díky Heimen z weblate)
+  * přidána Galicijština (díky Iván z weblate)
+  * opravena Španělština (díky Markel z weblate)
+  
+  
+1.5.3
+  * přidány adaptivní ikony (Android 8+)
+  * přidána Norština (díky Allan z weblate)
+  
+
+1.5.2
+  * přidána Portugalština
+  * tlačítko "Zpět" umožňuje opustit hru nebo návrat na předchozí obrazovku
+  * oprava Polštiny a Esperanta (díky Verdulo)
+  * oprava: výběr jazyka občas nefungoval
+  *
+  *
