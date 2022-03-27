@@ -1,5 +1,5 @@
 HINWEIS: DIESE APP ENTHÄLT KEINE ANTIFEATURES ODER UNERWÜNSCHTE FUNKTIONEN. Was Du unten siehst, ist ein Fehler in F-Droid.
 
 1.4.11
-  * Kleine Übersetzung korrigiert. Danke nochmal an Verdulo.
-  * Upged Target SDK-Version für den idiotischen Google Play Store
+  * Kleine Übersetzungsfehler korrigiert. Danke nochmal an Verdulo.
+  * Erhöhte Target SDK-Version für den idiotischen Google Play Store
