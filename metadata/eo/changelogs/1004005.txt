@@ -1,4 +1,4 @@
 1.4.5:
- * plibonigita franca traduko, danke al xin
- * aldonis tradukeblan klavaron por ĉiu lingvo por enmeti nomojn de ludantoj
- * aldonis ekrankopiojn por F-Droid por ĉiu subtenata lingvo
+ * plibonigita franca traduko, danke al xin.
+ * aldonis tradukeblan klavaron por ĉiu lingvo por enmeti nomon de ludanto.
+ * aldonis ekrankopiojn por F-Droid por ĉiu subtenata lingvo.
