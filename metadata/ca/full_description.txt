@@ -1,0 +1,29 @@
+Divertit joc per a un jugador o més, passa moments increïbles. Nou, 
+desafiant i addictiu. 
+ 
+Característiques: 
+ 
+* gràfics de qualitat d'alta resolució 
+* física realista 
+* joc sense retards i sense problemes (fins i tot en dispositius antics) 
+* fines i detallades animacions i sistemes de partícules 
+* un nou i innovador concepte de joc 
+* un sol jugador/multijugador 
+* 100% codi obert (GPL3) 
+ 
+Fes servir una fona per a disparar amb pomes. Sigues el primer a destruir tota la base 
+enemiga, però estigues alerta, l'altra banda torna els trets. Aquest joc té una barreja equilibrada de 
+trencaclosques, estratègia, paciència i acció. 
+ 
+Això és per a un o dos jugadors! Pots jugar contra qualsevol assegut al teu 
+costat... o contra tu mateix. També pots jugar contra un oponent controlat 
+per ordinador. Aviat hi haurà més característiques, més diversió i més nivells. 
+ 
+classificacions internacionals per edats: 
+ 
+* ACB: G (general) 
+* ClassInd: L 
+* ESRB: E (tots) 
+* PEGI:3 
+* USK: 0 
+* IARC: 3

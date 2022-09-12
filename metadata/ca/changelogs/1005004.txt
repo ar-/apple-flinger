@@ -1,0 +1,19 @@
+1.5.4 
+  * s'han afegit traductors als crèdits 
+  * s'ha afegit el neerlandès (Heimen a weblate) 
+  * s'ha afegit el gallec (Iván a weblate)
+  * traducció espanyola millorada (Markel a weblate)
+  * s'han eliminat els píxels transparents de les captures de pantalla
+  
+1.5.3 
+  * afegida icona adaptativa (Android 8 i superior)
+  * zoom de fons desactivat a prop de la poma
+  * s'ha afegit el noruec (Allan al weblate)
+ 
+1.5.2 
+  * s'ha afegit el portugués 
+  * més colorits el guanyador i els punts més alts 
+  * botó de retrocés activat per a sortir del joc o pantalla anterior 
+  * traduccions arreglades al polonès i a l'esperanto (Verdulo) 
+  * correcció: la selecció d'idiomes de vegades no funcionava 
+  * s'han afegit insígnies GPL3 i gitlab al fons
