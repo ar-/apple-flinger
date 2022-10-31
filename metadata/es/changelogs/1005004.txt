@@ -16,4 +16,4 @@
   * activación del botón de retroceso por hardware para salir del juego o ir a la pantalla anterior
   * Corrección de las traducciones al polaco y al esperanto (por Verdulo)
   * Corrección de errores: la selección de idioma a veces no funcionaba.
-  * Se han añadido las insignias GPL3 y gitlab al fondo.
+  * Se han añadido las insignias GPL3 y gitlab al fondo
