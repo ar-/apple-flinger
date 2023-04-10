@@ -21,10 +21,10 @@ sourceSets {
 }
 
 dependencies {
-        integrationCompile 'junit:junit:4.+'
-        integrationCompile project(":core") // for screenshot testdrive runner
-        integrationCompile project(":desktop") // for screenshot testdrive runner
-        integrationCompile sourceSets.test.output
+        integrationImplementation 'junit:junit:4.+'
+        integrationImplementation project(":core") // for screenshot testdrive runner
+        integrationImplementation project(":desktop") // for screenshot testdrive runner
+        integrationImplementation sourceSets.test.output
     	integrationRuntime configurations.testRuntime
 }
 
