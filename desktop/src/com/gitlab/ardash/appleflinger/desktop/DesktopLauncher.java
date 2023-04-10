@@ -17,8 +17,11 @@
 package com.gitlab.ardash.appleflinger.desktop;
 
 import com.badlogic.gdx.Gdx;
-import com.badlogic.gdx.backends.lwjgl.LwjglApplication;
-import com.badlogic.gdx.backends.lwjgl.LwjglApplicationConfiguration;
+//import com.badlogic.gdx.backends.lwjgl.LwjglApplication;
+//import com.badlogic.gdx.backends.lwjgl.LwjglApplicationConfiguration;
+import com.badlogic.gdx.backends.lwjgl3.Lwjgl3Application;
+import com.badlogic.gdx.backends.lwjgl3.Lwjgl3ApplicationConfiguration;
+
 import com.badlogic.gdx.tools.texturepacker.TexturePacker;
 import com.badlogic.gdx.tools.texturepacker.TexturePacker.Settings;
 import com.gitlab.ardash.appleflinger.ActionResolver;
@@ -39,17 +42,21 @@ public class DesktopLauncher implements ActionResolver{
 		Assets.validate();
 		//HCStrategy.validate(); //done in sanity check (test stage)
 
-		LwjglApplicationConfiguration config = new LwjglApplicationConfiguration();
+		Lwjgl3ApplicationConfiguration config = new Lwjgl3ApplicationConfiguration();
 //		config.width = (int)(GameScreen.SCREEN_WIDTH);
 //		config.height = (int)(GameScreen.SCREEN_HEIGHT);
 //		config.width = (int)(GameScreen.SCREEN_WIDTH*0.5);
 //		config.height = (int)(GameScreen.SCREEN_HEIGHT*0.5);
-		config.width = 1280; // PHONE SIZE (Ifor screenshots)
-		config.height = 720; // PHONE SIZE
-//		config.width = (int)(GameScreen.SCREEN_WIDTH*0.8);
+
+//		config.width = 1280; // PHONE SIZE (Ifor screenshots)
+//		config.height = 720; // PHONE SIZE
+
+		//		config.width = (int)(GameScreen.SCREEN_WIDTH*0.8);
 //		config.height = (int)(GameScreen.SCREEN_HEIGHT*0.8);
 //		config.width = (int)(GameScreen.SCREEN_WIDTH*0.25);
 //		config.height = (int)(GameScreen.SCREEN_HEIGHT*0.25);
+		
+//		config.disableAudio = true;
 		
 		
         Settings settings = new Settings();
@@ -60,7 +67,7 @@ public class DesktopLauncher implements ActionResolver{
 		TexturePacker t; // keep this here, otherwise import gets always removed
 		try
 		{
-			new LwjglApplication(new AppleflingerGame(this), config);
+			new Lwjgl3Application(new AppleflingerGame(this), config);
 		}
 		catch (ExceptionInInitializerError e)
 		{

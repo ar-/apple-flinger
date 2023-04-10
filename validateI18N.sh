@@ -87,7 +87,7 @@ done
 echo 
 echo checking file encodings to be UTF8
 file -L android/assets/af*.properties 
-wrong_file_enc_count=`file -L android/assets/af*.properties | egrep -v "UTF-8 Unicode text|ASCII text" | wc -l`
+wrong_file_enc_count=`file -L android/assets/af*.properties | egrep -v "UTF-8 Unicode text|ASCII text|Unicode text, UTF-8 text" | wc -l`
 [[ $wrong_file_enc_count -eq "0" ]] || echo "ERROR at least one file ($wrong_file_enc_count) is not UTF-8, please run: iconv -f ISO-8859-15 -t UTF-8 android/assets/af_de.properties > tmp.properties" | tee -a $error_file
 echo 
 file -L android/assets/af*.properties | egrep -v "UTF-8 Unicode text|ASCII text"

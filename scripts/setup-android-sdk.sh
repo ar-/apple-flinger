@@ -1,6 +1,6 @@
 #!/bin/bash
 #-------------------------------------------------------------------------------
-# Copyright (C) 2017-2018 Andreas Redmer <ar-appleflinger@abga.be>
+# Copyright (C) 2017-2023 Andreas Redmer <ar-appleflinger@abga.be>
 # 
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -16,8 +16,8 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #-------------------------------------------------------------------------------
 
-ANDROID_TARGET_SDK="26"
-ANDROID_BUILD_TOOLS="26.0.3"
+ANDROID_TARGET_SDK="31"
+ANDROID_BUILD_TOOLS="31.0.0"
 ANDROID_SDK_TOOLS="24.4.1"
 
 echo Setting up Android SDK
