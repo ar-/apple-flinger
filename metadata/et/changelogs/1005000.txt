@@ -5,4 +5,3 @@
 1.4.11
   * Väiksemad tõlke parandused. Tänu verdulole jälle.
   * Uuendatud SDK-i versioon idiootilisse Google Play poest
-

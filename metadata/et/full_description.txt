@@ -1,0 +1,29 @@
+Naljakas ringipõhine ühe/mängija mäng vingeid aegu. Uus,
+väljakutsuv ja sõltuvust tekitav.
+
+Omadused:
+
+* kõrge resolutsiooniga kvaliteetne graafika
+* realistlik füüsika
+* viivituseta ja sujuv mängimine (isegi vanades seadmetes)
+* peened üksikasjalikud animatsioonid ja osakeste süsteemid
+* täiesti uus ja uuenduslik mängukontseptsioon
+* üksik/multiplayer
+* 100% avatud lähtekood (GPL3)
+
+Kasutad õuntega laskmiseks kada. Ole esimene, kes hävitab kogu vaenlase
+alus, kuid pidage meeles, et teine pool tulistab tagasi. Selles mängus on tasakaalustatud segu
+mõistatus, strateegia, kannatlikkus ja tegevus.
+
+See on mõeldud ühele või kahele mängijale! Sa võid seda mängida igaühe vastu, kes istub kõrval
+sinu kõrval - või iseenda vastu. Võite mängida ka arvuti vastu, mida juhib
+vastase vastu. Rohkem funktsioone, rohkem nalja ja rohkem tasemeid tuleb varsti.
+
+rahvusvahelised vanusepiirangud:
+
+* ACB: G (üldine)
+* ClassInd: L
+* ESRB: E (kõik)
+* PEGI: 3
+* USK: 0
+* IARC: 3

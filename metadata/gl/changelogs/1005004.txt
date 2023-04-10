@@ -1,11 +1,17 @@
-1.5.4
- * Tradutores engadidos á pantalla de créditos no xogo
- * Lingua holandesa engadida (grazas a Heimen no Weblate)
- * Lingua galega engadida (grazas a Iváns no Weblate)
- * Tradución ao español mellorada (grazas a Markel no Weblate)
- * Elimináronse píxeles transparentes das capturas de pantalla
+1.5.4 
+  * engadiu tradutores á pantalla de créditos do xogo 
+  * Engadiuse o idioma holandés (grazas a Heimen no weblate) 
+  * lingua galega engadida (grazas a Iván na weblate) 
+  * tradución ao español mellorada (grazas a Markel no weblate) 
+  * elimináronse os píxeles transparentes das capturas de pantalla 1.5.3 
+  * icona adaptativa engadida (Android 8 e superior) 
+  * Desactivouse o zoom de fondo preto da mazá 
+  * engadiuse idioma noruegués (grazas a Allan no weblate) 
 
-1.5.3
- * Icona adaptábel engadida (Android 8 e superior)
- * Achegamento de fondo deshabilitado preto da mazá
- * Lingua norueguesa engadida (grazas a Allan no Weblate)
+1.5.2 
+  * Engadiuse tradución ao portugués 
+  * fixo que o gañador e os puntos máis altos fosen máis coloridos 
+  * botón de retroceso de hardware activado para saír do xogo ou ir á pantalla anterior 
+  * corrixidas traducións ao polaco e ao esperanto (de Verdulo) 
+  * Corrección de erros: a selección de idioma ás veces non funciona 
+  * engadiuse distintivos GPL3 e gitlab en segundo plano
