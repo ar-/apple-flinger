@@ -1,5 +1,5 @@
 /*******************************************************************************
- * Copyright (C) 2015-2020 Andreas Redmer <ar-appleflinger@abga.be>
+ * Copyright (C) 2015-2023 Andreas Redmer <ar-appleflinger@abga.be>
  * Copyright (C) 2017 Сухичев Михаил Иванович <sukhichev@yandex.ru>
  * 
  * This program is free software: you can redistribute it and/or modify
@@ -50,6 +50,11 @@ public class Assets {
 	
 	private static final String RUSSIAN_CHARACTERS = "АБВГДЕЁЖЗИЙКЛМНОПРСТУФХЦЧШЩЪЫЬЭЮЯ"
             + "абвгдеёжзийклмнопрстуфхцчшщъыьэюя"
+            + "1234567890.,:;_¡!¿?\"'+-*/()[]={}";
+	
+	private static final String UKRAINIAN_CHARACTERS = "АаБбВвГгҐґДдЕеЄєЖжЗзИиІіЇїЙйКкЛлМмНнОоПпРрСсТтУуФфХхЦцЧчШшЩщЬьЮюЯя"
+			+ "ЙЦУКЕНГШЩЗХЇҐФІВАПРОЛДЖЄЯЧСМИТЬБЮ"
+			+ "йцукенгшщзхїґфівапролджєячсмитьбю"
             + "1234567890.,:;_¡!¿?\"'+-*/()[]={}";
 	
 	private static final String POLISH_CHARACTERS = "ABCDEFGHIJKLMNOPRSTUVWYZĄĆĘŁŃÓŚŹŻ"
@@ -293,6 +298,7 @@ public class Assets {
 		FLAG_RU,
 		FLAG_SV,
 		FLAG_TR,
+		FLAG_UK,
 		FORK_ME,
 		GPL3,
 		SLIDERBACK,
@@ -791,6 +797,8 @@ public class Assets {
 			return true;
 		if (userSelectedLingo.toLowerCase().startsWith("ru"))
 			return true;
+		if (userSelectedLingo.toLowerCase().startsWith("uk"))
+			return true;
 		if (userSelectedLingo.toLowerCase().startsWith("pl"))
 			return true;
 		
@@ -799,6 +807,8 @@ public class Assets {
 			if (Locale.getDefault().getLanguage().equals(new Locale("eo").getLanguage()))
 				return true;
 			if (Locale.getDefault().getLanguage().equals(new Locale("ru").getLanguage()))
+				return true;
+			if (Locale.getDefault().getLanguage().equals(new Locale("uk").getLanguage()))
 				return true;
 			if (Locale.getDefault().getLanguage().equals(new Locale("pl").getLanguage()))
 				return true;

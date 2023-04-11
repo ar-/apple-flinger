@@ -1,5 +1,5 @@
 /*******************************************************************************
- * Copyright (C) 2015-2020 Andreas Redmer <ar-appleflinger@abga.be>
+ * Copyright (C) 2015-2023 Andreas Redmer <ar-appleflinger@abga.be>
  * Copyright (C) 2017 Сухичев Михаил Иванович <sukhichev@yandex.ru>
  * 
  * This program is free software: you can redistribute it and/or modify
@@ -64,6 +64,7 @@ public class LanguageDialog extends AdvancedDialog{
 		getContentTable().add(makeLingoButton(Assets.SpriteAsset.FLAG_FI, "\n\nsuomi"));
 		getContentTable().add(makeLingoButton(Assets.SpriteAsset.FLAG_SV, "\n\nsvenska"));
 		getContentTable().add(makeLingoButton(Assets.SpriteAsset.FLAG_TR, "\n\ntürkçe"));
+		getContentTable().add(makeLingoButton(Assets.SpriteAsset.FLAG_UK, "\n\nукраї́нська")); //ukrains'ka mova
 
         getContentTable().row();
         
