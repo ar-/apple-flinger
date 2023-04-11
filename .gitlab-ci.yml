@@ -88,6 +88,7 @@ build_release:
   script:
     # - . ./scripts/setup-android-sdk.sh
     - ./gradlew assembleRelease
+    - ./gradlew assembleDebug
   stage: build
   artifacts:
     paths:
