@@ -1,3 +1,4 @@
+#!/bin/bash
 #-------------------------------------------------------------------------------
 # Copyright (C) 2015-2023 Andreas Redmer <ar-appleflinger@abga.be>
 # 
