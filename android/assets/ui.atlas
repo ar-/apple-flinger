@@ -1,8 +1,8 @@
 
 ui.png
-size: 2048,512
+size: 2048, 512
 format: RGBA8888
-filter: Nearest,Nearest
+filter: Nearest, Nearest
 repeat: none
 btn_1player
   rotate: false
@@ -292,6 +292,13 @@ flag_pt_br
   offset: 0, 0
   index: -1
 flag_ru
+  rotate: false
+  xy: 1634, 37
+  size: 100, 67
+  orig: 100, 67
+  offset: 0, 0
+  index: -1
+flag_uk
   rotate: false
   xy: 1634, 37
   size: 100, 67

@@ -3,4 +3,3 @@ KUMBUKA: APP hii haipati maafa au vitu visivyofaa. Unaona chini ni kosa katika F
 1.4.11
   * Marekebisho madogo ya tafsiri. Shukrani kwa verdulo tena.
   * Ilipangwa toleo la SDK la lengo la duka la google la kucheza idiotic
-

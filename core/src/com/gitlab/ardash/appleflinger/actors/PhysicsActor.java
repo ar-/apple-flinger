@@ -1,5 +1,5 @@
 /*******************************************************************************
- * Copyright (C) 2015-2018 Andreas Redmer <ar-appleflinger@abga.be>
+ * Copyright (C) 2015-2023 Andreas Redmer <ar-appleflinger@abga.be>
  * 
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -184,6 +184,7 @@ public abstract class PhysicsActor extends Image {
 		if (particleEffect != null)
 		{
 	        particleEffect.scaleEffect(1f/GameWorld.UNIT_TO_SCREEN);
+//	        particleEffect.scaleEffect(0.01f); // bugfix for 1.9.6 to 1.11.0 Update of libgdx
 	        originalParticleAmount = particleEffect.getEmitters().first().getMaxParticleCount();
 		}
 	}
@@ -347,11 +348,12 @@ public abstract class PhysicsActor extends Image {
 			if (soundmakers.contains(ds))
 				playDmgSound();
 
-			// also play the particle emitter now on a low scale
+			// also play the particle emitter with a low amout of particles to indicate a hit
 			if (particleEffect!= null)
 			{
 		        particleEffect.getEmitters().first().setMaxParticleCount(MathUtils.random(1, 3));
-		        particleEffect.reset();
+		        particleEffect.reset(false);
+//		        particleEffect.scaleEffect(0.01f); // bugfix for 1.9.6 to 1.11.0 Update of libgdx
 		        particleEffect.setEmittersCleanUpBlendFunction(true);
 		        particleEffect.setPosition(getX()+ getWidth() / 2f,getY()+ getHeight() / 2f);
 		        particleEffect.allowCompletion();
@@ -362,7 +364,7 @@ public abstract class PhysicsActor extends Image {
 	
 	/**
 	 * isDamagable make the actor destroyable. Otherwise it can't be destroyed.
-	 * Maybe only for actor that exploder after a time.
+	 * Maybe only for actor that explode after a time.
 	 * @return
 	 */
     public boolean isToBeDestroyed() {
@@ -388,7 +390,7 @@ public abstract class PhysicsActor extends Image {
 		
         if (particleEffect !=null)
         {
-	        particleEffect.reset();
+	        particleEffect.reset(false);
 	        particleEffect.setEmittersCleanUpBlendFunction(true);
         	particleEffect.getEmitters().first().setMaxParticleCount(originalParticleAmount);
 	        particleEffect.setPosition(getX()+ getWidth() / 2f,getY()+ getHeight() / 2f);

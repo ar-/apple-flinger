@@ -1,10 +1,13 @@
 1.4.10
-  * Översatte skärmdumpar för fdroid
+   * Översatte skärmdumpar för fdroid
+
 1.4.9
-  * Några mindre översättningskorrigeringar
+   * Några mindre översättningskorrigeringar
+
 1.4.8
-  * Tillagd polsk översättning.  Tack vare verdulo.
-  * Tillagt esperanto översättning.  Tack vare verdulo.
+   * Lade till översättning till Polska.  Tack vare verdulo.
+   * Lade till översättning till Esperanto.  Tack vare verdulo.
+
 1.4.7
-  * Vintern kommer.  Tillagt några nya nivåer.
-  * Jag gick tom för idéer.  Var vänlig skicka idéer till nya nivåer.
+   * Vintern kommer. Lade till några nya nivåer.
+   * Jag fick slut på idéer. Snälla, skicka nya idéer för nya nivåer till mig.

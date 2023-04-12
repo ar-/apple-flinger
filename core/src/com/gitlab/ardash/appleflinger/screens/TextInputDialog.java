@@ -1,5 +1,5 @@
 /*******************************************************************************
- * Copyright (C) 2017-2020 Andreas Redmer <ar-appleflinger@abga.be>
+ * Copyright (C) 2017-2023 Andreas Redmer <ar-appleflinger@abga.be>
  * 
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -186,6 +186,15 @@ public class TextInputDialog extends AdvancedDialog{
 			tblContent.add(makeKeyboardRow("ФЫВАПРОЛДЖЭ"));
 			tblContent.row();
 			tblContent.add(makeKeyboardRow("ЯЧСМИТЬБЮЁ"));
+			tblContent.row();
+		} else if (langCode.equals("uk")) {
+			tblContent.row();
+			tblContent.add(makeKeyboardRow("ЙЦУКЕНГШЩЗХЇҐ"));
+	        tblContent.add(btnBackSpace);
+			tblContent.row();
+			tblContent.add(makeKeyboardRow("ФІВАПРОЛДЖЄ"));
+			tblContent.row();
+			tblContent.add(makeKeyboardRow("ЯЧСМИТЬБЮ"));
 			tblContent.row();
 		} else if (langCode.equals("sv")) {
 			tblContent.row();

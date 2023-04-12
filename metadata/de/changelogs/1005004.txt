@@ -4,7 +4,6 @@
   * Galicische/Iberische Übersetzung hinzugefügt (Danke an Iván auf Weblate)
   * Spanisch verbessert hinzugefügt (Danke an Markel auf Weblate)
   * Durchsichtige Pixel auf Screenshots entfernt
-
 1.5.3
   * adaptives Symbol hinzugefügt (Android 8 und höher)
   * Hintergrund Zoom in der Nähe des Apfels deaktiviert

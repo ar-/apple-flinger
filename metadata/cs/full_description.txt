@@ -1,0 +1,29 @@
+Zábavná vícekolová hra pro jednoho nebo více hráčů.
+Nová, vzrušující a návyková.
+
+Vlastnosti:
+
+* grafika ve vysokém rozlišení
+* realistická fyzika
+* je rychlá a bez lagů (i na starších zařízeních)
+* propracované animace
+* inovativní koncept hry
+* pro jednoho nebo více hráčů
+* 100% open source (GPL3)
+
+Střílejte z praku jablky.
+Zničte svými střelami nepřítele, ale pozor, střílí zpátky.
+Hra je kombinací puzzle, strategie, trpělivosti a akce.
+
+Hra je pro jednoho i více hráčů. Můžete hrát proti tomu kdo sedí vedle Vás nebo sám proti sobě.
+Můžete hrát proti počítači.
+Další vylepšení, další kola a více zábavy již brzy. 
+
+Mezinárodní hodnocení vhodnosti podle věku:
+
+* ACB: G (general)
+* ClassInd: L
+* ESRB: E (everyone)
+* PEGI:3
+* USK: 0
+* IARC: 3

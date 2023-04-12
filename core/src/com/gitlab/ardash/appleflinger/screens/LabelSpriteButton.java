@@ -1,5 +1,5 @@
 /*******************************************************************************
- * Copyright (C) 2017-2018 Andreas Redmer <ar-appleflinger@abga.be>
+ * Copyright (C) 2017-2023 Andreas Redmer <ar-appleflinger@abga.be>
  * 
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -40,7 +40,7 @@ public class LabelSpriteButton extends Stack {
 		
 		// this is an exception: even if the language is set to latin based
 		// the name of some languages, is written in another char set
-		if (text.contains("и"))
+		if (text.contains("и") || text.contains("ь"))
 		{
 			LabelStyle originalStyle = Assets.LabelStyleAsset.MINILABEL.style;
 			LabelStyle cyrillicStyle = new LabelStyle(originalStyle);

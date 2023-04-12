@@ -1,5 +1,6 @@
+#!/bin/bash
 #-------------------------------------------------------------------------------
-# Copyright (C) 2015-2022 Andreas Redmer <ar-appleflinger@abga.be>
+# Copyright (C) 2015-2023 Andreas Redmer <ar-appleflinger@abga.be>
 # 
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -14,13 +15,13 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #-------------------------------------------------------------------------------
-EXCLUDE="./app/build/generated/*"
+EXCLUDE="./android/build/generated/*"
 # check source
-RET=`licensecheck \`find . \( -name "*.java" -or -name "*.properties" -or -name "*.xml"  -or -name "*.sh" \) -not -path "./tmp/*" -not -path "$EXCLUDE"\` | grep -v "GNU General Public License v3.0 or later" | grep -v "GPL (v3 or later)" | grep -v "Apache License 2.0" | grep -v "Apache (v2.0)" | grep -v "GENERATED FILE" | wc -l`
+RET=`licensecheck \`find . \( -name "*.java" -or -name "*.properties" -or -name "*.xml"  -or -name "*.sh" \) -not -path "./tmp*/*" -not -path "$EXCLUDE"\` | grep -v "GNU General Public License v3.0 or later" | grep -v "GPL (v3 or later)" | grep -v "Apache License 2.0" | grep -v "Apache (v2.0)" | grep -v "GENERATED FILE" | wc -l`
 if [ $RET -eq 0 ]; then
 	echo all licences in directory okay
 else
-	licensecheck `find . \( -name "*.java" -or -name "*.properties" -or -name "*.xml"  -or -name "*.sh" \) -not -path "./tmp/*" -not -path "$EXCLUDE"` | grep -v "GNU General Public License v3.0 or later" | grep -v "GPL (v3 or later)" | grep -v "Apache License 2.0" | grep -v "Apache (v2.0)" | grep -v "GENERATED FILE"
+	licensecheck `find . \( -name "*.java" -or -name "*.properties" -or -name "*.xml"  -or -name "*.sh" \) -not -path "./tmp*/*" -not -path "$EXCLUDE"` | grep -v "GNU General Public License v3.0 or later" | grep -v "GPL (v3 or later)" | grep -v "Apache License 2.0" | grep -v "Apache (v2.0)" | grep -v "GENERATED FILE"
 	echo ERROR : there are $RET files with wrong licence - listed above
 	exit 1
 fi
@@ -36,11 +37,11 @@ else
 fi
 
 # check years in copyrights, if they were changed this year, they must have this year in the copyright
-RET=`licensecheck --copyright \`git whatchanged --since '01/01/2022' --oneline --name-only --pretty=format:  | grep -v "AUTHORS" | sort | uniq\` | grep -v 2022 | grep -C1 Copyright | wc -l`
+RET=`licensecheck --copyright \`git whatchanged --since '01/01/2023' --oneline --name-only --pretty=format:  | grep -v "AUTHORS" | sort | uniq\` | grep -v 2023 | grep -C1 Copyright | wc -l`
 if [ $RET -eq 0 ]; then
 	echo all years in copyright declarations in git managed files for this year okay
 else
-	licensecheck --copyright `git whatchanged --since '01/01/2022' --oneline --name-only --pretty=format:  | grep -v "AUTHORS" | sort | uniq` | grep -v 2022 | grep -C1 Copyright
+	licensecheck --copyright `git whatchanged --since '01/01/2023' --oneline --name-only --pretty=format:  | grep -v "AUTHORS" | sort | uniq` | grep -v 2023 | grep -C1 Copyright
 	echo ERROR : the files above have the wrong year in the copyright declaration, they have been touched this year, so they must contain this year
 	exit 1
 fi

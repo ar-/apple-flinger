@@ -1,15 +1,15 @@
 1.5.3
-  * Icono adaptativo añadido (Android 8 y superior)
-  * zoom de fondo desactivado cerca de la manzana
-  * Idioma noruego añadido (gracias a Allan en weblate)
+  * añadido icono adaptable (Android 8 y superior)
+  * deshabilitado el zoom de fondo cerca de la manzana
+  * añadido el idioma noruego (gracias a Allan en weblate)
 
 1.5.2
-  * Añadida traducción al portugués.
-  * Hizo el ganador y los puntos más altos más coloridos.
-  * botón de retroceso de hardware activado para abandonar el juego o ir a la pantalla anterior
-  * Traducciones fijas al polaco y al esperanto (por Verdulo).
-  * corrección de errores: selección de idioma a veces no funciona
-  * se agregaron GPL3 y gitlab insignias al fondo
+  * Se ha añadido la traducción al portugués.
+  * hizo que el ganador y los puntos más altos fueran más coloridos
+  * activación del botón de retroceso por hardware para salir del juego o ir a la pantalla anterior
+  * Corrección de las traducciones al polaco y al esperanto (por Verdulo)
+  * Corrección de errores: la selección de idioma a veces no funcionaba
+  * añadido de las insignias GPL3 y gitlab al fondo
 
 1.5.1
-  * Mantenga la pantalla un poco más larga, siempre que el juego se esté jugando activamente.
+  * Mantener la pantalla encendida un poco más de tiempo, siempre que se esté jugando activamente.

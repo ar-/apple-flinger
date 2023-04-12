@@ -1,5 +1,5 @@
 /*******************************************************************************
- * Copyright (C) 2015-2020 Andreas Redmer <ar-appleflinger@abga.be>
+ * Copyright (C) 2015-2023 Andreas Redmer <ar-appleflinger@abga.be>
  * 
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -17,8 +17,11 @@
 package com.gitlab.ardash.appleflinger.desktop;
 
 import com.badlogic.gdx.Gdx;
-import com.badlogic.gdx.backends.lwjgl.LwjglApplication;
-import com.badlogic.gdx.backends.lwjgl.LwjglApplicationConfiguration;
+//import com.badlogic.gdx.backends.lwjgl.LwjglApplication;
+//import com.badlogic.gdx.backends.lwjgl.LwjglApplicationConfiguration;
+import com.badlogic.gdx.backends.lwjgl3.Lwjgl3Application;
+import com.badlogic.gdx.backends.lwjgl3.Lwjgl3ApplicationConfiguration;
+
 import com.badlogic.gdx.tools.texturepacker.TexturePacker;
 import com.badlogic.gdx.tools.texturepacker.TexturePacker.Settings;
 import com.gitlab.ardash.appleflinger.ActionResolver;
@@ -39,28 +42,32 @@ public class DesktopLauncher implements ActionResolver{
 		Assets.validate();
 		//HCStrategy.validate(); //done in sanity check (test stage)
 
-		LwjglApplicationConfiguration config = new LwjglApplicationConfiguration();
-//		config.width = (int)(GameScreen.SCREEN_WIDTH);
+		Lwjgl3ApplicationConfiguration config = new Lwjgl3ApplicationConfiguration();
+		config.setWindowedMode(640*2, 480*2);// = (int)(GameScreen.SCREEN_WIDTH);
 //		config.height = (int)(GameScreen.SCREEN_HEIGHT);
 //		config.width = (int)(GameScreen.SCREEN_WIDTH*0.5);
 //		config.height = (int)(GameScreen.SCREEN_HEIGHT*0.5);
-		config.width = 1280; // PHONE SIZE (Ifor screenshots)
-		config.height = 720; // PHONE SIZE
-//		config.width = (int)(GameScreen.SCREEN_WIDTH*0.8);
+
+//		config.width = 1280; // PHONE SIZE (Ifor screenshots)
+//		config.height = 720; // PHONE SIZE
+
+		//		config.width = (int)(GameScreen.SCREEN_WIDTH*0.8);
 //		config.height = (int)(GameScreen.SCREEN_HEIGHT*0.8);
 //		config.width = (int)(GameScreen.SCREEN_WIDTH*0.25);
 //		config.height = (int)(GameScreen.SCREEN_HEIGHT*0.25);
+		
+//		config.disableAudio = true;
 		
 		
         Settings settings = new Settings();
         settings.maxWidth = 2048;
         settings.maxHeight = 2048;
-//		TexturePacker.process(settings, "./art/sprites/ui", "./android/assets", "ui");
+//		TexturePacker.process(settings, "../art/sprites/ui", "../android/assets", "ui");
 //		TexturePacker.process(settings, "../art/sprites/scene", "../android/assets", "scene");
 		TexturePacker t; // keep this here, otherwise import gets always removed
 		try
 		{
-			new LwjglApplication(new AppleflingerGame(this), config);
+			new Lwjgl3Application(new AppleflingerGame(this), config);
 		}
 		catch (ExceptionInInitializerError e)
 		{
