@@ -43,7 +43,7 @@ public class DesktopLauncher implements ActionResolver{
 		//HCStrategy.validate(); //done in sanity check (test stage)
 
 		Lwjgl3ApplicationConfiguration config = new Lwjgl3ApplicationConfiguration();
-//		config.width = (int)(GameScreen.SCREEN_WIDTH);
+		config.setWindowedMode(640*2, 480*2);// = (int)(GameScreen.SCREEN_WIDTH);
 //		config.height = (int)(GameScreen.SCREEN_HEIGHT);
 //		config.width = (int)(GameScreen.SCREEN_WIDTH*0.5);
 //		config.height = (int)(GameScreen.SCREEN_HEIGHT*0.5);
