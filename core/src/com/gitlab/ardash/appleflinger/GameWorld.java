@@ -30,8 +30,10 @@ import com.gitlab.ardash.appleflinger.actors.BackgroundActor;
 import com.gitlab.ardash.appleflinger.actors.BackgroundActor.BackgroundConfiguration;
 import com.gitlab.ardash.appleflinger.actors.Bird;
 import com.gitlab.ardash.appleflinger.actors.BlockActor;
+import com.gitlab.ardash.appleflinger.actors.DorkActor;
 import com.gitlab.ardash.appleflinger.actors.GeneralTargetActor;
 import com.gitlab.ardash.appleflinger.actors.Ground;
+import com.gitlab.ardash.appleflinger.actors.IntervalSpawnActor;
 import com.gitlab.ardash.appleflinger.actors.PhysicsActor;
 import com.gitlab.ardash.appleflinger.actors.ProjectileActor;
 import com.gitlab.ardash.appleflinger.actors.SlingShotActor;
@@ -68,6 +70,7 @@ public class GameWorld implements Disposable{
 	
 	public final Mission mission;
 	private Group birdGroup;
+	private Group jetGroup;
       
     public GameWorld(Mission mission) {      
     	this.mission = mission;
@@ -105,8 +108,12 @@ public class GameWorld implements Disposable{
 			throw new RuntimeException("no background image assigned for episode " + mission.getMajor());
 		}
     	
+    	jetGroup = new Group();
+    	stage.addActor(jetGroup);
     	birdGroup = new Group();
     	stage.addActor(birdGroup);
+    	
+    	IntervalSpawnActor isa = new IntervalSpawnActor(jetGroup, DorkActor.class, 1, 1);
     	
     	// absorber box
     	float absorberDistance = 4f;
