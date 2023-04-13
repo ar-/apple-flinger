@@ -256,7 +256,9 @@ public class Assets {
 		BIRD_0,BIRD_1,BIRD_2,BIRD_3,BIRD_4,BIRD_5,
 
 		BIRD_6,BIRD_7,BIRD_8,BIRD_9,BIRD_10,BIRD_11,
-		
+
+		JET_0,JET_1,
+
 		WOOD_TNT_0,
 		WOOD_BL_11_0,WOOD_BL_11_1,WOOD_BL_11_2,WOOD_BL_11_3,
 		
@@ -278,7 +280,7 @@ public class Assets {
 		EYES_OUTER,
 		EYES_RIGHT,
 		EYES_UP,
-
+		
 		DIALOG,
 		FLAG_DE,
 		FLAG_EN,
@@ -499,6 +501,7 @@ public class Assets {
 		WOOD_TNT,
 		PUFF,
 		BIRD,
+		JET,
 		DORK,
 		PENG;
 

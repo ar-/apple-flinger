@@ -30,10 +30,10 @@ import com.gitlab.ardash.appleflinger.actors.BackgroundActor;
 import com.gitlab.ardash.appleflinger.actors.BackgroundActor.BackgroundConfiguration;
 import com.gitlab.ardash.appleflinger.actors.Bird;
 import com.gitlab.ardash.appleflinger.actors.BlockActor;
-import com.gitlab.ardash.appleflinger.actors.DorkActor;
 import com.gitlab.ardash.appleflinger.actors.GeneralTargetActor;
 import com.gitlab.ardash.appleflinger.actors.Ground;
 import com.gitlab.ardash.appleflinger.actors.IntervalSpawnActor;
+import com.gitlab.ardash.appleflinger.actors.Jet;
 import com.gitlab.ardash.appleflinger.actors.PhysicsActor;
 import com.gitlab.ardash.appleflinger.actors.ProjectileActor;
 import com.gitlab.ardash.appleflinger.actors.SlingShotActor;
@@ -113,7 +113,9 @@ public class GameWorld implements Disposable{
     	birdGroup = new Group();
     	stage.addActor(birdGroup);
     	
-    	IntervalSpawnActor isa = new IntervalSpawnActor(jetGroup, DorkActor.class, 1, 1);
+    	IntervalSpawnActor isa = new IntervalSpawnActor(jetGroup, Jet.class, 1f, 1f);
+    	stage.addActor(isa);
+    	jetGroup.addActor(new Jet());
     	
     	// absorber box
     	float absorberDistance = 4f;

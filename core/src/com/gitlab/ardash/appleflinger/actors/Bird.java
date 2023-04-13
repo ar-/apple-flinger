@@ -96,6 +96,9 @@ public class Bird extends Image {
 		this.moveBy(speed, 0);
 		setDrawable(sprites.get(step));
 		//System.out.println("fly"+ delta);
+//		System.out.println("fly X "+ getX());
+//		System.out.println("fly Y "+ getY());
+		
 	}
 
 	@Override

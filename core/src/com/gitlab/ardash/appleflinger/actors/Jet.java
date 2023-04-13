@@ -1,5 +1,5 @@
 /*******************************************************************************
- * Copyright (C) 2023 Dmytro Vasyliovych Klymenko <DmytroVasyliovychKlymenko@super-sm.art>
+ * Copyright (C) 2015-2018 Andreas Redmer <ar-appleflinger@abga.be>
  * 
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -35,9 +35,9 @@ public class Jet extends Image {
 	private static final float maxSpeed=0.02f;
 	private static final float minY=GameWorld.UNIT_HEIGHT/2;
 	private static final float maxY=GameWorld.UNIT_HEIGHT;
-	private static final float minX=-2.5f;
+	private static final float minX=-3.5f;
 	private static final float maxX=GameWorld.UNIT_WIDTH+2.5f;
-	private static final float minBirdSize=0.05f;
+	private static final float minBirdSize=0.2f;
 	private static final float maxBirdSize=0.5f;
 	private final float speed;
 
@@ -64,13 +64,17 @@ public class Jet extends Image {
 		}
 	}
 	
-	private ArrayList<SpriteDrawable> sprites = new ArrayList<>(12);
+	private SpriteDrawable sprite = null;
 	private int step =0;
 	
 	public Jet() {
-		Assets.SpriteGroupAsset ag = Assets.SpriteGroupAsset.BIRD;
-		for (int i = 0;i<ag.size();i++)
-			sprites.add(new SpriteDrawable(ag.get(i).get()));
+		Assets.SpriteGroupAsset ag = Assets.SpriteGroupAsset.JET;
+		// Solidarity mode
+		sprite = new SpriteDrawable(ag.get(0).get());
+		// Propaganda mode
+		sprite = new SpriteDrawable(ag.getRandom().get());
+
+		setDrawable(sprite);
 		
 		final float size = MathUtils.randomTriangular(minBirdSize, maxBirdSize,0.15f);
 		final float y = MathUtils.randomTriangular(minY, maxY);
@@ -79,28 +83,33 @@ public class Jet extends Image {
 		//speed = MathUtils.random(minSpeed, maxSpeed);
 		speed = LinearInterpolator.ilx(minBirdSize, minSpeed, maxBirdSize, maxSpeed, size);
 		
-		setPosition(minX, y);
-		setSize(size, size);
+		setPosition(maxX, y);
+		float fac = Assets.SpriteAsset.JET_1.get().getWidth() / Assets.SpriteAsset.JET_1.get().getHeight();
+		setSize(0.5f * fac, 0.5f);
+		setSize(size * fac, size);
 	}
 	
 	@Override
 	public void act(float delta) {
 		super.act(delta);
-		if (getX()>maxX)
+		if (getX()<minX)
 		{
 			remove();
 			return;
 		}
 		step++;
 		step%=12;
-		this.moveBy(speed, 0);
-		setDrawable(sprites.get(step));
+		this.moveBy(-speed, 0);
+//		setDrawable(sprites.get(step));
 		//System.out.println("fly"+ delta);
+		System.out.println("flyj X "+ getX());
+		System.out.println("flyj Y "+ getY());
+		
 	}
 
 	@Override
 	/**
-	 * bird is never part of any collision detection
+	 * actor is never part of any collision detection
 	 */
 	public Actor hit(float x, float y, boolean touchable) {
 		return null;
