@@ -18,6 +18,7 @@ package com.gitlab.ardash.appleflinger.actors;
 
 import java.util.ArrayList;
 
+import com.badlogic.gdx.graphics.g2d.Sprite;
 import com.badlogic.gdx.math.MathUtils;
 import com.badlogic.gdx.scenes.scene2d.Actor;
 import com.badlogic.gdx.scenes.scene2d.Group;
@@ -70,9 +71,10 @@ public class Jet extends Image {
 	public Jet() {
 		Assets.SpriteGroupAsset ag = Assets.SpriteGroupAsset.JET;
 		// Solidarity mode
-		sprite = new SpriteDrawable(ag.get(0).get());
+		Sprite selectedSprite = ag.get(0).get();
 		// Propaganda mode
-		sprite = new SpriteDrawable(ag.getRandom().get());
+		selectedSprite = ag.getRandom().get();
+		sprite = new SpriteDrawable(selectedSprite);
 
 		setDrawable(sprite);
 		
@@ -84,7 +86,7 @@ public class Jet extends Image {
 		speed = LinearInterpolator.ilx(minBirdSize, minSpeed, maxBirdSize, maxSpeed, size);
 		
 		setPosition(maxX, y);
-		float fac = Assets.SpriteAsset.JET_1.get().getWidth() / Assets.SpriteAsset.JET_1.get().getHeight();
+		float fac = selectedSprite.getWidth() / selectedSprite.getHeight();
 		setSize(0.5f * fac, 0.5f);
 		setSize(size * fac, size);
 	}
@@ -102,8 +104,8 @@ public class Jet extends Image {
 		this.moveBy(-speed, 0);
 //		setDrawable(sprites.get(step));
 		//System.out.println("fly"+ delta);
-		System.out.println("flyj X "+ getX());
-		System.out.println("flyj Y "+ getY());
+//		System.out.println("flyj X "+ getX());
+//		System.out.println("flyj Y "+ getY());
 		
 	}
 
