@@ -32,13 +32,13 @@ import com.gitlab.ardash.appleflinger.helpers.LinearInterpolator;
 public class Jet extends Image {
 	
 	private static long nextSpawnTime =0;
-	private static final float minSpeed=0.01f;
-	private static final float maxSpeed=0.02f;
+	private static final float minSpeed=0.005f;
+	private static final float maxSpeed=0.01f;
 	private static final float minY=GameWorld.UNIT_HEIGHT/2;
-	private static final float maxY=GameWorld.UNIT_HEIGHT;
+	private static final float maxY=GameWorld.UNIT_HEIGHT-GameWorld.UNIT_HEIGHT/30;
 	private static final float minX=-3.5f;
 	private static final float maxX=GameWorld.UNIT_WIDTH+2.5f;
-	private static final float minBirdSize=0.2f;
+	private static final float minBirdSize=0.25f;
 	private static final float maxBirdSize=0.5f;
 	private final float speed;
 
