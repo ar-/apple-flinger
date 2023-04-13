@@ -36,7 +36,7 @@ public class Jet extends Image {
 	private static final float maxSpeed=0.01f;
 	private static final float minY=GameWorld.UNIT_HEIGHT/2;
 	private static final float maxY=GameWorld.UNIT_HEIGHT-GameWorld.UNIT_HEIGHT/30;
-	private static final float minX=-3.5f;
+	private float minX=-3.5f;
 	private static final float maxX=GameWorld.UNIT_WIDTH+2.5f;
 	private static final float minBirdSize=0.25f;
 	private static final float maxBirdSize=0.5f;
@@ -89,6 +89,7 @@ public class Jet extends Image {
 		float fac = selectedSprite.getWidth() / selectedSprite.getHeight();
 		setSize(0.5f * fac, 0.5f);
 		setSize(size * fac, size);
+		minX = -size * fac;
 	}
 	
 	@Override
