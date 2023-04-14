@@ -1,5 +1,5 @@
 /*******************************************************************************
- * Copyright (C) 2015-2018 Andreas Redmer <ar-appleflinger@abga.be>
+ * Copyright (C) 2015-2023 Andreas Redmer <ar-appleflinger@abga.be>
  * 
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -16,6 +16,7 @@
  ******************************************************************************/
 package com.gitlab.ardash.appleflinger.i18n;
 
+import java.util.Locale;
 import java.util.MissingResourceException;
 import java.util.ResourceBundle;
 
@@ -98,5 +99,43 @@ public class I18N {
 	
 	public static String g(k key) {
 		return RESOURCE_BUNDLE.getString(key.name());
+	}
+	
+	public static boolean isUserOccupiedByAFascistRegime() {
+		// Parts of Ukraine and Georgia are occupied by Russia. These parts are variant.
+		// We don't know where exactly the users are and what settings they use.
+		// The occupied territories of Japan are not relevant for this function.
+		String li = Pref.getLingo();
+		if (li.equals("ru") || li.equals("uk")) {
+			return true;
+		}
+		Locale lo = Locale.getDefault();
+		if (lo != null) {
+			String lc = lo.getCountry().toLowerCase();
+			String ll = lo.getLanguage().toLowerCase();
+			// String ls = lo.getScript().toLowerCase(); cyrl is also used in greek and serb
+			
+			if (lc.equals("ru")||lc.equals("ua")||lc.equals("ge")||lc.equals("by")) {
+				return true;
+			}
+			
+			if (ll.equals("ru")||ll.equals("uk")||ll.equals("ka")||ll.equals("be")) {
+				return true;
+			}
+			
+			try {
+				String lc3 = lo.getISO3Country().toLowerCase();
+				if (lc3.equals("rus")||lc3.equals("ukr")||lc3.equals("geo")||lc3.equals("blr")) {
+					return true;
+				}
+				String ll3 = lo.getISO3Language();
+				if (ll3.equals("rus")||ll3.equals("ukr")||ll3.equals("geo")||ll3.equals("kat")||ll3.equals("bel")) {
+					return true;
+				}
+			} catch (MissingResourceException e) {
+				return false;
+			}
+		}
+		return false;
 	}
 }

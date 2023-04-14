@@ -1,5 +1,5 @@
 /*******************************************************************************
- * Copyright (C) 2015-2018 Andreas Redmer <ar-appleflinger@abga.be>
+ * Copyright (C) 2015-2023 Andreas Redmer <ar-appleflinger@abga.be>
  * 
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -32,6 +32,8 @@ import com.gitlab.ardash.appleflinger.actors.Bird;
 import com.gitlab.ardash.appleflinger.actors.BlockActor;
 import com.gitlab.ardash.appleflinger.actors.GeneralTargetActor;
 import com.gitlab.ardash.appleflinger.actors.Ground;
+import com.gitlab.ardash.appleflinger.actors.IntervalSpawnActor;
+import com.gitlab.ardash.appleflinger.actors.Jet;
 import com.gitlab.ardash.appleflinger.actors.PhysicsActor;
 import com.gitlab.ardash.appleflinger.actors.ProjectileActor;
 import com.gitlab.ardash.appleflinger.actors.SlingShotActor;
@@ -68,6 +70,7 @@ public class GameWorld implements Disposable{
 	
 	public final Mission mission;
 	private Group birdGroup;
+	private Group jetGroup;
       
     public GameWorld(Mission mission) {      
     	this.mission = mission;
@@ -105,8 +108,13 @@ public class GameWorld implements Disposable{
 			throw new RuntimeException("no background image assigned for episode " + mission.getMajor());
 		}
     	
+    	jetGroup = new Group();
+    	stage.addActor(jetGroup);
     	birdGroup = new Group();
     	stage.addActor(birdGroup);
+    	
+    	IntervalSpawnActor isa = new IntervalSpawnActor(jetGroup, Jet.class, 60f, 600f);
+    	stage.addActor(isa);
     	
     	// absorber box
     	float absorberDistance = 4f;
