@@ -16,15 +16,11 @@
  ******************************************************************************/
 package com.gitlab.ardash.appleflinger.actors;
 
-import java.util.ArrayList;
-
 import com.badlogic.gdx.graphics.g2d.Sprite;
 import com.badlogic.gdx.math.MathUtils;
 import com.badlogic.gdx.scenes.scene2d.Actor;
-import com.badlogic.gdx.scenes.scene2d.Group;
 import com.badlogic.gdx.scenes.scene2d.ui.Image;
 import com.badlogic.gdx.scenes.scene2d.utils.SpriteDrawable;
-import com.badlogic.gdx.utils.TimeUtils;
 import com.gitlab.ardash.appleflinger.GameWorld;
 import com.gitlab.ardash.appleflinger.global.Assets;
 import com.gitlab.ardash.appleflinger.helpers.LinearInterpolator;
@@ -42,29 +38,6 @@ public class Jet extends Image {
 	private static final float minBirdSize=0.25f;
 	private static final float maxBirdSize=0.5f;
 	private final float speed;
-
-//	/**
-//	 * should be called every frame - determines if it is time for a new bird and spawns it into the stage if needed
-//	 * @param stage
-//	 */
-//	public static void pingBirdSpawn(Group birdContainer)
-//	{
-//		final long minTimeBetweenSpawns = 100;
-//		final long maxTimeBetweenSpawns = 20000;
-//		if (nextSpawnTime ==0)
-//		{
-//			// first bird spawn time
-//			nextSpawnTime = TimeUtils.millis();
-//			return;
-//		}
-//		
-//		final long now = TimeUtils.millis();
-//		if (now>=nextSpawnTime)
-//		{
-//			birdContainer.addActor(new Jet());
-//			nextSpawnTime = now+MathUtils.random(minTimeBetweenSpawns,maxTimeBetweenSpawns);
-//		}
-//	}
 	
 	private SpriteDrawable sprite = null;
 	private int step =0;
@@ -108,12 +81,6 @@ public class Jet extends Image {
 		step++;
 		step%=12;
 		this.moveBy(-speed, 0);
-//		setDrawable(sprites.get(step));
-		//System.out.println("fly"+ delta);
-//		System.out.println("flyj X "+ getX());
-//		System.out.println("flyj Y "+ getY());
-//		System.out.println("flygroup "+ getParent().getChildren().size);
-		
 	}
 
 	@Override
