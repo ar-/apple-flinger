@@ -63,7 +63,7 @@ public class DesktopLauncher implements ActionResolver{
         settings.maxWidth = 2048;
         settings.maxHeight = 2048;
 //		TexturePacker.process(settings, "../art/sprites/ui", "../android/assets", "ui");
-		TexturePacker.process(settings, "../art/sprites/scene", "../android/assets", "scene");
+//		TexturePacker.process(settings, "../art/sprites/scene", "../android/assets", "scene");
 		TexturePacker t; // keep this here, otherwise import gets always removed
 		try
 		{

@@ -39,6 +39,7 @@ public class IntervalSpawnActor extends Actor {
 
 	@Override
 	public void act(float delta) {
+//		System.out.println("IV " + spawnInterval);
 		spawnInterval -= delta;
 		if (spawnInterval <= 0) {
 			Actor newActor = createSpawnActor();

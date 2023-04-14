@@ -28,6 +28,7 @@ import com.badlogic.gdx.utils.TimeUtils;
 import com.gitlab.ardash.appleflinger.GameWorld;
 import com.gitlab.ardash.appleflinger.global.Assets;
 import com.gitlab.ardash.appleflinger.helpers.LinearInterpolator;
+import com.gitlab.ardash.appleflinger.i18n.I18N;
 
 public class Jet extends Image {
 	
@@ -37,43 +38,47 @@ public class Jet extends Image {
 	private static final float minY=GameWorld.UNIT_HEIGHT/2;
 	private static final float maxY=GameWorld.UNIT_HEIGHT-GameWorld.UNIT_HEIGHT/30;
 	private float minX=-3.5f;
-	private static final float maxX=GameWorld.UNIT_WIDTH+2.5f;
+	private static final float maxX=GameWorld.UNIT_WIDTH+0.1f;
 	private static final float minBirdSize=0.25f;
 	private static final float maxBirdSize=0.5f;
 	private final float speed;
 
-	/**
-	 * should be called every frame - determines if it is time for a new bird and spawns it into the stage if needed
-	 * @param stage
-	 */
-	public static void pingBirdSpawn(Group birdContainer)
-	{
-		final long minTimeBetweenSpawns = 100;
-		final long maxTimeBetweenSpawns = 20000;
-		if (nextSpawnTime ==0)
-		{
-			// first bird spawn time
-			nextSpawnTime = TimeUtils.millis();
-			return;
-		}
-		
-		final long now = TimeUtils.millis();
-		if (now>=nextSpawnTime)
-		{
-			birdContainer.addActor(new Jet());
-			nextSpawnTime = now+MathUtils.random(minTimeBetweenSpawns,maxTimeBetweenSpawns);
-		}
-	}
+//	/**
+//	 * should be called every frame - determines if it is time for a new bird and spawns it into the stage if needed
+//	 * @param stage
+//	 */
+//	public static void pingBirdSpawn(Group birdContainer)
+//	{
+//		final long minTimeBetweenSpawns = 100;
+//		final long maxTimeBetweenSpawns = 20000;
+//		if (nextSpawnTime ==0)
+//		{
+//			// first bird spawn time
+//			nextSpawnTime = TimeUtils.millis();
+//			return;
+//		}
+//		
+//		final long now = TimeUtils.millis();
+//		if (now>=nextSpawnTime)
+//		{
+//			birdContainer.addActor(new Jet());
+//			nextSpawnTime = now+MathUtils.random(minTimeBetweenSpawns,maxTimeBetweenSpawns);
+//		}
+//	}
 	
 	private SpriteDrawable sprite = null;
 	private int step =0;
 	
 	public Jet() {
 		Assets.SpriteGroupAsset ag = Assets.SpriteGroupAsset.JET;
+		
 		// Solidarity mode
 		Sprite selectedSprite = ag.get(0).get();
+		
 		// Propaganda mode
-		selectedSprite = ag.getRandom().get();
+		if (I18N.isUserOccupiedByAFascistRegime())
+			selectedSprite = ag.getRandom().get();
+		
 		sprite = new SpriteDrawable(selectedSprite);
 
 		setDrawable(sprite);
@@ -107,6 +112,7 @@ public class Jet extends Image {
 		//System.out.println("fly"+ delta);
 //		System.out.println("flyj X "+ getX());
 //		System.out.println("flyj Y "+ getY());
+//		System.out.println("flygroup "+ getParent().getChildren().size);
 		
 	}
 

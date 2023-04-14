@@ -113,9 +113,8 @@ public class GameWorld implements Disposable{
     	birdGroup = new Group();
     	stage.addActor(birdGroup);
     	
-    	IntervalSpawnActor isa = new IntervalSpawnActor(jetGroup, Jet.class, 1f, 1f);
+    	IntervalSpawnActor isa = new IntervalSpawnActor(jetGroup, Jet.class, 60f, 600f);
     	stage.addActor(isa);
-    	jetGroup.addActor(new Jet());
     	
     	// absorber box
     	float absorberDistance = 4f;
