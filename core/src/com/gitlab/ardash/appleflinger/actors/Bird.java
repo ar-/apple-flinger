@@ -1,5 +1,5 @@
 /*******************************************************************************
- * Copyright (C) 2015-2023 Andreas Redmer <ar-appleflinger@abga.be>
+ * Copyright (C) 2015-2018 Andreas Redmer <ar-appleflinger@abga.be>
  * 
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -96,9 +96,6 @@ public class Bird extends Image {
 		this.moveBy(speed, 0);
 		setDrawable(sprites.get(step));
 		//System.out.println("fly"+ delta);
-//		System.out.println("fly X "+ getX());
-//		System.out.println("fly Y "+ getY());
-		
 	}
 
 	@Override
