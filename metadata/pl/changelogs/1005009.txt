@@ -1,0 +1,3 @@
+  * usunięto wszystkie faszystowskie symbole i ikony organizacji i reżimów faszystowskich i zastąpiono je flagą ukraińską
+  * dodano tłumaczenie ukraińskie
+  * zaktualizowane tłumaczenia

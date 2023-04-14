@@ -1,0 +1,3 @@
+  * supprimé tous les symboles et icônes fascistes de l'organisation et des régimes fascistes et les a remplacés par le drapeau ukrainien
+  * ajout de la traduction ukrainienne
+  * traductions mises à jour

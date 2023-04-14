@@ -1,0 +1,3 @@
+  * eltávolított minden fasiszta szimbólumot és a fasiszta szervezetek és rezsimek ikonját, és helyére az ukrán zászlót tette
+  * hozzáadva az ukrán fordítást
+  * frissített fordítások

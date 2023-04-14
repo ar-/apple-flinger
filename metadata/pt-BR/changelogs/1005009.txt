@@ -1,0 +1,3 @@
+  * removeu todos os símbolos e ícones fascistas de organizações e regimes fascistas e os substituiu pela bandeira ucraniana
+  * adicionada tradução ucraniana
+  * traduções atualizadas

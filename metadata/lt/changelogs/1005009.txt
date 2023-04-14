@@ -1,0 +1,3 @@
+  * pašalino visus fašistinius simbolius ir fašistinės organizacijos bei režimų ikonas ir pakeitė juos Ukrainos vėliava
+  * pridėtas vertimas į ukrainiečių kalbą
+  * atnaujinti vertimai

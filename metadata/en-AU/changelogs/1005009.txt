@@ -1,0 +1,3 @@
+  * removed all fascist symbols and icons of fascist organization and regimes and replaced them with the Ukrainian flag
+  * added Ukrainian translation
+  * updated translations
