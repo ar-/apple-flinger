@@ -1,0 +1,3 @@
+  * odstranili so vse fašistične simbole in ikone fašističnih organizacij in režimov ter jih nadomestili z ukrajinsko zastavo
+  * dodan ukrajinski prevod
+  * posodobljeni prevodi

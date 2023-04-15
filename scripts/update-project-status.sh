@@ -1,6 +1,6 @@
 #!/bin/bash
 #-------------------------------------------------------------------------------
-# Copyright (C) 2018-2020 Andreas Redmer <ar-appleflinger@abga.be.com>
+# Copyright (C) 2018-2023 Andreas Redmer <ar-appleflinger@abga.be.com>
 # 
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -22,7 +22,7 @@ contributors=`cat AUTHORS.md | egrep "^-" |wc -l`
 translations=`ls android/assets/af_*.properties | wc -l`
 commits=`git rev-list --all --count`
 reposize=`git count-objects -vH | grep "size:" | sed "s/size: //g"`
-apksize=`du -hs android/build/outputs/apk/android-release-unsigned.apk | sed "s/\t/ /g" | egrep -o ".* "`
+apksize=`du -hs ./android/build/outputs/apk/release/android-release-unsigned.apk | sed "s/\t/ /g" | egrep -o ".* "`
 mergedrequests=`wget -O- "https://gitlab.com/ar-/apple-flinger/merge_requests?scope=all&utf8=%E2%9C%93&state=merged" 2>/dev/null | grep Merged | egrep -o "badge badge-pill.*" | egrep -o "[0-9]*" | head -n1`
 linesofcode=`find . -name '*.java' | xargs wc -l | tail -n1 | egrep -o "[0-9]*"`
 echo "{\"contributors\":\"$contributors\",\"translations\":\"$translations\",\"commits\":\"$commits\",\"reposize\":\"$reposize\",\"apksize\":\"$apksize\",\"mergedrequests\":\"$mergedrequests\",\"linesofcode\":\"$linesofcode\"}" > /tmp/status.json

@@ -1,0 +1,3 @@
+  * tog bort alla fascistiska symboler och ikoner för fascistiska organisationer och regimer och ersatte dem med den ukrainska flaggan
+  * lagt till ukrainsk översättning
+  * uppdaterade översättningar

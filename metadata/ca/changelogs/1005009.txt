@@ -1,0 +1,3 @@
+  * va eliminar tots els símbols i icones feixistes de l'organització i els règims feixistes i els va substituir per la bandera d'Ucraïna
+  * S'ha afegit traducció a l'ucraïnès
+  * traduccions actualitzades
