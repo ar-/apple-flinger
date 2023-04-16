@@ -1,6 +1,6 @@
 #!/bin/bash
 #-------------------------------------------------------------------------------
-# Copyright (C) 2017-2020 Andreas Redmer <ar-appleflinger@abga.be>
+# Copyright (C) 2017-2023 Andreas Redmer <ar-appleflinger@abga.be>
 # 
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -21,6 +21,52 @@ then
   echo "AUTHORS.md not found. you must be in the wrong directory"
   exit 2
 fi
+
+# find all people who are to blame for hte currently visible translations
+INCODE=`cat core/src/com/gitlab/ardash/appleflinger/screens/LanguageDialog.java | grep "t\.FLAG" | egrep -o "FLAG_.*," | tr -d ',' | tr '[:upper:]' '[:lower:]' | sed -e "s/^flag_//"  | sort`
+CINCODE=`cat core/src/com/gitlab/ardash/appleflinger/screens/LanguageDialog.java | grep "t\.FLAG" | egrep -o "FLAG_.*," | tr -d ',' | tr '[:upper:]' '[:lower:]' | sed -e "s/^flag_//"  | wc -l`
+echo In code we have these $CINCODE translations:
+echo $INCODE
+
+CSIN=`echo $INCODE | tr ' ' ','`
+echo $CSIN
+
+TFILES=`eval "ls android/assets/af_{$CSIN}.properties"`
+CTFILES=`eval "ls android/assets/af_{$CSIN}.properties | wc -l"`
+
+echo For them we have these $CTFILES files:
+echo $TFILES
+
+blfile=/tmp/afblames.txt
+rm -f $blfile
+for tf in $TFILES
+do
+  git blame $tf >> $blfile
+done
+echo For the current versions of this file we have these `cat $blfile | grep "=" | egrep -o " \(.*[0-9]-" | egrep -o ".* 2" | sed -e 's/^..//' -e 's/ *.$//' | grep -v '#' | sort -u | wc -l` people commited to them:
+cat $blfile | grep "=" | egrep -o " \(.*[0-9]-" | egrep -o ".* 2" | sed -e 's/^..//' -e 's/ *.$//' | grep -v '#' | sort | uniq -c | sort -nr
+
+echo Removing those with less than 10 contrubutions:
+echo
+#git blame $TFILES | egrep -o " \(.*[0-9]-" | egrep -o ".* 2" | sed -e 's/^..//' -e 's/ *.$//' | grep -v '#' | sort | uniq -c | sort -nr
+translators=`cat $blfile | grep "=" | egrep -o " \(.*[0-9]-" | egrep -o ".* 2" | sed -e 's/^..//' -e 's/ *.$//' | grep -v '#' | sort | uniq -c | awk '$1>=10{print substr($0,9)}' | sed -e "s/Сухичев Михаил Иванович/Sukhichev Mikhail Ivanovich/g" | sed -e "s/xxssmaoxx/Simon Dottor/g"  | sed -e "s/Masowick/Demian Masowick/g" | sort | tr '\n' ','|sed -e "s/,/, /g"`
+echo
+echo $translators
+#rm -f $blfile
+
+echo
+echo applying substitutions, leaves us with:
+
+translators=${translators/Andreas, Andreas Redmer/Andreas Redmer}
+translators=${translators/Artem/Artem Kovalev}
+translators=${translators/John Doe,/}
+translators=${translators/Oguz Ersen/Oğuz Ersen}
+translators=${translators/Iván/Iván Seoane}
+
+echo $translators
+
+exit 0
+
 
 echo "collecting authors"
 echo -e "Authors\n=======\nWe'd like to thank the following people for their contributions:\n\n" > /tmp/AUTHORS.md
@@ -69,30 +115,12 @@ then
   echo "no new authors found"
 else
   echo "new authors found. updating file. commit again"
-  cat /tmp/AUTHORS.md > AUTHORS.md
+  # cat /tmp/AUTHORS.md > AUTHORS.md
 
-  # also update in-code authors that helped with the translation
-  excl_regex=`echo $excl | tr ' ' '|'`
-
-  # collect authors of property files, exclude the excluded, remove email addresses and put all in one line
-  # unfortunatally also replace cyrillic names with the latin transcription, because the libgdx label, looks too messed up otherwise
-  translators=`git log --raw android/assets/af*.properties | grep "^Author: " | sort | uniq | cut -d ' ' -f2- | egrep -v $excl_regex | egrep -o ".* <" | egrep -o ".* " | sed -e "s/Сухичев Михаил Иванович/Sukhichev Mikhail Ivanovich/g" | sed -e "s/xxssmaoxx/Simon Dottor/g" | sed -e "s/Markel @wakutiteo/Markel/g" | sort -u | tr '\n' ',' | sed -e "s/ ,/, /g"`
-  
-  echo $translators
-  # repair Andreas who comes up twice
-  translators=${translators/Andreas, Andreas Redmer/Andreas Redmer}
-
-  # repair Iván who comes up twice
-  translators=${translators/Iván, Iván Seoane/Iván Seoane}
-
-  # remove John Doe
-  translators=${translators/John Doe, /}
-
-
-  # smack it into the source code
-  sed -i "s/.*static String translators.*/\tstatic String translators=\"${translators}\";/" core/src/com/gitlab/ardash/appleflinger/screens/CreditsDialog.java
-  echo "possibly added translators to the credit screen. should be checked in both font types?"
-  exit 1
+  # # smack it into the source code
+  # sed -i "s/.*static String translators.*/\tstatic String translators=\"${translators}\";/" core/src/com/gitlab/ardash/appleflinger/screens/CreditsDialog.java
+  # echo "possibly added translators to the credit screen. should be checked in both font types?"
+  # exit 1
 fi
 
 
