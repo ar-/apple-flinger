@@ -3,6 +3,7 @@ Authors
 We'd like to thank the following people for their contributions:
 
 
+- Abc Tbc \<ivitek⒜gmail∙com\>
 - Adolfo Jayme Barrientos \<fitojb⒜ubuntu∙com\>
 - Albynton \<albynton⒜gmail∙com\>
 - Alexander Schmidt \<alexander42schmidt⒜gmx∙de\>
@@ -10,33 +11,76 @@ We'd like to thank the following people for their contributions:
 - Alex \<tminei⒜ukr∙net\>
 - Allan Nordhøy \<epost⒜anotheragency∙no\>
 - Andreas Redmer \<ar-appleflinger⒜abga∙be\>
+- Artem \<artem⒜molotov∙work\>
 - Arttu Ylhävuori \<arjymoi⒜hotmail∙com\>
+- bonbonboi \<hamzah∙abusamak⒜gmail∙com\>
 - ButterflyOfFire \<ButterflyOfFire⒜protonmail∙com\>
+- 이정희 \<daemul72⒜gmail∙com\>
 - DeMmAge \<hgt166782⒜gmail∙com\>
+- DFC \<damiafluixacanals28⒜gmail∙com\>
 - Dmitry Mikhirev \<mikhirev⒜gmail∙com\>
+- Dmytro Vasyliovych Klymenko \<DmytroVasyliovychKlymenko⒜super-sm∙art\>
+- Dušan Medić \<dusanmedic1981⒜gmail∙com\>
+- Fontan 030 \<pomanfedurin⒜gmail∙com\>
+- fresh \<fresh190⒜protonmail∙com\>
+- gallegonovato \<fran-carro⒜hotmail∙es\>
+- Gift Tandasi \<gift∙tandasi⒜gmail∙com\>
 - Grzegorz Sagadyn \<grzegorz∙sagadyn⒜speednet∙pl\>
-- Heimen Stoffels \<vistausss⒜outlook∙com\>
+- Heimen Stoffels \<vistausss⒜fastmail∙com\>
 - Iván Seoane \<ivanrsm1997⒜gmail∙com\>
-- Iváns \<ivanrsm1997⒜gmail∙com\>
+- javad SI \<m∙javad200⒜gmail∙com\>
+- Jaxom \<jaxom+weblate⒜tchack∙xyz\>
 - JC Staudt \<jc⒜staudt∙io\>
+- J∙ Lavoie \<j∙lavoie⒜net-c∙ca\>
 - John Doe \<dansroot⒜yadim∙dismail∙de\>
-- Jonatan Nyberg \<jonatan∙nyberg∙karl⒜gmail∙com\>
+- Jonatan Nyberg \<jonatan⒜autistici∙org\>
+- Kristoffer Grundström \<swedishsailfishosuser⒜tutanota∙com\>
 - leela \<53352⒜protonmail∙com\>
+- Licaon_Kter \<licaon∙kter⒜protonmail∙com\>
 - Louies \<louies0623⒜gmail∙com\>
+- Luna Jernberg \<droidbittin⒜gmail∙com\>
 - Mahtab Alam \<mahtab∙ceh⒜gmail∙com\>
+- Maite Guix \<maite∙guix⒜gmail∙com\>
 - Manuela Silva \<mmsrs⒜sky∙com\>
 - Markel \<wakutiteo⒜protonmail∙com\>
+- Masowick \<d651483⒜nwytg∙com\>
 - Mattias Münster \<mattiasmun⒜gmail∙com\>
+- Maxime Leroy \<lisacintosh⒜gmail∙com\>
+- Mikhail Pershin \<mikhail⒜frcdr∙org\>
 - Milo Ivir \<mail⒜milotype∙de\>
-- Oguz Ersen \<oguzersen⒜protonmail∙com\>
+- Myeongjin Lee \<aranet100⒜gmail∙com\>
+- Nathan \<bonnemainsnathan⒜gmail∙com\>
+- Oğuz Ersen \<oguzersen⒜protonmail∙com\>
 - Osoitz \<oelkoro⒜gmail∙com\>
+- Paolo Benvenuto \<paolobenve⒜gmail∙com\>
+- phlostically \<phlostically⒜mailinator∙com\>
+- Piero Sangino \<simonedotto⒜protonmail∙com\>
+- poi \<erbaotao⒜outlook∙com\>
+- PokeGalaico \<abloodyfreaks⒜gmail∙com\>
 - Rex_sa \<asd1234567890m⒜gmail∙com\>
+- Reza Almanda \<rezaalmanda27⒜gmail∙com\>
+- RickRolled \<onlyforgamerb⒜gmail∙com\>
+- Roman Leo \<roman∙leo⒜gmx∙de\>
 - Rui Mendes \<xz9⒜protonmail∙com\>
+- sajjad khalilzadeh \<shopeliran⒜gmail∙com\>
+- SC \<lalocas⒜protonmail∙com\>
+- Scoopity Whoop \<Scoo0p⒜yandex∙com\>
+- Sendy Brammadi \<sendy∙brammadi⒜gmail∙com\>
 - Sérgio Marques \<smarquespt⒜gmail∙com\>
+- ssantos \<ssantos⒜web∙de\>
+- Sukhichev Mikhail Ivanovich \<sukhichev⒜yandex∙ru\>
+- Thiago Carmona Monteiro \<Guarakami1807⒜protonmail∙ch\>
+- Tibor Repček \<tiborepcek⒜gmail∙com\>
+- Tuomas Lähteenmäki \<lahtis⒜gmail∙com\>
+- tygyh \<jonis9898⒜hotmail∙com\>
+- universales \<universales⒜protonmail∙com\>
 - urain39 \<hexiedeshijie⒜gmail∙com\>
 - Verdulo \<tomek⒜disroot∙org\>
-- WaldiS \<admin⒜sto∙ugu∙pl\>
+- Viktória Nagy \<tindykmp⒜protonmail∙ch\>
+- WaldiS \<sto⒜tutanota∙de\>
+- words wave \<wordswave6162⒜gmail∙com\>
 - xin \<xin⒜riseup∙net\>
 - xxssmaoxx \<simon∙dottor⒜gmail∙com\>
 - YONGLE \<tanyongle0633⒜gmail∙com\>
+- МАН69К \<weblate⒜mah69k∙net\>
 - Сухичев Михаил Иванович \<sukhichev⒜yandex∙ru\>

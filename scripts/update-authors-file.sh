@@ -59,21 +59,22 @@ echo applying substitutions, leaves us with:
 
 translators=${translators/Andreas, Andreas Redmer/Andreas Redmer}
 translators=${translators/Artem/Artem Kovalev}
-translators=${translators/John Doe,/}
-translators=${translators/Oguz Ersen/Oğuz Ersen}
+translators=${translators/John Doe, /}
+translators=${translators/J. Lavoie/Jeannette Lavoie}
+translators=${translators/Michal Čihař, /} # doesnt want to be named
+translators=${translators/Oguz Ersen/Oghuz Ersen} # Oğuz is not spported by the font
 translators=${translators/Iván/Iván Seoane}
 
 echo $translators
 
-exit 0
-
+# exit 0
 
 echo "collecting authors"
 echo -e "Authors\n=======\nWe'd like to thank the following people for their contributions:\n\n" > /tmp/AUTHORS.md
 git log --raw | grep "^Author: " | sort | uniq | cut -d ' ' -f2- | sed 's/^/- /' >> /tmp/AUTHORS.md
 
 # remove authors that don't want to be inlcuded or old email addresses 
-excl="z@z ar-gdroid@abga.be ar-gitlab@abga.be andreasredmer@mailchuck.com a_r@posteo.de vagrant@vagrant.vm michal@cihar.com hosted@weblate.org"
+excl="z@z ar-gdroid@abga.be ar-gitlab@abga.be andreasredmer@mailchuck.com a_r@posteo.de vagrant@vagrant.vm michal@cihar.com hosted@weblate.org KovalevArtem.ru@gmail.com istausss.outlook.com jonatan.nyberg.karl@gmail.com Demian@gmx.co.uk Oguz ☆Verdulo admin@sto.ugu.pl"
 for AE in $excl
 do
   echo excluding $AE
@@ -87,11 +88,15 @@ echo excluding $AE
 cat /tmp/AUTHORS.md | grep -v "$AE" > /tmp/AUTHORS_tmp.md
 cp /tmp/AUTHORS_tmp.md /tmp/AUTHORS.md
 
-# exclude one of Iván who commited with 2 email addresses (can't be covered by the simple grep above)
+# exclude one of Iván who commited with 3 email addresses (can't be covered by the simple grep above)
 cat /tmp/AUTHORS.md | grep -v "Iván <ivanrsm1997@gmail.com>" > /tmp/AUTHORS_tmp.md
 cp /tmp/AUTHORS_tmp.md /tmp/AUTHORS.md
+cat /tmp/AUTHORS.md | grep -v "Iváns <ivanrsm1997@gmail.com>" > /tmp/AUTHORS_tmp.md
+cp /tmp/AUTHORS_tmp.md /tmp/AUTHORS.md
 
-# exclude one of Verdulo who commited with 2 email addresses (can't be covered by the simple grep above)
+# exclude one of Verdulo who commited with 3 email addresses (can't be covered by the simple grep above)
+cat /tmp/AUTHORS.md | grep -v "Verdulo <cybertomek@openmailbox.org>" > /tmp/AUTHORS_tmp.md
+cp /tmp/AUTHORS_tmp.md /tmp/AUTHORS.md
 cat /tmp/AUTHORS.md | grep -v "Verdulo <cybertomek@openmailbox.org>" > /tmp/AUTHORS_tmp.md
 cp /tmp/AUTHORS_tmp.md /tmp/AUTHORS.md
 
@@ -115,12 +120,12 @@ then
   echo "no new authors found"
 else
   echo "new authors found. updating file. commit again"
-  # cat /tmp/AUTHORS.md > AUTHORS.md
+  cat /tmp/AUTHORS.md > AUTHORS.md
 
-  # # smack it into the source code
-  # sed -i "s/.*static String translators.*/\tstatic String translators=\"${translators}\";/" core/src/com/gitlab/ardash/appleflinger/screens/CreditsDialog.java
-  # echo "possibly added translators to the credit screen. should be checked in both font types?"
-  # exit 1
+  # smack translators into the source code
+  sed -i "s/.*static String translators.*/\tstatic String translators=\"${translators}\";/" core/src/com/gitlab/ardash/appleflinger/screens/CreditsDialog.java
+  echo "possibly added translators to the credit screen. should be checked in both font types?"
+  exit 1
 fi
 
 
