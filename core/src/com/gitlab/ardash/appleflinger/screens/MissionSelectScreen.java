@@ -1,5 +1,5 @@
 /*******************************************************************************
- * Copyright (C) 2015-2018 Andreas Redmer <ar-appleflinger@abga.be>
+ * Copyright (C) 2015-2023 Andreas Redmer <ar-appleflinger@abga.be>
  * 
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -16,7 +16,13 @@
  ******************************************************************************/
 package com.gitlab.ardash.appleflinger.screens;
 
+import java.util.LinkedList;
+import java.util.List;
+
+import com.badlogic.gdx.graphics.Color;
+import com.badlogic.gdx.scenes.scene2d.Action;
 import com.badlogic.gdx.scenes.scene2d.InputEvent;
+import com.badlogic.gdx.scenes.scene2d.actions.Actions;
 import com.badlogic.gdx.scenes.scene2d.ui.Label;
 import com.badlogic.gdx.scenes.scene2d.ui.Table;
 import com.badlogic.gdx.scenes.scene2d.utils.ClickListener;
@@ -30,6 +36,16 @@ import com.gitlab.ardash.appleflinger.missions.Mission;
 
 public class MissionSelectScreen extends GenericScreen {
 	private static int selectedEpisode=0;
+	
+	/**
+	 * the number of times the buser has clicked the GPL icon
+	 */
+	private int gplClickCount = 0;
+	
+	/**
+	 * A reference to all level buttons, so the cheat code can activate them easily.
+	 */
+	private List<LevelButton> levelButtons;
 	   
 	public MissionSelectScreen() {
 
@@ -76,6 +92,7 @@ public class MissionSelectScreen extends GenericScreen {
     		lblEpiName.setAlignment(Align.center);
     		
             guiStage.addActor(lblEpiName);
+            levelButtons = new LinkedList<>();
 	        int i=0;
 	    	for (final Mission mission : Mission.values())
 	    	{
@@ -83,6 +100,7 @@ public class MissionSelectScreen extends GenericScreen {
 	    		if (mission.getMajor() == selectedEpisode)
 	    		{
 			        final LevelButton btnMission = new LevelButton(mission.getMinor());
+			        levelButtons.add(btnMission);
 			        btnMission.moveBy(SCREEN_WIDTH/2-100, SCREEN_HEIGHT/2-100);
 		            table.add(btnMission).width(150).height(150);
 		            
@@ -104,6 +122,7 @@ public class MissionSelectScreen extends GenericScreen {
 		            	table.row();
 	    		}
 	    	}
+	    	addCheatClickToGPLLogo();
         }
         guiStage.addActor(table);
         
@@ -136,6 +155,33 @@ public class MissionSelectScreen extends GenericScreen {
 
         linkHardwareBackButtonToButton(btnBack);
     }
+
+    /**
+     * only on this screen there will be a cheat added when user hammers the GPL logo in the bottom right
+     */
+	private void addCheatClickToGPLLogo() {
+		imgGpl3.addListener(new ClickListener() {
+			@Override
+			public void clicked(InputEvent event, float x, float y) {
+				super.clicked(event, x, y);
+				if (gplClickCount++!=19) // click 20 time to cheat
+					return;
+				float i = 0;
+				for (final LevelButton lb : levelButtons) {
+					i += 0.1f;
+					lb.addAction(Actions.sequence(Actions.delay(i), Actions.fadeOut(0.1f*18), Actions.fadeIn(0.1f*18),
+							Actions.run(new Runnable() {
+								@Override
+								public void run() {
+									lb.setDisabled(false); // this is sufficient, but the code around this line makes it look cool
+								}
+					})));
+				}
+				Pref.setAllMissionsActivated();
+			}
+		});
+		
+	}
 
 	private static String getEpisodeName(Integer episode) {
 		switch (episode) {
