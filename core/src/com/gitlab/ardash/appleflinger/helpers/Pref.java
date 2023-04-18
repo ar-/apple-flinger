@@ -1,5 +1,5 @@
 /*******************************************************************************
- * Copyright (C) 2017-2018 Andreas Redmer <andreas.redmer@posteo.de>
+ * Copyright (C) 2017-2023 Andreas Redmer <andreas.redmer@posteo.de>
  * 
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -182,6 +182,17 @@ public class Pref {
 		prefs.putBoolean(key, activated);
 		prefs.flush();
 	}
+	
+	/**
+	 * can be called by a cheat to enable all missions permanently
+	 */
+	public static void setAllMissionsActivated() {
+		for (Mission m : Mission.values()) {
+			if (m.getMajor() != 0) {
+				setMissionActivated (m,true);
+			}
+		}
+	}	
 
 	public static boolean isAchievementUnlocked(Achievement achievement) {
 		Integer unl = getAchievementProgress(achievement);
