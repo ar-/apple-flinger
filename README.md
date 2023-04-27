@@ -31,6 +31,12 @@ international age ratings:
 *    USK: 0
 *    IARC: 3
 
+## Cheats
+
+### To unlock all levels (v.1.5.10 and higher)
+
+In the bottom right of the level-selection screen (where you choose the level 1-18) there is the GPL3 logo. Click or touch that 20 times in a row and all levels will be unlocked permanently.
+
 ## Quickstart
 
 Option 1: [![Get it on F-Droid](https://f-droid.org/wiki/images/3/31/F-Droid-button_get-it-on_smaller.png)](https://f-droid.org/packages/com.gitlab.ardash.appleflinger.android/)
