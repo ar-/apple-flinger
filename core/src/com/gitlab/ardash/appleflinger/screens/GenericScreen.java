@@ -1,5 +1,5 @@
 /*******************************************************************************
- * Copyright (C) 2015-2018 Andreas Redmer <ar-appleflinger@abga.be>
+ * Copyright (C) 2015-2023 Andreas Redmer <ar-appleflinger@abga.be>
  * 
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -49,7 +49,8 @@ public abstract class GenericScreen implements Screen{
 	protected OrthographicCamera guiCam;
 	protected GameManager gm;
 	protected LabelStyle menustyle;
-
+	protected Image imgGpl3;
+	
 	public GenericScreen() {
 		super();
 		gm = GameManager.getInstance();
@@ -99,7 +100,7 @@ public abstract class GenericScreen implements Screen{
         
         Image imgForkMe = new Image(Assets.SpriteAsset.FORK_ME.get());
         guiStage.addActor(imgForkMe);  
-        Image imgGpl3 = new Image(Assets.SpriteAsset.GPL3.get());
+        imgGpl3 = new Image(Assets.SpriteAsset.GPL3.get());
         imgGpl3.setPosition(SCREEN_WIDTH-imgGpl3.getWidth()-20, 20);
         guiStage.addActor(imgGpl3);  
         
@@ -175,7 +176,7 @@ public abstract class GenericScreen implements Screen{
         // add a new one
         gm.getInputMultiplexer().addProcessor(0, newbba);
 	}
-
+	
 	@Override
 	public void render(float delta) {
 	    guiCam = (OrthographicCamera) guiStage.getCamera();  
