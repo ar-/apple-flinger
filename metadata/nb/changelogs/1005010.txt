@@ -1,0 +1,1 @@
+lagt til juksekode for å låse opp alle nivåer
