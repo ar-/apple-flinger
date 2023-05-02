@@ -1,10 +1,10 @@
 1.4.8
-  * Añadida traducción al Polaco. Gracias a Verdulo.
-  * Añadida traducción al Esperanto. Gracias a Verdulo.
+  * Añadido idioma Polaco. Gracias a Verdulo.
+  * Añadido idioma Esperanto. Gracias a Verdulo.
 
 1.4.7
-  * Se acerca el invierno. Añadidos nuevos niveles.
-  * Me quedé sin ideas. Por favor, envíenme ideas para nuevos niveles.
+  * Se acerca el invierno. Nuevos niveles.
+  * Me quedé sin ideas. Envíenme ideas para nuevos niveles.
 
 1.4.6
   * Traducción al Ruso mejorada. Gracias a Dmitry.
