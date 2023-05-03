@@ -55,6 +55,7 @@ import com.gitlab.ardash.appleflinger.helpers.SoundPlayer;
 import com.gitlab.ardash.appleflinger.i18n.I18N;
 import com.gitlab.ardash.appleflinger.listeners.OnGameOverListener;
 import com.gitlab.ardash.appleflinger.listeners.OnPointsChangeListener;
+import com.gitlab.ardash.appleflinger.listeners.OnShotFiredListener;
 import com.gitlab.ardash.appleflinger.listeners.OnUnlockAchievementListener;
 import com.gitlab.ardash.appleflinger.missions.Mission;
 
@@ -290,14 +291,49 @@ public class GameScreen implements Screen {
    		}
    		labelNameP2.setText(String.format(" %s  ", gm.PLAYER2.getName())); 
    		
+   		// declare here because we need it in OnCurrentPlayerChangeListener
+   		final SpriteButton btnFF = new SpriteButton(Assets.SpriteAsset.BTN_FF.get());
+   		
    		// register listener for gamestateChanges
    		gm.setOnCurrentPlayerChangeListener(new OnCurrentPlayerChangeListener() {
 			@Override
 			public void onCurrentPlayerChange() {
 		        setAnnouncementText(String.format("%s\n"+I18N.getString("itIsYourTurn"), gm.currentPlayer.getName()));   
+	        	btnFF.clearActions();
+	            btnFF.setTouchable(Touchable.disabled);
+	            btnFF.addAction(Actions.fadeOut(0.5f, Interpolation.linear));
 			}
 		});
    		
+   		// fast-forward button
+        btnFF.addListener(new ClickListener(){@Override
+        public void clicked(InputEvent event, float x, float y) {
+        	gm.fastForwardCurrentRound();
+        	btnFF.clearActions();
+            btnFF.setTouchable(Touchable.disabled);
+            btnFF.addAction(Actions.fadeOut(0.5f, Interpolation.linear));
+        	super.clicked(event, x, y);
+        }});
+        btnFF.setTouchable(Touchable.disabled);
+        btnFF.addAction(Actions.fadeOut(0.01f, Interpolation.linear));
+
+        // register with the shot fired listener, so the button can become visible after a while
+        gm.setOnShotFiredListener(new OnShotFiredListener() {
+			
+			@Override
+			public void onShotFired() {
+	        	btnFF.clearActions();
+	            btnFF.addAction(Actions.sequence(Actions.delay(1f), 
+	            		Actions.run(new Runnable() {
+							@Override
+							public void run() {
+					            btnFF.setTouchable(Touchable.enabled);
+							}
+						}),
+	            		Actions.fadeIn(0.5f, Interpolation.linear)));
+			}
+		});
+        
    		// pause button
         final SpriteButton btnPause = new SpriteButton(Assets.SpriteAsset.BTN_PAUSE.get());
         btnPause.moveBy(0+100, SCREEN_HEIGHT-100);
@@ -352,6 +388,7 @@ public class GameScreen implements Screen {
         topLeftTable.align(Align.topLeft);
         topLeftTable.add(btnSound).padLeft(10);
         topLeftTable.add(btnPause).padLeft(10);
+        topLeftTable.add(btnFF).padLeft(10);
 
         topLeftTable.add(miniStatsTable).width(SCREEN_WIDTH - 4*(10+btnPause.getWidth())).padLeft(0).center();
         guiStage.addActor(topLeftTable);
@@ -403,7 +440,8 @@ public class GameScreen implements Screen {
         // dont update the world, if game paused
         if (!GameManager.getInstance().isPaused())
         {
-			world.update(delta); // update the box2d world
+        	final int speedFactor = GameManager.getInstance().isRoundFastForwarded() ? 4 : 1;
+			world.update(delta*speedFactor); // update the box2d world
 			notPausedTimeOnScreen  += delta;
 			updateTimeOnScreen(notPausedTimeOnScreen);
         }

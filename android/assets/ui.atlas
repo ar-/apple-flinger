@@ -60,6 +60,13 @@ btn_fb
   orig: 100, 100
   offset: 0, 0
   index: -1
+btn_ff
+  rotate: false
+  xy: 308, 10
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
 btn_fl_empty
   rotate: false
   xy: 1044, 310
@@ -69,7 +76,7 @@ btn_fl_empty
   index: -1
 btn_info
   rotate: false
-  xy: 308, 10
+  xy: 1552, 208
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
@@ -97,56 +104,56 @@ btn_locked
   index: -1
 btn_logout
   rotate: false
-  xy: 1552, 208
+  xy: 410, 10
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 btn_pause
   rotate: false
-  xy: 410, 10
+  xy: 1654, 208
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 btn_pi
   rotate: false
-  xy: 1654, 208
+  xy: 1852, 308
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 btn_play
   rotate: false
-  xy: 1852, 308
+  xy: 1246, 106
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 btn_refresh
   rotate: false
-  xy: 1246, 106
+  xy: 1348, 106
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 btn_settings
   rotate: false
-  xy: 1348, 106
+  xy: 1450, 106
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 btn_sound_off
   rotate: false
-  xy: 1450, 106
+  xy: 1552, 106
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
   index: -1
 btn_sound_on
   rotate: false
-  xy: 1552, 106
+  xy: 1654, 106
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
@@ -160,7 +167,7 @@ btn_sq_empty
   index: -1
 btn_tw
   rotate: false
-  xy: 1654, 106
+  xy: 512, 10
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
@@ -174,7 +181,7 @@ btn_unlocked
   index: -1
 btn_world
   rotate: false
-  xy: 512, 10
+  xy: 614, 25
   size: 100, 100
   orig: 100, 100
   offset: 0, 0
@@ -195,7 +202,7 @@ flag_de
   index: -1
 flag_en
   rotate: false
-  xy: 716, 3
+  xy: 1838, 256
   size: 100, 50
   orig: 100, 50
   offset: 0, 0
@@ -216,14 +223,14 @@ flag_es
   index: -1
 flag_eu
   rotate: false
-  xy: 1838, 250
+  xy: 1838, 198
   size: 100, 56
   orig: 100, 56
   offset: 0, 0
   index: -1
 flag_fi
   rotate: false
-  xy: 1838, 187
+  xy: 1838, 135
   size: 100, 61
   orig: 100, 61
   offset: 0, 0
@@ -244,7 +251,7 @@ flag_gl
   index: -1
 flag_hr
   rotate: false
-  xy: 1838, 135
+  xy: 1940, 191
   size: 100, 50
   orig: 100, 50
   offset: 0, 0
@@ -258,7 +265,7 @@ flag_it
   index: -1
 flag_nb
   rotate: false
-  xy: 614, 52
+  xy: 716, 52
   size: 100, 73
   orig: 100, 73
   offset: 0, 0
@@ -272,7 +279,7 @@ flag_nl
   index: -1
 flag_pl
   rotate: false
-  xy: 1838, 6
+  xy: 1838, 2
   size: 100, 62
   orig: 100, 62
   offset: 0, 0
@@ -286,35 +293,35 @@ flag_pt
   index: -1
 flag_pt_br
   rotate: false
-  xy: 716, 55
+  xy: 1634, 34
   size: 100, 70
   orig: 100, 70
   offset: 0, 0
   index: -1
 flag_ru
   rotate: false
-  xy: 1634, 37
+  xy: 1736, 37
   size: 100, 67
   orig: 100, 67
   offset: 0, 0
   index: -1
 flag_uk
   rotate: false
-  xy: 1634, 37
+  xy: 1736, 37
   size: 100, 67
   orig: 100, 67
   offset: 0, 0
   index: -1
 flag_sv
   rotate: false
-  xy: 1838, 70
+  xy: 1940, 243
   size: 100, 63
   orig: 100, 63
   offset: 0, 0
   index: -1
 flag_tr
   rotate: false
-  xy: 1736, 37
+  xy: 1838, 66
   size: 100, 67
   orig: 100, 67
   offset: 0, 0

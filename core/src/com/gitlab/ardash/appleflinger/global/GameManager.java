@@ -27,6 +27,7 @@ import com.gitlab.ardash.appleflinger.global.PlayerStatus.PlayerSide;
 import com.gitlab.ardash.appleflinger.helpers.Achievement;
 import com.gitlab.ardash.appleflinger.helpers.Pref;
 import com.gitlab.ardash.appleflinger.listeners.OnGameOverListener;
+import com.gitlab.ardash.appleflinger.listeners.OnShotFiredListener;
 import com.gitlab.ardash.appleflinger.listeners.OnUnlockAchievementListener;
 import com.gitlab.ardash.appleflinger.missions.Mission;
 import com.gitlab.ardash.appleflinger.screens.GameScreen;
@@ -54,6 +55,7 @@ final public class GameManager {
 	public PlayerStatus PLAYER2;
 	private static GameManager instance;
 	private OnCurrentPlayerChangeListener onCurrentPlayerChangeListener;
+	private OnShotFiredListener onShotFiredListener;
 	private OnGameOverListener onGameOverListener;
 	private OnUnlockAchievementListener onUnlockAchievementListener;
 	private Mission currentMission = null;
@@ -77,6 +79,8 @@ final public class GameManager {
 	private final InputMultiplexer inputMultiplexer;
 	
 	public boolean isPaused;
+	private boolean isRoundFastFowarded;
+
 	/**
 	 * the current winning streak (checking for non-interrupted streak compared to 'getWins()')
 	 */
@@ -162,6 +166,7 @@ final public class GameManager {
 		// TODO shot based rest function for gamemanager needed ?
 		PLAYER1.resetShot();
 		PLAYER2.resetShot();
+		isRoundFastFowarded = false;
 	}
 	
 	private void endGameIfItIsOver() {
@@ -241,6 +246,9 @@ final public class GameManager {
 	public void onShotFired ()
 	{
 		shotsFiredThisRound++;
+		if (onShotFiredListener != null) {
+			onShotFiredListener.onShotFired();
+		}
 	}
 	
 	/**
@@ -321,6 +329,10 @@ final public class GameManager {
 	public void setOnCurrentPlayerChangeListener(
 			OnCurrentPlayerChangeListener onCurrentPlayerChangeListener) {
 		this.onCurrentPlayerChangeListener = onCurrentPlayerChangeListener;
+	}
+
+	public void setOnShotFiredListener(OnShotFiredListener onShotFiredListener) {
+		this.onShotFiredListener = onShotFiredListener;
 	}
 
 	public void setOnGameOverListener(OnGameOverListener onGameOverListener) {
@@ -411,6 +423,14 @@ final public class GameManager {
 
 	public void setPaused(boolean isPaused) {
 		this.isPaused = isPaused;
+	}
+
+	public boolean isRoundFastForwarded() {
+		return isRoundFastFowarded;
+	}
+
+	public void fastForwardCurrentRound() {
+		this.isRoundFastFowarded = true;
 	}
 
 }
