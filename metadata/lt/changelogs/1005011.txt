@@ -1,0 +1,1 @@
+pridėtas greito sukimo pirmyn mygtukas, kad paspartintų lėtą kai kurių raundų pabaigą

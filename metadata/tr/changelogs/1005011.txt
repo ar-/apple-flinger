@@ -1,0 +1,1 @@
+bazı turların yavaş bitmesini hızlandırmak için ileri sarma düğmesi eklendi

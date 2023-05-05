@@ -1,0 +1,1 @@
+dodano przycisk szybkiego przewijania do przodu, aby przyspieszyć powolne zakończenie niektórych rund

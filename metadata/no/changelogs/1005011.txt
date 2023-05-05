@@ -1,0 +1,1 @@
+lagt til fremspolingsknapp for å øke hastigheten på den langsomme avslutningen av noen runder

@@ -1,0 +1,1 @@
+ajout d'un bouton d'avance rapide pour accélérer la fin lente de certains tours

@@ -1,0 +1,1 @@
+tillagd snabbspolningsknapp för att påskynda det långsamma slutet av vissa omgångar
