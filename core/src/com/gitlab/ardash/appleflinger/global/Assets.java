@@ -63,7 +63,7 @@ public class Assets {
 	
 	private static final String EO_CHARACTERS = "ĉĝĥĵŝŭĈĜĤĴŜŬ";
 	
-	private static final String EXTRA_CHARACTERS = RUSSIAN_CHARACTERS + POLISH_CHARACTERS + EO_CHARACTERS;
+	private static final String EXTRA_CHARACTERS = RUSSIAN_CHARACTERS + UKRAINIAN_CHARACTERS + POLISH_CHARACTERS + EO_CHARACTERS;
 	
 	public enum LabelStyleAsset {
 		MINILABEL,
@@ -326,6 +326,7 @@ public class Assets {
 		BTN_SOUND_OFF,
 		BTN_BACK,
 		BTN_PAUSE,
+		BTN_FF,
 		BTN_REFRESH,
 		BTN_ABORT,
 		BTN_BLANK,

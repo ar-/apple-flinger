@@ -1,0 +1,1 @@
+aggiunto il pulsante di avanzamento rapido per accelerare la fine lenta di alcuni round
