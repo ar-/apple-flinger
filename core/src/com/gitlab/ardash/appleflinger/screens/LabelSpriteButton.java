@@ -40,7 +40,7 @@ public class LabelSpriteButton extends Stack {
 		
 		// this is an exception: even if the language is set to latin based
 		// the name of some languages, is written in another char set
-		if (text.contains("и") || text.contains("ь"))
+		if (text.contains("и") || text.contains("а"))
 		{
 			LabelStyle originalStyle = Assets.LabelStyleAsset.MINILABEL.style;
 			LabelStyle cyrillicStyle = new LabelStyle(originalStyle);
