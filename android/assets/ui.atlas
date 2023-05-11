@@ -263,6 +263,13 @@ flag_it
   orig: 100, 67
   offset: 0, 0
   index: -1
+flag_kk
+  rotate: false
+  xy: 1940, 139
+  size: 100, 50
+  orig: 100, 50
+  offset: 0, 0
+  index: -1
 flag_nb
   rotate: false
   xy: 716, 52

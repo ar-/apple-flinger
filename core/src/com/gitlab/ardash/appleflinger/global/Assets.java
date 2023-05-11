@@ -52,9 +52,12 @@ public class Assets {
             + "абвгдеёжзийклмнопрстуфхцчшщъыьэюя"
             + "1234567890.,:;_¡!¿?\"'+-*/()[]={}";
 	
+	private static final String KAZAKH_CHARACTERS = "ӘҒҚҢӨҰҮҺІ"
+            + "әғқңөұүһі";
+	
 	private static final String UKRAINIAN_CHARACTERS = "АаБбВвГгҐґДдЕеЄєЖжЗзИиІіЇїЙйКкЛлМмНнОоПпРрСсТтУуФфХхЦцЧчШшЩщЬьЮюЯя"
 			+ "ЙЦУКЕНГШЩЗХЇҐФІВАПРОЛДЖЄЯЧСМИТЬБЮ"
-			+ "йцукенгшщзхїґфівапролджєячсмитьбю"
+			+ "йцукенгшщзхїґфівапролджєячсмитьбюи́"
             + "1234567890.,:;_¡!¿?\"'+-*/()[]={}";
 	
 	private static final String POLISH_CHARACTERS = "ABCDEFGHIJKLMNOPRSTUVWYZĄĆĘŁŃÓŚŹŻ"
@@ -63,7 +66,7 @@ public class Assets {
 	
 	private static final String EO_CHARACTERS = "ĉĝĥĵŝŭĈĜĤĴŜŬ";
 	
-	private static final String EXTRA_CHARACTERS = RUSSIAN_CHARACTERS + UKRAINIAN_CHARACTERS + POLISH_CHARACTERS + EO_CHARACTERS;
+	private static final String EXTRA_CHARACTERS = RUSSIAN_CHARACTERS + KAZAKH_CHARACTERS + UKRAINIAN_CHARACTERS + POLISH_CHARACTERS + EO_CHARACTERS;
 	
 	public enum LabelStyleAsset {
 		MINILABEL,
@@ -294,6 +297,7 @@ public class Assets {
 		FLAG_GL,
 		FLAG_HR,
 		FLAG_IT,
+		FLAG_KK,
 		FLAG_NB,
 		FLAG_NL,
 		FLAG_PL,
@@ -801,6 +805,8 @@ public class Assets {
 		final String userSelectedLingo = Pref.getLingo();
 		if (userSelectedLingo.toLowerCase().startsWith("eo"))
 			return true;
+		if (userSelectedLingo.toLowerCase().startsWith("kk"))
+			return true;
 		if (userSelectedLingo.toLowerCase().startsWith("ru"))
 			return true;
 		if (userSelectedLingo.toLowerCase().startsWith("uk"))
@@ -811,6 +817,8 @@ public class Assets {
 		if (userSelectedLingo.equals(""))
 		{
 			if (Locale.getDefault().getLanguage().equals(new Locale("eo").getLanguage()))
+				return true;
+			if (Locale.getDefault().getLanguage().equals(new Locale("kk").getLanguage()))
 				return true;
 			if (Locale.getDefault().getLanguage().equals(new Locale("ru").getLanguage()))
 				return true;
