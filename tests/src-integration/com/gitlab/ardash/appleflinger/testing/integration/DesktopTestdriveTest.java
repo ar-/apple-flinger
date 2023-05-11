@@ -24,7 +24,8 @@ import org.junit.Test;
 
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.backends.lwjgl.LwjglApplication;
-import com.badlogic.gdx.backends.lwjgl.LwjglApplicationConfiguration;
+import com.badlogic.gdx.backends.lwjgl3.Lwjgl3Application;
+import com.badlogic.gdx.backends.lwjgl3.Lwjgl3ApplicationConfiguration;
 import com.gitlab.ardash.appleflinger.ActionResolver;
 import com.gitlab.ardash.appleflinger.AppleflingerGame;
 import com.gitlab.ardash.appleflinger.ai.PlayerSimulator;
@@ -40,8 +41,8 @@ import com.gitlab.ardash.appleflinger.screens.MissionSelectScreen;
 public class DesktopTestdriveTest implements ActionResolver{
 	
 //	private static final String [] langs = {"de","en","eo","es","fr","gl","it","nb","nl","pl","pt","sv"}; // all latin
-	private static final String [] langs = {"tr","eu","hr","fi"}; // recently updated ones
-//	private static final String [] langs = {"ru"}; // separate non-latin load
+//	private static final String [] langs = {"tr","eu","hr","fi"}; // recently updated ones
+	private static final String [] langs = {"uk","kk"}; // separate non-latin load
 	
 	private static final Mission [] missions = {Mission.M_1_1, Mission.M_1_3, Mission.M_1_4
 		,Mission.M_1_5, Mission.M_1_11, Mission.M_1_14, Mission.M_2_3};
@@ -50,7 +51,16 @@ public class DesktopTestdriveTest implements ActionResolver{
 
 	@BeforeClass
 	public static void init() {
-		final LwjglApplication g1 = startNewGame();
+		Runnable r = new Runnable() {
+			
+			@Override
+			public void run() {
+				final Lwjgl3Application g1 = startNewGame();
+				
+			}
+		};
+		new Thread(r).start();
+		sleep(10000);
 		Mission.validate();
 		Assets.validate();
 	}
@@ -79,7 +89,7 @@ public class DesktopTestdriveTest implements ActionResolver{
 				}
 				PlayerSimulator.INSTANCE.playOneRound();
 				sleep(4200);
-				saveScreenShot("./metadata/"+lang+"/images/phoneScreenshots/"+missionToLoad+".png");
+				saveScreenShot("../metadata/"+lang+"/images/phoneScreenshots/"+missionToLoad+".png");
 				sleep(1000);
 				
 			}
@@ -127,6 +137,12 @@ public class DesktopTestdriveTest implements ActionResolver{
 		n2.put("hr", "Lucija".toUpperCase());
 		n1.put("fi", "Heikki".toUpperCase());
 		n2.put("fi", "Liisa".toUpperCase());
+		
+		n1.put("uk", "Володи́мир".toUpperCase());
+		n2.put("uk", "Наталія".toUpperCase());
+		n1.put("kk", "Нұрлан".toUpperCase());
+		n2.put("kk", "Дариға".toUpperCase());
+		
 
 		if (player == 1)
 			ret = n1.get(lang);
@@ -158,20 +174,23 @@ public class DesktopTestdriveTest implements ActionResolver{
 		sleep(3000);
 	}
 
-	private static LwjglApplication startNewGame() {
-		LwjglApplicationConfiguration config = new LwjglApplicationConfiguration();
-		config.width = 1280; // PHONE SIZE (for screenshots)
-		config.height = 720; // PHONE SIZE
+	private static Lwjgl3Application startNewGame() {
+		Lwjgl3ApplicationConfiguration config = new Lwjgl3ApplicationConfiguration();
+		config.setWindowedMode(640*2, 480*2);// = (int)(GameScreen.SCREEN_WIDTH);
+//		config.width = 1280; // PHONE SIZE (for screenshots)
+//		config.height = 720; // PHONE SIZE
 //		config.audioDeviceBufferCount=0;
 //		config.audioDeviceBufferSize=0;
 //		config.audioDeviceSimultaneousSources=0;
 //		config.allowSoftwareMode=true;
 //		config.useGL30 = true;
+		config.disableAudio(true);
+		
 		
 		//Locale.setDefault(newLocale);
 		final AppleflingerGame game = new AppleflingerGame(new DesktopTestdriveTest());
-		final LwjglApplication app = new LwjglApplication(game, config);
-		config.disableAudio = true;
+		final Lwjgl3Application app = new Lwjgl3Application(game, config);
+//		config.disableAudio = true;
 		sleep(5000);
 		return app;
 	}

@@ -44,16 +44,17 @@ public class GdxTestRunner extends BlockJUnit4ClassRunner implements Application
 	public GdxTestRunner(Class<?> klass) throws InitializationError {
 		super(klass);
 		
+		HeadlessApplicationConfiguration conf = new HeadlessApplicationConfiguration();
+
 		HeadlessNativesLoader.load();
 		MockGraphics mockGraphics = new MockGraphics();
 		Gdx.graphics = mockGraphics;
-		HeadlessNet headlessNet = new HeadlessNet();
+		HeadlessNet headlessNet = new HeadlessNet(conf);
 		Gdx.net = headlessNet;
 		HeadlessFiles headlessFiles = new HeadlessFiles();
 		Gdx.files = headlessFiles;
 		Gdx.gl = mock(GL20.class);
 			
-		HeadlessApplicationConfiguration conf = new HeadlessApplicationConfiguration();
 
 		new HeadlessApplication(this, conf);
 	}
