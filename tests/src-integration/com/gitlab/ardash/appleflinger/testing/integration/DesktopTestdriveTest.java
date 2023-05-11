@@ -1,5 +1,5 @@
 /*******************************************************************************
- * Copyright (C) 2015-2020 Andreas Redmer <ar-appleflinger@abga.be>
+ * Copyright (C) 2015-2023 Andreas Redmer <ar-appleflinger@abga.be>
  * 
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -42,7 +42,8 @@ public class DesktopTestdriveTest implements ActionResolver{
 	
 //	private static final String [] langs = {"de","en","eo","es","fr","gl","it","nb","nl","pl","pt","sv"}; // all latin
 //	private static final String [] langs = {"tr","eu","hr","fi"}; // recently updated ones
-	private static final String [] langs = {"uk","kk"}; // separate non-latin load
+//	private static final String [] langs = {"uk","kk"}; // separate non-latin load
+	private static final String [] langs = {"uk"}; // separate non-latin load
 	
 	private static final Mission [] missions = {Mission.M_1_1, Mission.M_1_3, Mission.M_1_4
 		,Mission.M_1_5, Mission.M_1_11, Mission.M_1_14, Mission.M_2_3};

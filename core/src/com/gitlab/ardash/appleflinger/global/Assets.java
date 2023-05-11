@@ -57,7 +57,7 @@ public class Assets {
 	
 	private static final String UKRAINIAN_CHARACTERS = "АаБбВвГгҐґДдЕеЄєЖжЗзИиІіЇїЙйКкЛлМмНнОоПпРрСсТтУуФфХхЦцЧчШшЩщЬьЮюЯя"
 			+ "ЙЦУКЕНГШЩЗХЇҐФІВАПРОЛДЖЄЯЧСМИТЬБЮ"
-			+ "йцукенгшщзхїґфівапролджєячсмитьбю"
+			+ "йцукенгшщзхїґфівапролджєячсмитьбюи́"
             + "1234567890.,:;_¡!¿?\"'+-*/()[]={}";
 	
 	private static final String POLISH_CHARACTERS = "ABCDEFGHIJKLMNOPRSTUVWYZĄĆĘŁŃÓŚŹŻ"
