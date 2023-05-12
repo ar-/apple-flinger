@@ -1,0 +1,17 @@
+1.5.5
+  * wiki-sida på webbplatsen skapad, beskriver hur man skapar nya nivåer
+  * Ytterligare 12 vinternivåer tillagd
+  * Visa för procentuellt antal ökade prestationer
+  * lagt till tiden till skärmen på skärmen
+
+1.5.4
+  * lagt till översättare till krediter-skärmen i spelet
+  * lagt till nederländska språk (tack vare Heimen på webbsidan)
+  * lagt till galiciska språk (tack vare Iván på webbsidan)
+  * förbättrad spansk översättning (tack vare Markel på webbsidan)
+  * Ta bort transparenta pixlar från skärmdumpar
+
+1.5.3
+  * lagt till adaptiv ikon (Android 8 och högre)
+  * inaktiverad bakgrund zooma nära äpplet
+  * lagt till norska språk (tack till Allan på webbsidan)

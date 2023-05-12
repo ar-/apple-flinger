@@ -1,0 +1,17 @@
+1.5.6
+  * fikseeritud talve tase 13 kinni jääda
+  * lisatud itaalia keel
+  * lisati rootsi keelt
+
+1.5.5
+  * Veebilehe wiki leht, kus kirjeldatakse, kuidas luua uusi tasemeid
+  * Lisatud 12 veel talve taset
+  * kuvatakse lisanduvate lisaväärtuste protsent
+  * lisas ekraanile ekraanil aja
+
+1.5.4
+  * lisasid tõlkijad mängude loeteludesse
+  * lisatud hollandi keel (tänu Heimenile weblate'is)
+  * lisatud galisia keel (tänu Ivánile weblate'is)
+  * parandatud hispaaniakeelne tõlge (tänu Markelile weblate'is)
+  * eemaldas läbipaistvad pikslid ekraanipiltest

@@ -1,0 +1,17 @@
+1.5.7
+  * adăugare de limbă bască
+  * a adăugat limba braziliană
+  * a adăugat limba croată
+  * a adăugat limba finlandeză
+  * a adăugat limba turcă
+
+1.5.6
+  * nivel fix de iarnă 13 blocându-se
+  * a adăugat limba italiană
+  * a adăugat limba suedeză
+
+1.5.5
+  * pagina wiki de pe site-ul web creat, care descrie modul de creare a nivelurilor noi
+  * Au fost adăugate încă 12 niveluri de iarnă
+  * afișare pentru procentul de realizări incrementale adăugate
+  * a adăugat ora la afișaj pe ecran

@@ -1,5 +1,5 @@
 /*******************************************************************************
- * Copyright (C) 2017-2018 Andreas Redmer <andreas.redmer@posteo.de>
+ * Copyright (C) 2017-2023 Andreas Redmer <andreas.redmer@posteo.de>
  * 
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -182,13 +182,24 @@ public class Pref {
 		prefs.putBoolean(key, activated);
 		prefs.flush();
 	}
+	
+	/**
+	 * can be called by a cheat to enable all missions permanently
+	 */
+	public static void setAllMissionsActivated() {
+		for (Mission m : Mission.values()) {
+			if (m.getMajor() != 0) {
+				setMissionActivated (m,true);
+			}
+		}
+	}	
 
 	public static boolean isAchievementUnlocked(Achievement achievement) {
 		Integer unl = getAchievementProgress(achievement);
 		return unl.equals(Integer.MAX_VALUE);
 	}
 
-	private static Integer getAchievementProgress(Achievement achievement) {
+	public static Integer getAchievementProgress(Achievement achievement) {
 		Integer progress = unlockedAchievements.get(achievement);
 		if (progress == null)
 		{
@@ -200,13 +211,14 @@ public class Pref {
 	}
 
 	public static void unlockAchievement(Achievement achievement){
-		incrementAchievement(achievement, 1, 1);
+		incrementAchievement(achievement, 1);
 	}
 	
-	public static void incrementAchievement(Achievement achievement, int numSteps, int goal){
+	public static void incrementAchievement(Achievement achievement, int numSteps){
 		if (isAchievementUnlocked(achievement))
 			return; // is already unlocked
-
+		
+		final int goal = achievement.getGoal();
 		Integer progress = getAchievementProgress(achievement);
 		progress+=numSteps;
 		if (progress>=goal)

@@ -1,0 +1,17 @@
+1.5.6
+  * Fiksita vintra nivelo 13 akiranta batita
+  * aldonis itala lingvo
+  * aldonis svedan lingvon
+
+1.5.5
+  * paĝo en la retejo kreita, priskribante kiel krei novajn nivelojn
+  * 12 pli vintraj niveloj aldonitaj
+  * montriĝo por la procento de pliiĝaj atingoj aldonitaj
+  * Aldonis la tempon al la ekrano sur la ekrano
+
+1.5.4
+  * Aldonis tradukistojn al la kredito-ekrano en la ludo
+  * aldonis nederlanda lingvo (danke al Heimen sur weblate)
+  * aldonis galega lingvo (danke al Iván sur weblate)
+  * plibonigita hispana traduko (danke al Markel sur weblate)
+  * forigis travideblajn pikselojn el ekrankopioj

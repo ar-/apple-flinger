@@ -1,0 +1,3 @@
+  * odstranil všechny fašistické symboly a ikony fašistické organizace a režimů a nahradil je ukrajinskou vlajkou
+  * přidán ukrajinský překlad
+  * aktualizované překlady

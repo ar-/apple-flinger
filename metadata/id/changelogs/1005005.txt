@@ -1,0 +1,17 @@
+1.5.5
+  * halaman wiki di situs web yang dibuat, menjelaskan cara membuat level baru
+  * 12 lebih banyak tingkat musim dingin ditambahkan
+  * Tampilan untuk persentase pencapaian tambahan ditambahkan
+  * menambahkan waktu ke tampilan di layar
+
+1.5.4
+  * menambahkan penerjemah ke layar kredit dalam game
+  * menambahkan bahasa Belanda (terima kasih kepada Heimen di weblate)
+  * ditambahkan bahasa Galicia (terima kasih kepada Iván di weblate)
+  * Terjemahan bahasa Spanyol yang disempurnakan (terima kasih kepada Markel di weblate)
+  * menghapus piksel transparan dari tangkapan layar
+
+1.5.3
+  * menambahkan ikon adaptif (Android 8 dan lebih tinggi)
+  * Zoom latar belakang yang cacat di dekat apel
+  * menambahkan bahasa Norwegia (terima kasih kepada Allan di weblate)

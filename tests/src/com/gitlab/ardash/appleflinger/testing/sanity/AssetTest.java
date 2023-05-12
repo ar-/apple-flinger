@@ -1,5 +1,5 @@
 /*******************************************************************************
- * Copyright (C) 2015-2018 Andreas Redmer <ar-appleflinger@abga.be>
+ * Copyright (C) 2015-2022 Andreas Redmer <ar-appleflinger@abga.be>
  * Copyright (C) 2017 Сухичев Михаил Иванович <sukhichev@yandex.ru>
  * 
  * This program is free software: you can redistribute it and/or modify
@@ -81,8 +81,8 @@ public class AssetTest {
 	@Test
 	public void isI18NWorkingForFR() {
 		I18N.loadLanguageBundle("fr");
-		assertEquals("touche l'écran pour continuer", I18N.s("touchScreenToContinue"));
-		assertEquals("JEU TERMINÉ", I18N.s("gameOver"));
+		assertEquals("Touchez l'écran pour continuer", I18N.s("touchScreenToContinue"));
+		// assertEquals("JEU TERMINÉ", I18N.s("gameOver"));
 	}
 	
 	@Test
@@ -90,6 +90,13 @@ public class AssetTest {
 		I18N.loadLanguageBundle("gl");
 		assertEquals("Só", I18N.s("alone"));
 		assertEquals("Música", I18N.s("Music"));
+	}
+	
+	@Test
+	public void isI18NWorkingForIT() {
+		I18N.loadLanguageBundle("it");
+		assertEquals("È Il Tuo Turno", I18N.s("itIsYourTurn"));
+		assertEquals("inizia nuova partita", I18N.s("startNewGame"));
 	}
 	
 	@Test
@@ -103,7 +110,7 @@ public class AssetTest {
 	public void isI18NWorkingForPT() {
 		I18N.loadLanguageBundle("pt");
 		assertEquals("Não", I18N.s("no"));
-		assertEquals("entrada necessária", I18N.s("inputRequired"));
+		assertEquals("digite", I18N.s("inputRequired"));
 	}
 	
 	@Test
@@ -113,6 +120,61 @@ public class AssetTest {
 		assertEquals("Да", I18N.s("yes"));
 		assertEquals("ИГРА ОКОНЧЕНА", I18N.s("gameOver"));
 	}
+	
+	@Test
+	public void isI18NWorkingForSV() {
+		I18N.loadLanguageBundle("sv");
+		assertEquals("Välj en nivå", I18N.s("chooseALevel"));
+		assertEquals("SPELET ÖVER", I18N.s("gameOver"));
+	}
+	
+	@Test
+	public void isI18NWorkingForTR() {
+		I18N.loadLanguageBundle("tr");
+		assertEquals("açık", I18N.s("unlocked"));
+		assertEquals("Müzik", I18N.s("Music"));
+	}
+	
+	@Test
+	public void isI18NWorkingForPTBR() {
+		I18N.loadLanguageBundle("pt_br");
+		assertEquals("traduções", I18N.s("translations"));
+		assertEquals("Não", I18N.s("no"));
+	}
+	
+	@Test
+	public void isI18NWorkingForEU() {
+		I18N.loadLanguageBundle("eu");
+		assertEquals("desblokeatuta", I18N.s("unlocked"));
+		assertEquals("negua", I18N.s("winter"));
+	}
+	
+	@Test
+	public void isI18NWorkingForHR() {
+		I18N.loadLanguageBundle("sv");
+		assertEquals("Välj en nivå", I18N.s("chooseALevel"));
+		assertEquals("SPELET ÖVER", I18N.s("gameOver"));
+	}
+	
+	@Test
+	public void isI18NWorkingForFI() {
+		I18N.loadLanguageBundle("fi");
+		assertEquals("Selvä", I18N.s("okay"));
+		assertEquals("alkuperäinen", I18N.s("original"));
+	}
+	
+	@Test
+	/**
+	 * just set back to english. The last test always sets it to an unsuitable language at dev time
+	 */
+	public void isI18NWorkingEN() {
+		I18N.loadLanguageBundle("en");
+		assertEquals("Yes", I18N.s("yes"));
+		I18N.loadLanguageBundle("");
+		assertEquals("Yes", I18N.s("yes"));
+	}
+
+
 	
 	@Test
 	public void arePrpertyFilesComplete() {

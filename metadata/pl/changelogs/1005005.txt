@@ -1,0 +1,17 @@
+1.5.5
+  * Strona wiki na stronie internetowej, opisująca sposób tworzenia nowych poziomów
+  * Dodano 12 dodatkowych poziomów zimowych
+  * wyświetlanie procentowego przyrostu dodanych osiągnięć
+  * dodał czas do wyświetlenia na ekranie
+
+1.5.4
+  * dodano tłumaczy do ekranu kredytów w grze
+  * dodano język niderlandzki (dzięki Heimen na weblate)
+  * dodano język galicyjski (dzięki Ivánowi na weblate)
+  * ulepszone tłumaczenie na hiszpański (dzięki Markel na weblate)
+  * usunięto przezroczyste piksele ze zrzutów ekranu
+
+1.5.3
+  * dodano ikonę adaptacyjną (system Android 8 lub nowszy)
+  * wyłączony zoom tła w pobliżu jabłka
+  * dodano język norweski (podziękowania dla Allana na weblate)

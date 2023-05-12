@@ -1,0 +1,17 @@
+1.5.6
+  * fixed winter level 13 getting stuck
+  * added Italian language
+  * added Swedish language
+
+1.5.5
+  * wiki page on the website created, describing how to create new levels
+  * 12 more winter levels added
+  * display for the percentage of incremental achievements added
+  * added the time to the display on the screen
+
+1.5.4
+  * added translators to the credits-screen in the game
+  * added Dutch language (thanks to Heimen on weblate)
+  * added Galician language (thanks to Iván on weblate)
+  * improved Spanish translation (thanks to Markel on weblate)
+  * removed transparent pixels from screenshots

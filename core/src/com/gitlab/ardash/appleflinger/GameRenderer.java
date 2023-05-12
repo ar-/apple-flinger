@@ -91,8 +91,9 @@ public class GameRenderer  implements Disposable
         		// fix for iss #55, drop out, if the drag is too close to the projectile
         		try
         		{
+        			final float disabledDist = 2f;
 	        		final Vector2 slingShotCenter = GameManager.getInstance().currentPlayer.slingshot.getSlingShotCenter();
-	        		if (slingShotCenter.dst2(x, y) < 1f)
+	        		if (slingShotCenter.dst2(x, y) < disabledDist*disabledDist)
 	        			return;
         		}
         		catch (NullPointerException e)

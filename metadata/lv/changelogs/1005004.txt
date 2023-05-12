@@ -1,0 +1,19 @@
+1.5.4
+  * pievienoja tulkotājus spēļu ekrānā
+  * pievienota holandiešu valoda (pateicoties Heimenam weblate)
+  * pievienoja galisiešu valodu (pateicoties Iván internetā)
+  * uzlabota spāņu tulkošana (pateicoties Markel tīmekļa vietnei)
+  * noņemti caurspīdīgie pikseļi no ekrānuzņēmumiem
+
+1.5.3
+  * pievienota adaptīvā ikona (8 un jaunāka versija)
+  * fonā invalīds tuvojās ābolu tuvumā
+  * pievienoja norvēģu valodu (pateicoties Allanam weblate)
+
+1.5.2
+  * pievienots portugāļu tulkojums
+  * padarīja uzvarētāju un augstākos punktus vairāk krāsains
+  * aktivizēta aparatūras atzveltnes poga, lai atstātu spēli vai iet uz iepriekšējo ekrānu
+  * fiksēti poļu un esperanto tulkojumi (pēc Verdulo)
+  * kļūda: valodas izvēle nereti nedarbojas
+  * Pievienoti fonti GPL3 un gitlab nozīmēm

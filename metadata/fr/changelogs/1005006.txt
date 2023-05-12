@@ -1,0 +1,17 @@
+1.5.6
+  * niveau d'hiver fixe 13 se coincer
+  * ajouté la langue italienne
+  * langue suédoise ajoutée
+
+1.5.5
+  * Page wiki sur le site créé, décrivant comment créer de nouveaux niveaux
+  * 12 niveaux d'hiver supplémentaires ajoutés
+  * affichage du pourcentage de réalisations supplémentaires ajouté
+  * ajout de l'heure à l'affichage à l'écran
+
+1.5.4
+  * ajout de traducteurs à l'écran des crédits dans le jeu
+  * ajout du néerlandais (merci à Heimen pour le web)
+  * ajout de la langue galicienne (merci à Iván sur weblate)
+  * amélioration de la traduction en espagnol (merci à Markel sur weblate)
+  * suppression des pixels transparents des captures d'écran

@@ -1,0 +1,17 @@
+1.5.6
+  * nustatytas žiemos lygis 13 įstrigo
+  * pridėjo italų kalbą
+  * pridėjo švedų kalbą
+
+1.5.5
+  * svetainės wiki puslapis, sukurtas, kuriame aprašoma, kaip sukurti naujus lygius
+  * Dar pridėta dar 12 žiemos lygių
+  * Rodomas papildomų pasiekimų procentas
+  * ekrane rodomas ekrano laikas
+
+1.5.4
+  * pridėjo vertėjų žodžius į žaidimo ekraną
+  * pridėjo olandų kalbą (ačiū Heimenui weblate)
+  * pridėjo galisų kalbą (dėka Iván tinklalapyje)
+  * patobulintas vertimas ispanų kalba (dėka Markel tinklalapyje)
+  * pašalinti skaidrius taškų iš ekrano kopijų

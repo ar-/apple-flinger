@@ -1,5 +1,5 @@
 /*******************************************************************************
- * Copyright (C) 2015-2018 Andreas Redmer <ar-appleflinger@abga.be>
+ * Copyright (C) 2015-2023 Andreas Redmer <ar-appleflinger@abga.be>
  * 
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -23,6 +23,7 @@ import com.badlogic.gdx.graphics.GL20;
 import com.badlogic.gdx.graphics.OrthographicCamera;
 import com.badlogic.gdx.graphics.g2d.Sprite;
 import com.badlogic.gdx.math.Interpolation;
+import com.badlogic.gdx.math.MathUtils;
 import com.badlogic.gdx.scenes.scene2d.Action;
 import com.badlogic.gdx.scenes.scene2d.Group;
 import com.badlogic.gdx.scenes.scene2d.InputEvent;
@@ -54,6 +55,7 @@ import com.gitlab.ardash.appleflinger.helpers.SoundPlayer;
 import com.gitlab.ardash.appleflinger.i18n.I18N;
 import com.gitlab.ardash.appleflinger.listeners.OnGameOverListener;
 import com.gitlab.ardash.appleflinger.listeners.OnPointsChangeListener;
+import com.gitlab.ardash.appleflinger.listeners.OnShotFiredListener;
 import com.gitlab.ardash.appleflinger.listeners.OnUnlockAchievementListener;
 import com.gitlab.ardash.appleflinger.missions.Mission;
 
@@ -73,10 +75,12 @@ public class GameScreen implements Screen {
     
     public final Mission mission;
 	private Label labelMessage;
+	private Label labelTime;
 	private PauseScreenActor pauseScreen = new PauseScreenActor();
 	private boolean isAnnouncementFrozen= false;
 	private Label labelAllPointsP1;
 	private Label labelAllPointsP2;
+	private float notPausedTimeOnScreen = 0;
     
     public GameScreen(Mission mission) {
 		this.mission = mission;
@@ -144,7 +148,15 @@ public class GameScreen implements Screen {
         labelMessage.setWidth(SCREEN_WIDTH);  
         labelMessage.setAlignment(Align.top);  
         labelMessage.setTouchable(Touchable.disabled);
-        guiStage.addActor(labelMessage);  
+        guiStage.addActor(labelMessage);
+
+        // label to show expired game time
+        labelTime = createMiniLabel("00:00");
+        labelTime.setWidth(SCREEN_WIDTH);
+        labelTime.setHeight(SCREEN_HEIGHT);
+        labelTime.setAlignment(Align.topRight);
+        labelTime.setTouchable(Touchable.disabled);
+        guiStage.addActor(labelTime);
         
         final Label labelNameP1 = new Label(".", labelstyle);   
 		labelNameP1.setPosition(0, SCREEN_HEIGHT-lineheight*2);  
@@ -279,14 +291,49 @@ public class GameScreen implements Screen {
    		}
    		labelNameP2.setText(String.format(" %s  ", gm.PLAYER2.getName())); 
    		
+   		// declare here because we need it in OnCurrentPlayerChangeListener
+   		final SpriteButton btnFF = new SpriteButton(Assets.SpriteAsset.BTN_FF.get());
+   		
    		// register listener for gamestateChanges
    		gm.setOnCurrentPlayerChangeListener(new OnCurrentPlayerChangeListener() {
 			@Override
 			public void onCurrentPlayerChange() {
 		        setAnnouncementText(String.format("%s\n"+I18N.getString("itIsYourTurn"), gm.currentPlayer.getName()));   
+	        	btnFF.clearActions();
+	            btnFF.setTouchable(Touchable.disabled);
+	            btnFF.addAction(Actions.fadeOut(0.5f, Interpolation.linear));
 			}
 		});
    		
+   		// fast-forward button
+        btnFF.addListener(new ClickListener(){@Override
+        public void clicked(InputEvent event, float x, float y) {
+        	gm.fastForwardCurrentRound();
+        	btnFF.clearActions();
+            btnFF.setTouchable(Touchable.disabled);
+            btnFF.addAction(Actions.fadeOut(0.5f, Interpolation.linear));
+        	super.clicked(event, x, y);
+        }});
+        btnFF.setTouchable(Touchable.disabled);
+        btnFF.addAction(Actions.fadeOut(0.01f, Interpolation.linear));
+
+        // register with the shot fired listener, so the button can become visible after a while
+        gm.setOnShotFiredListener(new OnShotFiredListener() {
+			
+			@Override
+			public void onShotFired() {
+	        	btnFF.clearActions();
+	            btnFF.addAction(Actions.sequence(Actions.delay(1f), 
+	            		Actions.run(new Runnable() {
+							@Override
+							public void run() {
+					            btnFF.setTouchable(Touchable.enabled);
+							}
+						}),
+	            		Actions.fadeIn(0.5f, Interpolation.linear)));
+			}
+		});
+        
    		// pause button
         final SpriteButton btnPause = new SpriteButton(Assets.SpriteAsset.BTN_PAUSE.get());
         btnPause.moveBy(0+100, SCREEN_HEIGHT-100);
@@ -341,6 +388,7 @@ public class GameScreen implements Screen {
         topLeftTable.align(Align.topLeft);
         topLeftTable.add(btnSound).padLeft(10);
         topLeftTable.add(btnPause).padLeft(10);
+        topLeftTable.add(btnFF).padLeft(10);
 
         topLeftTable.add(miniStatsTable).width(SCREEN_WIDTH - 4*(10+btnPause.getWidth())).padLeft(0).center();
         guiStage.addActor(topLeftTable);
@@ -391,10 +439,15 @@ public class GameScreen implements Screen {
   
         // dont update the world, if game paused
         if (!GameManager.getInstance().isPaused())
-        	world.update(delta); // update the box2d world          
-        guiStage.act(delta); // update GUI  
+        {
+        	final int speedFactor = GameManager.getInstance().isRoundFastForwarded() ? 4 : 1;
+			world.update(delta*speedFactor); // update the box2d world
+			notPausedTimeOnScreen  += delta;
+			updateTimeOnScreen(notPausedTimeOnScreen);
+        }
+        guiStage.act(delta); // update GUI
           
-        renderer.render(); // draw the box2d world  
+        renderer.render(); // draw the box2d world
         guiStage.setDebugAll(GameManager.DEBUG);
         guiStage.draw(); // draw the GUI
     }
@@ -405,7 +458,7 @@ public class GameScreen implements Screen {
 		guiStage.getViewport().update(width, height, true);
 		
 		// make the actors and stage still react to touch after resize, but coordinates are still fucked after resize
-		// taken out becasue every click refreshes the handler now
+		// taken out because every click refreshes the handler now
 //		Gdx.input.setInputProcessor(world.stage);
 	}
 	
@@ -462,7 +515,28 @@ public class GameScreen implements Screen {
 		Action action = Actions.sequence(a1,Actions.delay(1),a2, Actions.removeActor(grp));
 		grp.addAction(action );
 		SoundPlayer.playSound(Assets.getSound(SoundAsset.BELL));
-	}  
+	}
+	
+	public void updateTimeOnScreen(float playTime) {
+		
+		// if game is already over, no nee to update that label any more
+		if (isAnnouncementFrozen)
+			return;
+		
+		final int totalSecs = MathUtils.round(playTime);
+		final int hours = totalSecs / 3600;
+		final int minutes = (totalSecs % 3600) / 60;
+		final int seconds = totalSecs % 60;
+
+		final String timeString;
+		if (hours == 0)
+			timeString = String.format("%02d:%02d", minutes, seconds);
+		else
+		{
+			timeString = String.format("%02d:%02d:%02d", hours, minutes, seconds);
+		}
+		labelTime.setText(timeString);
+	}
 
 	public Stage getGuiStage() {
 		return guiStage;

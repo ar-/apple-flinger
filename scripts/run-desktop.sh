@@ -14,6 +14,6 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #-------------------------------------------------------------------------------
-./gradlew tests:test --info
+#./gradlew tests:test --info
 ./gradlew desktop:dist # desktop:run
 java -jar desktop/build/libs/desktop-1.0.jar

@@ -1,0 +1,17 @@
+1.5.7
+  * lisatud baski keel
+  * lisatud Brasiilia keel
+  * lisatud horvaadi keel
+  * lisatud soome keel
+  * lisatud türgi keel
+
+1.5.6
+  * fikseeritud talvine tase 13 jänni
+  * lisatud itaalia keel
+  * lisatud rootsi keel
+
+1.5.5
+  * loodud veebisaidi wiki leht, mis kirjeldab uute tasemete loomist
+  * Lisandunud on veel 12 talvetaset
+  * kuvatakse lisatud astmeliste saavutuste protsent
+  * lisas aja ekraanikuvale

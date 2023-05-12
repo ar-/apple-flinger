@@ -1,5 +1,5 @@
 /*******************************************************************************
- * Copyright (C) 2015-2018 Andreas Redmer <ar-appleflinger@abga.be>
+ * Copyright (C) 2015-2023 Andreas Redmer <ar-appleflinger@abga.be>
  * Copyright (C) 2017 Сухичев Михаил Иванович <sukhichev@yandex.ru>
  * 
  * This program is free software: you can redistribute it and/or modify
@@ -52,13 +52,21 @@ public class Assets {
             + "абвгдеёжзийклмнопрстуфхцчшщъыьэюя"
             + "1234567890.,:;_¡!¿?\"'+-*/()[]={}";
 	
+	private static final String KAZAKH_CHARACTERS = "ӘҒҚҢӨҰҮҺІ"
+            + "әғқңөұүһі";
+	
+	private static final String UKRAINIAN_CHARACTERS = "АаБбВвГгҐґДдЕеЄєЖжЗзИиІіЇїЙйКкЛлМмНнОоПпРрСсТтУуФфХхЦцЧчШшЩщЬьЮюЯя"
+			+ "ЙЦУКЕНГШЩЗХЇҐФІВАПРОЛДЖЄЯЧСМИТЬБЮ"
+			+ "йцукенгшщзхїґфівапролджєячсмитьбюи́"
+            + "1234567890.,:;_¡!¿?\"'+-*/()[]={}";
+	
 	private static final String POLISH_CHARACTERS = "ABCDEFGHIJKLMNOPRSTUVWYZĄĆĘŁŃÓŚŹŻ"
             + "abcdefghijklmnoprstuvwyząćęłńóśźż"
             + "1234567890.,:;_¡!¿?\"'+-*/()[]={}";
 	
 	private static final String EO_CHARACTERS = "ĉĝĥĵŝŭĈĜĤĴŜŬ";
 	
-	private static final String EXTRA_CHARACTERS = RUSSIAN_CHARACTERS + POLISH_CHARACTERS + EO_CHARACTERS;
+	private static final String EXTRA_CHARACTERS = RUSSIAN_CHARACTERS + KAZAKH_CHARACTERS + UKRAINIAN_CHARACTERS + POLISH_CHARACTERS + EO_CHARACTERS;
 	
 	public enum LabelStyleAsset {
 		MINILABEL,
@@ -251,7 +259,11 @@ public class Assets {
 		BIRD_0,BIRD_1,BIRD_2,BIRD_3,BIRD_4,BIRD_5,
 
 		BIRD_6,BIRD_7,BIRD_8,BIRD_9,BIRD_10,BIRD_11,
-		
+
+		JET_0,JET_1,JET_2,JET_3,JET_4,JET_5,JET_6,JET_7,JET_8,JET_9,
+		JET_10,JET_11,JET_12,JET_13,JET_14,JET_15,JET_16,JET_17,JET_18,JET_19,
+		JET_20,JET_21,JET_22,JET_23,JET_24,JET_25,JET_26,JET_27,JET_28,JET_29,
+
 		WOOD_TNT_0,
 		WOOD_BL_11_0,WOOD_BL_11_1,WOOD_BL_11_2,WOOD_BL_11_3,
 		
@@ -273,19 +285,28 @@ public class Assets {
 		EYES_OUTER,
 		EYES_RIGHT,
 		EYES_UP,
-
+		
 		DIALOG,
 		FLAG_DE,
 		FLAG_EN,
 		FLAG_EO,
 		FLAG_ES,
+		FLAG_EU,
+		FLAG_FI,
 		FLAG_FR,
 		FLAG_GL,
+		FLAG_HR,
+		FLAG_IT,
+		FLAG_KK,
 		FLAG_NB,
 		FLAG_NL,
 		FLAG_PL,
 		FLAG_PT,
+		FLAG_PT_BR,
 		FLAG_RU,
+		FLAG_SV,
+		FLAG_TR,
+		FLAG_UK,
 		FORK_ME,
 		GPL3,
 		SLIDERBACK,
@@ -299,7 +320,6 @@ public class Assets {
 		BTN_LOCKED,
 		BTN_TW,
 		BTN_FB,
-		BTN_GP,
 		BTN_PI,
 		BTN_CLOSE,
 		BTN_PLAY,
@@ -310,6 +330,7 @@ public class Assets {
 		BTN_SOUND_OFF,
 		BTN_BACK,
 		BTN_PAUSE,
+		BTN_FF,
 		BTN_REFRESH,
 		BTN_ABORT,
 		BTN_BLANK,
@@ -487,6 +508,7 @@ public class Assets {
 		WOOD_TNT,
 		PUFF,
 		BIRD,
+		JET,
 		DORK,
 		PENG;
 
@@ -783,7 +805,11 @@ public class Assets {
 		final String userSelectedLingo = Pref.getLingo();
 		if (userSelectedLingo.toLowerCase().startsWith("eo"))
 			return true;
+		if (userSelectedLingo.toLowerCase().startsWith("kk"))
+			return true;
 		if (userSelectedLingo.toLowerCase().startsWith("ru"))
+			return true;
+		if (userSelectedLingo.toLowerCase().startsWith("uk"))
 			return true;
 		if (userSelectedLingo.toLowerCase().startsWith("pl"))
 			return true;
@@ -792,7 +818,11 @@ public class Assets {
 		{
 			if (Locale.getDefault().getLanguage().equals(new Locale("eo").getLanguage()))
 				return true;
+			if (Locale.getDefault().getLanguage().equals(new Locale("kk").getLanguage()))
+				return true;
 			if (Locale.getDefault().getLanguage().equals(new Locale("ru").getLanguage()))
+				return true;
+			if (Locale.getDefault().getLanguage().equals(new Locale("uk").getLanguage()))
 				return true;
 			if (Locale.getDefault().getLanguage().equals(new Locale("pl").getLanguage()))
 				return true;

@@ -1,0 +1,17 @@
+1.5.5
+  * paĝo en la retejo kreita, priskribante kiel krei novajn nivelojn
+  * 12 pli vintraj niveloj aldonitaj
+  * montriĝo por la procento de pliiĝaj atingoj aldonitaj
+  * Aldonis la tempon al la ekrano sur la ekrano
+
+1.5.4
+  * Aldonis tradukistojn al la kredito-ekrano en la ludo
+  * aldonis nederlanda lingvo (danke al Heimen sur weblate)
+  * aldonis galega lingvo (danke al Iván sur weblate)
+  * plibonigita hispana traduko (danke al Markel sur weblate)
+  * forigis travideblajn pikselojn el ekrankopioj
+
+1.5.3
+  * Aldonis adapta ikono (Android 8 kaj pli alta)
+  * Malŝaltita fono-zoom proksime al la pomo
+  * aldonis norvega lingvo (danke al Allan sur weblate)

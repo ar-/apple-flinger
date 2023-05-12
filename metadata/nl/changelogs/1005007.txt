@@ -1,0 +1,17 @@
+1.5.7
+  * Baskische taal toegevoegd
+  * Braziliaanse taal toegevoegd
+  * Kroatische taal toegevoegd
+  * Finse taal toegevoegd
+  * Turkse taal toegevoegd
+
+1.5.6
+  * vast winterniveau 13 loopt vast
+  * Italiaanse taal toegevoegd
+  * Zweedse taal toegevoegd
+
+1.5.5
+  * Wiki-pagina op de website gemaakt, beschrijft hoe nieuwe niveaus te creëren
+  * 12 extra winterniveaus toegevoegd
+  * weergave voor het percentage toegevoegde incrementele prestaties
+  * de tijd toegevoegd aan de weergave op het scherm

@@ -1,0 +1,17 @@
+1.5.5
+  * wiki stran na spletni strani je ustvarila, ki opisuje, kako ustvariti nove ravni
+  * Dodanih je 12 dodatnih zimskih stopenj
+  * prikazan je odstotek dodatnih dosežkov
+  * je na zaslonu dodal čas na zaslonu
+
+1.5.4
+  * dodali prevajalce na ekran za kredite v igri
+  * dodal nizozemski jezik (zahvaljujoč Heimenu na spletnem mestu)
+  * dodan galicijski jezik (zahvaljujoč Ivanu na weblate)
+  * izboljšan španski prevod (zahvaljujoč Markelju na spletnem mestu)
+  * Odstranjene pregledne slikovne pike s posnetki zaslona
+
+1.5.3
+  * dodana prilagodljiva ikona (Android 8 in novejše)
+  * onemogočeno ozadje zoom v bližini jabolka
+  * dodal norveški jezik (zahvaljujoč Allanu na spletnem mestu)

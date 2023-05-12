@@ -1,0 +1,17 @@
+1.5.6
+  * a rögzített téli szint 13 elakadt
+  * olasz nyelv hozzáadásával
+  * hozzáadta a svéd nyelvet
+
+1.5.5
+  * wiki oldal a létrehozott weboldalon, leírva az új szintek létrehozását
+  * 12 további téli szint került hozzáadásra
+  * megjeleníti a növekményes eredmények százalékos arányát
+  * hozzáadta az időt a képernyőn megjelenő képernyőhöz
+
+1.5.4
+  * hozzáadott fordítók a játék kredit képernyőjéhez
+  * holland nyelv hozzáadásával (hála a Heimennek a weboldalon)
+  * hozzáadta a galíciai nyelvet (köszönhetően Ivánnak a weboldalon)
+  * javult a spanyol fordítás (köszönhetően Markelnek a weboldalon)
+  * átlátszó képpontokat távolított el a képernyőképekről

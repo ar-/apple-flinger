@@ -1,0 +1,17 @@
+1.5.7
+  * ajout de la langue basque
+  * langue brésilienne ajoutée
+  * ajout de la langue croate
+  * ajout de la langue finnoise
+  * ajout de la langue turque
+
+1.5.6
+  * niveau d'hiver 13 fixe bloqué
+  * ajout de la langue italienne
+  * ajout de la langue suédoise
+
+1.5.5
+  * page wiki sur le site Web créée, décrivant comment créer de nouveaux niveaux
+  * 12 niveaux d'hiver supplémentaires ajoutés
+
+

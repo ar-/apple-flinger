@@ -3,4 +3,3 @@ POZNÁMKA: TENTO PŘÍSLUŠENSTVÍ NEOBSAHUJE ANTIFEATUROVÉ NEBO NEVYHNUTNÉ VL
 1.4.11
   * Drobné opravy překladu. Díky verdulo znovu.
   * Vylepšená verze sady SDK pro idiotický obchod Google Play
-

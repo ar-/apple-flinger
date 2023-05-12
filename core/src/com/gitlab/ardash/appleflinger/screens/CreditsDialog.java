@@ -1,5 +1,5 @@
 /*******************************************************************************
- * Copyright (C) 2015-2018 Andreas Redmer <ar-appleflinger@abga.be>
+ * Copyright (C) 2015-2023 Andreas Redmer <ar-appleflinger@abga.be>
  * 
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -24,7 +24,7 @@ import com.gitlab.ardash.appleflinger.helpers.BackButtonAdapter;
 import com.gitlab.ardash.appleflinger.i18n.I18N;
 
 public class CreditsDialog extends AdvancedDialog{
-	static String translators="Allan Nordhøy, Andreas Redmer, ButterflyOfFire, Dmitry Mikhirev, Heimen Stoffels, Iván, Markel, Sukhichev Mikhail Ivanovich, Verdulo, WaldiS, xin, ";
+	static String translators="Allan Nordhøy, Andreas Redmer, Artem Kovalev, Arttu Ylhävuori, Demian Masowick, Heimen Stoffels, Iván Seoane, Jeannette Lavoie, Jonatan Nyberg, Manuela Silva, Markel, Milo Ivir, Oghuz Ersen, Osoitz, Rui Mendes, Simon Dottor, Sukhichev Mikhail Ivanovich, Thiago Carmona Monteiro, Verdulo, xin, ";
 	
 	public CreditsDialog() 
 	{
@@ -50,9 +50,7 @@ public class CreditsDialog extends AdvancedDialog{
 		getContentTable().row().minHeight(paragraphPadding).maxHeight(paragraphPadding).top();
 		text("", lblstyle); 
 		getContentTable().row();
-		text(I18N.getString("engine"), lblstyle); 
-		getContentTable().row();
-		text("libGDX", lblstyle); 
+		text(I18N.getString("engine") + ": libGDX", lblstyle); 
 		
 		getContentTable().row().minHeight(paragraphPadding).maxHeight(paragraphPadding).top();
 		text("", lblstyle); 

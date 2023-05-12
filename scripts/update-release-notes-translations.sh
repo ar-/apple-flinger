@@ -1,6 +1,6 @@
 #!/bin/bash
 #-------------------------------------------------------------------------------
-# Copyright (C) 2017-2018 Andreas Redmer <ar-appleflinger@abga.be>
+# Copyright (C) 2017-2020 Andreas Redmer <ar-appleflinger@abga.be>
 # 
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -20,7 +20,7 @@ md=metadata
 orig=en-AU
 origd="$md/$orig"
 cl=changelogs
-todo="af am ar bg bo ca cs de el eo es et eu fa fr hi hr hu id it ja ko lt lv nb nl no pl pt-BR ro ru sl sr sv sw th tr uk vi zh-CN zh-TW"
+todo="af am ar bg ca cs de el eo es et eu fa fr hi hr hu id it ja ko lt lv nb nl no pl pt-BR ro ru sl sr sv sw th tr uk vi zh-CN zh-TW"
 reps=0
 
 function translate {
@@ -52,6 +52,7 @@ function translate {
   if (( resultsize < 20 )); then
     echo $I is too small. not using it
     echo waiting 10 minutes
+    sudo service tor reload # easy way to get new ip
     sleep 1
   else
     echo "file size is fine, check if we need to replace it"
@@ -83,8 +84,8 @@ do
   fi
 done
 
-# order todolis by size
-todo=`ls -laSr metadata/*/changelogs/1005000.txt | egrep -o "metadata/.*" | sed "s/metadata\///g" |  sed "s/\/changelogs.*//g"`
+# order todolist by size
+todo=`ls -laSr metadata/*/changelogs/$latestfile | egrep -o "metadata/.*" | sed "s/metadata\///g" |  sed "s/\/changelogs.*//g"`
 #ls -laSr metadata/*/changelogs/$latestfile
 #exit
 
@@ -125,6 +126,16 @@ do
     sleep 3
   done
 done
+
+# updating the status for each commit is way to complex and disturbing to other procedures
+# updateing it for each release is fine
+
+# need to build the latest release apk so the size is correct in status
+# also ensuring that it actually builds it good
+ANDROID_HOME=~/Android/Sdk/ ./gradlew assembleRelease || exit 1
+
+# update projet status
+scripts/update-project-status.sh
 
 
 if [ $reps == "0" ]

@@ -1,0 +1,17 @@
+1.5.6
+  * vast winterniveau 13 vast komen te zitten
+  * Toegevoegd Italiaanse taal
+  * Toegevoegd Zweeds
+
+1.5.5
+  * Wiki-pagina op de website gemaakt, beschrijft hoe nieuwe niveaus te creëren
+  * 12 extra winterlevels toegevoegd
+  * weergave voor het percentage toegevoegde incrementele prestaties
+  * heeft de tijd toegevoegd aan het display op het scherm
+
+1.5.4
+  * toegevoegde vertalers aan het credits-scherm in het spel
+  * Nederlandse taal toegevoegd (met dank aan Heimen op de webplaat)
+  * Toegevoegd Galicische taal (dankzij Iván op weblate)
+  * verbeterde Spaanse vertaling (dankzij Markel op de webplaat)
+  * transparante pixels verwijderd van schermafbeeldingen

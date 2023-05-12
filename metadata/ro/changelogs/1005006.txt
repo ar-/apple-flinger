@@ -1,0 +1,17 @@
+1.5.6
+  * Nivelul de iarnă fix 13 rămânând blocat
+  * a adăugat limba italiană
+  * a adăugat limba suedeză
+
+1.5.5
+  * pagina wiki de pe site-ul web creat, descriind modul de creare a nivelelor noi
+  * Au fost adăugate încă 12 nivele de iarnă
+  * afișează procentajul de realizări incrementale adăugate
+  * a adăugat timpul de afișare pe ecran
+
+1.5.4
+  * a adăugat traducători la ecranul creditelor din joc
+  * a adăugat limba olandeză (mulțumită lui Heimen pe weblate)
+  * a adăugat limba galiciană (mulțumită lui Iván pe pagina web)
+  * îmbunătățirea traducerii în limba spaniolă (mulțumită lui Markel pe weblate)
+  * a eliminat pixeli transparenți din capturi de ecran

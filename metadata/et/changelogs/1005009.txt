@@ -1,0 +1,3 @@
+  * eemaldas kõik fašistlikud sümbolid ja fašistliku organisatsiooni ja režiimide ikoonid ning asendas need Ukraina lipuga
+  * lisatud ukrainakeelne tõlge
+  * uuendatud tõlked

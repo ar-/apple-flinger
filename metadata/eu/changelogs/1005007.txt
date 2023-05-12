@@ -1,0 +1,17 @@
+1.5.7
+  * euskara gehitu zuen
+  * Brasilgo hizkuntza gehitu du
+  * Kroaziera hizkuntza gehitu du
+  * Finlandiera hizkuntza gehitu du
+  * Turkiera hizkuntza gehitu du
+
+1.5.6
+  * 13 neguko maila finkoa itsatsita
+  * Italiera hizkuntza gehitu du
+  * Suediako hizkuntza gehitu zuen
+
+1.5.5
+  * Sortutako webguneko wiki orria, maila berriak nola sortu deskribatuz
+  * Neguko 12 maila gehiago gehitu dira
+  * gehitutako gehikuntzaren portzentajearen bistaratzea
+  * pantailan bistaratzeko denbora gehitu zen

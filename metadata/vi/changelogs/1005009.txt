@@ -1,0 +1,3 @@
+  * xóa tất cả các biểu tượng phát xít và biểu tượng của tổ chức và chế độ phát xít và thay thế chúng bằng cờ Ukraine
+  * đã thêm bản dịch tiếng Ukraina
+  * cập nhật bản dịch

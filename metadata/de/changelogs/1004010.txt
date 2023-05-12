@@ -1,10 +1,10 @@
 1.4.10
-  * Übersetzte Screenshots für fdroid
+  * Übersetzte Screenshots für F-Droid
 1.4.9
-  * Einige kleinere Übersetzungsfehler
+  * Einige kleinere Übersetzungsfehlerbehebungen
 1.4.8
-  * Hinzugefügt polnische Übersetzung.  Danke an Verdulo.
-  * Esperanto-Übersetzung hinzugefügt.  Danke an Verdulo.
+  * Hinzugefügt: Polnisch-Übersetzung. Danke an Verdulo.
+  * Hinzugefügt: Esperanto-Übersetzung hinzugefügt. Danke an Verdulo.
 1.4.7
-  * Der Winter kommt.  Neue Ebenen hinzugefügt.
+  * Der Winter kommt.  Neue Levels hinzugefügt.
   * Ich hatte keine Ideen mehr.  Bitte senden Sie mir Ideen für neue Levels.

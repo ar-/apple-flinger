@@ -1,0 +1,17 @@
+1.5.6
+  * nível de inverno fixo 13 ficando preso
+  * adicionado idioma italiano
+  * adicionado idioma sueco
+
+1.5.5
+  * Página wiki no site criado, descrevendo como criar novos níveis
+  * 12 mais níveis de inverno adicionados
+  * exibição da porcentagem de conquistas incrementais adicionadas
+  * adicionado o tempo para a exibição na tela
+
+1.5.4
+  * adicionado tradutores para a tela de créditos no jogo
+  * adicionado idioma holandês (graças a Heimen no weblate)
+  * adicionado idioma galego (graças a Iván no weblate)
+  * melhor tradução em espanhol (graças a Markel no weblate)
+  * removeu pixels transparentes das capturas de tela

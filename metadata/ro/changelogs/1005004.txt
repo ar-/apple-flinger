@@ -1,0 +1,19 @@
+1.5.4
+  * a adăugat traducători la ecranul creditelor din joc
+  * a adăugat limba olandeză (mulțumită lui Heimen pe weblate)
+  * a adăugat limba galiciană (mulțumită lui Iván pe pagina web)
+  * îmbunătățirea traducerii în limba spaniolă (mulțumită lui Markel pe weblate)
+  * a eliminat pixeli transparenți din capturi de ecran
+
+1.5.3
+  * adăugată pictograma adaptivă (Android 8 și versiuni ulterioare)
+  * Zoom dezactivat în fundal lângă măr
+  * a adăugat limba norvegiană (mulțumită lui Allan pe pagina web)
+
+1.5.2
+  * a adăugat traducere în portugheză
+  * a făcut câștigătorul și cele mai înalte puncte mai colorate
+  * butonul back-hardware activat pentru a părăsi jocul sau pentru a merge la ecranul anterior
+  * traduceri fixe poloneze și esperanto (de Verdulo)
+  * bugfix: selecția limbajului nu funcționează uneori
+  * a adăugat inscripții GPL3 și gitlab la fundal

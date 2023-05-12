@@ -1,0 +1,17 @@
+1.5.6
+  * fiksēts ziemas līmenis 13 iestrēdzis
+  * pievienota itāļu valoda
+  * pievienoja zviedru valodu
+
+1.5.5
+  * izveidotajā vietnes wiki lapā, kurā aprakstīts, kā izveidot jaunus līmeņus
+  * Pievienoti vēl 12 ziemas līmeņi
+  * ekrāns pievienoto pieauguma pakāpju procentuālā izteiksmē
+  * pievienots ekrāna displeja laiks
+
+1.5.4
+  * pievienoja tulkotājus spēļu ekrānā
+  * pievienota holandiešu valoda (pateicoties Heimenam weblate)
+  * pievienoja galisiešu valodu (pateicoties Iván internetā)
+  * uzlabota spāņu tulkošana (pateicoties Markel tīmekļa vietnei)
+  * noņemti caurspīdīgie pikseļi no ekrānuzņēmumiem

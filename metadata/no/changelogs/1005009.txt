@@ -1,0 +1,3 @@
+  * fjernet alle fascistiske symboler og ikoner for fascistiske organisasjoner og regimer og erstattet dem med det ukrainske flagget
+  * lagt til ukrainsk oversettelse
+  * oppdaterte oversettelser

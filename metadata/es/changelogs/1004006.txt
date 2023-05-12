@@ -2,6 +2,6 @@
   * Mejora de la traducción al ruso. Gracias a Dmitry.
 
 1.4.5
-  * Traducción al francés mejorada. Gracias a xin.
+  * Mejora de la traducción al francés. Gracias a xin.
   * Añadido un nuevo teclado localizado para cada idioma para introducir los nombres de los jugadores.
-  * Añadidas capturas de pantalla fdroid para cada idioma soportado.
+  * Añadidas capturas de pantalla de fdroid para cada idioma soportado.

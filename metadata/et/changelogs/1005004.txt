@@ -1,0 +1,12 @@
+1.5.4
+  * lisatud tõlkijad krediteerimisekraanile mängus
+  * lisati hollandi keel (tänu Heimenile weblate'is)
+  * lisatud galiitsia keel (tänu Ivánile weblate'is)
+  * parandatud hispaania keele tõlge (tänu Markelile weblate'is)
+  * eemaldati läbipaistvad pikslid ekraanipiltidelt
+  
+1.5.3
+  * lisatud kohanduv ikoon (Android 8 ja uuemad)
+  * keelati taustasuumimine õuna läheduses
+  * lisati norra keel (tänu Allanile weblate'is)
+

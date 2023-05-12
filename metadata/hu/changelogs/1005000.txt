@@ -5,4 +5,3 @@
 1.4.11
   * Kis fordítási javítások. Köszönhetően a verdulo ismét.
   * A célzott SDK-verzió az idiótikus google play boltban
-

@@ -1,0 +1,17 @@
+1.5.6
+  * fiksna zimska stopnja 13 se zatakne
+  * dodan italijanski jezik
+  * dodal švedski jezik
+
+1.5.5
+  * wiki stran na spletni strani je ustvarila, ki opisuje, kako ustvariti nove ravni
+  * Dodanih je 12 dodatnih zimskih stopenj
+  * prikazan je odstotek dodatnih dosežkov
+  * je na zaslonu dodal čas na zaslonu
+
+1.5.4
+  * dodali prevajalce na ekran za kredite v igri
+  * dodal nizozemski jezik (zahvaljujoč Heimenu na spletnem mestu)
+  * dodan galicijski jezik (zahvaljujoč Ivanu na weblate)
+  * izboljšan španski prevod (zahvaljujoč Markelju na spletnem mestu)
+  * Odstranjene pregledne slikovne pike s posnetki zaslona

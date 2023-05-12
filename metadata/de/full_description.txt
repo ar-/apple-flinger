@@ -1,29 +1,31 @@
-Kurzweiliges rundenbasiertes Spiel um sich die Zeit zu vertreiben. Für einen oder zwei Spieler.
-Herausfordernd und süchtig machend.
+Kurzweiliges rundenbasiertes Spiel um sich die Zeit zu vertreiben. Neu,
+herausfordernd und süchtig machend.
 
 Merkmale:
 
-* Hochauflösende Grafik für Telefon und Tablet
-* Sommer oder Winterumgebung
+* Hochauflösende Grafiken
 * Realistische Physik
 * Ruckelfreies Spielen (auch auf alten Geräten)
-* detaillierte Animationen und ein Partikelsystem
-* brandneues und total innovatives Spielkonzept
+* Detaillierte Animationen und ein Partikelsystem
+* Brandneues und innovatives Spielkonzept
 * Einzel- und Mehrspielermodus
 * Übersetzt in (fast) alle europäischen Sprachen
 * 100% Open Source (GPL3)
 
-Mit einer Zwille verschießt du Äpfel um die gegnerische Basis zu zerstören. Aber Vorsicht, die Gegenseite schießt zurück. Das Spiel ist eine ausgewogene Mischung aus Puzzle, Strategie, Geduld und Gefecht.
+Mit einer Zwille verschießt du Äpfel. Sei schnell um die ganze gegnerische
+Basis zu zerstören. Aber Vorsicht, die Gegenseite schießt zurück. Das Spiel
+ist eine ausgewogene Mischung aus Puzzle, Strategie, Geduld und Gefecht.
 
-Für einen oder zwei Spieler! Du spielst gegen den Computer oder reihum mit jemandem, der neben dir sitzt.
-
-Demnächst noch mehr Features, mehr Level, mehr Spaß.
+Für einen oder zwei Spieler! Du kannst mit jemanden spielen welcher neben
+dir sitzt - oder gegen dich selbst spielen. Du kannst auch gegen einen
+computergesteuerten Gegner spielen.
+Demnächst noch mehr Features, mehr Levels, mehr Spaß.
 
 Altersfreigaben:
 
-* USK: 0
-* ESRB: E (ab 6 Jahren geeignet)
-* ACB: G
-* PEGI:3
+* ACB: G (allgemein)
 * ClassInd: L
+* ESRB: E (jeder)
+* PEGI:3
+* USK: 0
 * IARC: 3

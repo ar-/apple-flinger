@@ -1,5 +1,5 @@
 #-------------------------------------------------------------------------------
-# Copyright (C) 2017-2018 Andreas Redmer <ar-appleflinger@abga.be>
+# Copyright (C) 2017-2023 Andreas Redmer <ar-appleflinger@abga.be>
 # 
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -19,7 +19,7 @@ achi_file=/tmp/tmp_achi_file.txt
 rm -f $error_file
 touch $error_file
 in_source=`egrep -a -r "I18N.getString|I18N.s" core/ | egrep -a -o "I18N.getString.*)|I18N.s.*)" | sed "s/I18N/\nI18N/g" | egrep -a -o "I18N.getString.*\")|I18N.s.*\")" | egrep -a -o '".*"' | sort -u | egrep -o "[a-zA-Z0-9_]*" | sort -u`
-achi=`cat core/src/com/gitlab/ardash/appleflinger/helpers/Achievement.java | grep ACH_ | tr '[:upper:]' '[:lower:]' | egrep -o "[a-z_]*"`
+achi=`cat core/src/com/gitlab/ardash/appleflinger/helpers/Achievement.java | egrep "\sACH_" | tr '[:upper:]' '[:lower:]' | egrep -o "[a-z_]*"`
 prop_files=`ls android/assets/af*properties`
 
 all_achis=''
@@ -87,10 +87,10 @@ done
 echo 
 echo checking file encodings to be UTF8
 file -L android/assets/af*.properties 
-wrong_file_enc_count=`file -L android/assets/af*.properties | egrep -v "UTF-8 Unicode text|ASCII text" | wc -l`
+wrong_file_enc_count=`file -L android/assets/af*.properties | egrep -v "UTF-8 Unicode text|ASCII text|Unicode text, UTF-8 text" | wc -l`
 [[ $wrong_file_enc_count -eq "0" ]] || echo "ERROR at least one file ($wrong_file_enc_count) is not UTF-8, please run: iconv -f ISO-8859-15 -t UTF-8 android/assets/af_de.properties > tmp.properties" | tee -a $error_file
 echo 
-file -L android/assets/af*.properties | egrep -v "UTF-8 Unicode text|ASCII text"
+file -L android/assets/af*.properties | egrep -v "UTF-8 Unicode text|ASCII text|Unicode text, UTF-8 text"
 echo 
 
 # check escaped hashtags in twitter recommendation texts
@@ -120,7 +120,7 @@ wrong_file_enc_count=`grep -i "\." android/assets/af*.properties | egrep -v "# "
 [[ $wrong_file_enc_count -eq "0" ]] || echo "ERROR at least one file ($wrong_file_enc_count) has a dot. remove it" | tee -a $error_file
 echo 
 
-# check for dots
+# check for backslashes
 echo 
 echo checking for backslash-n or backslash-t
 egrep -i '\\n|\\t|\\r'  android/assets/af*.properties

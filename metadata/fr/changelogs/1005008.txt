@@ -1,0 +1,2 @@
+1.5.8
+  * traductions mises à jour

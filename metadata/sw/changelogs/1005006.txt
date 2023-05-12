@@ -1,0 +1,17 @@
+1.5.6
+  * fasta baridi ngazi ya 13 kukwama
+  * aliongeza lugha ya Kiitaliano
+  * aliongeza lugha ya Kiswidi
+
+1.5.5
+  * ukurasa wa wiki kwenye tovuti iliyoundwa, kuelezea jinsi ya kujenga ngazi mpya
+  * Viwango 12 vya baridi viliongeza
+  * kuonyesha kwa asilimia ya mafanikio ya ziada yaliongezwa
+  * aliongeza wakati wa kuonyesha kwenye skrini
+
+1.5.4
+  * aliongeza wafsiri katika skrini ya credits katika mchezo
+  * aliongeza lugha Kiholanzi (shukrani kwa Heimen kwenye weblate)
+  * aliongeza lugha ya Kigalisia (shukrani kwa Iván kwenye weblate)
+  * kuboresha tafsiri ya Kihispania (shukrani kwa Markel kwenye weblate)
+  * imeondolewa saizi za uwazi kutoka viwambo vya viwambo

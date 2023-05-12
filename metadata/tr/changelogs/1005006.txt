@@ -1,0 +1,17 @@
+1.5.6
+  * Sabit kış seviyesi 13 sıkışıyor
+  * İtalyanca dil eklendi
+  * eklendi İsveç dili
+
+1.5.5
+  * Web sitesinde oluşturulan wiki sayfası, yeni seviyelerin nasıl oluşturulacağını açıklıyor
+  * 12 daha kış seviyesi eklendi
+  * Artımlı başarıların yüzdesi için görüntüleme
+  * Ekrandaki zamana zaman ekledi
+
+1.5.4
+  * Oyundaki kredi ekranına çevirmenler ekledi
+  * Hollanda dili eklendi (weblate'de Heimen'e teşekkürler)
+  * Galiçya dili eklendi (weblate'de Iván'a teşekkürler)
+  * İspanyolca çeviri geliştirilmiş (web üzerinde Markel sayesinde)
+  * Ekran görüntülerinden şeffaf piksel kaldırıldı

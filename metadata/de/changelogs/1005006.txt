@@ -1,0 +1,17 @@
+1.5.6
+  * Winterlevel 13 kann nicht mehr festfahren
+  * italienische Sprache hinzugefügt
+  * schwedische Sprache hinzugefügt
+
+1.5.5
+  * Wiki-Seite auf der Webseite erstellt, in der beschrieben wird, wie neue Level erstellt werden
+  * 12 weitere Winterlevel hinzugefügt
+  * Anzeige für den Prozentsatz von inkrementellen Errungenschaften
+  * die Zeit zur Anzeige auf dem Bildschirm hinzugefügt
+
+1.5.4
+  * Übersetzer werden nun auf dem Credits-Bildschirm im Spiel angezeigt
+  * Niederländisch hinzugefügt (Danke an Heimen auf Weblate)
+  * Galicische Sprache hinzugefügt (danke an Iván auf Weblate)
+  * verbesserte spanische Übersetzung (danke an Markel auf Weblate)
+  * Transparente Pixel aus Screenshots entfernt

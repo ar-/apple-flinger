@@ -1,0 +1,19 @@
+1.5.4
+  * dodano tłumaczy do ekranu kredytów w grze
+  * dodano język niderlandzki (dzięki Heimen na weblate)
+  * dodano język galicyjski (dzięki Ivánowi na weblate)
+  * ulepszone tłumaczenie na hiszpański (dzięki Markel na weblate)
+  * usunięto przezroczyste piksele ze zrzutów ekranu
+
+1.5.3
+  * dodano ikonę adaptacyjną (system Android 8 lub nowszy)
+  * wyłączony zoom tła w pobliżu jabłka
+  * dodano język norweski (podziękowania dla Allana na weblate)
+
+1.5.2
+  * dodano portugalskie tłumaczenie
+  * sprawił, że zwycięzca i najwyższe punkty były bardziej kolorowe
+  * aktywowany przycisk powrotu sprzętu, aby opuścić grę lub przejść do poprzedniego ekranu
+  * naprawione tłumaczenia polskie i esperanckie (autor: Verdulo)
+  * bugfix: wybór języka czasami nie działa
+  * dodano odznaki GPL3 i gitlab do tła

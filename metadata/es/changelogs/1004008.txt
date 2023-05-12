@@ -1,15 +1,15 @@
 1.4.8
-  * Añadido idioma Polaco. Gracias a Verdulo.
-  * Añadido idioma Esperanto. Gracias a Verdulo.
+  * Se ha añadido la traducción al polaco. Gracias a verdulo.
+  * Añadida la traducción al esperanto. Gracias a verdulo.
 
 1.4.7
-  * Se acerca el invierno. Nuevos niveles.
-  * Me quedé sin ideas. Envíenme ideas para nuevos niveles.
+  * Se acerca el invierno. Añadidos algunos niveles nuevos.
+  * Me quedé sin ideas. Por favor, envíenme ideas para nuevos niveles.
 
 1.4.6
-  * Traducción al Ruso mejorada. Gracias a Dmitry.
+  * Mejora de la traducción al ruso. Gracias a Dmitry.
 
 1.4.5
-  * Traducción al Francés mejorada. Gracias a Xin.
+  * Traducción al francés mejorada. Gracias a xin.
   * Añadido un nuevo teclado localizado para cada idioma para introducir los nombres de los jugadores.
-  * Añadidas capturas de pantalla fdroid para cada idioma soportado.
+  * Añadidas capturas de pantalla de fdroid para cada idioma soportado.

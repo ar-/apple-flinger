@@ -1,8 +1,8 @@
 
 ui.png
-size: 2048,512
+size: 2048, 512
 format: RGBA8888
-filter: Nearest,Nearest
+filter: Nearest, Nearest
 repeat: none
 btn_1player
   rotate: false
@@ -60,18 +60,18 @@ btn_fb
   orig: 100, 100
   offset: 0, 0
   index: -1
+btn_ff
+  rotate: false
+  xy: 308, 10
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
 btn_fl_empty
   rotate: false
   xy: 1044, 310
   size: 200, 200
   orig: 200, 200
-  offset: 0, 0
-  index: -1
-btn_gp
-  rotate: false
-  xy: 308, 10
-  size: 100, 100
-  orig: 100, 100
   offset: 0, 0
   index: -1
 btn_info
@@ -202,7 +202,7 @@ flag_de
   index: -1
 flag_en
   rotate: false
-  xy: 1736, 54
+  xy: 1838, 256
   size: 100, 50
   orig: 100, 50
   offset: 0, 0
@@ -221,6 +221,20 @@ flag_es
   orig: 100, 67
   offset: 0, 0
   index: -1
+flag_eu
+  rotate: false
+  xy: 1838, 198
+  size: 100, 56
+  orig: 100, 56
+  offset: 0, 0
+  index: -1
+flag_fi
+  rotate: false
+  xy: 1838, 135
+  size: 100, 61
+  orig: 100, 61
+  offset: 0, 0
+  index: -1
 flag_fr
   rotate: false
   xy: 1124, 39
@@ -235,6 +249,27 @@ flag_gl
   orig: 100, 67
   offset: 0, 0
   index: -1
+flag_hr
+  rotate: false
+  xy: 1940, 191
+  size: 100, 50
+  orig: 100, 50
+  offset: 0, 0
+  index: -1
+flag_it
+  rotate: false
+  xy: 1328, 37
+  size: 100, 67
+  orig: 100, 67
+  offset: 0, 0
+  index: -1
+flag_kk
+  rotate: false
+  xy: 1940, 139
+  size: 100, 50
+  orig: 100, 50
+  offset: 0, 0
+  index: -1
 flag_nb
   rotate: false
   xy: 716, 52
@@ -244,28 +279,56 @@ flag_nb
   index: -1
 flag_nl
   rotate: false
-  xy: 1328, 37
+  xy: 1430, 37
   size: 100, 67
   orig: 100, 67
   offset: 0, 0
   index: -1
 flag_pl
   rotate: false
-  xy: 1634, 42
+  xy: 1838, 2
   size: 100, 62
   orig: 100, 62
   offset: 0, 0
   index: -1
 flag_pt
   rotate: false
-  xy: 1430, 37
+  xy: 1532, 37
   size: 100, 67
   orig: 100, 67
   offset: 0, 0
   index: -1
+flag_pt_br
+  rotate: false
+  xy: 1634, 34
+  size: 100, 70
+  orig: 100, 70
+  offset: 0, 0
+  index: -1
 flag_ru
   rotate: false
-  xy: 1532, 37
+  xy: 1736, 37
+  size: 100, 67
+  orig: 100, 67
+  offset: 0, 0
+  index: -1
+flag_uk
+  rotate: false
+  xy: 1736, 37
+  size: 100, 67
+  orig: 100, 67
+  offset: 0, 0
+  index: -1
+flag_sv
+  rotate: false
+  xy: 1940, 243
+  size: 100, 63
+  orig: 100, 63
+  offset: 0, 0
+  index: -1
+flag_tr
+  rotate: false
+  xy: 1838, 66
   size: 100, 67
   orig: 100, 67
   offset: 0, 0

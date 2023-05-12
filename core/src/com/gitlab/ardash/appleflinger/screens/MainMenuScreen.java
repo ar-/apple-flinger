@@ -1,5 +1,5 @@
 /*******************************************************************************
- * Copyright (C) 2015-2018 Andreas Redmer <ar-appleflinger@abga.be>
+ * Copyright (C) 2015-2020 Andreas Redmer <ar-appleflinger@abga.be>
  * 
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -164,13 +164,11 @@ public class MainMenuScreen extends GenericScreen {
         // social buttons
         SpriteButton btnTW = new SpriteButton(Assets.SpriteAsset.BTN_TW.get());
         SpriteButton btnFB = new SpriteButton(Assets.SpriteAsset.BTN_FB.get());
-        SpriteButton btnGP = new SpriteButton(Assets.SpriteAsset.BTN_GP.get());
         SpriteButton btnPI = new SpriteButton(Assets.SpriteAsset.BTN_PI.get());
 
 		Table bottomtable = new Table();
 		bottomtable.setFillParent(true);
 		bottomtable.align(Align.bottomRight);
-		bottomtable.add(btnGP).width(btnGP.getWidth()*1.5f).height(btnGP.getWidth()*2);
 		bottomtable.add(btnTW).width(btnTW.getWidth()*1.5f).height(btnTW.getWidth()*2);
 		bottomtable.add(btnFB).width(btnFB.getWidth()*1.5f).height(btnFB.getWidth()*2);
 		bottomtable.add(btnPI).width(btnPI.getWidth()*1.5f).height(btnPI.getWidth()*2);
@@ -191,14 +189,6 @@ public class MainMenuScreen extends GenericScreen {
 			public void clicked(InputEvent event, float x, float y) {
 				super.clicked(event, x, y);
 				gm.getActionResolver().fbPostRecommendation();
-			}
-		});
-
-		btnGP.addListener(new ClickListener() {
-			@Override
-			public void clicked(InputEvent event, float x, float y) {
-				super.clicked(event, x, y);
-				gm.getActionResolver().gpPostRecommendation();
 			}
 		});
 

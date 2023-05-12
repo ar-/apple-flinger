@@ -1,0 +1,3 @@
+  * menghapus semua simbol dan ikon fasis dari organisasi dan rezim fasis dan menggantinya dengan bendera Ukraina
+  * menambahkan terjemahan bahasa Ukraina
+  * terjemahan yang diperbarui

@@ -1,0 +1,17 @@
+1.5.5
+  * trang wiki trên trang web được tạo, mô tả cách tạo cấp độ mới
+  * Thêm 12 cấp độ mùa đông
+  * hiển thị phần trăm các thành tích gia tăng
+  * thêm thời gian vào màn hình hiển thị trên màn hình
+
+1.5.4
+  * thêm dịch giả vào màn hình tín dụng trong trò chơi
+  * thêm ngôn ngữ Hà Lan (nhờ Heimen trên weblate)
+  * thêm ngôn ngữ Galicia (nhờ Iván trên weblate)
+  * Cải thiện bản dịch tiếng Tây Ban Nha (nhờ Markel trên weblate)
+  * xóa các pixel trong suốt khỏi các ảnh chụp màn hình
+
+1.5.3
+  * thêm biểu tượng thích ứng (Android 8 trở lên)
+  * phóng nền bị vô hiệu hóa gần táo
+  * thêm ngôn ngữ Na Uy (nhờ Allan trên weblate)

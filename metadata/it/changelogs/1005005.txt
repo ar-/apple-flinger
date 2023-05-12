@@ -1,0 +1,17 @@
+1.5.5
+  * Pagina wiki sul sito Web creata, che descrive come creare nuovi livelli
+  * 12 nuovi livelli invernali aggiunti
+  * mostra la percentuale di risultati incrementali aggiunti
+  * aggiunto il tempo al display sullo schermo
+
+1.5.4
+  * aggiunti i traduttori allo schermo dei crediti nel gioco
+  * aggiunta lingua olandese (grazie a Heimen su weblate)
+  * aggiunta lingua galiziana (grazie a Iván su weblate)
+  * traduzione spagnola migliorata (grazie a Markel su weblate)
+  * rimossi i pixel trasparenti dagli screenshot
+
+1.5.3
+  * aggiunta un'icona adattiva (Android 8 e versioni successive)
+  * zoom di sfondo disattivato vicino alla mela
+  * aggiunta lingua norvegese (grazie ad Allan su weblate)

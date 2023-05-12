@@ -1,0 +1,17 @@
+1.5.6
+  * Se arregló el nivel de invierno 13 quedándose atascado.
+  * idioma italiano añadido
+  * añadido idioma sueco
+
+1.5.5
+  * Página wiki en el sitio web creado, que describe cómo crear nuevos niveles.
+  * 12 niveles más de invierno añadidos
+  * Visualización para el porcentaje de logros incrementales agregados.
+  * Añadido el tiempo a la pantalla en la pantalla.
+
+1.5.4
+  * Añadidos traductores a la pantalla de créditos del juego.
+  * Idioma holandés agregado (gracias a Heimen en weblate)
+  * Añadida lengua gallega (gracias a Iván en weblate).
+  * traducción al español mejorada (gracias a Markel en weblate)
+  * Eliminar píxeles transparentes de capturas de pantalla

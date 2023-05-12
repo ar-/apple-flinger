@@ -1,0 +1,17 @@
+1.5.6
+  * Neguan konpondu den 13 maila itsatsita
+  * Italiako hizkuntza gehituta
+  * Suedierazko hizkuntza gehituta
+
+1.5.5
+  * wiki-orria sortu da, maila berriak nola sortu deskribatuz
+  * 12 neguko maila gehiago gehitu dira
+  * Gehikuntza inkrementalen portzentajeen bistaratzea
+  * Pantailan pantailako ordua gehitu da
+
+1.5.4
+  * Eranskinak gehitu kreditu-pantailan jokoan
+  * Holandako hizkuntza gehitu (Heimen-en web orriari esker)
+  * gehitu galizierazko hizkuntza (Ivan web orrian)
+  * itzulpengintza gaztelania hobetua (Markel-en web orriari esker)
+  * pantaila handiak kenduko dira pantaila-argazkietatik

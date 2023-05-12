@@ -1,5 +1,5 @@
 /*******************************************************************************
- * Copyright (C) 2017-2018 Andreas Redmer <ar-appleflinger@abga.be>
+ * Copyright (C) 2017-2023 Andreas Redmer <ar-appleflinger@abga.be>
  * 
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -132,8 +132,7 @@ public class TextInputDialog extends AdvancedDialog{
 			tblContent.row();
 			tblContent.add(makeKeyboardRow("ZXCVBNM"));
 			tblContent.row();
-		}
-		else if (langCode.equals("de")) {
+		} else if (langCode.equals("de")) {
 			tblContent.row();
 			tblContent.add(makeKeyboardRow("QWERTZUIOPÜ"));
 	        tblContent.add(btnBackSpace);
@@ -151,7 +150,7 @@ public class TextInputDialog extends AdvancedDialog{
 			tblContent.row();
 			tblContent.add(makeKeyboardRow("ZĈCVBNMĤ"));
 			tblContent.row();
-		} else if (langCode.equals("es") || langCode.equals("gl") || langCode.equals("pt")) {
+		} else if (langCode.equals("es") || langCode.equals("gl") || langCode.equals("pt") || langCode.equals("eu")) {
 			tblContent.row();
 			tblContent.add(makeKeyboardRow("QWERTYUIOPÜÚ"));
 	        tblContent.add(btnBackSpace);
@@ -170,6 +169,15 @@ public class TextInputDialog extends AdvancedDialog{
 			tblContent.row();
 			tblContent.add(makeKeyboardRow("WXCVBNÏÎ"));
 			tblContent.row();
+		} else if (langCode.equals("it")) {
+			tblContent.row();
+			tblContent.add(makeKeyboardRow("QWERTYUIOPÈÉ"));
+	        tblContent.add(btnBackSpace);
+			tblContent.row();
+			tblContent.add(makeKeyboardRow("ASDFGHJKLÒÀÙ"));
+			tblContent.row();
+			tblContent.add(makeKeyboardRow("ZXCVBNMÍÎÚÓÌ"));
+			tblContent.row();
 		} else if (langCode.equals("ru")) {
 			tblContent.row();
 			tblContent.add(makeKeyboardRow("ЙЦУКЕНГШЩЗХЪ"));
@@ -178,6 +186,35 @@ public class TextInputDialog extends AdvancedDialog{
 			tblContent.add(makeKeyboardRow("ФЫВАПРОЛДЖЭ"));
 			tblContent.row();
 			tblContent.add(makeKeyboardRow("ЯЧСМИТЬБЮЁ"));
+			tblContent.row();
+		} else if (langCode.equals("uk")) {
+			tblContent.row();
+			tblContent.add(makeKeyboardRow("ЙЦУКЕНГШЩЗХЇҐ"));
+	        tblContent.add(btnBackSpace);
+			tblContent.row();
+			tblContent.add(makeKeyboardRow("ФІВАПРОЛДЖЄ"));
+			tblContent.row();
+			tblContent.add(makeKeyboardRow("ЯЧСМИТЬБЮ"));
+			tblContent.row();
+		} else if (langCode.equals("kk")) {
+			tblContent.row();
+			tblContent.add(makeKeyboardRow("ӘІҢҒҮҰҚӨҺЁЪ"));
+	        tblContent.add(btnBackSpace);
+			tblContent.row();
+			tblContent.add(makeKeyboardRow("ЙЦУКЕНГШЩЗХ"));
+			tblContent.row();
+			tblContent.add(makeKeyboardRow("ФЫВАПРОЛДЖЭ"));
+			tblContent.row();
+			tblContent.add(makeKeyboardRow("ЯЧСМИТЬБЮ"));
+			tblContent.row();
+		} else if (langCode.equals("sv")) {
+			tblContent.row();
+			tblContent.add(makeKeyboardRow("QWERTYUIOPÅ"));
+	        tblContent.add(btnBackSpace);
+			tblContent.row();
+			tblContent.add(makeKeyboardRow("ASDFGHJKLÖÄ"));
+			tblContent.row();
+			tblContent.add(makeKeyboardRow("ZXCVBNM"));
 			tblContent.row();
 		} else {
 			tblContent.row();

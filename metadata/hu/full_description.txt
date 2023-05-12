@@ -1,0 +1,31 @@
+Vicces kör alapú egyjátékos/többjátékos játék a fantasztikus időkért. Új,
+kihívást jelentő és addiktív.
+
+Jellemzők:
+
+* nagy felbontású minőségi grafika
+* realisztikus fizika
+* lagmentes és zökkenőmentes játékmenet (még régi eszközökön is)
+* finom, részletes animációk és részecskerendszerek
+* vadonatúj és innovatív játékkoncepció
+* egyjátékos/többjátékos
+* 100% nyílt forráskódú (GPL3)
+
+Egy csúzlival lövöldözöl almákat. Légy az első, aki elpusztítja az egész ellenséget
+bázist, de vigyázz, a másik oldal visszalő. Ez a játék kiegyensúlyozottan vegyes
+puzzle, stratégia, türelem és akció.
+
+Ez egy vagy két játékosnak való! Bárki ellen játszhatod, aki melletted ül.
+vagy saját magad ellen. Játszhatsz számítógép ellen is, amelyet egy számítógép vezérel
+ellenféllel szemben. Hamarosan több funkció, több szórakozás és több szint is érkezik.
+
+nemzetközi korhatár-besorolás:
+
+* ACB: G (általános)
+* ClassInd: L
+* ESRB: E (mindenki)
+* PEGI: 3
+* USK: 0
+* IARC: 3
+
+Translated with www.DeepL.com/Translator (free version)
