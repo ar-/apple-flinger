@@ -1,0 +1,1 @@
+added kazakh translation and fixed errors in other translations
