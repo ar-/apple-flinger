@@ -34,6 +34,7 @@ We'd like to thank the following people for their contributions:
 - J∙ Lavoie \<j∙lavoie⒜net-c∙ca\>
 - John Doe \<dansroot⒜yadim∙dismail∙de\>
 - Jonatan Nyberg \<jonatan⒜autistici∙org\>
+- Kieli Puoli \<kielipuoli⒜gmail∙com\>
 - Kristoffer Grundström \<swedishsailfishosuser⒜tutanota∙com\>
 - leela \<53352⒜protonmail∙com\>
 - Licaon_Kter \<licaon∙kter⒜protonmail∙com\>

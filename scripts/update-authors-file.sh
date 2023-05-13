@@ -49,7 +49,7 @@ cat $blfile | grep "=" | egrep -o " \(.*[0-9]-" | egrep -o ".* 2" | sed -e 's/^.
 echo Removing those with less than 10 contrubutions:
 echo
 #git blame $TFILES | egrep -o " \(.*[0-9]-" | egrep -o ".* 2" | sed -e 's/^..//' -e 's/ *.$//' | grep -v '#' | sort | uniq -c | sort -nr
-translators=`cat $blfile | grep "=" | egrep -o " \(.*[0-9]-" | egrep -o ".* 2" | sed -e 's/^..//' -e 's/ *.$//' | grep -v '#' | sort | uniq -c | awk '$1>=10{print substr($0,9)}' | sed -e "s/Сухичев Михаил Иванович/Sukhichev Mikhail Ivanovich/g" | sed -e "s/xxssmaoxx/Simon Dottor/g"  | sed -e "s/Masowick/Demian Masowick/g" | sort | tr '\n' ','|sed -e "s/,/, /g"`
+translators=`cat $blfile | grep "=" | egrep -o " \(.*[0-9]-" | egrep -o ".* 2" | sed -e 's/^..//' -e 's/ *.$//' | grep -v '#' | sort | uniq -c | awk '$1>=10{print substr($0,9)}' | sed -e "s/Сухичев Михаил Иванович/Sukhichev Mikhail Ivanovich/g" | sed -e "s/xxssmaoxx/Simon Dottor/g"  | sed -e "s/Masowick/Demian Masowick/g" | sed -e "s/gallegonovato/Fran Carro/g" | sed -e "s/Fontan030/Roman F\./g" | sort | tr '\n' ','|sed -e "s/,/, /g"`
 echo
 echo $translators
 #rm -f $blfile
@@ -59,11 +59,11 @@ echo applying substitutions, leaves us with:
 
 translators=${translators/Andreas, Andreas Redmer/Andreas Redmer}
 translators=${translators/Artem/Artem Kovalev}
+translators=${translators/Iván/Iván Seoane}
 translators=${translators/John Doe, /}
 translators=${translators/J. Lavoie/Jeannette Lavoie}
 translators=${translators/Michal Čihař, /} # doesnt want to be named
 translators=${translators/Oguz Ersen/Oghuz Ersen} # Oğuz is not spported by the font
-translators=${translators/Iván/Iván Seoane}
 
 echo $translators
 
@@ -102,6 +102,14 @@ cp /tmp/AUTHORS_tmp.md /tmp/AUTHORS.md
 
 # exclude Markels duplicate
 cat /tmp/AUTHORS.md | grep -v "Markel @wakutiteo" > /tmp/AUTHORS_tmp.md
+cp /tmp/AUTHORS_tmp.md /tmp/AUTHORS.md
+
+# exclude Fontan030 duplicate
+cat /tmp/AUTHORS.md | grep -v "Fontan030" > /tmp/AUTHORS_tmp.md
+cp /tmp/AUTHORS_tmp.md /tmp/AUTHORS.md
+
+# remove the weblate placeholder users
+cat /tmp/AUTHORS.md | grep -v "weblate.org" > /tmp/AUTHORS_tmp.md
 cp /tmp/AUTHORS_tmp.md /tmp/AUTHORS.md
 
 # now make the markdown look nice and put some spamprotection on the email addresses
