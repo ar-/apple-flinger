@@ -31,6 +31,30 @@ international age ratings:
 *    USK: 0
 *    IARC: 3
 
+## Rules
+
+### How to win a round ?
+
+Drag the apple and shoot it towards the funny little enemies on the other side. **The player who destroys all enemies on the other side first, is the winner.**
+
+Since player 1 has always the first shot, player 2 will always be allowed to perform the last shot. Same chances for both.
+
+If both players destroy all enemies in the same round, the player with most points wins.
+
+You can win the round, even if you have less points, by destroying all targets with less shots.
+
+### What about the points ?
+
+The points decide, who is the winner, when both players finish the game equally quick.
+
+The points also accumulate, when you play many rounds in a row. So you can try to achieve new high-scores by playing 18 rounds in a row. 
+
+If you play 18 rounds against another human you can decide if "most won rounds" or "most overall points" is the overall winner.
+
+You get points by hitting targets and wood blocks. Each target has 1000 HP, so when you destroy it (with 1 or many shots) you will get up to 1000 HP. Hiting the targets on your own side grants 0 points. The wood blocks give less points, but it might still be a good strategy to destroy as much wood as possible on your way to the victory.
+
+Additionally there are some unlockable achievements for gaining many points.
+
 ## Cheats
 
 ### To unlock all levels (v.1.5.10 and higher)
