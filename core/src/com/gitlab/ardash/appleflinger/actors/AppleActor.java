@@ -22,6 +22,8 @@ import com.badlogic.gdx.graphics.Texture;
 import com.badlogic.gdx.graphics.Texture.TextureFilter;
 import com.badlogic.gdx.graphics.g2d.TextureRegion;
 import com.badlogic.gdx.physics.box2d.BodyDef.BodyType;
+import com.badlogic.gdx.scenes.scene2d.Actor;
+import com.badlogic.gdx.scenes.scene2d.Touchable;
 import com.badlogic.gdx.scenes.scene2d.utils.TextureRegionDrawable;
 import com.gitlab.ardash.appleflinger.GameWorld;
 import com.gitlab.ardash.appleflinger.global.Assets;
@@ -54,6 +56,13 @@ public class AppleActor extends ProjectileActor{
 		final EnumSet<SoundAsset> whizzSounds = Assets.SoundGroupAsset.WHIZZ.members;
 		for (SoundAsset whizz: whizzSounds)
 			SoundPlayer.stopSound(Assets.getSound(whizz));
+	}
+	
+	@Override
+	public Actor hit(float x, float y, boolean touchable) {
+		if (touchable && this.getTouchable() != Touchable.enabled) return null;
+		if (!isVisible()) return null;
+		return x >= 0-getWidth() && x < getWidth()*2 && y >= 0-getHealth() && y < getHeight()*2 ? this : null;
 	}
 
 }
