@@ -1,5 +1,5 @@
 /*******************************************************************************
- * Copyright (C) 2015-2018 Andreas Redmer <ar-appleflinger@abga.be>
+ * Copyright (C) 2015-2023 Andreas Redmer <ar-appleflinger@abga.be>
  * 
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -37,6 +37,7 @@ import com.gitlab.ardash.appleflinger.global.Assets.TextureAsset;
 import com.gitlab.ardash.appleflinger.global.GameManager;
 import com.gitlab.ardash.appleflinger.global.GameState;
 import com.gitlab.ardash.appleflinger.global.MaterialConfig;
+import com.gitlab.ardash.appleflinger.global.PlayerStatus;
 import com.gitlab.ardash.appleflinger.helpers.SoundPlayer;
 import com.gitlab.ardash.appleflinger.i18n.I18N;
 
@@ -79,21 +80,29 @@ public class ProjectileActor extends CircleActor {
 		final PhysicsActor caller = this;
 		
 		this.addListener(new InputListener(){
-			private final Vector2 lastTouchDown = new Vector2(0,0);
+			final GameManager gm = GameManager.getInstance();
 			private final Vector2 shootDirection = new Vector2(0,0);
-			
 			boolean pullSoundPlayed = false;
+
+			/**
+			 * when pulled far away, trigger an offset to the finger, so apple doesn't need to be touched directly,
+			 * this offset increases slightly over time until a specified max
+			 */
+			private final Vector2 touchOffset = new Vector2(0,0);
+
+			/**
+			 * true, when the user pulled one time out of the maxPullDistance
+			 */
+			boolean wasRampProximityLeft = false;
 
 			@Override
 			public boolean touchDown(InputEvent event, float x, float y,
 					int pointer, int button) {
-				GameManager gm = GameManager.getInstance();
 				if (GameManager.DEBUG)
 					System.out.println("touchDown"+x +","+y);  
-				lastTouchDown.set(body.getTransform().getPosition().cpy());
 				removePhysics();
 				gm.setGameState(GameState.DRAGGING);
-				 pullSoundPlayed = false;
+				pullSoundPlayed = false;
 				return true;
 			}
 			@Override
@@ -112,14 +121,29 @@ public class ProjectileActor extends CircleActor {
 				}
 				
 				final Vector2 rampCenterPoint = slingShotActor.getSlingShotCenter();
-				
         		event.setBubbles(false);
-
 				final Vector2 moveTarget= new Vector2(event.getStageX(), event.getStageY());
+
+				if (wasRampProximityLeft) {
+//	        		System.out.println(" to " + touchOffset + " len2 " + touchOffset.len2());
+					moveTarget.add(touchOffset);
+					if (touchOffset.len2()<= 0.53f) {
+						final float offsetAdjust = 0.005f;
+						// move the projectile slightly next to the finger
+						if (gm.currentPlayer == gm.PLAYER1){
+							touchOffset.add(offsetAdjust, offsetAdjust);
+						}
+						if (gm.currentPlayer == gm.PLAYER2 && ! gm.isPlayer2CPU()){
+							touchOffset.add(-offsetAdjust, offsetAdjust);
+						}
+					}
+				}
+
 				final Vector2 moveVector = moveTarget.cpy().sub(rampCenterPoint);
 				final float rampDist = rampCenterPoint.dst(moveTarget);
 				if (Math.abs(rampDist)>maxPullDistance)
 				{
+					wasRampProximityLeft = true;
 					// too far
 					moveVector.clamp(-maxPullDistance, maxPullDistance);
 					final Vector2 moveDest = rampCenterPoint.cpy().add(moveVector);
