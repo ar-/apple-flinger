@@ -1,0 +1,1 @@
+Lagt til berøringsforskyvning, slik at eplet kan flyttes uten å berøre det direkte på toppen (det gjør eplet mer synlig). Økte også det berørbare området på eplet slik at du lettere kan gripe det med store fingre på små skjermer.

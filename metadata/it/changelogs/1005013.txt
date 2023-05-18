@@ -1,0 +1,1 @@
+Aggiunto l'offset del tocco, in modo che la mela possa essere spostata senza toccarla direttamente sopra (rende la mela più visibile). Aumentata anche l'area tattile della mela in modo da poterla afferrare più facilmente con le dita grandi su schermi piccoli.

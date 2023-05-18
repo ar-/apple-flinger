@@ -1,0 +1,1 @@
+Adicionado deslocamento de toque, para que a maçã possa ser movida sem tocar diretamente em cima dela (torna a maçã mais visível). Também aumentou a área tocável da maçã para que você possa agarrá-la mais facilmente com dedos grandes em telas pequenas.

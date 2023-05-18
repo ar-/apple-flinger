@@ -1,0 +1,1 @@
+Dokunma ofseti eklendi, böylece elma doğrudan üstüne dokunmadan hareket ettirilebilir (elmayı daha görünür hale getirir). Ayrıca küçük ekranlarda büyük parmaklarla daha kolay kavrayabilmeniz için elmanın dokunulabilir alanı artırıldı.

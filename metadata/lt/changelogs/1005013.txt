@@ -1,0 +1,1 @@
+Pridėtas prisilietimo poslinkis, todėl obuolį galima perkelti neliečiant jo viršaus (dėl to obuolys tampa geriau matomas). Taip pat padidino apčiuopiamą obuolio plotą, kad galėtumėte lengviau jį patraukti dideliais pirštais mažuose ekranuose.

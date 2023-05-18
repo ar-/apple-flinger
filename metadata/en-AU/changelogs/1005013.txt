@@ -1,0 +1,1 @@
+Added touch offset, so the apple can be moved without touching directly on top of it (it makes the applemore visible) . Also increased the touchable area of the apple so you can grab it easier with big fingers on small screens.

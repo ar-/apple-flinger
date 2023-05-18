@@ -1,0 +1,1 @@
+Ajout d'un décalage tactile, de sorte que la pomme puisse être déplacée sans toucher directement dessus (cela rend la pomme plus visible). A également augmenté la zone tactile de la pomme afin que vous puissiez la saisir plus facilement avec de gros doigts sur de petits écrans.

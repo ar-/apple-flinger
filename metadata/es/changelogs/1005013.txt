@@ -1,0 +1,1 @@
+Se agregó desplazamiento táctil, por lo que la manzana se puede mover sin tocarla directamente encima (hace que la manzana sea más visible). También aumentó el área táctil de la manzana para que pueda agarrarla más fácilmente con dedos grandes en pantallas pequeñas.

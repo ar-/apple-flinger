@@ -1,0 +1,1 @@
+Dodan pomak dodira, tako da se jabuka može pomicati bez dodirivanja izravno na vrhu (čini jabuku vidljivijom). Također je povećano dodirno područje jabuke kako biste je lakše mogli uhvatiti velikim prstima na malim ekranima.

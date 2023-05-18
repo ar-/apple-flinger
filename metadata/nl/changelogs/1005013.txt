@@ -1,0 +1,1 @@
+Touch-offset toegevoegd, zodat de appel kan worden verplaatst zonder er direct bovenop te raken (hierdoor wordt de appel beter zichtbaar). Ook het aanraakgebied van de appel vergroot, zodat je hem gemakkelijker kunt pakken met grote vingers op kleine schermen.

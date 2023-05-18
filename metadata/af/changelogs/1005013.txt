@@ -1,0 +1,1 @@
+Bygevoeg touch offset, sodat die appel geskuif kan word sonder om direk bo-op dit te raak (dit maak die appel meer sigbaar). Het ook die aanraakbare area van die appel vergroot sodat jy dit makliker met groot vingers op klein skerms kan gryp.

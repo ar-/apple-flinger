@@ -1,0 +1,1 @@
+Đã thêm phần bù cảm ứng để có thể di chuyển quả táo mà không cần chạm trực tiếp lên trên quả táo (làm cho quả táo dễ nhìn hơn) . Đồng thời tăng diện tích có thể chạm của quả táo để bạn có thể lấy nó dễ dàng hơn bằng ngón tay lớn trên màn hình nhỏ.

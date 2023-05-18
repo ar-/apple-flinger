@@ -1,0 +1,1 @@
+S'ha afegit un desplaçament tàctil, de manera que la poma es pot moure sense tocar-la directament a sobre (fa que la poma sigui més visible). També va augmentar l'àrea tàctil de la poma perquè pugueu agafar-la més fàcilment amb els dits grans en pantalles petites.

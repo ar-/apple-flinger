@@ -1,0 +1,1 @@
+Berührungsversatz hinzugefügt, sodass der Apfel bewegt werden kann, ohne ihn direkt zu berühren (dadurch wird der Apfel besser sichtbar). Außerdem wurde der berührbare Bereich des Apfels vergrößert, sodass Sie ihn auf kleinen Bildschirmen leichter mit großen Fingern greifen können.

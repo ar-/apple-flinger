@@ -1,0 +1,1 @@
+Dodan odmik na dotik, tako da je jabolko mogoče premakniti, ne da bi se dotaknili neposredno na vrhu (zaradi tega je jabolko bolj vidno). Povečalo se je tudi območje jabolka, ki se ga je mogoče dotakniti, tako da ga boste lažje prijeli z velikimi prsti na majhnih zaslonih.

@@ -1,0 +1,1 @@
+Hozzáadott érintési eltolás, így az alma mozgatható anélkül, hogy közvetlenül a tetejét érintené (az almát jobban láthatóvá teszi). Az alma érinthető területe is megnőtt, így a kis képernyőkön nagy ujjakkal könnyebben megragadhatja.

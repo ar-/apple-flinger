@@ -1,0 +1,1 @@
+Lisatud puute nihe, nii et õuna saab liigutada ilma selle peal otse puudutamata (see muudab õuna nähtavamaks). Suurendas ka õuna puuteala, et saaksite väikestel ekraanidel seda hõlpsamini suurte sõrmedega haarata.

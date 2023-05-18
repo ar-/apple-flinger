@@ -1,0 +1,1 @@
+Dodano przesunięcie dotykowe, dzięki czemu jabłko można przesuwać bez dotykania bezpośrednio na nim (sprawia, że jabłko jest bardziej widoczne). Zwiększono również obszar dotykowy jabłka, dzięki czemu można go łatwiej chwycić dużymi palcami na małych ekranach.

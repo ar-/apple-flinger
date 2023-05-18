@@ -1,0 +1,1 @@
+S-a adăugat decalaj la atingere, astfel încât mărul să poată fi mutat fără a fi atins direct deasupra lui (face mărul mai vizibil). De asemenea, a crescut zona tactilă a mărului, astfel încât să îl puteți apuca mai ușor cu degetele mari pe ecranele mici.

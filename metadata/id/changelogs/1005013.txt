@@ -1,0 +1,1 @@
+Menambahkan offset sentuh, sehingga apel dapat dipindahkan tanpa menyentuh langsung di atasnya (membuat apel lebih terlihat). Juga meningkatkan area apel yang dapat disentuh sehingga Anda dapat lebih mudah meraihnya dengan jari besar di layar kecil.

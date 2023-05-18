@@ -1,0 +1,1 @@
+Tillagd touch offset, så att äpplet kan flyttas utan att röra direkt ovanpå det (det gör äpplet mer synligt). Ökade även äpplets berörbara område så att du lättare kan ta tag i det med stora fingrar på små skärmar.
