@@ -1,5 +1,5 @@
 /*******************************************************************************
- * Copyright (C) 2015-2018 Andreas Redmer <ar-appleflinger@abga.be>
+ * Copyright (C) 2015-2023 Andreas Redmer <ar-appleflinger@abga.be>
  * 
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -104,7 +104,6 @@ public class SlingShotActor extends Group {
     }
 
 	private void adjustRubberBandThickness() {
-		//final float minThickness = 0.025f;
 		final float minThickness = 0.055f;
 		final float maxThickness = 0.08890508f;
 		
@@ -123,15 +122,12 @@ public class SlingShotActor extends Group {
 		final float newThickness = LinearInterpolator.ilx(minRB1len, maxThickness, maxRB1len, minThickness, len);
 		rubber1.thickness= newThickness;
 		rubber2.thickness= newThickness;
-
-		//System.out.println(len + " : " + newThickness);
 }
 
 	/**
 	 * @return the front joint where the front rubberband is connected to the slingshot
 	 */
 	private Vector2 getSlingShotFrontJoint() {
-		//System.out.println(getSlingShotCenter().cpy().add(-0.10f,-0.1f));
 		final Vector2 ret = getSlingShotCenter().cpy();
 		final Vector2 offset = new Vector2(-0.10f,-0.1f);
 		if (isMirrored)
@@ -139,21 +135,19 @@ public class SlingShotActor extends Group {
 			offset.scl(-1,1);
 		}
 		return ret.add(offset);
-		//return ret.add(-0.10f,-0.1f);
 	}
 
 	/**
 	 * @return the back joint where the back rubberband is connected to the slingshot
 	 */
 	private Vector2 getSlingShotBackJoint() {
-		final Vector2 ret = getSlingShotCenter().cpy(); // TODO not cpy becasue is new
+		final Vector2 ret = getSlingShotCenter().cpy(); // TODO not cpy because is new
 		final Vector2 offset = new Vector2(0.22f,-0.06f);
 		if (isMirrored)
 		{
 			offset.scl(-1,1);
 		}
 		return ret.add(offset);
-		//return getSlingShotCenter().cpy().add(0.22f,-0.06f);
 	}
     
     /**
@@ -166,7 +160,6 @@ public class SlingShotActor extends Group {
     	if (isMirrored)
     		slingshotCenterOffset.scl(-1f, 1);
        	return slingshotCenterOffset.add(getX(),getY());
-       	//return new Vector2(getX()+0.5f, getY()+0.8f);
     }
     
     public void addProjectile(ProjectileActor pa)
@@ -176,7 +169,6 @@ public class SlingShotActor extends Group {
     	
     	// notify the projectile, that it is currently holding it (so it can signal it to release later)
     	pa.setSlingShotActor(this);
-    	//this.addActorAt(1, pa);
     }
     
     public PhysicsActor getCurrentProjectile ()
@@ -213,7 +205,7 @@ public class SlingShotActor extends Group {
     }
 
     /**
-     * this is called on shot. it relases th projectile from slingshot and adds it to the stage
+     * this is called on shot. it releases the projectile from slingshot and adds it to the stage
      */
 	public void releaseProjectile() {
 		PhysicsActor pa = getCurrentProjectile();
@@ -236,7 +228,6 @@ public class SlingShotActor extends Group {
     	if (isMirrored)
     	{
         	projectileContainer.setPosition(x, -y); // shift back to 0,0
-    		//projectileContainer.setX(projectileContainer.getX()+1);
     	}
 	}
 	
@@ -260,10 +251,5 @@ public class SlingShotActor extends Group {
 		
 		this.setScale(-1, 1);
 	}
-
-//	@Override
-//	public Actor hit(float x, float y, boolean touchable) {
-//		return null; // not touchable
-//	}
 
 }
