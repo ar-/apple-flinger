@@ -1,18 +1,18 @@
 1.4.9:
- * etaj korektoj al tradukoj.
+ * korektetoj al tradukoj.
 
 1.4.8:
  * aldonis polan tradukon, danke al Verdulo.
  * aldonis Esperantan tradukon, danke al Verdulo.
 
 1.4.7:
- * vintro baldaŭas… Aldonis novajn nivelojn.
- * ideoj mankas al mi, bonvolu sendi al mi ideojn pri novaj niveloj.
+ * vintro baldaŭas…aldonis novajn nivelojn.
+ * ideoj mankas al mi, bonvolu sendi al mi ideojn pri novaj niveloj
 
 1.4.6:
- * plibonigita rusa traduko, danke al Dmitry.
+ * plibonigita rusa traduko, danke al Dmitry
 
 1.4.5:
- * plibonigita franca traduko, danke al xin.
- * aldonis tradukeblan klavaron por ĉiu lingvo por enmeti nomon de ludanto.
- * aldonis ekrankopiojn por F-Droid por ĉiu subtenata lingvo.
+ * plibonigita franca traduko, danke al xin
+ * aldonis tradukeblan klavaron por ĉiu lingvo por enmeti nomon de ludanto
+ * aldonis ekrankopiojn por F-Droid por ĉiu subtenata lingvo

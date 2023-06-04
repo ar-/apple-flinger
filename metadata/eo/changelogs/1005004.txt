@@ -6,6 +6,6 @@
  * forigis travideblajn rastrumerojn el ekrankopioj
 
 1.5.3:
- * aldonis mem-alĝustigeblan piktogramon (Android 8.0 aŭ pli nova)
+ * aldonis mem-alĝustigeblan bildsimbolon (Android 8.0 aŭ pli nova)
  * malaktivigis fonan pligrandigon ĉe pomo
  * aldonis norvegan tradukon (danke al Allan ĉe Weblate)
