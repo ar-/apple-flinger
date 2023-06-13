@@ -1,11 +1,19 @@
 1.5.4
-  * oyundaki krediler ekranına çevirmenler ekledi
-  * Felemenkçe eklendi (weblate'deki Heimen sayesinde)
-  * Galiçyaca eklendi (weblate'deki Iván sayesinde)
-  * İspanyolca çeviri iyileştirildi (weblate'deki Markel sayesinde)
-  * ekran görüntülerinden saydam pikseller kaldırıldı
+  * Oyundaki kredi ekranına çevirmenler eklendi
+  * Hollandaca eklendi (Teşekkürler Heimen)
+  * Galce eklendi (Teşekkürler Iván)
+  * İspanyolca çeviri iyileştirildi (Teşekkürler Markel)
+  * Ekran görüntülerinden şeffaf pikseller kaldırıldı
 
 1.5.3
   * uyarlanabilir simge eklendi (Android 8 ve üstü)
-  * elma yakınındaki arka plan yakınlaştırma devre dışı bırakıldı
-  * Norveççe eklendi (weblate'deki Allan sayesinde)
+  * elma yakınında devre dışı bırakılmış arka plan yakınlaştırma
+  * Norveççe eklendi (Teşekkürler Allan)
+
+1.5.2
+  * Portekizce eklendi
+  * kazanan ve en yüksek puanları daha renkli hale getirdi
+  * Oyundan çıkmak veya önceki ekrana gitmek için etkinleştirilmiş donanım geri düğmesi
+  * sabit Lehçe ve Esperanto çevirileri (Teşekkürler Verdulo)
+  * hata düzeltmesi: dil seçimi bazen çalışmıyor
+  * arka plana GPL3 ve gitlab rozetleri eklendi
