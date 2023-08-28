@@ -1,3 +1,3 @@
-  * rimosso tutti i simboli e le icone fasciste dell'organizzazione e dei regimi fascisti e sostituiti con la bandiera ucraina
+* rimosso tutti i simboli e le icone fasciste dell'organizzazione e dei regimi fascisti e sostituiti con la bandiera ucraina
   * aggiunta traduzione ucraina
   * traduzioni aggiornate
