@@ -1,17 +1,17 @@
 1.5.6
-  * Fast vinternivå 13 fastnar
-  * lagt till italienska
-  * lagt till svenska
+  * fixade att vinternivå 13 fastnar
+  * lade till italienska
+  * lade till svenska
 
 1.5.5
-  * wiki-sida på webbplatsen skapad, beskriver hur man skapar nya nivåer
-  * Ytterligare 12 vinternivåer tillagd
-  * Visa för procentuellt antal ökade prestationer
-  * lagt till tiden till skärmen på skärmen
+  * wiki-sida på hemsidan skapades som beskriver hur man skapar nya nivåer
+  * ytterligare 12 vinternivåer lades till
+  * Ruta för procentuellt antal ökade inkrementella prestationer lades till
+  * lade till tiden till rutan på skärmen
 
 1.5.4
-  * lagt till översättare till krediter-skärmen i spelet
-  * lagt till nederländska språk (tack vare Heimen på webbsidan)
-  * lagt till galiciska språk (tack vare Iván på webbsidan)
-  * förbättrad spansk översättning (tack vare Markel på webbsidan)
-  * Ta bort transparenta pixlar från skärmdumpar
+  * lade till översättare till medverkandeskärmen i spelet
+  * lade till nederländska (tack vare Heimen på weblate)
+  * lade till gaeliska (tack vare Iván på weblate)
+  * förbättrade spansk översättning (tack vare Markel på weblate)
+  * tog bort transparenta pixlar från skärmdumpar
