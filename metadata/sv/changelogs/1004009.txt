@@ -1,18 +1,18 @@
 1.4.9
-  * Några mindre korrigeringar av översättningar
+  * Några mindre översättningsfixar
 
 1.4.8
   * Lade till polsk översättning. Tack till verdulo.
-  * Lade till esperanto översättning. Tack till verdulo.
+  * Lade till översättning för esperanto. Tack till verdulo.
 
 1.4.7
   * Vintern är på väg. Några nya nivåer har lagts till.
   * Jag fick slut på idéer. Vänligen skicka mig idéer till nya nivåer.
 
 1.4.6
-  * Förbättrad rysk översättning. Tack till Dmitry.
+  * Förbättrade den ryska översättningen. Tack till Dmitry.
 
 1.4.5
   * Förbättrad fransk översättning. Tack till xin.
-  * Lagt till ett nytt lokaliserat tangentbord för varje språk för att skriva in spelarnamn.
-  * Lagt till fdroid skärmdumpar för varje språk som stöds.
+  * Lade till ett nytt lokaliserat tangentbord för varje språk för att skriva in spelarnamn.
+  * Lade till Fdroid-skärmdumpar för varje språk som stöds.
