@@ -12,8 +12,8 @@
 
 1.5.2
   * dodan je portugalski prijevod
-  * pobijednik i najviši bodovi su šareniji
-  * aktivirani hardverski back-gumb za napuštanje igre ili prijelaz na prethodni zaslon
+  * pobjednik i najviši bodovi su šareniji
+  * aktivirani hardverski natrag-gumb za napuštanje igre ili za prijelaz na prethodni ekran
   * ispravljeni poljski i esperanto prijevodi (Verdulo)
-  * bugfix: izbor jezika ponekad ne radi
-  * dodane su GPL3 i gitlab značke pozadini
+  * Ispravak greške: izbor jezika ponekad ne radi
+  * pozadini su dodane GPL3 i gitlab značke
