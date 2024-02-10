@@ -1,15 +1,15 @@
 1.4.8
-  * Lade till polsk översättning. Tack till verdulo.
-  * Lade till översättning för esperanto. Tack till verdulo.
+  * Lade till översättning till Polska. Tack till verdulo.
+  * Lade till översättning till Esperanto. Tack till verdulo.
 
 1.4.7
   * Vintern är på väg. Några nya nivåer har lagts till.
   * Jag fick slut på idéer. Vänligen skicka mig idéer till nya nivåer.
 
 1.4.6
-  * Förbättrad översättning för Ryska. Tack till Dmitry.
+  * Förbättrade översättningen för Ryska. Tack till Dmitry.
 
 1.4.5
-  * Förbättrad fransk översättning. Tack till xin.
+  * Förbättrade översättning till Franska. Tack till xin.
   * Lade till ett nytt lokaliserat tangentbord för varje språk för att skriva in spelarnamn.
-  * Lade till Fdroid-skärmdumpar för varje språk som stöds.
+  * Lade till skärmdumpar till F-Droid för varje språk som stöds.
