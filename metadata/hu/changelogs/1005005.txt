@@ -1,14 +1,14 @@
 1.5.5
-  * wiki oldal a létrehozott weboldalon, leírva az új szintek létrehozását
-  * 12 további téli szint került hozzáadásra
-  * megjeleníti a hozzáadott értékek százalékos arányát
-  * hozzáadta az időt a képernyőn megjelenő képernyőhöz
+  * wiki-n létrehozott weboldalon, leírva az új szintek létrehozását
+  * hozzáadva: 12 további téli szint
+  * Hozzáadott értékek százalékos arány megjelenítése
+  * hozzáadta az időt a képernyőn
 
 1.5.4
   * hozzáadott fordítók a játék kredit képernyőjéhez
-  * holland nyelv hozzáadásával (hála a Heimennek a weboldalon)
-  * hozzáadta a galíciai nyelvet (köszönhetően Ivánnak a weboldalon)
-  * javult a spanyol fordítás (köszönhetően Markelnek a weboldalon)
+  * holland nyelv hozzáadásával (hála a Heimennek)
+  * hozzáadta a galíciai nyelvet (köszönhetően Ivánnakn)
+  * javult a spanyol fordítás (köszönhetően Markelnekn)
   * átlátszó képpontokat távolított el a képernyőképekről
 
 1.5.3

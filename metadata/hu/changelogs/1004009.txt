@@ -1,14 +1,18 @@
 1.4.9
-  * Néhány kisebb fordítási javítás
+  * Néhány fordítási javítás
+
 1.4.8
-  * Lengyel fordítás hozzáadása.  Köszönet a verdulának.
-  * Hozzáadott eszperantó fordítás.  Köszönet a verdulának.
+  * Lengyel nyelv hozzáadás.  Köszönet verdulának.
+  * Eszperantó nyelv hozzáadás.  Köszönet verdulának.
+
 1.4.7
-  * A tél közeleg.  Hozzáadott néhány új szintet.
-  * Elfogytam az ötletekből.  Kérem küldjenek ötleteket új szintekre.
+  * A tél közeleg.  Hozzáadva néhány új szint.
+  * Kifogytam az ötletekből.  Kérem küldjenek ötleteket új szintekre.
+
 1.4.6
   * Javított orosz fordítás.  Köszönet Dmitrynek.
+
 1.4.5
   * Jobb francia fordítás.  Köszönet xinnek.
-  * Hozzáadott egy új lokalizált billentyűzetet minden nyelvhez a játékos nevének beírásához.
-  * Hozzáadott fdroid screenshotok minden támogatott nyelvhez.
+  * Új lokalizált billentyűzetet minden nyelvhez.
+  * fdroid screenshotok minden támogatott nyelvhez.

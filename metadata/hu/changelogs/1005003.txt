@@ -1,15 +1,15 @@
 1.5.3
   * hozzáadott adaptív ikon (Android 8 és újabb)
   * tiltott háttérkép nagyítás az alma közelében
-  * norvég nyelvvel kiegészítve (köszönhetően Allannak a weboldalon)
+  * norvég nyelvvel kiegészítve (köszönhetően Allannak)
 
 1.5.2
-  * hozzáadott portugál fordítás
-  * a győztest és a legmagasabb pontokat színesebbé tette
-  * aktivált hardveres vissza gomb a játék elhagyásához vagy az előző képernyőhöz
+  * hozzáadott portugál nyelv
+  * Győztest és a legmagasabb pontú színesebbé téve
+  * Hardveres vissza gomb a játék elhagyásához vagy az előző képernyőhöz
   * fix lengyel és eszperantó fordítások (Verdulo)
-  * bugfix: a nyelvválasztás néha nem működik
-  * hozzáadta a GPL3 és gitlab jelvényeket a háttérhez
+  * hibajavítás: a nyelvválasztás néha nem működik
+  * Hozzáadva GPL3 és gitlab jelvények a háttérhez
 
 1.5.1
-  * Tartsa a képernyő egy kicsit hosszabb ideig, amíg a játék aktívan játszik.
+  * Képernyő egy kicsit hosszabb ideig, amíg a játék aktívan játszik.

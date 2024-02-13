@@ -1,14 +1,14 @@
 1.5.2
-  * hozzáadott portugál fordítás
-  * a győztest és a legmagasabb pontokat színesebbé tette
-  * aktivált hardveres vissza gomb a játék elhagyásához vagy az előző képernyőhöz
+  * hozzáadva Portugál fordítás
+  * Győztes és a legmagasabb pontú színesebbé téve
+  * Hardveres vissza gomb a játék elhagyásához vagy az előző képernyőhöz
   * fix lengyel és eszperantó fordítások (Verdulo)
-  * bugfix: a nyelvválasztás néha nem működik
-  * hozzáadta a GPL3 és gitlab jelvényeket a háttérhez
+  * hibajavítás: a nyelvválasztás néha nem működik
+  * hozzáadva GPL3 és gitlab jelvények a háttérhez
 
 1.5.1
-  * Tartsa a képernyő egy kicsit hosszabb ideig, amíg a játék aktívan játszik.
+  * Képernyő egy kicsit hosszabb ideig, amíg a játék aktívan játszik.
 
 1.5.0
-  * hozzáadott eredmények
-  * hibajavítás: ne növelje az összpontszámokat, amikor a számítógépes veszteség miatt megismétlődik
+  * Eredmények hozzáadva
+  * hibajavítás: nem növekszik az összpontszám, számítógép hiba miatt
