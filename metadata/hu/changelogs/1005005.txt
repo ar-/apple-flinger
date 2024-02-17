@@ -1,5 +1,5 @@
 1.5.5
-  * wiki-n létrehozott weboldalon, leírva az új szintek létrehozását
+  * wiki-n, leírva az új szintek létrehozása
   * hozzáadva: 12 további téli szint
   * Hozzáadott értékek százalékos arány megjelenítése
   * hozzáadta az időt a képernyőn

@@ -1,19 +1,19 @@
 1.5.4
-  * Fordítók hozzáadása a játékban a kreditek képernyőn
+  * Kreditek képernyőn fordítók hozzáadása
   * holland nyelv hozzáadása (köszönet Heimen-nek)
   * galíciai nyelv hozzáadása (köszönet Ivánnak)
   * javított spanyol fordítás (köszönet Markel-nek)
-  * eltávolította az átlátszó pixeleket a képernyőképekről
+  * képernyőképekről átlátszó pixelek eltávolítása 
   
 1.5.3
-  * hozzáadott adaptív ikon (Android 8 és újabb)
+  * adaptív ikon hozzáadva (Android 8+)
   * kikapcsolta a háttérzoomot az alma közelében
   * norvég nyelv hozzáadása (köszönet Allan-nak)
 
 1.5.2
-  * hozzáadott portugál nyelv
-  * Győztes és a legmagasabb pontú színesebbé vált
-  * Hardveres vissza gomb a játék elhagyásához vagy az előző képernyőre való visszatéréshez
-  * javítva: lengyel és eszperantó fordításokat (Verdulo)
+  * portugál nyelv hozzáadva
+  * Győztes és a legmagasabb pontú kiszínesítve
+  * Hardveres vissza gomb játék elhagyásához, előző képernyőre való visszatéréshez
+  * lengyel, eszperantó fordítás javítva (Verdulo)
   * hibajavítás: a nyelvválasztás néha nem működött
   * GPL3 és gitlab jelvények hozzáadása a háttérhez
