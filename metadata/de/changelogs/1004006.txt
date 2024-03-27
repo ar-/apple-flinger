@@ -4,4 +4,4 @@
 1.4.5
   * Verbesserte Französisch-Übersetzung. Danke an xin.
   * Für jede Sprache wurde eine neue lokalisierte Tastatur hinzugefügt, um Spielernamen einzugeben.
-  * Hinzugefügt F-Droid Screenshots für jede unterstützte Sprache.
+  * F-Droid-Screenshots für jede unterstützte Sprache hinzugefügt.

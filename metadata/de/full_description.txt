@@ -1,4 +1,4 @@
-Kurzweiliges rundenbasiertes Spiel um sich die Zeit zu vertreiben. Neu,
+Kurzweiliges rundenbasiertes Spiel, um sich die Zeit zu vertreiben. Neu,
 herausfordernd und süchtig machend.
 
 Merkmale:
@@ -9,15 +9,14 @@ Merkmale:
 * Detaillierte Animationen und ein Partikelsystem
 * Brandneues und innovatives Spielkonzept
 * Einzel- und Mehrspielermodus
-* Übersetzt in (fast) alle europäischen Sprachen
-* 100% Open Source (GPL3)
+* 100 % quelloffen (GPL3)
 
-Mit einer Zwille verschießt du Äpfel. Sei schnell um die ganze gegnerische
+Mit einer Zwille verschießt du Äpfel. Sei schnell, um die ganze gegnerische
 Basis zu zerstören. Aber Vorsicht, die Gegenseite schießt zurück. Das Spiel
 ist eine ausgewogene Mischung aus Puzzle, Strategie, Geduld und Gefecht.
 
-Für einen oder zwei Spieler! Du kannst mit jemanden spielen welcher neben
-dir sitzt - oder gegen dich selbst spielen. Du kannst auch gegen einen
+Für einen oder zwei Spieler! Du kannst mit jedem spielen, der neben
+dir sitzt – oder gegen dich selbst. Du kannst auch gegen einen
 computergesteuerten Gegner spielen.
 Demnächst noch mehr Features, mehr Levels, mehr Spaß.
 

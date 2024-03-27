@@ -1,10 +1,10 @@
 1.5.3
-  * adaptives Symbol hinzugefügt (Android 8 und höher)
-  * Hintergrund Zoom in der Nähe des Apfels deaktiviert
-  * Norwegische Sprache hinzugefügt (danke an Allan auf Weblate)
+  * Adaptives Symbol hinzugefügt (Android 8 und höher)
+  * Hintergrundzoom in der Nähe des Apfels deaktiviert
+  * Norwegische Sprache hinzugefügt (Dank an Allan auf Weblate)
 
 1.5.2
   * Portugiesische Übersetzung hinzugefügt
-  * zeige den Gewinner und die höchsten Punkte grün
-  * aktivierte Hardware-Zurück-Taste, um das Spiel zu verlassen oder zum vorherigen Bildschirm zurückzukehren
-  * verbesserte polnische und Esperanto-Übersetzungen (von Verdulo)
+  * Gewinner und die höchsten Punkte grün anzeigen
+  * Hardware-Zurück-Taste aktiviert, um das Spiel zu verlassen oder zum vorherigen Bildschirm zurückzukehren
+  * Verbesserte polnische und Esperanto-Übersetzungen (von Verdulo)

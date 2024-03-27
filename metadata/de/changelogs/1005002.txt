@@ -1,7 +1,7 @@
 1.5.2
   * Portugiesische Übersetzung hinzugefügt
-  * zeige den Gewinner und die höchsten Punkte grün
-  * aktivierte Hardware-Zurück-Taste, um das Spiel zu verlassen oder zum vorherigen Bildschirm zurückzukehren
-  * verbesserte polnische und Esperanto-Übersetzungen (von Verdulo)
+  * Den Gewinner und die höchsten Punkte grün anzeigen
+  * Hardware-Zurück-Taste aktiviert, um das Spiel zu verlassen oder zum vorherigen Bildschirm zurückzukehren
+  * Verbesserte polnische und Esperanto-Übersetzungen (von Verdulo)
   * Bugfix: Sprachauswahl funktionierte manchmal nicht
-  * GPL3 und gitlab Badges zum Hintergrund hinzugefügt
+  * GPL3 und GitLab-Badges zum Hintergrund hinzugefügt

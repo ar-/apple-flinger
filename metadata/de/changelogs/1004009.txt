@@ -1,5 +1,5 @@
 1.4.9
-  * Einige kleinere Übersetzungsfehlerbehebungen
+  * Einige kleinere Übersetzungsfehler behoben
 
 1.4.8
   * Hinzugefügt: Polnisch-Übersetzung. Danke an Verdulo.
@@ -7,7 +7,7 @@
 
 1.4.7
   * Der Winter kommt. Neue Levels hinzugefügt.
-  * Ich hatte keine Ideen mehr. Bitte senden Sie mir Ideen für neue Levels.
+  * Ich hatte keine Ideen mehr. Bitte sendet mir Ideen für neue Levels.
 
 1.4.6
   * Verbesserte Russisch-Übersetzung. Danke an Dmitry.

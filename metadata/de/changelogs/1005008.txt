@@ -1,2 +1,2 @@
 1.5.8
-  * aktualisierte Übersetzungen
+  * Übersetzungen aktualisiert
