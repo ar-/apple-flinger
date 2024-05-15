@@ -95,6 +95,11 @@ public class AppleflingerGame extends Game {
 				break;
 			case END_OF_EPISODE_2:
 				// this comes when 2 episode is finished - set this to episode selection sub-menu
+				MissionSelectScreen.setSelectedEpisode(3);
+				this.setScreen(new MissionSelectScreen());
+				break;
+			case END_OF_EPISODE_3:
+				// this comes when 3 episode is finished - set this to episode selection sub-menu
 				MissionSelectScreen.setSelectedEpisode(0);
 				this.setScreen(new MissionSelectScreen());
 				break;

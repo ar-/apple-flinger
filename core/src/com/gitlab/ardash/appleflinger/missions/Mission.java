@@ -70,6 +70,11 @@ import com.gitlab.ardash.appleflinger.GameWorld;
 	    M_2_18,
 	    END_OF_EPISODE_2,
 
+		M_3_1,
+		M_3_2,
+		M_3_3,
+	    END_OF_EPISODE_3,
+
 	    NONE; // don't use this
 
 	    /**
@@ -137,7 +142,7 @@ import com.gitlab.ardash.appleflinger.GameWorld;
 	    
 		public static EnumSet<Mission> getDummies()
 	    {
-	    	return EnumSet.of(Empty, NONE, END_OF_EPISODE_1, END_OF_EPISODE_2);
+	    	return EnumSet.of(Empty, NONE, END_OF_EPISODE_1, END_OF_EPISODE_2, END_OF_EPISODE_3);
 	    }
 	    
 	    public static Set<Integer> getAvailableEpisodes()
