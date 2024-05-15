@@ -182,7 +182,7 @@ public class Assets {
 		BURNSTOWNDAM, FLINGER, ZANTROKE;
 		@Override
 		public String toString() {
-			return "" + super.toString().toLowerCase() + ".ttf"; // example "fliger.ttf"  
+			return "" + super.toString().toLowerCase(Locale.ENGLISH) + ".ttf"; // example "fliger.ttf"  
 		}
 	}
 
@@ -190,15 +190,15 @@ public class Assets {
 		APPLE, WOOD_RECT;
 		@Override
 		public String toString() {
-			return "" + super.toString().toLowerCase() + ".p";
+			return "" + super.toString().toLowerCase(Locale.ENGLISH) + ".p";
 		}
 	}
 
 	public enum TextureAsset {
-		APPLE,SLINGSHOTB,SLINGSHOTF,STONE,BACKGR,BACKGR_WINTER,INVISIBLE,LARGE_DIALOG,VOLUME,WOODHANGER;
+		APPLE,SLINGSHOTB,SLINGSHOTF,STONE,BACKGR,BACKGR_WINTER,BACKGR_MOUNTAIN,INVISIBLE,LARGE_DIALOG,VOLUME,WOODHANGER;
 		@Override
 		public String toString() {
-			return "" + super.toString().toLowerCase() + ".png"; // "backgr.png"  
+			return "" + super.toString().toLowerCase(Locale.ENGLISH) + ".png"; // "backgr.png"  
 		}
 	}
 
@@ -206,7 +206,7 @@ public class Assets {
 		BG;
 		@Override
 		public String toString() {
-			return "sounds/" + super.toString().toLowerCase() + ".mp3"; // "sounds/bg.mp3"  
+			return "sounds/" + super.toString().toLowerCase(Locale.ENGLISH) + ".mp3"; // "sounds/bg.mp3"  
 		}
 	}
 
@@ -234,7 +234,7 @@ public class Assets {
 
 		@Override
 		public String toString() {
-			return "sounds/" + super.toString().toLowerCase() + ".mp3"; // "sounds/apple_hit_1.mp3"  
+			return "sounds/" + super.toString().toLowerCase(Locale.ENGLISH) + ".mp3"; // "sounds/apple_hit_1.mp3"  
 		}
 	}
 	
@@ -244,7 +244,7 @@ public class Assets {
 		UI, SCENE;
 		@Override
 		public String toString() {
-			return "" + super.toString().toLowerCase() + ".atlas"; // "misc.atlas"  
+			return "" + super.toString().toLowerCase(Locale.ENGLISH) + ".atlas"; // "misc.atlas"  
 		}
 	}
 
@@ -340,7 +340,7 @@ public class Assets {
 			// init all sprites
 			for (SpriteAsset e : SpriteAsset.values()) {
 				// first the name and index must be set, so thString(works properly)
-				final String lowername = e.name().toLowerCase();
+				final String lowername = e.name().toLowerCase(Locale.ENGLISH);
 				if (lowername.contains("_")) 
 				{
 					final int uscp = lowername.lastIndexOf('_'); // underscore position
@@ -803,15 +803,15 @@ public class Assets {
 	public static boolean isNonLatinFontNeeded()
 	{
 		final String userSelectedLingo = Pref.getLingo();
-		if (userSelectedLingo.toLowerCase().startsWith("eo"))
+		if (userSelectedLingo.toLowerCase(Locale.ENGLISH).startsWith("eo"))
 			return true;
-		if (userSelectedLingo.toLowerCase().startsWith("kk"))
+		if (userSelectedLingo.toLowerCase(Locale.ENGLISH).startsWith("kk"))
 			return true;
-		if (userSelectedLingo.toLowerCase().startsWith("ru"))
+		if (userSelectedLingo.toLowerCase(Locale.ENGLISH).startsWith("ru"))
 			return true;
-		if (userSelectedLingo.toLowerCase().startsWith("uk"))
+		if (userSelectedLingo.toLowerCase(Locale.ENGLISH).startsWith("uk"))
 			return true;
-		if (userSelectedLingo.toLowerCase().startsWith("pl"))
+		if (userSelectedLingo.toLowerCase(Locale.ENGLISH).startsWith("pl"))
 			return true;
 		
 		if (userSelectedLingo.equals(""))

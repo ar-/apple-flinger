@@ -31,7 +31,7 @@ public class BackgroundActor extends Image
 	
 	public enum BackgroundConfiguration
 	{
-		ORIGINAL, WINTER;
+		ORIGINAL, WINTER, MOUNTAIN;
 		
 		public TextureAsset textureAsset;
 		public Vector2 size;
@@ -50,6 +50,11 @@ public class BackgroundActor extends Image
 			WINTER.position = new Vector2(-GameWorld.UNIT_WIDTH/4, -0.7f);
 			WINTER.skyColour = new Color(93/255f,209/255f,232/255f,1);
 			WINTER.groundColour = new Color(176/255f,227/255f,255/255f,1); //ice
+			MOUNTAIN.textureAsset = TextureAsset.BACKGR_MOUNTAIN;
+			MOUNTAIN.size = new Vector2(GameWorld.UNIT_WIDTH*1.5f/1.1f, GameWorld.UNIT_HEIGHT);
+			MOUNTAIN.position = new Vector2(-GameWorld.UNIT_WIDTH/4/1.1f, -0.0f);
+			MOUNTAIN.skyColour = new Color(145/255f,226/255f,255/255f,1);
+			MOUNTAIN.groundColour = new Color(85/255f,50/255f,20/255f,1);
 		}
 	}
 	

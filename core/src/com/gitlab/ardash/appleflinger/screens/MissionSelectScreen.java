@@ -189,6 +189,8 @@ public class MissionSelectScreen extends GenericScreen {
 			return I18N.getString("original");
 		case 2:
 			return I18N.getString("winter");
+		case 3:
+			return I18N.getString("mountain");
 		default:
 			throw new RuntimeException("No episode name found for episode number "+episode);
 		}

@@ -1,16 +1,16 @@
 /*******************************************************************************
  * Copyright (C) 2017-2018 Andreas Redmer <ar-appleflinger@abga.be>
- * 
+ *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
  * the Free Software Foundation, either version 3 of the License, or
  * (at your option) any later version.
- * 
+ *
  * This program is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  * GNU General Public License for more details.
- * 
+ *
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  ******************************************************************************/
@@ -37,15 +37,15 @@ public class HCStrategy implements Strategy {
 	 * is out of options, then shots of other missions can be taken.
 	 */
 	private List<Shot> allShots = new HCStrategyData();
-	
+
 	/**
 	 * A shot straight forward. Only to be used if there are no enemies left, to gain some more points.
-	 * This is the shot that fixes the crash in #33 . 
+	 * This is the shot that fixes the crash in #33 .
 	 */
 	private static Vector2 defaultPullVector = new Vector2(0.7672596f,-0.22652423f);
 
 	@Override
-	public Vector2 getPullVector() 
+	public Vector2 getPullVector()
 	{
 		Vector2 ret;
 
@@ -56,7 +56,7 @@ public class HCStrategy implements Strategy {
 			return defaultPullVector; // fix for #33
 		final int selectedTargetId = MathUtils.random(numberOfTargets-1);
 		Vector2 target = targets.get(selectedTargetId);
-		
+
 		// select shot
 		final List<Shot> shotsForTarget = getShotsForTarget(target);
 		final int numberOfShots = shotsForTarget.size();
@@ -64,10 +64,10 @@ public class HCStrategy implements Strategy {
 			return defaultPullVector; // fix for #33
 		final int selectedShotId = MathUtils.random(numberOfShots-1);
 		ret= shotsForTarget.get(selectedShotId).pullVector;
-		
+
 		return ret;
 	}
-	
+
 	private List<Shot> getShotsForTarget(Vector2 t)
 	{
 		List<Shot> ret = new ArrayList<>();
@@ -82,13 +82,13 @@ public class HCStrategy implements Strategy {
 				ret.add(shot);
 			}
 		}
-		
+
 		// second try the shot closest to the target
 		if (ret.isEmpty())
 		{
 			float MINDIST = Float.MAX_VALUE;
 			Shot minShot = null;
-			for (final Shot shot : possibleShots) 
+			for (final Shot shot : possibleShots)
 			{
 				final float distance = shot.targetpos.dst(t);
 				if (distance<=MINDIST)
@@ -99,14 +99,14 @@ public class HCStrategy implements Strategy {
 			}
 			ret.add(minShot);
 		}
-		
+
 		// don't crash the game, but log it, because this is serious malfunction
 		if (ret.isEmpty())
 			Gdx.app.error(getClass().getName(), "No shots to shoot, AI has no training at all");
-		
+
 		return ret;
 	}
-	
+
 	private List<Shot> getShotsOfCurrentMission()
 	{
 		return getShotsOfMission(GameManager.getInstance().getCurrentMission());
@@ -123,7 +123,7 @@ public class HCStrategy implements Strategy {
 		}
 		return ret;
 	}
-	
+
 	public static void validate()
 	{
 		HCStrategy hcs = new HCStrategy();
@@ -155,7 +155,7 @@ public class HCStrategy implements Strategy {
 				}
 			}
 		}
-		
+
 		// this is commented, if can happen if player kill own targets
 		//if (ret.isEmpty()) throw new RuntimeException("No targets found to aim for");
 		return ret;
@@ -186,7 +186,7 @@ public class HCStrategy implements Strategy {
 			add(new Shot(Mission.M_1_3, 0.3152876f, -0.73525095f, 3.0184863f, 0.5096152f, 20.765867f));
 			add(new Shot(Mission.M_1_3, 0.35827732f, -0.7152884f, 2.2367494f, 0.50483644f, 26.634754f));
 			add(new Shot(Mission.M_1_3, 0.40698338f, -0.68874145f, 1.4024985f, 0.45256186f, 49.7718f));
-			
+
 			add(new Shot(Mission.M_1_4, 0.2844863f, -0.7477083f, 2.3721464f, 3.9060338f, 4.2135177f));
 			add(new Shot(Mission.M_1_4, 0.26926613f, -0.7533231f, 2.218674f, 3.9090383f, 14.677414f));
 			add(new Shot(Mission.M_1_4, 0.34197617f, -0.72322345f, 1.2844435f, 4.207894f, 8.690521f));
@@ -249,7 +249,7 @@ public class HCStrategy implements Strategy {
 			add(new Shot(Mission.M_1_10, 0.5281248f, -0.22187519f, 3.058829f, 0.5305842f, 19.041687f));
 			add(new Shot(Mission.M_1_10, 0.2937498f, -0.54062533f, 4.541158f, 0.44654512f, 15.216998f));
 			add(new Shot(Mission.M_1_10, 0.7838955f, -0.15971279f, 0.8742444f, 0.5482128f, 98.32469f));
-			
+
 			add(new Shot(Mission.M_1_11, 0.61502314f, -0.51161194f, 2.1019611f, 4.1647277f, 36.225758f));
 			add(new Shot(Mission.M_1_11, 0.61502314f, -0.51161194f, 0.559641f, 3.636055f, 6.223952f));
 			add(new Shot(Mission.M_1_11, 0.38002253f, -0.7039764f, 0.47817236f, 3.6050236f, 34.638016f));
@@ -278,7 +278,7 @@ public class HCStrategy implements Strategy {
 			add(new Shot(Mission.M_1_13, 0.41119576f, -0.6862347f, 2.2432573f, 0.15617736f, 60.43402f));
 			add(new Shot(Mission.M_1_13, 0.42108345f, -0.68021226f, 1.766558f, 0.08979733f, 5.533885f));
 			add(new Shot(Mission.M_1_13, 0.43810654f, -0.66937494f, 1.7420416f, 0.080733106f, 6.2519646f));
-			
+
 			add(new Shot(Mission.M_1_14, 0.68393993f, -0.4150014f, 2.8745172f, 4.9619713f, 26.017458f));
 			add(new Shot(Mission.M_1_14, 0.78325844f, -0.16280508f, 2.2792573f, 3.0976617f, 20.341692f));
 			add(new Shot(Mission.M_1_14, 0.7643852f, -0.23604012f, 1.5471926f, 3.0968354f, 9.474553f));
@@ -287,7 +287,7 @@ public class HCStrategy implements Strategy {
 			add(new Shot(Mission.M_1_14, 0.38124943f, -0.4250002f, 2.1134055f, 0.056158826f, 2.699488f));
 			add(new Shot(Mission.M_1_14, 0.34374905f, -0.4343748f, 2.1522245f, 0.05928345f, 1.5558046f));
 			add(new Shot(Mission.M_1_14, 0.4093752f, -0.39687538f, 2.1231434f, 0.054907814f, 3.9963624f));
-			
+
 			add(new Shot(Mission.M_1_14, 0.28593254f, -0.74715614f, 3.0600204f, 0.3352782f, 1.4229473f));
 			add(new Shot(Mission.M_1_14, 0.28593254f, -0.74715614f, 3.0712101f, 0.34926486f, 3.5147576f));
 			add(new Shot(Mission.M_1_14, 0.28593254f, -0.74715614f, 3.0927317f, 0.18454131f, 2.1319287f));
@@ -309,7 +309,7 @@ public class HCStrategy implements Strategy {
 			add(new Shot(Mission.M_1_16, 0.43391418f, -0.6721003f, 3.7247064f, 4.9419765f, 13.618053f));
 			add(new Shot(Mission.M_1_16, 0.7893524f, -0.1300888f, 4.1903133f, 2.0458472f, 40.44603f));
 			add(new Shot(Mission.M_1_16, 0.77100563f, -0.21342707f, 1.7812865f, 1.9224378f, 16.954039f));
-			
+
 			add(new Shot(Mission.M_1_17, 0.5752907f, -0.55591416f, 1.0166734f, 3.8302104f, 16.761484f));
 			add(new Shot(Mission.M_1_17, 0.58841324f, -0.5420058f, 1.0637699f, 4.4464974f, 5.202486f));
 			add(new Shot(Mission.M_1_17, 0.58841324f, -0.5420058f, 1.4480648f, 4.1049976f, 12.355836f));
@@ -318,7 +318,7 @@ public class HCStrategy implements Strategy {
 			add(new Shot(Mission.M_1_17, 0.79958725f, -0.025689363f, 2.479181f, 0.7235719f, 12.71202f));
 			add(new Shot(Mission.M_1_17, 0.79958725f, -0.025689363f, 2.1385694f, 2.5874872f, 12.71202f));
 			add(new Shot(Mission.M_1_17, 0.7986479f, -0.01649332f, 2.5556078f, 0.61443573f, 13.632548f));
-			
+
 			add(new Shot(Mission.M_1_18, 0.34683418f, -0.7209065f, 2.2600636f, 0.48143458f, 38.19589f));
 			add(new Shot(Mission.M_1_18, 0.34683418f, -0.7209065f, 2.3937502f, 0.054999948f, 38.19589f));
 			add(new Shot(Mission.M_1_18, 0.30432415f, -0.73985577f, 3.939432f, 1.9288182f, 69.321846f));
@@ -337,9 +337,9 @@ public class HCStrategy implements Strategy {
 			add(new Shot(Mission.M_1_18, 0.79985046f, -0.015466452f, 3.3541024f, 1.1572634f, 1.3616502f));
 			add(new Shot(Mission.M_1_18, 0.79985046f, -0.015466452f, 3.0215683f, 0.7832608f, 7.3445945f));
 
-			
+
 			// episode 2
-			
+
 			add(new Shot(Mission.M_2_1, 0.76955986f, -0.21858072f, 2.959427f, 1.0283555f, 33.53893f));
 			add(new Shot(Mission.M_2_1, 0.76955986f, -0.21858072f, 2.73849f, 0.5950147f, 33.53893f));
 			add(new Shot(Mission.M_2_1, 0.73134613f, -0.32424235f, 1.8607669f, 1.0021124f, 72.2779f));
@@ -423,7 +423,7 @@ public class HCStrategy implements Strategy {
 			add(new Shot(Mission.M_2_6, 0.3483553f, -0.72017264f, 2.759849f, 0.054999948f, 14.208538f));
 			add(new Shot(Mission.M_2_6, 0.40455914f, -0.69016814f, 2.0595105f, 0.35984576f, 74.7936f));
 			add(new Shot(Mission.M_2_6, 0.40455914f, -0.69016814f, 1.726242f, 0.054999948f, 74.7936f));
-		
+
 			// low shots
 			add(new Shot(Mission.M_2_6, 0.75249386f, -0.27157593f, 7.8362427f, 0.48274142f, 17.46623f));
 			add(new Shot(Mission.M_2_6, 0.75249386f, -0.27157593f, 7.859375f, 0.054999948f, 17.46623f));
@@ -439,7 +439,7 @@ public class HCStrategy implements Strategy {
 			add(new Shot(Mission.M_2_6, 0.7667036f, -0.22839928f, 1.7281246f, 0.059642434f, 8.183056f));
 			add(new Shot(Mission.M_2_6, 0.7787638f, -0.1831057f, 2.1823623f, 0.04633467f, 19.517334f));
 			add(new Shot(Mission.M_2_6, 0.7787638f, -0.1831057f, 1.690644f, 0.054999948f, 19.517334f));
-			
+
 			add(new Shot(Mission.M_2_7, 0.7872782f, -0.14210415f, 4.027368f, 2.481229f, 72.94402f));
 			add(new Shot(Mission.M_2_7, 0.7872782f, -0.14210415f, 3.6376808f, 2.3713226f, 72.94402f));
 			add(new Shot(Mission.M_2_7, 0.7982025f, -0.05359626f, 4.0018735f, 1.9245279f, 7.868862f));
@@ -462,7 +462,7 @@ public class HCStrategy implements Strategy {
 			add(new Shot(Mission.M_2_7, 0.7985344f, -0.04839611f, 1.8357701f, 0.059061944f, 1.5739541f));
 			add(new Shot(Mission.M_2_7, 0.798831f, -0.0432415f, 1.9503412f, 0.49386936f, 58.834145f));
 			add(new Shot(Mission.M_2_7, 0.798831f, -0.0432415f, 1.8335636f, 0.059061944f, 58.834145f));
-			
+
 			add(new Shot(Mission.M_2_8, 0.3209529f, -0.7327956f, 1.2987515f, 2.6105936f, 36.067627f));
 			add(new Shot(Mission.M_2_8, 0.3209529f, -0.7327956f, 1.3343754f, 2.1784885f, 36.067627f));
 			add(new Shot(Mission.M_2_8, 0.2653675f, -0.7547052f, 2.016709f, 1.6353656f, 9.90425f));
@@ -493,7 +493,7 @@ public class HCStrategy implements Strategy {
 			add(new Shot(Mission.M_2_9, 0.7717314f, -0.21078634f, 3.1516337f, 0.7430328f, 16.611418f));
 			add(new Shot(Mission.M_2_9, 0.74464035f, -0.292423f, 2.2396045f, 1.038432f, 34.758347f));
 			add(new Shot(Mission.M_2_9, 0.74464035f, -0.292423f, 1.8947058f, 0.7478206f, 34.758347f));
-			
+
 			add(new Shot(Mission.M_2_10, 0.3419037f, -0.72325796f, 4.270017f, 1.6466818f, 42.83553f));
 			add(new Shot(Mission.M_2_10, 0.3419037f, -0.72325796f, 4.2383614f, 1.1532248f, 42.83553f));
 			add(new Shot(Mission.M_2_10, 0.3496275f, -0.71955585f, 3.4012563f, 1.1661566f, 4.0292964f));
@@ -510,7 +510,7 @@ public class HCStrategy implements Strategy {
 			add(new Shot(Mission.M_2_10, 0.43390846f, -0.6721037f, 2.5522985f, 0.33250445f, 24.010824f));
 			add(new Shot(Mission.M_2_10, 0.3450575f, -0.7217586f, 3.7596946f, 0.7542778f, 21.07695f));
 			add(new Shot(Mission.M_2_10, 0.3450575f, -0.7217586f, 3.4827077f, 0.33445442f, 21.07695f));
-			
+
 			add(new Shot(Mission.M_2_11, 0.79988766f, 0.013381004f, 4.5083494f, 0.6996138f, 26.932434f));
 			add(new Shot(Mission.M_2_11, 0.79988766f, 0.013381004f, 4.256855f, 0.33981496f, 26.932434f));
 			add(new Shot(Mission.M_2_11, 0.7931156f, -0.104724646f, 4.3412094f, 1.4674662f, 80.96642f));
@@ -525,7 +525,7 @@ public class HCStrategy implements Strategy {
 			add(new Shot(Mission.M_2_11, 0.7883024f, -0.13630605f, 2.0551233f, 0.33782804f, 24.73227f));
 			add(new Shot(Mission.M_2_11, 0.7950449f, -0.08890605f, 3.5560892f, 0.84282213f, 86.94502f));
 			add(new Shot(Mission.M_2_11, 0.7950449f, -0.08890605f, 3.55172f, 0.34751338f, 86.94502f));
-			
+
 			add(new Shot(Mission.M_2_12, 0.75386524f, -0.2677455f, 4.886171f, 2.2085838f, 52.00483f));
 			add(new Shot(Mission.M_2_12, 0.75386524f, -0.2677455f, 4.5729685f, 1.6997819f, 52.00483f));
 			add(new Shot(Mission.M_2_12, 0.75386524f, -0.2677455f, 2.3854706f, 1.508034f, 31.771011f));
@@ -540,7 +540,7 @@ public class HCStrategy implements Strategy {
 			add(new Shot(Mission.M_2_13, 0.7908764f, 0.12047386f, 1.8097904f, 0.7380207f, 3.635431f));
 			add(new Shot(Mission.M_2_13, 0.7953119f, 0.08647776f, 1.851062f, 0.05590056f, 6.5223255f));
 			add(new Shot(Mission.M_2_13, 0.7953119f, 0.08647776f, 1.8093705f, 0.42270613f, 6.5223255f));
-			
+
 			add(new Shot(Mission.M_2_14, 0.2987919f, -0.7421076f, 3.1126556f, 1.9687679f, 4.2096553f));
 			add(new Shot(Mission.M_2_14, 0.2987919f, -0.7421076f, 3.1141477f, 1.9690642f, 1.2438511f));
 			add(new Shot(Mission.M_2_14, 0.2987919f, -0.7421076f, 3.1103327f, 1.9691794f, 1.7260823f));
@@ -571,7 +571,7 @@ public class HCStrategy implements Strategy {
 			add(new Shot(Mission.M_2_15, 0.46616745f, -0.65014446f, 1.5844971f, 2.9561737f, 9.789977f));
 			add(new Shot(Mission.M_2_15, 0.4289627f, -0.67527086f, 1.887492f, 3.3452656f, 22.667866f));
 			add(new Shot(Mission.M_2_15, 0.4289627f, -0.67527086f, 1.5715545f, 2.9559503f, 22.667866f));
-			
+
 			add(new Shot(Mission.M_2_16, 0.5551472f, -0.57603073f, 7.1833444f, 2.8998299f, 32.159985f));
 			add(new Shot(Mission.M_2_16, 0.5551472f, -0.57603073f, 4.283286f, 3.3658535f, 32.243748f));
 			add(new Shot(Mission.M_2_16, 0.5551472f, -0.57603073f, 4.3163147f, 2.8991432f, 32.243748f));
@@ -592,7 +592,7 @@ public class HCStrategy implements Strategy {
 			add(new Shot(Mission.M_2_16, 0.2329588f, -0.7653303f, 3.512804f, 0.54268456f, 5.7128906f));
 			add(new Shot(Mission.M_2_16, 0.2329588f, -0.7653303f, 4.2429852f, 0.5949914f, 4.830536f));
 			add(new Shot(Mission.M_2_16, 0.2329588f, -0.7653303f, 3.510146f, 0.2278949f, 6.0540175f));
-			
+
 			add(new Shot(Mission.M_2_16, 0.3399992f, -0.7241552f, 4.2964973f, 2.5829482f, 3.3737268f));
 			add(new Shot(Mission.M_2_16, 0.3399992f, -0.7241552f, 4.3191295f, 1.6968716f, 8.066028f));
 			add(new Shot(Mission.M_2_16, 0.3399992f, -0.7241552f, 4.2954655f, 2.1625507f, 8.066028f));
@@ -604,7 +604,7 @@ public class HCStrategy implements Strategy {
 			add(new Shot(Mission.M_2_16, 0.2502699f, -0.7598455f, 4.3097415f, 0.88921034f, 28.054218f));
 			add(new Shot(Mission.M_2_16, 0.28736687f, -0.7162123f, 4.20804f, 1.062253f, 65.53856f));
 			add(new Shot(Mission.M_2_16, 0.28736687f, -0.7162123f, 4.24081f, 0.59577453f, 65.53856f));
-			
+
 			add(new Shot(Mission.M_2_17, 0.78446484f, -0.1568929f, 2.4962351f, 0.40037447f, 38.277424f));
 			add(new Shot(Mission.M_2_17, 0.78446484f, -0.1568929f, 2.0466392f, 0.4950146f, 38.277424f));
 			add(new Shot(Mission.M_2_17, 0.7160177f, -0.356817f, 2.5136707f, 1.5464978f, 51.79202f));
@@ -636,19 +636,50 @@ public class HCStrategy implements Strategy {
 			add(new Shot(Mission.M_2_18, 0.6443119f, -0.4741962f, 1.9048741f, 4.3425665f, 13.239559f));
 			add(new Shot(Mission.M_2_18, 0.6443119f, -0.4741962f, 1.486018f, 4.107977f, 13.239559f));
 			add(new Shot(Mission.M_2_18, 0.7846241f, -0.15609455f, 2.7078383f, 1.616173f, 15.764546f));
-			add(new Shot(Mission.M_2_18, 0.7846241f, -0.15609455f, 2.655033f, 1.1712025f, 15.764546f));			
+			add(new Shot(Mission.M_2_18, 0.7846241f, -0.15609455f, 2.655033f, 1.1712025f, 15.764546f));
 			//for first peng on bottom
 			add(new Shot(Mission.M_2_18, 0.77439785f, 0.20076966f, 4.5011287f, 0.06192766f, 2.559462f));
 			add(new Shot(Mission.M_2_18, 0.77439785f, 0.20076966f, 4.8900743f, 0.055321246f, 2.559462f));
 			add(new Shot(Mission.M_2_18, 0.797081f, 0.06827855f, 4.532946f, 0.08144377f, 1.3980951f));
 			add(new Shot(Mission.M_2_18, 0.797081f, 0.06827855f, 4.9135766f, 0.055335015f, 1.3980951f));
 			add(new Shot(Mission.M_2_18, 0.76545143f, 0.23255897f, 4.542071f, 0.05951859f, 2.4742794f));
-			add(new Shot(Mission.M_2_18, 0.76545143f, 0.23255897f, 4.9368787f, 0.055466294f, 2.4742794f));			
+			add(new Shot(Mission.M_2_18, 0.76545143f, 0.23255897f, 4.9368787f, 0.055466294f, 2.4742794f));
 			// manually added on higher target
 			add(new Shot(Mission.M_2_18, 0.7846241f, -0.15609455f, 1.8374996f, 4.359267f, 41.80834f));
 			add(new Shot(Mission.M_2_18, 0.7846241f, -0.15609455f, 1.8374996f, 4.359267f, 41.80834f));
-			
+
+			add(new Shot(Mission.M_3_1, 0.797863f, -0.058434f, 1.0243503f, 0.82470465f, 5.678297f));
+			add(new Shot(Mission.M_3_1, 0.797863f, -0.058434f, 1.5785713f, 0.8903767f, 6.76139f));
+			add(new Shot(Mission.M_3_1, 0.797863f, -0.058434f, 1.7373037f, 0.88713837f, 2.0191998f));
+			add(new Shot(Mission.M_3_1, 0.797863f, -0.058434f, 1.7592285f, 1.5647613f, 1.8500333f));
+			add(new Shot(Mission.M_3_1, 0.797863f, -0.058434f, 1.8710752f, 2.4894536f, 1.1424258f));
+			add(new Shot(Mission.M_3_1, 0.797863f, -0.058434f, 2.8427243f, 1.607078f, 6.780416f));
+			add(new Shot(Mission.M_3_1, 0.797863f, -0.058434f, 4.0069656f, 0.13568732f, 37.749016f));
+			add(new Shot(Mission.M_3_1, 0.799943f, 0.0095233f, 2.0194345f, 0.9195909f, 35.433628f));
+			add(new Shot(Mission.M_3_1, 0.799998f, 0.0017166f, 1.7356923f, 0.2011579f, 106.92074f));
+
+			add(new Shot(Mission.M_3_2, 0.740654f, -0.3023750f, 1.8498166f, 1.192671f, 6.15360f));
+			add(new Shot(Mission.M_3_2, 0.744553f, -0.2926430f, 2.0956345f, 1.153393f, 51.8520f));
+			add(new Shot(Mission.M_3_2, 0.738933f, -0.3065436f, 1.2602992f, 0.564935f, 20.9483f));
+			add(new Shot(Mission.M_3_2, 0.734705f, -0.3165574f, 1.3251185f, 1.062498f, 1.22117f));
+			add(new Shot(Mission.M_3_2, 0.740181f, -0.3035447f, 1.9306407f, 1.131558f, 31.4076f));
+			add(new Shot(Mission.M_3_2, 0.740333f, -0.3030456f, 1.3016638f, 0.573727f, 24.3904f));
+			add(new Shot(Mission.M_3_2, 0.775227f, -0.1975309f, 2.7250602f, 0.741261f, 1.75957f));
+			add(new Shot(Mission.M_3_2, 0.792399f, -0.1100706f, 4.0790353f, 1.099427f, 57.1224f));
+
+ 			add(new Shot(Mission.M_3_3, 0.340886f, -0.7237379f, 3.175620f, 0.054865f, 14.545675f));
+			add(new Shot(Mission.M_3_3, 0.374220f, -0.7070777f, 2.043581f, 1.409416f, 1.0578249f));
+			add(new Shot(Mission.M_3_3, 0.398920f, -0.6934428f, 2.762095f, 0.592246f, 4.2603517f));
+			add(new Shot(Mission.M_3_3, 0.453043f, -0.6593568f, 1.703750f, 0.596770f, 74.272285f));
+			add(new Shot(Mission.M_3_3, 0.720348f, -0.3479912f, 2.229935f, 1.281156f, 69.563255f));
+			add(new Shot(Mission.M_3_3, 0.763735f, -0.2381351f, 2.227478f, 1.280704f, 1.6588132f));
+			add(new Shot(Mission.M_3_3, 0.763735f, -0.2381351f, 2.562600f, 0.743106f, 5.1006927f));
+			add(new Shot(Mission.M_3_3, 0.763735f, -0.2381351f, 2.921988f, 1.116693f, 5.1006927f));
+			add(new Shot(Mission.M_3_3, 0.765315f, -0.2330093f, 2.005547f, 0.055001f, 1.2699858f));
+			add(new Shot(Mission.M_3_3, 0.769825f, -0.2176468f, 2.018988f, 0.498423f, 43.651684f));
+			add(new Shot(Mission.M_3_3, 0.779239f, -0.1810681f, 2.530907f, 0.741256f, 11.873116f));
+			add(new Shot(Mission.M_3_3, 0.787376f, -0.1415569f, 0.897591f, 0.059614f, 21.035414f));
 		}
 	}
-	
+
 }
