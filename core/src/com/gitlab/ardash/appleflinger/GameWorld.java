@@ -104,6 +104,9 @@ public class GameWorld implements Disposable{
 		case 2:
 	    	stage.addActor(new BackgroundActor(BackgroundConfiguration.WINTER));
 			break;
+		case 3:
+	    	stage.addActor(new BackgroundActor(BackgroundConfiguration.MOUNTAIN));
+			break;
 		default:
 			throw new RuntimeException("no background image assigned for episode " + mission.getMajor());
 		}
