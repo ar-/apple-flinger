@@ -5,4 +5,3 @@
 1.4.11
   * Neliels tulkošanas labojums. Pateicoties verdulo vēlreiz.
   * Izveidota mērķa SDK versija idiotiskai Google Play veiklai
-

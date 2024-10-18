@@ -1,0 +1,29 @@
+Smieklīga, apaļa viena/vairāku spēlētāju spēle lieliskiem laikiem. jauns,
+izaicinošs un atkarību izraisošs.
+
+Funkcijas:
+
+* augstas izšķirtspējas kvalitātes grafika
+* reālistiska fizika
+* spēle bez kavēšanās un vienmērīga (pat vecās ierīcēs)
+* smalkas detalizētas animācijas un daļiņu sistēmas
+* pavisam jauna un novatoriska spēles koncepcija
+* viens / vairāku spēlētāju
+* 100% atvērtais avots (GPL3)
+
+Jūs izmantojat katapulti, lai šautu ar āboliem. Esi pirmais, kas iznīcini visu ienaidnieku
+bāze, bet ņemiet vērā, ka otra puse šauj atpakaļ. Šajā spēlē ir līdzsvarota kombinācija
+mīkla, stratēģija, pacietība un darbība.
+
+Tas ir paredzēts vienam vai diviem spēlētājiem! Jūs varat spēlēt šo spēli pret ikvienu, kas sēž blakus
+tev - vai pret sevi. Varat arī spēlēt pret datora vadītu
+pretinieks. Drīzumā parādīsies vairāk funkciju, vairāk jautrības un vairāk līmeņu.
+
+starptautiskie vecuma reitingi:
+
+* ACB: G (vispārīgi)
+* ClassInd: L
+* ESRB: E (visi)
+* PEGI:3
+* USK: 0
+* IARC: 3
