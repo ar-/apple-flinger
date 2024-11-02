@@ -1,0 +1,1 @@
+Pridaná dotyková ofset, takže jablko môže byť presunutý bez dotyku priamo na vrchole (to robí jablko viac viditeľná) . Tiež zvýšená dotyková oblasť jablka, takže môžete chytiť jednoduchšie s veľkými prstami na malých obrazovkách.

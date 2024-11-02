@@ -1,11 +1,15 @@
 1.5.3
-  * pridaná adaptívna ikona (Android 8 a vyššie)
-  * zakázané priblíženie pozadia pri jablku
-  * pridaný jazyk nórsky (ďakujeme Allanovi na weblate)
+* Pridal Adaptívna ikona (Android 8 a vyšší)
+* Zvieracie pozadie zoom v blízkosti jablka
+* pridaný nórsky jazyk (ďakuje Allan na weblate)
 
 1.5.2
-  * pridaný jazyk portugalský (ďakujeme Ivánovi na weblate)
-  * pridané viac farebnosti víťazovi a najvyššiemu počtu bodov
-  * aktivované hardvérové tlačidlo návrat späť na ukončenie hry alebo na návrat do predošlého zobrazenia
-  * opravené preklady jazykov poľského a experanto (autor: Verdulo)
-  * opravená chyba:
+* pridané portugalský preklad
+* urobil víťaza a najvyššie body viac farebnejšie
+* aktivovaný hardvér back-button opustiť hru alebo ísť na predchádzajúcu obrazovku
+* pevné poľské a esperantské preklady (podľa Verdulo)
+* bugfix: výber jazyka niekedy nefunguje
+* pridané GPL3 a gitlab odznaky na pozadí
+
+1.5.1
+* Udržujte obrazovku na trochu dlhšie, kým sa hra aktívne hrá.

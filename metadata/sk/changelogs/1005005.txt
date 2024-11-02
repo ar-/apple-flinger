@@ -1,3 +1,9 @@
+1.5.5
+* wiki stránky na webových stránkach vytvorené, popisujúce, ako vytvoriť nové úrovne
+* 12 ďalšie zimné úrovne pridané
+* displej pre percento prírastkov
+* Pridal čas na zobrazenie na obrazovke
+
 1.5.4
 * pridané prekladateľov na obrazovke kreditov v hre
 * pridané holandský jazyk (ďakuje Heimen na weblate)
@@ -9,11 +15,3 @@
 * Pridal Adaptívna ikona (Android 8 a vyšší)
 * Zvieracie pozadie zoom v blízkosti jablka
 * pridaný nórsky jazyk (ďakuje Allan na weblate)
-
-1.5.2
-* pridané portugalský preklad
-* urobil víťaza a najvyššie body viac farebnejšie
-* aktivovaný hardvér back-button opustiť hru alebo ísť na predchádzajúcu obrazovku
-* pevné poľské a esperantské preklady (podľa Verdulo)
-* bugfix: výber jazyka niekedy nefunguje
-* pridané GPL3 a gitlab odznaky na pozadí

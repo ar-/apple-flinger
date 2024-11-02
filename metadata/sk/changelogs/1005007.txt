@@ -1,0 +1,17 @@
+Stránka:1234567...»
+* pridané Basque jazyk
+* pridané brazílsky jazyk
+* pridaný chorvátsky jazyk
+* pridaný fínsky jazyk
+* pridaný turecký jazyk
+
+1.5.6
+* pevná zimná úroveň 13 prilepené
+* pridaný taliansky jazyk
+* pridané švédsky jazyk
+
+1.5.5
+* wiki stránky na webových stránkach vytvorené, popisujúce, ako vytvoriť nové úrovne
+* 12 ďalšie zimné úrovne pridané
+* displej pre percento prírastkov
+* Pridal čas na zobrazenie na obrazovke

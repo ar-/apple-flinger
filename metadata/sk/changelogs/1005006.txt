@@ -1,0 +1,17 @@
+1.5.6
+* pevná zimná úroveň 13 prilepené
+* pridaný taliansky jazyk
+* pridané švédsky jazyk
+
+1.5.5
+* wiki stránky na webových stránkach vytvorené, popisujúce, ako vytvoriť nové úrovne
+* 12 ďalšie zimné úrovne pridané
+* displej pre percento prírastkov
+* Pridal čas na zobrazenie na obrazovke
+
+1.5.4
+* pridané prekladateľov na obrazovke kreditov v hre
+* pridané holandský jazyk (ďakuje Heimen na weblate)
+* pridané Galician jazyk (ďakujem Iván na weblate)
+* vylepšený španielsky preklad (ďakuje Markel na weblate)
+* odstránené priehľadné pixely z screenshotov
