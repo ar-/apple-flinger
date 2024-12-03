@@ -1,0 +1,1 @@
+Lisätty kosketuspoikkeama, joten omenaa voidaan siirtää koskematta suoraan sen päälle (se tekee omenan näkyvämmäksi). Kasvattu omenan kosketusaluetta, jotta voit tarttua siihen helpommin isoilla sormilla pienillä näytöillä.

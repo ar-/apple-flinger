@@ -1,0 +1,3 @@
+* poistettiin kaikki fasistiset symbolit ja fasististen järjestöjen ja hallintojen ikonit ja korvattiin ne Ukrainan lipulla
+ * lisätty ukrainankielinen käännös
+ * päivitetyt käännökset

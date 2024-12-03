@@ -4,9 +4,17 @@
   * lisätty galician kieli (kiitos Ivánille weblatessa)
   * parannettu espanjan kielen käännöstä (kiitos Markelille weblatessa)
   * poistettu läpinäkyvät pikselit kuvakaappauksista
+
 1.5.3
-  * lisätty mukautuva kuvake (Android 8 tai uudempi)
+  * lisätty mukautuva kuvake (Android v. 8 tai uudempi)
   * poistettu käytöstä taustan zoomaus omenan lähellä
-  * lisätty norjan kieli (kiitos Allanille weblatessa)
+  * lisätty norjan kieli (kiitos Allanille Weblatessa)
+
 1.5.2
-  * lisätty portugalin käännös
+* lisätty portugalinkielinen käännös
+ * teki voittajasta ja korkeimmista pisteistä värikkäämpiä
+ * aktivoitu laitteiston takaisin-painike poistuaksesi pelistä tai siirtyäksesi edelliseen näyttöön
+
+ *  korjattiin puola- ja esperantokäännökset (Verdulo)
+ * Viankorjaus: kielen valinta ei joskus toimi
+ * lisätty GPL3- ja gitlab-merkit taustalle

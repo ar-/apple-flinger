@@ -1,0 +1,17 @@
+1.5.6
+ * korjattiin talvitason 13 jumissa
+ * lisätty italialainen kieli
+ * lisätty ruotsin kieli
+
+1.5.5
+ * luodulle verkkosivustolle wiki-sivu, jossa kuvataan uusien tasojen luomista
+ * 12 talvitasoa lisätty
+ * lisättyjen saavutusten prosenttiosuuden näyttö
+ * lisäsi ajan näytön näyttöön
+
+1.5.4
+ * lisäsi kääntäjiä pelin krediittien näyttöön
+ * lisätty hollannin kieli (kiitos Heimenille verkkosivulla)
+ * lisätty galician kieli (kiitos Ivánille verkkosivulla)
+ * parannettu espanjankielinen käännös (kiitos Markelille verkkosivulla)
+ * poistettu läpinäkyvät pikselit kuvakaappauksista

@@ -1,0 +1,17 @@
+1.5.7
+ * lisätty baskin kieli
+ * lisätty brasilian kieli
+ * lisätty kroatian kieli
+ * lisätty suomen kieli
+ * lisätty turkin kieli
+
+1.5.6
+ * korjattiin talvitason 13 jumissa
+ * lisätty italialainen kieli
+ * lisätty ruotsin kieli
+
+1.5.5
+ * luodulle verkkosivustolle wiki-sivu, jossa kuvataan uusien tasojen luomista
+ * 12 talvitasoa lisätty
+ * lisättyjen saavutusten prosenttiosuuden näyttö
+ * lisäsi ajan näytön näyttöön
