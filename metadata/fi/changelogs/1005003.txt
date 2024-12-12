@@ -1,10 +1,15 @@
 1.5.3
-  * lisätty mukautuva kuvake (Android 8 tai uudempi)
-  * poistettu käytöstä taustan zoomaus omenan lähellä
-  * lisätty norjan kieli (kiitos Allanille weblatessa)
+ * lisätty mukautuva kuvake (Android 8 ja uudemmat)
+ * pois käytöstä taustazoomauksen lähellä omenaa
+ * lisätty norjan kieli (kiitos Allanille verkkosivulla)
+
 1.5.2
-  * lisätty portugalin käännös
-  * muutettu voittaja ja korkeimmat pisteet värikkäämmiksi
-  * aktivoitu laitteiston takaisin-painike poistuaksesi pelistä tai siirtyäksesi edelliselle näytölle
-  * korjattu puolan ja esperanton käännökset (Verdulo)
-  * bugikorjaus: kielivalinta ei toisinaan toimi.
+ * lisätty portugalinkielinen käännös
+ * teki voittajasta ja korkeimmista pisteistä värikkäämpiä
+ * aktivoitu laitteiston takaisin-painike poistuaksesi pelistä tai siirtyäksesi edelliseen näyttöön
+ * korjattu puolan ja esperanton käännökset (Verdulo)
+ * viankorjaus: kielen valinta ei joskus toimi
+ * lisätty GPL3- ja gitlab-merkit taustalle
+
+1.5.1
+ * pidä näyttö päällä hieman pidempään, niin kauan kuin peliä pelataan aktiivisesti.
