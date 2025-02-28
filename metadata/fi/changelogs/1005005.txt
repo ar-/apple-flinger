@@ -1,0 +1,17 @@
+1.5.5
+ * luodulle verkkosivustolle wiki-sivu, jossa kuvataan uusien tasojen luomista
+ * lisätty 12 talvitasoa
+ * lisättyjen saavutusten prosenttiosuuden näyttö
+ * lisätty ajan näytön näyttöön
+
+1.5.4
+ * lisätty kääntäjiä pelin krediittien näyttöön
+ * lisätty hollannin kieli (kiitos Heimenille Weblatella)
+ * lisätty galician kieli (kiitos Ivánille Weblatella)
+ * parannettu espanjankielinen käännös (kiitos Markelille Weblatella)
+ * poistettu läpinäkyvät pikselit kuvakaappauksista
+
+1.5.3
+ * lisätty mukautuva kuvake (Android 8 ja uudemmat)
+ * pois käytöstä taustazoomauksen lähellä omenaa
+ * lisätty norjan kieli (kiitos Allanille Weblatella)
