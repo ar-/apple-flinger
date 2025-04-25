@@ -1,13 +1,13 @@
 1.5.2
   * se ha añadido la traducción al portugués
   * hizo que el ganador y los puntos más altos sean más coloridos
-  * Se ha activado el botón de retroceso para salir del juego o ir a la pantalla anterior.
-  * Corrección de las traducciones al polaco y al esperanto (por Verdulo)
-  * Corrección de errores: la selección de idioma a veces no funcionaba.
+  * se ha activado el botón de retroceso para salir del juego o ir a la pantalla anterior.
+  * corrección de las traducciones al polaco y al esperanto (por Verdulo)
+  * corrección de errores: la selección de idioma a veces no funcionaba.
   * añadido de las insignias GPL3 y gitlab al fondo
 
 1.5.1
-  * Mantener la pantalla encendida un poco más de tiempo, mientras se esté jugando activamente.
+  * mantener la pantalla encendida un poco más de tiempo, mientras se esté jugando activamente.
 
 1.5.0
   * añadido logros

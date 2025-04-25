@@ -1,19 +1,20 @@
 1.5.4
   * añadido traductores a la pantalla de créditos en el juego
-  * Añadido el idioma holandés (gracias a Heimen en weblate)
-  * Se ha añadido el idioma gallego (gracias a Iván en weblate)
-  * Mejora de la traducción al español (gracias a Markel en weblate)
+  * añadido el idioma holandés (gracias a Heimen en weblate)
+  * se ha añadido el idioma gallego (gracias a Iván en weblate)
+  * mejora de la traducción al español (gracias a Markel en weblate)
   * se han eliminado los píxeles transparentes de las capturas de pantalla
   
 1.5.3
-  * Añadido el icono adaptativo (Android 8 y superior)
+  * añadido el icono adaptativo (Android 8 y superior)
   * deshabilitado el zoom de fondo cerca de la manzana
   * añadido el idioma noruego (gracias a Allan en weblate)
 
 1.5.2
-  * Se ha añadido la traducción al portugués.
+  * se ha añadido la traducción al portugués.
   * hizo que el ganador y los puntos más altos fueran más coloridos
-  * activación del botón de retroceso por hardware para salir del juego o ir a la pantalla anterior
-  * Corrección de las traducciones al polaco y al esperanto (por Verdulo)
-  * Corrección de errores: la selección de idioma a veces no funcionaba.
-  * Se han añadido las insignias GPL3 y gitlab al fondo
+  * activación del botón de retroceso por hardware para salir del juego o ir a la 
+pantalla anterior
+  * corrección de las traducciones al polaco y al esperanto (por Verdulo)
+  * corrección de errores: la selección de idioma a veces no funcionaba.
+  * se han añadido las insignias GPL3 y gitlab al fondo
