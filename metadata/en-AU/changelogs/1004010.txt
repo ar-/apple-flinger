@@ -11,4 +11,3 @@
 1.4.7
   * Winter is coming. Added some new levels.
   * I ran out of ideas. Please send me ideas for new levels.
-
