@@ -1,4 +1,4 @@
-1.4.10
+.1.4.10
    * Översatte skärmdumpar för fdroid
 
 1.4.9
