@@ -5,9 +5,9 @@
   * Neki manji popravci prijevoda
 
 1.4.8
-  * Dodan je poljski prijevod.  Hvala, verdulo.
-  * Dodan je prijevod za esperanto.  Hvala, verdulo.
+  * Dodan je poljski prijevod. Hvala, verdulo.
+  * Dodan je prijevod za esperanto. Hvala, verdulo.
 
 1.4.7
-  * Zima dolazi.  Dodane su neke nove razine.
+  * Zima dolazi. Dodane su neke nove razine.
   * Ponestalo mi je ideja. Pošalji mi ideje za nove razine.
