@@ -1,4 +1,4 @@
-1.4.10
+.1.4.10
   * Captures d'écran traduites pour fdroid
 1.4.9
   * Quelques corrections de traduction mineures
