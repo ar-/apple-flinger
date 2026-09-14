@@ -1,0 +1,29 @@
+’n Prettige rondte-gebaseerde spel vir een of meer spelers wat sorg vir hope pret. Nuut,
+uitdagend en verslawend.,
+
+Kenmerke:
+
+* hoë resolusie kwaliteit grafika
+* realistiese fisika
+* vloeiende spelervaring sonder vertraging (selfs op ou toestelle)
+* fyn gedetailleerde animasie en partikel stelsels
+* splinternuwe en innoverende spelkonsep
+* enkel/multispeler
+* 100% oopbron (GPL3)
+
+U gebruik 'n rek om met appels te skiet. Wees die eerste om die hele vyandbasis te vernietig,
+maar wees bewus daarvan dat die ander kant terugskiet. Hierdie spel het 'n gebalanseerde mengsel van
+legkaart, strategie, geduld en aksie.
+
+Dit is vir een of twee spelers! Jy kan dit speel teen enige iemand wat langs jou sit –
+of teen jouself. Jy kan ook teen 'n rekenaarbeheerde teenstander speel.
+Meer kenmerke, meer pret en meer vlakke kom binnekort.
+
+internasionale ouderdomsgraderings:
+
+* ACB: G (algemeen)
+* ClassInd: L
+* ESRB: E (enige iemand)
+* PEGI:3
+* USK: 0
+* IARC: 3

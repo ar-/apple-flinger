@@ -1,6 +1,5 @@
-LET WEL: HIERDIE APP bevat nie ANTIFEATURES OF ONWANTE KENMERKE. Wat jy hieronder sien, is 'n fout in F-Droid.
+LET WEL: HIERDIE APP BEVAT NIE ONGEWENSDE KENMERKE. Wat u hieronder sien, is 'n fout in F-Droid.
 
 1.4.11
-  * Minder vertaaloplossings. Dankie aan verdulo weer.
-  * Oped teiken SDK weergawe vir die idioot Google Play winkel
-
+  * Minder vertaalregstellings. Weereens dankie verdulo.
+  * Teiken SDK weergawe opgestel vir die idiotiese Google Play winkel
